@@ -735,6 +735,58 @@ client.on('message', message => {
   
 });
 
+if(message.content === préfix + "Créature des marécages"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#4e8b27")
+    .addField("Point de vie", "50")
+    .addField("Attaque", "?Petit coup de griffe")
+    .addField("Attaque spécial", "En dessous de 15HP il ne l'utilise qu'une fois ?Petit cracha d'acide")
+    .addField("Défense", "?Petite peau")
+    .setImage("http://img.over-blog-kiwi.com/1/21/05/60/20150615/ob_c78fcd_cameron-diaz-en-robe-transparente-refe.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+
+
+
+
+
+
+if(message.content === préfix + "Petit coup de griffe"){
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(20)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#4e8b27")
+    .addField("La créature vous donnes des petits coups de griffe", y)
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Petit cracha d'acide"){
+    var min = Math.floor(Math.min(0));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    if (y > 20)
+    var y = new Discord.RichEmbed()
+    .setColor("#4e8b27")
+    .addField("La créature vous craches violament contre votre torse pour ", y)
+    if (y < 20)
+    var y = new Discord.RichEmbed()
+    .setColor("#4e8b27")
+    .addField("La créature vous craches de l'acide sur votre torse mais sa n'a pas l'air de faire grand effet, vous avez de la chance !", y)
+    message.channel.send(y);
+}
+
+
+if(message.content === préfix + "?Petite peau"){
+    var min = Math.floor(Math.min(0));
+    var max = Math.floor(Math.max(10)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#4e8b27")
+    .addField("La créature se crispe legerement sur elle même et de fine couche d'acie sort de sa peau réduissant l'attaque", y)
+    message.channel.send(y);
+}
 
 
 
