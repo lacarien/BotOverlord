@@ -850,6 +850,65 @@ if(message.content === préfix + "Lézard primitif défense"){
      if (result > 50)
     message.channel.send(x);
 }
+    
+    
+    
+    
+    
+    
+    
+if(message.content === préfix + "Arbre maudit"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#217504")
+    .addField("Point de vie", "120")
+    .addField("Attaque", "?Arbre maudit attaque")
+    .addField("Défense", "?Arbre maudit défense")
+    .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539055088652779521/monsters-magic-the-gathering-fantasy-art-swamps-wallpaper-516738.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+
+
+
+
+
+
+
+
+if(message.content === préfix + "Arbre maudit attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 80)
+    var y = new Discord.RichEmbed()
+    .addField("L'arbre maudit grinça de son bras et vous balaya d'un mouvement grand mouvement lourd et lent", y)
+    .setColor("#217504")
+        if(result > 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#217504")
+    .addField("L'arbre maudit arrache un arbre du sol pour ensuite vous donner un violent coup avec", y)
+    .addField("Il en profite ensuite pour se regénérer", "15HP")
+    message.channel.sendMessage(y);
+}
+
+
+
+
+
+
+if(message.content === préfix + "Arbre maudit défense"){
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(15)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("L'arbre maudit place ses longs bras devant lui pour bloquer les coups", y)
+    .setColor("#217504")
+    message.channel.send(y);
+}
+
+
 
    
     
