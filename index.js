@@ -789,6 +789,69 @@ if(message.content === préfix + "?Petite peau"){
 }
 
   
+    
+    
+    
+    
+if(message.content === préfix + "Lézard primitif"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#217504")
+    .addField("Point de vie", "150")
+    .addField("Attaque", "?Lézard primitif attaque")
+    .addField("Défense", "?Lézard primitif défense")
+    .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539004107151638528/f697e4377e28191f7f9c57361e20aedb.png")
+    message.channel.sendMessage(help_embed);
+}
+
+
+
+if(message.content === préfix + "Lézard primitif attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 60)
+    var y = new Discord.RichEmbed()
+    .addField("le Lézard est trop lent et vous manques de vous toucher", "0")
+        if(result > 60)
+    var y = new Discord.RichEmbed()
+    .setColor("#217504")
+    .addField("le grand lézard vous attrapes dans sa bouche, il gigote sa tête de droite à gauche et vous envoyer voler se prendre un arbre, vous ne pouvez pas attaquer au prochain tour", y)
+    message.channel.sendMessage(y);
+}
+
+
+
+
+if(message.content === préfix + "Lézard primitif défense"){
+
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 50)
+
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(100)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#217504")
+    .addField("La créature se protege à l'aide de sa carapace", y);
+
+    if(result > 50)
+
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(40)); 
+    var x = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var x = new Discord.RichEmbed()
+    .setColor("#217504")
+    .addField("La créature vous laisses l'attaquer mais attention il est résistant", x)
+
+    if (result < 50)
+    message.channel.send(y);
+     if (result > 50)
+    message.channel.send(x);
+}
+
+    
 });
 
 
