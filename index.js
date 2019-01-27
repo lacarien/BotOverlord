@@ -851,6 +851,8 @@ if(message.content === préfix + "Lézard primitif défense"){
     message.channel.send(x);
 }
 
+   
+    
     
 });
 
