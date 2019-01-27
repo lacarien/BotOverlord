@@ -754,6 +754,7 @@ if(message.content === préfix + "Petit coup de griffe"){
     var y = new Discord.RichEmbed()
     .setColor("#4e8b27")
     .addField("La créature vous donnes des petits coups de griffe"  , y)
+
     message.channel.send(y);
 }
 
@@ -820,7 +821,6 @@ if(message.content === préfix + "Lézard primitif attaque"){
     var y = new Discord.RichEmbed()
     .setColor("#217504")
     .addField("le grand lézard vous attrapes dans sa bouche, il gigote sa tête de droite à gauche et vous envoyer voler se prendre un arbre, vous ne pouvez pas attaquer au prochain tour", y)
-    .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539004107151638528/f697e4377e28191f7f9c57361e20aedb.png")
     message.channel.sendMessage(y);
 }
 
@@ -884,14 +884,13 @@ if(message.content === préfix + "Arbre maudit attaque"){
     var result = Math.floor((Math.random() * 100) + 1);
         if(result < 80)
     var y = new Discord.RichEmbed()
-    .addField("L'arbre maudit grinça de son bras et vous balaya avec d'une puissance inimaginable, y)
+    .addField("L'arbre maudit grinça de son bras et vous balaya d'un mouvement grand mouvement lourd et lent", y)
     .setColor("#217504")
         if(result > 80)
     var y = new Discord.RichEmbed()
     .setColor("#217504")
     .addField("L'arbre maudit arrache un arbre du sol pour ensuite vous donner un violent coup avec", y)
     .addField("Il en profite ensuite pour se regénérer", "15HP")
-    .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539055088652779521/monsters-magic-the-gathering-fantasy-art-swamps-wallpaper-516738.jpg")
     message.channel.sendMessage(y);
 }
 
@@ -985,4 +984,3 @@ client.on("ready", () => {
     console.log("Je suis prêt !")
     client.user.setGame("?Help");
 });
-
