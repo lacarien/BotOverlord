@@ -640,7 +640,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
-        .setClient("Votre instinct vampirique prends le dessus et vous bloquez le coup facilement ", y)
+        .addField("Votre instinct vampirique prend le dessus et vous bloquez facilement le coup")
         .setImage("https://media.giphy.com/media/fBMynhfzwdau1sLmPi/giphy.gif")
         message.channel.send(y);
           
