@@ -754,7 +754,6 @@ if(message.content === préfix + "Petit coup de griffe"){
     var y = new Discord.RichEmbed()
     .setColor("#4e8b27")
     .addField("La créature vous donnes des petits coups de griffe"  , y)
-    .setImage("http://img.over-blog-kiwi.com/1/21/05/60/20150615/ob_c78fcd_cameron-diaz-en-robe-transparente-refe.jpg")
     message.channel.send(y);
 }
 
