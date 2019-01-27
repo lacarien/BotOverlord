@@ -890,6 +890,7 @@ if(message.content === préfix + "Arbre maudit attaque"){
     .setColor("#217504")
     .addField("L'arbre maudit arrache un arbre du sol pour ensuite vous donner un violent coup avec", y)
     .addField("Il en profite ensuite pour se regénérer", "15HP")
+    .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539055088652779521/monsters-magic-the-gathering-fantasy-art-swamps-wallpaper-516738.jpg")
     message.channel.sendMessage(y);
 }
 
