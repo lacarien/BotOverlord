@@ -732,10 +732,10 @@ client.on('message', message => {
     }
 }
 
-  
-});
-
-if(message.content === préfix + "Créature des marécages"){
+    
+    
+    
+    if(message.content === préfix + "Créature des marécages"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#4e8b27")
     .addField("Point de vie", "50")
@@ -787,6 +787,10 @@ if(message.content === préfix + "?Petite peau"){
     .addField("La créature se crispe legerement sur elle même et de fine couche d'acie sort de sa peau réduissant l'attaque", y)
     message.channel.send(y);
 }
+
+  
+});
+
 
 
 
