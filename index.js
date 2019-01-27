@@ -818,6 +818,7 @@ if(message.content === préfix + "Lézard primitif attaque"){
     var y = new Discord.RichEmbed()
     .setColor("#217504")
     .addField("le grand lézard vous attrapes dans sa bouche, il gigote sa tête de droite à gauche et vous envoyer voler se prendre un arbre, vous ne pouvez pas attaquer au prochain tour", y)
+    .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539004107151638528/f697e4377e28191f7f9c57361e20aedb.png")
     message.channel.sendMessage(y);
 }
 
