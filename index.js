@@ -917,56 +917,6 @@ if(message.content === préfix + "Arbre maudit défense"){
     
     
     
-    
-    
-if(message.content === préfix + "Arrive dans les marécages") {
-    var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 50)
-    var result = new Discord.RichEmbed() 
-    .setColor("#ff0000")
-    .addField("Vous tombez sur des monstres", "?Apparition marécage")
-    if(50 < result)
-    var result = new Discord.RichEmbed() 
-    .setColor("#1fff00")
-    .setTitle("C'est bien calme...")
-    message.channel.send(result);
-
-}
-
-
-
-if(message.content === préfix + "Apparition marécage") {
-    var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 60){
-    var result = new Discord.RichEmbed() 
-    .setTitle("Une petite créature fonce dans votre direction")
-    .setColor("#4e8b27")
-    .addField("Point de vie", "50")
-    .addField("Attaque", "?Petit coup de griffe")
-    .addField("Attaque spécial", "En dessous de 15HP il ne l'utilise qu'une fois ?Petit cracha d'acide")
-    .addField("Défense", "?Petite peau")
-    .setImage("http://img.over-blog-kiwi.com/1/21/05/60/20150615/ob_c78fcd_cameron-diaz-en-robe-transparente-refe.jpg")}
-    else if(result < 90){
-    var result = new Discord.RichEmbed() 
-    .setTitle("L'abre qui était juste à votre gauche se mit à bouger vous prennant pour cible")
-    .setColor("#217504")
-    .addField("Point de vie", "120")
-    .addField("Attaque", "?Arbre maudit attaque")
-    .addField("Défense", "?Arbre maudit défense")
-    .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539055088652779521/monsters-magic-the-gathering-fantasy-art-swamps-wallpaper-516738.jpg")}
-    else if(result < 99){
-    var result = new Discord.RichEmbed() 
-    .setTitle("Une carapace qui ressemblait à un simple terrain boueux se mit à se lever, laissant apparaitre un ancien Lézard, celui-ci emetta un crie qui fit trembler les arbres")
-    .setColor("#217504")
-    .addField("Point de vie", "150")
-    .addField("Attaque", "?Lézard primitif attaque")
-    .addField("Défense", "?Lézard primitif défense")
-    .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539004107151638528/f697e4377e28191f7f9c57361e20aedb.png")}
-
-    message.channel.send(result);
-
-}
-    
 });
 
 
