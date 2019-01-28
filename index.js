@@ -961,6 +961,84 @@ if(message.content === préfix + "Apparition marécage") {
     message.channel.send(result);
 
 }
+    
+    
+    
+    
+if(message.content === préfix + "Le roi des marécages"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#217504")
+    .addField("Point de vie", "1500")
+    .addField("Attaque quand HP>750", "?Roi des marécages attaque")
+    .addField("Attaque quand HP<750", "?Roi des marécages attaque 2")
+    .addField("Défense", "?Roi des marécages défense")
+    .setImage("http://www.fondsecran.eu/pictures/2012/0206/1/monsters-birds-magic-the-gathering-giant-realistic-warriors-1600x1171-wallpaper-488183.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+
+
+
+
+
+if(message.content === préfix + "Roi des marécages attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(200));
+    var max = Math.floor(Math.max(250)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 80)
+    var y = new Discord.RichEmbed()
+    .addField("Le Roi lève ses grandes pattes et tente de vous piétiner violament au sol comme de vulgaires insectes", y )
+    .setColor("#217504")
+        if(result > 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#217504")
+    .addField("Crie de renfort", "Le roie prend une grande inspiration pour ensuite crier de rage, Il vous projette au loin tout en arrachant des arbres et vous infliges des dégâts monstrueux")
+    .addField(y ,"\n Le roi va alors faire resortir 2 arbres maudit des marécages") 
+    .setImage("http://www.fondsecran.eu/pictures/2012/0206/1/monsters-birds-magic-the-gathering-giant-realistic-warriors-1600x1171-wallpaper-488183.jpg")
+    message.channel.sendMessage(y);
+}
+
+
+if(message.content === préfix + "Roi des marécages attaque 2"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(250));
+    var max = Math.floor(Math.max(300)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 80)
+    var y = new Discord.RichEmbed()
+    .addField("Le roi fonce sur vous à toute vitesse et vous infliges des dégats considérables", y )
+    .setColor("#217504")
+        if(result > 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#217504")
+    .addField("Crie de désespoir", "Le roie prend une grande inspiration pour ensuite crier de rage, Il vous projette au loin tout en créant des vagues sur le marécage et vous infliges des dégâts monstrueux")
+    .addField(y ,"\n Le roi va alors faire resortir 2 Lézards Primitifs") 
+    .setImage("http://www.fondsecran.eu/pictures/2012/0206/1/monsters-birds-magic-the-gathering-giant-realistic-warriors-1600x1171-wallpaper-488183.jpg")
+    message.channel.sendMessage(y);
+}
+
+
+if(message.content === préfix + "Roi des marécages défense"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#217504")
+    var min = Math.floor(Math.min(175));
+    var max = Math.floor(Math.max(200)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 95)
+    var y = new Discord.RichEmbed()
+    .addField("Le roi ne se défend pas et sa peau est très résistante", y )
+    .setColor("#217504")
+    if(result < 95)
+    var y = new Discord.RichEmbed()
+    .setTitle("Il ne reçois aucun dégats et la personne qu'il l'a attaqué ne peut rien faire pendant 2Tours était paralysé par la nature autour de lui")
+    message.channel.sendMessage(help_embed);
+}
+
+
 
 
 
