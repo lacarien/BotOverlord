@@ -884,7 +884,7 @@ if(message.content === préfix + "Arbre maudit attaque"){
     var result = Math.floor((Math.random() * 100) + 1);
         if(result < 80)
     var y = new Discord.RichEmbed()
-    .addField("L'arbre maudit grinça de son bras et vous balaya d'un mouvement grand mouvement lourd et lent", y)
+    .addField("L'arbre maudit grinça de son bras et vous éjectas au loin avec l'aide de celui-ci", y)
     .setColor("#217504")
         if(result > 80)
     var y = new Discord.RichEmbed()
