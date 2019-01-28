@@ -957,6 +957,15 @@ if(message.content === préfix + "Apparition marécage") {
     .addField("Attaque", "?Lézard primitif attaque")
     .addField("Défense", "?Lézard primitif défense")
     .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539004107151638528/f697e4377e28191f7f9c57361e20aedb.png")}
+     else if(result < 101){
+        var result = new Discord.RichEmbed() 
+        .setTitle("Une bête...Que dis-je....Un monstre vient de faire son apparition dans les Marécages, fuyez misérables vermines")
+        .setColor("#217504")
+        .addField("Point de vie", "1500")
+        .addField("Attaque quand HP>750", "?Roi des marécages attaque")
+        .addField("Attaque quand HP<750", "?Roi des marécages attaque 2")
+        .addField("Défense", "?Roi des marécages défense")
+        .setImage("http://www.fondsecran.eu/pictures/2012/0206/1/monsters-birds-magic-the-gathering-giant-realistic-warriors-1600x1171-wallpaper-488183.jpg")}
 
     message.channel.send(result);
 
