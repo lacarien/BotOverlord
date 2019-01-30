@@ -143,12 +143,13 @@ client.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("#7c7c70")
         .addField("Automaton", "Vous êtes un Automaton, vous avez le corps d'une machine à l'apparence humaine")
-        .addField("Bonus", "Vous êtes immunisé contre le poison et vous seul pouvez utiliser des compétences en rapport avec des armes à feux")
-        .addField("Malus", "????")
+        .addField("Bonus", "Vous avez une classe privilégié ")
+        .addField("Malus", "A obligatoirement un maître")
         .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/3/35/Overlord_III_EP01_011.png/revision/latest?cb=20180713084418")
         .setFooter("Menu Automaton")
         message.channel.sendMessage(help_embed);
     }
+
 
     if(message.content === préfix + "Elf"){
         var help_embed = new Discord.RichEmbed()
@@ -608,8 +609,8 @@ client.on('message', message => {
     }
 
     if(message.content === préfix + "Magic gun"){
-        var min = Math.floor(Math.min(60));
-        var max = Math.floor(Math.max(100)); 
+        var min = Math.floor(Math.min(50);
+        var max = Math.floor(Math.max(80; 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
@@ -1125,13 +1126,13 @@ if(message.content === préfix + "Ciblage 7") {
     
 if(message.content === préfix + "Fuite") {
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 50)
-    var result = new Discord.RichEmbed() 
-    .setColor("#ff0000")
-    .setAuthor("Vous fuyez")
-    if(50 < result)
+    if(result < 30
     var result = new Discord.RichEmbed() 
     .setColor("#1fff00")
+    .setAuthor("Vous fuyez")
+    if(70 result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
     .setAuthor("La fuite est impossible")
     message.channel.send(result);
 
