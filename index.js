@@ -609,8 +609,8 @@ client.on('message', message => {
     }
 
     if(message.content === préfix + "Magic gun"){
-        var min = Math.floor(Math.min(50);
-        var max = Math.floor(Math.max(80; 
+        var min = Math.floor(Math.min(60));
+        var max = Math.floor(Math.max(80)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
@@ -618,6 +618,8 @@ client.on('message', message => {
         .setImage("https://media.giphy.com/media/vgvVcpHvIEjO9yPQqg/giphy.gif")
         message.channel.send(y);
     }
+
+
 
 
 
