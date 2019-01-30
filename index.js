@@ -1121,6 +1121,21 @@ if(message.content === préfix + "Ciblage 7") {
     message.channel.send(result);
 
 }
+    
+    
+if(message.content === préfix + "Fuite") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 50)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Vous fuyez")
+    if(50 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setAuthor("La fuite est impossible")
+    message.channel.send(result);
+
+}
 
 
 
