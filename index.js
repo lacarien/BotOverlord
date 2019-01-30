@@ -1162,6 +1162,45 @@ if(message.content === préfix + "SG défense"){
     .setColor("#0800ff")
     message.channel.sendMessage(y);
 }
+    
+    if(message.content === préfix + "Garde"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#0800ff")
+    .addField("Point de vie", "100")
+    .addField("Attaque", "?Garde attaque")
+    .addField("Défense", "?Garde défense")
+    .setImage("https://www.gamewallpapers.com/wallpapers_slechte_compressie/01wallpapers/wallpaper_dark_souls_2_01_1920x1080.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "Garde attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le garde donne un coup d'épée à l'horizontal", y)
+    .setColor("#0800ff")
+    message.channel.sendMessage(y);
+}
+
+
+if(message.content === préfix + "Garde défense"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le garde donne un coup d'épée à l'horizontal", y)
+    .setColor("#0800ff")
+    message.channel.sendMessage(y);
+}
+
+
+
+
+
 
 
 
