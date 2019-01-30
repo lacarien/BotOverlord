@@ -1046,6 +1046,82 @@ if(message.content === préfix + "Roi des marécages défense"){
     .setTitle("Il ne reçois aucun dégats et la personne qu'il l'a attaqué ne peut rien faire pendant 2Tours était paralysé par la nature autour de lui")
     message.channel.sendMessage(help_embed);
 }
+    
+    
+    
+if(message.content === préfix + "Ciblage 2") {
+    var result = Math.floor((Math.random() * 2) + 1);
+    var result = new Discord.RichEmbed() 
+    .setTitle("Vous êtes pris pour cible ")
+    .setDescription(result)
+    .setImage("https://vignette.wikia.nocookie.net/overlord8371/images/e/e9/Adventurers.png/revision/latest?cb=20180730015241&path-prefix=fr")
+    message.channel.send(result);
+
+}
+
+if(message.content === préfix + "Ciblage 3") {
+    var result = Math.floor((Math.random() * 3) + 1);
+    var result = new Discord.RichEmbed() 
+    .setTitle("Vous êtes pris pour cible ")
+    .setDescription(result)
+    .setImage("https://vignette.wikia.nocookie.net/overlord8371/images/e/e9/Adventurers.png/revision/latest?cb=20180730015241&path-prefix=fr")
+    message.channel.send(result);
+
+}
+
+if(message.content === préfix + "Ciblage 4") {
+    var result = Math.floor((Math.random() * 4) + 1);
+    var result = new Discord.RichEmbed() 
+    .setTitle("Vous êtes pris pour cible ")
+    .setDescription(result)
+    .setImage("https://vignette.wikia.nocookie.net/overlord8371/images/e/e9/Adventurers.png/revision/latest?cb=20180730015241&path-prefix=fr")
+    message.channel.send(result);
+
+}
+
+
+if(message.content === préfix + "Ciblage 4") {
+    var result = Math.floor((Math.random() * 4) + 1);
+    var result = new Discord.RichEmbed() 
+    .setTitle("Vous êtes pris pour cible ")
+    .setDescription(result)
+    .setImage("https://vignette.wikia.nocookie.net/overlord8371/images/e/e9/Adventurers.png/revision/latest?cb=20180730015241&path-prefix=fr")
+    message.channel.send(result);
+
+}
+
+if(message.content === préfix + "Ciblage 5") {
+    var result = Math.floor((Math.random() * 5) + 1);
+    var result = new Discord.RichEmbed() 
+    .setTitle("Vous êtes pris pour cible ")
+    .setDescription(result)
+    .setImage("https://vignette.wikia.nocookie.net/overlord8371/images/e/e9/Adventurers.png/revision/latest?cb=20180730015241&path-prefix=fr")
+    message.channel.send(result);
+
+}
+
+if(message.content === préfix + "Ciblage 6") {
+    var result = Math.floor((Math.random() * 6) + 1);
+    var result = new Discord.RichEmbed() 
+    .setTitle("Vous êtes pris pour cible ")
+    .setDescription(result)
+    .setImage("https://vignette.wikia.nocookie.net/overlord8371/images/e/e9/Adventurers.png/revision/latest?cb=20180730015241&path-prefix=fr")
+    message.channel.send(result);
+
+}
+if(message.content === préfix + "Ciblage 7") {
+    var result = Math.floor((Math.random() * 7) + 1);
+    var result = new Discord.RichEmbed() 
+    .setTitle("Vous êtes pris pour cible ")
+    .setDescription(result)
+    .setImage("https://vignette.wikia.nocookie.net/overlord8371/images/e/e9/Adventurers.png/revision/latest?cb=20180730015241&path-prefix=fr")
+    message.channel.send(result);
+
+}
+
+
+
+
 
 
 
@@ -1053,6 +1129,7 @@ if(message.content === préfix + "Roi des marécages défense"){
 
   
 });
+
 
 
 
