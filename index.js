@@ -928,8 +928,6 @@ if(message.content === préfix + "Arrive dans les marécages") {
 
 }
 
-
-
 if(message.content === préfix + "Apparition marécage") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 60){
@@ -957,6 +955,16 @@ if(message.content === préfix + "Apparition marécage") {
     .addField("Attaque", "?Lézard primitif attaque")
     .addField("Défense", "?Lézard primitif défense")
     .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539004107151638528/f697e4377e28191f7f9c57361e20aedb.png")}
+    else if(result < 101){
+        var result = new Discord.RichEmbed() 
+        .setColor("#217504")
+        .setTitle("Roi des marécages")
+        .setDescription("Houston...La terre tremble....Houston...WHOW HOUSTON LA TERRE TREMBLE VRAIMENT CASSE TOI !!")
+        .addField("Point de vie", "1500")
+        .addField("Attaque quand HP>750", "?Roi des marécages attaque")
+        .addField("Attaque quand HP<750", "?Roi des marécages attaque 2")
+        .addField("Défense", "?Roi des marécages défense")
+        .setImage("http://www.fondsecran.eu/pictures/2012/0206/1/monsters-birds-magic-the-gathering-giant-realistic-warriors-1600x1171-wallpaper-488183.jpg")}
     
 
     message.channel.send(result);
@@ -1195,6 +1203,67 @@ if(message.content === préfix + "Garde défense"){
     .setColor("#0800ff")
     message.channel.sendMessage(y);
 }
+
+    
+    if(message.content === préfix + "Royaume SOS") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 10)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Vous êtes seul....Aucun garde ne vous entends")
+    if(90 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setAuthor("Un garde arrive, vous avez de la chance", "?Garde Royaume")
+    message.channel.send(result);
+
+}
+
+
+
+if(message.content === préfix + "Garde Royaume") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 40){
+    var result = new Discord.RichEmbed() 
+    .setColor("#0800ff")
+    .setTitle("Garde Novice")
+    .setDescription("Ce petit garde est débutant et faible, il n'est pas une grande menace")
+    .addField("Point de vie", "70")
+    .addField("Attaque", "?GN attaque")
+    .addField("Défense", "?GN défense")
+    .setImage("https://media.discordapp.net/attachments/534758707561496580/540249126890110976/image0.png?width=384&height=586")
+    }
+    else if(result < 90){
+    var result = new Discord.RichEmbed() 
+    if(message.content === préfix + "Garde"){
+        var help_embed = new Discord.RichEmbed()
+        .setTitle("Garde")
+        .setDescription("Un garde lambda, il peut très vite être énervant, faite attention")
+        .setColor("#0800ff")
+        .addField("Point de vie", "100")
+        .addField("Attaque", "?Garde attaque")
+        .addField("Défense", "?Garde défense")
+        .setImage("https://www.gamewallpapers.com/wallpapers_slechte_compressie/01wallpapers/wallpaper_dark_souls_2_01_1920x1080.jpg")
+    }
+
+    }
+    else if(result < 101){
+    var result = new Discord.RichEmbed() 
+    .setColor("#0800ff")
+    .setTitle("Sergent Garde")
+    .setDescription("Un grand garde...Qui fait de grand dégat...")
+    .addField("Point de vie", "150")
+    .addField("Attaque", "?SG attaque")
+    .addField("Défense", "?SG défense")
+    .setImage("https://cdn.discordapp.com/attachments/534758707561496580/540206929193205790/thumb-1920-405091.png")}
+    
+
+    message.channel.send(result);
+
+}
+
+
+
 
 
 
