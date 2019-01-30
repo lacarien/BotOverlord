@@ -755,7 +755,6 @@ if(message.content === préfix + "Petit coup de griffe"){
     var y = new Discord.RichEmbed()
     .setColor("#4e8b27")
     .addField("La créature vous donnes des petits coups de griffe"  , y)
-    .addBlankField("test")
     message.channel.send(y);
 }
 
