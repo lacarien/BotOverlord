@@ -8,6 +8,7 @@ var préfix = "?";
 
 client.login(process.env.TOKEN);
 
+
 client.on('message', message => {
 
     if(message.content === préfix + "Help"){
@@ -149,7 +150,6 @@ client.on('message', message => {
         .setFooter("Menu Automaton")
         message.channel.sendMessage(help_embed);
     }
-
 
     if(message.content === préfix + "Elf"){
         var help_embed = new Discord.RichEmbed()
@@ -422,7 +422,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous essayez de lui infliger un coup de dague puissant. Vous perdez 40 de mana", y)
+        .addField("Vous lui infligé un coup de dague impossible à bloquer. Vous perdez 40 de mana", y)
         .setImage("https://media.giphy.com/media/XptviXceQG8pjLZ0FD/giphy.gif")
         message.channel.send(y);
     }
@@ -623,8 +623,6 @@ client.on('message', message => {
 
 
 
-
-
     if(message.content === préfix + "Régénération de mana"){
         var min = Math.floor(Math.min(25));
         var max = Math.floor(Math.max(100)); 
@@ -643,7 +641,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
-        .addField("Votre instinct vampirique prend le dessus et vous bloquez facilement le coup", y)
+        .addField("Votre instinct vampirique prend le dessus et vous bloquez facilement le coup")
         .setImage("https://media.giphy.com/media/fBMynhfzwdau1sLmPi/giphy.gif")
         message.channel.send(y);
           
@@ -742,7 +740,7 @@ if(message.content === préfix + "Créature des marécages"){
     .setColor("#4e8b27")
     .addField("Point de vie", "50")
     .addField("Attaque", "?Petit coup de griffe")
-    .addField("Attaque spécial", "En dessous de 15HP il ne l'utilise qu'une fois ?Petit cracha d'acide")
+    .addField("Attaque spécial", "En dessous de 15HP il ne l'utilise qu'une fois ?Petit cracha d'acide. Attention on ne peut pas bloquer le coup")
     .addField("Défense", "?Petite peau")
     .setImage("http://img.over-blog-kiwi.com/1/21/05/60/20150615/ob_c78fcd_cameron-diaz-en-robe-transparente-refe.jpg")
     message.channel.sendMessage(help_embed);
@@ -757,7 +755,7 @@ if(message.content === préfix + "Petit coup de griffe"){
     var y = new Discord.RichEmbed()
     .setColor("#4e8b27")
     .addField("La créature vous donnes des petits coups de griffe"  , y)
-
+    .addBlankField("test")
     message.channel.send(y);
 }
 
@@ -791,7 +789,7 @@ if(message.content === préfix + "Petite peau"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#4e8b27")
-    .addField("La créature se crispe legerement sur elle même et de fine couche d'acie sort de sa peau réduissant l'attaque", y)
+    .addField("La créature se crispe legerement sur elle même et de fine couche d'acie sort de sa peau réduisant l'attaque", y)
     message.channel.send(y);
 }
 
@@ -887,7 +885,7 @@ if(message.content === préfix + "Arbre maudit attaque"){
     var result = Math.floor((Math.random() * 100) + 1);
         if(result < 80)
     var y = new Discord.RichEmbed()
-    .addField("L'arbre maudit grinça de son bras et vous éjectas au loin avec l'aide de celui-ci", y)
+    .addField("L'arbre maudit grinça de son bras et vous balaya d'un mouvement grand mouvement lourd et lent", y)
     .setColor("#217504")
         if(result > 80)
     var y = new Discord.RichEmbed()
@@ -960,23 +958,15 @@ if(message.content === préfix + "Apparition marécage") {
     .addField("Attaque", "?Lézard primitif attaque")
     .addField("Défense", "?Lézard primitif défense")
     .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539004107151638528/f697e4377e28191f7f9c57361e20aedb.png")}
-     else if(result < 101){
-        var result = new Discord.RichEmbed() 
-        .setTitle("Une bête...Que dis-je....Un monstre vient de faire son apparition dans les Marécages, fuyez misérables vermines")
-        .setColor("#217504")
-        .addField("Point de vie", "1500")
-        .addField("Attaque quand HP>750", "?Roi des marécages attaque")
-        .addField("Attaque quand HP<750", "?Roi des marécages attaque 2")
-        .addField("Défense", "?Roi des marécages défense")
-        .setImage("http://www.fondsecran.eu/pictures/2012/0206/1/monsters-birds-magic-the-gathering-giant-realistic-warriors-1600x1171-wallpaper-488183.jpg")}
+    
 
     message.channel.send(result);
 
 }
-    
-    
-    
-    
+
+
+
+
 if(message.content === préfix + "Le roi des marécages"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#217504")
@@ -1049,9 +1039,7 @@ if(message.content === préfix + "Roi des marécages défense"){
     .setTitle("Il ne reçois aucun dégats et la personne qu'il l'a attaqué ne peut rien faire pendant 2Tours était paralysé par la nature autour de lui")
     message.channel.sendMessage(help_embed);
 }
-    
-    
-   
+
 
 
 if(message.content === préfix + "Ciblage 2") {
@@ -1114,7 +1102,6 @@ if(message.content === préfix + "Ciblage 6") {
     message.channel.send(result);
 
 }
-    
 if(message.content === préfix + "Ciblage 7") {
     var result = Math.floor((Math.random() * 7) + 1);
     var result = new Discord.RichEmbed() 
@@ -1124,17 +1111,18 @@ if(message.content === préfix + "Ciblage 7") {
     message.channel.send(result);
 
 }
-    
-    
+
+
+
 if(message.content === préfix + "Fuite") {
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 30
-    var result = new Discord.RichEmbed() 
-    .setColor("#1fff00")
-    .setAuthor("Vous fuyez")
-    if(70 result)
+    if(result < 50)
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
+    .setAuthor("Vous fuyez")
+    if(50 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
     .setAuthor("La fuite est impossible")
     message.channel.send(result);
 
@@ -1142,11 +1130,61 @@ if(message.content === préfix + "Fuite") {
 
 
 
+if(message.content === préfix + "Sergent Garde"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .addField("Point de vie", "150")
+    .addField("Attaque", "?SG attaque")
+    .addField("Défense", "?SG défense")
+    .setImage("https://cdn.discordapp.com/attachments/534758707561496580/540206929193205790/thumb-1920-405091.png")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "Sergent garde"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(60)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 80)
+    var y = new Discord.RichEmbed()
+    .addField("L'arbre maudit grinça de son bras et vous balaya d'un mouvement grand mouvement lourd et lent", y)
+    .setColor("#217504")
+        if(result > 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#217504")
+    .addField("L'arbre maudit arrache un arbre du sol pour ensuite vous donner un violent coup avec", y)
+    .addField("Il en profite ensuite pour se regénérer", "15HP")
+    message.channel.sendMessage(y);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
 });
-
 
 
 
