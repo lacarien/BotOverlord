@@ -1129,10 +1129,9 @@ if(message.content === préfix + "Fuite") {
 }
 
 
-
-if(message.content === préfix + "Sergent Garde"){
+if(message.content === préfix + "Sergent garde"){
     var help_embed = new Discord.RichEmbed()
-    .setColor("#ff0000")
+    .setColor("#0800ff")
     .addField("Point de vie", "150")
     .addField("Attaque", "?SG attaque")
     .addField("Défense", "?SG défense")
@@ -1141,23 +1140,29 @@ if(message.content === préfix + "Sergent Garde"){
 }
 
 
-if(message.content === préfix + "Sergent garde"){
+if(message.content === préfix + "SG attaque"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(40));
-    var max = Math.floor(Math.max(60)); 
+    var max = Math.floor(Math.max(70)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var result = Math.floor((Math.random() * 100) + 1);
-        if(result < 80)
     var y = new Discord.RichEmbed()
-    .addField("L'arbre maudit grinça de son bras et vous balaya d'un mouvement grand mouvement lourd et lent", y)
-    .setColor("#217504")
-        if(result > 80)
-    var y = new Discord.RichEmbed()
-    .setColor("#217504")
-    .addField("L'arbre maudit arrache un arbre du sol pour ensuite vous donner un violent coup avec", y)
-    .addField("Il en profite ensuite pour se regénérer", "15HP")
+    .addField("Le sergent vous charges avec son fléau", y)
+    .setColor("#0800ff")
     message.channel.sendMessage(y);
 }
+
+
+if(message.content === préfix + "SG défense"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le sergent essaye de bloquer l'attaque", y)
+    .setColor("#0800ff")
+    message.channel.sendMessage(y);
+}
+
 
 
 
