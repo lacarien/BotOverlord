@@ -1205,7 +1205,7 @@ if(message.content === préfix + "Garde défense"){
 }
 
 
-if(message.content === préfix + "?Garde royaume") {
+if(message.content === préfix + "Garde royaume") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 40){
     var result = new Discord.RichEmbed() 
@@ -1236,6 +1236,21 @@ if(message.content === préfix + "?Garde royaume") {
         .setImage("https://cdn.discordapp.com/attachments/534758707561496580/540206929193205790/thumb-1920-405091.png")}
     
 
+    message.channel.send(result);
+
+}
+    
+
+if(message.content === préfix + "SOS") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 90)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Un garde arrive ?Garde royaume")
+    if(50 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setAuthor("Vous êtes seul...")
     message.channel.send(result);
 
 }
