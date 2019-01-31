@@ -1241,21 +1241,6 @@ if(message.content === préfix + "?Garde royaume") {
 }
 
 
-if(message.content === préfix + "Royaume SOS") {
-    var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 90)
-    var result = new Discord.RichEmbed() 
-    .setColor("#ff0000")
-    .setAuthor("Vous êtes seul...")
-    if( result > 90 )
-    var result = new Discord.RichEmbed() 
-    .setColor("#1fff00")
-    .setAuthor("Un garde arrive ?Garde royaume")
-    message.channel.send(result);
-
-}
-
-
 
 
 
