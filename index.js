@@ -1247,7 +1247,7 @@ if(message.content === préfix + "SOS") {
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
     .setAuthor("Un garde arrive ?Garde royaume")
-    if(50 < result)
+    if(90 < result)
     var result = new Discord.RichEmbed() 
     .setColor("#1fff00")
     .setAuthor("Vous êtes seul...")
