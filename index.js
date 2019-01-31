@@ -1123,11 +1123,11 @@ if(message.content === préfix + "Ciblage 7") {
 
 if(message.content === préfix + "Fuite") {
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 50)
+    if(result < 30)
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
     .setAuthor("Vous fuyez")
-    if(50 < result)
+    if(70 < result)
     var result = new Discord.RichEmbed() 
     .setColor("#1fff00")
     .setAuthor("La fuite est impossible")
