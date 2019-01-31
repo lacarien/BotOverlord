@@ -1127,7 +1127,7 @@ if(message.content === préfix + "Fuite") {
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
     .setAuthor("Vous fuyez")
-    if(70 < result)
+    if(30 < result)
     var result = new Discord.RichEmbed() 
     .setColor("#1fff00")
     .setAuthor("La fuite est impossible")
