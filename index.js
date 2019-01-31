@@ -418,8 +418,8 @@ client.on('message', message => {
 
     if(message.content === préfix + "Coup bas"){
         
-         var min = Math.floor(Math.min(20));
-        var max = Math.floor(Math.max(40)); 
+         var min = Math.floor(Math.min(15));
+        var max = Math.floor(Math.max(25)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous lui infligé un coup de dague impossible à bloquer. Vous perdez 40 de mana", y)
