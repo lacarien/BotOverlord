@@ -1204,25 +1204,8 @@ if(message.content === préfix + "Garde défense"){
     message.channel.sendMessage(y);
 }
 
-    
-    if(message.content === préfix + "Royaume SOS") {
-    var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 10)
-    var result = new Discord.RichEmbed() 
-    .setColor("#ff0000")
-    .setAuthor("Vous êtes seul....Aucun garde ne vous entends")
-    if(90 < result)
-    var result = new Discord.RichEmbed() 
-    .setColor("#1fff00")
-    .setAuthor("Un garde arrive, vous avez de la chance", "?Garde Royaume")
-    message.channel.send(result);
 
-}
-
-
-
-
-if(message.content === préfix + "Apparition marécage") {
+if(message.content === préfix + "?Garde royaume") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 40){
     var result = new Discord.RichEmbed() 
@@ -1258,8 +1241,19 @@ if(message.content === préfix + "Apparition marécage") {
 }
 
 
+if(message.content === préfix + "Royaume SOS") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 90)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Vous êtes seul...")
+    if( result > 90 )
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setAuthor("Un garde arrive ?Garde royaume")
+    message.channel.send(result);
 
-
+}
 
 
 
