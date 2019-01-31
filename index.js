@@ -1221,46 +1221,42 @@ if(message.content === préfix + "Garde défense"){
 
 
 
-if(message.content === préfix + "Garde Royaume") {
+
+if(message.content === préfix + "Apparition marécage") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 40){
     var result = new Discord.RichEmbed() 
-    .setColor("#0800ff")
     .setTitle("Garde Novice")
-    .setDescription("Ce petit garde est débutant et faible, il n'est pas une grande menace")
+    .setDescription("Un garde novice, il n'est pas un grand danger")
+    .setColor("#0800ff")
     .addField("Point de vie", "70")
     .addField("Attaque", "?GN attaque")
     .addField("Défense", "?GN défense")
-    .setImage("https://media.discordapp.net/attachments/534758707561496580/540249126890110976/image0.png?width=384&height=586")
-    }
+    .setImage("https://media.discordapp.net/attachments/534758707561496580/540249126890110976/image0.png?width=384&height=586")}
     else if(result < 90){
     var result = new Discord.RichEmbed() 
-    if(message.content === préfix + "Garde"){
-        var help_embed = new Discord.RichEmbed()
-        .setTitle("Garde")
-        .setDescription("Un garde lambda, il peut très vite être énervant, faite attention")
-        .setColor("#0800ff")
-        .addField("Point de vie", "100")
-        .addField("Attaque", "?Garde attaque")
-        .addField("Défense", "?Garde défense")
-        .setImage("https://www.gamewallpapers.com/wallpapers_slechte_compressie/01wallpapers/wallpaper_dark_souls_2_01_1920x1080.jpg")
-    }
-
-    }
-    else if(result < 101){
-    var result = new Discord.RichEmbed() 
+    .setTitle("Garde")
+    .setDescription("Un garde du Royaume")
     .setColor("#0800ff")
-    .setTitle("Sergent Garde")
-    .setDescription("Un grand garde...Qui fait de grand dégat...")
-    .addField("Point de vie", "150")
-    .addField("Attaque", "?SG attaque")
-    .addField("Défense", "?SG défense")
-    .setImage("https://cdn.discordapp.com/attachments/534758707561496580/540206929193205790/thumb-1920-405091.png")}
+    .addField("Point de vie", "100")
+    .addField("Attaque", "?Garde attaque")
+    .addField("Défense", "?Garde défense")
+    .setImage("https://www.gamewallpapers.com/wallpapers_slechte_compressie/01wallpapers/wallpaper_dark_souls_2_01_1920x1080.jpg")}
+    else if(result < 101){
+        var result = new Discord.RichEmbed() 
+        .setTitle("Garde Sergent")
+        .setDescription("Ce Garde est vraiment fort...Fuyez jeune voleur")
+        .setColor("#0800ff")
+        .addField("Point de vie", "150")
+        .addField("Attaque", "?SG attaque")
+        .addField("Défense", "?SG défense")
+        .setImage("https://cdn.discordapp.com/attachments/534758707561496580/540206929193205790/thumb-1920-405091.png")}
     
 
     message.channel.send(result);
 
 }
+
 
 
 
