@@ -202,8 +202,8 @@ client.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("#1a00ff")
         .addField("Paladin", "Vous gagnez en plus 100HP")
-        .addField("Gardien", "évolution du combattant à partir de ???")
-        .addField("Clerc", "évolution du combattant à partir de ???")
+        .addField("Gardien", "évolution du Paladin à partir de 30PC et d'une mise à l'épreuve...Inconnu...")
+        .addField("Clerc", "évolution du Paladin à partir de 30PC et d'une bénédiction...Inconnu")
         .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540955169005764671/Screenshot_2019-01-29-09-54-16-1.png")
         .setFooter("Menu du Combattant")
         message.channel.sendMessage(help_embed);
