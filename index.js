@@ -394,6 +394,16 @@ client.on('message', message => {
         message.channel.sendMessage(help_embed);
     }
 
+     if(message.content === préfix + "PC Paladin"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#1a00ff")
+        .setTitle("PC Paladin")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("20PC", "?Coup d'épée + 60 de mana + ?Blocage supérieure")
+        .addField("25PC", "?Provocation simple + ?Paladin ultime")
+        .addField("30PC", "Vous pouvez Clerc ou gardien")
+        message.channel.sendMessage(help_embed);
+    }
 
 
 
