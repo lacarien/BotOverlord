@@ -198,16 +198,17 @@ client.on('message', message => {
         message.channel.sendMessage(help_embed);
     }
 
-    if(message.content === préfix + "Paladin"){
+   if(message.content === préfix + "Paladin"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#1a00ff")
-        .addField("Paladin", "Vous avez 180HP en plus")
+        .addField("Paladin", "Vous gagnez en plus 100HP")
         .addField("Gardien", "évolution du combattant à partir de ???")
         .addField("Clerc", "évolution du combattant à partir de ???")
         .setImage("https://i.pinimg.com/736x/fc/fd/ba/fcfdba80b33336f4f04e5eb8510086d2--armor-concept-concept-art.jpg")
         .setFooter("Menu du Combattant")
         message.channel.sendMessage(help_embed);
     }
+
 
 
     if(message.content === préfix + "Ranger"){
