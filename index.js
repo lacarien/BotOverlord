@@ -204,7 +204,7 @@ client.on('message', message => {
         .addField("Paladin", "Vous gagnez en plus 100HP")
         .addField("Gardien", "évolution du combattant à partir de ???")
         .addField("Clerc", "évolution du combattant à partir de ???")
-        .setImage("https://i.pinimg.com/736x/fc/fd/ba/fcfdba80b33336f4f04e5eb8510086d2--armor-concept-concept-art.jpg")
+        .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540955169005764671/Screenshot_2019-01-29-09-54-16-1.png")
         .setFooter("Menu du Combattant")
         message.channel.sendMessage(help_embed);
     }
