@@ -237,7 +237,7 @@ client.on('message', message => {
     if(message.content === préfix + "Ranger"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#019521")
-        .addField("Ranger", "Vous êtes la classe qui fait le plus de dégats avec le ranger")
+        .addField("Ranger", "Vous êtes la classe qui fait le plus de dégats avec le voleur")
         .addField("Archer", "évolution du Ranger à partir de ???")
         .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/5/59/Overlord_EP07_015.png/revision/latest?cb=20150822091615")
         .setFooter("Menu Ranger")
