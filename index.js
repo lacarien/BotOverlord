@@ -243,10 +243,10 @@ client.on('message', message => {
         message.channel.sendMessage(help_embed);
     }
     
-      if(message.content === préfix + "Sorcier"){
+       if(message.content === préfix + "Sorcier"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00ffe7")
-        .addField("Mage", "Vous avez 20 de mana en plus et vous êtes la classe qui a le plus de mana et vous l'utilisez le plus souvent")
+        .addField("Sorcier", "Vous êtes un sorcier, vous avez beaucoup de mana mais par contre les HP...Pensez à ne pas la jouer solitaire")
         .addField("Nécromancien", "évolution du Sorcier à partir de 30PC  et d'un évènement...Inconnu")
         .addField("Grand Sorcier", "évolution du sorcier à partir de 30PC et d'un évènement....Inconnu")
         .addField("Prêtre", "évolution du sorcier à partir de 30PC et d'une bénédiction....Inconnu")
@@ -254,7 +254,7 @@ client.on('message', message => {
         .setFooter("Menu Sorcier")
         message.channel.sendMessage(help_embed);
     }
-
+    
     if(message.content === préfix + "Combats"){
         var help_embed = new Discord.RichEmbed()
         .addField("Les combats", "Après avoir créé votre personnage, vous aurez un nombre d'HP, un nombre d'attaque et un nombre de Mana. Le combat se déroule par du tour par tour, certaines compétences utilisent du mana, d'autre non et si jamais vous voulez attaquer vous devriez utiliser certaine commandes, il y a plein de coups différents qui se débloquent en fonction de votre level et de votre classe")
