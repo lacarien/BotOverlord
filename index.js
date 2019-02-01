@@ -208,6 +208,17 @@ client.on('message', message => {
         .setFooter("Menu du Paladin")
         message.channel.sendMessage(help_embed);
     }
+    
+    if(message.content === préfix + "Chevalier"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#1a00ff")
+        .addField("Chevalier", "Vous êtes un chevalier, ne faites pas attention à la vitalité du Paladin... Il perdra en puissance contrairement à vous  ")
+        .addField("Champion", "évolution du Chevalier à partir de 30PC et d'une mise à l'épreuve...Inconnu...")
+        .addField("Berserk", "évolution du Chevalier à partir de 30PC et d'une bénédiction...Inconnu")
+        .setImage("https://www.lequzhai.com/data/out/185/1104530.png")
+        .setFooter("Menu du Chevalier")
+        message.channel.sendMessage(help_embed);
+    }
 
 
 
