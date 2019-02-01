@@ -405,19 +405,28 @@ client.on('message', message => {
         message.channel.sendMessage(help_embed);
     }
 
-     if(message.content === préfix + "PC Paladin"){
+     
+    if(message.content === préfix + "PC Paladin"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#1a00ff")
         .setTitle("PC Paladin")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("20PC", "?Coup d'épée + 60 de mana + ?Blocage supérieure")
+        .addField("20PC", "?P Coup d'épée + 60 de mana + ?Blocage supérieure")
         .addField("25PC", "?Provocation simple + ?Paladin ultime")
         .addField("30PC", "Vous pouvez passer Clerc ou gardien")
         message.channel.sendMessage(help_embed);
     }
 
-
-
+    if(message.content === préfix + "PC Chevalier"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#1a00ff")
+        .setTitle("PC Chevalier")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("20PC", "?C Coup d'épée + ?Blocage amélioré + + ?Coup multiple")
+        .addField("25PC", "?Coup déstabilisant + ?Paladin ultime")
+        .addField("30PC", "Vous pouvez passer Berserk ou Champion")
+        message.channel.sendMessage(help_embed);
+    }
 
 
 
