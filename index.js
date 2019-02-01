@@ -451,9 +451,10 @@ client.on('message', message => {
         .addField("15PC", "?Sort simple + ?Blocage magique + ?Sort de soins")
         .addField("20PC", "?Tornade de flamme")
         .addField("25PC", " ?Sorcier ultime")
-        .addField("30PC", "Vous pouvez passer Berserk ou Champion")
+        .addField("30PC", "Vous pouvez passer Nécromancien, grand sorcier, ou prêtre")
         message.channel.sendMessage(help_embed);
     }
+
 
 
 
