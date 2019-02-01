@@ -205,7 +205,7 @@ client.on('message', message => {
         .addField("Gardien", "évolution du Paladin à partir de 30PC et d'une mise à l'épreuve...Inconnu...")
         .addField("Clerc", "évolution du Paladin à partir de 30PC et d'une bénédiction...Inconnu")
         .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540955169005764671/Screenshot_2019-01-29-09-54-16-1.png")
-        .setFooter("Menu du Combattant")
+        .setFooter("Menu du Paladin")
         message.channel.sendMessage(help_embed);
     }
 
