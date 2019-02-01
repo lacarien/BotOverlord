@@ -242,6 +242,18 @@ client.on('message', message => {
         .setFooter("Menu Mage")
         message.channel.sendMessage(help_embed);
     }
+    
+      if(message.content === préfix + "Sorcier"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00ffe7")
+        .addField("Mage", "Vous avez 20 de mana en plus et vous êtes la classe qui a le plus de mana et vous l'utilisez le plus souvent")
+        .addField("Nécromancien", "évolution du Sorcier à partir de 30PC  et d'un évènement...Inconnu")
+        .addField("Grand Sorcier", "évolution du sorcier à partir de 30PC et d'un évènement....Inconnu")
+        .addField("Prêtre", "évolution du sorcier à partir de 30PC et d'une bénédiction....Inconnu")
+        .setImage("https://media.discordapp.net/attachments/534758707561496580/540985871625748480/8a7f7af52ec8e3d4bb71482cfdb3fa1b.jpg?width=365&height=585")
+        .setFooter("Menu Sorcier")
+        message.channel.sendMessage(help_embed);
+    }
 
     if(message.content === préfix + "Combats"){
         var help_embed = new Discord.RichEmbed()
