@@ -401,7 +401,7 @@ client.on('message', message => {
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("20PC", "?Coup d'épée + 60 de mana + ?Blocage supérieure")
         .addField("25PC", "?Provocation simple + ?Paladin ultime")
-        .addField("30PC", "Vous pouvez Clerc ou gardien")
+        .addField("30PC", "Vous pouvez passer Clerc ou gardien")
         message.channel.sendMessage(help_embed);
     }
 
