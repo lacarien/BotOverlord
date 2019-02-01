@@ -243,6 +243,17 @@ client.on('message', message => {
         .setFooter("Menu Ranger")
         message.channel.sendMessage(help_embed);
     }
+    
+    if(message.content === préfix + "Archer"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#019521")
+        .addField("Ranger", "Vous êtes la classe qui fait le plus de dégats avec le ranger")
+        .addField("Grand Archer", "évolution du l'archer à partir de ???")
+        .addField("Classe Automaton", "évolution du l'archer à partir de ???, uniquement pour les Automatons")
+        .setImage("https://animeforums.net/uploads/monthly_2015_05/frame-1.jpg.b08b0dbda880aa8aa5892634662eac96.jpg")
+        .setFooter("Menu Ranger")
+        message.channel.sendMessage(help_embed);
+    }
 
     if(message.content === préfix + "Mage"){
         var help_embed = new Discord.RichEmbed()
