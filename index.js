@@ -186,6 +186,18 @@ client.on('message', message => {
         .setFooter("Menu du voleur")
         message.channel.sendMessage(help_embed);
     }
+    
+    if(message.content === préfix + "Assassin"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("Voleur", "Vous êtes la classe qui fait le plus de dégats avec le ranger")
+        .addField("Grand Assassin", "évolution de l'assassin à partir de 30PC")
+        .addField("Grand illusionist", "évolution de l'assassin à partir de 30PC")
+        .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540206387842514985/Screenshot_2019-01-29-09-55-06-1.png")
+        .setFooter("Menu de l'assassin")
+        message.channel.sendMessage(help_embed);
+    }
+
 
     if(message.content === préfix + "Combattant"){
         var help_embed = new Discord.RichEmbed()
