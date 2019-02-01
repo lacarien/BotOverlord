@@ -215,7 +215,7 @@ client.on('message', message => {
         .addField("Chevalier", "Vous êtes un chevalier, ne faites pas attention à la vitalité du Paladin... Il perdra en puissance contrairement à vous  ")
         .addField("Champion", "évolution du Chevalier à partir de 30PC et d'une mise à l'épreuve...Inconnu...")
         .addField("Berserk", "évolution du Chevalier à partir de 30PC et d'une bénédiction...Inconnu")
-        .setImage("https://www.lequzhai.com/data/out/185/1104530.png")
+        .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540975588173676579/1104530.png")
         .setFooter("Menu du Chevalier")
         message.channel.sendMessage(help_embed);
     }
@@ -422,7 +422,7 @@ client.on('message', message => {
         .setColor("#1a00ff")
         .setTitle("PC Chevalier")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("20PC", "?C Coup d'épée + ?Blocage amélioré + + ?Coup multiple")
+        .addField("20PC", "?C Coup d'épée + ?Blocage amélioré + ?Coup multiple")
         .addField("25PC", "?Coup déstabilisant + ?Paladin ultime")
         .addField("30PC", "Vous pouvez passer Berserk ou Champion")
         message.channel.sendMessage(help_embed);
