@@ -445,7 +445,7 @@ client.on('message', message => {
     
     if(message.content === préfix + "PC Sorcier"){
         var help_embed = new Discord.RichEmbed()
-        .setColor("#1a00ff")
+        .setColor("#00ffe7")
         .setTitle("PC Sorcier")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("15PC", "?Sort simple + ?Blocage magique + ?Sort de soins")
@@ -454,6 +454,24 @@ client.on('message', message => {
         .addField("30PC", "Vous pouvez passer Nécromancien, grand sorcier, ou prêtre")
         message.channel.sendMessage(help_embed);
     }
+
+
+    if(message.content === préfix + "PC Assassin"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .setTitle("PC Assassin")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("15PC", "?Coup de dague + ?Esquive")
+        .addField("20PC", "?Camouflage")
+        .addField("25PC", "?Assassin ultime")
+        .addField("30PC", "Vous pouvez passer Grand Assassin ou Grand illusionist ")
+        message.channel.sendMessage(help_embed);
+    }
+    
+    
+
+
+
 
 
 
