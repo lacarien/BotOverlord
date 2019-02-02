@@ -1517,7 +1517,19 @@ if(message.content === préfix + "GN défense"){
 
 
 
-
+if(message.content === préfix + "La flamme immortel"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("La flamme immortel")
+    .setDescription("La flamme immortel de son vrai nom Andraaz est ce qu'on pourrait appeler une légende voir un mythe inconnu aux yeux de beaucoup de monde, peu d'information réside à son sujet à pars qu'il serait capable de rivaliser avec les plus térrifiants des monstres ")
+    .addField("HP", "2000")
+    .addField("Attaque", "?FI Attaque")
+    .addField("Attaque si HP < 500 ", "FI Attaque puissante")
+    .addField("Défense", "FI Défense")
+    .addField("Defense si HP < 500", "FI Défense puissante")
+    .setImage("https://i.pinimg.com/originals/72/49/60/7249604e82aff98f8603f60833b00a26.jpg")
+    .setFooter("La Flamme immortel")
+    message.channel.sendMessage(help_embed);
+}
 
 
 
