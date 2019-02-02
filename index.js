@@ -701,6 +701,24 @@ client.on('message', message => {
         .addField("Vous executez un sort de base qui inflige du", w)
         message.channel.send(w);
     }
+    
+    if(message.content === préfix + "Sorcier ultime"){   
+        var min = Math.floor(Math.min(100));
+        var max = Math.floor(Math.max(150)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .addField("Negative burst ! (-120 de Mana)", y)
+        .setImage("https://media.giphy.com/media/8FSMNs8bir2lfkpg2u/giphy.gif")
+        message.channel.send(y);
+        var e = Math.floor(Math.min(40));
+        var a = Math.floor(Math.max(50)); 
+        var w = Math.floor(Math.random() * (a - e + 1) ) + e;
+        var w = new Discord.RichEmbed()
+        .setColor("#00f5ff")
+        .addField("Vous régénérez du Mana", w)
+        message.channel.send(w);
+    }
 
     if(message.content === préfix + "Cor du gobelin"){
         var min = Math.floor(Math.min(5));
