@@ -568,6 +568,16 @@ client.on('message', message => {
         .setImage("https://media.giphy.com/media/67uARzea7eiZ9P0U1I/giphy.gif")
         message.channel.send(y);
     }
+    
+    if(message.content === préfix + "Blocage magique"){
+        var min = Math.floor(Math.min(25));
+        var max = Math.floor(Math.max(35)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous executez un blocage magique et perdez 20 de Mana", y)
+        .setImage("https://media.giphy.com/media/67uARzea7eiZ9P0U1I/giphy.gif")
+        message.channel.send(y);
+    }
 
     
 
@@ -589,6 +599,16 @@ client.on('message', message => {
         var y = new Discord.RichEmbed()
         .addField("Vous envoyez un sort de bas rang", y)
         .setImage("https://media.giphy.com/media/lYfMRNGRIyOOQo9PKl/giphy.gif")
+        message.channel.send(y);
+    }
+    
+    if(message.content === préfix + "Sort simple"){
+        var min = Math.floor(Math.min(30));
+        var max = Math.floor(Math.max(50)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous envoyez un sort sur votre adversaire", y)
+        .setImage("https://media.giphy.com/media/2sgF179xV3fH9GW2mJ/giphy.gif")
         message.channel.send(y);
     }
 
