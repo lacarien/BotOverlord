@@ -557,6 +557,16 @@ client.on('message', message => {
         .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/7/71/Overlord_III_EP07_131.png/revision/latest/scale-to-width-down/640?cb=20180828050559")
         message.channel.send(y);
     }
+    
+    if(message.content === préfix + "Sort de soins"){
+        var min = Math.floor(Math.min(50));
+        var max = Math.floor(Math.max(70)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous soignez une personne au choix, ou bien vous. En contrepartie vous perdez 50 de mana", y)
+        .setImage("https://media.giphy.com/media/Bp4Iz5pItPXI3ErsAf/giphy.gif")
+        message.channel.send(y);
+    }
 
 
     if(message.content === préfix + "Blocage simple"){
