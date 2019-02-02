@@ -571,13 +571,14 @@ client.on('message', message => {
     
     if(message.content === préfix + "Blocage magique"){
         var min = Math.floor(Math.min(25));
-        var max = Math.floor(Math.max(35)); 
+        var max = Math.floor(Math.max(45)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous executez un blocage magique et perdez 20 de Mana", y)
-        .setImage("https://media.giphy.com/media/67uARzea7eiZ9P0U1I/giphy.gif")
+        .setImage("https://media.giphy.com/media/ljYCvFo7HtheECUT7U/giphy.gif")
         message.channel.send(y);
     }
+
 
     
 
