@@ -1,3 +1,16 @@
+    
+const Discord = require('discord.js');
+
+const client = new Discord.Client();
+
+var préfix = "?";
+
+client.login(process.env.TOKEN);
+
+
+client.on('message', message => {
+    
+    
     if(message.content === préfix + "Help"){
         var help_embed = new Discord.RichEmbed()
         .setTitle("Overlord")
