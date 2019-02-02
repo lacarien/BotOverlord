@@ -538,6 +538,16 @@ client.on('message', message => {
         .setImage("https://media.giphy.com/media/XptviXceQG8pjLZ0FD/giphy.gif")
         message.channel.send(y);
     }
+    
+    if(message.content === préfix + "Tornade de flamme"){
+        var min = Math.floor(Math.min(50));
+        var max = Math.floor(Math.max(80)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous envoyez un sort qui brule votre adversaire. Vous perdez 50 de mana", y)
+        .setImage("https://media.giphy.com/media/x49CbUokcHQZdaSyga/giphy.gif   ")
+        message.channel.send(y);
+    }
 
     if(message.content === préfix + "Tire rapide"){
         var min = Math.floor(Math.min(20));
@@ -622,6 +632,8 @@ client.on('message', message => {
         .setImage("https://media.giphy.com/media/2sgF179xV3fH9GW2mJ/giphy.gif")
         message.channel.send(y);
     }
+    
+    
 
 
     if(message.content === préfix + "Assassin ultime"){
