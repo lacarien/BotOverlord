@@ -555,6 +555,16 @@ client.on('message', message => {
         .addField("Vous tentez de lui envoyer une fleche rapide en direction de son torse, cherchant à viser un point vital. Vous perdez 30 de mana", y)
         message.channel.send(y);
     }
+    if(message.content === préfix + "Tir amélioré"){
+        var min = Math.floor(Math.min(45));
+        var max = Math.floor(Math.max(65)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous tirez une fleche puissante(-10 de Mana)", y)
+        .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
+        message.channel.send(y);
+    }
+
 
     if(message.content === préfix + "Soins de bas rang"){
         var min = Math.floor(Math.min(15));
