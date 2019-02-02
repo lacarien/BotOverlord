@@ -1355,6 +1355,20 @@ if(message.content === préfix + "Fuite") {
 
 }
 
+    
+    if(message.content === préfix + "Fuite amélioré") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 40)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Vous fuyez")
+    if(40 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setAuthor("La fuite est impossible")
+    message.channel.send(result);
+
+}
 
 if(message.content === préfix + "Sergent garde"){
     var help_embed = new Discord.RichEmbed()
