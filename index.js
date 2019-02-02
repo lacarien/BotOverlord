@@ -1463,6 +1463,30 @@ if(message.content === préfix + "SOS") {
     message.channel.send(result);
 
 }
+    
+    
+    if(message.content === préfix + "GN attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le garde donne un coup d'épée à l'horizontal", y)
+    .setColor("#0800ff")
+    message.channel.sendMessage(y);
+}
+
+
+if(message.content === préfix + "GN défense"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(15)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le garde donne un coup d'épée à l'horizontal", y)
+    .setColor("#0800ff")
+    message.channel.sendMessage(y);
+}
 
 
 
