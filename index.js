@@ -496,7 +496,7 @@ client.on('message', message => {
         .setColor("#019521")
         .setTitle("PC Archer")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Tire amélioré + ?Esquive simple + ?Blocage rapide")
+        .addField("15PC", "?Tir amélioré + ?Esquive simple + ?Blocage rapide")
         .addField("20PC", "?Fuite amélioré")
         .addField("25PC", "?Archer ultime")
         .addField("30PC", "Vous pouvez évoluer")
