@@ -598,6 +598,16 @@ client.on('message', message => {
         message.channel.send(y);
     }
     
+    if(message.content === préfix + "Blocage rapide"){
+        var min = Math.floor(Math.min(15));
+        var max = Math.floor(Math.max(25)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous executez un blocage rapide et réussisez à bloquer", y)
+        .setImage("https://cdn.discordapp.com/attachments/499161815549476864/541313060917215253/BDci.gif")
+        message.channel.send(y);
+    }
+    
     if(message.content === préfix + "Blocage magique"){
         var min = Math.floor(Math.min(25));
         var max = Math.floor(Math.max(45)); 
