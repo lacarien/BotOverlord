@@ -1528,6 +1528,7 @@ if(message.content === préfix + "La flamme immortel"){
     .addField("Defense si HP < 500", "FI Défense puissante")
     .setImage("https://i.pinimg.com/originals/72/49/60/7249604e82aff98f8603f60833b00a26.jpg")
     .setFooter("La Flamme immortel")
+    .setColor("#ff0000")
     message.channel.sendMessage(help_embed);
 }
 
