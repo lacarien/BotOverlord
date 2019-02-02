@@ -837,6 +837,23 @@ client.on('message', message => {
           
     }
     
+    
+    if(message.content === préfix + "Esquive simple") {
+        var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 40)
+        var result = new Discord.RichEmbed() 
+        .setColor("#00ff27")
+        .setTitle("Vous avez réussie à Esquiver et ne subisez aucun dégat")
+        .setImage("https://media.discordapp.net/attachments/499161815549476864/541310276104880129/esqive.gif")
+        if(40 < result)
+        var result = new Discord.RichEmbed() 
+        .setColor("#ff0000")
+        .setAuthor("Vous subisez tout les dégats")
+        message.channel.send(result);
+    
+    }
+    
+    
 
 
     
