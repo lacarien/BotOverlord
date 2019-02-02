@@ -365,7 +365,7 @@ client.on('message', message => {
         .setTitle("PC Lézard")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("10PC", "Vous obtenez la compétence ?écailles renforcées")
-        .addField("25PC", "Vous obtenez 300P")
+        .addField("25PC", "Vous obtenez 300HP")
         .addField("40PC", "Vous obtenez la compétence ?La survie ou la mort")
         message.channel.sendMessage(help_embed);
     }
