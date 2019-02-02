@@ -721,8 +721,8 @@ client.on('message', message => {
     }
 
     if(message.content === préfix + "Magic gun"){
-        var min = Math.floor(Math.min(60));
-        var max = Math.floor(Math.max(80)); 
+        var min = Math.floor(Math.min(50));
+        var max = Math.floor(Math.max(70)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
