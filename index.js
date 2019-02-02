@@ -701,8 +701,19 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous effectuez un tir parfait", y)
+        .addField("Vous effectuez un tir parfait(-80 de mana)", y)
         .setImage("https://media.giphy.com/media/uUl8lkfxMYLi5q9wp8/giphy.gif")
+        message.channel.send(y);
+    }
+    
+     if(message.content === préfix + "Archer ultime"){
+        var min = Math.floor(Math.min(150));
+        var max = Math.floor(Math.max(200)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#ff8b00")
+        .addField("Vous effectuez un tir plus que parfait (-150 de mana)", y)
+        .setImage("https://media.giphy.com/media/KYFj8oIWlhbH6wPwoK/giphy.gif")
         message.channel.send(y);
     }
 
@@ -730,7 +741,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#000000")
-        .addField("Negative burst ! (-120 de Mana)", y)
+        .addField("Negative burst ! (-150 de Mana)", y)
         .setImage("https://media.giphy.com/media/8FSMNs8bir2lfkpg2u/giphy.gif")
         message.channel.send(y);
         var e = Math.floor(Math.min(40));
