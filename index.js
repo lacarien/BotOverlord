@@ -777,24 +777,22 @@ client.on('message', message => {
     }
     
     if(message.content === préfix + "Chevalier ultime"){
+        var help_embed = new Discord.RichEmbed()
+        var min = Math.floor(Math.min(150));
+        var max = Math.floor(Math.max(200)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var result = Math.floor((Math.random() * 100) + 1);
-        if(result < 90)
-        var result = new Discord.RichEmbed
-        .setColor("#76ff00")
-        .addField("Vous étourdissez votre adversaire et il ne poura ni se défendre, ni attaquer au prochain tours", y)
-        if(result > 90)
-        var result = new Discord.RichEmbed
+            if(result < 90)
+        var y = new Discord.RichEmbed()
+        .addField("Vous lui infligez un coup violent et l'étourdisez pour le prochain tour, il ne pourra ni attaquer ni se défendre ", y)
         .setColor("#ff0000")
-        .addField("Cela est inutile", y)
-        message.channel.send(y);
-        var mins = Math.floor(Math.min(150));
-        var maxs = Math.floor(Math.max(200)); 
-        var l = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
-        var l = new Discord.RichEmbed()
-        .setColor("#ff8b00")
-        .addField("Vous executez un violent coup qui inflige", l)
         .setImage("https://66.media.tumblr.com/737f6cd176072287264517f7c6706005/tumblr_ntncw6Psi91qa94xto1_400.gif")
-        message.channel.send(l);
+            if(result > 90)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("Vous lui infligez de lours dégats", y)
+        .setImage("https://66.media.tumblr.com/737f6cd176072287264517f7c6706005/tumblr_ntncw6Psi91qa94xto1_400.gif")
+        message.channel.sendMessage(y);
     }
 
 
