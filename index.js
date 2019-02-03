@@ -537,8 +537,8 @@ client.on('message', message => {
     }
     
     if(message.content === préfix + "Tornade de flamme"){
-        var min = Math.floor(Math.min(50));
-        var max = Math.floor(Math.max(80)); 
+        var min = Math.floor(Math.min(150));
+        var max = Math.floor(Math.max(200)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous envoyez un sort qui brule votre adversaire. Vous perdez 50 de mana", y)
@@ -556,11 +556,11 @@ client.on('message', message => {
         message.channel.send(y);
     }
     if(message.content === préfix + "Tir amélioré"){
-        var min = Math.floor(Math.min(45));
-        var max = Math.floor(Math.max(65)); 
+        var min = Math.floor(Math.min(175));
+        var max = Math.floor(Math.max(200)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous tirez une fleche puissante(-10 de Mana)", y)
+        .addField("Vous tirez une fleche puissante(-80 de Mana)", y)
         .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
         message.channel.send(y);
     }
@@ -656,8 +656,8 @@ client.on('message', message => {
 
 
     if(message.content === préfix + "Assassin ultime"){
-        var min = Math.floor(Math.min(150));
-        var max = Math.floor(Math.max(200)); 
+        var min = Math.floor(Math.min(250));
+        var max = Math.floor(Math.max(300)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
@@ -707,8 +707,8 @@ client.on('message', message => {
     }
     
      if(message.content === préfix + "Archer ultime"){
-        var min = Math.floor(Math.min(150));
-        var max = Math.floor(Math.max(200)); 
+        var min = Math.floor(Math.min(250));
+        var max = Math.floor(Math.max(300)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
@@ -736,16 +736,16 @@ client.on('message', message => {
     }
     
     if(message.content === préfix + "Sorcier ultime"){   
-        var min = Math.floor(Math.min(100));
-        var max = Math.floor(Math.max(150)); 
+        var min = Math.floor(Math.min(200));
+        var max = Math.floor(Math.max(250)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#000000")
-        .addField("Negative burst ! (-150 de Mana)", y)
+        .addField("Negative burst ! (-200 de Mana)", y)
         .setImage("https://media.giphy.com/media/8FSMNs8bir2lfkpg2u/giphy.gif")
         message.channel.send(y);
-        var e = Math.floor(Math.min(40));
-        var a = Math.floor(Math.max(50)); 
+        var e = Math.floor(Math.min(60));
+        var a = Math.floor(Math.max(70)); 
         var w = Math.floor(Math.random() * (a - e + 1) ) + e;
         var w = new Discord.RichEmbed()
         .setColor("#00f5ff")
