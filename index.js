@@ -524,6 +524,26 @@ client.on('message', message => {
         .setImage("https://cdn.discordapp.com/attachments/534821670217711626/535086034459820042/Coup_depee.gif")
         message.channel.send(y);
     }
+    
+    if(message.content === préfix + "C Coup d'épée"){
+        var min = Math.floor(Math.min(35));
+        var max = Math.floor(Math.max(40)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous lui infligez un coup d'épée puissant qui inflige", y)
+        .setImage("https://cdn.discordapp.com/attachments/454694319396356128/541560314827898911/unknown.png")
+        message.channel.send(y);
+    }
+
+    if(message.content === préfix + "P Coup d'épée"){
+        var min = Math.floor(Math.min(30));
+        var max = Math.floor(Math.max(35)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous lui infligez un coup d'épée lent qui inflige", y)
+        .setImage("https://media.discordapp.net/attachments/454694319396356128/541558773291024408/unknown.png?width=1040&height=585")
+        message.channel.send(y);
+    }
 
     if(message.content === préfix + "Coup bas"){
         
@@ -605,6 +625,26 @@ client.on('message', message => {
         var y = new Discord.RichEmbed()
         .addField("Vous executez un blocage rapide et réussisez à bloquer", y)
         .setImage("https://cdn.discordapp.com/attachments/499161815549476864/541313060917215253/BDci.gif")
+        message.channel.send(y);
+    }
+    
+     if(message.content === préfix + "Blocage amélioré"){
+        var min = Math.floor(Math.min(30));
+        var max = Math.floor(Math.max(40)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous executez un blocage amélioré et réussisez à bloquer", y)
+        .setImage("https://cdn.discordapp.com/attachments/499161815549476864/541320949333622785/ezgif.com-gif-maker_3.gif")
+        message.channel.send(y);
+    }
+
+    if(message.content === préfix + "Blocage supérieure"){
+        var min = Math.floor(Math.min(40));
+        var max = Math.floor(Math.max(50)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous executez un blocage supérieure et réussisez à bloquer", y)
+        .setImage("https://media.discordapp.net/attachments/499161815549476864/541320990614093825/2530.gif")
         message.channel.send(y);
     }
     
