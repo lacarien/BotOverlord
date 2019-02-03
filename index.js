@@ -541,7 +541,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(200)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous envoyez un sort qui brule votre adversaire. Vous perdez 50 de mana", y)
+        .addField("Vous envoyez un sort qui brule votre adversaire. Vous perdez 80 de mana", y)
         .setImage("https://media.giphy.com/media/x49CbUokcHQZdaSyga/giphy.gif   ")
         .setColor("#e65e0d")
         message.channel.send(y);
@@ -560,7 +560,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(100)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous tirez une fleche puissante(-80 de Mana)", y)
+        .addField("Vous tirez une fleche puissante(-30 de Mana)", y)
         .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
         message.channel.send(y);
     }
