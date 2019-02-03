@@ -775,6 +775,28 @@ client.on('message', message => {
         .setImage("https://thumbs.gfycat.com/MintyConstantAnkole-size_restricted.gif")
         message.channel.send(l);
     }
+    
+    if(message.content === préfix + "Chevalier ultime"){
+        var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 90)
+        var result = new Discord.RichEmbed
+        .setColor("#76ff00")
+        .addField("Vous étourdissez votre adversaire et il ne poura ni se défendre, ni attaquer au prochain tours", y)
+        if(result > 90)
+        var result = new Discord.RichEmbed
+        .setColor("#ff0000")
+        .addField("Cela est inutile", y)
+        message.channel.send(y);
+        var mins = Math.floor(Math.min(150));
+        var maxs = Math.floor(Math.max(200)); 
+        var l = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var l = new Discord.RichEmbed()
+        .setColor("#ff8b00")
+        .addField("Vous executez un violent coup qui inflige", l)
+        .setImage("https://66.media.tumblr.com/737f6cd176072287264517f7c6706005/tumblr_ntncw6Psi91qa94xto1_400.gif")
+        message.channel.send(l);
+    }
+
 
     if(message.content === préfix + "Ranger ultime"){
         var min = Math.floor(Math.min(55));
