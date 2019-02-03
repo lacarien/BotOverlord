@@ -771,7 +771,7 @@ client.on('message', message => {
         var l = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var l = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous executez un violent coup qui inflige", l)
+        .addField("Vous executez un violent d'épée(-200 de Mana)", l)
         .setImage("https://thumbs.gfycat.com/MintyConstantAnkole-size_restricted.gif")
         message.channel.send(l);
     }
@@ -793,7 +793,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous effectuez un tir plus que parfait (-150 de mana)", y)
+        .addField("Vous effectuez un tir plus que parfait (-200 de mana)", y)
         .setImage("https://media.giphy.com/media/KYFj8oIWlhbH6wPwoK/giphy.gif")
         message.channel.send(y);
     }
