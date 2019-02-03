@@ -567,13 +567,23 @@ client.on('message', message => {
         message.channel.send(y);
     }
     
+    if(message.content === préfix + "Provocation simple"){
+        var min = Math.floor(Math.min(45));
+        var max = Math.floor(Math.max(60)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous faites saigner un seul ennemie et celui-ci est obligé de vous attaquer pendant le prochain tour(-50 de Mana)", y)
+        .setImage("https://images8.alphacoders.com/895/895034.png ")
+        message.channel.send(y);
+    }
+    
     if(message.content === préfix + "Coup multiple"){
         var min = Math.floor(Math.min(20));
         var max = Math.floor(Math.max(100)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#0046ff")
-        .addField("Vous enchainez de coups votre advèrsaire", y)
+        .addField("Vous enchainez de coups votre adversaire", y)
         .setImage("https://media.discordapp.net/attachments/534758707561496580/541557069506150420/Chevalier_Hish_Hish_lequipe_est_toka.gif ")
         message.channel.send(y);
     }
