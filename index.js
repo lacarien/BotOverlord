@@ -460,7 +460,7 @@ client.on('message', message => {
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("15PC", "?C Coup d'épée + ?Blocage amélioré ")
         .addField("20PC", "?Coup multiple")
-        .addField("25PC", "?Paladin ultime")
+        .addField("25PC", "?Chevalier ultime")
         .addField("30PC", "Vous pouvez passer Berserk ou Champion")
         message.channel.sendMessage(help_embed);
     }
@@ -1638,10 +1638,27 @@ if(message.content === préfix + "La flamme immortel"){
 
 
 
+/// EVENT
 
 
+if(message.content === préfix + "Potion ???"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#fffd00")
+    .addField("Utilisation", "Vous le serez en MP")
+    .addField("Information écrit sur la fiole", "Attention, elle est utilisable qu'une seule fois, personne ne peut savoir en avance ce qui se produira")
+    .setImage("http://img13.deviantart.net/af5c/i/2010/203/e/c/potion_by_markusthebarbarian.jpg")
+    message.channel.sendMessage(help_embed);
+}
 
 
+if(message.content === préfix + "Utilisation de la potion X001"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#fffd00")
+    .setTitle("Tu n'as qu'un seul chemin...Et il t'aportera au porte de la mort")
+    .setDescription("Vous êtes  recouvert d'une grande aura obscure, celle-ci vous fais un Bonus de X4 à votre prochaine attaque uniquement pendant un tours")
+    .setImage("https://i.ytimg.com/vi/uYZcXCT6Arw/maxresdefault.jpg")
+    message.channel.sendMessage(help_embed);
+}
 
 
 
