@@ -556,8 +556,8 @@ client.on('message', message => {
         message.channel.send(y);
     }
     if(message.content === préfix + "Tir amélioré"){
-        var min = Math.floor(Math.min(50));
-        var max = Math.floor(Math.max(60)); 
+        var min = Math.floor(Math.min(90));
+        var max = Math.floor(Math.max(100)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous tirez une fleche puissante(-80 de Mana)", y)
