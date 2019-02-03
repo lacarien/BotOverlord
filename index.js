@@ -757,6 +757,24 @@ client.on('message', message => {
         .setImage("https://cdn.discordapp.com/attachments/532644881588551683/535086945420967937/Combattant_ultime.gif")
         message.channel.send(l);
     }
+    
+    if(message.content === préfix + "Paladin ultime"){
+        var min = Math.floor(Math.min(100));
+        var max = Math.floor(Math.max(150)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#76ff00")
+        .addField("Vous régénérez", y)
+        message.channel.send(y);
+        var mins = Math.floor(Math.min(100));
+        var maxs = Math.floor(Math.max(80)); 
+        var l = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var l = new Discord.RichEmbed()
+        .setColor("#ff8b00")
+        .addField("Vous executez un violent coup qui inflige", l)
+        .setImage("https://thumbs.gfycat.com/MintyConstantAnkole-size_restricted.gif")
+        message.channel.send(l);
+    }
 
     if(message.content === préfix + "Ranger ultime"){
         var min = Math.floor(Math.min(55));
