@@ -784,13 +784,13 @@ client.on('message', message => {
         var result = Math.floor((Math.random() * 100) + 1);
             if(result < 90)
         var y = new Discord.RichEmbed()
-        .addField("Vous lui infligez un coup violent et l'étourdisez pour le prochain tour, il ne pourra ni attaquer ni se défendre ", y)
+        .addField("Vous lui infligez un coup violent et l'étourdisez pour le prochain tour, il ne pourra ni attaquer ni se défendre(-150 de mana) ", y)
         .setColor("#ff0000")
         .setImage("https://66.media.tumblr.com/737f6cd176072287264517f7c6706005/tumblr_ntncw6Psi91qa94xto1_400.gif")
             if(result > 90)
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
-        .addField("Vous lui infligez de lours dégats", y)
+        .addField("Vous lui infligez de lours dégats (-150 de mana)", y)
         .setImage("https://66.media.tumblr.com/737f6cd176072287264517f7c6706005/tumblr_ntncw6Psi91qa94xto1_400.gif")
         message.channel.sendMessage(y);
     }
