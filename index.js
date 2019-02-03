@@ -574,6 +574,7 @@ client.on('message', message => {
         var y = new Discord.RichEmbed()
         .addField("Vous faites saigner un seul ennemie et celui-ci est obligé de vous attaquer pendant le prochain tour(-50 de Mana)", y)
         .setImage("https://images8.alphacoders.com/895/895034.png ")
+        .setColor("#0819a5")
         message.channel.send(y);
     }
     
