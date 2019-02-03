@@ -1052,8 +1052,8 @@ if(message.content === préfix + "Lézard primitif défense"){
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 50)
 
-    var min = Math.floor(Math.min(50));
-    var max = Math.floor(Math.max(100)); 
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(40)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#217504")
@@ -1062,7 +1062,7 @@ if(message.content === préfix + "Lézard primitif défense"){
     if(result > 50)
 
     var min = Math.floor(Math.min(20));
-    var max = Math.floor(Math.max(40)); 
+    var max = Math.floor(Math.max(30)); 
     var x = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = new Discord.RichEmbed()
     .setColor("#217504")
@@ -1395,8 +1395,8 @@ if(message.content === préfix + "SG attaque"){
 
 if(message.content === préfix + "SG défense"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(30));
-    var max = Math.floor(Math.max(40)); 
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(30)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Le sergent essaye de bloquer l'attaque", y)
@@ -1429,8 +1429,8 @@ if(message.content === préfix + "Garde attaque"){
 
 if(message.content === préfix + "Garde défense"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(20));
-    var max = Math.floor(Math.max(30)); 
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(20)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Le garde donne un coup d'épée à l'horizontal", y)
