@@ -827,8 +827,8 @@ client.on('message', message => {
         .addField("Vous régénérez du Mana", y)
         .setImage("https://media.giphy.com/media/Bp4Iz5pItPXI3ErsAf/giphy.gif")
         message.channel.send(y);
-        var mins = Math.floor(Math.min(20));
-        var maxs = Math.floor(Math.max(40)); 
+        var mins = Math.floor(Math.min(35));
+        var maxs = Math.floor(Math.max(45)); 
         var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var w = new Discord.RichEmbed() 
         .setColor("#ff8b00")
