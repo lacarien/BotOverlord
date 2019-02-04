@@ -556,6 +556,24 @@ client.on('message', message => {
         message.channel.send(y);
     }
     
+    
+     if(message.content === préfix + "Coup de dague"){
+        
+        var min = Math.floor(Math.min(45));
+       var max = Math.floor(Math.max(70)); 
+       var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+       if(result < 90)
+       var y = new Discord.RichEmbed()
+       .addField("Vous lui infligé un coup de dague rapide et lui infligé", y)
+       .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/b/ba/Overlord_II_EP06_097.png/revision/latest?cb=20180216051904")
+       if(result < 90)
+       var y = new Discord.RichEmbed()
+       .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup", y)
+       .setImage("https://i.ytimg.com/vi/mmUlK_FAJqI/maxresdefault.jpg")
+       message.channel.send(y);
+   }
+
+    
     if(message.content === préfix + "Tornade de flamme"){
         var min = Math.floor(Math.min(150));
         var max = Math.floor(Math.max(200)); 
@@ -975,14 +993,21 @@ client.on('message', message => {
     
     }
     
+   
+  if(message.content === préfix + "Esquive") {
+        var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 60)
+        var result = new Discord.RichEmbed() 
+        .setColor("#00ff27")
+        .setTitle("Votre esquive est réussie, mais attention...Ne prenez pas trop la confiance")
+        .setImage("https://cdn.discordapp.com/attachments/456251076253843456/541951693328220160/Screenshot_20190204-130104_Netflix.jpg")
+        if(60 < result)
+        var result = new Discord.RichEmbed() 
+        .setColor("#ff0000")
+        .setAuthor("Vous subisez tout les dégats, sa fait mal...")
+        message.channel.send(result);
     
-
-
-    
-    
-
-
-
+    }
 
 }
 
