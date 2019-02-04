@@ -562,6 +562,7 @@ client.on('message', message => {
         var min = Math.floor(Math.min(45));
        var max = Math.floor(Math.max(70)); 
        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+          var result = Math.floor((Math.random() * 100) +1);
        if(result < 90)
        var y = new Discord.RichEmbed()
        .addField("Vous lui infligé un coup de dague rapide et lui infligé", y)
