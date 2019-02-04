@@ -567,7 +567,7 @@ client.on('message', message => {
        .addField("Vous lui infligé un coup de dague rapide et lui infligé", y)
        .setColor("#ff6000")
        .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/b/ba/Overlord_II_EP06_097.png/revision/latest?cb=20180216051904")
-       if(result < 90)
+       if(result > 90)
        var y = new Discord.RichEmbed()
        .setColor("#ff6000")
        .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup", y)
