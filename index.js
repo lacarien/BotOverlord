@@ -565,9 +565,11 @@ client.on('message', message => {
        if(result < 90)
        var y = new Discord.RichEmbed()
        .addField("Vous lui infligé un coup de dague rapide et lui infligé", y)
+       .setColor("#ff6000")
        .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/b/ba/Overlord_II_EP06_097.png/revision/latest?cb=20180216051904")
        if(result < 90)
        var y = new Discord.RichEmbed()
+       .setColor("#ff6000")
        .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup", y)
        .setImage("https://i.ytimg.com/vi/mmUlK_FAJqI/maxresdefault.jpg")
        message.channel.send(y);
@@ -576,7 +578,7 @@ client.on('message', message => {
     
     if(message.content === préfix + "Camouflage"){
     var help_embed = new Discord.RichEmbed()
-    .setColor("#1a00ff")
+    .setColor("#000000")
     .setTitle("Vous vous disimulez dans l'obscurité petit à petit...(-80Mana)")
     .setDescription("Pendant 3 tours grand max, personne ne peus vous attaquer. Si vous attaquez votre coup sera doublé uniquement pendant votre temps d'action")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/2/24/SAO_E06.png/revision/latest?cb=20140328034307")
