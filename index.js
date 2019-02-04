@@ -1701,9 +1701,67 @@ if(message.content === préfix + "Utilisation de la potion X001"){
 
 
 
+/// ZONE DE GLACE
+/// ZONE DE GLACE
+    /// ZONE DE GLACE
+    
+  
+
+if(message.content === préfix + "Golem de glace"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Golem de glace")
+    .setColor("#00ffef")
+    .addField("Point de vie", "600")
+    .addField("Attaque", "?Golem attaque")
+    .addField("Spécial", "Quand HP<300. Utilisation de ?Blizzard")
+    .addField("Défense", "?Golem défense")
+    .setImage("https://cdn.discordapp.com/attachments/499161815549476864/541891888022552597/9eee440ed789d3b076d0377479c460f7.jpg")
+    message.channel.sendMessage(help_embed);
+}
 
 
 
+
+
+if(message.content === préfix + "Golem attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(60)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 30)
+    var y = new Discord.RichEmbed()
+    .addField("Le Golem manqua de vitesse et n'a pas réussie à vous toucher")
+        if(result > 30)
+    var y = new Discord.RichEmbed()
+    .setColor("#00ffef")
+    .addField("Le Golem vous éclates au sol, profitez-en pour manger la neige", y)
+    message.channel.sendMessage(y);
+}
+
+
+
+if(message.content === préfix + "Golem défense"){
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(60)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le Golem n'avait pas besoin de se défendre... Sa couverture de glace était déjà bien résistante", y)
+    .setColor("#00ffef")
+    message.channel.send(y);
+}
+
+
+
+
+if(message.content === préfix + "Blizzard"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Blizzard~~")
+    .setDescription("Le golem de glace hurle d'une voix roque et une tempête de neige apparait autour de lui, tous les dégats qu'il subira seront maintenant divisé par 2")
+    .setColor("#00ffef")
+    .setImage("https://cdn.discordapp.com/attachments/499161815549476864/541891888022552597/9eee440ed789d3b076d0377479c460f7.jpg")
+    message.channel.sendMessage(help_embed);
+}
 
 
 
