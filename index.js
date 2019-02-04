@@ -572,6 +572,17 @@ client.on('message', message => {
        .setImage("https://i.ytimg.com/vi/mmUlK_FAJqI/maxresdefault.jpg")
        message.channel.send(y);
    }
+    
+    
+    if(message.content === préfix + "Camouflage"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .setTitle("Vous vous disimulez dans l'obscurité petit à petit...(-80Mana)")
+    .setDescription("Pendant 3 tours grand max, personne ne peus vous attaquer. Si vous attaquez votre coup sera doublé uniquement pendant votre temps d'action")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/2/24/SAO_E06.png/revision/latest?cb=20140328034307")
+    message.channel.sendMessage(help_embed);
+}
+  
 
     
     if(message.content === préfix + "Tornade de flamme"){
