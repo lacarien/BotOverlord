@@ -1731,7 +1731,7 @@ if(message.content === préfix + "Golem attaque"){
     var result = Math.floor((Math.random() * 100) + 1);
         if(result < 30)
     var y = new Discord.RichEmbed()
-    .addField("Le Golem manqua de vitesse et n'a pas réussie à vous toucher")
+    .addField("Echec", "Le Golem manqua de vitesse et n'a pas réussie à vous toucher")
         if(result > 30)
     var y = new Discord.RichEmbed()
     .setColor("#00ffef")
