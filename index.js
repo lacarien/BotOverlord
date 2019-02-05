@@ -266,6 +266,16 @@ client.on('message', message => {
         message.channel.sendMessage(help_embed);
     }
     
+    if(message.content === préfix + "Druid"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00ffe7")
+        .addField("Druid", "Vous gagnez 30 de Mana")
+        .addField("Grand Druid", "évolution du Druid à partir de ???")
+        .setImage("https://images.alphacoders.com/767/thumb-350-767907.jpg")
+        .setFooter("Menu Druid")
+        message.channel.sendMessage(help_embed);
+    }
+    
        if(message.content === préfix + "Sorcier"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00ffe7")
