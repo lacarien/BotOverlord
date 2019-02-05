@@ -1719,7 +1719,7 @@ if(message.content === préfix + "FI défense"){
     var y = Math.floor(Math.floor(y) * 2)
         if(result < 80)
     var y = new Discord.RichEmbed()
-    .addField("Andraaz fit une parade, il reçoit aucun dégats, et vous renvoie la moitié que vous lui avez infligez, impossible de bloquer", y)
+    .addField("Parade infernal", "Andraaz fit une parade, il reçoit aucun dégats, et vous renvoie la moitié que vous lui avez infligez, impossible de bloquer")
     .setImage("https://www.wallpaperup.com/uploads/wallpapers/2018/03/17/1230961/bf3607bb70b902ac87145fd98bfda0c1-700.jpg")
     .setColor("#ff0000")
         else
