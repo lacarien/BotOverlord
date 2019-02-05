@@ -1684,6 +1684,50 @@ if(message.content === préfix + "La flamme immortel"){
     message.channel.sendMessage(help_embed);
 }
 
+    
+    
+if(message.content === préfix + "FI attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(70));
+    var max = Math.floor(Math.max(100)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 50)
+    var y = Math.floor(Math.floor(y) * 2)
+        if(result < 50)
+    var y = new Discord.RichEmbed()
+    .addField("Andraaz fit des petits pas jusqu'à accélerer le rythme et bondir sur son ennemi", y)
+    .setColor("#fb6f00")
+        else
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .addField("Andraaz se lança dans la mêlé, aucune crainte, aucune peur, il était sans pitié...", y)
+    .setImage("https://i.pinimg.com/originals/37/d2/92/37d2925f057f102cb496a2eda94cf19f.gif")
+    message.channel.sendMessage(y);
+}
+
+
+
+
+if(message.content === préfix + "FI défense"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(60));
+    var max = Math.floor(Math.max(100)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 80)
+    var y = Math.floor(Math.floor(y) * 2)
+        if(result < 80)
+    var y = new Discord.RichEmbed()
+    .addField("Andraaz fit une parade, il reçoit aucun dégats, et vous renvoie la moitié que vous lui avez infligez, impossible de bloquer", y)
+    .setImage("https://www.wallpaperup.com/uploads/wallpapers/2018/03/17/1230961/bf3607bb70b902ac87145fd98bfda0c1-700.jpg")
+    .setColor("#ff0000")
+        else
+    var y = new Discord.RichEmbed()
+    .setColor("#fb6f00")
+    .addField("Andraaz bloque l'attaque avec son épée de flamme", y)
+    message.channel.sendMessage(y);
+}
 
 
 
