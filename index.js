@@ -983,13 +983,15 @@ client.on('message', message => {
           
     }
 
-    if(message.content === préfix + "Sainte bénédiction "){
+       if(message.content === préfix + "Sainte bénédiction"){
         var y = new Discord.RichEmbed()
         .setColor("#ffffff")
-        .setAuthor("Vous vous mettez à genoux et priez pour votre dieu, une douce lumière vient vous éclairer et vous confères une zone autour de vous infranchissable pendant 30minutes. Attention, si vous recevez plus de 150 de dégats alors votre zone de protection sera détruite")
+        .setImage("http://mask-tub-et-brush.m.a.pic.centerblog.net/o/308ebfe7.png")
+        .setAuthor("Une lumière vous enveloppes et vous fais disparaître juste avant de subir le coup, vous réapparaissez juste après")
         message.channel.sendMessage(y);
           
     }
+
     
     
     if(message.content === préfix + "Esquive simple") {
