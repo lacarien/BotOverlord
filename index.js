@@ -1908,6 +1908,38 @@ if(message.content === préfix + "Gobellin défense") {
     message.channel.send(result);
 
 }
+if(message.content === préfix + "Géant de la forêt"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Géant de la forêt")
+    .setColor("#038913")
+    .addField("Point de vie", "2000HP")
+    .addField("Attaque", "?Géant attaque")
+    .addField("Défense", "Le géant n'a pas de défense")
+    .setImage("https://i.pinimg.com/originals/37/e1/4a/37e14ac75bfb201334042027242b6d21.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "Géant attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(125));
+    var max = Math.floor(Math.max(200)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 35)
+    var y = Math.floor(Math.floor(y) * 0.5)
+        if(result >  35)
+    var y = new Discord.RichEmbed()
+    .addField("Le Géant hurla avant de s'acharner sur vous", y)
+    .setColor("#9f0000")
+    .setImage("https://nerdblogdotcom.files.wordpress.com/2013/06/borborygmos-enraged.jpg")
+        else
+    var y = new Discord.RichEmbed()
+    .setColor("#4e8b27")
+    .addField("Le géant vous donnes un gros coup de pied vous envoyez valser en l'air jusqu'à que vous retombiez comme un déchêt sur la terre ferme", y)
+    message.channel.sendMessage(y);
+}
+
 
 
   
