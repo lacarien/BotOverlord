@@ -645,7 +645,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(80)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous tirez une fleche puissante(-30 de Mana)", y)
+        .addField("Vous tirez une fleche puissante(-20 de Mana)", y)
         .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
         message.channel.send(y);
     }
