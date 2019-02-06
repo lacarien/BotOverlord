@@ -1863,6 +1863,15 @@ if(message.content === préfix + "Chouette attaque"){
 }
 
 
+if(message.content === préfix + "Chouette défense"){
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("La chouette fait un bond en arrière, essayant d'éviter le coup", y)
+    .setColor("#048502")
+    message.channel.send(y);
+}
 
 
   
