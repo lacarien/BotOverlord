@@ -1873,6 +1873,42 @@ if(message.content === préfix + "Chouette défense"){
     message.channel.send(y);
 }
 
+    
+    if(message.content === préfix + "Gobellin primitif"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Gobellin primitif")
+    .setColor("#048502")
+    .addField("Point de vie", "40HP")
+    .addField("Attaque", "?Gobellin attaque")
+    .addField("Défense", "?Gobelin défense")
+    .setImage("https://media.discordapp.net/attachments/499161815549476864/541890154244341760/Reta.jpg?width=559&height=586")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Gobellin attaque"){
+    var min = Math.floor(Math.min(1));
+    var max = Math.floor(Math.max(15)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#4e8b27")
+    .addField("Le Gobellin vous place un petit coup de dague, cela ne fait aucun dégât, néanmoins chaque tour vous subirez. L'effet est cumulable"  , y)
+    message.channel.send(y);
+}
+if(message.content === préfix + "Gobellin défense") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 70)
+    var result = new Discord.RichEmbed() 
+    .setColor("#00ff27")
+    .setTitle("Le Gobellin se prend 0 Coups")
+    .setImage("https://i.ytimg.com/vi/mOPsIiE5ICw/maxresdefault.jpg")
+    if(70 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Le Gobellin subit tout les dégâts")
+    message.channel.send(result);
+
+}
+
 
   
 });
