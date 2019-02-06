@@ -1890,7 +1890,7 @@ if(message.content === préfix + "Gobellin attaque"){
     var max = Math.floor(Math.max(15)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
-    .setColor("#4e8b27")
+    .setColor("#048502")
     .addField("Le Gobellin vous place un petit coup de dague, cela ne fait aucun dégât, néanmoins chaque tour vous subirez. L'effet est cumulable"  , y)
     message.channel.send(y);
 }
