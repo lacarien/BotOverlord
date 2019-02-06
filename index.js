@@ -1864,8 +1864,8 @@ if(message.content === préfix + "Chouette attaque"){
 
 
 if(message.content === préfix + "Chouette défense"){
-    var min = Math.floor(Math.min(30));
-    var max = Math.floor(Math.max(40)); 
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(30)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("La chouette fait un bond en arrière, essayant d'éviter le coup", y)
@@ -1930,13 +1930,15 @@ if(message.content === préfix + "Géant attaque"){
     var y = Math.floor(Math.floor(y) * 0.5)
         if(result >  35)
     var y = new Discord.RichEmbed()
-    .addField("Le Géant hurla avant de s'acharner sur vous", y)
-    .setColor("#9f0000")
-    .setImage("https://nerdblogdotcom.files.wordpress.com/2013/06/borborygmos-enraged.jpg")
+    
+        .setColor("#4e8b27")
+    .addField("Le géant vous donnes un gros coup de pied vous envoyez valser en l'air jusqu'à que vous retombiez comme un déchêt sur la terre ferme", y)
         else
     var y = new Discord.RichEmbed()
-    .setColor("#4e8b27")
-    .addField("Le géant vous donnes un gros coup de pied vous envoyez valser en l'air jusqu'à que vous retombiez comme un déchêt sur la terre ferme", y)
+.setColor("#9f0000")
+        .addField("Le Géant hurla avant de s'acharner sur vous", y)
+.setImage("https://nerdblogdotcom.files.wordpress.com/2013/06/borborygmos-enraged.jpg")
+    
     message.channel.sendMessage(y);
 }
 
