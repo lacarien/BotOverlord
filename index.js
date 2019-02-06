@@ -1983,6 +1983,42 @@ if(message.content === préfix + "Apparition forêt") {
 
 }
   
+    
+  if(message.content === préfix + "Régénération de mana du Sorcier"){
+    var min = Math.floor(Math.min(250));
+    var max = Math.floor(Math.max(300)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#00fdff")
+    .addField("Vous rénérez du mana hors combat et vous recevez", y)
+    message.channel.send(y);
+      
+}
+
+if(message.content === préfix + "Régénération de mana de l'Archer"){
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(200)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#00fdff")
+    .addField("Vous rénérez du mana hors combat et vous recevez", y)
+    message.channel.send(y);
+      
+}
+
+
+if(message.content === préfix + "Soins de la nature"){
+    var y = new Discord.RichEmbed()
+    .setColor("#1fff00")
+    .addField("Vous rénérez 50% de votre santé graçe à la nature qui vous entoures", y)
+    .setImage("https://www.homewallmurals.co.uk/ekmps/shops/allwallpapers/images/vlies-wallpaper-mural-green-forest-10112-[2]-27940-p.jpg")
+    message.channel.send(y);
+      
+}  
+    
+    
+    
+    
 });
 
 
