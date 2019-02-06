@@ -1874,37 +1874,37 @@ if(message.content === préfix + "Chouette défense"){
 }
 
     
-    if(message.content === préfix + "Gobellin primitif"){
+    if(message.content === préfix + "Gobelin primitif"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("Gobellin primitif")
     .setColor("#048502")
     .addField("Point de vie", "40HP")
-    .addField("Attaque", "?Gobellin attaque")
+    .addField("Attaque", "?Gobelin attaque")
     .addField("Défense", "?Gobelin défense")
     .setImage("https://media.discordapp.net/attachments/499161815549476864/541890154244341760/Reta.jpg?width=559&height=586")
     message.channel.sendMessage(help_embed);
 }
 
-if(message.content === préfix + "Gobellin attaque"){
+if(message.content === préfix + "Gobelin attaque"){
     var min = Math.floor(Math.min(1));
     var max = Math.floor(Math.max(15)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#048502")
-    .addField("Le Gobellin vous place un petit coup de dague, cela ne fait aucun dégât, néanmoins chaque tour vous subirez. L'effet est cumulable"  , y)
+    .addField("Le Gobelin vous place un petit coup de dague, cela ne fait aucun dégât, néanmoins chaque tour vous subirez. L'effet est cumulable"  , y)
     message.channel.send(y);
 }
-if(message.content === préfix + "Gobellin défense") {
+if(message.content === préfix + "Gobelin défense") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 70)
     var result = new Discord.RichEmbed() 
     .setColor("#00ff27")
-    .setTitle("Le Gobellin se prend 0 Coups")
+    .setTitle("Le Gobelin se prend 0 Coups")
     .setImage("https://i.ytimg.com/vi/mOPsIiE5ICw/maxresdefault.jpg")
     if(70 < result)
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
-    .setAuthor("Le Gobellin subit tout les dégâts")
+    .setAuthor("Le Gobelin subit tout les dégâts")
     message.channel.send(result);
 
 }
@@ -1942,6 +1942,44 @@ if(message.content === préfix + "Géant attaque"){
 
 
 
+if(message.content === préfix + "Apparition forêt") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 60){{
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Gobelin primitif")
+    .setColor("#048502")
+    .addField("Point de vie", "40HP")
+    .addField("Attaque", "?Gobelin attaque")
+    .addField("Défense", "?Gobelin défense")
+    .setImage("https://media.discordapp.net/attachments/499161815549476864/541890154244341760/Reta.jpg?width=559&height=586")
+    message.channel.sendMessage(help_embed);
+}}
+    else if(result < 90){
+{
+        var help_embed = new Discord.RichEmbed()
+        .setTitle("Chouette du vent")
+        .setColor("#048502")
+        .addField("Point de vie", "500HP")
+        .addField("Attaque", "?Chouette attaque")
+        .addField("Défense", "?Chouette défense")
+        .setImage("https://media.discordapp.net/attachments/456251076253843456/541740554078257154/l1hi7um1wtl01.png?width=586&height=586")
+        message.channel.sendMessage(help_embed);
+    }}
+    else if(result < 101){
+    {
+        var help_embed = new Discord.RichEmbed()
+        .setTitle("Géant de la forêt")
+        .setColor("#038913")
+        .addField("Point de vie", "2000HP")
+        .addField("Attaque", "?Géant attaque")
+        .addField("Défense", "Le géant n'a pas de défense")
+        .setImage("https://i.pinimg.com/originals/37/e1/4a/37e14ac75bfb201334042027242b6d21.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+    }
+    message.channel.send(result);
+
+}
   
 });
 
