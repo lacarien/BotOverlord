@@ -1821,8 +1821,46 @@ if(message.content === préfix + "Blizzard"){
 
 
 
+/// FORET
+/// FORET
+    ///FORET
+    ///FORET
+    ///FORET
 
 
+
+if(message.content === préfix + "Chouette du vent"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Chouette du vent")
+    .setColor("#048502")
+    .addField("Point de vie", "500HP")
+    .addField("Attaque", "?Chouette attaque")
+    .addField("Défense", "?Chouette défense")
+    .setImage("https://media.discordapp.net/attachments/456251076253843456/541740554078257154/l1hi7um1wtl01.png?width=586&height=586")
+    message.channel.sendMessage(help_embed);
+}
+
+
+
+if(message.content === préfix + "Chouette attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 30)
+    var y = Math.floor(Math.floor(y) * 0.8)
+        if(result >  30)
+    var y = new Discord.RichEmbed()
+    .addField("La chouette vous envoies des micros tornades", y)
+    .setColor("#048502")
+        else
+    var y = new Discord.RichEmbed()
+    .setColor("#026500")
+    .addField("La Chouette vous lances un disque de vent qui vous empecheras de bloquer au prochain tour", y)
+    .setImage("https://media.discordapp.net/attachments/456251076253843456/542739372689326090/Shrike-combat-PAXEast-screenshots-dauntless-1.png?width=1041&height=586")
+    message.channel.sendMessage(y);
+}
 
 
 
