@@ -960,6 +960,24 @@ client.on('message', message => {
         .addField("Vous régénérez du Mana", w)
         message.channel.send(w);
     }
+    
+    if(message.content === préfix + "Druid ultime"){   
+        var min = Math.floor(Math.min(70));
+        var max = Math.floor(Math.max(130)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .addField("Fait apparaitre un Ours inoffensif qui se fera tout le temps attaquer en priorité au bout du 3eme tours par les mobs et il a un grand nombre d'HP", y)
+        .setImage("https://media.discordapp.net/attachments/536292650698014731/543167288967168056/Bears_Magical_animals_475039_2048x1536.jpg?width=780&height=585")
+        message.channel.send(y);
+        var e = Math.floor(Math.min(40));
+        var a = Math.floor(Math.max(70)); 
+        var w = Math.floor(Math.random() * (a - e + 1) ) + e;
+        var w = new Discord.RichEmbed()
+        .setColor("#00f5ff")
+        .addField("L'ours polaire feras gagner à un des membres du groupe un certain nombre d'HP", w)
+        message.channel.send(w);
+    }
 
     if(message.content === préfix + "Cor du gobelin"){
         var min = Math.floor(Math.min(5));
