@@ -802,6 +802,15 @@ client.on('message', message => {
         message.channel.send(y);
     }
     
+    if(message.content === préfix + "Sort naturel"){
+        var min = Math.floor(Math.min(30));
+        var max = Math.floor(Math.max(40)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous attaquez votre adversaire en faisant apparaitre temporaire une tentacule d'épine qui vient frapper ce dernier", y)
+        message.channel.send(y);
+    }
+    
     
 
 
