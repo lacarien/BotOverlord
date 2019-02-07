@@ -410,7 +410,7 @@ client.on('message', message => {
         .addField("15PC", "?Soins de Druid + ?Sort naturel + ?Blocage naturel")
         .addField("20PC", "?Druid ultime")
         .addField("25PC", "Vous pouvez devenir grand Druid")
-        .setImage("https://images.alphacoders.com/767/thumb-350-767907.jpg")
+       
         .setFooter("Menu Druid")
         message.channel.sendMessage(help_embed);
     }
