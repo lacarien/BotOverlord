@@ -405,7 +405,7 @@ client.on('message', message => {
     
     if(message.content === préfix + "PC Druid"){
         var help_embed = new Discord.RichEmbed()
-        .setColor("#00ffe7")
+        .setColor("#00ff75")
         .addField("PC Druid", "Voici ce que vous pourrez gagner à chaque étape")
         .addField("15PC", "?Soins de Druid + ?Sort naturel + ?Blocage naturel")
         .addField("20PC", "?Druid ultime")
