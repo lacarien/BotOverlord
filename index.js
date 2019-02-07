@@ -705,6 +705,16 @@ client.on('message', message => {
         .setColor("#20d916")
         message.channel.send(y);
     }
+    
+    if(message.content === préfix + "Soins de Druid"){
+        var min = Math.floor(Math.min(80));
+        var max = Math.floor(Math.max(120)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous soignez une personne au choix, ou bien vous même grâce à la nature qui vous entoures. En contrepartie vous perdez 60 de mana", y)
+        .setImage("http://pre00.deviantart.net/5483/th/pre/f/2015/310/6/f/forest___swamp_druid_by_night2-d9cll9w.jpg")
+        message.channel.send(y);
+    }
 
 
     if(message.content === préfix + "Blocage simple"){
