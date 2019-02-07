@@ -767,6 +767,16 @@ client.on('message', message => {
         .setImage("https://media.giphy.com/media/ljYCvFo7HtheECUT7U/giphy.gif")
         message.channel.send(y);
     }
+    
+    if(message.content === préfix + "Blocage naturel"){
+        var min = Math.floor(Math.min(20));
+        var max = Math.floor(Math.max(30)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous exécutez un blocage naturel en faisant apparaitre une ligne de branche et perdez 20 de Mana", y)
+        .setColor("#00ff75")
+        message.channel.send(y);
+    }
 
 
     
