@@ -581,7 +581,7 @@ client.on('message', message => {
        if(result > 90)
        var y = new Discord.RichEmbed()
        .setColor("#ff6000")
-       .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup", y)
+       .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup ", y)
        .setImage("https://i.ytimg.com/vi/mmUlK_FAJqI/maxresdefault.jpg")
        message.channel.send(y);
    }
@@ -641,7 +641,7 @@ client.on('message', message => {
         message.channel.send(y);
     }
     if(message.content === préfix + "Tir amélioré"){
-        var min = Math.floor(Math.min(50));
+        var min = Math.floor(Math.min(55));
         var max = Math.floor(Math.max(80)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
