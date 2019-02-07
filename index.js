@@ -649,6 +649,28 @@ client.on('message', message => {
         .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
         message.channel.send(y);
     }
+    
+    if(message.content === préfix + "Flèche empoisonné"){
+        var help_embed = new Discord.RichEmbed()
+        var min = Math.floor(Math.min(15));
+        var max = Math.floor(Math.max(25)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var x = Math.floor((Math.random() * 3) + 1);
+        if(result < 2)
+        var y = new Discord.RichEmbed()
+        .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 1tours impossible à bloquer(-30 de Mana)", y)
+        .setColor("#9f0000")
+        .setImage("https://nerdblogdotcom.files.wordpress.com/2013/06/borborygmos-enraged.jpg")
+        else if(x < 3)
+        var y = new Discord.RichEmbed()
+        .setColor("#4e8b27")
+        .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 3tours impossible à bloquer(-30 de Mana)", y)
+        else if(x < 4)
+        var y = new Discord.RichEmbed()
+        .setColor("#4e8b27")
+        .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 4tours impossible à bloquer(-30 de Mana)", y)
+        message.channel.sendMessage(y);
+    }
 
 
     if(message.content === préfix + "Soins de bas rang"){
