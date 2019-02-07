@@ -402,6 +402,18 @@ client.on('message', message => {
         .addField("40PC", "Vous obtenez la compétence ?Soins de mere nature")
         message.channel.sendMessage(help_embed);
     }
+    
+    if(message.content === préfix + "PC Druid"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00ffe7")
+        .addField("PC Druid", "Voici ce que vous pourrez gagner à chaque étape")
+        .addField("15PC", "?Soins de Druid + ?Sort naturel + ?Blocage naturel")
+        .addField("20PC", "?Druid ultime")
+        .addField("25PC", "Vous pouvez devenir grand Druid")
+        .setImage("https://images.alphacoders.com/767/thumb-350-767907.jpg")
+        .setFooter("Menu Druid")
+        message.channel.sendMessage(help_embed);
+    }
 
 
     if(message.content === préfix + "PC Voleur"){
