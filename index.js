@@ -811,6 +811,7 @@ client.on('message', message => {
         .setImage("https://media.giphy.com/media/2sgF179xV3fH9GW2mJ/giphy.gif")
         message.channel.send(y);
     }
+ 
     
     if(message.content === préfix + "Sort naturel"){
         var min = Math.floor(Math.min(30));
