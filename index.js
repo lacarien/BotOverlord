@@ -1022,12 +1022,12 @@ client.on('message', message => {
    
   if(message.content === préfix + "Esquive") {
         var result = Math.floor((Math.random() * 100) + 1);
-        if(result < 60)
+        if(result < 50)
         var result = new Discord.RichEmbed() 
         .setColor("#00ff27")
         .setTitle("Votre esquive est réussie, mais attention...Ne prenez pas trop la confiance")
         .setImage("https://cdn.discordapp.com/attachments/456251076253843456/541951693328220160/Screenshot_20190204-130104_Netflix.jpg")
-        if(60 < result)
+        if(50 < result)
         var result = new Discord.RichEmbed() 
         .setColor("#ff0000")
         .setAuthor("Vous subisez tout les dégats, sa fait mal...")
@@ -1510,11 +1510,11 @@ if(message.content === préfix + "Fuite") {
     
     if(message.content === préfix + "Fuite amélioré") {
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 40)
+    if(result < 50)
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
     .setAuthor("Vous fuyez")
-    if(40 < result)
+    if(50 < result)
     var result = new Discord.RichEmbed() 
     .setColor("#1fff00")
     .setAuthor("La fuite est impossible")
