@@ -713,6 +713,7 @@ client.on('message', message => {
         var y = new Discord.RichEmbed()
         .addField("Vous soignez une personne au choix, ou bien vous même grâce à la nature qui vous entoures. En contrepartie vous perdez 70 de mana", y)
         .setImage("http://pre00.deviantart.net/5483/th/pre/f/2015/310/6/f/forest___swamp_druid_by_night2-d9cll9w.jpg")
+        .setColor("#00ff75")
         message.channel.send(y);
     }
 
