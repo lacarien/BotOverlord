@@ -2009,7 +2009,7 @@ if(message.content === préfix + "Gobelin attaque"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#048502")
-    .addField("Le Gobelin vous place un petit coup de dague, cela ne fait aucun dégât, néanmoins chaque tour vous subirez. L'effet est cumulable"  , y)
+    .addField("Le Gobelin vous place un petit coup de dague, cela ne fait aucun dégât, néanmoins chaque tour vous subirez. L'effet est cumulable(sur 2 tours)"  , y)
     message.channel.send(y);
 }
 if(message.content === préfix + "Gobelin défense") {
