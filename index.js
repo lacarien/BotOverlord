@@ -405,12 +405,13 @@ client.on('message', message => {
     
     if(message.content === préfix + "PC Druid"){
         var help_embed = new Discord.RichEmbed()
-        .setColor("#00ff75")
+        .setColor("#00ffe7")
         .addField("PC Druid", "Voici ce que vous pourrez gagner à chaque étape")
         .addField("15PC", "?Soins de Druid + ?Sort naturel + ?Blocage naturel")
-        .addField("20PC", "?Druid ultime")
-        .addField("25PC", "Vous pouvez devenir grand Druid")
-       
+        .addField("20PC", "?Soins de la forêt")
+        .addField("25PC", "?Druid ultime")
+        .addField("30PC", "Vous pouvez devenir grand Druid")
+
         .setFooter("Menu Druid")
         message.channel.sendMessage(help_embed);
     }
