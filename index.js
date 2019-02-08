@@ -722,6 +722,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(200)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
+        .setColor("#00ff75")
         .addField("Vous soignez une personne au choix, ou bien vous même grâce à une grande puissance naturel.(-100 de Mana)", y)
         .setImage("https://i.ytimg.com/vi/l18vWOYUbgo/maxresdefault.jpg")
         message.channel.send(y);
