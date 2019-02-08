@@ -717,6 +717,15 @@ client.on('message', message => {
         .setColor("#00ff75")
         message.channel.send(y);
     }
+     if(message.content === préfix + "Soins de la forêt"){
+        var min = Math.floor(Math.min(150));
+        var max = Math.floor(Math.max(200)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous soignez une personne au choix, ou bien vous même grâce à une grande puissance naturel.(-100 de Mana)", y)
+        .setImage("https://i.ytimg.com/vi/l18vWOYUbgo/maxresdefault.jpg")
+        message.channel.send(y);
+    }
 
 
     if(message.content === préfix + "Blocage simple"){
