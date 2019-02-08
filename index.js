@@ -1380,7 +1380,7 @@ if(message.content === préfix + "Arbre maudit défense"){
 
 
 
-if(message.content === préfix + "Arrive dans les marécages") {
+if(message.content === préfix + "Arrive dans le marécage") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 50)
     var result = new Discord.RichEmbed() 
@@ -1392,6 +1392,30 @@ if(message.content === préfix + "Arrive dans les marécages") {
     .setTitle("C'est bien calme...")
     message.channel.send(result);
 
+}
+
+if(message.content === préfix + "Arrive dans la forêt") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 50)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .addField("Vous tombez sur des monstres", "?Apparition forêt")
+    if(50 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setTitle("C'est bien calme...")
+    message.channel.send(result);
+
+}
+
+if(message.content === préfix + "Les zones"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#f0ff00")
+    .setTitle("Marécage")
+    .setDescription("?Arrive dans le marécage")
+    .addField("Forêt", "?Arrive dans la forêt")
+    .addField("Royaume ou village en cas d'agression et de Roll réussie celon la situation", "?SOS")
+    message.channel.sendMessage(help_embed);
 }
 
 if(message.content === préfix + "Apparition marécage") {
