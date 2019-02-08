@@ -2073,7 +2073,7 @@ if(message.content === préfix + "Apparition forêt") {
         message.channel.sendMessage(help_embed);
     }
     }
-    message.channel.send(result);
+
 
 }
   
