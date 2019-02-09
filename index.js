@@ -2212,7 +2212,7 @@ if(message.content === préfix + "Potion de mana haute"){
     if(message.content === préfix + "Shop"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#f0ff00")
-    .addField("Listes des articles par catégories", "?Argent n\ ?Parchemin n\ Potion n\ ?Arme n\ n\ ?Armure n\ ?Potion ");
+    .addField("Listes des articles par catégories", "?Information sur l'argent n\ ?Parchemin n\ Potion n\ ?Arme n\ n\ ?Armure n\ ?Potion ");
     message.channel.sendMessage(help_embed);
 }
     
