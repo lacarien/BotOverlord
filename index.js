@@ -2149,7 +2149,7 @@ if(message.content === préfix + "Soins de la nature"){
     message.channel.sendMessage(y);
 }
 
-if(message.content === préfix + "Potion d'HP "){
+if(message.content === préfix + "Potion d'HP"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(50));
     var max = Math.floor(Math.max(100)); 
@@ -2185,7 +2185,7 @@ if(message.content === préfix + "Potion de mana faible"){
     message.channel.sendMessage(y);
 }
 
-if(message.content === préfix + "Potion de mana "){
+if(message.content === préfix + "Potion de mana"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(45));
     var max = Math.floor(Math.max(80)); 
