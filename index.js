@@ -2135,6 +2135,81 @@ if(message.content === préfix + "Soins de la nature"){
 }  
     
     
+    /// STUFF
+    
+    if(message.content === préfix + "Potion d'HP faible"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Créer par la force de simples mages après de nombreuse tentative... ", y)
+    .setColor("#ff0000")
+    .setImage("https://media.discordapp.net/attachments/542028605874634752/542053551619440640/568061fd015a05580add57ed64de815e.png")
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Potion d'HP "){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(100)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Créer par de puissants alchimistes qui vive dans la noblesse du Royaume... Cette potion serait d'une grande éfficacité", y)
+    .setColor("#ff0000")
+    .setImage("https://media.discordapp.net/attachments/536292650698014731/543821870957330442/346523c1d18d9c4b83cb0cb116f76946.png")
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Potion d'HP haute"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(120));
+    var max = Math.floor(Math.max(180)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Créer par de puissant Druide exilé du royaume... Cette potion rendrait un grand nombre d'HP", y)
+    .setColor("#ff0000")
+    .setImage("https://cdn.discordapp.com/attachments/536292650698014731/543822332477571103/9f1ac6ee17031792f769a99085e742ca.png")
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Potion de mana faible"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(25)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Créer par la force de simples mages après de nombreuse tentative... ", y)
+    .setColor("#00ffe7")
+    .setImage("https://media.discordapp.net/attachments/542028605874634752/542053261130334228/da66dd28623e31be7cd6ff36e7a849ae.png?width=404&height=585")
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Potion de mana "){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(45));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Créer par des alchimistes fasciné par la magie... Cette potion serait d'une grande éfficacité", y)
+    .setColor("#00ffe7")
+    .setImage("https://media.discordapp.net/attachments/536292650698014731/543822800666886144/2069a5b730f5952ec917bafaaf594ee2.png?width=391&height=585")
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Potion de mana haute"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(160)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Créer par de puissants Sorciers reconnus de tous... Cette potion vous redonneras une immense quantité de mana", y)
+    .setColor("#00ffe7")
+    .setImage("https://media.discordapp.net/attachments/536292650698014731/543822848737673251/99abd957719c40c5150d7aa7427048ae.png?width=509&height=586")
+    message.channel.sendMessage(y);
+}
+    
+    
     
     
 });
