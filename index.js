@@ -520,7 +520,7 @@ client.on('message', message => {
         .setTitle("PC Archer")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("15PC", "?Tir amélioré + ?Esquive simple + ?Blocage rapide")
-        .addField("20PC", "?Fuite amélioré")
+        .addField("20PC", "?Fuite amélioré + ?Flèche empoisonné")
         .addField("25PC", "?Archer ultime")
         .addField("30PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
