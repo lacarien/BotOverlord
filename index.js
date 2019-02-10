@@ -1115,6 +1115,27 @@ client.on('message', message => {
     .setImage("https://image.myanimelist.net/ui/z3a0S--4LnRurzJAHi0hLc7mUF0wHOYpG-DmXnKO5JE322e5dl0OZhyBMAbg8szq")
     message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "Ange attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(150));
+    var max = Math.floor(Math.max(200)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("l'ange vous attaques avec un pouvoir divin faisant des ravages...", y)
+    .setColor("#ffffff")
+    .setImage("https://anilyze.files.wordpress.com/2015/08/horriblesubs-overlord-04-720p-mkv_snapshot_16-52_2015-08-06_22-33-52.jpg")
+    message.channel.sendMessage(y);
+}
+if(message.content === préfix + "Ange défense"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(0));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("l'ange ne se défend pas et se contente de subir pendant qu'il rechargé son attaque", y)
+    .setColor("#ffffff")
+    message.channel.sendMessage(y);
+}
 
     
     
