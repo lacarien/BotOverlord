@@ -1103,6 +1103,18 @@ client.on('message', message => {
         message.channel.sendMessage(y);
           
     }
+    
+    if(message.content === préfix + "Invocation divine"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("L'Ange")
+    .setColor("#ffffff")
+    .setDescription("Vous invoquez un Ange puissant et faisant frémir vos ennemies. Il attaque 1 fois tout les 3tours")
+    .addField("HP", "150")
+    .addField("Attaque", "?Ange attaque")
+    .addField("Défense", "?Ange défense")
+    .setImage("https://image.myanimelist.net/ui/z3a0S--4LnRurzJAHi0hLc7mUF0wHOYpG-DmXnKO5JE322e5dl0OZhyBMAbg8szq")
+    message.channel.sendMessage(help_embed);
+}
 
     
     
