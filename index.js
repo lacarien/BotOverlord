@@ -1058,6 +1058,14 @@ client.on('message', message => {
         .setImage("https://media.giphy.com/media/vgvVcpHvIEjO9yPQqg/giphy.gif")
         message.channel.send(y);
     }
+    
+    if(message.content === préfix + "Réparation automatique"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00ff0d")
+        .setTitle("Réparation automatique")
+        .setDescription("Vous regagnez 50% de vos HP pendant 2 tours et vous permet de combiner 2 attaques aux prochains tours")
+        message.channel.sendMessage(help_embed);
+    }
 
 
 
