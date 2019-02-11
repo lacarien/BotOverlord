@@ -276,6 +276,18 @@ client.on('message', message => {
         message.channel.sendMessage(help_embed);
     }
     
+    if(message.content === préfix + "Démon"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#20ff00")
+        .addField("Démon", "Vous êtes un Démon, vous avez une forme humanoïde bien que certain trait de votre apparence peuvent être différents que celui d'un humain")
+        .addField("Bonus", "Vous régénèrez 2 fois plus vite votre mana et vos HP")
+        .addField("Malus", "Vous êtes faibles contre la magie sainte (dégats reçu X2) et ne pouvez pas recevoir de sort de soins")
+        .setImage("https://www.manga-news.com/public/images/vols/overlord-light-novel-12-jp.jpg")
+        .setFooter("Menu Démon")
+        message.channel.sendMessage(help_embed);
+    }
+
+    
        if(message.content === préfix + "Sorcier"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00ffe7")
