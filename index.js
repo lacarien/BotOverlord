@@ -278,7 +278,7 @@ client.on('message', message => {
     
     if(message.content === préfix + "Démon"){
         var help_embed = new Discord.RichEmbed()
-        .setColor("#20ff00")
+        .setColor("#820000")
         .addField("Démon", "Vous êtes un Démon, vous avez une forme humanoïde bien que certain trait de votre apparence peuvent être différents que celui d'un humain")
         .addField("Bonus", "Vous régénèrez 2 fois plus vite votre mana et vos HP")
         .addField("Malus", "Vous êtes faibles contre la magie sainte (dégats reçu X2) et ne pouvez pas recevoir de sort de soins")
