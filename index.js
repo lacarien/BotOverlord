@@ -616,7 +616,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(200)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous envoyez un sort qui brule votre adversaire. Vous perdez 80 de mana", y)
+        .addField("Vous envoyez un sort qui brule votre adversaire. Vous perdez 100 de mana", y)
         .setImage("https://media.giphy.com/media/x49CbUokcHQZdaSyga/giphy.gif   ")
         .setColor("#e65e0d")
         message.channel.send(y);
