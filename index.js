@@ -415,6 +415,17 @@ client.on('message', message => {
         message.channel.sendMessage(help_embed);
     }
     
+    if(message.content === préfix + "PC Démon"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#820000")
+        .setTitle("PC Démon")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("10PC", "Vous obtenez la compétence ?Vague négative")
+        .addField("25PC", "Vous obtenez la compétence ?Saignement démoniaque")
+        .addField("40PC", "Vous obtenez la compétence ?Sinistre transformation")
+        message.channel.sendMessage(help_embed);
+    }
+    
     if(message.content === préfix + "PC Druid"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00ffe7")
