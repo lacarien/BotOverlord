@@ -2285,6 +2285,7 @@ if(message.content === préfix + "Shop"){
     .addField("Potion d'HP faible'", "15 pièces de bronze")
     .addField("Potion d'HP", "30 pièces de bronze" + " \n 10 pièces d'argent")
     .addField("Potion d'HP haute", "75 pièces de bronze" + "\n 30 pièces d'argent" + "\n 10 pièces d'or \n \n \n")
+    .addBlankField( 3 )
     .addField("Potion de mana", "15 pièces de bronze")
     .addField("Potion de mana", "30 pièces de bronze" + " \n 10 pièces d'argent")
     .addField("Potion de mana haute", "75 pièces de bronze" + "\n 30 pièces d'argent" + "\n 10 pièces d'or   ")
