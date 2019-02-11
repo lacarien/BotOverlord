@@ -2280,12 +2280,12 @@ if(message.content === préfix + "Shop"){
     message.channel.sendMessage(help_embed);
 }
     
-    if(message.content === préfix + "Potion"){
+   if(message.content === préfix + "Potion"){
     var help_embed = new Discord.RichEmbed()
     .addField("Potion d'HP faible'", "15 pièces de bronze")
     .addField("Potion d'HP", "30 pièces de bronze" + " \n 10 pièces d'argent")
     .addField("Potion d'HP haute", "75 pièces de bronze" + "\n 30 pièces d'argent" + "\n 10 pièces d'or \n \n \n")
-    .addBlankField( 3 )
+    .addField("Les potions de mana", "\n \n \n \n \n")
     .addField("Potion de mana", "15 pièces de bronze")
     .addField("Potion de mana", "30 pièces de bronze" + " \n 10 pièces d'argent")
     .addField("Potion de mana haute", "75 pièces de bronze" + "\n 30 pièces d'argent" + "\n 10 pièces d'or   ")
