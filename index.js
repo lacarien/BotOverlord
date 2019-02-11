@@ -2292,7 +2292,7 @@ if(message.content === préfix + "Shop"){
     
      if(message.content === préfix + "Potion mana"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Potion de mana", "15 pièces de bronze")
+    .addField("Potion de mana faible", "15 pièces de bronze")
     .addField("Potion de mana", "30 pièces de bronze" + " \n 10 pièces d'argent")
     .addField("Potion de mana haute", "75 pièces de bronze" + "\n 30 pièces d'argent" + "\n 10 pièces d'or   ")
     .setFooter("Les potions de mana")
