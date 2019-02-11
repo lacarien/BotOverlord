@@ -2304,7 +2304,7 @@ if(message.content === préfix + "Shop"){
     
     if(message.content === préfix + "Potion"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Liste des potions", "?Potion HP et ?Potion de mana")
+    .addField("Liste des potions", "?Potion HP et ?Potion mana")
     .addField("Information", "Les potions sont achetables dans la zone de commerce ou bien gagnable dans des donjons ou sur des mobs")
  
     .setFooter("Les potions")
