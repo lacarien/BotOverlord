@@ -2326,6 +2326,7 @@ if(message.content === préfix + "Information sur l'argent"){
     .addField("Les armures", "Il est à savoir que seul les personnes avec un corps fortement identiques aux humains peuvent s'équiper d'armure, un Lézard ne peut donc en avoir")
     .addField("Armure qui augmente les HP", "?Armure HP")
     .addField("Armure qui augmente le capacité de mana", "?Armure mana")
+    .addField("Comment s'équiper d'une armure ?", "Après avoir fait la commande de l'armure que vous désirez, retirez la somme que vous avez payé depuis votre inventaire. Vous pouvez l'équiper quand vous voulez à condition de faire une action RP")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }
