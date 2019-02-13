@@ -639,7 +639,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(200)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous envoyez un sort qui brule votre adversaire. -100 de mana", y)
+        .addField("Vous envoyez un sort qui brule votre adversaire. -100 de mana", ":fire: "+y)
         .setImage("https://media.giphy.com/media/x49CbUokcHQZdaSyga/giphy.gif   ")
         .setColor("#e65e0d")
         message.channel.send(y);
@@ -673,7 +673,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous tentez de lui envoyer une fleche rapide en direction de son torse, cherchant à viser un point vital. Vous perdez 30 de mana", y)
+        .addField("Vous tentez de lui envoyer une fleche rapide en direction de son torse, cherchant à viser un point vital. Vous perdez 30 de mana", ":bow_and_arrow: "+y)
         message.channel.send(y);
     }
     if(message.content === préfix + "Tir amélioré"){
@@ -681,7 +681,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(80)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous tirez une fleche puissante(-20 de Mana)", y)
+        .addField("Vous tirez une fleche puissante(-20 de Mana)",":bow_and_arrow: "+ y)
         .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
         message.channel.send(y);
     }
@@ -700,11 +700,11 @@ client.on('message', message => {
         else if(x < 3)
         var y = new Discord.RichEmbed()
         .setColor("#4e8b27")
-        .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 3tours impossible à bloquer(-30 de Mana)", y)
+        .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 3tours impossible à bloquer(-30 de Mana)", ":bow_and_arrow: "+y)
         else if(x < 4)
         var y = new Discord.RichEmbed()
         .setColor("#4e8b27")
-        .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 4tours impossible à bloquer(-30 de Mana)", y)
+        .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 4tours impossible à bloquer(-30 de Mana)",":bow_and_arrow: "+ y)
         message.channel.sendMessage(y);
     }
 
@@ -714,7 +714,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(30)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous soignez une personne au choix, ou bien vous. En contrepartie vous perdez 20 de mana", y)
+        .addField("Vous soignez une personne au choix, ou bien vous. En contrepartie vous perdez 20 de mana", ":heartpulse: "+y)
         .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/7/71/Overlord_III_EP07_131.png/revision/latest/scale-to-width-down/640?cb=20180828050559")
         message.channel.send(y);
     }
@@ -724,7 +724,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(70)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField(":hearts: Vous soignez une personne au choix, ou bien vous. En contrepartie vous perdez 50 de mana", y)
+        .addField(":hearts: Vous soignez une personne au choix, ou bien vous. En contrepartie vous perdez 50 de mana",":heartpulse: "+ y)
         .setImage("https://media.giphy.com/media/Bp4Iz5pItPXI3ErsAf/giphy.gif")
         .setColor("#20d916")
         message.channel.send(y);
@@ -735,7 +735,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(120)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous soignez une personne au choix, ou bien vous même grâce à la nature qui vous entoures. En contrepartie vous perdez 70 de mana", y)
+        .addField("Vous soignez une personne au choix, ou bien vous même grâce à la nature qui vous entoures. En contrepartie vous perdez 70 de mana", ":heartpulse: "+y)
         .setImage("http://pre00.deviantart.net/5483/th/pre/f/2015/310/6/f/forest___swamp_druid_by_night2-d9cll9w.jpg")
         .setColor("#00ff75")
         message.channel.send(y);
@@ -746,7 +746,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#00ff75")
-        .addField("Vous soignez une personne au choix, ou bien vous même grâce à une grande puissance naturel.(-100 de Mana)", y)
+        .addField("Vous soignez une personne au choix, ou bien vous même grâce à une grande puissance naturel.(-100 de Mana)", ":heartpulse: "+y)
         .setImage("https://i.ytimg.com/vi/l18vWOYUbgo/maxresdefault.jpg")
         message.channel.send(y);
     }
@@ -757,7 +757,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(15)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous executez un blocage simple et réussisez à bloquer", y)
+        .addField("Vous executez un blocage simple et réussisez à bloquer", ":shield: "+y)
         .setImage("https://media.giphy.com/media/67uARzea7eiZ9P0U1I/giphy.gif")
         message.channel.send(y);
     }
@@ -767,7 +767,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(25)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous executez un blocage rapide et réussisez à bloquer", y)
+        .addField("Vous executez un blocage rapide et réussisez à bloquer", ":shield: "+y)
         .setImage("https://cdn.discordapp.com/attachments/499161815549476864/541313060917215253/BDci.gif")
         message.channel.send(y);
     }
@@ -777,7 +777,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous executez un blocage amélioré et réussisez à bloquer", y)
+        .addField("Vous executez un blocage amélioré et réussisez à bloquer", ":shield: "+y)
         .setImage("https://cdn.discordapp.com/attachments/499161815549476864/541320949333622785/ezgif.com-gif-maker_3.gif")
         message.channel.send(y);
     }
@@ -787,7 +787,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(50)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous executez un blocage supérieure et réussisez à bloquer", y)
+        .addField("Vous executez un blocage supérieure et réussisez à bloquer", ":shield: "+y)
         .setImage("https://media.discordapp.net/attachments/499161815549476864/541320990614093825/2530.gif")
         message.channel.send(y);
     }
@@ -797,7 +797,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(45)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous executez un blocage magique et perdez 20 de Mana", y)
+        .addField("Vous executez un blocage magique et perdez 20 de Mana", ":shield: "+y)
         .setImage("https://media.giphy.com/media/ljYCvFo7HtheECUT7U/giphy.gif")
         message.channel.send(y);
     }
@@ -807,7 +807,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(30)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous exécutez un blocage naturel en faisant apparaitre une ligne de branche et perdez 20 de Mana", y)
+        .addField("Vous exécutez un blocage naturel en faisant apparaitre une ligne de branche et perdez 20 de Mana", ":shield: "+y)
         .setColor("#00ff75")
         message.channel.send(y);
     }
@@ -820,7 +820,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(30)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous tirez une fleche rapide sur votre ennemie", y)
+        .addField("Vous tirez une fleche rapide sur votre ennemie",":bow_and_arrow: "+y)
         .setImage("https://media.giphy.com/media/5QI6YQxisFehaLlQ8I/giphy.gif")
         message.channel.send(y);
     }
@@ -831,7 +831,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(30)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous envoyez un sort de bas rang", y)
+        .addField("Vous envoyez un sort de bas rang", ":sparkles: "+y)
         .setImage("https://media.giphy.com/media/lYfMRNGRIyOOQo9PKl/giphy.gif")
         message.channel.send(y);
     }
@@ -841,7 +841,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(50)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous envoyez un sort sur votre adversaire", y)
+        .addField("Vous envoyez un sort sur votre adversaire",":sparkles: "+ y)
         .setImage("https://media.giphy.com/media/2sgF179xV3fH9GW2mJ/giphy.gif")
         message.channel.send(y);
     }
@@ -852,7 +852,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous attaquez votre adversaire en faisant apparaitre temporaire une tentacule d'épine qui vient frapper ce dernier", y)
+        .addField("Vous attaquez votre adversaire en faisant apparaitre temporaire une tentacule d'épine qui vient frapper ce dernier", ":sparkles: "+y)
         message.channel.send(y);
     }
     
@@ -865,7 +865,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
-        .addField("Vous executez 2 coups puissants et précis qui infligent du", y)
+        .addField("Vous executez 2 coups puissants et précis qui infligent du",":crossed_swords: "+ y)
         .setImage("https://media.giphy.com/media/39jPRRkGyd4xc4EysM/giphy.gif")
         message.channel.send(y);
     }
@@ -876,7 +876,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous executez un back stab qui inflige du", y)
+        .addField("Vous executez un back stab qui inflige du", ":crossed_swords: "+ y)
         .setImage("https://media.giphy.com/media/1woWwqPRWY6xGVHQ8M/giphy.gif")
         message.channel.send(y);
     }
@@ -894,7 +894,7 @@ client.on('message', message => {
         var l = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var l = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous executez un violent coup qui inflige", l)
+        .addField("Vous executez un violent coup qui inflige", ":crossed_swords: "+ l)
         .setImage("https://cdn.discordapp.com/attachments/532644881588551683/535086945420967937/Combattant_ultime.gif")
         message.channel.send(l);
     }
@@ -912,7 +912,7 @@ client.on('message', message => {
         var l = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var l = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous executez un violent d'épée(-200 de Mana)", l)
+        .addField("Vous executez un violent d'épée(-200 de Mana)",":crossed_swords: "+  l)
         .setImage("https://thumbs.gfycat.com/MintyConstantAnkole-size_restricted.gif")
         message.channel.send(l);
     }
@@ -925,13 +925,13 @@ client.on('message', message => {
         var result = Math.floor((Math.random() * 100) + 1);
             if(result < 90)
         var y = new Discord.RichEmbed()
-        .addField("Vous lui infligez un coup violent et l'étourdisez pour le prochain tour, il ne pourra ni attaquer ni se défendre(-150 de mana) ", y)
+        .addField("Vous lui infligez un coup violent et l'étourdisez pour le prochain tour, il ne pourra ni attaquer ni se défendre(-150 de mana) ", ":crossed_swords: "+ y)
         .setColor("#ff0000")
         .setImage("https://66.media.tumblr.com/737f6cd176072287264517f7c6706005/tumblr_ntncw6Psi91qa94xto1_400.gif")
             if(result > 90)
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
-        .addField("Vous lui infligez de lours dégats (-150 de mana)", y)
+        .addField("Vous lui infligez de lours dégats (-150 de mana)",":crossed_swords: "+  y)
         .setImage("https://66.media.tumblr.com/737f6cd176072287264517f7c6706005/tumblr_ntncw6Psi91qa94xto1_400.gif")
         message.channel.sendMessage(y);
     }
@@ -943,7 +943,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous effectuez un tir parfait(-80 de mana)", y)
+        .addField("Vous effectuez un tir parfait(-80 de mana)", ":crossed_swords: "+ y)
         .setImage("https://media.giphy.com/media/uUl8lkfxMYLi5q9wp8/giphy.gif")
         message.channel.send(y);
     }
@@ -954,7 +954,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous effectuez un tir plus que parfait (-200 de mana)", y)
+        .addField("Vous effectuez un tir plus que parfait (-200 de mana)",":crossed_swords: "+  y)
         .setImage("https://media.giphy.com/media/KYFj8oIWlhbH6wPwoK/giphy.gif")
         message.channel.send(y);
     }
@@ -973,7 +973,7 @@ client.on('message', message => {
         var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var w = new Discord.RichEmbed() 
         .setColor("#ff8b00")
-        .addField("Vous executez un sort de base qui inflige du", w)
+        .addField("Vous executez un sort de base qui inflige du", ":crossed_swords: "+ w)
         message.channel.send(w);
     }
     
@@ -983,7 +983,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#000000")
-        .addField("Negative burst ! (-200 de Mana)", y)
+        .addField("Negative burst ! (-200 de Mana)",":crossed_swords: "+  y)
         .setImage("https://media.giphy.com/media/8FSMNs8bir2lfkpg2u/giphy.gif")
         message.channel.send(y);
         var e = Math.floor(Math.min(60));
@@ -1067,7 +1067,7 @@ client.on('message', message => {
         var y = new Discord.RichEmbed()
         .setColor("#859900")
         .setImage("http://33.media.tumblr.com/eb728f63a9481148b5432b7bdc343a86/tumblr_neantpDeML1su5akfo2_1280.jpg")
-        .addField("Votre corps deviens plus résistant et réduisez tout les dégats pendant 3 tours de", y)
+        .addField("Votre corps deviens plus résistant et réduisez tout les dégats pendant 3 tours de", ":shield: "+y)
         message.channel.send(y);
     }
 
@@ -1077,7 +1077,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous pouvez uniquement utiliser cette compétence à longue porté. Vous visez un point vital et infligez du", y)
+        .addField("Vous pouvez uniquement utiliser cette compétence à longue porté. Vous visez un point vital et infligez du", ":gun: "+y)
         .setImage("https://media.giphy.com/media/vgvVcpHvIEjO9yPQqg/giphy.gif")
         message.channel.send(y);
     }
