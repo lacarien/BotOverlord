@@ -2350,14 +2350,7 @@ if(message.content === préfix + "Armure mana"){
     message.channel.sendMessage(help_embed);
 }
 
-if(message.content === préfix + "Parchemin"){
-    var help_embed = new Discord.RichEmbed()
-    .addField("Les Parchemins", "Il est à savoir qu'un parchemin peut être utilisé par n'importe qui, après le prix diffère celon l'achat...")
-    .addField("Parchemin qui peut envoyer des messages à distance", "à voir avec le puriste")
-    .addField("En cours", "?En cours")
-    .setColor("#f0ff00")
-    message.channel.sendMessage(help_embed);
-}
+
 
     
     
