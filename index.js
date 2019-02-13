@@ -639,7 +639,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(200)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous envoyez un sort qui brule votre adversaire. Vous perdez 100 de mana", y)
+        .addField("Vous envoyez un sort qui brule votre adversaire. -100 de mana", y)
         .setImage("https://media.giphy.com/media/x49CbUokcHQZdaSyga/giphy.gif   ")
         .setColor("#e65e0d")
         message.channel.send(y);
@@ -724,7 +724,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(70)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous soignez une personne au choix, ou bien vous. En contrepartie vous perdez 50 de mana", y)
+        .addField(":hearts: Vous soignez une personne au choix, ou bien vous. En contrepartie vous perdez 50 de mana", y)
         .setImage("https://media.giphy.com/media/Bp4Iz5pItPXI3ErsAf/giphy.gif")
         .setColor("#20d916")
         message.channel.send(y);
