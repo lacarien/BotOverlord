@@ -566,7 +566,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(30)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous lui infligez un coup d'épée rapide qui inflige", y)
+        .addField("Vous lui infligez un coup d'épée rapide qui inflige", ":dagger: "+ y )
         .setImage("https://cdn.discordapp.com/attachments/534821670217711626/535086034459820042/Coup_depee.gif")
         message.channel.send(y);
     }
