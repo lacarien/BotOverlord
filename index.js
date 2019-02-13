@@ -576,7 +576,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous lui infligez un coup d'épée puissant qui inflige", y)
+        .addField("Vous lui infligez un coup d'épée puissant qui inflige",":dagger: "+ y)
         .setImage("https://cdn.discordapp.com/attachments/454694319396356128/541560314827898911/unknown.png")
         message.channel.send(y);
     }
@@ -586,7 +586,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(35)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous lui infligez un coup d'épée lent qui inflige", y)
+        .addField("Vous lui infligez un coup d'épée lent qui inflige", ":dagger: "+y)
         .setImage("https://media.discordapp.net/attachments/454694319396356128/541558773291024408/unknown.png?width=1040&height=585")
         message.channel.send(y);
     }
@@ -597,7 +597,7 @@ client.on('message', message => {
         var max = Math.floor(Math.max(25)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous lui infligé un coup de dague impossible à bloquer. Vous perdez 40 de mana", y)
+        .addField("Vous lui infligé un coup de dague impossible à bloquer. Vous perdez 40 de mana", ":dagger: "+y)
         .setImage("https://media.giphy.com/media/XptviXceQG8pjLZ0FD/giphy.gif")
         message.channel.send(y);
     }
@@ -611,13 +611,13 @@ client.on('message', message => {
           var result = Math.floor((Math.random() * 100) +1);
        if(result < 90)
        var y = new Discord.RichEmbed()
-       .addField("Vous lui infligé un coup de dague rapide et lui infligé", y)
+       .addField("Vous lui infligé un coup de dague rapide et lui infligé",":dagger: "+ y)
        .setColor("#ff6000")
        .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/b/ba/Overlord_II_EP06_097.png/revision/latest?cb=20180216051904")
        if(result > 90)
        var y = new Discord.RichEmbed()
        .setColor("#ff6000")
-       .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup ", y)
+       .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup ",":dagger: "+ y)
        .setImage("https://i.ytimg.com/vi/mmUlK_FAJqI/maxresdefault.jpg")
        message.channel.send(y);
    }
@@ -662,7 +662,7 @@ client.on('message', message => {
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#0046ff")
-        .addField("Vous enchainez de coups votre adversaire", y)
+        .addField("Vous enchainez de coups votre adversaire",":dagger: "+ y)
         .setImage("https://media.discordapp.net/attachments/534758707561496580/541557069506150420/Chevalier_Hish_Hish_lequipe_est_toka.gif ")
         message.channel.send(y);
     }
