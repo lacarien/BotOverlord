@@ -2385,11 +2385,48 @@ if(message.content === préfix + "Achat : armure en plate"){
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
   
-    .addField(":shield:  Armure simple avec cotte de mailles", "HP: " + y + ":hearts: \n Mana: " + x +":sparkles: ")
+    .addField(":shield:  Armure simple en plate", "HP: " + y + ":hearts: \n Mana: " + x +":sparkles: ")
     .setColor("#010461")
     message.channel.sendMessage(y);    
 }
-
+if(message.content === préfix + "Achat : armure en tissus fin"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField(":shield:  Armure en tissus fin", "Mana:" + y + ":sparkles: ")
+    .setColor("#0009ff")
+    message.channel.sendMessage(y);
+}
+if(message.content === préfix + "Achat : armure de sorcier traditionnel"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var mins = Math.floor(Math.min(70));
+    var maxs = Math.floor(Math.max(100)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var y = new Discord.RichEmbed()
+  
+    .addField(":shield:  Armure de sorcier traditionnel", "HP: " + y + ":hearts: \n Mana: " + x +":sparkles: ")
+    .setColor("#0006a4")
+    message.channel.sendMessage(y);    
+}
+if(message.content === préfix + "Achat : armure de sorcier reconnu"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(70)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var mins = Math.floor(Math.min(220));
+    var maxs = Math.floor(Math.max(440)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var y = new Discord.RichEmbed()
+  
+    .addField(":shield:  Armure de sorcier reconnu", "HP: " + y + ":hearts: \n Mana: " + x +":sparkles: ")
+    .setColor("#010461")
+    message.channel.sendMessage(y);    
+}
 
     
     
