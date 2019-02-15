@@ -2279,6 +2279,13 @@ if(message.content === préfix + "Shop"){
     .addField("Listes des articles par catégories", "?Information sur l'argent"+" \n ?Parchemin" +"\n ?Arme"+"\n ?Armure"+"\n ?Potion");
     message.channel.sendMessage(help_embed);
 }
+ if(message.content === préfix + "Arme"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#f0ff00")
+    .addField("Les Armes", "Elles ne sont pas achetables, mais peuvent être obtenue via des events ou des loots rares");
+    message.channel.sendMessage(help_embed);
+}   
+    
     
    if(message.content === préfix + "Potion HP"){
     var help_embed = new Discord.RichEmbed()
@@ -2315,7 +2322,7 @@ if(message.content === préfix + "Shop"){
 if(message.content === préfix + "Information sur l'argent"){
     var help_embed = new Discord.RichEmbed()
     .addField("C'est quoi et à quoi il sert ?", "Il peut être obtenue après avoir tué un monstre ou bien lors de récompense des donjons. Il peut être utiliser pour de l'équipement, des demades à d'autre joueur, pour acheter des potions...")
-    .addField("Où en trouver ?", "Il existe 3 types de pièces: \n \n Celui en bronze: que l'on trouve avant tout dans les marécages \n Celui en argent trouvable dans certain donjon et dans la forêt \n Celui en or: trouvable dans la montagne enneigé et contre des boss \n mais le moyen le plus facile d'en avoir c'est via des quêtes d'aventuriers")
+    .addField("Où en trouver ?", "Il existe 3 types de pièces: \n  Celui en bronze: que l'on trouve avant tout dans les marécages \n Celui en argent trouvable dans certain donjon et dans la forêt \n Celui en or: trouvable dans la montagne enneigé et contre des boss \n mais le moyen le plus facile d'en avoir c'est via des quêtes d'aventuriers")
     .setFooter("Où acheter des items ?", "Au royaume dans la zone commercial")
     .setFooter("Où acheter des items ?", "?Achat : [Nom entier de votre achat, exemple : ?Achat : Armure en plate](sauf pour les potions, vous découvrez son éfficacité qu'une fois utilisé)")
     .setColor("#f0ff00")
