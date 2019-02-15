@@ -2333,8 +2333,8 @@ if(message.content === préfix + "AAA"){
     var help_embed = new Discord.RichEmbed()
     .addField("C'est quoi et à quoi il sert ?", "Il peut être obtenue après avoir tué un monstre ou bien lors de récompense des donjons. Il peut être utiliser pour de l'équipement, des demandes à d'autre joueur, pour acheter des potions...")
    .addField("Où en trouver ?", "Il existe 3 types de pièces: \n  Celui en bronze: que l'on trouve avant tout dans les marécages \n Celui en argent trouvable dans certain donjon et dans la forêt \n Celui en or: trouvable dans la montagne enneigé et contre des boss \n mais le moyen le plus facile d'en avoir c'est via des quêtes d'aventuriers")
-    .setFooter("Où acheter des items ?", "Au royaume dans la zone commercial")
-    .setFooter("Où acheter des items ?", "?Achat : [Nom entier de votre achat, exemple : ?Achat : Armure en plate](sauf pour les potions, vous découvrez son éfficacité qu'une fois utilisé)")
+    .addField("Où acheter des items ?", "Au royaume dans la zone commercial")
+    .addField("La commande", "?Achat : [Nom entier de votre achat, exemple : ?Achat : Armure en plate](sauf pour les potions, vous découvrez son éfficacité qu'une fois utilisé)")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }
