@@ -2317,7 +2317,7 @@ if(message.content === préfix + "Information sur l'argent"){
     .addField("C'est quoi et à quoi il sert ?", "Il peut être obtenue après avoir tué un monstre ou bien lors de récompense des donjons. Il peut être utiliser pour de l'équipement, des demades à d'autre joueur, pour acheter des potions...")
     .addField("Où en trouver ?", "Il existe 3 types de pièces: \n \n Celui en bronze: que l'on trouve avant tout dans les marécages \n Celui en argent trouvable dans certain donjon et dans la forêt \n Celui en or: trouvable dans la montagne enneigé et contre des boss \n mais le moyen le plus facile d'en avoir c'est via des quêtes d'aventuriers")
     .setFooter("Où acheter des items ?", "Au royaume dans la zone commercial")
-    .setFooter("Où acheter des items ?", "?Achat : [Nom entier de votre achat, exemple : ?Achat : Armure en plate]")
+    .setFooter("Où acheter des items ?", "?Achat : [Nom entier de votre achat, exemple : ?Achat : Armure en plate](sauf pour les potions, vous découvrez son éfficacité qu'une fois utilisé)")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }
@@ -2334,9 +2334,9 @@ if(message.content === préfix + "Information sur l'argent"){
 
 if(message.content === préfix + "Armure HP"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Armure en cuir souple", "Prix : 70 pièces de bronze \n ?Achat armure en cuir souple")
-    .addField("Armure simple avec cotte de mailles", "Prix : 150 pièces de bronze \n 45 pièces d'argent \n ?Achat armure simple en cotte de mailles")
-    .addField("Armure en plate", "Prix: 500 pièces de bronze \n 210 pièces d'argent \n 70 pièces d'or \n ?Achat armure en plate")
+    .addField("Armure en cuir souple", "Prix : 70 pièces de bronze \n ?Achat : armure en cuir souple")
+    .addField("Armure simple avec cotte de mailles", "Prix : 150 pièces de bronze \n 45 pièces d'argent \n ?Achat : armure simple en cotte de mailles")
+    .addField("Armure en plate", "Prix: 500 pièces de bronze \n 210 pièces d'argent \n 70 pièces d'or \n ?Achat : armure en plate")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }
@@ -2344,9 +2344,9 @@ if(message.content === préfix + "Armure HP"){
 
 if(message.content === préfix + "Armure mana"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Armure en tissus fin", "Prix : 70 pièces de bronze \n ?Achat armure en tissus fin")
-    .addField("Armure de sorcier traditionnel", "Prix : 150 pièces de bronze \n 45 pièces d'argent \n ?Achat armure de sorcier traditionnel")
-    .addField("Armure de sorcier reconnu", "Prix: 500 pièces de bronze \n 210 pièces d'argent \n 70 pièces d'or \n ?Achat armure de sorcier reconnu")
+    .addField("Armure en tissus fin", "Prix : 70 pièces de bronze \n ?Achat : armure en tissus fin")
+    .addField("Armure de sorcier traditionnel", "Prix : 150 pièces de bronze \n 45 pièces d'argent \n ?Achat : armure de sorcier traditionnel")
+    .addField("Armure de sorcier reconnu", "Prix: 500 pièces de bronze \n 210 pièces d'argent \n 70 pièces d'or \n ?Achat : armure de sorcier reconnu")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }
