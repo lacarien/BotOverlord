@@ -2448,11 +2448,18 @@ if(message.content === préfix + "Parchemin"){
     var help_embed = new Discord.RichEmbed()
     .addField("Parchemin", "Ils sont tous à utilisation unique")
     .addField("Liste des parchemins", "?Parchemin de fuite \n ?Parchemin d'invocation \n ?Parchemin de message")
-    .setColor("#1fff00")
+    .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }
     
+  if(message.content === préfix + "Parchemin de message"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Parchemin de message simple", "5 pièces de bronze \n peut envoyer un message à une personne, mais à 1heurs de retard et ne peut contenir que 3 phrases maximum")
+    .addField("Parchemin de message", "15 pièces de bronze \n 2 pièces d'argent \n  peut envoyer un message à une personne sanc limite ni autre")
     
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}  
     
     
 });
