@@ -2370,10 +2370,10 @@ if(message.content === préfix + "Achat : armure simple avec cotte de mailles"){
     var maxs = Math.floor(Math.max(30)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
-    var x = new Discord.RichEmbed()
+  
     .addField(":shield:  Armure simple avec cotte de mailles", "HP: " + y + ":hearts: \n Mana: " + x +":sparkles: ")
     .setColor("#0006a4")
-    message.channel.sendMessage(y, x);    
+    message.channel.sendMessage(y);    
 }
 
 
