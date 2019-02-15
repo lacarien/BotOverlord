@@ -2332,7 +2332,7 @@ if(message.content === préfix + "AAA"){
     if(message.content === préfix + "Information sur l'argent"){
     var help_embed = new Discord.RichEmbed()
     .addField("C'est quoi et à quoi il sert ?", "Il peut être obtenue après avoir tué un monstre ou bien lors de récompense des donjons. Il peut être utiliser pour de l'équipement, des demandes à d'autre joueur, pour acheter des potions...")
-   
+   .addField("Où en trouver ?", "Il existe 3 types de pièces: \n  Celui en bronze: que l'on trouve avant tout dans les marécages \n Celui en argent trouvable dans certain donjon et dans la forêt \n Celui en or: trouvable dans la montagne enneigé et contre des boss \n mais le moyen le plus facile d'en avoir c'est via des quêtes d'aventuriers")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }
