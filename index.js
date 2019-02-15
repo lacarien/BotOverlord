@@ -2351,7 +2351,7 @@ if(message.content === préfix + "Armure mana"){
     message.channel.sendMessage(help_embed);
 }
 
-if(message.content === préfix + "?Achat : armure en cuir souple"){
+if(message.content === préfix + "Achat : armure en cuir souple"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(15));
     var max = Math.floor(Math.max(30)); 
@@ -2361,7 +2361,7 @@ if(message.content === préfix + "?Achat : armure en cuir souple"){
     .setColor("#0009ff")
     message.channel.sendMessage(y);
 }
-if(message.content === préfix + "?Achat : armure simple avec cotte de mailles"){
+if(message.content === préfix + "Achat : armure simple avec cotte de mailles"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(70));
     var max = Math.floor(Math.max(100)); 
@@ -2373,7 +2373,7 @@ if(message.content === préfix + "?Achat : armure simple avec cotte de mailles")
     var x = new Discord.RichEmbed()
     .addField(":shield:  Armure simple avec cotte de mailles", "HP: " + y + ":hearts: \n Mana: " + x +":sparkles: ")
     .setColor("#0006a4")
-    message.channel.sendMessage(y + x);    
+    message.channel.sendMessage(y, x);    
 }
 
 
