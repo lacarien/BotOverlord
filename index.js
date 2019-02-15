@@ -2444,7 +2444,13 @@ if(message.content === préfix + "Achat : armure de sorcier reconnu"){
     .setColor("#010461")
     message.channel.sendMessage(y);    
 }
-
+if(message.content === préfix + "Parchemin"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Parchemin", "Ils sont tous à utilisation unique")
+    .addField("Liste des parchemins", "?Parchemin de fuite \n ?Parchemin d'invocation \n ?Parchemin de message")
+    .setColor("#1fff00")
+    message.channel.sendMessage(help_embed);
+}
     
     
     
