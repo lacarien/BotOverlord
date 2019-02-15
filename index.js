@@ -2350,7 +2350,27 @@ if(message.content === préfix + "Armure mana"){
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }
-
+if(message.content === préfix + "?Achat : armure en cuir souple"){
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    .addField(":shield:  Armure en cuir souple", "HP:" + y + ":hearts: ")
+    .setColor("#0009ff")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "?Achat : armure simple avec cotte de mailles"){
+    var min = Math.floor(Math.min(70));
+    var max = Math.floor(Math.max(100)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var mins = Math.floor(Math.min(20));
+    var maxs = Math.floor(Math.max(30)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var help_embed = new Discord.RichEmbed()
+    .addField(":shield:  Armure simple avec cotte de mailles", "HP: " + y + ":hearts: \n Mana: " + x +":sparkles: ")
+    .setColor("#0006a4")
+    message.channel.sendMessage(help_embed);    
+}
 
 
     
