@@ -2454,8 +2454,8 @@ if(message.content === préfix + "Parchemin"){
     
   if(message.content === préfix + "Parchemin de message"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Parchemin de message simple", "5 pièces de bronze \n peut envoyer un message à une personne, mais à 1heurs de retard et ne peut contenir que 3 phrases maximum")
-    .addField("Parchemin de message", "15 pièces de bronze \n 2 pièces d'argent \n  peut envoyer un message à une personne sanc limite ni autre")
+    .addField("Parchemin de message simple", "5 pièces de bronze \n peut envoyer un message à une personne, mais à 1heures de retard et ne peut contenir que 3 phrases maximum")
+    .addField("Parchemin de message", "15 pièces de bronze \n 2 pièces d'argent \n  peut envoyer un message à une personne sans limite ni autre")
     
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
