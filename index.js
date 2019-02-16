@@ -2524,7 +2524,7 @@ if(message.content === préfix + "Mort créature des marécages"){
     .setColor("#ab5902")
     message.channel.sendMessage(y);
 }   
-if(message.content === préfix + "Mort arbre maudit "){
+if(message.content === préfix + "Mort arbre maudit"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(2));
     var max = Math.floor(Math.max(5)); 
