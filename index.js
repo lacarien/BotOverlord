@@ -2514,7 +2514,36 @@ if(message.content === préfix + "Parchemin de fuite haut") {
     message.channel.send(result);
 
 }     
-    
+if(message.content === préfix + "Mort créature des marécages"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(0));
+    var max = Math.floor(Math.max(3)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
+    .setColor("#ab5902")
+    message.channel.sendMessage(y);
+}   
+if(message.content === préfix + "Mort arbre maudit "){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(2));
+    var max = Math.floor(Math.max(5)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
+    .setColor("#ab5902")
+    message.channel.sendMessage(y);
+}       
+if(message.content === préfix + "Mort lézard primitif"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(20)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
+    .setColor("#ab5902")
+    message.channel.sendMessage(y);
+}     
 });
 
 
