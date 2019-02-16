@@ -2460,7 +2460,60 @@ if(message.content === préfix + "Parchemin"){
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }  
+if(message.content === préfix + "Parchemin d'invocation'"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("???", "Pas encore dispo")
     
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "Parchemin de fuite"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Parchemin de fuite simple", "25 pièces de bronze \n 7 pièces d'argent \n Utilisation une fois achetté: ?Parchemin de fuite simple")
+    .addField("Parchemin de fuite", "50 pièces de bronze \n  15 pièces d'argent \n  Utilisation unef ois achetté: ?Parchemin de fuite")
+    .addField("Parchemin de fuite haut", "100 pièces de bronze \n 30 pièces d'argent \n  5 pièces d'or \n Utilisation une fois achetté: ?Parchemin de fuite haut")
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "Parchemin de fuite simple") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 50)
+    var result = new Discord.RichEmbed() 
+    .setColor("#00ff37")
+    .setAuthor("Le parchemin vous téléporte à votre domicile")
+    if(50 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Le parchemin ne fonctionne pas")
+    message.channel.send(result);
+
+}
+if(message.content === préfix + "Parchemin de fuite") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 60)
+    var result = new Discord.RichEmbed() 
+    .setColor("#00ff37")
+    .setAuthor("Le parchemin vous téléporte à votre domicile")
+    if(60 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Le parchemin ne fonctionne pas")
+    message.channel.send(result);
+
+}
+if(message.content === préfix + "Parchemin de fuite haut") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 70)
+    var result = new Discord.RichEmbed() 
+    .setColor("#00ff37")
+    .setAuthor("Le parchemin vous téléporte à votre domicile")
+    if(70 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Le parchemin ne fonctionne pas")
+    message.channel.send(result);
+
+}     
     
 });
 
