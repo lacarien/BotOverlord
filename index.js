@@ -2527,8 +2527,8 @@ if(message.content === préfix + "Mort créature des marécages"){
 }   
 if(message.content === préfix + "Mort arbre maudit"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(2));
-    var max = Math.floor(Math.max(5)); 
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(10)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
