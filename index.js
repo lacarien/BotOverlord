@@ -2582,7 +2582,7 @@ if(message.content === préfix + "Déplacement petit donjon"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result > 70)
-    var y = Math.floor(Math.floor(y) *0.7)
+    var y = Math.floor(Math.floor(y) *1.2)
         if(result < 70)
     var y = new Discord.RichEmbed()
     .addField("Le Reptile vous infliges un grand coup de poings violent dans le ventre", y)
