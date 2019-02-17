@@ -2567,7 +2567,7 @@ if(message.content === préfix + "Déplacement petit donjon"){
     if(result <80)
     var help_embed = new Discord.RichEmbed()
     .setTitle("Reptile Tank")
-    .setDescription("Un Reptile se trouve en plein sur votre passage, vous devez obligatoirement l'affrontez pour continuer votre route et accéder au prochain étage")
+    .setDescription("Un Reptile se trouve en plein sur votre passage, vous devez obligatoirement l'affronter pour continuer votre route et accéder au prochain étage")
     .addField("HP", "75 :heart: ")
     .addField(":knife: Attaque", "?Reptile tank attaque")
     .addField(":shield: Défense", "?Reptile tank défense")
