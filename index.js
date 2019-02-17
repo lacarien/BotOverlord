@@ -2557,21 +2557,30 @@ if(message.content === préfix + "Mort lézard primitif"){
 }
 if(message.content === préfix + "Déplacement petit donjon"){
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result > 80)
+    if(result < 20)
     var help_embed = new Discord.RichEmbed()
     .setTitle("Vous trouvez un passage rapide :soon: ")
     .setDescription("Vous avez de la chance ! Rien à l'horizon et vous accédez à l'étage suivant sans trop de problème")
     .setImage("https://i.pinimg.com/236x/b3/f7/07/b3f707e59b2f4a30fd37b92cb8b43bd7--the-dungeon-concept-art.jpg")
     .setFooter("Donjon")
     .setColor("#000000")
-    if(result <80)
+    else if(result < 50)
     var help_embed = new Discord.RichEmbed()
     .setTitle("Reptile Tank")
-    .setDescription("Un Reptile se trouve en plein sur votre passage, vous devez obligatoirement l'affronter pour continuer votre route et accéder au prochain étage")
+    .setDescription("Un Reptile se trouve en plein sur votre passage, vous devez obligatoirement l'affrontez pour continuer votre route et accéder au prochain étage")
     .addField("HP", "75 :heart: ")
     .addField(":knife: Attaque", "?Reptile tank attaque")
     .addField(":shield: Défense", "?Reptile tank défense")
     .setImage("https://jolstatic.fr/www/captures/1876/9/83459.jpg")
+    .setColor("#000000")
+    else if (result < 101)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Archer masqué")
+    .setDescription("Un archer se trouve en haut d'une tour, vous devez obligatoirement l'affrontez pour continuer votre route et accéder au prochain étage")
+    .addField("HP", "45 :heart: ")
+    .addField(":bow_and_arrow:  Attaque", "?Archer masqué attaque")
+    .addField(":shield: Défense", "?Archer masqué défense")
+    .setImage("https://cdn.discordapp.com/attachments/539900275280969746/542014866970378240/367cf2462847232dc762837575f240ba.png")
     .setColor("#000000")
     message.channel.sendMessage(help_embed);
 }
@@ -2602,6 +2611,28 @@ if(message.content === préfix + "Reptile tank défense"){
     .addField("Le Reptile tente de bloquer l'attaque du mieux qu'il peut", y)
     .setColor("#217504")
     message.channel.send(y);
+}
+    if(message.content === préfix + "Archer masqué attaque"){
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(25)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .addField("L'archer vous tires une flèche en plein dans votre torse à l'aide de son arbalete"  , y)
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Archer masqué défense") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 35)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setTitle("L'archer fait une roulade sur le coter et évite l'attaque")
+    if(35 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#00ff27")
+    .setAuthor("L'archer se prends les dégats en plein dans le torse")
+    message.channel.send(result);
 }
 });
 
