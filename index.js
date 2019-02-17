@@ -2575,6 +2575,34 @@ if(message.content === préfix + "Déplacement petit donjon"){
     .setColor("#000000")
     message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "Reptile tank attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(16)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 70)
+    var y = Math.floor(Math.floor(y) *0.7)
+        if(result < 70)
+    var y = new Discord.RichEmbed()
+    .addField("Le Reptile vous infliges un grand coup de poings violent dans le ventre", y)
+    .setColor("#fb6f00")
+        else
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .addField("Le Reptile attaque tout les ennemies d'un rugissement, les blessants en plus de leur infliger une provocation(durée: 2Tours)", y)
+    .setImage("https://jolstatic.fr/www/captures/1876/9/83459.jpg")
+    message.channel.sendMessage(y);
+}
+if(message.content === préfix + "Reptile tank défense"){
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(15)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le Reptile tente de bloquer l'attaque du mieux qu'il peut", y)
+    .setColor("#217504")
+    message.channel.send(y);
+}
 });
 
 
