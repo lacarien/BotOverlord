@@ -2634,6 +2634,31 @@ if(message.content === préfix + "Archer masqué défense") {
     .setAuthor("L'archer se prends les dégats en plein dans le torse")
     message.channel.send(result);
 }
+    if(message.content === préfix + "Boss faible attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 65)
+    var y = Math.floor(Math.floor(y) *0.7)
+    if(result > 80)
+    var y = Math.floor(Math.floor(y) *0.8)
+    if(result < 65)
+    var y = new Discord.RichEmbed()
+    .addField("Le lancier attaque d'un coup de lance vertical", y)
+    .setColor("#ff0000")
+        else if (result < 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .addField("Le lancier vous charges et vous ne pouvez pas bloquer l'attaque", y)
+       else
+       var y = new Discord.RichEmbed()
+       .setColor("#ff0000")
+    .addField("Le lancier vous infliges un coup d'estoc ce qui vous paralyses et vous empeches de vous défendres ou d'attaquer(durée: 2Tours)", y)
+    .setImage("https://images-ext-2.discordapp.net/external/5DsovwwSu49CRIE7OPv7VIc2vqPXAzj5eC0EbDS5BJ8/https/cdn.discordapp.com/attachments/539900275280969746/542015020133777409/cd80fa7470840140877e9915996a39b1.png?width=388&height=559")
+    message.channel.sendMessage(y);
+}
 });
 
 
