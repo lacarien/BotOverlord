@@ -2667,7 +2667,7 @@ if(message.content === préfix + "Archer masqué défense") {
        else
        var y = new Discord.RichEmbed()
        .setColor("#000000")
-    .addField("Le lancier vous infliges un coup d'estoc ce qui vous paralyses et vous empeches de vous défendres ou d'attaquer(durée: 2Tours)", y)
+    .addField("Le lancier vous infliges un coup d'estoc ce qui vous paralyses et vous empeches de vous défendres ou d'attaquer(durée: 1Tours)", y)
     .setImage("https://images-ext-2.discordapp.net/external/5DsovwwSu49CRIE7OPv7VIc2vqPXAzj5eC0EbDS5BJ8/https/cdn.discordapp.com/attachments/539900275280969746/542015020133777409/cd80fa7470840140877e9915996a39b1.png?width=388&height=559")
     message.channel.sendMessage(y);
 }
