@@ -2626,11 +2626,11 @@ if(message.content === préfix + "Archer masqué défense") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 35)
     var result = new Discord.RichEmbed() 
-    .setColor("#ff0000")
+    .setColor("#00ff27")
     .setTitle("L'archer fait une roulade sur le coter et évite l'attaque")
     if(35 < result)
     var result = new Discord.RichEmbed() 
-    .setColor("#00ff27")
+    .setColor("#ff0000")
     .setAuthor("L'archer se prends les dégats en plein dans le torse")
     message.channel.send(result);
 }
