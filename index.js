@@ -2642,6 +2642,7 @@ if(message.content === préfix + "Archer masqué défense") {
     .addField("HP", "135 :heart: ")
     .addField(":knife: Attaque", "?Boss faible attaque")
     .addField(":shield: Défense", "?Boss faible défense")
+    .addField("Une fois le boss mort", "?Donjon faible finit")
     .setImage("https://cdn.discordapp.com/attachments/539900275280969746/542015020133777409/cd80fa7470840140877e9915996a39b1.png")
     .setFooter("Donjon")
     message.channel.sendMessage(help_embed);
@@ -2679,6 +2680,34 @@ if(message.content === préfix + "Archer masqué défense") {
     .addField("Le lancier bloque votre attaque sans trop de difficulté", y)
     .setColor("#ff0000")
     message.channel.send(y);
+}
+    
+    if(message.content === préfix + "Donjon faible finit"){
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 20)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Vous obtenez un parchemin de fuite simple")
+    .setImage("https://i.pinimg.com/236x/b3/f7/07/b3f707e59b2f4a30fd37b92cb8b43bd7--the-dungeon-concept-art.jpg")
+    .setFooter("Donjon")
+    .setColor("#000000")
+    else if(result < 50)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Vous obtenez des pièces")
+    .setDescription("5 Pièces d'argent et 20 pièces de bronze")
+    .setColor("#f0ff00")
+    else if (result < 75)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Vous obtenez des potions")
+    .setDescription("Vous trouvez 2 potions de soins faible")
+    .setImage("https://cdn.discordapp.com/attachments/539900275280969746/542014866970378240/367cf2462847232dc762837575f240ba.png")
+    .setColor("#ff0000")
+    else if (result < 101)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Vous obtenez des potions")
+    .setDescription("Vous trouvez 2 potions de mana faible")
+    .setImage("https://images-ext-2.discordapp.net/external/w3INPO_dL0WbmSd7eTRYAQELeZ0f_caaLJix6H5YkKE/%3Fwidth%3D404%26height%3D585/https/media.discordapp.net/attachments/542028605874634752/542053261130334228/da66dd28623e31be7cd6ff36e7a849ae.png?width=386&height=559")
+    .setColor("#00ffe7")
+    message.channel.sendMessage(help_embed);
 }
 });
 
