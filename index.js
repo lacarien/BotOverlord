@@ -2687,7 +2687,7 @@ if(message.content === préfix + "Archer masqué défense") {
     if(result < 20)
     var help_embed = new Discord.RichEmbed()
     .setTitle("Vous obtenez un parchemin de fuite simple")
-    .setImage("https://i.pinimg.com/236x/b3/f7/07/b3f707e59b2f4a30fd37b92cb8b43bd7--the-dungeon-concept-art.jpg")
+    .setImage("https://media.discordapp.net/attachments/499161815549476864/545186073806897173/f5f4818c26697205c9e9ebf823a5f987.jpg?width=414&height=559")
     .setFooter("Donjon")
     .setColor("#000000")
     else if(result < 50)
@@ -2709,6 +2709,7 @@ if(message.content === préfix + "Archer masqué défense") {
     .setColor("#00ffe7")
     message.channel.sendMessage(help_embed);
 }
+    
 });
 
 
