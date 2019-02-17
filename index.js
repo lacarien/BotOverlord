@@ -2634,6 +2634,18 @@ if(message.content === préfix + "Archer masqué défense") {
     .setAuthor("L'archer se prends les dégats en plein dans le torse")
     message.channel.send(result);
 }
+    if(message.content === préfix + "Salle final"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle(":warning:  C'est l'heure du boss...")
+    .setColor("#ff0000")
+    .setDescription("Vous rentrez dans une salle en forme de cercle ou au centre se trouve un terrible ennemie qui est pret à vous en découdres")
+    .addField("HP", "135 :heart: ")
+    .addField(":knife: Attaque", "?Boss faible attaque")
+    .addField(":shield: Défense", "?Boss faible défense")
+    .setImage("https://cdn.discordapp.com/attachments/539900275280969746/542015020133777409/cd80fa7470840140877e9915996a39b1.png")
+    .setFooter("Donjon")
+    message.channel.sendMessage(help_embed);
+}
     if(message.content === préfix + "Boss faible attaque"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(20));
