@@ -2550,21 +2550,21 @@ if(message.content === préfix + "Mort lézard primitif"){
     .setTitle("La porte se referme avec l'aide d'une magie inconnu :interrobang: ")
     .setColor("#ff0000")
     .setDescription("Vous et vos compagnons êtes maintenant enfermés dans le donjon, personne ne peut venir vous chercher et le seul moyen dans sortir c'est de finir le donjon. Les parchemins de fuites sont inutiles")
-    .addField("Fonctionnement du donjon", "Vous devez donc utiliser la même commande qui est: ?Déplacement petit donjon \n après avoir remplie les conditions du déplacement, vous changerez de chanel jusqu'à arriver à la salle du boss. ?Petit donjon boss")
+    .addField("Fonctionnement du donjon", "Vous devez donc utiliser la même commande qui est: \n ?Déplacement petit donjon \n après avoir remplie les conditions du déplacement, vous changerez de chanel jusqu'à arriver à la salle du boss. ?Petit donjon boss")
     .setImage("https://i.pinimg.com/originals/f9/b5/58/f9b558b5dcdb2f413ea08407c77c043e.jpg")
     .setFooter("Donjon")
     message.channel.sendMessage(help_embed);
 }
 if(message.content === préfix + "Déplacement petit donjon"){
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 80)
+    if(result > 80)
     var help_embed = new Discord.RichEmbed()
     .setTitle("Vous trouvez un passage rapide :soon: ")
     .setDescription("Vous avez de la chance ! Rien à l'horizon et vous accédez à l'étage suivant sans trop de problème")
     .setImage("https://i.pinimg.com/236x/b3/f7/07/b3f707e59b2f4a30fd37b92cb8b43bd7--the-dungeon-concept-art.jpg")
     .setFooter("Donjon")
     .setColor("#000000")
-    if(result >80)
+    if(result <80)
     var help_embed = new Discord.RichEmbed()
     .setTitle("Reptile Tank")
     .setDescription("Un Reptile se trouve en plein sur votre passage, vous devez obligatoirement l'affrontez pour continuer votre route et accéder au prochain étage")
