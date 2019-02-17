@@ -2671,6 +2671,15 @@ if(message.content === préfix + "Archer masqué défense") {
     .setImage("https://images-ext-2.discordapp.net/external/5DsovwwSu49CRIE7OPv7VIc2vqPXAzj5eC0EbDS5BJ8/https/cdn.discordapp.com/attachments/539900275280969746/542015020133777409/cd80fa7470840140877e9915996a39b1.png?width=388&height=559")
     message.channel.sendMessage(y);
 }
+    if(message.content === préfix + "Boss faible défense"){
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(20)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le lancier bloque votre attaque sans trop de difficulté", y)
+    .setColor("#ff0000")
+    message.channel.send(y);
+}
 });
 
 
