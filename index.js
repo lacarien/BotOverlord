@@ -2740,7 +2740,7 @@ if(message.content === préfix + "Mort chouette du vent"){
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }       
-if(message.content === préfix + "Mort lézard primitif"){
+if(message.content === préfix + "Mort géant de la forêt"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(70));
     var max = Math.floor(Math.max(100)); 
