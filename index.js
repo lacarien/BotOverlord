@@ -2754,6 +2754,26 @@ if(message.content === préfix + "Mort géant de la forêt"){
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }
+    if(message.content === préfix + "PCP Combattant"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("PCP Combattant")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("3PC", "+10 dans les Roll d'action de force (exemple: donner un coup de poings)")
+    .addField("12PC", "Vous avez de bonnes connaissances sur les armures et les armes")
+    .addField("15PC", "+10 dans les Roll d'action de force (exemple: donner un coup de poings)")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "PCP Mage"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("PCP Mage")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("3PC", "Vous pouvez faires apparaitre une boule lumineuse de mana pour vous éclaire dans l'obscurité")
+    .addField("12P", "Vous pouvez vous méthamorphoser en humanoîde pendant 30minutes grand max(Si vous subisez des dégats, l'effet disparait)")
+    .addField("15PC", "Vous pouvez voler en l'air pendant 10minutes grand maximum(Interdit en plein combat)")
+    message.channel.sendMessage(help_embed);
+}
 });
 
 
