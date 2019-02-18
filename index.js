@@ -2710,6 +2710,50 @@ if(message.content === préfix + "Archer masqué défense") {
     message.channel.sendMessage(help_embed);
 }
     
+    
+    
+    if(message.content === préfix + "Mort gobelin primitif"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(7));
+    var max = Math.floor(Math.max(17)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(0));
+    var maxs = Math.floor(Math.max(3)); 
+    var x = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}   
+if(message.content === préfix + "Mort chouette du vent"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(35)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(3));
+    var maxs = Math.floor(Math.max(8)); 
+    var x = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}       
+if(message.content === préfix + "Mort lézard primitif"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(70));
+    var max = Math.floor(Math.max(100)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(20));
+    var maxs = Math.floor(Math.max(35)); 
+    var x = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}
 });
 
 
