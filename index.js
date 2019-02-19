@@ -333,9 +333,10 @@ client.on('message', message => {
 
     if(message.content === préfix + "Personnage et stats"){
         var help_embed = new Discord.RichEmbed()
-        .setTitle("Personnage")
+        .setTitle("Personnage") 
         .setDescription("Bon, ici on arrive sur les parties compliquées, quand votre fiche sera acceptée il faudra que vous vous rename du style: Pseudo [HP / Mana] sur un cas un peu plus serieux cela donnerait Bernard [80-100] après vous pouvez changer l'esthetisme du moment que cela reste compréhensible.")
         .addField("Comment évoluer ?", "Imaginons que vous êtes voleur et que vous voulez évoluer en assassin, cela dépendrait non pas de vos actions mais de votre implication dans le RP grace au bot. En effet chaque level que vous gagnez correspondra à un point de caractéristique, pour voir comment les utiliser: ?PC ")
+        .addField("évolution passif", "?PCP [Nom de classe] Les PCP c'est les points de caracthéristiques passifs, utilisable seulement hors combat, pour améliorer vos actions passifs")
         message.channel.sendMessage(help_embed);
     }
 
