@@ -2774,6 +2774,26 @@ if(message.content === préfix + "PCP Mage"){
     .addField("15PC", "Vous pouvez voler en l'air pendant 10minutes grand maximum(Interdit en plein combat)")
     message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "PCP Ranger"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("PCP Ranger")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("3PC", "+10 dans les Roll d'action visuelle (exemple: regarder au loin)")
+    .addField("12P", "Vous pouvez retrouver les traces de passage d'un joueur d'il y a 6heures (avec un Roll pour la recherche des traces). Mais vous ne pouvez pas encore reconnaitre leur nombre exacte")
+    .addField("13PC", "+10 dans les Roll d'action visuelle (exemple: regarder au loin)")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "PCP Voleur"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("PCP Voleur")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("3PC", "+10 dans les Roll d'action de discrétion (exemple: s'approcher dans le dos discrétement)")
+    .addField("12P", "+10 dans les Roll d'action d'agilité (exemple: esquiver un coup de poings ou escalader un arbre ou autre)")
+    .addField("15PC", "+10 dans les Roll d'action de discrétion (exemple: s'approcher dans le dos discrétement)")
+    message.channel.sendMessage(help_embed);
+}
 });
 
 
