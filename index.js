@@ -181,7 +181,7 @@ client.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("#ff0000")
         .addField("Voleur", "Vous êtes la classe qui fait le plus de dégats avec le ranger")
-        .addField("Assassin", "évolution du voleur à partir de ???")
+        .addField("Assassin", "évolution du voleur à partir de 15PC")
         .setImage("https://coubsecure-s.akamaihd.net/get/b96/p/coub/simple/cw_timeline_pic/c6b4f22ba33/4f5366739caf7b081fecf/big_1474128121_image.jpg")
         .setFooter("Menu du voleur")
         message.channel.sendMessage(help_embed);
@@ -203,8 +203,8 @@ client.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("#1a00ff")
         .addField("Combattant", "Vous avez 20HP en plus")
-        .addField("Chevalier", "évolution du combattant à partir de ???")
-        .addField("Paladin", "évolution du combattant à partir de ???")
+        .addField("Chevalier", "évolution du combattant à partir de 15PC")
+        .addField("Paladin", "évolution du combattant à partir de 15PC")
         .setImage("https://cdn.discordapp.com/attachments/532644881588551683/534445613354582046/unknown.png")
         .setFooter("Menu du Combattant")
         message.channel.sendMessage(help_embed);
@@ -238,7 +238,7 @@ client.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("#019521")
         .addField("Ranger", "Vous êtes la classe qui fait le plus de dégats avec le voleur")
-        .addField("Archer", "évolution du Ranger à partir de ???")
+        .addField("Archer", "évolution du Ranger à partir de 15PC")
         .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/5/59/Overlord_EP07_015.png/revision/latest?cb=20150822091615")
         .setFooter("Menu Ranger")
         message.channel.sendMessage(help_embed);
@@ -481,7 +481,7 @@ client.on('message', message => {
         .setColor("#019521")
         .setTitle("PC Ranger")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("5PC", "Vous obtenez la compétence ?Tire rapide")
+        .addField("5PC", "Vous obtenez la compétence ?Tir rapide")
         .addField("10PC", "Vous obtenez la compétence ?Ranger ultime")
         .addField("15PC", "Vous pouvez devenir Archer")
         message.channel.sendMessage(help_embed);
@@ -669,7 +669,7 @@ client.on('message', message => {
     }
 
 
-    if(message.content === préfix + "Tire rapide"){
+    if(message.content === préfix + "Tir rapide"){
         var min = Math.floor(Math.min(20));
         var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
