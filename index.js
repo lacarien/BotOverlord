@@ -2167,7 +2167,7 @@ if(message.content === préfix + "Apparition forêt") {
 }
   
     
-  if(message.content === préfix + "Régénération de mana du Sorcier"){
+  if(message.content === préfix + "Régénération de mana supérieur"){
     var min = Math.floor(Math.min(250));
     var max = Math.floor(Math.max(300)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
