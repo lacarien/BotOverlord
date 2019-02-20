@@ -2729,12 +2729,12 @@ if(message.content === préfix + "Archer masqué défense") {
 }   
 if(message.content === préfix + "Mort chouette du vent"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(15));
-    var max = Math.floor(Math.max(35)); 
+    var min = Math.floor(Math.min(26));
+    var max = Math.floor(Math.max(45)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var help_embed = new Discord.RichEmbed()
-    var mins = Math.floor(Math.min(3));
-    var maxs = Math.floor(Math.max(8)); 
+    var mins = Math.floor(Math.min(8));
+    var maxs = Math.floor(Math.max(18)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
