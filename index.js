@@ -1624,15 +1624,7 @@ if(message.content === préfix + "Ciblage 3") {
 
 }
 
-if(message.content === préfix + "Ciblage 4") {
-    var result = Math.floor((Math.random() * 4) + 1);
-    var result = new Discord.RichEmbed() 
-    .setTitle("Vous êtes pris pour cible ")
-    .setDescription(result)
-    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540194986952622080/latest.png")
-    message.channel.send(result);
 
-}
 
 
 if(message.content === préfix + "Ciblage 4") {
