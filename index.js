@@ -2642,14 +2642,14 @@ if(message.content === préfix + "Archer masqué défense") {
 }
     if(message.content === préfix + "Boss faible attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(20));
-    var max = Math.floor(Math.max(30)); 
+    var min = Math.floor(Math.min(22));
+    var max = Math.floor(Math.max(32)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result > 65)
-    var y = Math.floor(Math.floor(y) *0.7)
+    var y = Math.floor(Math.floor(y) *1.1)
     if(result > 80)
-    var y = Math.floor(Math.floor(y) *0.8)
+    var y = Math.floor(Math.floor(y) *0.9)
     if(result < 65)
     var y = new Discord.RichEmbed()
     .addField("Le lancier attaque d'un coup de lance vertical", y)
