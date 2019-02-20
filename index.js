@@ -2666,7 +2666,7 @@ if(message.content === préfix + "Archer masqué défense") {
     message.channel.sendMessage(y);
 }
     if(message.content === préfix + "Boss faible défense"){
-    var min = Math.floor(Math.min(10));
+    var min = Math.floor(Math.min(15));
     var max = Math.floor(Math.max(20)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
