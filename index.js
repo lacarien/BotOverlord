@@ -2463,7 +2463,7 @@ if(message.content === préfix + "Parchemin d'invocation'"){
 }
 if(message.content === préfix + "Parchemin de fuite"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Parchemin de fuite simple", "25 pièces de bronze \n 7 pièces d'argent \n Utilisation une fois achetté: ?Parchemin de fuite simple")
+    .addField("Parchemin de fuite simple", "60 pièces de bronze \n 15 pièces d'argent \n Utilisation une fois achetté: ?Parchemin de fuite simple")
     .addField("Parchemin de fuite", "50 pièces de bronze \n  15 pièces d'argent \n  Utilisation unef ois achetté: ?Parchemin de fuite normal")
     .addField("Parchemin de fuite haut", "100 pièces de bronze \n 30 pièces d'argent \n  5 pièces d'or \n Utilisation une fois achetté: ?Parchemin de fuite haut")
     .setColor("#f0ff00")
