@@ -2666,8 +2666,8 @@ if(message.content === préfix + "Archer masqué défense") {
     message.channel.sendMessage(y);
 }
     if(message.content === préfix + "Boss faible défense"){
-    var min = Math.floor(Math.min(20));
-    var max = Math.floor(Math.max(25)); 
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(20)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Le lancier bloque votre attaque sans trop de difficulté", y)
