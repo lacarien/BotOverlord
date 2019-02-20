@@ -2642,8 +2642,8 @@ if(message.content === préfix + "Archer masqué défense") {
 }
     if(message.content === préfix + "Boss faible attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(22));
-    var max = Math.floor(Math.max(32)); 
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(42)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result > 65)
