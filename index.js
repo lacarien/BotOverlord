@@ -658,7 +658,7 @@ client.on('message', message => {
     }
     
     if(message.content === préfix + "Coup multiple"){
-        var min = Math.floor(Math.min(20));
+        var min = Math.floor(Math.min(35));
         var max = Math.floor(Math.max(100)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
