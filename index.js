@@ -1046,7 +1046,7 @@ client.on('message', message => {
     var help_embed = new Discord.RichEmbed()
     .setColor("#ff0000")
     .setTitle("Dégagement d'aura négative(-80Mana)")
-    .setDescription("Pendant 3 tours tout le monde (même vos alliées) auront -20 en défense")
+    .setDescription("Pendant 3 tours tout le monde (même vos alliées(sauf les démons)) auront -20 en défense")
     .setImage("https://www.journaldugeek.com/wp-content/blogs.dir/1/files/2017/05/ETD-1.png")
     message.channel.sendMessage(help_embed);
 }
