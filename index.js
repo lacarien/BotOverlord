@@ -51,6 +51,15 @@ client.on('message', message => {
     .addField("Aventurier", "Tout le monde peut le devenir du moment que les espèces humanoîdes cachent leur véritable identité")
     message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "Tavernier"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("Tavernier")
+    .setDescription("Pour se faire recruter il suffit de demander à un staff(évitez de pings le fondateur...)")
+    .addField("Tavernier", "En tant que Tavernier, vous êtes chargé de donner à boire et à manger au personne qui rentre dans la taverne, c'est vous qui imposez vos prix. ")
+    .addField("Le prix des chambres", "Vous êtes aussi charger de gérer les clés des chambres. Néanmoins il y a des prix fixes \n Chambre faiblement sécurisé seul: 1 5pièces de bronze \n chambre faiblement sécurisé en duo: 8pièces de bronze \n Chambre seul: 15Pièces de bronze \n Chambre en duo: 23Pièces de bronze")
+    message.channel.sendMessage(help_embed);
+}
     
     if(message.content === préfix + "Garde du royaume"){
     var help_embed = new Discord.RichEmbed()
