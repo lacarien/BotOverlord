@@ -51,6 +51,21 @@ client.on('message', message => {
     .addField("Aventurier", "Tout le monde peut le devenir du moment que les espèces humanoîdes cachent leur véritable identité")
     message.channel.sendMessage(help_embed);
 }
+    
+    if(message.content === préfix + "Garde du royaume"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("Garde du Royaume")
+    .setDescription("Pour être garde vous devez faire une demande au royaume au poste de garde((au royaume)un staff jouera le PNJ). Vous avez une hiérarchie et le plus haut gradé peut donner des ordres à celui qui est en dessous. Chaque semaine vous gagnerez un salaire celon votre status. Et celon vos actes. Vous êtes dans l'OBLIGATION d'aider un village / le royaume / ou bien un villageois en cas de problème.")
+    .addField("Comment le grade de départ est-il défini ? et comment évoluer ?", "Celon votre histoire RP et pour évoluer il suffit de faire son boulot...Correctement")
+    .addField("Garde Novice joueur", "Salaira par jour: 10 pièces de bronze")
+    .addField("Garde joueur", "Salaire par jour: 10 Pièces de bronze")
+    .addField("SG garde joueur", "Salaire par jour: 25 Pièces de bronze et 2 Pièces d'argent")
+    .addField("Chef garde", "Salaire : ??")
+    .addField("Pourquoi le salaire est-il si important ?", "Car comme je l'ai dit une fois garde vous êtes obligé d'intervenir face à une mance même si celle-ci est plus forte que vous...Mme si vous êtes level 5 et qu'un vampire level 40 fout le bordel, il est en votre devoir d'essayer de le stopper(étant donné que le meta RP est interdit), après si ils vous défonces et que vous entez que c'est impossible, la c'est compréhensible de fuir, mais au minimum essayer")
+
+    message.channel.sendMessage(help_embed);
+}
 
 
     if(message.content === préfix + "Overlord"){
