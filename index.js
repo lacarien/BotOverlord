@@ -51,6 +51,16 @@ client.on('message', message => {
     .addField("Aventurier", "Tout le monde peut le devenir du moment que les espèces humanoîdes cachent leur véritable identité")
     message.channel.sendMessage(help_embed);
 }
+    
+    if(message.content === préfix + "Aventurier"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("Aventurier")
+    .setDescription("Pour devenir aventurier il faut se présenter au batiment des aventuriers")
+    .addField("Participer à des quêtes ?", "Tout est expliquer au tableau des quêtes néanmoins le gain de rang en équipe est partagé")
+   
+    message.channel.sendMessage(help_embed);
+}
 
     if(message.content === préfix + "Tavernier"){
     var help_embed = new Discord.RichEmbed()
