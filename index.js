@@ -1042,6 +1042,14 @@ client.on('message', message => {
 
     }
 
+    if(message.content === préfix + "Vague négative"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("Dégagement d'aura négative(-80Mana)")
+    .setDescription("Pendant 3 tours tout le monde (même vos alliées) auront -20 en défense")
+    .setImage("https://www.journaldugeek.com/wp-content/blogs.dir/1/files/2017/05/ETD-1.png")
+    message.channel.sendMessage(help_embed);
+}
     if(message.content === préfix + "Drain de vie"){
         var min = Math.floor(Math.min(20));
         var max = Math.floor(Math.max(40)); 
