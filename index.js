@@ -40,6 +40,17 @@ client.on('message', message => {
         message.channel.sendMessage(help_embed);
         console.log("Un utilisateur à utiliser la commande d'aide.")
     }
+    
+    if(message.content === préfix + "Métiers"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("Liste des métiers")
+    .setDescription("Chaque métier a ses avantages, faite la commande du métier pour plus de détails")
+    .addField("Garde", "Uniquement résérvé aux Combattants et rangers Humain (rien ne vous empêches de vous infiltrer dans la garde)")
+    .addField("Tavernier", "Tout le monde peut le devenir du moment que les espèces humanodes cachent leur véritable identité sauf les personnes recherchés")
+    .addField("Aventurier", "Tout le monde peut le devenir du moment que les espèces humanoîdes cachent leur véritable identité")
+    message.channel.sendMessage(help_embed);
+}
 
 
     if(message.content === préfix + "Overlord"){
@@ -2797,6 +2808,8 @@ if(message.content === préfix + "PCP Voleur"){
     .addField("13PC", "+10 dans les Roll d'action de discrétion (exemple: s'approcher dans le dos discrétement)")
     message.channel.sendMessage(help_embed);
 }
+    
+    
 });
 
 
