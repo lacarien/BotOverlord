@@ -19,6 +19,7 @@ client.on('message', message => {
         .addField("Race", "Liste des espèces")
         .addField("Classe", "Liste des classes")
         .addField("Combats", "Explication des combats")
+        .addField("Métiers", "Liste des métiers")
         .setImage("https://1.bp.blogspot.com/-GY5W6jVP850/WNwKqzuXizI/AAAAAAAABuM/AlfAEZ7FuDAK5y_qnZy0qp06wvCqM826QCLcB/s1600/Overlord_Characters.png")
         .setFooter("Menu de base")
         message.channel.sendMessage(help_embed);
@@ -33,6 +34,7 @@ client.on('message', message => {
         .addField("Race", "Liste des espèces")
         .addField("Classe", "Liste des classes")
         .addField("Combats", "Explication des combats")
+        .addField("Métiers", "Liste des métiers")
         .setImage("https://www.animenachrichten.de/wp-content/uploads/2017/07/Overlord-Review.jpg")
         .setFooter("Menu de base")
         message.channel.sendMessage(help_embed);
