@@ -627,7 +627,7 @@ client.on('message', message => {
     if(message.content === préfix + "Camouflage"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#000000")
-    .setTitle("Vous vous disimulez dans l'obscurité petit à petit...(-80Mana)")
+    .setTitle("Vous vous disimulez dans l'obscurité petit à petit...(-100Mana)")
     .setDescription("Pendant 3 tours grand max, personne ne peus vous attaquer. Si vous attaquez votre coup sera doublé uniquement pendant votre temps d'action")
     .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/2/24/SAO_E06.png/revision/latest?cb=20140328034307")
     message.channel.sendMessage(help_embed);
