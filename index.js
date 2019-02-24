@@ -2899,7 +2899,7 @@ if(message.content === préfix + "Quête rang Cuivre accomplie"){
     var maxs = Math.floor(Math.max(10)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
-    .addField("Gain de la récompense de la quête :exclamation: ",  "Pièce(s) de bronze: " + y + "\n XP dans le rang cuivre" + x)
+    .addField("Gain de la récompense de la quête :exclamation: ",  ":third_place:  Pièce(s) de bronze: " + x + "\n XP dans le rang cuivre: " + y)
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }
@@ -2935,7 +2935,7 @@ if(message.content === préfix + "Quête rang Fer accomplie"){
     var maxs = Math.floor(Math.max(15)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
-    .addField("Gain de la récompense de la quête :exclamation: ",  "Pièce(s) de bronze: " + y + "\n XP dans le rang cuivre" + x)
+    .addField("Gain de la récompense de la quête :exclamation: ",  ":third_place:  Pièce(s) de bronze: " + x + "\n XP dans le rang Fer: " + y)
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }
@@ -2950,7 +2950,7 @@ if(message.content === préfix + "Quêtes rang Argent"){
     else if(result < 70)
     var help_embed = new Discord.RichEmbed()
     .setTitle("Garde provisoire")
-    .setDescription("Vous devez protéger la petit village en tant que mercenaire pendant 120    minutes")
+    .setDescription("Vous devez protéger la petit village en tant que mercenaire pendant 120 minutes")
     .setColor("#000000")
     else if (result < 101)
     var help_embed = new Discord.RichEmbed()
@@ -2970,7 +2970,7 @@ if(message.content === préfix + "Quête rang Argent accomplie"){
     var maxs = Math.floor(Math.max(20)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
-    .addField("Gain de la récompense de la quête :exclamation: ",  "Pièce(s) de bronze: " + y + "\n XP dans le rang cuivre" + x)
+    .addField("Gain de la récompense de la quête :exclamation: ",  ":third_place:  Pièce(s) de bronze: " + x + "\n XP dans le rang d'Argent: " + y)
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }
@@ -3008,7 +3008,7 @@ if(message.content === préfix + "Quête rang Or accomplie"){
     var maxss = Math.floor(Math.max(2)); 
     var q = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
     var y = new Discord.RichEmbed()
-    .addField("Gain de la récompense de la quête :exclamation: ",  "Pièce(s) de bronze: " + y + "\n Pièce(s) d'argent: " + q + "\n XP dans le rang cuivre" + x )
+    .addField("Gain de la récompense de la quête :exclamation: ",  ":third_place:  Pièce(s) de bronze: " + x + "\n :second_place:  Pièce(s) d'argent: " + q + "\n XP dans le rang OR" + y )
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }
@@ -3041,7 +3041,7 @@ if(message.content === préfix + "Quête rang Platine accomplie"){
     var maxss = Math.floor(Math.max(5)); 
     var q = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
     var y = new Discord.RichEmbed()
-    .addField("Gain de la récompense de la quête :exclamation: ",  "Pièce(s) de bronze: " + y + "\n Pièce(s) d'argent: " + q + "\n XP dans le rang cuivre" + x )
+    .addField("Gain de la récompense de la quête :exclamation: ",  ":third_place:  Pièce(s) de bronze: " + x + "\n :second_place: Pièce(s) d'argent: " + q + "\n XP dans le rang Platine" + y )
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }
