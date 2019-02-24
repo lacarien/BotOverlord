@@ -2572,12 +2572,8 @@ if(message.content === préfix + "Mort créature des marécages"){
     var min = Math.floor(Math.min(0));
     var max = Math.floor(Math.max(3)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var help_embed = new Discord.RichEmbed()
-    var mins = Math.floor(Math.min(0));
-    var maxs = Math.floor(Math.max(1)); 
-    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
-    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Griffe de petit monstre: " + x)
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }    
@@ -2586,29 +2582,12 @@ if(message.content === préfix + "Mort créature des marécages"){
     var min = Math.floor(Math.min(5));
     var max = Math.floor(Math.max(10)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var help_embed = new Discord.RichEmbed()
-    var mins = Math.floor(Math.min(0));
-    var maxs = Math.floor(Math.max(1)); 
-    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
-    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Noyeau d'arbre maudit " + x)
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }    
-    if(message.content === préfix + "Mort lézard primitif"){
-    var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(5));
-    var max = Math.floor(Math.max(10)); 
-    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var help_embed = new Discord.RichEmbed()
-    var mins = Math.floor(Math.min(0));
-    var maxs = Math.floor(Math.max(1)); 
-    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
-    var y = new Discord.RichEmbed()
-    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Oeil de Lézard " + x)
-    .setColor("#9e9a9a")
-    message.channel.sendMessage(y);
-}        
+   
 if(message.content === préfix + "Mort lézard primitif"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(10));
