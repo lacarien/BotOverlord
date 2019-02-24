@@ -2869,7 +2869,7 @@ if(message.content === préfix + "PCP Voleur"){
     message.channel.sendMessage(help_embed);
 }
     
-    if(message.content === préfix + "Quêtes rang Cuivre"){
+if(message.content === préfix + "Quêtes rang Cuivre"){
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 35)
     var help_embed = new Discord.RichEmbed()
@@ -2887,6 +2887,21 @@ if(message.content === préfix + "PCP Voleur"){
     .setDescription("Vous devez tuer un arbre")
     .setColor("#000000")
     message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Quête rang Cuivre accomplie"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(5));
+    var maxs = Math.floor(Math.max(10)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var y = new Discord.RichEmbed()
+    .addField("Gain de la récompense de la quête :exclamation: ",  "Pièce(s) de bronze: " + y + "\n XP dans le rang cuivre" + x)
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
 }
 
 
@@ -2910,6 +2925,21 @@ if(message.content === préfix + "Quêtes rang Fer"){
     message.channel.sendMessage(help_embed);
 }
 
+if(message.content === préfix + "Quête rang Fer accomplie"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(8));
+    var maxs = Math.floor(Math.max(15)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var y = new Discord.RichEmbed()
+    .addField("Gain de la récompense de la quête :exclamation: ",  "Pièce(s) de bronze: " + y + "\n XP dans le rang cuivre" + x)
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}
+
 if(message.content === préfix + "Quêtes rang Argent"){
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 35)
@@ -2928,6 +2958,21 @@ if(message.content === préfix + "Quêtes rang Argent"){
     .setDescription("Vous devez tuer 3 arbre seul")
     .setColor("#000000")
     message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Quête rang Argent accomplie"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(15));
+    var maxs = Math.floor(Math.max(20)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var y = new Discord.RichEmbed()
+    .addField("Gain de la récompense de la quête :exclamation: ",  "Pièce(s) de bronze: " + y + "\n XP dans le rang cuivre" + x)
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
 }
 
 if(message.content === préfix + "Quêtes rang Or"){
@@ -2949,6 +2994,25 @@ if(message.content === préfix + "Quêtes rang Or"){
     .setColor("#000000")
     message.channel.sendMessage(help_embed);
 }
+
+if(message.content === préfix + "Quête rang Or accomplie"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(80));
+    var max = Math.floor(Math.max(120)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(20));
+    var maxs = Math.floor(Math.max(30)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var minss = Math.floor(Math.min(0));
+    var maxss = Math.floor(Math.max(2)); 
+    var q = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
+    var y = new Discord.RichEmbed()
+    .addField("Gain de la récompense de la quête :exclamation: ",  "Pièce(s) de bronze: " + y + "\n Pièce(s) d'argent: " + q + "\n XP dans le rang cuivre" + x )
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}
+
 if(message.content === préfix + "Quêtes rang Platine"){
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 50)
@@ -2962,6 +3026,24 @@ if(message.content === préfix + "Quêtes rang Platine"){
     .setDescription("Vous devez tuer 1 chouette seul")
     .setColor("#000000")
     message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Quête rang Platine accomplie"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(120));
+    var max = Math.floor(Math.max(150)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(30));
+    var maxs = Math.floor(Math.max(50)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var minss = Math.floor(Math.min(2));
+    var maxss = Math.floor(Math.max(5)); 
+    var q = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
+    var y = new Discord.RichEmbed()
+    .addField("Gain de la récompense de la quête :exclamation: ",  "Pièce(s) de bronze: " + y + "\n Pièce(s) d'argent: " + q + "\n XP dans le rang cuivre" + x )
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
 }
 
     
