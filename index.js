@@ -3008,7 +3008,7 @@ if(message.content === préfix + "Quête rang Or accomplie"){
     var maxss = Math.floor(Math.max(2)); 
     var q = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
     var y = new Discord.RichEmbed()
-    .addField("Gain de la récompense de la quête :exclamation: ",  ":third_place:  Pièce(s) de bronze: " + x + "\n :second_place:  Pièce(s) d'argent: " + q + "\n XP dans le rang OR" + y )
+    .addField("Gain de la récompense de la quête :exclamation: ",  ":third_place:  Pièce(s) de bronze: " + x + "\n :second_place:  Pièce(s) d'argent: " + q + "\n XP dans le rang Or: " + y )
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }
