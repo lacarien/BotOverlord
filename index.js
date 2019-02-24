@@ -46,7 +46,7 @@ client.on('message', message => {
     .setColor("#ffd100")
     .setTitle("Liste des métiers")
     .setDescription("Chaque métier a ses avantages, faite la commande du métier pour plus de détails")
-    .addField("Garde", "Uniquement résérvé aux Combattants et rangers Humain (rien ne vous empêches de vous infiltrer dans la garde)")
+    .addField("Garde du royaume", "Uniquement résérvé aux Combattants et rangers Humain (rien ne vous empêches de vous infiltrer dans la garde)")
     .addField("Tavernier", "Tout le monde peut le devenir du moment que les espèces humanoîdes cachent leur véritable identité sauf les personnes recherchés")
     .addField("Aventurier", "Tout le monde peut le devenir du moment que les espèces humanoîdes cachent leur véritable identité")
     message.channel.sendMessage(help_embed);
@@ -71,7 +71,7 @@ client.on('message', message => {
     .addField("Chambre classique 1 Lit", "Tout le monde peut rentrer en détruisant la porte...C'est une chambre vraiment...Crade \n Prix: 5Pièces de bronze par jour")
     .addField("Chambre classique 2 Lits", "Tout le monde peut rentrer en détruisant la porte...C'est une chambre vraiment...Crade \n Prix: 8Pièces de bronze par jour")
     .addField("Chambre privée 1 Lit", "Chambre propre, elle est en sécurité, impossible pour une autre personne d'y rentrer en théorie \n Prix: 15Pièces de bronze par jour")
-    .addField("Chambre privée 1 Lit", "Chambre propre, elle est en sécurité, impossible pour une autre personne d'y rentrer en théorie \n Prix: 22Pièces de bronze par jour")
+    .addField("Chambre privée 2 Lits", "Chambre propre, elle est en sécurité, impossible pour une autre personne d'y rentrer en théorie \n Prix: 22Pièces de bronze par jour")
     message.channel.sendMessage(help_embed);
 }
     
@@ -81,7 +81,7 @@ client.on('message', message => {
     .setTitle("Garde du Royaume")
     .setDescription("Pour être garde vous devez faire une demande au royaume au poste de garde((au royaume)un staff jouera le PNJ). Vous avez une hiérarchie et le plus haut gradé peut donner des ordres à celui qui est en dessous. Chaque semaine vous gagnerez un salaire celon votre status. Et celon vos actes. Vous êtes dans l'OBLIGATION d'aider un village / le royaume / ou bien un villageois en cas de problème.")
     .addField("Comment le grade de départ est-il défini ? et comment évoluer ?", "Celon votre histoire RP et pour évoluer il suffit de faire son boulot...Correctement")
-    .addField("Garde Novice joueur", "Salaira par jour: 10 pièces de bronze")
+    .addField("Garde Novice joueur", "Salaira par jour: 10 pièces de bronze \n vous devez toujours être accompagné d'un garde")
     .addField("Garde joueur", "Salaire par jour: 10 Pièces de bronze")
     .addField("SG garde joueur", "Salaire par jour: 25 Pièces de bronze et 2 Pièces d'argent")
     .addField("Chef garde", "Salaire : ??")
