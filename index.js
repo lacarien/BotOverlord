@@ -2869,6 +2869,101 @@ if(message.content === préfix + "PCP Voleur"){
     message.channel.sendMessage(help_embed);
 }
     
+    if(message.content === préfix + "Quêtes rang Cuivre"){
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 35)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Chasse au monstre")
+    .setDescription("éliminé 2monstres des marécages")
+    .setColor("#000000")
+    else if(result < 70)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Garde provisoire")
+    .setDescription("Vous devez protéger la petit village en tant que mercenaire pendant 30minutes")
+    .setColor("#000000")
+    else if (result < 101)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Tueur d'arbre")
+    .setDescription("Vous devez tuer un arbre")
+    .setColor("#000000")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "Quêtes rang Fer"){
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 35)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Chasse au monstre")
+    .setDescription("éliminé 4monstres des marécages")
+    .setColor("#000000")
+    else if(result < 70)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Garde provisoire")
+    .setDescription("Vous devez protéger la petit village en tant que mercenaire pendant 60minutes")
+    .setColor("#000000")
+    else if (result < 101)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Tueur d'arbre")
+    .setDescription("Vous devez tuer un arbre seul")
+    .setColor("#000000")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Quêtes rang Argent"){
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 35)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Le grand chasseur")
+    .setDescription("Tuer un Lézard primitif")
+    .setColor("#000000")
+    else if(result < 70)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Garde provisoire")
+    .setDescription("Vous devez protéger la petit village en tant que mercenaire pendant 120    minutes")
+    .setColor("#000000")
+    else if (result < 101)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Tueur d'arbre")
+    .setDescription("Vous devez tuer 3 arbre seul")
+    .setColor("#000000")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Quêtes rang Or"){
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 35)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("L'ultime combattant'")
+    .setDescription("Tuer un Lézard primitif seul")
+    .setColor("#000000")
+    else if(result < 70)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Garde provisoire")
+    .setDescription("Sauver une personne en difficulté(qui a ses HP en dessous de 90%)")
+    .setColor("#000000")
+    else if (result < 101)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Explorateur")
+    .setDescription("Vous devez tuer 2 monstres de la forêt mystique")
+    .setColor("#000000")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "Quêtes rang Platine"){
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 50)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Tueur forêstier")
+    .setDescription("Tuer 4 monstres dans la fort mystique seul")
+    .setColor("#000000")
+    else if (result < 101)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Tueur de chouette")
+    .setDescription("Vous devez tuer 1 chouette seul")
+    .setColor("#000000")
+    message.channel.sendMessage(help_embed);
+}
+
     
 });
 
