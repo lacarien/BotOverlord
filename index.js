@@ -3057,7 +3057,7 @@ if(message.content === préfix + "Parade: " + w){
     var w = Math.floor(w + OUI);
     if(result < 40)
     var w = new Discord.RichEmbed()
-    .addField("Vous réussiez la parade et infligez de lourd dégats", y)
+    .addField("Vous réussiez la parade et infligez de lourd dégats", w)
     if(result > 40)
     var w = new Discord.RichEmbed() 
     .setAuthor("Test il prend tout les dégats")
