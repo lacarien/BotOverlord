@@ -499,6 +499,7 @@ client.on('message', message => {
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("5PC", "Vous obtenez l'attaque spécial ?Coup bas")
         .addField("10PC", "Vous obtenez la compétence ?Voleur ultime")
+        .addField("13PC", "Vous obtenez la compétence ?Esquive")
         .addField("15PC", "Vous pouvez devenir Assassin")
         message.channel.sendMessage(help_embed);
     }
@@ -510,6 +511,7 @@ client.on('message', message => {
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("5PC", "Vous obtenez la compétence spécial ?Soins de bas rang")
         .addField("10PC", "Vous obtenez la compétence ?Mage ultime")
+        .addField("13PC", "Vous obtenez la compétence ?Blocage magique ")
         .addField("15PC", "Vous pouvez devenir Druid ou Sorcier")
         message.channel.sendMessage(help_embed);
     }
@@ -522,6 +524,7 @@ client.on('message', message => {
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("5PC", "Vous obtenez 20hp en plus")
         .addField("10PC", "Vous obtenez la compétence ?Combattant ultime")
+        .addField("13PC", "Vous obtenez la compétence ?C Coup d'épée ou bien ?Blocage supérieure celon votre futur chois de classe")
         .addField("15PC", "Vous pouvez devenir Paladin ou Chevalier")
         message.channel.sendMessage(help_embed);
     }
@@ -534,6 +537,7 @@ client.on('message', message => {
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("5PC", "Vous obtenez la compétence ?Tir rapide")
         .addField("10PC", "Vous obtenez la compétence ?Ranger ultime")
+        .addField("13PC", "Vous obtenez la compétence ?Blocage rapide")
         .addField("15PC", "Vous pouvez devenir Archer")
         message.channel.sendMessage(help_embed);
     }
@@ -544,8 +548,9 @@ client.on('message', message => {
         .setColor("#1a00ff")
         .setTitle("PC Paladin")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?P Coup d'épée + 60 de mana + ?Blocage supérieure")
-        .addField("20PC", "?Provocation simple")
+        .addField("15PC", "?P Coup d'épée + 60 de mana")
+        .addField("18PC", "?Provocation simple")
+        .addField("22PC", "?Drapeau de défense")
         .addField("25PC", "?Paladin ultime")
         .addField("30PC", "Vous pouvez passer Clerc ou gardien")
         message.channel.sendMessage(help_embed);
@@ -556,8 +561,9 @@ client.on('message', message => {
         .setColor("#1a00ff")
         .setTitle("PC Chevalier")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?C Coup d'épée + ?Blocage amélioré ")
-        .addField("20PC", "?Coup multiple")
+        .addField("15PC", "?Blocage amélioré")
+        .addField("18PC", "?Coup multiple")
+        .addField("22PC", "?Parade")
         .addField("25PC", "?Chevalier ultime")
         .addField("30PC", "Vous pouvez passer Berserk ou Champion")
         message.channel.sendMessage(help_embed);
@@ -569,8 +575,9 @@ client.on('message', message => {
         .setColor("#00ffe7")
         .setTitle("PC Sorcier")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Sort simple + ?Blocage magique + ?Sort de soins + 70 de Mana")
-        .addField("20PC", "?Tornade de flamme")
+        .addField("15PC", "?Sort simple +  70 de Mana")
+        .addField("18PC", "?Sort de soins ")
+        .addField("22PC", "?Tornade de flamme")
         .addField("25PC", " ?Sorcier ultime")
         .addField("30PC", "Vous pouvez passer Nécromancien, grand sorcier, ou prêtre")
         message.channel.sendMessage(help_embed);
@@ -582,7 +589,7 @@ client.on('message', message => {
         .setColor("#ff0000")
         .setTitle("PC Assassin")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Coup de dague + ?Esquive")
+        .addField("15PC", "?Coup de dague")
         .addField("20PC", "?Camouflage")
         .addField("25PC", "?Assassin ultime")
         .addField("30PC", "Vous pouvez passer Grand Assassin ou Grand illusionist ")
@@ -594,8 +601,10 @@ client.on('message', message => {
         .setColor("#019521")
         .setTitle("PC Archer")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Tir amélioré + ?Esquive simple + ?Blocage rapide")
-        .addField("20PC", "?Fuite amélioré + ?Flèche empoisonné")
+        .addField("15PC", "?Tir amélioré")
+        .addField("18PC", "?Esquive simple")
+        .addField("20PC", "?Fuite amélioré")
+        .addField("22PC", "?Flèche empoisonné")
         .addField("25PC", "?Archer ultime")
         .addField("30PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
