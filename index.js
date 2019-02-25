@@ -6,7 +6,6 @@ const client = new Discord.Client();
 
 var préfix = "?";
 
-var w = Number
 
 client.login(process.env.TOKEN);
 
@@ -3055,20 +3054,13 @@ if(message.content === préfix + "Parade"){
     var result = Math.floor((Math.random() * 100) + 1);
     var min = Math.floor(Math.min(40));
     var max = Math.floor(Math.max(60)); 
-    var w = (Math.random() * (max - min + 1) );
+    var w = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 40)
     var w = new Discord.RichEmbed()
     .addField("Vous réussiez la parade et vous lui ingliez ", w)
     if(result > 40)
     var w = new Discord.RichEmbed() 
     .setAuthor("Test il prend tout les dégats")
-    message.channel.send(w);
-}
-
-if(message.content === préfix + w){
-    var w = new Discord.RichEmbed()
-    .addField("Test", w)
-
     message.channel.send(w);
 }
     
