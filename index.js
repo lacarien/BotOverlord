@@ -3064,7 +3064,12 @@ if(message.content === préfix + "Parade: " + w){
     message.channel.send(w);
 }
 
+if(message.content === préfix + w){
+    var w = new Discord.RichEmbed()
+    .addField("Test", w)
 
+    message.channel.send(w);
+}
     
 });
 
