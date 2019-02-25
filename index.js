@@ -3049,18 +3049,21 @@ if(message.content === préfix + "Parade: " + w){
 }
     
     
-
 if(message.content === préfix + "Parade"){
     var result = Math.floor((Math.random() * 100) + 1);
     var min = Math.floor(Math.min(40));
     var max = Math.floor(Math.max(60)); 
     var w = Math.floor(Math.random() * (max - min + 1) ) + min;
-    if(result < 40)
+    if(result < 30)
     var w = new Discord.RichEmbed()
-    .addField("Vous réussiez la parade et vous lui ingliez ", w)
-    if(result > 40)
+    .setColor("#1a00ff")
+    .addField("Vous réussiez la parade et vous lui infligez ", w)
+    .setImage("https://media.giphy.com/media/1yn1R1HrcRiOUuMQ01/giphy.gif")
+    if(result > 30)
     var w = new Discord.RichEmbed() 
-    .setAuthor("Test il prend tout les dégats")
+    .setColor("#ff0000")
+    .setAuthor("Vous loupez votre parade et subisez tout les dégats")
+    .setImage("http://i.imgur.com/Lpv5HId.jpg")
     message.channel.send(w);
 }
     
