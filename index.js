@@ -3051,13 +3051,14 @@ if(message.content === préfix + "Parade: " + w){
     
     
 
-if(message.content === préfix + "Parade: " + w){
+if(message.content === préfix + "Parade"){
     var result = Math.floor((Math.random() * 100) + 1);
-    var OUI = Math.floor((Math.random() * 30) + 1);
-    var w = Math.floor(w + OUI);
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(60)); 
+    var w = (Math.random() * (max - min + 1) );
     if(result < 40)
     var w = new Discord.RichEmbed()
-    .addField("Vous réussiez la parade et infligez de lourd dégats", w)
+    .addField("Vous réussiez la parade et vous lui ingliez ", w)
     if(result > 40)
     var w = new Discord.RichEmbed() 
     .setAuthor("Test il prend tout les dégats")
