@@ -3052,7 +3052,7 @@ if(message.content === préfix + "Parade: " + w){
 if(message.content === préfix + "Parade: " + w){
     var result = Math.floor((Math.random() * 100) + 1);
     var OUI = Math.floor((Math.random() * 30) + 1);
-    var w = w + OUI;
+    var w = Math.floor(w + OUI);
     if(result < 40)
     var w = new Discord.RichEmbed()
     .addField("Vous réussiez la parade et infligez de lourd dégats", y)
@@ -3061,6 +3061,7 @@ if(message.content === préfix + "Parade: " + w){
     .setAuthor("Test il prend tout les dégats")
     message.channel.send(w);
 }
+
 
     
 });
