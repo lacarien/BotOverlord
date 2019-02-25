@@ -6,6 +6,8 @@ const client = new Discord.Client();
 
 var préfix = "?";
 
+var w = Number
+
 client.login(process.env.TOKEN);
 
 
@@ -3047,7 +3049,7 @@ if(message.content === préfix + "Parade: " + w){
     message.channel.send(w);
 }
     
-    var w = Number
+    
 
 if(message.content === préfix + "Parade: " + w){
     var result = Math.floor((Math.random() * 100) + 1);
