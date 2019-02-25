@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 var préfix = "?";
 
-var w = SVGAnimatedNumber
+var w = Number
 
 client.login(process.env.TOKEN);
 
