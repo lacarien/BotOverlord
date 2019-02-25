@@ -3037,7 +3037,7 @@ if(message.content === préfix + "Parade: " + w){
     var result = Math.floor((Math.random() * 100) + 1);
     var min = Math.floor(Math.min(10));
     var max = Math.floor(Math.max(30)); 
-    var w = w + Math.floor(Math.random() * (max - min + 1) );
+    var w = w + (Math.random() * (max - min + 1) );
     if(result < 40)
     var w = new Discord.RichEmbed()
     .addField("Vous réussiez la parade et infligez de lourd dégats", y)
