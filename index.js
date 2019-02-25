@@ -3033,7 +3033,19 @@ if(message.content === préfix + "Quête rang Platine accomplie"){
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }
-
+if(message.content === préfix + "Parade : " + w){
+    var result = Math.floor((Math.random() * 100) + 1);
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(30)); 
+    var w = Math.floor + (max - min + 1)  + min;
+    var w = new Discord.RichEmbed()
+    if(result < 40)
+    .addField("Vous réussiez la parade et infligez de lourd dégats", y)
+    if(result > 40)
+    var w = new Discord.RichEmbed() 
+    .setAuthor("Test il prend tout les dégats")
+    message.channel.send(w);
+}
     
 });
 
