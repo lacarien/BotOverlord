@@ -3117,9 +3117,9 @@ if(message.content === préfix + "Dash énèrgétique"){
     var max = Math.floor(Math.max(60)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result > 60)
+    if(result < 40)
     var y = new Discord.RichEmbed()
-    .setTitle("Vous faites un dash parfait et esquiver l'attaque")
+    .addField("Vous faites un dash parfait et esquiver l'attaque" Y )
     .setImage("https://cdn.discordapp.com/attachments/541643841061519361/549958896098213901/dadadadadadadadadada.gif")
         else
     var y = new Discord.RichEmbed()
