@@ -718,12 +718,22 @@ client.on('message', message => {
         message.channel.send(y);
     }
     
-    if(message.content === préfix + "Concentration d'énérgie"){
+    if(message.content === préfix + "Concentration d'énergie"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#898989")
-    .setTitle("Vous vous concentrez, durant 3 tours(le tour ou vous commencez l'action compte). Une fois cela fait \n ?Puissante énérgie")
+    .setTitle("Vous vous concentrez, durant 3 tours(le tour ou vous commencez l'action compte). Une fois cela fait \n ?Puissante énergie")
     .setImage("https://media.giphy.com/media/RN6HAms0nQkojw1wVV/giphy.gif")
     message.channel.sendMessage(help_embed);
+}
+    if(message.content === préfix + "Puissante énergie"){
+    var min = Math.floor(Math.min(210));
+    var max = Math.floor(Math.max(260)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous délivrez une puissante énergie en plein dans la face de votre adversaire", y)
+    .setImage("https://media.giphy.com/media/5kF1TNy7WwLZjzzMxI/giphy.gif")
+    .setColor("#ff0000")
+    message.channel.send(y);
 }
 
     
