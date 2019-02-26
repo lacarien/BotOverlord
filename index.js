@@ -3119,12 +3119,13 @@ if(message.content === préfix + "Dash énèrgétique"){
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 40)
     var y = new Discord.RichEmbed()
-    .addField("Vous faites un dash parfait et esquiver l'attaque", y)
+    .setTitle("Vous faites un dash parfait et esquiver l'attaque")
+    .setColor("#28ff00)
     .setImage("https://cdn.discordapp.com/attachments/541643841061519361/549958896098213901/dadadadadadadadadada.gif")
         else
     var y = new Discord.RichEmbed()
     .setColor("#ff0000")
-    .setTitle("Vous subisez une partie des dégats que vous arrivez à réduire")
+    .addField("Vous subisez une partie des dégats que vous arrivez à réduire", y)
     message.channel.sendMessage(y);
 }
     
