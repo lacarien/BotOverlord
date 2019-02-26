@@ -3111,23 +3111,21 @@ if(message.content === préfix + "Parade"){
     message.channel.send(w);
 }
     
-    if(message.content === préfix + "Dash énèrgétique") {
+if(message.content === préfix + "Dash énèrgétique"){
+    var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(35));
     var max = Math.floor(Math.max(60)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var y = new Discord.RichEmbed()
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 40)
+    if(result > 60)
     var y = new Discord.RichEmbed()
-    .setColor("#00ff27")
-    .setTitle("Vous faites un dash parfait et réussisé à esquiver l'attaque")
+    .setTitle("Vous faites un dash parfait et esquiver l'attaque")
     .setImage("https://cdn.discordapp.com/attachments/541643841061519361/549958896098213901/dadadadadadadadadada.gif")
-    if(40 < result)
-    var result = new Discord.RichEmbed()
+        else
+    var y = new Discord.RichEmbed()
     .setColor("#ff0000")
-    .addField("Vous subisez une partie des dégats que vous arrivez à réduire", y)
-    message.channel.send(result);
-
+    .setTitle("Vous subisez une partie des dégats que vous arrivez à réduire")
+    message.channel.sendMessage(y);
 }
     
 });
