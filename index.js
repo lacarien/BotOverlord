@@ -3120,10 +3120,10 @@ if(message.content === préfix + "Parade"){
     if(result < 40)
     var result = new Discord.RichEmbed() 
     .setColor("#00ff27")
-    .setTitle("Vous faites un dash parfait et esquiver l'attaque")
+    .setTitle("Vous faites un dash parfait et réussisé à esquiver l'attaque")
     .setImage("https://cdn.discordapp.com/attachments/541643841061519361/549958896098213901/dadadadadadadadadada.gif")
     if(40 < result)
-    var result = new Discord.RichEmbed() 
+    var y = new Discord.RichEmbed()
     .setColor("#ff0000")
     .addField("Vous subisez une partie des dégats que vous arrivez à réduire", y)
     message.channel.send(result);
