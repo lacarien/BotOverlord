@@ -3123,11 +3123,10 @@ if(message.content === préfix + "Dash énèrgétique"){
     .addField("Vous subisez une partie des dégats que vous arrivez à réduire", y)
         else
     var y = new Discord.RichEmbed()
-    .setTtile("Vous faites un dash parfait et esquiver l'attaque" )
+    .setAuthor("Vous faites un dash parfait et esquiver l'attaque" )
     .setImage("https://cdn.discordapp.com/attachments/541643841061519361/549958896098213901/dadadadadadadadadada.gif")
     message.channel.sendMessage(y);
 }
-
     
 
     
