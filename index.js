@@ -352,6 +352,16 @@ client.on('message', message => {
         message.channel.sendMessage(help_embed);
     }
     
+    if(message.content === préfix + "Classe Automaton"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#898989")
+    .addField("Classe Automaton", "Vous êtes l'évolution de l'archer, vous faites énnormément de dégats pour une faible vitalité")
+    .addField("L'Automaton", "évolution du Classe Automaton à partir de ???")
+    .setImage("https://i.redd.it/975pfx9hllr11.jpg")
+    .setFooter("Menu Classe Automaton")
+    message.channel.sendMessage(help_embed);
+}
+    
     if(message.content === préfix + "Combats"){
         var help_embed = new Discord.RichEmbed()
         .addField("Les combats", "Après avoir créé votre personnage, vous aurez un nombre d'HP, un nombre d'attaque et un nombre de Mana. Le combat se déroule par du tour par tour, certaines compétences utilisent du mana, d'autre non et si jamais vous voulez attaquer vous devriez utiliser certaine commandes, il y a plein de coups différents qui se débloquent en fonction de votre level et de votre classe")
@@ -607,6 +617,7 @@ client.on('message', message => {
         .addField("20PC", "?Fuite amélioré")
         .addField("22PC", "?Flèche empoisonné")
         .addField("25PC", "?Archer ultime")
+        .addField("28PC", "Classe Automaton: ?Concentration d'énérgie / Grand Archer: ?Piège")
         .addField("30PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
     }
