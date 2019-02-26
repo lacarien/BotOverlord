@@ -718,6 +718,15 @@ client.on('message', message => {
         message.channel.send(y);
     }
     
+    if(message.content === préfix + "Concentration d'énérgie"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#898989")
+    .addField("Vous vous concentrez, durant 3 tours(le tour ou vous commencez l'action compte). Une fois cela fait ?Puissante énérgie")
+    .setImage("https://media.giphy.com/media/RN6HAms0nQkojw1wVV/giphy.gif")
+    message.channel.sendMessage(help_embed);
+}
+
+    
     if(message.content === préfix + "Provocation simple"){
         var min = Math.floor(Math.min(45));
         var max = Math.floor(Math.max(60)); 
