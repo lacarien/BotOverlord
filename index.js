@@ -625,7 +625,7 @@ client.on('message', message => {
 
 if(message.content === préfix + "PC Classe Automaton"){
     var help_embed = new Discord.RichEmbed()
-    .setColor("#019521")
+    .setColor("#7c7c70")
     .setTitle("PC Classe Automaton")
     .setDescription("Voici ce que vous pourrez gagner à chaque étape")
     .addField("30PC", "100 de mana en plus / ?Dash énèrgétique")
