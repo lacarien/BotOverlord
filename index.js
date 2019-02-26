@@ -3111,7 +3111,7 @@ if(message.content === préfix + "Parade"){
     message.channel.send(w);
 }
     
-    if(message.content === préfix + "Dash énèrgétique"){
+if(message.content === préfix + "Dash énèrgétique"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(35));
     var max = Math.floor(Math.max(60)); 
@@ -3120,13 +3120,14 @@ if(message.content === préfix + "Parade"){
     if(result < 60)
     var y = new Discord.RichEmbed()
     .setColor("#ff0000")
-    .setTitle("Vous subisez une partie des dégats que vous arrivez à réduire")
+    .addField("Vous subisez une partie des dégats que vous arrivez à réduire", y)
         else
     var y = new Discord.RichEmbed()
-    .addField("Vous faites un dash parfait et esquiver l'attaque", y )
+    .setTtile("Vous faites un dash parfait et esquiver l'attaque" )
     .setImage("https://cdn.discordapp.com/attachments/541643841061519361/549958896098213901/dadadadadadadadadada.gif")
     message.channel.sendMessage(y);
 }
+
     
 
     
