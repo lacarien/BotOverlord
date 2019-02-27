@@ -3120,10 +3120,10 @@ if(message.content === préfix + "Dash énèrgétique"){
     if(result < 60)
     var y = new Discord.RichEmbed()
     .setColor("#ff0000")
-    .addField("Vous subisez une partie des dégats que vous arrivez à réduire", y)
+    .addField("Vous subisez une partie des dégats que vous arrivez à réduire(-25 de mana)", y)
         else
     var y = new Discord.RichEmbed()
-    .setAuthor("Vous faites un dash parfait et esquiver l'attaque" )
+    .setAuthor("Vous faites un dash parfait et esquiver l'attaque(-50 de mana)" )
     .setImage("https://cdn.discordapp.com/attachments/541643841061519361/549958896098213901/dadadadadadadadadada.gif")
     message.channel.sendMessage(y);
 }
