@@ -3245,10 +3245,10 @@ if(message.content === préfix + "Nomade attaque"){
         if(result < 40)
     var y = new Discord.RichEmbed()
     .addField("Le Nomade vous donnes un tranchant vertical avant de faire un bond en arrière", y)
-    .setColor("#37ac0f")
+    .setColor("#524b4b")
     else if (result < 101)
     var y = new Discord.RichEmbed()
-    .setColor("#37ac0f")
+    .setColor("#524b4b")
     .addField("le fou commence à courir autours de vous tout en vous jettant des petites dagues au niveau de vos jambes", y)
     message.channel.sendMessage(y);
 }
@@ -3257,12 +3257,12 @@ if(message.content === préfix + "Nomade défense") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 30)
     var result = new Discord.RichEmbed() 
-    .setColor("#00ff27")
+    .setColor("#ff0000")
     .setTitle("Le nomade vous fais une parade et vous renvoie la moitié de vos dégats sans même que vous puisez vous défendre, si c'est une attaque à distance alors le Nomade se contentera d'ésquiver l'attaque")
     .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")
     if(30 < result)
     var result = new Discord.RichEmbed() 
-    .setColor("#ff0000")
+    .setColor("#00ff27")
     .setAuthor("Le nomade ne fait pas attention à sa défense, il prend le coups sans broncher")
     message.channel.send(result);
 
