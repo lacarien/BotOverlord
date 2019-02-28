@@ -3128,6 +3128,103 @@ if(message.content === préfix + "Dash énèrgétique"){
     message.channel.sendMessage(y);
 }
     
+    /// GROTTE
+    
+    
+    
+    if(message.content === préfix + "Grotte"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Explication du fonctionnement de la Grotte")
+    .setColor("#ff0000")
+    .setDescription("La grotte contient 5 étages, le principe est simple, à chaque étages vous tapper la commande ?Grotte [numéro de l'étage] une fois cela fait et que vous aurez battue le monstre si il y en a un, vous devriez obligatoirement déscendre à l'étage inférieur. Une fois que vous voudrez sortir de la grotte, il faudra que vous fassiez tout les étages, un par un, dans le sens inverse.")
+    .addField("Peut on rester dans la grotte ?", "Oui, mais pour cela il faut acheter un campement, il est utilisable jusqu'à que vous décidiez de sortir de la grotte.")
+    .addField("Des recompenses à chaque étages ?", "à chaque étages si et seulement si vous avez affronté un mobs ?Récompenses grotte [numéro de l'étage]")
+    .setFooter("Grotte")
+    message.channel.sendMessage(help_embed);
+}
+
+
+
+if(message.content === préfix + "Entrée de grotte"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#656161")
+    .setTitle("Gardien de la grotte")
+    .setDescription("Un golem garde l'entrée de la porte, pour rentrer à l'intérieure de celle-ci il faut le battre, à noter que pour sortir de la grotte vous n'aurez pas besoin de l'affronter")
+    .addField("Point de vie", "500")
+    .addField("Attaque", "?Golem attaque")
+    .addField("Défense", "Aucune")
+    .setImage("https://i.pinimg.com/originals/0d/65/56/0d655654d1bfa8a40f6b7ab4dc7e715f.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "Golem attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 70)
+    var y = new Discord.RichEmbed()
+    .addField("Le Golem vous écrases avec son poings de pierre", y)
+    .setColor("#656161")
+        if(result > 70)
+    var y = new Discord.RichEmbed()
+    .setColor("#656161")
+    .setAuthor("Le golem est bien trop lent...Il ne vous touches pas")
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Horde de goblin"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(2));
+    var max = Math.floor(Math.max(5)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#37ac0f")
+    .addField("Nombre d'énnemie: ", y)
+    .addField("Point de vie d'un énnemie", "100")
+    .addField("Attaque", "?H goblin attaque")
+    .addField("Défense", "?H goblin défense")
+    .setImage("https://vignette.wikia.nocookie.net/goblinslayer/images/e/ea/Goblins_Banda.PNG/revision/latest?cb=20180401005522&path-prefix=es")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "H goblin attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(55)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 30)
+    var y = new Discord.RichEmbed()
+    .addField("L'attaque perce votre armure et vous ne pouvez pas la bloquer", y)
+    .setColor("#37ac0f")
+    else if (result < 60)
+    var y = new Discord.RichEmbed()
+    .setColor("#37ac0f")
+    .setAuthor("Le Goblin vous sautes dessus, essayant de vous planter une dague dans l'épaule")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#37ac0f")
+    .setAuthor("Le Goblin vous tires une flèche dans le torse")
+    message.channel.sendMessage(y);
+}
+if(message.content === préfix + "H gobelin défense") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 30)
+    var result = new Discord.RichEmbed() 
+    .setColor("#00ff27")
+    .setTitle("Le Gobelin fait un bond en arrière avant que vous puisez le toucher")
+    .setImage("https://www.nautiljon.com/images/more/01/89/121798.jpg")
+    if(30 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Le Gobelin se prend tout les dégats")
+    message.channel.send(result);
+
+}
+    
 
     
 });
