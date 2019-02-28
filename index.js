@@ -3306,7 +3306,39 @@ if(message.content === préfix + "P démon attaque"){
     message.channel.sendMessage(y);
 }
 
-    
+if(message.content === préfix + "Squelette"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(7));
+    var max = Math.floor(Math.max(15)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#37ac0f")
+    .setDescription("Vous avancez dans l'obscurité quand soudainement...Une horde de squelette apparait")
+    .addField("Nombre d'énnemie: ", y)
+    .addField("Point de vie d'un énnemie", "30")
+    .addField("Attaque", "?Squelette attaque")
+    .addField("Défense", "Aucune")
+    .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/2/20/Overlord_II_EP03_051.png/revision/latest?cb=20180127032839")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Squelette attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(13)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 90)
+    var y = new Discord.RichEmbed()
+    .addField("Le squelette vous donnes un faible coup d'épée, malheureusement vous ne pouvez pas le bloquer à cause de l'obscurité et de la zone trop étroite", y)
+    .setColor("#820000")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#820000")
+    .addField("Le squelette s'éffondre au sol et meurt", y)
+    .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")
+    message.channel.sendMessage(y);
+}    
 
     
 });
