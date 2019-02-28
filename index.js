@@ -3335,8 +3335,8 @@ if(message.content === préfix + "Squelette attaque"){
     else if (result < 101)
     var y = new Discord.RichEmbed()
     .setColor("#820000")
-    .addField("Le squelette s'éffondre au sol et meurt", y)
-    .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")
+    .setTitle("Le squelette s'éffondre au sol et meurt")
+ 
     message.channel.sendMessage(y);
 }    
 
