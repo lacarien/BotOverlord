@@ -3210,7 +3210,7 @@ if(message.content === préfix + "H goblin attaque"){
     .addField("Le Goblin vous tires une flèche dans le torse", y)
     message.channel.sendMessage(y);
 }
-if(message.content === préfix + "H gobelin défense") {
+if(message.content === préfix + "H goblin défense") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 30)
     var result = new Discord.RichEmbed() 
