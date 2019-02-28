@@ -3267,6 +3267,44 @@ if(message.content === préfix + "Nomade défense") {
     message.channel.send(result);
 
 }
+if(message.content === préfix + "Paladin démon"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#820000")
+    .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un paladin avec des cornes qui semblait...Hostile")
+    .addField("Point de vie d'un énnemie", "600")
+    .addField("Attaque", "?P démon attaque")
+    .addField("Défense", "?P démon défense")
+    .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "P démon défense"){
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(25)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le paladin bloqua le coup à l'aide de son bouclier", y)
+    .setColor("#820000")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "P démon attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(60));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 80)
+    var y = new Discord.RichEmbed()
+    .addField("Le démon fit un grand geste de bras, venant vous donner un coup d'épée horizontal", y)
+    .setColor("#820000")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#820000")
+    .addField("Il vous fonce dessus et vous propulse contre un mur, vous empechant de bloquer au prochain tours", y)
+    .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")
+    message.channel.sendMessage(y);
+}
 
     
 
