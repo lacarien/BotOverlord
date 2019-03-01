@@ -3379,7 +3379,7 @@ if(message.content === préfix + "C goblin défense"){
     var help_embed = new Discord.RichEmbed()
     var result = Math.floor((Math.random() * 100) + 1);
         if(result < 80)
-    var help_embed = new Discord.RichEmbed()
+    var y = new Discord.RichEmbed()
     .setTitle("Le champion prend tout les dégats en plein dans son torse")
     .setColor("#045713")
         if(result > 80)
