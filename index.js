@@ -3428,6 +3428,88 @@ if(message.content === préfix + "C goblin défense"){
     .setImage("https://j.gifs.com/wVjOMz.gif")
     message.channel.sendMessage(y);
 }
+    if(message.content === préfix + "Squelette faible"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#b1afaf")
+    .addField("Point de vie", "150")
+    .addField("Attaque", "?F squelette attaque")
+    .addField("Défense", "?F squelette défense")
+    .setImage("http://fantasyartdesign.com/free-wallpapers/imgs/mid/cgRotFarmSkeleton-m.jpg")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "F squelette attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 80)
+    var y = new Discord.RichEmbed()
+    .addField("Le squelette vous donnes un coup d'épée", y)
+    .setColor("#b1afaf")
+        if(result > 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#b1afaf")
+    .addField("Le squelette vous lances un os en forme de pique en plein dans votre épaule, étant une attaque bien particulière, elle n'est pas bloquable", y)
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "F squelette défense"){
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+     if(result < 80)
+    var y = new Discord.RichEmbed()
+    .addField("Le squelette essaye de bloquer l'attaque", y)
+    .setColor("#b1afaf")
+    if(result > 80)
+    var y = new Discord.RichEmbed()
+    .addField("Le squelette se prend le double des dégâts", y)
+    .setColor("#ff0000")
+    var y = new Discord.RichEmbed()
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Arrive grotte 1") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 50)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .addField("Vous tombez sur des monstres", "?Grotte étage 1")
+    if(50 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setTitle("C'est bien calme...")
+    message.channel.send(result);
+
+}
+
+if(message.content === préfix + "Grotte étage 1") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 80){
+    var result = new Discord.RichEmbed() 
+    .setColor("#b1afaf")
+    .addField("Point de vie", "150")
+    .addField("Attaque", "?F Squelette attaque")
+    .addField("Défense", "?F Squelette défense")
+    .setImage("http://fantasyartdesign.com/free-wallpapers/imgs/mid/cgRotFarmSkeleton-m.jpg")}
+    else if(result < 101){
+    var result = new Discord.RichEmbed() 
+    .setColor("#37ac0f")
+    .addField("Nombre d'énnemie: ", y)
+    .addField("Point de vie d'un énnemie", "100")
+    .addField("Attaque", "?H goblin attaque")
+    .addField("Défense", "?H goblin défense")
+    .setImage("https://vignette.wikia.nocookie.net/goblinslayer/images/e/ea/Goblins_Banda.PNG/revision/latest?cb=20180401005522&path-prefix=es")}
+    
+
+    message.channel.send(result);
+
+}
+    
+    
+    
+    
 });
 
 
