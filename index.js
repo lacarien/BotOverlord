@@ -3514,7 +3514,7 @@ if(message.content === préfix + "Arrive grotte 2") {
     if(result < 60)
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
-    .addField("Vous tombez sur des monstres", "?Grotte étage 1")
+    .addField("Vous tombez sur des monstres", "?Grotte étage 2")
     if(60 < result)
     var result = new Discord.RichEmbed() 
     .setColor("#1fff00")
