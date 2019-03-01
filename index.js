@@ -3506,7 +3506,7 @@ if(message.content === préfix + "Grotte étage 1") {
     .setImage("https://vignette.wikia.nocookie.net/goblinslayer/images/e/ea/Goblins_Banda.PNG/revision/latest?cb=20180401005522&path-prefix=es")}
     
 
-    message.channel.send(result);
+    message.channel.send(y);
 
 }
     
