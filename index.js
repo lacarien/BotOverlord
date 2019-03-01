@@ -3509,6 +3509,19 @@ if(message.content === préfix + "Grotte étage 1") {
     message.channel.send(y);
 
 }
+if(message.content === préfix + "Arrive grotte 2") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 60)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .addField("Vous tombez sur des monstres", "?Grotte étage 1")
+    if(60 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setTitle("C'est bien calme...")
+    message.channel.send(result);
+
+}
     
     
  if(message.content === préfix + "Grotte étage 2") {
