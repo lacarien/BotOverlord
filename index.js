@@ -3466,7 +3466,6 @@ if(message.content === préfix + "F squelette défense"){
     var y = new Discord.RichEmbed()
     .addField("Le squelette se prend le double des dégâts", y)
     .setColor("#ff0000")
-    var y = new Discord.RichEmbed()
     message.channel.send(y);
 }
 
