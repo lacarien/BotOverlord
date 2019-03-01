@@ -3738,6 +3738,87 @@ if(message.content === préfix + "Grotte étage 6") {
     message.channel.send(y);
 
 } 
+    
+    
+if(message.content === préfix + "Grotte étage 7") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(2));
+    var max = Math.floor(Math.max(5)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    if(result < 30){
+        var y = new Discord.RichEmbed()
+        .setColor("#524b4b")
+        .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un homme armée, salement amoché, à sa tenue on pourrait penser qu'il est perdu dans la grotte depuis fort longtemps...")
+        .addField("Point de vie d'un énnemie", "300")
+        .addField("Attaque", "?Nomade attaque")
+        .addField("Défense", "?Nomade défense")
+        .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")}
+ 
+    else if(result < 60){
+        var y = new Discord.RichEmbed() 
+        .setColor("#820000")
+        .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un paladin avec des cornes qui semblait...Hostile")
+        .addField("Point de vie d'un énnemie", "600")
+        .addField("Attaque", "?P démon attaque")
+        .addField("Défense", "?P démon défense")
+        .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")   }
+        else if(result < 101){
+            var y = new Discord.RichEmbed() 
+            .setColor("#045713")
+            .setTitle("Goblin champion")
+            .setDescription("Vous arrivez au plus profond de la grotte...vous croisez alors un colosse sur votre route, gardant un petit coffre")
+            .addField("Point de vie", "1500")
+            .addField("Attaque", "?C goblin attaque")
+            .addField("Défense", "?C goblin défense")
+            .addField("Passifs", "Dégats au dessus de 500 divisé par 2")
+            .addField("Une fois qu'il se fait tuer: le loot normal du mobs + ?Petit coffre grotte")
+            .setImage("https://media.discordapp.net/attachments/454694319396356128/551019149409910809/unknown.png?width=994&height=560")}
+    message.channel.send(y);
+
+}
+if(message.content === préfix + "Arrive grotte 7") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 70)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .addField("Vous tombez sur des monstres", "?Grotte étage 7")
+    if(70 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setTitle("C'est bien calme...")
+    message.channel.send(result);
+
+}
+
+if(message.content === préfix + "Arrive grotte 8") {
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .addField("Vous tombez sur des monstres", "?Grotte étage 8")
+    message.channel.send(result);
+
+}
+if(message.content === préfix + "Grotte étage 8") {
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(2));
+    var max = Math.floor(Math.max(5)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#045713")
+    .setDescription("Vous arrivez au plus profond de la grotte...vous croisez alors un colosse et des goblins devant lui sur votre route, gardant un gros coffre")
+    .addField("Point de vie du goblin champion", "1500")
+    .addField("Attaque du goblin champion", "?C goblin attaque")
+    .addField("Défense du goblin champion", "?C goblin défense")
+    .addField("Passifs", "Dégats au dessus de 500 divisé par 2")
+    .addField("Nombre de goblin: ", y)
+    .addField("Point de vie d'un goblin", "100")
+    .addField("Attaque d'un goblin", "?H goblin attaque")
+    .addField("Défense d'un goblin", "?H goblin défense")
+    .addField("Une fois que tout le monde est mort (en bonus du loot des mobs): ?Coffre grotte")
+    .setImage("https://j.gifs.com/wVjOMz.gif")
+    message.channel.send(y);
+
+}
 });
 
 
