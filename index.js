@@ -3390,6 +3390,26 @@ if(message.content === préfix + "C goblin défense"){
     message.channel.sendMessage(y);
 }
     
+    if(message.content === préfix + "Goblin champion + Horde de goblin"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(2));
+    var max = Math.floor(Math.max(5)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#045713")
+    .setDescription("Vous arrivez au plus profond de la grotte...vous croisez alors un colosse et des goblins devant lui sur votre route, gardant un gros coffre")
+    .addField("Point de vie du goblin champion", "1500")
+    .addField("Attaque du goblin champion", "?C goblin attaque")
+    .addField("Défense du goblin champion", "?C goblin défense")
+    .addField("Passifs", "Dégats au dessus de 500 divisé par 2")
+    .addField("Nombre de goblin: ", y)
+    .addField("Point de vie d'un goblin", "100")
+    .addField("Attaque d'un goblin", "?H goblin attaque")
+    .addField("Défense d'un goblin", "?H goblin défense")
+    .setImage("https://media.discordapp.net/attachments/454694319396356128/551019149409910809/unknown.png?width=994&height=560")
+    message.channel.sendMessage(y);
+}
+    
 });
 
 
