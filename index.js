@@ -2584,11 +2584,11 @@ if(message.content === préfix + "Parchemin de fuite"){
 }
 if(message.content === préfix + "Parchemin de fuite simple") {
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 60)
+    if(result < 50)
     var result = new Discord.RichEmbed() 
     .setColor("#00ff37")
     .setAuthor("Le parchemin vous téléporte à votre domicile")
-    if(60 < result)
+    if(50 < result)
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
     .setAuthor("Le parchemin ne fonctionne pas")
@@ -2597,11 +2597,11 @@ if(message.content === préfix + "Parchemin de fuite simple") {
 }
 if(message.content === préfix + "Parchemin de fuite normal") {
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 70)
+    if(result < 65)
     var result = new Discord.RichEmbed() 
     .setColor("#00ff37")
     .setAuthor("Le parchemin vous téléporte à votre domicile")
-    if(70 < result)
+    if(65 < result)
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
     .setAuthor("Le parchemin ne fonctionne pas")
