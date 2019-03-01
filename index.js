@@ -3597,7 +3597,147 @@ if(message.content === préfix + "Arrive grotte 2") {
     message.channel.send(y);
 
 }
-    
+   
+if(message.content === préfix + "Grotte étage 4") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(2));
+    var max = Math.floor(Math.max(5)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    if(result < 50){
+        var y = new Discord.RichEmbed()
+        .setColor("#37ac0f")
+        .addField("Nombre d'énnemie: ", y)
+        .addField("Point de vie d'un énnemie", "100")
+        .addField("Attaque", "?H goblin attaque")
+        .addField("Défense", "?H goblin défense")
+        .setImage("https://vignette.wikia.nocookie.net/goblinslayer/images/e/ea/Goblins_Banda.PNG/revision/latest?cb=20180401005522&path-prefix=es")}
+    else if(result < 101){
+        var y = new Discord.RichEmbed() 
+        var min = Math.floor(Math.min(7));
+        var max = Math.floor(Math.max(15)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#37ac0f")
+        .setDescription("Vous avancez dans l'obscurité quand soudainement...Une horde de squelette apparait")
+        .addField("Nombre d'énnemie: ", y)
+        .addField("Point de vie d'un énnemie", "30")
+        .addField("Attaque", "?Squelette attaque")
+        .addField("Défense", "Aucune")
+        .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/2/20/Overlord_II_EP03_051.png/revision/latest?cb=20180127032839") }
+
+    message.channel.send(y);
+
+}
+
+if(message.content === préfix + "Arrive grotte 3") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 60)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .addField("Vous tombez sur des monstres", "?Grotte étage 3")
+    if(60 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setTitle("C'est bien calme...")
+    message.channel.send(result);
+
+}
+if(message.content === préfix + "Arrive grotte 4") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 60)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .addField("Vous tombez sur des monstres", "?Grotte étage 4")
+    if(60 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setTitle("C'est bien calme...")
+    message.channel.send(result);
+
+}
+
+if(message.content === préfix + "Grotte étage 4") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 20){
+        var y = new Discord.RichEmbed()
+      .setColor("#820000")
+    .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un paladin avec des cornes qui semblait...Hostile")
+    .addField("Point de vie d'un énnemie", "600")
+    .addField("Attaque", "?P démon attaque")
+    .addField("Défense", "?P démon défense")
+    .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")  }
+    else if(result < 101){
+        var y = new Discord.RichEmbed() 
+        var min = Math.floor(Math.min(7));
+        var max = Math.floor(Math.max(15)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#37ac0f")
+        .setDescription("Vous avancez dans l'obscurité quand soudainement...Une horde de squelette apparait")
+        .addField("Nombre d'énnemie: ", y)
+        .addField("Point de vie d'un énnemie", "30")
+        .addField("Attaque", "?Squelette attaque")
+        .addField("Défense", "Aucune")
+        .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/2/20/Overlord_II_EP03_051.png/revision/latest?cb=20180127032839") }
+
+    message.channel.send(y);
+
+}
+
+if(message.content === préfix + "Arrive grotte 5") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 60)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .addField("Vous tombez sur des monstres", "?Grotte étage 5")
+    if(60 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setTitle("C'est bien calme...")
+    message.channel.send(result);
+
+}
+if(message.content === préfix + "Arrive grotte 6") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 60)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .addField("Vous tombez sur des monstres", "?Grotte étage 6")
+    if(60 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setTitle("C'est bien calme...")
+    message.channel.send(result);
+
+}
+if(message.content === préfix + "Grotte étage 5") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(2));
+    var max = Math.floor(Math.max(5)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    if(result < 50){
+        var y = new Discord.RichEmbed()
+        .setColor("#524b4b")
+        .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un homme armée, salement amoché, à sa tenue on pourrait penser qu'il est perdu dans la grotte depuis fort longtemps...")
+        .addField("Point de vie d'un énnemie", "300")
+        .addField("Attaque", "?Nomade attaque")
+        .addField("Défense", "?Nomade défense")
+        .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")}
+ 
+    else if(result < 101){
+        var y = new Discord.RichEmbed() 
+        .setColor("#820000")
+        .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un paladin avec des cornes qui semblait...Hostile")
+        .addField("Point de vie d'un énnemie", "600")
+        .addField("Attaque", "?P démon attaque")
+        .addField("Défense", "?P démon défense")
+        .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")   }
+
+    message.channel.send(result);
+
+} 
 });
 
 
