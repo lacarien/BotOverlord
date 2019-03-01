@@ -3485,15 +3485,19 @@ if(message.content === préfix + "Arrive grotte 1") {
 
 if(message.content === préfix + "Grotte étage 1") {
     var result = Math.floor((Math.random() * 100) + 1);
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(2));
+    var max = Math.floor(Math.max(5)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 80){
-    var result = new Discord.RichEmbed() 
+        var y = new Discord.RichEmbed()
     .setColor("#b1afaf")
     .addField("Point de vie", "150")
     .addField("Attaque", "?F Squelette attaque")
     .addField("Défense", "?F Squelette défense")
     .setImage("http://fantasyartdesign.com/free-wallpapers/imgs/mid/cgRotFarmSkeleton-m.jpg")}
     else if(result < 101){
-    var result = new Discord.RichEmbed() 
+        var y = new Discord.RichEmbed() 
     .setColor("#37ac0f")
     .addField("Nombre d'énnemie: ", y)
     .addField("Point de vie d'un énnemie", "100")
