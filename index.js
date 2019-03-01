@@ -3301,7 +3301,7 @@ if(message.content === préfix + "P démon attaque"){
     else if (result < 101)
     var y = new Discord.RichEmbed()
     .setColor("#820000")
-    .addField("Il vous fonce dessus et vous propulse contre un mur, vous empechant de bloquer au prochain tours", y)
+    .addField("Il vous fonce dessus et vous propulse contre un mur, vous empechant de bloquer au prochain tours ni même d'attaquer, vous ne serez même pas prit en compte dans le ciblage", y)
     .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")
     message.channel.sendMessage(y);
 }
@@ -3735,7 +3735,7 @@ if(message.content === préfix + "Grotte étage 6") {
         .addField("Défense", "?P démon défense")
         .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")   }
 
-    message.channel.send(result);
+    message.channel.send(y);
 
 } 
 });
