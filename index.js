@@ -3357,6 +3357,9 @@ if(message.content === préfix + "C goblin attaque"){
     var max = Math.floor(Math.max(100)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 80)
+    var y = Math.floor(Math.floor(y) * 2)
+
         if(result < 60)
     var y = new Discord.RichEmbed()
     .addField("Le Champion vous donnes un gros coup d'épée vous faisants reculer de bien 2 metres pour les plus résistants", y)
@@ -3366,7 +3369,6 @@ if(message.content === préfix + "C goblin attaque"){
     .setColor("#045713")
     .setAuthor("Le Champion rate son attaque")
     else if(result < 101)
-    var y = Math.floor(Math.floor(y) * 2)
     var y = new Discord.RichEmbed()
     .setColor("#ff0000")
     .addField("Le gobelin champion vous envoies valser contre une paroie de la grotte, vous sortant donc de la zone de combat, vous ne pouvez plus rien faire pendant 2 tours et vous ne pouvez pas être ciblé", y)
