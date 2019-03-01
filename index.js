@@ -3409,7 +3409,7 @@ if(message.content === préfix + "C goblin défense"){
     .setImage("https://media.discordapp.net/attachments/454694319396356128/551019149409910809/unknown.png?width=994&height=560")
     message.channel.sendMessage(y);
 }
-    if(message.content === préfix + "Goblin champion + Horde de goblin"){
+    if(message.content === préfix + "GC avec une Horde de goblin"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(2));
     var max = Math.floor(Math.max(5)); 
