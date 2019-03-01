@@ -3511,7 +3511,39 @@ if(message.content === préfix + "Grotte étage 1") {
 }
     
     
-    
+ if(message.content === préfix + "Grotte étage 2") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(2));
+    var max = Math.floor(Math.max(5)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    if(result < 20){
+        var y = new Discord.RichEmbed()
+    .setColor("#b1afaf")
+    .addField("Point de vie", "150")
+    .addField("Attaque", "?F Squelette attaque")
+    .addField("Défense", "?F Squelette défense")
+    .setImage("http://fantasyartdesign.com/free-wallpapers/imgs/mid/cgRotFarmSkeleton-m.jpg")}
+    else if(result < 80){
+        var y = new Discord.RichEmbed() 
+    .setColor("#37ac0f")
+    .addField("Nombre d'énnemie: ", y)
+    .addField("Point de vie d'un énnemie", "100")
+    .addField("Attaque", "?H goblin attaque")
+    .addField("Défense", "?H goblin défense")
+    .setImage("https://vignette.wikia.nocookie.net/goblinslayer/images/e/ea/Goblins_Banda.PNG/revision/latest?cb=20180401005522&path-prefix=es")}
+    else if(result < 101){
+        var y = new Discord.RichEmbed() 
+    .setColor("#524b4b")
+    .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un homme armée, salement amoché, à sa tenue on pourrait penser qu'il est perdu dans la grotte depuis fort longtemps...")
+    .addField("Point de vie d'un énnemie", "300")
+    .addField("Attaque", "?Nomade attaque")
+    .addField("Défense", "?Nomade défense")
+    .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")}
+
+    message.channel.send(result);
+
+}   
     
 });
 
