@@ -3339,7 +3339,54 @@ if(message.content === préfix + "Squelette attaque"){
  
     message.channel.sendMessage(y);
 }    
+if(message.content === préfix + "Goblin champion"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#045713")
+    .setDescription("Vous arrivez au plus profond de la grotte...vous croisez alors un colosse sur votre route, gardant un petit coffre")
+    .addField("Point de vie", "1500")
+    .addField("Attaque", "?C goblin attaque")
+    .addField("Défense", "?C goblin défense")
+    .addField("Passifs", "?dégats au dessus de 500 divisé par 2")
+    .setImage("https://media.discordapp.net/attachments/454694319396356128/551019149409910809/unknown.png?width=994&height=560")
+    message.channel.sendMessage(help_embed);
+}
 
+if(message.content === préfix + "C goblin attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(80));
+    var max = Math.floor(Math.max(100)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 60)
+    var y = new Discord.RichEmbed()
+    .addField("Le Champion vous donnes un gros coup d'épée vous faisants reculer de bien 2 metres pour les plus résistants", y)
+    .setColor("#045713")
+        else if(result < 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#045713")
+    .setAuthor("Le Champion rate son attaque")
+    else if(result < 101)
+    var y = Math.floor(Math.floor(y) * 2)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .addField("Le gobelin champion vous envoies valser contre une paroie de la grotte, vous sortant donc de la zone de combat, vous ne pouvez plus rien faire pendant 2 tours et vous ne pouvez pas être ciblé", y)
+    .setImage("https://j.gifs.com/4Q85A2.gif")
+    message.channel.sendMessage(y);
+}
+if(message.content === préfix + "C goblin défense"){
+    var help_embed = new Discord.RichEmbed()
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 80)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Le champion prend tout les dégats en plein dans son torse")
+    .setColor("#045713")
+        if(result > 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#045713")
+    .setImage("https://j.gifs.com/ROgRZ0.gif")
+    .setTitle("Le Champion ne prend aucun dégat du à un sacrifice forcé d'un goblin")
+    message.channel.sendMessage(y);
+}
     
 });
 
