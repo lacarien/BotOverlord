@@ -3861,7 +3861,7 @@ if(message.content === préfix + "Mort horde de goblin"){
     .setColor("#9e9a9a")
     if(result > 99)
     var y = new Discord.RichEmbed()
-    .addField("Loot légendaire :exclamation: ", y + "?Dague d'assassin :dagger: " + x)
+    .addField("Loot légendaire :exclamation: ", y + "?Dague d'assassin :dagger: " )
     .setColor("#e200ff")
     message.channel.sendMessage(y);
 } 
@@ -3923,7 +3923,7 @@ if(message.content === préfix + "Mort squelette"){
     .setColor("#9e9a9a")
     if(result > 99)
     var y = new Discord.RichEmbed()
-    .addField("Loot légendaire :exclamation: ", y + "?Livre abandonné :sparkles: " + x)
+    .addField("Loot légendaire :exclamation: ", y + "?Livre abandonné :sparkles: ")
     .setColor("#e200ff")
     message.channel.sendMessage(y);
 } 
