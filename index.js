@@ -3290,7 +3290,6 @@ if(message.content === préfix + "P démon défense"){
     .setColor("#820000")
     message.channel.send(y);
 }
-
 if(message.content === préfix + "P démon attaque"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(60));
@@ -3313,7 +3312,7 @@ if(message.content === préfix + "P démon attaque"){
     else if (result < 101)
     var y = new Discord.RichEmbed()
     .setColor("#820000")
-    .addField("Sa lame démoniaque vous infectes(sauf les automates et les démons)...Durant de 3jours(2 pour les Lézards et 1 pour les vampires)  votre personnage se vera constament avec des douleurs musculaires, il sera comme un chien souffrant le martyre et aura des halucinations de son passé visant à le briser mentalement", y) 
+    .setTitle("Sa lame démoniaque vous infectes(sauf les automates et les démons)...Durant de 3jours(2 pour les Lézards et 1 pour les vampires)  votre personnage se vera constament avec des douleurs musculaires, il sera comme un chien souffrant le martyre et aura des halucinations de son passé visant à le briser mentalement") 
     message.channel.sendMessage(y);
 }
 
