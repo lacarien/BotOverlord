@@ -3833,6 +3833,115 @@ if(message.content === préfix + "Grotte étage 8") {
     message.channel.send(y);
 
 }
+    
+    if(message.content === préfix + "Mort squelette faible"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(4));
+    var max = Math.floor(Math.max(9)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
+    .setColor("#ab5902")
+    message.channel.sendMessage(y);
+}  
+
+if(message.content === préfix + "Mort horde de goblin"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(13));
+    var max = Math.floor(Math.max(26)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(2));
+    var maxs = Math.floor(Math.max(4)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 99)
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+    if(result > 99)
+    var y = new Discord.RichEmbed()
+    .addField("Loot légendaire :exclamation: ", y + "?Dague d'assassin :dagger: " + x)
+    .setColor("#e200ff")
+    message.channel.sendMessage(y);
+} 
+
+if(message.content === préfix + "Mort paladin démon"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(35)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(5));
+    var maxs = Math.floor(Math.max(8)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 99)
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+    if(result > 99)
+    var y = new Discord.RichEmbed()
+    .addField("Loot légendaire :exclamation: ", "?Bouclier démoniaque :shield: ")
+    .setColor("#e200ff")
+    message.channel.sendMessage(y);
+} 
+if(message.content === préfix + "Mort nomade fou"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(35)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(5));
+    var maxs = Math.floor(Math.max(8)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 99)
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+    if(result > 99)
+    var y = new Discord.RichEmbed()
+    .addField("Loot légendaire :exclamation: ", "?épée de folie :crossed_swords: ")
+    .setColor("#e200ff")
+    message.channel.sendMessage(y);
+} 
+
+if(message.content === préfix + "Mort squelette"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(13));
+    var max = Math.floor(Math.max(26)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(2));
+    var maxs = Math.floor(Math.max(4)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 99)
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+    if(result > 99)
+    var y = new Discord.RichEmbed()
+    .addField("Loot légendaire :exclamation: ", y + "?Livre abandonné :sparkles: " + x)
+    .setColor("#e200ff")
+    message.channel.sendMessage(y);
+} 
+
+if(message.content === préfix + "Mort goblin champion"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(150)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(25));
+    var maxs = Math.floor(Math.max(50)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+} 
 });
 
 
