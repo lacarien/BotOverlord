@@ -3182,6 +3182,7 @@ if(message.content === préfix + "Horde de goblin"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#37ac0f")
+    .setTitle("Horde de goblin")
     .addField("Nombre d'énnemie: ", y)
     .addField("Point de vie d'un énnemie", "100")
     .addField("Attaque", "?H goblin attaque")
@@ -3228,6 +3229,7 @@ if(message.content === préfix + "H goblin défense") {
     if(message.content === préfix + "Nomade fou"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#524b4b")
+    .setTitle("Nomade fou")
     .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un homme armée, salement amoché, à sa tenue on pourrait penser qu'il est perdu dans la grotte depuis fort longtemps...")
     .addField("Point de vie d'un énnemie", "300")
     .addField("Attaque", "?Nomade attaque")
@@ -3270,6 +3272,7 @@ if(message.content === préfix + "Nomade défense") {
 if(message.content === préfix + "Paladin démon"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#820000")
+    .setTitle("Paladin démon")
     .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un paladin avec des cornes qui semblait...Hostile")
     .addField("Point de vie d'un énnemie", "600")
     .addField("Attaque", "?P démon attaque")
@@ -3321,6 +3324,7 @@ if(message.content === préfix + "Squelette"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#37ac0f")
+    .setTitle("Squelette")
     .setDescription("Vous avancez dans l'obscurité quand soudainement...Une horde de squelette apparait")
     .addField("Nombre d'énnemie: ", y)
     .addField("Point de vie d'un énnemie", "30")
@@ -3350,6 +3354,7 @@ if(message.content === préfix + "Squelette attaque"){
 if(message.content === préfix + "Goblin champion"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#045713")
+    .setTitle("Goblin champion")
     .setDescription("Vous arrivez au plus profond de la grotte...vous croisez alors un colosse sur votre route, gardant un petit coffre")
     .addField("Point de vie", "1500")
     .addField("Attaque", "?C goblin attaque")
@@ -3439,6 +3444,7 @@ if(message.content === préfix + "C goblin défense"){
     if(message.content === préfix + "Squelette faible"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#b1afaf")
+    .setTitle("Squelette faible")
     .addField("Point de vie", "150")
     .addField("Attaque", "?F squelette attaque")
     .addField("Défense", "?F squelette défense")
