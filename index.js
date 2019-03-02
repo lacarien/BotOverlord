@@ -3942,6 +3942,45 @@ if(message.content === préfix + "Mort goblin champion"){
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 } 
+    
+    
+    if(message.content === préfix + "Dague d'assassin"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#e200ff")
+    .setTitle("Dague d'assassin")
+    .setDescription("Cette dague retrouvé sur un cadavre de goblin est en réalité une bonne vieille dague que l'on retrouvé sur les assassins des temps modernes")
+    .addField("Bonus", "?Coup de dague rapide \n ?Lancé de dague")
+    .addField("Passifs", "La dague une fois lancé et arrivé à destination (même dans le rp passifs) va disparaitre puis réapparaitre sur son propriétaire")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "Bouclier démoniaque"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#e200ff")
+    .setTitle("Bouclier démoniaque")
+    .setDescription("Ce bouclier est un bouclier des paladins guérriers des enfers")
+    .addField("Bonus", "?Blocage démoniaque \n ?Trouble démoniaque")
+    .addField("Passifs", "Le bouclier à comme une âme démoniaque à l'intérieur de lui, vous pouvez donc lui parler et créer des diaglogues, biensur il n'aura aucun effet sur la réalité mais cela permet de créer des intéractions. Seul le propriétaire peu entendre la voix. pouvant donc influencer la mentalité du personnage")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "épée de folie"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#e200ff")
+    .setTitle("épée de folie")
+    .setDescription("Cette épée forgeait par des nomades a subi de nombreuse rituel...Celle-ci a la particularité de dégradé la santé mental de son propriétaire")
+    .addField("Bonus", "?Parade folle \n ?Rire de fou")
+    .addField("Passifs", "Une fois par jour, vous devrez faire un ?Roll qui aura pour objectif de savoir si votre santé mental se dégrade ou si elle ne bouge pas. Attention l'épée ne pourra jamais améliorer votre santé mental, seul les liens sociaux le permettront")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Livre abandonné"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#e200ff")
+    .setTitle("Livre abandonné")
+    .setDescription("Ce livre abandonné appartenait à un ancien sorcier qui se dirigeait vers la voix de la mélancolie et de la nécromancie")
+    .addField("Bonus", "?Tornade ténénbreuse \n ?Invocation de gardien")
+    .addField("Passifs", "Ce livre abandonné vous permet de lire dans les pensées d'une personne avant de débuter une dicussion. Utilisable une fois par jour")
+    message.channel.sendMessage(help_embed);
+}
 });
 
 
