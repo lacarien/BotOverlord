@@ -2309,8 +2309,8 @@ if(message.content === préfix + "Soins de la nature"){
     
     if(message.content === préfix + "Potion d'HP faible"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(10));
-    var max = Math.floor(Math.max(30)); 
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(80)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Créer par la force de simples mages après de nombreuse tentative... ", y)
@@ -2321,8 +2321,8 @@ if(message.content === préfix + "Soins de la nature"){
 
 if(message.content === préfix + "Potion d'HP"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(50));
-    var max = Math.floor(Math.max(100)); 
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(200)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Créer par de puissants alchimistes qui vive dans la noblesse du Royaume... Cette potion serait d'une grande éfficacité", y)
@@ -2333,8 +2333,8 @@ if(message.content === préfix + "Potion d'HP"){
 
 if(message.content === préfix + "Potion d'HP haute"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(120));
-    var max = Math.floor(Math.max(180)); 
+    var min = Math.floor(Math.min(250));
+    var max = Math.floor(Math.max(400)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Créer par de puissant Druide exilé du royaume... Cette potion rendrait un grand nombre d'HP", y)
@@ -2345,8 +2345,8 @@ if(message.content === préfix + "Potion d'HP haute"){
 
 if(message.content === préfix + "Potion de mana faible"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(10));
-    var max = Math.floor(Math.max(25)); 
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(80)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Créer par la force de simples mages après de nombreuse tentative... ", y)
@@ -2357,8 +2357,8 @@ if(message.content === préfix + "Potion de mana faible"){
 
 if(message.content === préfix + "Potion de mana"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(45));
-    var max = Math.floor(Math.max(80)); 
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(200)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Créer par des alchimistes fasciné par la magie... Cette potion serait d'une grande éfficacité", y)
@@ -2369,8 +2369,8 @@ if(message.content === préfix + "Potion de mana"){
 
 if(message.content === préfix + "Potion de mana haute"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(100));
-    var max = Math.floor(Math.max(160)); 
+    var min = Math.floor(Math.min(250));
+    var max = Math.floor(Math.max(400)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Créer par de puissants Sorciers reconnus de tous... Cette potion vous redonneras une immense quantité de mana", y)
@@ -2395,9 +2395,9 @@ if(message.content === préfix + "Shop"){
     
    if(message.content === préfix + "Potion HP"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Potion d'HP faible'", "15 pièces de bronze")
-    .addField("Potion d'HP", "30 pièces de bronze" + " \n 10 pièces d'argent")
-    .addField("Potion d'HP haute", "75 pièces de bronze" + "\n 30 pièces d'argent" + "\n 10 pièces d'or \n \n \n")
+    .addField("Potion d'HP faible'", "35 pièces de bronze")
+    .addField("Potion d'HP", "100 pièces de bronze" + " \n 10 pièces d'argent")
+    .addField("Potion d'HP haute", "300 pièces de bronze" + "\n 30 pièces d'argent" + "\n 10 pièces d'or \n \n \n")
     .setFooter("Les potions d'HP")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
