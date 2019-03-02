@@ -3294,15 +3294,23 @@ if(message.content === préfix + "P démon attaque"){
     var max = Math.floor(Math.max(40)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
-        if(result < 80)
+        if(result < 60)
     var y = new Discord.RichEmbed()
     .addField("Le démon fit un grand geste de bras, venant vous donner un coup d'épée horizontal", y)
     .setColor("#820000")
-    else if (result < 101)
+    else if (result < 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#820000")
+    .addField("L'épée du paladin devient rouge et ce dernier vous envoies un slash rouge sanglant qui touche tout le groupe", y)
+    else if (result < 97)
     var y = new Discord.RichEmbed()
     .setColor("#820000")
     .addField("Il vous fonce dessus et vous propulse contre un mur, vous empechant de bloquer au prochain tours ni même d'attaquer, vous ne serez même pas prit en compte dans le ciblage", y)
     .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#820000")
+    .addField("Sa lame démoniaque vous infectes(sauf les automates et les démons)...Durant de 3jours(2 pour les Lézards et 1 pour les vampires)  votre personnage se vera constament avec des douleurs musculaires, il sera comme un chien souffrant le martyre et aura des halucinations de son passé visant à le briser mentalement", y) 
     message.channel.sendMessage(y);
 }
 
