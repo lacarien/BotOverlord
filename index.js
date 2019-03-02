@@ -2405,9 +2405,9 @@ if(message.content === préfix + "Shop"){
     
      if(message.content === préfix + "Potion mana"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Potion de mana faible", "15 pièces de bronze")
-    .addField("Potion de mana", "30 pièces de bronze" + " \n 10 pièces d'argent")
-    .addField("Potion de mana haute", "75 pièces de bronze" + "\n 30 pièces d'argent" + "\n 10 pièces d'or   ")
+    .addField("Potion de mana faible", "35 pièces de bronze")
+    .addField("Potion de mana", "100 pièces de bronze" + " \n 10 pièces d'argent")
+    .addField("Potion de mana haute", "300 pièces de bronze" + "\n 30 pièces d'argent" + "\n 10 pièces d'or   ")
     .setFooter("Les potions de mana")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
@@ -2826,7 +2826,7 @@ if(message.content === préfix + "Archer masqué défense") {
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var help_embed = new Discord.RichEmbed()
     var mins = Math.floor(Math.min(0));
-    var maxs = Math.floor(Math.max(3)); 
+    var maxs = Math.floor(Math.max(2)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
@@ -2839,8 +2839,8 @@ if(message.content === préfix + "Mort chouette du vent"){
     var max = Math.floor(Math.max(45)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var help_embed = new Discord.RichEmbed()
-    var mins = Math.floor(Math.min(8));
-    var maxs = Math.floor(Math.max(18)); 
+    var mins = Math.floor(Math.min(4));
+    var maxs = Math.floor(Math.max(6)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
