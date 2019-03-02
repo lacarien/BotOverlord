@@ -3314,7 +3314,7 @@ if(message.content === préfix + "P démon attaque") {
         .addField("Sa lame démoniaque vous infectes(sauf les automates et les démons)...Durant de 3jours(2 pour les Lézards et 1 pour les vampires)  votre personnage se vera constament avec des douleurs musculaires, il sera comme un chien souffrant le martyre et aura des halucinations de son passé visant à le briser mentalement", y)   
     }
 
-    message.channel.send(result);
+    message.channel.send(y);
 
 }
 
