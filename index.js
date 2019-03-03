@@ -1018,7 +1018,7 @@ if(message.content === préfix + "PC Classe Automaton"){
         var l = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var l = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous executez un violent d'épée(-200 de Mana)",":crossed_swords: "+  l)
+        .addField("Vous executez un violent d'épée(-150 de Mana)",":crossed_swords: "+  l)
         .setImage("https://thumbs.gfycat.com/MintyConstantAnkole-size_restricted.gif")
         message.channel.send(l);
     }
