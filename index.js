@@ -3982,6 +3982,133 @@ if(message.content === préfix + "Livre abandonné"){
     .addField("Passifs", "Ce livre abandonné vous permet de lire dans les pensées d'une personne avant de débuter une dicussion. Utilisable une fois par jour")
     message.channel.sendMessage(help_embed);
 }
+    
+ 
+
+if(message.content === préfix + "Arc magique"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#e200ff")
+    .setTitle("Arc magique")
+    .setDescription("Cette arc magique a été façonné par des elfs durant des grandes guerres...")
+    .addField("Bonus", "?Tir magique \n ?Pluie de fleche")
+    .addField("Passifs", "Vous pouvez tirer des flêches téléguidé ")
+    .setImage("https://i62.servimg.com/u/f62/12/53/84/36/arc_de11.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "Blocage démoniaque"){
+    var min = Math.floor(Math.min(80));
+    var max = Math.floor(Math.max(110)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Votre bouclier prend une aura démoniaquue et aspire de votre mana pour bloquer le coups(-50 de Mana)", y)
+    .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")
+    message.channel.send(y);
+}
+if(message.content === préfix + "Parade folle"){
+    var result = Math.floor((Math.random() * 100) + 1);
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(160)); 
+    var w = Math.floor(Math.random() * (max - min + 1) ) + min;
+    if(result < 35)
+    var w = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .addField("Vous réussiez la parade et vous lui infligez :crossed_swords: ", w)
+    .setImage("https://j.gifs.com/oVQQYK.gif")
+    if(result > 35)
+    var w = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Vous loupez votre parade et subisez tout les dégats")
+    .setImage("http://i.imgur.com/Lpv5HId.jpg")
+    message.channel.send(w);
+}
+if(message.content === préfix + "Tornade ténénbreuse"){
+    var result = Math.floor((Math.random() * 100) + 1);
+    var min = Math.floor(Math.min(200));
+    var max = Math.floor(Math.max(250)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    if(result < 50)
+    var y = new Discord.RichEmbed()
+    .addField("Vous envoyez un sort qui détruit votre adversaire, la compétence n'est pas bloquable(-175 de mana) :sparkles: ", y)
+    .setImage("https://media.giphy.com/media/x49CbUokcHQZdaSyga/giphy.gif   ")
+    .setColor("#000000")    
+    if(result > 50)
+    var y = new Discord.RichEmbed()
+    .addField("Vous envoyez un sort qui détruit votre adversaire, la compétence n'est pas esquivable(-175 de mana) :sparkles: ", y)
+    .setImage("https://media.giphy.com/media/x49CbUokcHQZdaSyga/giphy.gif   ")
+    .setColor("#000000")    
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Tir magique"){
+    var min = Math.floor(Math.min(90));
+    var max = Math.floor(Math.max(130)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous tirez une fleche magique(-30 de Mana)",":bow_and_arrow: "+ y)
+    .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Pluie de fleche"){
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(60)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous tirez en l'air, votre fleche explose et fait apparaitre une pluie de fleches qui blesse tout les ennemies(-50 de Mana)",":bow_and_arrow: "+ y)
+    .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
+    message.channel.send(y);
+}
+if(message.content === préfix + "Invocation de gardien"){   
+    var min = Math.floor(Math.min(200));
+    var max = Math.floor(Math.max(300)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Fait apparaitre un golem de bois inoffensif qui se prendra tout les dégats à votre place", y + ":heart: ")
+    .setImage("https://i.pinimg.com/originals/d0/0c/b9/d00cb927aa373746143cca0368271165.jpg")
+    message.channel.send(y);
+}
+if(message.content === préfix + "Coup de dague rapide"){
+        
+    var min = Math.floor(Math.min(70));
+   var max = Math.floor(Math.max(110)); 
+   var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+      var result = Math.floor((Math.random() * 100) +1);
+   if(result < 90)
+   var y = new Discord.RichEmbed()
+   .addField("Vous lui infligé un coup de dague rapide et lui infligé", y)
+   .setColor("#ff6000")
+   .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/b/ba/Overlord_II_EP06_097.png/revision/latest?cb=20180216051904")
+   if(result > 90)
+   var y = new Discord.RichEmbed()
+   .setColor("#ff6000")
+   .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup ", y)
+   .setImage("https://i.ytimg.com/vi/mmUlK_FAJqI/maxresdefault.jpg")
+   message.channel.send(y);
+}
+if(message.content === préfix + "Lancé de dague"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var x = Math.floor((Math.random() * 3) + 1);
+    if(result < 2)
+    var y = new Discord.RichEmbed()
+    .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 1tours impossible à bloquer(-30 de Mana)", y)
+    .setColor("#9f0000")
+    .setImage("https://nerdblogdotcom.files.wordpress.com/2013/06/borborygmos-enraged.jpg")
+    else if(x < 3)
+    var y = new Discord.RichEmbed()
+    .setColor("#4e8b27")
+    .addField("Votre dague inflige des dégats pendant 3tours(-40 de Mana)", y)
+    else if(x < 4)
+    var y = new Discord.RichEmbed()
+    .setColor("#4e8b27")
+    .setTitle("Vous lancé une dague qui endort votre ennemie au prochain tours(-40 de Mana)")
+    message.channel.sendMessage(y);
+}
 });
 
 
