@@ -4123,7 +4123,7 @@ if(message.content === préfix + "Lancé de dague"){
         if(y > 30)
     var y = new Discord.RichEmbed()
     .setColor("#820000")
-    .addField("Votre bouclier fait trembler de peur votre adversaire et lui réduit sa défense au prochain tours (-100 d'HP)", y)
+    .addField("Votre bouclier fait trembler de peur votre adversaire et lui réduit sa défense au prochain tours (-75 d(HP)", y)
     message.channel.sendMessage(y);
 }
 
