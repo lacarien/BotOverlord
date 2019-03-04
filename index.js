@@ -4132,7 +4132,7 @@ if(message.content === préfix + "Rire de fou"){
     var result = Math.floor((Math.random() * 100) + 1);
         if(result > 50)
     var y = new Discord.RichEmbed()
-    .setTitle("Vous riez d'un rire fou et vous blessez volontairement par pur folie")
+    .setTitle("Vous riez d'un rire fou et vous blessez volontairement par pur folie (-50HP)")
     .setColor("#524b4b")
     .setImage("https://uploads.disquscdn.com/images/7af7c32bd1be5c45c84036a4b5ae14dc18dbd008528130ac0be9b53e1347e9bc.gif")
         if(result < 50 )
