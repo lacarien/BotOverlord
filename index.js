@@ -4002,6 +4002,7 @@ if(message.content === préfix + "Blocage démoniaque"){
     var max = Math.floor(Math.max(110)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
+    .setColor("")
     .addField("Votre bouclier prend une aura démoniaquue et aspire de votre mana pour bloquer le coups(-50 de Mana)", y)
     .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")
     message.channel.send(y);
@@ -4057,7 +4058,7 @@ if(message.content === préfix + "Pluie de fleche"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Vous tirez en l'air, votre fleche explose et fait apparaitre une pluie de fleches qui blesse tout les ennemies(-50 de Mana)",":bow_and_arrow: "+ y)
-    .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
+    .setImage("https://cdn.discordapp.com/attachments/536292650698014731/551878057246326787/79925.png")
     message.channel.send(y);
 }
 if(message.content === préfix + "Invocation de gardien"){   
@@ -4109,6 +4110,39 @@ if(message.content === préfix + "Lancé de dague"){
     .setTitle("Vous lancé une dague qui endort votre ennemie au prochain tours(-40 de Mana)")
     message.channel.sendMessage(y);
 }
+ if(message.content === préfix + "Trouble démoniaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(y < 30)
+    var y = new Discord.RichEmbed()
+    .addField("Votre bouclier fait trembler votre adversaire et lui réduit sa défense au prochain tours (-50 de mana)", y)
+    .setColor("#820000")
+        if(y > 30)
+    var y = new Discord.RichEmbed()
+    .setColor("#820000")
+    .addField("Votre bouclier fait trembler de peur votre adversaire et lui réduit sa défense au prochain tours (-100 d'HP)", y)
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Rire de fou"){
+    var help_embed = new Discord.RichEmbed()
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result > 50)
+    var y = new Discord.RichEmbed()
+    .setTitle("Vous riez d'un rire fou et vous blessez volontairement par pur folie")
+    .setColor("#524b4b")
+    .setImage("https://uploads.disquscdn.com/images/7af7c32bd1be5c45c84036a4b5ae14dc18dbd008528130ac0be9b53e1347e9bc.gif")
+        if(result < 50 )
+    var y = new Discord.RichEmbed()
+    .setColor("#524b4b")
+    .setTitle("Vous riez d'un rire fou comme si vous aviez perdu le contrôle de vous mêmes, votre prochainne attaque fera doublement mal")
+    .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")
+    message.channel.sendMessage(y);
+}
+    
 });
 
 
