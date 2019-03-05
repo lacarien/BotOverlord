@@ -4142,7 +4142,31 @@ if(message.content === préfix + "Rire de fou"){
     .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")
     message.channel.sendMessage(y);
 }
-
+ if(message.content === préfix + "Petit coffre"){
+    var help_embed = new Discord.RichEmbed()
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 20)
+    var result = new Discord.RichEmbed()
+    .setTitle("3 Potion d'HP")
+    .setColor("#f0ff00")
+    else if (result < 40)
+    var hresult = new Discord.RichEmbed()
+    .setColor("#f0ff00")
+    .setTitle("3 Potion de mana")
+    else if (result < 95)
+    var result = new Discord.RichEmbed()
+    .setColor("#f0ff00")
+    setTitle("300 pièces de bronze et 30 d'argent")
+    else if (result < 101)
+    var result = new Discord.RichEmbed()
+    .setColor("#f0ff00")
+    .setTitle("Arc magique")
+    .setDescription("Cette arc magique a été façonné par des elfs durant des grandes guerres...")
+    .addField("Bonus", "?Tir magique \n ?Pluie de fleche")
+    .addField("Passifs", "Vous pouvez tirer des flêches téléguidé ")
+    .setImage("https://i62.servimg.com/u/f62/12/53/84/36/arc_de11.jpg")
+    message.channel.sendMessage(result);
+}   
 });
 
 
