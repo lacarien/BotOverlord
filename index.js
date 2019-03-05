@@ -4156,7 +4156,7 @@ if(message.content === préfix + "Rire de fou"){
     else if (result < 95)
     var result = new Discord.RichEmbed()
     .setColor("#f0ff00")
-    setTitle("300 pièces de bronze et 30 d'argent")
+    .setTitle("300 pièces de bronze et 30 d'argent")
     else if (result < 101)
     var result = new Discord.RichEmbed()
     .setColor("#f0ff00")
