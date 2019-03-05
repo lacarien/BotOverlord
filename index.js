@@ -2881,6 +2881,20 @@ if(message.content === préfix + "PCP Mage"){
     .addField("13PC", "Vous pouvez voler en l'air pendant 10minutes grand maximum(Interdit en plein combat)")
     message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "PCP Sorcier"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("PCP Sorcier")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("15PC", "Vous pouvez faire apparaitre une image d'une taille inferieure a un homme. Elle est immobile et le moindre contact physique la fait disparaitre. Elle reste naturellement jusqu'à 30 minutes.")
+    .addField("18P", "Vous pouvez invoquer un miroir permettant au mage d'observer une personne qu'elle connait personellement.")
+    .addField("20PC", "Vous pouvez placer une marque sur une personne ou un objet, elle disparait si elle est placée a la lumière d'une orbe ou au bout de 24H. Elle permet au mage de connaitre l'emplacement de la marque, utilisable une fois par jour et uniquement sur une personne à la fois.")
+    .addField("23PC", "Vous pouvez devenir totalement invisible sauf si, lui et ses habits sauf si l'Archer fait un roll > 90, il pourra alors vous détecter. Tout contact physique brise le sort. Utilisable une fois par jour")
+    .addField("25PC", "Vous pouvez faire disparaitre un objet innanimé pour une durée d'une journée. Il doit peser moins de 10Kg")
+    .addField("27PC", "Vous pouvez vous méthamorphoser en humanoîde pendant 2heures grand max(Si vous subisez des dégats, l'effet disparait)")
+    .addField("29PC", "Vous pouvez voler en l'air pendant 30minutes grand maximum(Interdit en plein combat)")
+    message.channel.sendMessage(help_embed);
+}
     if(message.content === préfix + "PCP Ranger"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#939696")
