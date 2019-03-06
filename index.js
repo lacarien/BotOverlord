@@ -2913,7 +2913,7 @@ if(message.content === préfix + "PCP Mage"){
     .addField("15PC", "Vous êtes d'une agilité remarquable")
     .addField("18P", "Les annimaux ne vous fuis pas")
     .addField("20PC", "Vous savez imiter le morts")
-    .addField("23PC", "Les annimaux sont dociles avec vous")
+    .addField("23PC", "Les annimaux sont légérement dociles avec vous")
     .addField("25PC", "Vous savez différencier les traces de pas de chaque personne que vous connaissez")
     .addField("27PC", "Vous avez une connaissance parfaite sur les plantes et la végétation")
     .addField("29PC", "Vous êtes extr")
