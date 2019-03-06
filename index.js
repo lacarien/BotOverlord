@@ -2916,7 +2916,7 @@ if(message.content === préfix + "PCP Mage"){
     .addField("23PC", "Les annimaux sont légérement dociles avec vous")
     .addField("25PC", "Vous savez différencier les traces de pas de chaque personne que vous connaissez")
     .addField("27PC", "Vous avez une connaissance parfaite sur les plantes et la végétation")
-    .addField("29PC", "Vous êtes extr")
+    .addField("29PC", "Vous arrivez à connaitre au simple regard les capacités physiques d'une personne et si elle est armée ou non")
     message.channel.sendMessage(help_embed);
 }
     
