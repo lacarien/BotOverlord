@@ -2930,7 +2930,20 @@ if(message.content === préfix + "PCP Voleur"){
     .addField("13PC", "+10 dans les Roll d'action de discrétion (exemple: s'approcher dans le dos discrétement)")
     message.channel.sendMessage(help_embed);
 }
-    
+    if(message.content === préfix + "PCP Assassin"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("PCP Sorcier")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("15PC", "Vous êtes d'une agilité remarquable")
+    .addField("18P", "Vous êtes légers et avait une bonne endurance")
+    .addField("20PC", "Vous êtes très bon en parcours")
+    .addField("23PC", "Vous pouvez voler jusqu'à 10 pièces de bronze maximum dans les poches des autres(joueurs) avec un roll, si la personne fait un plus grand roll que vous, il vous prends la main dans le sac")
+    .addField("25PC", "Vous avez une grande dextérité")
+    .addField("27PC", "Vous pouvez disparaitre dans un petit nuage de fumée pour réapparaitre derrière la personne que vous désirez (il faut qu'elle soit à une distance respectable) utilisable 1 fois par jour")
+    .addField("29PC", "Vous pouvez vous fondres dans la masse devenant introuvable, utilisable 1 fois par jour")
+    message.channel.sendMessage(help_embed);
+}
 if(message.content === préfix + "Quêtes rang Cuivre"){
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 35)
