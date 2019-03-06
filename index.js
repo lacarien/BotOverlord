@@ -4226,6 +4226,15 @@ if(message.content === préfix + "Petit coffre") {
     message.channel.send(result);
 
 }
+    if(message.content === préfix + "@Lacarien#8386"){
+        var help_embed = new Discord.RichEmbed()
+        .setTitle("Merci de ping un autre staff")
+        .setDescription("WHOWWWWWWWWWWW Je suis surchargé H24, alors vous me ferez le plaisir de ping un autre staff et non pas direct le fonda...C'est pas compliqué.")
+        .setFooter("Vous me faites perdre 5 minutes de ma vie")
+        message.channel.sendMessage(help_embed);
+        console.log("Un utilisateur à utiliser la commande d'aide.")
+    }
+
 });
 
 
