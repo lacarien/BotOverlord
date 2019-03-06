@@ -2891,8 +2891,8 @@ if(message.content === préfix + "PCP Mage"){
     .addField("20PC", "Vous pouvez placer une marque sur une personne ou un objet, elle disparait si elle est placée a la lumière d'une orbe ou au bout de 24H. Elle permet au mage de connaitre l'emplacement de la marque, utilisable une fois par jour et uniquement sur une personne à la fois.")
     .addField("23PC", "Vous pouvez devenir totalement invisible sauf si, lui et ses habits sauf si l'Archer fait un roll > 90, il pourra alors vous détecter. Tout contact physique brise le sort. Utilisable une fois par jour")
     .addField("25PC", "Vous pouvez faire disparaitre un objet innanimé pour une durée d'une journée. Il doit peser moins de 10Kg")
-    .addField("27PC", "Vous pouvez vous méthamorphoser en humanoîde pendant 2heures grand max(Si vous subisez des dégats, l'effet disparait)")
-    .addField("29PC", "Vous pouvez voler en l'air pendant 30minutes grand maximum(Interdit en plein combat)")
+    .addField("27PC", "Vous pouvez faire apparaitre un petit esprit(30cm de hauteur max) que vous pouvez contrôler à distance pour communiquer. Il ne traverse pas la matière et peut-être détruit")
+    .addField("29PC", "Vous pouvez vous téléportez à une distance de max 10mètres. Utilisable 1 fois par jour")
     message.channel.sendMessage(help_embed);
 }
     if(message.content === préfix + "PCP Ranger"){
