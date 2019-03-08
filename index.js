@@ -323,7 +323,24 @@ if(message.content === préfix + "Miner"){
         .setFooter("Menu du Paladin")
         message.channel.sendMessage(help_embed);
     }
-    
+    if(message.content === préfix + "Gardien"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#1a00ff")
+        .setTitle("Gardien")
+        .addField("Grand Gardien", "évolution du Gardien à partir de 45PC")
+        .setImage("https://i.pinimg.com/originals/5b/d0/db/5bd0dbb892a7ff1a52d5a105e58f285c.jpg")
+        .setFooter("Menu du Gardien")
+        message.channel.sendMessage(help_embed);
+    }
+     if(message.content === préfix + "Clerc"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#1a00ff")
+        .setTitle("Clerc")
+        .addField("Grand Clerc", "évolution du Clerc à partir de 45PC")
+        .setImage("https://images7.alphacoders.com/934/thumb-350-934065.jpg")
+        .setFooter("Menu du Clerc")
+        message.channel.sendMessage(help_embed);
+    }
     if(message.content === préfix + "Chevalier"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#1a00ff")
