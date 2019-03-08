@@ -679,12 +679,12 @@ if(message.content === préfix + "PC Classe Automaton"){
     .setTitle("PC Classe Automaton")
     .setDescription("Voici ce que vous pourrez gagner à chaque étape")
     .addField("30PC", "100 de mana en plus / ?Dash énèrgétique")
-    .addField("33PC", "?Blocage d'acier")
+    .addField("33PC", "?Tir explosif")
     .addField("35PC", "?Tir énèrgétique")
     .addField("37PC", "200 de Mana en plus / ?Réparation")
-    .addField("39PC", "?Esquive d'automate")
+    .addField("39PC", "????")
     .addField("41PC", "?Invocation de drone")
-    .addField("43PC", "?Instinct de fuite")
+    .addField("43PC", "????")
     .addField("45PC", "Vous pouvez évoluer")
     message.channel.sendMessage(help_embed);
 }
