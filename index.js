@@ -899,7 +899,7 @@ if(message.content === préfix + "PC Classe Automaton"){
     }
     
     if(message.content === préfix + "Blocage magique"){
-        var min = Math.floor(Math.min(25));
+        var min = Math.floor(Math.min(35));
         var max = Math.floor(Math.max(45)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
