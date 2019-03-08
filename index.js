@@ -206,17 +206,7 @@ if(message.content === préfix + "Miner"){
 
 // FAUNE : Utiliser la présentation suivante comme "Presets" pour les futurs fiches de faune.
 {
-        if(message.content === préfix + "Gobelin"){
-            var help_embed = new Discord.RichEmbed()
-            .setColor("#859900")
-            .setTitle("Gobelin")
-            .setDescription("Vous êtes un Gobelin, vous êtes la race la plus fragile, néanmoins ! vous avez une compétence unique à votre espece")
-            .addField("Bonus", "Vous attaquez toujours en premier et vous avez des compétences uniques")
-            .addField("Malus", "Vous avez 40HP en moins")
-            .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/0/00/Goblin_Troop_Anime.png/revision/latest?cb=20180831233640")
-            .setFooter("Menu du Gobelin")
-            message.channel.sendMessage(help_embed);
-    }
+      
 }
 // Fiche de la faune de Nanpa Shima :
 {
@@ -653,7 +643,7 @@ if(message.content === préfix + "Miner"){
         .addField("15PC", "?Coup de dague")
         .addField("20PC", "?Camouflage")
         .addField("25PC", "?Assassin ultime")
-        .addField("30PC", "Vous pouvez passer Grand Assassin ou Grand illusionist ")
+        .addField("30PC", "Vous pouvez passer Grand Assassin")
         message.channel.sendMessage(help_embed);
     }
     
