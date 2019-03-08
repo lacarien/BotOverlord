@@ -866,8 +866,8 @@ if(message.content === préfix + "PC Classe Automaton"){
 
 
     if(message.content === préfix + "Soins de bas rang"){
-        var min = Math.floor(Math.min(15));
-        var max = Math.floor(Math.max(30)); 
+        var min = Math.floor(Math.min(20);
+        var max = Math.floor(Math.max(35)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous soignez une personne au choix, ou bien vous. En contrepartie vous perdez 20 de mana", ":heartpulse: "+y)
@@ -993,8 +993,8 @@ if(message.content === préfix + "PC Classe Automaton"){
     }
     
     if(message.content === préfix + "Sort simple"){
-        var min = Math.floor(Math.min(30));
-        var max = Math.floor(Math.max(50)); 
+        var min = Math.floor(Math.min(40));
+        var max = Math.floor(Math.max(55)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous envoyez un sort sur votre adversaire",":sparkles: "+ y)
@@ -1004,8 +1004,8 @@ if(message.content === préfix + "PC Classe Automaton"){
  
     
     if(message.content === préfix + "Sort naturel"){
-        var min = Math.floor(Math.min(30));
-        var max = Math.floor(Math.max(40)); 
+        var min = Math.floor(Math.min(35));
+        var max = Math.floor(Math.max(45)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous attaquez votre adversaire en faisant apparaitre temporaire une tentacule d'épine qui vient frapper ce dernier", ":sparkles: "+y)
@@ -1124,8 +1124,8 @@ if(message.content === préfix + "PC Classe Automaton"){
         .addField("Vous régénérez du Mana", y)
         .setImage("https://media.giphy.com/media/Bp4Iz5pItPXI3ErsAf/giphy.gif")
         message.channel.send(y);
-        var mins = Math.floor(Math.min(35));
-        var maxs = Math.floor(Math.max(45)); 
+        var mins = Math.floor(Math.min(40));
+        var maxs = Math.floor(Math.max(65)); 
         var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var w = new Discord.RichEmbed() 
         .setColor("#ff8b00")
