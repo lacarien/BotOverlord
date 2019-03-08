@@ -180,7 +180,7 @@ if(message.content === préfix + "Miner"){
         )
     }
 
-    if(message.content === préfix + "Race"){
+      if(message.content === préfix + "Race"){
         var help_embed = new Discord.RichEmbed()
         .setTitle("Humain")
         .setDescription("Vous êtes un humain normal sans malus ni bonus")
@@ -206,7 +206,7 @@ if(message.content === préfix + "Miner"){
 
 // FAUNE : Utiliser la présentation suivante comme "Presets" pour les futurs fiches de faune.
 {
-  if(message.content === préfix + "Gobelin"){
+        if(message.content === préfix + "Gobelin"){
             var help_embed = new Discord.RichEmbed()
             .setColor("#859900")
             .setTitle("Gobelin")
@@ -216,7 +216,7 @@ if(message.content === préfix + "Miner"){
             .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/0/00/Goblin_Troop_Anime.png/revision/latest?cb=20180831233640")
             .setFooter("Menu du Gobelin")
             message.channel.sendMessage(help_embed);
-    }    
+    }
 }
 // Fiche de la faune de Nanpa Shima :
 {
@@ -264,6 +264,17 @@ if(message.content === préfix + "Miner"){
         message.channel.sendMessage(help_embed);
     }
 
+    if(message.content === préfix + "Démon"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#20ff00")
+        .addField("Démon", "Vous êtes un Démon, vous avez une forme humanoïde bien que certain trait de votre apparence peuvent être différents que celui d'un humain")
+        .addField("Bonus", "Vous régénèrez 2 fois plus vitevoleur mana et leur HP")
+        .addField("Malus", "Vous attaquez toujours en dernier et n'avez aucune compétences uniques pour votre espèce")
+        .setImage("https://www.manga-news.com/public/images/vols/overlord-light-novel-12-jp.jpg")
+        .setFooter("Menu Lézard")
+        message.channel.sendMessage(help_embed);
+    }
+
 
 
 
@@ -283,7 +294,7 @@ if(message.content === préfix + "Miner"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#ff0000")
         .addField("Voleur", "Vous êtes la classe qui fait le plus de dégats avec le ranger")
-        .addField("Assassin", "évolution du voleur à partir de 15PC")
+        .addField("Assassin", "évolution du voleur à partir de ???")
         .setImage("https://coubsecure-s.akamaihd.net/get/b96/p/coub/simple/cw_timeline_pic/c6b4f22ba33/4f5366739caf7b081fecf/big_1474128121_image.jpg")
         .setFooter("Menu du voleur")
         message.channel.sendMessage(help_embed);
@@ -305,8 +316,8 @@ if(message.content === préfix + "Miner"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#1a00ff")
         .addField("Combattant", "Vous avez 20HP en plus")
-        .addField("Chevalier", "évolution du combattant à partir de 15PC")
-        .addField("Paladin", "évolution du combattant à partir de 15PC")
+        .addField("Chevalier", "évolution du combattant à partir de ???")
+        .addField("Paladin", "évolution du combattant à partir de ???")
         .setImage("https://cdn.discordapp.com/attachments/532644881588551683/534445613354582046/unknown.png")
         .setFooter("Menu du Combattant")
         message.channel.sendMessage(help_embed);
@@ -340,7 +351,7 @@ if(message.content === préfix + "Miner"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#019521")
         .addField("Ranger", "Vous êtes la classe qui fait le plus de dégats avec le voleur")
-        .addField("Archer", "évolution du Ranger à partir de 15PC")
+        .addField("Archer", "évolution du Ranger à partir de ???")
         .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/5/59/Overlord_EP07_015.png/revision/latest?cb=20150822091615")
         .setFooter("Menu Ranger")
         message.channel.sendMessage(help_embed);
@@ -378,18 +389,6 @@ if(message.content === préfix + "Miner"){
         message.channel.sendMessage(help_embed);
     }
     
-    if(message.content === préfix + "Démon"){
-        var help_embed = new Discord.RichEmbed()
-        .setColor("#820000")
-        .addField("Démon", "Vous êtes un Démon, vous avez une forme humanoïde bien que certain trait de votre apparence peuvent être différents que celui d'un humain")
-        .addField("Bonus", "Vous régénèrez 2 fois plus vite votre mana et vos HP")
-        .addField("Malus", "Vous êtes faibles contre la magie sainte (dégats reçu X2) et ne pouvez pas recevoir de sort de soins")
-        .setImage("https://www.manga-news.com/public/images/vols/overlord-light-novel-12-jp.jpg")
-        .setFooter("Menu Démon")
-        message.channel.sendMessage(help_embed);
-    }
-
-    
        if(message.content === préfix + "Sorcier"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00ffe7")
@@ -401,16 +400,6 @@ if(message.content === préfix + "Miner"){
         .setFooter("Menu Sorcier")
         message.channel.sendMessage(help_embed);
     }
-    
-    if(message.content === préfix + "Classe Automaton"){
-    var help_embed = new Discord.RichEmbed()
-    .setColor("#898989")
-    .addField("Classe Automaton", "Vous êtes l'évolution de l'archer, vous faites énnormément de dégats pour une faible vitalité")
-    .addField("L'Automaton", "évolution du Classe Automaton à partir de ???")
-    .setImage("https://i.redd.it/975pfx9hllr11.jpg")
-    .setFooter("Menu Classe Automaton")
-    message.channel.sendMessage(help_embed);
-}
     
     if(message.content === préfix + "Combats"){
         var help_embed = new Discord.RichEmbed()
@@ -445,10 +434,9 @@ if(message.content === préfix + "Miner"){
 
     if(message.content === préfix + "Personnage et stats"){
         var help_embed = new Discord.RichEmbed()
-        .setTitle("Personnage") 
+        .setTitle("Personnage")
         .setDescription("Bon, ici on arrive sur les parties compliquées, quand votre fiche sera acceptée il faudra que vous vous rename du style: Pseudo [HP / Mana] sur un cas un peu plus serieux cela donnerait Bernard [80-100] après vous pouvez changer l'esthetisme du moment que cela reste compréhensible.")
         .addField("Comment évoluer ?", "Imaginons que vous êtes voleur et que vous voulez évoluer en assassin, cela dépendrait non pas de vos actions mais de votre implication dans le RP grace au bot. En effet chaque level que vous gagnez correspondra à un point de caractéristique, pour voir comment les utiliser: ?PC ")
-        .addField("évolution passif", "?PCP [Nom de classe] Les PCP c'est les points de caracthéristiques passifs, utilisable seulement hors combat, pour améliorer vos actions passifs")
         message.channel.sendMessage(help_embed);
     }
 
@@ -528,17 +516,6 @@ if(message.content === préfix + "Miner"){
         message.channel.sendMessage(help_embed);
     }
     
-    if(message.content === préfix + "PC Démon"){
-        var help_embed = new Discord.RichEmbed()
-        .setColor("#820000")
-        .setTitle("PC Démon")
-        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("10PC", "Vous obtenez la compétence ?Vague négative")
-        .addField("25PC", "Vous obtenez la compétence ?Saignement démoniaque")
-        .addField("40PC", "Vous obtenez la compétence ?Sinistre transformation")
-        message.channel.sendMessage(help_embed);
-    }
-    
     if(message.content === préfix + "PC Druid"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00ffe7")
@@ -560,7 +537,6 @@ if(message.content === préfix + "Miner"){
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("5PC", "Vous obtenez l'attaque spécial ?Coup bas")
         .addField("10PC", "Vous obtenez la compétence ?Voleur ultime")
-        .addField("13PC", "Vous obtenez la compétence ?Esquive")
         .addField("15PC", "Vous pouvez devenir Assassin")
         message.channel.sendMessage(help_embed);
     }
@@ -572,7 +548,6 @@ if(message.content === préfix + "Miner"){
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("5PC", "Vous obtenez la compétence spécial ?Soins de bas rang")
         .addField("10PC", "Vous obtenez la compétence ?Mage ultime")
-        .addField("13PC", "Vous obtenez la compétence ?Blocage magique ")
         .addField("15PC", "Vous pouvez devenir Druid ou Sorcier")
         message.channel.sendMessage(help_embed);
     }
@@ -585,7 +560,6 @@ if(message.content === préfix + "Miner"){
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("5PC", "Vous obtenez 20hp en plus")
         .addField("10PC", "Vous obtenez la compétence ?Combattant ultime")
-        .addField("13PC", "Vous obtenez la compétence ?C Coup d'épée ou bien ?Blocage supérieure celon votre futur chois de classe")
         .addField("15PC", "Vous pouvez devenir Paladin ou Chevalier")
         message.channel.sendMessage(help_embed);
     }
@@ -596,9 +570,8 @@ if(message.content === préfix + "Miner"){
         .setColor("#019521")
         .setTitle("PC Ranger")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("5PC", "Vous obtenez la compétence ?Tir rapide")
+        .addField("5PC", "Vous obtenez la compétence ?Tire rapide")
         .addField("10PC", "Vous obtenez la compétence ?Ranger ultime")
-        .addField("13PC", "Vous obtenez la compétence ?Blocage rapide")
         .addField("15PC", "Vous pouvez devenir Archer")
         message.channel.sendMessage(help_embed);
     }
@@ -609,9 +582,8 @@ if(message.content === préfix + "Miner"){
         .setColor("#1a00ff")
         .setTitle("PC Paladin")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?P Coup d'épée + 60 de mana")
-        .addField("18PC", "?Provocation simple")
-        .addField("22PC", "?Drapeau de défense")
+        .addField("15PC", "?P Coup d'épée + 60 de mana + ?Blocage supérieure")
+        .addField("20PC", "?Provocation simple")
         .addField("25PC", "?Paladin ultime")
         .addField("30PC", "Vous pouvez passer Clerc ou gardien")
         message.channel.sendMessage(help_embed);
@@ -622,9 +594,8 @@ if(message.content === préfix + "Miner"){
         .setColor("#1a00ff")
         .setTitle("PC Chevalier")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Blocage amélioré")
-        .addField("18PC", "?Coup multiple")
-        .addField("22PC", "?Parade")
+        .addField("15PC", "?C Coup d'épée + ?Blocage amélioré ")
+        .addField("20PC", "?Coup multiple")
         .addField("25PC", "?Chevalier ultime")
         .addField("30PC", "Vous pouvez passer Berserk ou Champion")
         message.channel.sendMessage(help_embed);
@@ -636,9 +607,8 @@ if(message.content === préfix + "Miner"){
         .setColor("#00ffe7")
         .setTitle("PC Sorcier")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Sort simple +  70 de Mana")
-        .addField("18PC", "?Sort de soins ")
-        .addField("22PC", "?Tornade de flamme")
+        .addField("15PC", "?Sort simple + ?Blocage magique + ?Sort de soins + 70 de Mana")
+        .addField("20PC", "?Tornade de flamme")
         .addField("25PC", " ?Sorcier ultime")
         .addField("30PC", "Vous pouvez passer Nécromancien, grand sorcier, ou prêtre")
         message.channel.sendMessage(help_embed);
@@ -650,10 +620,10 @@ if(message.content === préfix + "Miner"){
         .setColor("#ff0000")
         .setTitle("PC Assassin")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Coup de dague")
+        .addField("15PC", "?Coup de dague + ?Esquive")
         .addField("20PC", "?Camouflage")
         .addField("25PC", "?Assassin ultime")
-        .addField("30PC", "Vous pouvez passer Grand Assassin")
+        .addField("30PC", "Vous pouvez passer Grand Assassin ou Grand illusionist ")
         message.channel.sendMessage(help_embed);
     }
     
@@ -662,32 +632,12 @@ if(message.content === préfix + "Miner"){
         .setColor("#019521")
         .setTitle("PC Archer")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Tir amélioré")
-        .addField("18PC", "?Esquive simple")
-        .addField("20PC", "?Fuite amélioré")
-        .addField("22PC", "?Flèche empoisonné")
+        .addField("15PC", "?Tir amélioré + ?Esquive simple + ?Blocage rapide")
+        .addField("20PC", "?Fuite amélioré + ?Flèche empoisonné")
         .addField("25PC", "?Archer ultime")
-        .addField("28PC", "Classe Automaton: ?Concentration d'énérgie / Grand Archer: ?Piège")
         .addField("30PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
     }
-
-
-if(message.content === préfix + "PC Classe Automaton"){
-    var help_embed = new Discord.RichEmbed()
-    .setColor("#7c7c70")
-    .setTitle("PC Classe Automaton")
-    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-    .addField("30PC", "100 de mana en plus / ?Dash énèrgétique")
-    .addField("33PC", "?Tir explosif")
-    .addField("35PC", "?Tir énèrgétique")
-    .addField("37PC", "200 de Mana en plus / ?Réparation")
-    .addField("39PC", "????")
-    .addField("41PC", "?Invocation de drone")
-    .addField("43PC", "????")
-    .addField("45PC", "Vous pouvez évoluer")
-    message.channel.sendMessage(help_embed);
-}
 
 
 
