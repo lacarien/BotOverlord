@@ -50,7 +50,57 @@ client.on('message', message => {
     .addField("Garde du royaume", "Uniquement résérvé aux Combattants et rangers Humain (rien ne vous empêches de vous infiltrer dans la garde)")
     .addField("Tavernier", "Tout le monde peut le devenir du moment que les espèces humanoîdes cachent leur véritable identité sauf les personnes recherchés")
     .addField("Aventurier", "Tout le monde peut le devenir du moment que les espèces humanoîdes cachent leur véritable identité")
+    .addField("Pour d'autre métiers", "?Sous-Métiers")
     message.channel.sendMessage(help_embed);
+}
+    if(message.content === préfix + "Sous-Métiers"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("Liste des sous-métiers")
+    .setDescription("Les sous métiers sont des 2eme jobs, vous ne pouvez en avoir qu'un seul")
+    .addField("Chasseur", "Utilisez la commande: ?Chasser \n dans une forêt, vous devrez rester 3heurs dans le channel sans pouvoir partir ou faire une autre action (vous aurez le droit de parler)")
+    .addField("Bucheron", "Utilisez la commande: ?Coupe du bois \n dans une forêt, vous devrez rester 3heurs dans le channel sans pouvoir partir ou faire une autre action (vous aurez le droit de parler)")
+    .addField("Mineur", "Utilisez la commande: ?Miner \n dans la grotte, vous devrez rester 3heurs dans le channel sans pouvoir partir ou faire une autre action (vous aurez le droit de parler)")
+    .addField("Pêcheur", "Utilisez la commande: ?Pêche \n dans une zone comportant de l'eau, vous devrez rester 3heurs dans le channel sans pouvoir partir ou faire une autre action (vous aurez le droit de parler)")
+
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "Chasser"){
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous traquez des animaux de la forêt et recevez", y + " :third_place: ")
+    .setColor("#1dab1a")
+    message.channel.send(y);
+}
+if(message.content === préfix + "Coupe du bois"){
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous coupez du bois et recevez", y + " :third_place: ")
+    .setColor("#06ff02")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Pêche"){
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous pêchez des poissons et recevez", y + " :third_place: ")
+    .setColor("#00ffde")
+    message.channel.send(y);
+}
+if(message.content === préfix + "Miner"){
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous minez et recevez", y + " :third_place: ")
+    .setColor("#636766")
+    message.channel.send(y);
 }
     
     if(message.content === préfix + "Aventurier"){
