@@ -620,7 +620,21 @@ if(message.content === préfix + "Miner"){
         message.channel.sendMessage(help_embed);
     }
 
-
+ if(message.content === préfix + "PC Classe Automaton"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#019521")
+        .setTitle("PC Classe Automaton")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("30PC", "100 de mana en plus / ?Dash énèrgétique")
+        .addField("33PC", "?Tir explosif")
+        .addField("35PC", "?Tir énèrgétique")
+        .addField("37PC", "200 de Mana en plus / ?Réparation")
+        .addField("39PC", "???")
+        .addField("41PC", "?Invocation de drone")
+        .addField("43PC", "???")
+        .addField("43PC", "Vous pouvez évoluer")
+        message.channel.sendMessage(help_embed);
+    }
 
 
 
