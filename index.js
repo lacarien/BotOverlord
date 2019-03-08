@@ -588,8 +588,9 @@ if(message.content === préfix + "Miner"){
         .setColor("#00ffe7")
         .setTitle("PC Sorcier")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Sort simple + ?Blocage magique + ?Sort de soins + 70 de Mana")
-        .addField("20PC", "?Tornade de flamme")
+        .addField("15PC", "?Sort simple + ?Blocage magique + 70 de Mana")
+        .addField("18PC", "?Sort de soins")
+        .addField("22PC", "?Tornade de flamme")
         .addField("25PC", " ?Sorcier ultime")
         .addField("30PC", "Vous pouvez passer Nécromancien, grand sorcier, ou prêtre")
         message.channel.sendMessage(help_embed);
@@ -613,8 +614,11 @@ if(message.content === préfix + "Miner"){
         .setColor("#019521")
         .setTitle("PC Archer")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Tir amélioré + ?Esquive simple + ?Blocage rapide")
-        .addField("20PC", "?Fuite amélioré + ?Flèche empoisonné")
+        .addField("15PC", "?Tir amélioré")
+         .addField("18PC", "?Esquive simple")
+        .addField("20PC", "?Fuite amélioré")
+        .addField("22PC", "?Flèche empoisonné")
+        .addField("23PC", "?Régénération de mana supérieur")
         .addField("25PC", "?Archer ultime")
         .addField("30PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
@@ -635,7 +639,38 @@ if(message.content === préfix + "Miner"){
         .addField("43PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
     }
+ if(message.content === préfix + "PC Gardien"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#04157f")
+    .setTitle("PC Gardien")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("30PC", "Vous gagnez 150HP / ?G Coup d'épée")
+    .addField("33PC", "?G Coup d'épée")
+    .addField("35PC", "?G Blocage")
+    .addField("37PC", "?Hurlement provocateur")
+    .addField("39PC", "?Tremblemant de terre")
+    .addField("41PC", "?Attaque lourde")
+    .addField("43PC", "Gardien ultime")
+    .addField("43PC", "Vous pouvez évoluer")
+    message.channel.sendMessage(help_embed);
+}
 
+    
+ if(message.content === préfix + "PC Clerc"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#8c97d9")
+    .setTitle("PC Clerc")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("30PC", "50 de mana en plus / 100HP / ?Drapeau de défense")
+    .addField("33PC", "?Cl Coup d'épée")
+    .addField("35PC", "?Cl blocage")
+    .addField("37PC", "?Drapeau de soins")
+    .addField("39PC", "?Dome de soins")
+    .addField("41PC", "?Lumière aveuglante(si PNJ) / ?Lumière éblouissante(si joueur)")
+    .addField("43PC", "?Clerc ultime")
+    .addField("43PC", "Vous pouvez évoluer")
+    message.channel.sendMessage(help_embed);
+}
 
 
 
