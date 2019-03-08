@@ -2871,6 +2871,38 @@ if(message.content === préfix + "Mort géant de la forêt"){
     .addField("13PC", "+10 dans les Roll d'action de force (exemple: donner un coup de poings)")
     message.channel.sendMessage(help_embed);
 }
+    
+  if(message.content === préfix + "PCP Paladin"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("PCP Paladin")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("15PC", "Vous avez Roll +10 pour résister au tentative d'être assommé")
+    .addField("18P", "Vous êtes lourd et lent")
+    .addField("20PC", "Votre grande apparence laisse croire à tout le monde que vous êtes un type qui n'a pas peur de prendre des coups")
+    .addField("23PC", "Vous coulez rapidement avec votre armure, évitez l'eau")
+    .addField("25PC", "Vous êtes résistant au combat de rue")
+    .addField("27PC", "Tout les PC 20 ont peur de vous, comme si vous êtiez un collose")
+    .addField("29PC", "On ne peut pas vous assommer si vous portez votre armure")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "PCP Chevalier"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("PCP Chevalier")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("15PC", "Vous êtes d'une agilité remarquable")
+    .addField("18P", "Au simple regard on arrive à savoir que vous êtes un chevalier ")
+    .addField("20PC", "Vous avez un bon cardio et une bonne endurance")
+    .addField("23PC", "Votre apparence laisse à croire que vous êtes un chevalier qui est prêt à en découdre")
+    .addField("25PC", "Vous êtes puissant en combat de rue")
+    .addField("27PC", "Vous avez une bonne connaissance des armes lambdas")
+    .addField("29PC", "Vous avez un mental d'acier, il sera très dur de vous corrompre ou de vous détruire mentalement")
+    message.channel.sendMessage(help_embed);
+}  
+    
+    
 if(message.content === préfix + "PCP Mage"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#939696")
@@ -2908,12 +2940,12 @@ if(message.content === préfix + "PCP Mage"){
     if(message.content === préfix + "PCP Archer"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#939696")
-    .setTitle("PCP Sorcier")
+    .setTitle("PCP Archer")
     .setDescription("Voici ce que vous pourrez gagner à chaque étape")
     .addField("15PC", "Vous êtes d'une agilité remarquable")
     .addField("18P", "Les annimaux ne vous fuis pas")
     .addField("20PC", "Vous savez imiter le morts")
-    .addField("23PC", "Les annimaux sont légérement dociles avec vous")
+    .addField("23PC", "Vous arrivez à reconnaitre les détails d'une blessures d'une personne sans trop de difficulté")
     .addField("25PC", "Vous savez différencier les traces de pas de chaque personne que vous connaissez")
     .addField("27PC", "Vous avez une connaissance parfaite sur les plantes et la végétation")
     .addField("29PC", "Vous arrivez à connaitre au simple regard les capacités physiques d'une personne et si elle est armée ou non")
@@ -2933,7 +2965,7 @@ if(message.content === préfix + "PCP Voleur"){
     if(message.content === préfix + "PCP Assassin"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#939696")
-    .setTitle("PCP Sorcier")
+    .setTitle("PCP Assassin")
     .setDescription("Voici ce que vous pourrez gagner à chaque étape")
     .addField("15PC", "Vous êtes d'une agilité remarquable")
     .addField("18P", "Vous êtes légers et avait une bonne endurance")
