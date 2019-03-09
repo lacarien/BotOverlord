@@ -999,7 +999,15 @@ if(message.content === préfix + "Tir explosif"){
         .setImage("https://cdn.discordapp.com/attachments/499161815549476864/541313060917215253/BDci.gif")
         message.channel.send(y);
     }
-    
+    if(message.content === préfix + "Faible blocage"){
+        var min = Math.floor(Math.min(30));
+        var max = Math.floor(Math.max(45)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous executez un blocage de faible qualité et réussisez à bloquer", ":shield: "+y)
+        .setImage("https://cdn.discordapp.com/attachments/454694319396356128/553977402104086558/unknown.png")
+        message.channel.send(y);
+    }
      if(message.content === préfix + "Blocage amélioré"){
         var min = Math.floor(Math.min(30));
         var max = Math.floor(Math.max(40)); 
