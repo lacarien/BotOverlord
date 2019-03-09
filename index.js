@@ -770,7 +770,15 @@ if(message.content === préfix + "PC Berserk"){
         .setImage("https://media.discordapp.net/attachments/454694319396356128/541558773291024408/unknown.png?width=1040&height=585")
         message.channel.send(y);
     }
-
+ if(message.content === préfix + "Cl Coup d'épée"){
+        var min = Math.floor(Math.min(80));
+        var max = Math.floor(Math.max(90)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous lui infligez un coup d'épée dans la figure  qui inflige", ":dagger: "+y)
+        .setImage("http://wallpapers4screen.com/Uploads/29-4-2016/30254/thumb2-dark-souls-3-fire-knight-armor-sword.jpg")
+        message.channel.send(y);
+    }
     if(message.content === préfix + "Coup bas"){
         
          var min = Math.floor(Math.min(15));
