@@ -3330,7 +3330,7 @@ if(message.content === préfix + "Parade"){
 if(message.content === préfix + "Dash énèrgétique"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(35));
-    var max = Math.floor(Math.max(60)); 
+    var max = Math.floor(Math.max(50)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 60)
