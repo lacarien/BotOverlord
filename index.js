@@ -462,7 +462,7 @@ if(message.content === préfix + "Miner"){
         .setTitle("PC Humain")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("10PC", "Vous obtenez la compétence ?Sainte bénédiction")
-        .addField("25PC", "Vous obtenez la compétence ?Invocation divine")
+        .addField("25PC", "Vous obtenez la compétence ?Multi classe")
         .addField("40PC", "Vous obtenez une nouvelle compétence qui vous permet de réanimer un mort(utilisable seulement 1 fois par mois et ne peus être utilisé seulement sur un mort récent) ?Prière incessante")
         message.channel.sendMessage(help_embed);
     }
