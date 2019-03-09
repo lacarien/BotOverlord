@@ -158,7 +158,7 @@ if(message.content === préfix + "Miner"){
         .setDescription("Si vous avez écrit cette commande c'est que vous ne savez pas quoi faire, vous n'avez donc aucun bute et vous faites litéralement chier. Voici donc quelques exemple d'objectif")
         .addField("Attendre les mini events", "Si un staff remarque que votre personnage fait du RP passif depuis un bon moment, il a le droit sans meme vous prévenir de jouer un PNJ qui ne sera pas forcement hostile mais histoire de créer de l'activité, apres rien ne vous interdits de défoncer le PNJ(faite attention, n'attaquez pas tout les PNJ car si vous tombez sur un PNJ puissant sa risque de faire mal)")
         .addField("Attendre les events de combat", "Il n'y a pas de réel date, mais cela se passera souvent en weekend, un PNJ crée de toute piece du style gros boss de MMORPG pourra enuyer une faction, biensur selons si les joueurs arrivent à affronter le boss ou non, il y aura des répercusions")
-        .addField("Attendr", "Liste des classes")
+        .addField("Attendre", "Liste des classes")
         .addField("Combats", "Explication des combats")
         .setImage("https://1.bp.blogspot.com/-GY5W6jVP850/WNwKqzuXizI/AAAAAAAABuM/AlfAEZ7FuDAK5y_qnZy0qp06wvCqM826QCLcB/s1600/Overlord_Characters.png")
         .setFooter("Menu de base")
@@ -190,6 +190,7 @@ if(message.content === préfix + "Miner"){
         .addField("Elf", "Vous êtes un Elf, une espece noble et rare")
         .addField("Automaton", "Vous êtes un Automaton, intérieurement vous ressemblez fortement à une machine mais extérieurement...")
         .addField("Pour la précision sur les stats et autre", "?[Nom de votre race]")
+        .addField("Pour les PCP", "?PCP [Race]")
         .setFooter("Menu des races RP")
         message.channel.sendMessage(help_embed);
     }
@@ -472,6 +473,34 @@ if(message.content === préfix + "Berserk"){
         .addField("Catégorie classe", "Faites ?PC [Nom de votre classe]")
         message.channel.sendMessage(help_embed);
     }
+if(message.content === préfix + "PCP Humain"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("PCP Humain")
+    .setDescription("Vous êtes Humain, on ne dirait pas mais rien que le nom est pas mal, en effet, vous pouvez vous ballader partout dans les zones humaines sans avoir de problème")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "PCP Vampire"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("PCP Vampire")
+    .setDescription("Bien que vous vivez graçe au sang des humains et que cela peu devenir pendant certaine période à récolter du sang, sachez que vous pouvez transformer une personne et une seul personne en vampire. Néanmoins pour éviter un trop gros nombre de transformation, sachez qu'il faudra d'abord demander à un staff qui vérifiera la liste de nombre de personne d'humain transformer en lien avec le nombre de vampire  et aussi il faut une réel raison qui tien la route, c'est le plus important")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "PCP Lézard"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#7fff00")
+    .setTitle("PCP Lézard")
+    .setDescription("Vous êtes effrayant face aux autres races, vous êtes comme un colosse  et personne ne peus faire style de rien était (sauf une personne avec 15 PC de plus que vous)")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "PCP Démon"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ff7a00")
+    .setTitle("PCP Démon")
+    .setDescription("1 fois tous les 3 jours, en fixant la personne droit dans les yeux vous pouvez enclencher une sorte de flash back lui remémorant tous les moments tragiques de sa vie, l'effet aura pour bute de le briser intérieurement même un grand musclor qui a un sang froid extrême sera affecté")
+    message.channel.sendMessage(help_embed);
+}
 
     if(message.content === préfix + "PC Humain"){
         var help_embed = new Discord.RichEmbed()
