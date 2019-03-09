@@ -4248,7 +4248,7 @@ if(message.content === préfix + "Parade folle"){
     var w = new Discord.RichEmbed()
     .setColor("#1a00ff")
     .addField("Vous réussiez la parade et vous lui infligez :crossed_swords: ", w)
-    .setImage("https://j.gifs.com/oVQQYK.gif")
+    .setImage("https://media.giphy.com/media/KXNCVpOZsTpgFS5ULZ/giphy.gif")
     if(result > 35)
     var w = new Discord.RichEmbed() 
     .setColor("#ff0000")
