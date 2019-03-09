@@ -512,6 +512,13 @@ if(message.content === préfix + "PCP Démon"){
         .addField("40PC", "Vous obtenez une nouvelle compétence qui vous permet de réanimer un mort(utilisable seulement 1 fois par mois et ne peus être utilisé seulement sur un mort récent) ?Prière incessante")
         message.channel.sendMessage(help_embed);
     }
+if(message.content === préfix + "PCP Automaton"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#bcb9b6")
+    .setTitle("PCP Automaton")
+    .setDescription("Il est impossible de vous assommer")
+    message.channel.sendMessage(help_embed);
+}
 
     if(message.content === préfix + "PC Vampire"){
         var help_embed = new Discord.RichEmbed()
