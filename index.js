@@ -779,6 +779,17 @@ if(message.content === préfix + "PC Berserk"){
         .setImage("http://wallpapers4screen.com/Uploads/29-4-2016/30254/thumb2-dark-souls-3-fire-knight-armor-sword.jpg")
         message.channel.send(y);
     }
+    
+    if(message.content === préfix + "G Coup d'épée"){
+        var min = Math.floor(Math.min(65));
+        var max = Math.floor(Math.max(80)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous lui infligez un coup d'épée dans les cottes qui inflige", ":dagger: "+y)
+        .setImage("http://s1.1zoom.me/big0/177/Stormfall_Age_of_War_Knight_Armor_Swords_522831_1280x800.jpg")
+        message.channel.send(y);
+    }
+    
     if(message.content === préfix + "Coup bas"){
         
          var min = Math.floor(Math.min(15));
