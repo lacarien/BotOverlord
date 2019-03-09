@@ -885,7 +885,7 @@ if(message.content === préfix + "Grand Assassin"){
         message.channel.sendMessage(y);
     }
 if(message.content === préfix + "Tir explosif"){
-    var help_embed = new Discord.RichEmbed()
+    var y = new Discord.RichEmbed()
     var min = Math.floor(Math.min(30));
     var max = Math.floor(Math.max(45)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
