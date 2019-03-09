@@ -1032,8 +1032,8 @@ if(message.content === préfix + "Drapeau de défense"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor(Math.random() * (maxs - mins) + 1) + mins;
     var y = new Discord.RichEmbed()
-    .SetColor("#8c97d9")
-    .SetImage("https://cdn.discordapp.com/attachments/454694319396356128/553964252935880704/unknown.png")
+    .setColor("#8c97d9")
+    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/553964252935880704/unknown.png")
     .addField("Réduit les dégats reçu de tout les alliés pendant 2 tours(-30 de mana)", "Le Clec réduit de " + y + "\n Et ses alliées réduisent de " + x )
     message.channel.sendMessage(y);
 }
