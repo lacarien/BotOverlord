@@ -590,7 +590,7 @@ if(message.content === préfix + "Grand Assassin"){
         .setTitle("PC Paladin")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("15PC", "?P Coup d'épée + 60 de mana + ?Blocage supérieure")
-        .addField("20PC", "?Provocation simple")
+        .addField("18PC", "?Provocation simple")
         .addField("25PC", "?Paladin ultime")
         .addField("30PC", "Vous pouvez passer Clerc ou gardien")
         message.channel.sendMessage(help_embed);
@@ -601,8 +601,9 @@ if(message.content === préfix + "Grand Assassin"){
         .setColor("#1a00ff")
         .setTitle("PC Chevalier")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?C Coup d'épée + ?Blocage amélioré ")
-        .addField("20PC", "?Coup multiple")
+        .addField("15PC", "?Blocage amélioré ")
+        .addField("18PC", "?Coup multiple")
+        .addField("22PC", "?Parade")
         .addField("25PC", "?Chevalier ultime")
         .addField("30PC", "Vous pouvez passer Berserk ou Champion")
         message.channel.sendMessage(help_embed);
@@ -646,7 +647,7 @@ if(message.content === préfix + "Grand Assassin"){
         .addField("39PC", "?Poison de corruption")
         .addField("41PC", "?Le faux mort")
         .addField("43PC", "Grand Assassin ultime")
-        .addField("43PC", "Vous pouvez évoluer")
+        .addField("45PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
     }
     if(message.content === préfix + "PC Archer"){
@@ -691,7 +692,7 @@ if(message.content === préfix + "Grand Assassin"){
     .addField("39PC", "?Tremblemant de terre")
     .addField("41PC", "?Attaque lourde")
     .addField("43PC", "Gardien ultime")
-    .addField("43PC", "Vous pouvez évoluer")
+    .addField("45PC", "Vous pouvez évoluer")
     message.channel.sendMessage(help_embed);
 }
 
@@ -708,7 +709,7 @@ if(message.content === préfix + "Grand Assassin"){
     .addField("39PC", "?Dome de soins")
     .addField("41PC", "?Lumière aveuglante(si PNJ) / ?Lumière éblouissante(si joueur)")
     .addField("43PC", "?Clerc ultime")
-    .addField("43PC", "Vous pouvez évoluer")
+    .addField("45PC", "Vous pouvez évoluer")
     message.channel.sendMessage(help_embed);
 }
 
