@@ -360,7 +360,14 @@ if(message.content === préfix + "Grand Assassin"){
         .setFooter("Menu du Chevalier")
         message.channel.sendMessage(help_embed);
     }
-
+if(message.content === préfix + "Berserk"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00295b")
+        .addField("Berserk sanglant", "évolution du Berserk à partir de 45PC")
+        .setImage("http://images6.fanpop.com/image/photos/37800000/Berserker-s-Rage-neonightclaw19-37822558-1920-1080.jpg")
+        .setFooter("Menu Berserk")
+        message.channel.sendMessage(help_embed);
+    }
 
 
     if(message.content === préfix + "Ranger"){
@@ -608,7 +615,21 @@ if(message.content === préfix + "Grand Assassin"){
         .addField("30PC", "Vous pouvez passer Berserk ou Champion")
         message.channel.sendMessage(help_embed);
     }
-
+if(message.content === préfix + "PC Berserk"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00295b")
+        .setTitle("PC Berserk")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("30PC", "Vous gagnez 125HP / 25 de Mana / ?Aura de Berserk")
+        .addField("33PC", "?B Coup d'épée")
+        .addField("35PC", "?B blocage")
+        .addField("37PC", "?Charge de berserk")
+        .addField("39PC", "?L'attaque du monstre")
+        .addField("41PC", "?Brise garde")
+        .addField("43PC", "Berserk ultime")
+        .addField("45PC", "Vous pouvez évoluer")
+        message.channel.sendMessage(help_embed);
+    }
     
     if(message.content === préfix + "PC Sorcier"){
         var help_embed = new Discord.RichEmbed()
@@ -685,7 +706,7 @@ if(message.content === préfix + "Grand Assassin"){
     .setColor("#04157f")
     .setTitle("PC Gardien")
     .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-    .addField("30PC", "Vous gagnez 150HP / ?G Coup d'épée")
+    .addField("30PC", "Vous gagnez 150HP / ?Aura du gardien")
     .addField("33PC", "?G Coup d'épée")
     .addField("35PC", "?G Blocage")
     .addField("37PC", "?Hurlement provocateur")
