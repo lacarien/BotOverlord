@@ -801,7 +801,24 @@ if(message.content === préfix + "PC Berserk"){
        .setImage("https://i.ytimg.com/vi/mmUlK_FAJqI/maxresdefault.jpg")
        message.channel.send(y);
    }
-    
+     if(message.content === préfix + "G Coup de dague"){
+        
+        var min = Math.floor(Math.min(100));
+       var max = Math.floor(Math.max(130)); 
+       var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+          var result = Math.floor((Math.random() * 100) +1);
+       if(result < 90)
+       var y = new Discord.RichEmbed()
+       .addField("Vous faites un bond sur votre adversaire ", y)
+       .setColor("#ff2300")
+       .setImage("https://c.wallhere.com/photos/50/2d/1366x768_px_assassin_Daggers_Dark_fantasy_Art-739586.jpg!d")
+       if(result > 90)
+       var y = new Discord.RichEmbed()
+       .setColor("#ff2300")
+       .addField("Vous brisez le blocage de votre adversaire", y)
+       .setImage("http://s1.1zoom.me/big0/817/DOTA_2_Phantom_assassin_477640.jpg")
+       message.channel.send(y);
+   }
     
     if(message.content === préfix + "Camouflage"){
     var help_embed = new Discord.RichEmbed()
