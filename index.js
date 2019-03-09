@@ -827,7 +827,16 @@ if(message.content === préfix + "PC Berserk"){
        .setImage("http://s1.1zoom.me/big0/817/DOTA_2_Phantom_assassin_477640.jpg")
        message.channel.send(y);
    }
-    
+    if(message.content === préfix + "Aura du gardien"){
+        var min = Math.floor(Math.min(25));
+        var max = Math.floor(Math.max(45)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#04157f")
+        .setImage("https://j.gifs.com/lx5NnM.gif")
+        .addField("Votre corps deviens plus résistant et réduisez tout les dégats pendant 2 tours(-30 de Mana)", ":shield: "+y)
+        message.channel.send(y);
+    }
     if(message.content === préfix + "Camouflage"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#000000")
