@@ -4241,7 +4241,7 @@ if(message.content === préfix + "Blocage démoniaque"){
 }
 if(message.content === préfix + "Parade folle"){
     var result = Math.floor((Math.random() * 100) + 1);
-    var min = Math.floor(Math.min(100));
+    var min = Math.floor(Math.min(120));
     var max = Math.floor(Math.max(160)); 
     var w = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 35)
