@@ -884,7 +884,17 @@ if(message.content === préfix + "Grand Assassin"){
         .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 4tours impossible à bloquer(-30 de Mana)",":bow_and_arrow: "+ y)
         message.channel.sendMessage(y);
     }
-
+if(message.content === préfix + "Tir explosif"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(45)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var x = Math.floor(Math.random() * (max - min) + 1) + min;
+    var z = Math.floor(Math.random() * (max - min) + 1) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous faites un tir explosif qui blesse 3 ennemis (-50 de mana)", "Le premier reçois " + y + "\n le deuxieme se prend " + x + "\n et le dernier du " + z)
+    message.channel.sendMessage(y);
+}
 
     if(message.content === préfix + "Soins de bas rang"){
         var min = Math.floor(Math.min(20));
