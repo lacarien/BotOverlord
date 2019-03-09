@@ -892,8 +892,8 @@ if(message.content === préfix + "Tir explosif"){
     var x = Math.floor(Math.random() * (max - min) + 1) + min;
     var z = Math.floor(Math.random() * (max - min) + 1) + min;
     var y = new Discord.RichEmbed()
-    .SetColor("#ff7100")
-    .SetImage("https://media.giphy.com/media/4ZttRyKB1VAjdWtjZM/giphy.gif")
+    .setColor("#ff7100")
+    .setImage("https://media.giphy.com/media/4ZttRyKB1VAjdWtjZM/giphy.gif")
     .addField("Vous faites un tir explosif qui blesse 3 ennemis (-50 de mana)", "Le premier reçois " + y + "\n le deuxieme se prend " + x + "\n et le dernier du " + z)
     message.channel.sendMessage(y);
 }
