@@ -363,6 +363,7 @@ if(message.content === préfix + "Grand Assassin"){
 if(message.content === préfix + "Berserk"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00295b")
+        .addField("Berserk", "On pourrait croire que vous foncez tête baissé...Mais il serait idiot de sous-estimez le monstre qui sommeille en vous ")
         .addField("Berserk sanglant", "évolution du Berserk à partir de 45PC")
         .setImage("http://images6.fanpop.com/image/photos/37800000/Berserker-s-Rage-neonightclaw19-37822558-1920-1080.jpg")
         .setFooter("Menu Berserk")
