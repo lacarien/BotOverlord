@@ -300,6 +300,15 @@ if(message.content === préfix + "Miner"){
         .setFooter("Menu de l'assassin")
         message.channel.sendMessage(help_embed);
     }
+if(message.content === préfix + "Grand Assassin"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("Grand Assassin", "Vous faites...Mal...")
+        .addField("Maitre Assassin", "évolution de l'assassin à partir de 45C")
+        .setImage("https://vignette.wikia.nocookie.net/ultimate-marvel-cinematic-universe/images/1/1c/Akuma.jpg/revision/latest?cb=20160826205715")
+        .setFooter("Menu de Grand Assassin")
+        message.channel.sendMessage(help_embed);
+    }
 
 
     if(message.content === préfix + "Combattant"){
