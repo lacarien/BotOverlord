@@ -625,7 +625,21 @@ if(message.content === préfix + "Miner"){
         .addField("30PC", "Vous pouvez passer Grand Assassin ou Grand illusionist ")
         message.channel.sendMessage(help_embed);
     }
-    
+    if(message.content === préfix + "PC Grand Assassin"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .setTitle("PC Grand Assassin")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("30PC", "?Faible blocage")
+        .addField("33PC", "?G coup de dague")
+        .addField("35PC", "?Fuite amélioré")
+        .addField("37PC", "?Dague multiple")
+        .addField("39PC", "?Poison de corruption")
+        .addField("41PC", "?Le faux mort")
+        .addField("43PC", "Grand Assassin ultime")
+        .addField("43PC", "Vous pouvez évoluer")
+        message.channel.sendMessage(help_embed);
+    }
     if(message.content === préfix + "PC Archer"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#019521")
