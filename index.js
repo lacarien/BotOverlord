@@ -1026,9 +1026,9 @@ if(message.content === préfix + "Tir explosif"){
 if(message.content === préfix + "Drapeau de défense"){
     var y = new Discord.RichEmbed()
     var min = Math.floor(Math.min(10));
-    var max = Math.floor(Math.max(30)); 
-    var mins = Math.floor(Math.min(20));
-    var maxs = Math.floor(Math.max(40));
+    var max = Math.floor(Math.max(20)); 
+    var mins = Math.floor(Math.min(15));
+    var maxs = Math.floor(Math.max(30));
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor(Math.random() * (maxs - mins) + 1) + mins;
     var y = new Discord.RichEmbed()
