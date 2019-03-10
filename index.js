@@ -825,7 +825,15 @@ if(message.content === préfix + "PC Berserk"){
         .setImage("http://s1.1zoom.me/big0/177/Stormfall_Age_of_War_Knight_Armor_Swords_522831_1280x800.jpg")
         message.channel.send(y);
     }
-    
+    if(message.content === préfix + "B Coup d'épée"){
+        var min = Math.floor(Math.min(90));
+        var max = Math.floor(Math.max(100)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous donnez un violent coup d'épée à votre adversaire", ":dagger: "+y)
+        .setImage("https://i.pinimg.com/originals/91/05/c5/9105c5a9836675bcebcb6a05eaf88761.jpg")
+        message.channel.send(y);
+    }
     if(message.content === préfix + "Coup bas"){
         
          var min = Math.floor(Math.min(15));
