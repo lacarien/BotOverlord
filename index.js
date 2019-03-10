@@ -1144,7 +1144,7 @@ if(message.content === préfix + "Drapeau de défense"){
     var x = Math.floor(Math.random() * (maxs - mins) + 1) + mins;
     var y = new Discord.RichEmbed()
     .setColor("#00295b")
-    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/553964252935880704/unknown.png")
+    .setImage("https://cdn.wallpapersafari.com/45/81/8UmP0F.jpg")
     .addField("Sa défence est réduite pendant  2 tours et ses attaques augmentes pendant 2 tours (-30 de mana)", "Votre défense est réduite de :boom:  " + y + "\n vos dégats ont un bonus :crossed_swords:  " + x )
     message.channel.sendMessage(y);
 }
