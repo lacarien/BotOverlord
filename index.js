@@ -1005,7 +1005,7 @@ if(message.content === préfix + "Tir explosif"){
     var y = new Discord.RichEmbed()
     .setColor("#ff7100")
     .setImage("https://media.giphy.com/media/4ZttRyKB1VAjdWtjZM/giphy.gif")
-    .addField("Vous faites un tir explosif qui blesse 3 ennemis (-50 de mana)", "Le premier reçois " + y + "\n le deuxieme se prend " + x + "\n et le dernier du " + z)
+    .addField("Vous faites un tir explosif qui blesse 3 ennemis, c'est imblocable (-50 de mana)", "Le premier reçois " + y + "\n le deuxieme se prend " + x + "\n et le dernier du " + z)
     message.channel.sendMessage(y);
 }
 
@@ -1377,7 +1377,7 @@ if(message.content === préfix + "Drapeau de défense"){
 
     if(message.content === préfix + "Multi classe"){
     var y = new Discord.RichEmbed()
-    .addField("Multi classe", "Vous pouvez utiliser 3 fois une compétence d'une autre classe")
+    .addField("Multi classe", "Vous pouvez utiliser 3 fois une compétence d'une autre classe (Mais pas les ultimes)")
     .setImage("https://cdn.discordapp.com/attachments/454694319396356128/553881850653966356/unknown.png")
     message.channel.send(y);
 }
