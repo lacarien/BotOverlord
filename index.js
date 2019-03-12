@@ -3782,6 +3782,7 @@ if(message.content === préfix + "F squelette défense"){
     var min = Math.floor(Math.min(10));
     var max = Math.floor(Math.max(30)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
      if(result < 80)
     var y = new Discord.RichEmbed()
     .addField("Le squelette essaye de bloquer l'attaque", y)
