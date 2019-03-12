@@ -3676,18 +3676,18 @@ if(message.content === préfix + "Goblin champion"){
 
 if(message.content === préfix + "C goblin attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(80));
-    var max = Math.floor(Math.max(100)); 
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(120)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result > 80)
-    var y = Math.floor(Math.floor(y) * 2)
+    var y = Math.floor(Math.floor(y) * 1.8)
 
         if(result < 60)
     var y = new Discord.RichEmbed()
     .addField("Le Champion vous donnes un gros coup d'épée vous faisants reculer de bien 2 metres pour les plus résistants", y)
     .setColor("#045713")
-        else if(result < 80)
+        else if(result < 70)
     var y = new Discord.RichEmbed()
     .setColor("#045713")
     .setAuthor("Le Champion rate son attaque")
@@ -3886,8 +3886,8 @@ if(message.content === préfix + "Arrive grotte 2") {
     if(message.content === préfix + "Grotte étage 3") {
     var result = Math.floor((Math.random() * 100) + 1);
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(2));
-    var max = Math.floor(Math.max(5)); 
+    var min = Math.floor(Math.min(4));
+    var max = Math.floor(Math.max(8)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 20){
         var y = new Discord.RichEmbed()
@@ -3907,8 +3907,8 @@ if(message.content === préfix + "Arrive grotte 2") {
         .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")}
     else if(result < 101){
         var y = new Discord.RichEmbed() 
-        var min = Math.floor(Math.min(7));
-        var max = Math.floor(Math.max(15)); 
+        var min = Math.floor(Math.min(10));
+        var max = Math.floor(Math.max(20)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#37ac0f")
@@ -3926,8 +3926,8 @@ if(message.content === préfix + "Arrive grotte 2") {
 if(message.content === préfix + "Grotte étage 4") {
     var result = Math.floor((Math.random() * 100) + 1);
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(2));
-    var max = Math.floor(Math.max(5)); 
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(9)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 50){
         var y = new Discord.RichEmbed()
@@ -3939,8 +3939,8 @@ if(message.content === préfix + "Grotte étage 4") {
         .setImage("https://vignette.wikia.nocookie.net/goblinslayer/images/e/ea/Goblins_Banda.PNG/revision/latest?cb=20180401005522&path-prefix=es")}
     else if(result < 101){
         var y = new Discord.RichEmbed() 
-        var min = Math.floor(Math.min(7));
-        var max = Math.floor(Math.max(15)); 
+        var min = Math.floor(Math.min(10));
+        var max = Math.floor(Math.max(20)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#37ac0f")
@@ -3994,8 +3994,8 @@ if(message.content === préfix + "Grotte étage 5") {
     .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")  }
     else if(result < 101){
         var y = new Discord.RichEmbed() 
-        var min = Math.floor(Math.min(7));
-        var max = Math.floor(Math.max(15)); 
+        var min = Math.floor(Math.min(10));
+        var max = Math.floor(Math.max(20)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#37ac0f")
@@ -4039,8 +4039,8 @@ if(message.content === préfix + "Arrive grotte 6") {
 if(message.content === préfix + "Grotte étage 6") {
     var result = Math.floor((Math.random() * 100) + 1);
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(2));
-    var max = Math.floor(Math.max(5)); 
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(10)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 50){
         var y = new Discord.RichEmbed()
@@ -4068,8 +4068,8 @@ if(message.content === préfix + "Grotte étage 6") {
 if(message.content === préfix + "Grotte étage 7") {
     var result = Math.floor((Math.random() * 100) + 1);
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(2));
-    var max = Math.floor(Math.max(5)); 
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(10)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 30){
         var y = new Discord.RichEmbed()
