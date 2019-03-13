@@ -3549,8 +3549,8 @@ if(message.content === préfix + "H goblin défense") {
 
 if(message.content === préfix + "Nomade attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(60));
-    var max = Math.floor(Math.max(80)); 
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(120)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
         if(result < 40)
