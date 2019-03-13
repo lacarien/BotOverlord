@@ -4158,12 +4158,12 @@ if(message.content === préfix + "Grotte étage 8") {
 
 if(message.content === préfix + "Mort horde de goblin"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(13));
-    var max = Math.floor(Math.max(26)); 
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(50)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var help_embed = new Discord.RichEmbed()
-    var mins = Math.floor(Math.min(2));
-    var maxs = Math.floor(Math.max(4)); 
+    var mins = Math.floor(Math.min(10));
+    var maxs = Math.floor(Math.max(15)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 99)
@@ -4179,12 +4179,12 @@ if(message.content === préfix + "Mort horde de goblin"){
 
 if(message.content === préfix + "Mort paladin démon"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(25));
-    var max = Math.floor(Math.max(35)); 
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(70)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var help_embed = new Discord.RichEmbed()
-    var mins = Math.floor(Math.min(5));
-    var maxs = Math.floor(Math.max(8)); 
+    var mins = Math.floor(Math.min(10));
+    var maxs = Math.floor(Math.max(20)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 99)
@@ -4199,12 +4199,12 @@ if(message.content === préfix + "Mort paladin démon"){
 } 
 if(message.content === préfix + "Mort nomade fou"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(25));
-    var max = Math.floor(Math.max(35)); 
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(70)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var help_embed = new Discord.RichEmbed()
-    var mins = Math.floor(Math.min(5));
-    var maxs = Math.floor(Math.max(8)); 
+    var mins = Math.floor(Math.min(10));
+    var maxs = Math.floor(Math.max(20)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 99)
@@ -4220,12 +4220,12 @@ if(message.content === préfix + "Mort nomade fou"){
 
 if(message.content === préfix + "Mort squelette"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(13));
-    var max = Math.floor(Math.max(26)); 
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(70)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var help_embed = new Discord.RichEmbed()
-    var mins = Math.floor(Math.min(2));
-    var maxs = Math.floor(Math.max(4)); 
+    var mins = Math.floor(Math.min(10));
+    var maxs = Math.floor(Math.max(20)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 99)
@@ -4241,8 +4241,8 @@ if(message.content === préfix + "Mort squelette"){
 
 if(message.content === préfix + "Mort goblin champion"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(100));
-    var max = Math.floor(Math.max(150)); 
+    var min = Math.floor(Math.min(200));
+    var max = Math.floor(Math.max(250)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var help_embed = new Discord.RichEmbed()
     var mins = Math.floor(Math.min(25));
