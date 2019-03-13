@@ -3676,12 +3676,12 @@ if(message.content === préfix + "Goblin champion"){
 
 if(message.content === préfix + "C goblin attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(100));
-    var max = Math.floor(Math.max(120)); 
+    var min = Math.floor(Math.min(120));
+    var max = Math.floor(Math.max(140)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result > 80)
-    var y = Math.floor(Math.floor(y) * 1.8)
+    var y = Math.floor(Math.floor(y) * 1.6)
 
         if(result < 60)
     var y = new Discord.RichEmbed()
