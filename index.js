@@ -3540,7 +3540,7 @@ if(message.content === préfix + "H goblin défense") {
     .setColor("#524b4b")
     .setTitle("Nomade fou")
     .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un homme armée, salement amoché, à sa tenue on pourrait penser qu'il est perdu dans la grotte depuis fort longtemps...")
-    .addField("Point de vie d'un énnemie", "300")
+    .addField("Point de vie d'un énnemie", "500")
     .addField("Attaque", "?Nomade attaque")
     .addField("Défense", "?Nomade défense")
     .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")
@@ -3549,8 +3549,8 @@ if(message.content === préfix + "H goblin défense") {
 
 if(message.content === préfix + "Nomade attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(100));
-    var max = Math.floor(Math.max(120)); 
+    var min = Math.floor(Math.min(150));
+    var max = Math.floor(Math.max(200)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
         if(result < 40)
@@ -3566,12 +3566,12 @@ if(message.content === préfix + "Nomade attaque"){
 
 if(message.content === préfix + "Nomade défense") {
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 30)
+    if(result < 35)
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
     .setTitle("Le nomade vous fais une parade et vous renvoie la moitié de vos dégats sans même que vous puisez vous défendre, si c'est une attaque à distance alors le Nomade se contentera d'ésquiver l'attaque")
     .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")
-    if(30 < result)
+    if(35 < result)
     var result = new Discord.RichEmbed() 
     .setColor("#00ff27")
     .setAuthor("Le nomade ne fait pas attention à sa défense, il prend le coups sans broncher")
