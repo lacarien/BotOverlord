@@ -3852,8 +3852,8 @@ if(message.content === préfix + "Arrive grotte 2") {
  if(message.content === préfix + "Grotte étage 2") {
     var result = Math.floor((Math.random() * 100) + 1);
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(5));
-    var max = Math.floor(Math.max(10)); 
+    var min = Math.floor(Math.min(3));
+    var max = Math.floor(Math.max(7)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 20){
         var y = new Discord.RichEmbed()
