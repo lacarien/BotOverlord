@@ -4046,7 +4046,7 @@ if(message.content === préfix + "Grotte étage 6") {
         var y = new Discord.RichEmbed()
         .setColor("#524b4b")
         .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un homme armée, salement amoché, à sa tenue on pourrait penser qu'il est perdu dans la grotte depuis fort longtemps...")
-        .addField("Point de vie d'un énnemie", "500")
+        .addField("Point de vie d'un énnemie", "600")
         .addField("Attaque", "?Nomade attaque")
         .addField("Défense", "?Nomade défense")
         .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")}
@@ -4075,7 +4075,7 @@ if(message.content === préfix + "Grotte étage 7") {
         var y = new Discord.RichEmbed()
         .setColor("#524b4b")
         .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un homme armée, salement amoché, à sa tenue on pourrait penser qu'il est perdu dans la grotte depuis fort longtemps...")
-        .addField("Point de vie d'un énnemie", "300")
+        .addField("Point de vie d'un énnemie", "600")
         .addField("Attaque", "?Nomade attaque")
         .addField("Défense", "?Nomade défense")
         .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")}
