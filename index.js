@@ -706,6 +706,7 @@ if(message.content === préfix + "PC Berserk"){
         .addField("41PC", "?Le faux mort")
         .addField("43PC", "Grand Assassin ultime")
         .addField("45PC", "Vous pouvez évoluer")
+        
         message.channel.sendMessage(help_embed);
     }
     if(message.content === préfix + "PC Archer"){
@@ -969,7 +970,7 @@ if(message.content === préfix + "PC Berserk"){
         var max = Math.floor(Math.max(80)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous tirez une fleche puissante(-20 de Mana)",":bow_and_arrow: "+ y)
+        .addField("Vous tirez une fleche puissante(-30 de Mana)",":bow_and_arrow: "+ y)
         .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
         message.channel.send(y);
     }
