@@ -3603,8 +3603,8 @@ if(message.content === préfix + "P démon défense"){
 if(message.content === préfix + "P démon attaque") {
     var result = Math.floor((Math.random() * 100) + 1);
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(40));
-    var max = Math.floor(Math.max(55)); 
+    var min = Math.floor(Math.min(70));
+    var max = Math.floor(Math.max(80)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 60){
         var y = new Discord.RichEmbed()
