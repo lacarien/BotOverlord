@@ -4166,11 +4166,11 @@ if(message.content === préfix + "Mort horde de goblin"){
     var maxs = Math.floor(Math.max(15)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 99)
+    if(result < 94)
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
     .setColor("#9e9a9a")
-    if(result > 99)
+    if(result > 94)
     var y = new Discord.RichEmbed()
     .addField("Loot légendaire :exclamation: ", y + "?Dague d'assassin :dagger: " )
     .setColor("#e200ff")
@@ -4187,11 +4187,11 @@ if(message.content === préfix + "Mort paladin démon"){
     var maxs = Math.floor(Math.max(20)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 99)
+    if(result < 94)
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
     .setColor("#9e9a9a")
-    if(result > 99)
+    if(result > 94)
     var y = new Discord.RichEmbed()
     .addField("Loot légendaire :exclamation: ", "?Bouclier démoniaque :shield: ")
     .setColor("#e200ff")
@@ -4207,11 +4207,11 @@ if(message.content === préfix + "Mort nomade fou"){
     var maxs = Math.floor(Math.max(20)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 99)
+    if(result < 94)
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
     .setColor("#9e9a9a")
-    if(result > 99)
+    if(result > 94)
     var y = new Discord.RichEmbed()
     .addField("Loot légendaire :exclamation: ", "?épée de folie :crossed_swords: ")
     .setColor("#e200ff")
@@ -4228,11 +4228,11 @@ if(message.content === préfix + "Mort squelette"){
     var maxs = Math.floor(Math.max(20)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 99)
+    if(result < 94)
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
     .setColor("#9e9a9a")
-    if(result > 99)
+    if(result > 94)
     var y = new Discord.RichEmbed()
     .addField("Loot légendaire :exclamation: ", y + "?Livre abandonné :sparkles: ")
     .setColor("#e200ff")
