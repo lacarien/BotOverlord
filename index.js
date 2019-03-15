@@ -4067,29 +4067,10 @@ if(message.content === préfix + "Grotte étage 6") {
     
     
 if(message.content === préfix + "Grotte étage 7") {
-    var result = Math.floor((Math.random() * 100) + 1);
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(5));
     var max = Math.floor(Math.max(10)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    if(result < 30){
-        var y = new Discord.RichEmbed()
-        .setColor("#524b4b")
-        .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un homme armée, salement amoché, à sa tenue on pourrait penser qu'il est perdu dans la grotte depuis fort longtemps...")
-        .addField("Point de vie d'un énnemie", "600")
-        .addField("Attaque", "?Nomade attaque")
-        .addField("Défense", "?Nomade défense")
-        .setImage("https://media.discordapp.net/attachments/454694319396356128/550671177203318785/c98eba00905084c02123912904b91cff.jpg?width=322&height=560")}
- 
-    else if(result < 60){
-        var y = new Discord.RichEmbed() 
-        .setColor("#820000")
-        .setDescription("Dans les profondeurs de la grotte...Vous croisez sur votre chemin un paladin avec des cornes qui semblait...Hostile")
-        .addField("Point de vie d'un énnemie", "600")
-        .addField("Attaque", "?P démon attaque")
-        .addField("Défense", "?P démon défense")
-        .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")   }
-        else if(result < 101){
             var y = new Discord.RichEmbed() 
             .setColor("#045713")
             .setTitle("Goblin champion")
