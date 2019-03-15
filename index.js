@@ -4230,8 +4230,14 @@ if(message.content === préfix + "Mort goblin champion"){
     var mins = Math.floor(Math.min(25));
     var maxs = Math.floor(Math.max(50)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+     var result = Math.floor((Math.random() * 100) + 1);
+if(result < 94)
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+    if(result > 94)
+        var y = new Discord.RichEmbed()
+        .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x + "\n L'arme légendaire de votre classe")
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 } 
