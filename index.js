@@ -4067,6 +4067,7 @@ if(message.content === préfix + "Grotte étage 6") {
     
     
 if(message.content === préfix + "Grotte étage 7") {
+    {
     var help_embed = new Discord.RichEmbed()
             .setColor("#045713")
             .setTitle("Goblin champion")
