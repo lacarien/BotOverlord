@@ -4068,10 +4068,6 @@ if(message.content === préfix + "Grotte étage 6") {
     
 if(message.content === préfix + "Grotte étage 7") {
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(5));
-    var max = Math.floor(Math.max(10)); 
-    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-            var y = new Discord.RichEmbed() 
             .setColor("#045713")
             .setTitle("Goblin champion")
             .setDescription("Vous arrivez au plus profond de la grotte...vous croisez alors un colosse sur votre route, gardant un ?Petit coffre")
@@ -4081,7 +4077,7 @@ if(message.content === préfix + "Grotte étage 7") {
             .addField("Passifs", "Dégats au dessus de 500 divisé par 2")
             .addField("Une fois qu'il se fait tuer: le loot normal du mobs + ?Petit coffre grotte")
             .setImage("https://media.discordapp.net/attachments/454694319396356128/551019149409910809/unknown.png?width=994&height=560")}
-    message.channel.send(y);
+    message.channel.send(help_embed);
 
 }
 if(message.content === préfix + "Arrive grotte 7") {
