@@ -1413,7 +1413,16 @@ if(message.content === préfix + "Drapeau de défense"){
     .setImage("https://cdn.discordapp.com/attachments/454694319396356128/553881850653966356/unknown.png")
     message.channel.send(y);
 }
-
+if(message.content === préfix + "Saignement démoniaque"){
+    var y = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(2));
+    var max = Math.floor(Math.max(3)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#8c97d9")
+    .addField("Vous et tout vos alliées (sauf démon) perde 100 HP", "Votre prochaine attaque fera un effet de saignement (comme le poison) durant plusieurs tours sur tous les dégâts que votre ennemie subira. Interdiction d'utiliser une ultime. :crossed_swords:  " + x )
+    message.channel.sendMessage(y);
+}
     if(message.content === préfix + "Vague négative"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ff0000")
