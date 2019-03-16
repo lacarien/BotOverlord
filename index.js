@@ -988,7 +988,7 @@ if(message.content === préfix + "PC Berserk"){
         .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
         message.channel.send(y);
     }
-        if(message.content === préfix + "Tir énèrgtique"){
+        if(message.content === préfix + "Tir énèrgétique"){
         var min = Math.floor(Math.min(130));
         var max = Math.floor(Math.max(160)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
