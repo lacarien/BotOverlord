@@ -259,7 +259,7 @@ if(message.content === préfix + "Miner"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#20ff00")
         .addField("Démon", "Vous êtes un Démon, vous avez une forme humanoïde bien que certain trait de votre apparence peuvent être différents que celui d'un humain")
-        .addField("Bonus", "Vous régénèrez 2 fois plus vitevoleur mana et leur HP")
+        .addField("Bonus", "Vous régénèrez 2 fois plus vite votre mana et vos HP")
         .addField("Malus", "Vous attaquez toujours en dernier et n'avez aucune compétences uniques pour votre espèce")
         .setImage("https://www.manga-news.com/public/images/vols/overlord-light-novel-12-jp.jpg")
         .setFooter("Menu Lézard")
