@@ -184,7 +184,7 @@ if(message.content === préfix + "Miner"){
         var help_embed = new Discord.RichEmbed()
         .setTitle("Humain")
         .setDescription("Vous êtes un humain normal sans malus ni bonus")
-        .addField("Gobelin", "Vous êtes un Gobelin avec des caractéristiques particulières")
+        .addField("Démon", "Vous êtes un Démon, un être diabolique")
         .addField("Vampire","Vous êtes un vampire qui peut s'averé être très dangereux")
         .addField("Lézard", "Vous êtes un lézard, vous avez une bonne défense")
         .addField("Elf", "Vous êtes un Elf, une espece noble et rare")
@@ -531,7 +531,16 @@ if(message.content === préfix + "PCP Automaton"){
         message.channel.sendMessage(help_embed);
     }
 
- 
+ if(message.content === préfix + "PC Démon"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#880606")
+        .setTitle("PC Démon")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("10PC", "Vous obtenez la compétence ?Vague négative")
+        .addField("25PC", "Vous obtenez la compétence ?Saignement démoniaque")
+        .addField("40PC", "Vous obtenez la compétence ?Transformation démoniaque")
+        message.channel.sendMessage(help_embed);
+    }
 
     if(message.content === préfix + "PC Lézard"){
         var help_embed = new Discord.RichEmbed()
