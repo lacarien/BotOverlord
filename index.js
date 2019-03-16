@@ -1419,8 +1419,8 @@ if(message.content === préfix + "Saignement démoniaque"){
     var max = Math.floor(Math.max(3)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
-    .setColor("#8c97d9")
-    .addField("Vous et tout vos alliées (sauf démon) perde 100 HP", "Votre prochaine attaque fera un effet de saignement (comme le poison) durant plusieurs tours sur tous les dégâts que votre ennemie subira. Interdiction d'utiliser une ultime. :crossed_swords:  " + x )
+    .setColor("#880606")
+    .addField("Vous et tout vos alliées (sauf démon) perde 100 HP", "Votre prochaine attaque fera un effet de saignement (comme le poison) durant plusieurs tours sur tous les dégâts que votre ennemie subira. Interdiction d'utiliser une ultime. :timer:   " + y )
     message.channel.sendMessage(y);
 }
     if(message.content === préfix + "Vague négative"){
