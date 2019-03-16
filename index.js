@@ -667,7 +667,21 @@ if(message.content === préfix + "PC Berserk"){
         .addField("45PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
     }
-    
+    if(message.content === préfix + "PC Champion"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00295b")
+        .setTitle("PC Champion")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("30PC", "Vous gagnez 100HP / 50 de Mana / ?L'épéiste")
+        .addField("33PC", "?Ch Coup d'épée")
+        .addField("35PC", "?Ch blocage")
+        .addField("37PC", "?Enchainement d'ennemie ")
+        .addField("39PC", "?Coup d'estoc")
+        .addField("41PC", "????")
+        .addField("43PC", "Champion ultime")
+        .addField("45PC", "Vous pouvez évoluer")
+        message.channel.sendMessage(help_embed);
+}
     if(message.content === préfix + "PC Sorcier"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00ffe7")
@@ -974,7 +988,15 @@ if(message.content === préfix + "PC Berserk"){
         .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
         message.channel.send(y);
     }
-    
+        if(message.content === préfix + "Tir énèrgtique"){
+        var min = Math.floor(Math.min(130));
+        var max = Math.floor(Math.max(160)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous tirez un énorme tir explosif(-70 de Mana)",":bow_and_arrow: "+ y)
+        .setImage("https://media.discordapp.net/attachments/454694319396356128/556392560612868107/unknown.png?width=994&height=560")
+        message.channel.send(y);
+    }
     if(message.content === préfix + "Flèche empoisonné"){
         var help_embed = new Discord.RichEmbed()
         var min = Math.floor(Math.min(15));
