@@ -1172,7 +1172,7 @@ if(message.content === préfix + "Tir explosif"){
         var max = Math.floor(Math.max(55)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous executez un blocage digne d'un gardien", ":shield: "+y)
+        .addField("Vous executez un blocage de champion", ":shield: "+y)
         message.channel.send(y);
     }
     if(message.content === préfix + "B Blocage"){
