@@ -871,7 +871,7 @@ if(message.content === préfix + "PC Berserk"){
         var max = Math.floor(Math.max(85)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .setImage("https://wallpapersafari.com/w/2vMPhG
+        .setImage("https://wallpapersafari.com/w/2vMPhG")
         .addField("Vous donnez un coup d'épée puissant à votre adversaire", ":dagger: "+y)
         message.channel.send(y);
     }
