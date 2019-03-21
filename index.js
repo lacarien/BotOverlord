@@ -871,8 +871,8 @@ if(message.content === préfix + "PC Berserk"){
         var max = Math.floor(Math.max(85)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
+        .setImage("https://wallpapersafari.com/w/2vMPhG
         .addField("Vous donnez un coup d'épée puissant à votre adversaire", ":dagger: "+y)
-        .setImage("")
         message.channel.send(y);
     }
     if(message.content === préfix + "B Coup d'épée"){
@@ -1182,7 +1182,7 @@ if(message.content === préfix + "Tir explosif"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous executez un blocage Berserkien", ":shield: "+y)
-        .setImage("")
+        .setImage("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-618132.jpg")
         message.channel.send(y);
     }
     if(message.content === préfix + "G Blocage"){
@@ -1191,7 +1191,16 @@ if(message.content === préfix + "Tir explosif"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous executez un blocage digne d'un gardien", ":shield: "+y)
-        .setImage("")
+        .setImage("https://i.pinimg.com/236x/85/9d/18/859d184458d49481de630477e74efb7e.jpg")
+        message.channel.send(y);
+    }
+     if(message.content === préfix + "Cl Blocage"){
+        var min = Math.floor(Math.min(55));
+        var max = Math.floor(Math.max(65)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous executez un blocage digne d'un clerc", ":shield: "+y)
+        .setImage("https://img4.goodfon.com/wallpaper/nbig/e/81/warrior-knight-soldier-armor-helmet-sword-weapon-shield-batt.jpg")
         message.channel.send(y);
     }
     if(message.content === préfix + "Blocage naturel"){
