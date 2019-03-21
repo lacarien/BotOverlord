@@ -676,6 +676,23 @@ if(message.content === préfix + "PC Berserk"){
         .addField("45PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
     }
+    
+    if(message.content === préfix + "PC Ninja"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#12110F")
+    .setTitle("PC Ninja")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("30PC", "Vous gagnez 100 Mana ainsi que ?Clonage")
+    .addField("33PC", "?Coup furtif")
+    .addField("35PC", "?Shurikens")
+    .addField("37PC", "?Bouclier d'adamantite")
+    .addField("39PC", "?Fumée sanglante")
+    .addField("41PC", "?Lame noir")
+    .addField("43PC", "Ninja ultime")
+    .addField("45PC", "Vous pouvez évoluer")
+    message.channel.sendMessage(help_embed);
+}
+    
     if(message.content === préfix + "PC Champion"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00295b")
@@ -831,8 +848,8 @@ if(message.content === préfix + "PC Berserk"){
         message.channel.send(y);
     }
  if(message.content === préfix + "Cl Coup d'épée"){
-        var min = Math.floor(Math.min(80));
-        var max = Math.floor(Math.max(90)); 
+        var min = Math.floor(Math.min(75));
+        var max = Math.floor(Math.max(85)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous lui infligez un coup d'épée dans la figure  qui inflige", ":dagger: "+y)
@@ -841,12 +858,21 @@ if(message.content === préfix + "PC Berserk"){
     }
     
     if(message.content === préfix + "G Coup d'épée"){
-        var min = Math.floor(Math.min(65));
-        var max = Math.floor(Math.max(80)); 
+        var min = Math.floor(Math.min(60));
+        var max = Math.floor(Math.max(75)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous lui infligez un coup d'épée dans les cottes qui inflige", ":dagger: "+y)
         .setImage("http://s1.1zoom.me/big0/177/Stormfall_Age_of_War_Knight_Armor_Swords_522831_1280x800.jpg")
+        message.channel.send(y);
+    }
+    if(message.content === préfix + "CH Coup d'épée"){
+        var min = Math.floor(Math.min(75));
+        var max = Math.floor(Math.max(85)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous donnez un coup d'épée puissant à votre adversaire", ":dagger: "+y)
+        .setImage("")
         message.channel.send(y);
     }
     if(message.content === préfix + "B Coup d'épée"){
@@ -1141,7 +1167,33 @@ if(message.content === préfix + "Tir explosif"){
         .setImage("https://media.giphy.com/media/ljYCvFo7HtheECUT7U/giphy.gif")
         message.channel.send(y);
     }
-    
+    if(message.content === préfix + "CH Blocage"){
+        var min = Math.floor(Math.min(45));
+        var max = Math.floor(Math.max(55)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous executez un blocage digne d'un gardien", ":shield: "+y)
+        .setImage("")
+        message.channel.send(y);
+    }
+    if(message.content === préfix + "B Blocage"){
+        var min = Math.floor(Math.min(40));
+        var max = Math.floor(Math.max(50)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous executez un blocage Berserkien", ":shield: "+y)
+        .setImage("")
+        message.channel.send(y);
+    }
+    if(message.content === préfix + "G Blocage"){
+        var min = Math.floor(Math.min(55));
+        var max = Math.floor(Math.max(65)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous executez un blocage digne d'un gardien", ":shield: "+y)
+        .setImage("")
+        message.channel.send(y);
+    }
     if(message.content === préfix + "Blocage naturel"){
         var min = Math.floor(Math.min(20));
         var max = Math.floor(Math.max(30)); 
