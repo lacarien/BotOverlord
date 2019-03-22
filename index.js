@@ -1211,7 +1211,53 @@ if(message.content === préfix + "Tir explosif"){
         .setColor("#00ff75")
         message.channel.send(y);
     }
-
+if(message.content === préfix + "Clonage"){
+            var help_embed = new Discord.RichEmbed()
+            .setColor("#ffffff")
+            .addField("Clonage (-100 de Mana)", "Vous invoquez un clone qui fera partie du ciblage obligatoirement, même en PvP. Néanmoins celui-ci meurt à la moindre attaque qu'il subit")
+            .addField("Attaque", "?Clone attaque")
+            .addField("Défense", "?Clone défense")
+            .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/3/30/Overlord_EP12_140.png/revision/latest/scale-to-width-down/200?cb=20150924122918")
+            message.channel.sendMessage(help_embed);
+        }
+        if(message.content === préfix + "Clone esquive") {
+            var result = Math.floor((Math.random() * 100) + 1);
+            if(result < 50){
+            var result = new Discord.RichEmbed() 
+            .setColor("#ffffff")
+            .setTitle("Vous avez réussie à Esquiver et ne subisez aucun dégat")
+            .setImage("https://media.discordapp.net/attachments/499161815549476864/541310276104880129/esqive.gif")
+            }
+            else if(result < 101){
+            var result = new Discord.RichEmbed() 
+            .setColor("#ffffff")
+            .setAuthor("Le clone disparait")
+            }
+            message.channel.send(result);
+        
+        }
+        if(message.content === préfix + "Clone attaque") {
+            var result = Math.floor((Math.random() * 100) + 1);
+            var min = Math.floor(Math.min(100));
+            var max = Math.floor(Math.max(130)); 
+            var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var min = Math.floor(Math.min());
+            var max = Math.floor(Math.max(130)); 
+            var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+            if(result < 80){
+            var result = new Discord.RichEmbed() 
+            .addField("Coup de lance", "Votre clone essaye d'infliger un coup de lance à votre adversaire")
+            .setColor("#ffffff")
+            .setImage("https://j.gifs.com/oVV0AB.gif")
+            }
+            else if(result < 101){
+            var result = new Discord.RichEmbed() 
+            .setColor("#5af900")
+            .addField("Liaison du ninja", "Votre clone rentre dans votre corps et vous guéris de la précédente attaque en échange de sa vie.")
+        }
+            message.channel.send(result);
+        
+        }
 if(message.content === préfix + "Drapeau de défense"){
     var y = new Discord.RichEmbed()
     var min = Math.floor(Math.min(10));
@@ -1415,16 +1461,16 @@ if(message.content === préfix + "Drapeau de défense"){
     }
     
     if(message.content === préfix + "Druid ultime"){   
-        var min = Math.floor(Math.min(70));
-        var max = Math.floor(Math.max(130)); 
+        var min = Math.floor(Math.min(90));
+        var max = Math.floor(Math.max(150)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#000000")
         .addField("Fait apparaitre un Ours inoffensif qui se fera tout le temps attaquer en priorité au bout du 3eme tours par les mobs et il a un grand nombre d'HP", y)
         .setImage("https://media.discordapp.net/attachments/536292650698014731/543167288967168056/Bears_Magical_animals_475039_2048x1536.jpg?width=780&height=585")
         message.channel.send(y);
-        var e = Math.floor(Math.min(40));
-        var a = Math.floor(Math.max(70)); 
+        var e = Math.floor(Math.min(60));
+        var a = Math.floor(Math.max(90)); 
         var w = Math.floor(Math.random() * (a - e + 1) ) + e;
         var w = new Discord.RichEmbed()
         .setColor("#00f5ff")
