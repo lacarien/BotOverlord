@@ -2654,6 +2654,17 @@ if(message.content === préfix + "Apparition forêt") {
     message.channel.send(y);
       
 }
+    
+      if(message.content === préfix + "Régénération de mana inhumain"){
+    var min = Math.floor(Math.min(500));
+    var max = Math.floor(Math.max(700)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#00fdff")
+    .addField("Vous rénérez du mana hors combat et vous recevez", y)
+    message.channel.send(y);
+      
+}
 
 if(message.content === préfix + "Régénération de mana de l'Archer"){
     var min = Math.floor(Math.min(100));
