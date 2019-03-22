@@ -1007,7 +1007,7 @@ if(message.content === préfix + "PC Berserk"){
 
 
     if(message.content === préfix + "Tir rapide"){
-        var min = Math.floor(Math.min(20));
+        var min = Math.floor(Math.min(25));
         var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
@@ -1068,8 +1068,8 @@ if(message.content === préfix + "Tir explosif"){
 }
 
     if(message.content === préfix + "Soins de bas rang"){
-        var min = Math.floor(Math.min(20));
-        var max = Math.floor(Math.max(35)); 
+        var min = Math.floor(Math.min(25));
+        var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous soignez une personne au choix, ou bien vous. En contrepartie vous perdez 20 de mana", ":heartpulse: "+y)
@@ -1159,7 +1159,7 @@ if(message.content === préfix + "Tir explosif"){
     }
     
     if(message.content === préfix + "Blocage magique"){
-        var min = Math.floor(Math.min(35));
+        var min = Math.floor(Math.min(40));
         var max = Math.floor(Math.max(45)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
@@ -1185,7 +1185,7 @@ if(message.content === préfix + "Tir explosif"){
         message.channel.send(y);
     }
     if(message.content === préfix + "G Blocage"){
-        var min = Math.floor(Math.min(55));
+        var min = Math.floor(Math.min(60));
         var max = Math.floor(Math.max(65)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
@@ -1253,8 +1253,8 @@ if(message.content === préfix + "Drapeau de défense"){
 
     
     if(message.content === préfix + "Magie simple"){
-        var min = Math.floor(Math.min(10));
-        var max = Math.floor(Math.max(30)); 
+        var min = Math.floor(Math.min(20));
+        var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous envoyez un sort de bas rang", ":sparkles: "+y)
@@ -1263,8 +1263,8 @@ if(message.content === préfix + "Drapeau de défense"){
     }
     
     if(message.content === préfix + "Sort simple"){
-        var min = Math.floor(Math.min(40));
-        var max = Math.floor(Math.max(55)); 
+        var min = Math.floor(Math.min(50));
+        var max = Math.floor(Math.max(70)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous envoyez un sort sur votre adversaire",":sparkles: "+ y)
@@ -1274,8 +1274,8 @@ if(message.content === préfix + "Drapeau de défense"){
  
     
     if(message.content === préfix + "Sort naturel"){
-        var min = Math.floor(Math.min(35));
-        var max = Math.floor(Math.max(45)); 
+        var min = Math.floor(Math.min(45));
+        var max = Math.floor(Math.max(65)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous attaquez votre adversaire en faisant apparaitre temporaire une tentacule d'épine qui vient frapper ce dernier", ":sparkles: "+y)
