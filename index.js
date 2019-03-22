@@ -1237,7 +1237,7 @@ if(message.content === préfix + "Drapeau de défense"){
     var y = new Discord.RichEmbed()
     .setColor("#00295b")
     .setImage("https://www.desktopbackground.org/p/2013/08/11/621417_deviantart-more-like-meh-demons-souls-wallpapers-by-hitokiriex_900x615_h.jpg")
-    .addField("Sa défence est réduite pendant  2 tours et ses attaques augmentes pendant 2 tours (-30 de mana)", "Votre défense est réduite de :boom:  " + y + "\n vos dégats ont un bonus :crossed_swords:  " + x )
+    .addField("Ses bloquages sont réduis pendant  2 tours et ses attaques augmentes pendant 2 tours (-30 de mana)", "Votre défense est réduite de :boom:  " + y + "\n vos dégats ont un bonus :crossed_swords:  " + x )
     message.channel.sendMessage(y);
 }
 
@@ -1409,16 +1409,9 @@ if(message.content === préfix + "Drapeau de défense"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#000000")
-        .addField("Negative burst ! (-200 de Mana)",":crossed_swords: "+  y)
+        .addField("Negative burst ! L'attaque ne peu ni être évitable, ni être bloquable(-200 de Mana)",":crossed_swords: "+  y)
         .setImage("https://media.giphy.com/media/8FSMNs8bir2lfkpg2u/giphy.gif")
         message.channel.send(y);
-        var e = Math.floor(Math.min(60));
-        var a = Math.floor(Math.max(70)); 
-        var w = Math.floor(Math.random() * (a - e + 1) ) + e;
-        var w = new Discord.RichEmbed()
-        .setColor("#00f5ff")
-        .addField("Vous régénérez du Mana", w)
-        message.channel.send(w);
     }
     
     if(message.content === préfix + "Druid ultime"){   
