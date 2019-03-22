@@ -1243,7 +1243,7 @@ if(message.content === préfix + "Clonage"){
             var y = Math.floor(Math.random() * (max - min + 1) ) + min;
             if(result < 80){
             var result = new Discord.RichEmbed() 
-            .addField("Coup de lance " + y, "Votre clone essaye d'infliger un coup de lance à votre adversaire")
+            .addField("Coup de lance -" +y, "Votre clone essaye d'infliger un coup de lance à votre adversaire")
             .setColor("#ffffff")
             .setImage("https://j.gifs.com/oVV0AB.gif")
             }
