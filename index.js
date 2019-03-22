@@ -1239,14 +1239,11 @@ if(message.content === préfix + "Clonage"){
         if(message.content === préfix + "Clone attaque") {
             var result = Math.floor((Math.random() * 100) + 1);
             var min = Math.floor(Math.min(100));
-            var max = Math.floor(Math.max(130)); 
-            var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-            var min = Math.floor(Math.min());
-            var max = Math.floor(Math.max(130)); 
+            var max = Math.floor(Math.max(115)); 
             var y = Math.floor(Math.random() * (max - min + 1) ) + min;
             if(result < 80){
             var result = new Discord.RichEmbed() 
-            .addField("Coup de lance", "Votre clone essaye d'infliger un coup de lance à votre adversaire")
+            .addField("Coup de lance " + y, "Votre clone essaye d'infliger un coup de lance à votre adversaire")
             .setColor("#ffffff")
             .setImage("https://j.gifs.com/oVV0AB.gif")
             }
