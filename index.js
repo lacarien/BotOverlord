@@ -1203,8 +1203,8 @@ if(message.content === préfix + "Tir explosif"){
         message.channel.send(y);
     }
     if(message.content === préfix + "Blocage naturel"){
-        var min = Math.floor(Math.min(20));
-        var max = Math.floor(Math.max(30)); 
+        var min = Math.floor(Math.min(40));
+        var max = Math.floor(Math.max(50)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous exécutez un blocage naturel en faisant apparaitre une ligne de branche et perdez 20 de Mana", ":shield: "+y)
