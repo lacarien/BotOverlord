@@ -3958,11 +3958,14 @@ if(message.content === préfix + "Grotte étage 1") {
     .setImage("http://fantasyartdesign.com/free-wallpapers/imgs/mid/cgRotFarmSkeleton-m.jpg")}
     else if(result < 101){
         var y = new Discord.RichEmbed() 
-   .setColor("#b1afaf")
-    .addField("Point de vie", "150")
-    .addField("Attaque", "?F Squelette attaque")
-    .addField("Défense", "?F Squelette défense")
-    .setImage("http://fantasyartdesign.com/free-wallpapers/imgs/mid/cgRotFarmSkeleton-m.jpg")}
+    .setColor("#37ac0f")
+    .addField("Nombre d'énnemie: ", y)
+    .addField("Point de vie d'un énnemie", "100")
+    .addField("Attaque", "?H goblin attaque")
+    .addField("Défense", "?H goblin défense")
+    .setImage("https://vignette.wikia.nocookie.net/goblinslayer/images/e/ea/Goblins_Banda.PNG/revision/latest?cb=20180401005522&path-prefix=es")}
+    
+
     message.channel.send(y);
 
 }
