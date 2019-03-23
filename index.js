@@ -4506,12 +4506,12 @@ if(message.content === préfix + "Coup de dague rapide"){
    var max = Math.floor(Math.max(110)); 
    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
       var result = Math.floor((Math.random() * 100) +1);
-   if(result < 90)
+   if(result < 80)
    var y = new Discord.RichEmbed()
    .addField("Vous lui infligé un coup de dague rapide et lui infligé", y)
    .setColor("#ff6000")
    .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/b/ba/Overlord_II_EP06_097.png/revision/latest?cb=20180216051904")
-   if(result > 90)
+   else if (result < 101)
    var y = new Discord.RichEmbed()
    .setColor("#ff6000")
    .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup ", y)
