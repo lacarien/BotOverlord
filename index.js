@@ -4244,7 +4244,7 @@ if(message.content === préfix + "Grotte étage 8") {
     var y = new Discord.RichEmbed()
     .setColor("#045713")
     .setDescription("Vous arrivez au plus profond de la grotte...vous croisez alors un colosse et des goblins devant lui sur votre route, gardant un gros coffre")
-    .addField("Point de vie du goblin champion", "1500")
+    .addField("Point de vie du goblin champion", "2000")
     .addField("Attaque du goblin champion", "?C goblin attaque")
     .addField("Défense du goblin champion", "?C goblin défense")
     .addField("Passifs", "Dégats au dessus de 500 divisé par 2")
