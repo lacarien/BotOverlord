@@ -3535,20 +3535,7 @@ if(message.content === préfix + "Quête rang Platine accomplie"){
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }
-if(message.content === préfix + "Parade: " + w){
-    var result = Math.floor((Math.random() * 100) + 1);
-    var min = Math.floor(Math.min(10));
-    var max = Math.floor(Math.max(30)); 
-    var w = w + (Math.random() * (max - min + 1) );
-    if(result < 40)
-    var w = new Discord.RichEmbed()
-    .addField("Vous réussiez la parade et infligez de lourd dégats", y)
-    if(result > 40)
-    var w = new Discord.RichEmbed() 
-    .setAuthor("Test il prend tout les dégats")
-    message.channel.send(w);
-}
-    
+
     
 if(message.content === préfix + "Parade"){
     var result = Math.floor((Math.random() * 100) + 1);
@@ -3971,14 +3958,11 @@ if(message.content === préfix + "Grotte étage 1") {
     .setImage("http://fantasyartdesign.com/free-wallpapers/imgs/mid/cgRotFarmSkeleton-m.jpg")}
     else if(result < 101){
         var y = new Discord.RichEmbed() 
-    .setColor("#37ac0f")
-    .addField("Nombre d'énnemie: ", y)
-    .addField("Point de vie d'un énnemie", "100")
-    .addField("Attaque", "?H goblin attaque")
-    .addField("Défense", "?H goblin défense")
-    .setImage("https://vignette.wikia.nocookie.net/goblinslayer/images/e/ea/Goblins_Banda.PNG/revision/latest?cb=20180401005522&path-prefix=es")}
-    
-
+   .setColor("#b1afaf")
+    .addField("Point de vie", "150")
+    .addField("Attaque", "?F Squelette attaque")
+    .addField("Défense", "?F Squelette défense")
+    .setImage("http://fantasyartdesign.com/free-wallpapers/imgs/mid/cgRotFarmSkeleton-m.jpg")}
     message.channel.send(y);
 
 }
