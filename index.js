@@ -3818,11 +3818,11 @@ if(message.content === préfix + "C goblin attaque"){
     if(result > 80)
     var y = Math.floor(Math.floor(y) * 1.6)
 
-        if(result < 60)
+        if(result < 40)
     var y = new Discord.RichEmbed()
     .addField("Le Champion vous donnes un gros coup d'épée vous faisants reculer de bien 2 metres pour les plus résistants", y)
     .setColor("#045713")
-        else if(result < 70)
+        else if(result < 50)
     var y = new Discord.RichEmbed()
     .setColor("#045713")
     .setAuthor("Le Champion rate son attaque")
