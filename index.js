@@ -942,6 +942,20 @@ if(message.content === préfix + "PC Berserk"){
         .addField("Votre corps deviens plus résistant et réduisez tout les dégats pendant 2 tours(-30 de Mana)", ":shield: "+y)
         message.channel.send(y);
     }
+    if(message.content === préfix + "L'épéiste"){
+    var y = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(30)); 
+    var mins = Math.floor(Math.min(30));
+    var maxs = Math.floor(Math.max(60));
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var x = Math.floor(Math.random() * (maxs - mins) + 1) + mins;
+    var y = new Discord.RichEmbed()
+    .setColor("#8c97d9")
+    .setImage("http://coolvibe.com/wp-content/uploads/2013/08/Fantasy-Art-Wesley-Burt-Fiendslayer-Paladin.jpg")
+    .addField("Le Champion devient quelque peu plus agile et puissant durant 2 tours (-30 de mana)", "Votre attaque est augmenté de :crossed_swords:   " + y  )
+    message.channel.sendMessage(y);
+}  
     if(message.content === préfix + "Camouflage"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#000000")
