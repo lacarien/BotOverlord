@@ -509,7 +509,7 @@ if(message.content === préfix + "PCP Démon"){
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("10PC", "Vous obtenez la compétence ?Sainte bénédiction")
         .addField("25PC", "Vous obtenez la compétence ?Multi classe")
-        .addField("40PC", "Vous obtenez une nouvelle compétence qui vous permet de réanimer un mort(utilisable seulement 1 fois par mois et ne peus être utilisé seulement sur un mort récent) ?Prière incessante")
+        .addField("40PC", "Vous obtenez une nouvelle compétence qui vous permet de réanimer un mor ou bien de vous réanimer tout seult(utilisable seulement 1 fois par mois et ne peus être utilisé seulement sur un mort récent) ?Prière incessante ou bien ?Réanimation")
         message.channel.sendMessage(help_embed);
     }
 if(message.content === préfix + "PCP Automaton"){
