@@ -1505,7 +1505,7 @@ if(message.content === préfix + "Drapeau de défense"){
 
     if(message.content === préfix + "Multi classe"){
     var y = new Discord.RichEmbed()
-    .addField("Multi classe", "Vous pourrez utilisez une compétence d'une autre class de même niveau ou moins mais pas les ultimes ")
+    .addField("Multi classe", "Vous pourrez utilisez deux compétence d'une autre classe de même niveau ou moins mais pas les ultimes ")
     .setImage("https://cdn.discordapp.com/attachments/454694319396356128/553881850653966356/unknown.png")
     message.channel.send(y);
 }
