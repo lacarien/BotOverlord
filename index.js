@@ -982,6 +982,14 @@ if(message.content === préfix + "PC Berserk"){
     message.channel.send(y);
 }
 
+    if(message.content === préfix + "Hurlement provocateur"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#04157f")
+    .setTitle("Hurlement provocateur(-75Mana)")
+    .setDescription("Durant 2 tours, tout les ennemies seront obligé de vous attaquer")
+    .setImage("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f53076-bdc0-4ad4-8de8-3bd26a505de3/d6th824-629e9549-c08d-499f-bedb-a1b4f868d130.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEyZjUzMDc2LWJkYzAtNGFkNC04ZGU4LTNiZDI2YTUwNWRlM1wvZDZ0aDgyNC02MjllOTU0OS1jMDhkLTQ5OWYtYmVkYi1hMWI0Zjg2OGQxMzAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3iwD07G6xKOeXoizbMLn-l_CjggulZBUukDlivGlPho")
+    message.channel.sendMessage(help_embed);
+}
     
     if(message.content === préfix + "Provocation simple"){
         var min = Math.floor(Math.min(45));
