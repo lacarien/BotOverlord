@@ -501,6 +501,46 @@ if(message.content === préfix + "PCP Démon"){
     .setDescription("1 fois tous les 3 jours, en fixant la personne droit dans les yeux vous pouvez enclencher une sorte de flash back lui remémorant tous les moments tragiques de sa vie, l'effet aura pour bute de le briser intérieurement même un grand musclor qui a un sang froid extrême sera affecté")
     message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "PCP Gardien"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .setTitle("PCP Gardien")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("32PC", "Le guardien n'est pas entraver par le poids grace au port constant de son armure, il peut porter 3 personnes en même temps sur lui, ou autres poids.")
+    .addField("36PC", "Le guardien est imposant, il a le droit à un roll d'intimidation en duel ou conflit, en cas de réussite, il calme le jeux.")
+    .addField("42PC", "Le guardien peut choisir un être vivant comme étant son protégé, il passera plus de temps avec cette personne, la protegeant de quiconque pourrait lui faire du mal")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "PCP Berserk"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00295b")
+    .setTitle("PCP Berserk")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("32PC", "Le berserk adore le combat, il est difficile pour lui de ne pas se mêler d'une bagarre pour prouver sa valeur d'animal")
+    .addField("36PC", "Le berserk a un moral d'acier, son habitude a la vue du sang et des combats l'ont forgé, il est difficile de le destabilise/faire changer son point de concentration.")
+    .addField("42PC", "La resistance du berserk est des plus fabuleuse, une fois par semaine, il peut encaisser un roll supérieur au sien et riposter.")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "PCP Ninja"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#12110F")
+    .setTitle("PCP Ninja")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("32PC", "Le ninja est quasiment introuvable (-10 de perception le jour, -30 la nuit, pour les gens qui veulent vous trouver)")
+    .addField("36PC", "Le ninja est tellement discret qu'il a du mal à s'exprimer")
+    .addField("42PC", "Le ninja peut suivre en toute discrétion (indétectable) une personne pendant 30 min, utilisable 1 fois tout les 3 jours.")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "PCP Champion"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("PCP Champion")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("32PC", "Contrairement à ses compares combattants, le champion délaisse le poids de son armure pour sa mobilité, ce qui lui offre plus d'énergie et de mouvements : il se déplace plus aisément et rapidement, il peut décider d'attaquer en premier tant qu'un voleur n'est pas dans son groupe.")
+    .addField("36PC", "Le champion donne confiance par sa carrure et sa finesse d'esprit. Il est un bon meneur d'équipe et ses coéquipiers lui font confiance.")
+    .addField("42PC", "Champion : Pour la plupart de ses PCP, il est PRIMORDIAL pour le champion de maintenir une bonne entente avec les membres de son équipe. En cas contraire, ce sera l'échec de ses actions envers eux. ")
+    message.channel.sendMessage(help_embed);
+}
 
     if(message.content === préfix + "PC Humain"){
         var help_embed = new Discord.RichEmbed()
