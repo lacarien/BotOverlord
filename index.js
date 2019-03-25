@@ -506,9 +506,9 @@ if(message.content === préfix + "PCP Démon"){
     .setColor("#1a00ff")
     .setTitle("PCP Gardien")
     .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-    .addField("32PC", "Le guardien n'est pas entraver par le poids grace au port constant de son armure, il peut porter 3 personnes en même temps sur lui, ou autres poids.")
-    .addField("36PC", "Le guardien est imposant, il a le droit à un roll d'intimidation en duel ou conflit, en cas de réussite, il calme le jeux.")
-    .addField("42PC", "Le guardien peut choisir un être vivant comme étant son protégé, il passera plus de temps avec cette personne, la protegeant de quiconque pourrait lui faire du mal")
+    .addField("32PC", "Le gardien n'est pas entraver par le poids grace au port constant de son armure, il peut porter 3 personnes en même temps sur lui, ou autres poids.")
+    .addField("36PC", "Le gardien est imposant, il a le droit à un roll d'intimidation en duel ou conflit, en cas de réussite, il calme le jeux.")
+    .addField("42PC", "Le gardien peut choisir un être vivant comme étant son protégé, il passera plus de temps avec cette personne, la protegeant de quiconque pourrait lui faire du mal")
    message.channel.sendMessage(help_embed);
 }
 if(message.content === préfix + "PCP Berserk"){
