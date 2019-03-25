@@ -1276,7 +1276,7 @@ if(message.content === préfix + "Tir explosif"){
 if(message.content === préfix + "Clonage"){
             var help_embed = new Discord.RichEmbed()
             .setColor("#ffffff")
-            .addField("Clonage (-100 de Mana)", "Vous invoquez un clone qui fera partie du ciblage obligatoirement, même en PvP. Néanmoins celui-ci meurt à la moindre attaque qu'il subit")
+            .addField("Clonage (-100 de Mana)", "Vous invoquez un clone qui fera partie du ciblage obligatoirement. Néanmoins celui-ci meurt à la moindre attaque qu'il subit")
             .addField("Attaque", "?Clone attaque")
             .addField("Défense", "?Clone défense")
             .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/3/30/Overlord_EP12_140.png/revision/latest/scale-to-width-down/200?cb=20150924122918")
