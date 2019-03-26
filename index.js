@@ -760,7 +760,21 @@ if(message.content === préfix + "PC Berserk"){
         .addField("30PC", "Vous pouvez passer Nécromancien, grand sorcier, ou prêtre")
         message.channel.sendMessage(help_embed);
     }
-
+    if(message.content === préfix + "PC Nécromancien"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor(" #9fa6a6")
+        .setTitle("PC Nécromancien")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("30PC", "250 de Mana ")
+        .addField("33PC", "?Tombeau sinistre")
+        .addField("35PC", "?Bouclier de squelette")
+        .addField("37PC", "?Invocation chevalier")
+        .addField("39PC", "?écrase coeur")
+        .addField("41PC", "?Aura du Nécromancien")
+        .addField("43PC", "Nécromancien ultime")
+        .addField("45PC", "Vous pouvez évoluer")
+        message.channel.sendMessage(help_embed);
+}
 
     if(message.content === préfix + "PC Assassin"){
         var help_embed = new Discord.RichEmbed()
