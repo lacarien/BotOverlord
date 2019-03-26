@@ -4696,7 +4696,65 @@ if(message.content === préfix + "Petit coffre") {
         message.channel.sendMessage(help_embed);
         console.log("Un utilisateur à utiliser la commande d'aide.")
     }
+/// Ta mere c'est la nouvelle zone
+    
+    
+    if(message.content === préfix + "Apparition plage") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 50){{
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Monstre aquatique")
+    .setColor("#AAEEFF")
+    .addField("Point de vie", "1000HP")
+    .addField("Attaque", "?Monstre attaque")
+    .addField("Défense", "?Monstre défense")
+    .setImage("")
+    message.channel.sendMessage(help_embed);
+}}
+    else if(result < 90){
+{
+        var help_embed = new Discord.RichEmbed()
+        .setTitle("Guerrier aquatique")
+        .setColor("#AAEEFF")
+        .addField("Point de vie", "1500HP")
+        .addField("Attaque", "?Guerrier attaque")
+        .addField("Défense", "?Guerrier défense")
+        .addField("Passifs", "Arrivé à 500HP restant, son attaque ce change en ?F Guerrier attaque")
 
+.setImage("https://media.discordapp.net/attachments/454694319396356128/560080305709645834/400px-Wyrmguard_full.jpg")
+        message.channel.sendMessage(help_embed);
+    }}
+    else if(result < 101){
+    {
+        var help_embed = new Discord.RichEmbed()
+        .setTitle("Noble aquatique")
+        .setColor("#01FFDD")
+        .addField("Point de vie", "1500HP")
+        .addField("Attaque", "?Noble attaque")
+        .addField("Défense", "?Noble défense")
+ .addField("Passifs", "Une fois arrivé à 0HP ?Transformation aquatique")
+        .setImage("https://media.discordapp.net/attachments/454694319396356128/560077864867856394/Deep_Sea_King_Anime_Portrait.png?width=332&height=376")
+        message.channel.sendMessage(help_embed);
+    }
+    }
+
+
+}
+    
+    
+    if(message.content === préfix + "Arrive sur la plage") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 75)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .addField("Vous tombez sur des hhumanoîdes", "?Apparition plage")
+    else if(result < 101)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setTitle("La plage est calme, seul le vent vous entoures")
+    message.channel.send(result);
+
+}
 });
 
 
