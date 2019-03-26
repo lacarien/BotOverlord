@@ -972,14 +972,17 @@ if(message.content === préfix + "PC Berserk"){
        .setImage("http://s1.1zoom.me/big0/817/DOTA_2_Phantom_assassin_477640.jpg")
        message.channel.send(y);
    }
-    if(message.content === préfix + "Aura du gardien"){
+if(message.content === préfix + "Aura du gardien"){
+        var mins = Math.floor(Math.min(13));
+        var maxs = Math.floor(Math.max(23)); 
         var min = Math.floor(Math.min(25));
         var max = Math.floor(Math.max(45)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var y = new Discord.RichEmbed()
-        .setColor("#04157f")
+        .setColor("#859900")
         .setImage("https://j.gifs.com/lx5NnM.gif")
-        .addField("Votre corps deviens plus résistant et réduisez tout les dégats pendant 2 tours(-30 de Mana)", ":shield: "+y)
+        .addField("Votre corps deviens plus résistant et réduisez tout les dégats pendant 2 tours mais pendant ces 2 tours, vous perdez en attaque(-30 de Mana)", ":shield: "+y + "\n :crossed_swords:  -"+ x)
         message.channel.send(y);
     }
     if(message.content === préfix + "L'épéiste"){
