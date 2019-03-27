@@ -4849,7 +4849,45 @@ if(message.content === préfix + "Guerrier défense"){
     .addField("Le guérrier pratique une parade, vous infligeant de léger dégâts, si vous attaquez à distance, alors il se contentera seulement d'éviter", x)
     message.channel.sendMessage(y);
 }
+if(message.content === préfix + "Noble attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(180));
+    var max = Math.floor(Math.max(220)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 30)
+    var y = Math.floor(Math.floor(y) * 0.70)
+        if(result >  30)
+    var y = new Discord.RichEmbed()
+    .setColor("#01FFDD")
+    .addField("Le noble vous envoies une vague d'eau qui inflige des dégats à tout le monde, réduit de *2 à la ligne de dérrière", y)
+        else
+    var y = new Discord.RichEmbed()
+    .addField("Le noble vous fous un énorme punch dans le ventre", y)
+    .setImage("https://vignette.wikia.nocookie.net/onepunchman/images/7/75/Sea_King_finishes_Stinger.png/revision/latest?cb=20151124210315")
+    .setColor("#01FFDD")
+    
+    message.channel.sendMessage(y);
+}
 
+if(message.content === préfix + "Noble défense"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 85)
+    var y = new Discord.RichEmbed()
+    .setColor("#01FFDD")
+    .addField("Le noble bloque l'attaque", y)
+        else
+    var y = new Discord.RichEmbed()
+    .setTitle("Le noble évite l'attaque")
+    .setImage("https://m.media-amazon.com/images/M/MV5BY2FmNDYzNzItNzczMC00NDJhLTg2ZGEtZTBiMmI0NWViOWQ5XkEyXkFqcGdeQXVyNjc3OTE4Nzk@._V1_SX1777_CR0,0,1777,999_AL_.jpg")
+    .setColor("#01FFDD")
+    
+    message.channel.sendMessage(y);
+}
 if(message.content === préfix + "Tombeau sinistre"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#9fa6a6")
