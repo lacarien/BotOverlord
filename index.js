@@ -4953,7 +4953,7 @@ if(message.content === préfix + "S Noble défense"){
     else if (result < 101)
          var y = new Discord.RichEmbed()
     .setColor("#01FFDD")
-    .addField("Le noble vous infliges une parade ne prennant donc aucun dégâts, si l'attaque est à distance il esquive juste", y)
+    .addField("Le noble vous infliges une parade ne prennant donc aucun dégâts, si l'attaque est à distance il esquive juste", x)
     .setImage("https://www.japanator.com/ul/34526-annotated-anime-one-punch-man-episode-8/wanpanmen%20(5)-noscale.jpg")
     
     message.channel.sendMessage(y);
