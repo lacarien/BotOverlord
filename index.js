@@ -4720,12 +4720,12 @@ if(message.content === préfix + "Petit coffre") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 50){{
     var help_embed = new Discord.RichEmbed()
-    .setTitle("Monstre aquatique")
+    .setTitle("Golem de sable")
     .setColor("#AAEEFF")
     .addField("Point de vie", "1000HP")
     .addField("Attaque", "?Monstre attaque")
     .addField("Défense", "?Monstre défense")
-    .setImage("")
+    .setImage("https://media.discordapp.net/attachments/454694319396356128/560180788004651019/412c147ddd889658914f868f8d52cd38.png?width=395&height=559")
     message.channel.sendMessage(help_embed);
 }}
     else if(result < 90){
@@ -4756,6 +4756,85 @@ if(message.content === préfix + "Petit coffre") {
     }
 
 
+}
+    
+    if(message.content === préfix + "S Golem attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(130)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 30)
+    var y = Math.floor(Math.floor(y) * 0.5)
+        if(result >  30)
+    var y = new Discord.RichEmbed()
+    .addField("Le golem de sable, vous donnes un coups de poings", y)
+    .setColor("#ffb700")
+        else
+    var y = new Discord.RichEmbed()
+    .setColor("#ffb700")
+    .setImage("https://media.discordapp.net/attachments/454694319396356128/560180788004651019/412c147ddd889658914f868f8d52cd38.png?width=395&height=559")
+    .addField("Le golem de sable, crée une tornade de sable, qui inflige des dégâts à tout les ennemies. La première ligne subit le double des dégâts", y)
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "S Golem défense"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(60)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result >  30)
+    var y = new Discord.RichEmbed()
+    .addField("Le golem de sable tente de bloquer avec ses bras", y)
+    .setColor("#ffb700")
+        else
+    var y = new Discord.RichEmbed()
+    .setColor("#ffb700")
+    .setTitle("Votre attaque traverse le sable, il ne subit aucun dégat")
+    message.channel.sendMessage(y);
+}
+
+
+if(message.content === préfix + "Guerrier attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(150));
+    var max = Math.floor(Math.max(180)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    var y = new Discord.RichEmbed()
+    .addField("Le guerrier essaye de vous infliger un coups en diagonale à l'aide de son épée", y)
+    .setColor("#331988")
+    message.channel.sendMessage(y);
+}
+if(message.content === préfix + "Guerrier défense"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(40)); 
+    var mins = Math.floor(Math.min(40));
+    var maxs = Math.floor(Math.max(60)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result >  30)
+    var y = new Discord.RichEmbed()
+    .addField("Le guerrier utilise son bouclier pour se défendre", y)
+    .setColor("#331988")
+        else
+    var y = new Discord.RichEmbed()
+    .setColor("#331988")
+    .setImage("https://media.discordapp.net/attachments/454694319396356128/560180788004651019/412c147ddd889658914f868f8d52cd38.png?width=395&height=559")
+    .addField("Le guérrier pratique une parade, vous infligeant de léger dégâts, si vous attaquez à distance, alors il se contentera seulement d'éviter", x)
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Tombeau sinistre"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#9fa6a6")
+    .setTitle("Le tombeau qui annonce votre fin...(-100 de mana)")
+    .setDescription("L'ennemie ne pourra plus bloquer, ni esquiver, ni attaquer, ni utiliser une compétence(sauf aura) tant qu'il n'a pas reçu de dégats. Il sera bloqué maximum 2 tours. Hors RP le tombeau consomme 100 de mana toute les 5minutes")
+    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/560458979575332881/unknown.png")
+    message.channel.sendMessage(help_embed);
 }
     
     
