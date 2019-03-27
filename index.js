@@ -4823,7 +4823,7 @@ if(message.content === préfix + "Guerrier défense"){
         else
     var y = new Discord.RichEmbed()
     .setColor("#331988")
-    .setImage("https://media.discordapp.net/attachments/454694319396356128/560180788004651019/412c147ddd889658914f868f8d52cd38.png?width=395&height=559")
+    .setImage("https://media.discordapp.net/attachments/454694319396356128/560080305709645834/400px-Wyrmguard_full.jpg")
     .addField("Le guérrier pratique une parade, vous infligeant de léger dégâts, si vous attaquez à distance, alors il se contentera seulement d'éviter", x)
     message.channel.sendMessage(y);
 }
