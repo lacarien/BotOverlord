@@ -989,7 +989,7 @@ if(message.content === préfix + "PC Berserk"){
     
      if(message.content === préfix + "Coup furtif"){
         
-    var min = Math.floor(Math.min(95));
+    var min = Math.floor(Math.min(100));
    var max = Math.floor(Math.max(120)); 
    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
       var result = Math.floor((Math.random() * 100) +1);
@@ -1002,7 +1002,7 @@ if(message.content === préfix + "PC Berserk"){
    var y = new Discord.RichEmbed()
    .setColor("#ff2300")
    .addField("Vous trouvez le point vital de votre adversaire et lui transpercé le blocage ", y)
-   .setImage("http://wallpapersexpert.com/data/out/7/3324698-ninja-wallpapers.jpg")
+   .setImage("https://cdn.discordapp.com/attachments/541643841061519361/560464712077279252/3324698-ninja-wallpapers.png")
    message.channel.send(y);
 }
     
