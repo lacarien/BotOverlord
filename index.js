@@ -4911,6 +4911,64 @@ if(message.content === préfix + "Tombeau sinistre"){
     message.channel.send(result);
 
 }
+    if(message.content === préfix + "S Noble attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(250));
+    var max = Math.floor(Math.max(300)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 20)
+    var y = Math.floor(Math.floor(y) * 0.3)
+        if(result <  20)
+    var y = new Discord.RichEmbed()
+    .setColor("#01FFDD")
+    .addField("Le noble envoie une vague uniquement à la ligne de dérrière", y)
+        else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .addField("Le noble vous attaques avec sa langue", y)
+    .setImage("http://vignette2.wikia.nocookie.net/onepunchman/images/f/f2/Sea_King_moray.png/revision/latest?cb=20151124210406")
+    .setColor("#01FFDD")
+    
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "S Noble défense"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(60)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var mins = Math.floor(Math.min(120));
+    var maxs = Math.floor(Math.max(180)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 70)
+    var y = new Discord.RichEmbed()
+    .setColor("#01FFDD")
+    .addField("Le noble bloque l'attaque", y)
+        else if (result < 90)
+    var y = new Discord.RichEmbed()
+    .setTitle("Le noble ésquive l'attaque")
+    .setImage("http://vignette2.wikia.nocookie.net/onepunchman/images/4/4f/Sea_King_true_form.png/revision/latest?cb=20151124210414")
+    .setColor("#01FFDD")
+    else if (result < 101)
+    .setColor("#01FFDD")
+    .addField("Le noble vous infliges une parade ne prennant donc aucun dégâts, si l'attaque est à distance il esquive juste", y)
+    .setimag("https://www.japanator.com/ul/34526-annotated-anime-one-punch-man-episode-8/wanpanmen%20(5)-noscale.jpg")
+    
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Transformation aquatique"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#07848e")
+    .setTitle("Le grand noble")
+    .addField("Point de vie", "3000")
+    .addField("Attaque", "?S Noble attaque")
+    .addField("Défense", "S Noble défense")
+    .addField("Passifs", "Aucune...Sachez juste qu'ici repose votre futur tombe")
+    .setImage("https://theglorioblog.files.wordpress.com/2015/12/opm9seaking.jpg")
+    message.channel.sendMessage(help_embed);
+}
 });
 
 
