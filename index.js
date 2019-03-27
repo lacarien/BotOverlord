@@ -4951,6 +4951,7 @@ if(message.content === préfix + "S Noble défense"){
     .setImage("http://vignette2.wikia.nocookie.net/onepunchman/images/4/4f/Sea_King_true_form.png/revision/latest?cb=20151124210414")
     .setColor("#01FFDD")
     else if (result < 101)
+         var y = new Discord.RichEmbed()
     .setColor("#01FFDD")
     .addField("Le noble vous infliges une parade ne prennant donc aucun dégâts, si l'attaque est à distance il esquive juste", y)
     .setimag("https://www.japanator.com/ul/34526-annotated-anime-one-punch-man-episode-8/wanpanmen%20(5)-noscale.jpg")
