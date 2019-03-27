@@ -4723,8 +4723,8 @@ if(message.content === préfix + "Petit coffre") {
     .setTitle("Golem de sable")
     .setColor("#AAEEFF")
     .addField("Point de vie", "1000HP")
-    .addField("Attaque", "?Monstre attaque")
-    .addField("Défense", "?Monstre défense")
+    .addField("Attaque", "?S Golem attaque")
+    .addField("Défense", "?S Golem défense")
     .setImage("https://media.discordapp.net/attachments/454694319396356128/560180788004651019/412c147ddd889658914f868f8d52cd38.png?width=395&height=559")
     message.channel.sendMessage(help_embed);
 }}
@@ -4768,13 +4768,14 @@ if(message.content === préfix + "Petit coffre") {
     var y = Math.floor(Math.floor(y) * 0.5)
         if(result >  30)
     var y = new Discord.RichEmbed()
-    .addField("Le golem de sable, vous donnes un coups de poings", y)
-    .setColor("#ffb700")
-        else
-    var y = new Discord.RichEmbed()
     .setColor("#ffb700")
     .setImage("https://media.discordapp.net/attachments/454694319396356128/560180788004651019/412c147ddd889658914f868f8d52cd38.png?width=395&height=559")
     .addField("Le golem de sable, crée une tornade de sable, qui inflige des dégâts à tout les ennemies. La première ligne subit le double des dégâts", y)
+        else
+    var y = new Discord.RichEmbed()
+    .addField("Le golem de sable, vous donnes un coups de poings", y)
+    .setColor("#ffb700")
+    
     message.channel.sendMessage(y);
 }
 
