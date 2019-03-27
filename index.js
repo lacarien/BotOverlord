@@ -986,6 +986,27 @@ if(message.content === préfix + "PC Berserk"){
        .setImage("http://s1.1zoom.me/big0/817/DOTA_2_Phantom_assassin_477640.jpg")
        message.channel.send(y);
    }
+    
+     if(message.content === préfix + "Coup furtif"){
+        
+    var min = Math.floor(Math.min(95));
+   var max = Math.floor(Math.max(120)); 
+   var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+      var result = Math.floor((Math.random() * 100) +1);
+   if(result < 85)
+   var y = new Discord.RichEmbed()
+   .addField("Vous faites un bond rapide sur votre adversaire ", y)
+   .setColor("#ff2300")
+   .setImage("https://image.winudf.com/v2/image/Y29tLm5pbmphc2FtdXJhaS5hbmFrcGFkYW5nX3NjcmVlbl8zXzE1MTcwNDcwNjBfMDE3/screen-3.jpg?h=800&fakeurl=1&type=.jpg")
+   if(result > 85)
+   var y = new Discord.RichEmbed()
+   .setColor("#ff2300")
+   .addField("Vous trouvez le point vital de votre adversaire et lui transpercé le blocage ", y)
+   .setImage("http://wallpapersexpert.com/data/out/7/3324698-ninja-wallpapers.jpg")
+   message.channel.send(y);
+}
+    
+    
 if(message.content === préfix + "Aura du gardien"){
         var mins = Math.floor(Math.min(13));
         var maxs = Math.floor(Math.max(23)); 
