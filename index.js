@@ -1736,7 +1736,7 @@ if(message.content === préfix + "Saignement démoniaque"){
     message.channel.sendMessage(y);
 }
 
-    if(message.content === préfix + "Invocation dange"){
+    if(message.content === préfix + "Invocation d'ange"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("ange")
     .setColor("#ffffff")
