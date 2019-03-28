@@ -4819,7 +4819,7 @@ if(message.content === préfix + "Petit coffre") {
     
     if(message.content === préfix + "S Golem attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(100));
+    var min = Math.floor(Math.min(120));
     var max = Math.floor(Math.max(130)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
@@ -4829,7 +4829,7 @@ if(message.content === préfix + "Petit coffre") {
     var y = new Discord.RichEmbed()
     .setColor("#ffb700")
     .setImage("https://media.discordapp.net/attachments/454694319396356128/560180788004651019/412c147ddd889658914f868f8d52cd38.png?width=395&height=559")
-    .addField("Le golem de sable, crée une tornade de sable, qui inflige des dégâts à tout les ennemies. La première ligne subit le double des dégâts", y)
+    .addField("Le golem de sable, crée une tornade de sable, qui inflige des dégâts à tout les ennemies. La première ligne subit le double des dégâts. C'est imblocable", y)
         else
     var y = new Discord.RichEmbed()
     .addField("Le golem de sable, vous donnes un coups de poings", y)
@@ -4858,8 +4858,8 @@ if(message.content === préfix + "S Golem défense"){
 
 if(message.content === préfix + "Guerrier attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(150));
-    var max = Math.floor(Math.max(180)); 
+    var min = Math.floor(Math.min(170));
+    var max = Math.floor(Math.max(190)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     var y = new Discord.RichEmbed()
@@ -4871,8 +4871,8 @@ if(message.content === préfix + "Guerrier défense"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(20));
     var max = Math.floor(Math.max(40)); 
-    var mins = Math.floor(Math.min(40));
-    var maxs = Math.floor(Math.max(60)); 
+    var mins = Math.floor(Math.min(50));
+    var maxs = Math.floor(Math.max(70)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
@@ -4897,13 +4897,14 @@ if(message.content === préfix + "Noble attaque"){
     var y = Math.floor(Math.floor(y) * 0.70)
         if(result >  30)
     var y = new Discord.RichEmbed()
-    .setColor("#01FFDD")
-    .addField("Le noble vous envoies une vague d'eau qui inflige des dégats à tout le monde, réduit de *2 à la ligne de dérrière", y)
-        else
-    var y = new Discord.RichEmbed()
     .addField("Le noble vous fous un énorme punch dans le ventre", y)
     .setImage("https://vignette.wikia.nocookie.net/onepunchman/images/7/75/Sea_King_finishes_Stinger.png/revision/latest?cb=20151124210315")
     .setColor("#01FFDD")
+        else
+    var y = new Discord.RichEmbed()
+     .setColor("#01FFDD")
+    .addField("Le noble vous envoies une vague d'eau qui inflige des dégats à tout le monde, réduit de *2 à la ligne de dérrière", y)
+   
     
     message.channel.sendMessage(y);
 }
@@ -4996,6 +4997,58 @@ if(message.content === préfix + "S Noble défense"){
     
     message.channel.sendMessage(y);
 }
+    
+    if(message.content === préfix + "Mort Golem de sable"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(70));
+    var max = Math.floor(Math.max(140)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(20));
+    var maxs = Math.floor(Math.max(50)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var minss = Math.floor(Math.min(3));
+    var maxss = Math.floor(Math.max(10)); 
+    var w = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + ":third_place:  Pièce(s) de bronze" + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w)
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}  
+if(message.content === préfix + "Mort Guerrier aquatique"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(200)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(60));
+    var maxs = Math.floor(Math.max(80)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var minss = Math.floor(Math.min(5));
+    var maxss = Math.floor(Math.max(15)); 
+    var w = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + ":third_place:  Pièce(s) de bronze" + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w)
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}  
+if(message.content === préfix + "Mort Noble aquatique"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(700));
+    var max = Math.floor(Math.max(1000)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(300));
+    var maxs = Math.floor(Math.max(450)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var minss = Math.floor(Math.min(60));
+    var maxss = Math.floor(Math.max(90)); 
+    var w = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + ":third_place:  Pièce(s) de bronze" + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w +"\n futur item légendaire")
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}  
 
 if(message.content === préfix + "Transformation aquatique"){
     var help_embed = new Discord.RichEmbed()
