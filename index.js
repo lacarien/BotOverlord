@@ -1744,7 +1744,7 @@ if(message.content === préfix + "Saignement démoniaque"){
     .addField("HP", "150")
     .addField("Attaque", "?A attaque")
     .addField("Défense", "?A défense")
-    .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/6/61/Overlord_EP04_009.png/revision/latest?cb=20150730115157")
+    .setImage("https://media.discordapp.net/attachments/541643841061519361/560871237660966913/latest.png?width=832&height=468")
     message.channel.sendMessage(help_embed);
 }
     if(message.content === préfix + "A attaque"){
