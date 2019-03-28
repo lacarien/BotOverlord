@@ -1736,14 +1736,14 @@ if(message.content === préfix + "Saignement démoniaque"){
     message.channel.sendMessage(y);
 }
 
-if(message.content === préfix + "?Invocation d'ange"){
+    if(message.content === préfix + "Invocation dange"){
     var help_embed = new Discord.RichEmbed()
-    .setTitle("Ange")
-    .setDescription("Vous invoquez un Ange guerrier, il attaque et se défend à chaque tour si il est prit pour cible")
+    .setTitle("ange")
+    .setColor("#ffffff")
+    .setDescription("Vous invoquez un ange guerrier qui attaque et se défend constament, néanmoins il doit utiliser le ciblage pour attaquer quelqu'un")
     .addField("HP", "150")
     .addField("Attaque", "?A attaque")
     .addField("Défense", "?A défense")
-    .setColor("#ffffff")
     .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/6/61/Overlord_EP04_009.png/revision/latest?cb=20150730115157")
     message.channel.sendMessage(help_embed);
 }
