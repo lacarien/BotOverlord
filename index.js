@@ -4891,7 +4891,7 @@ if(message.content === préfix + "Noble défense"){
 if(message.content === préfix + "Tombeau sinistre"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#9fa6a6")
-    .setTitle("Le tombeau qui annonce votre fin...(-100 de mana)")
+    .setTitle("Le tombeau qui annonce votre fin...(-250 de mana)")
     .setDescription("L'ennemie ne pourra plus bloquer, ni esquiver, ni attaquer, ni utiliser une compétence(sauf aura) tant qu'il n'a pas reçu de dégats. Il sera bloqué maximum 2 tours. Hors RP le tombeau consomme 100 de mana toute les 5minutes")
     .setImage("https://cdn.discordapp.com/attachments/454694319396356128/560458979575332881/unknown.png")
     message.channel.sendMessage(help_embed);
