@@ -2888,13 +2888,19 @@ if(message.content === préfix + "Potion de mana haute"){
 if(message.content === préfix + "Shop"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#f0ff00")
-    .addField("Listes des articles par catégories", "?Information sur l'argent"+" \n ?Parchemin" +"\n ?Arme"+"\n ?Armure"+"\n ?Potion" + "\n ?Divers");
+    .addField("Listes des articles par catégories", "?Information sur l'argent"+" \n ?4" +"\n ?Arme"+"\n ?Armure"+"\n ?Potion" + "\n ?Divers");
     message.channel.sendMessage(help_embed);
 }
  if(message.content === préfix + "Arme"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#f0ff00")
     .addField("Les Armes", "Elles ne sont pas achetables, mais peuvent être obtenue via des events ou des loots rares");
+    message.channel.sendMessage(help_embed);
+}   
+    if(message.content === préfix + "Divers"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#f0ff00")
+    .addField("Ticket de bateaux (ne comporte que l'aller)", "25 pièces d'argent'" + "\n 100 pièces de bronze");
     message.channel.sendMessage(help_embed);
 }   
     
