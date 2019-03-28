@@ -1717,17 +1717,17 @@ if(message.content === préfix + "Saignement démoniaque"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("L'Ange")
     .setColor("#ffffff")
-    .setDescription("Vous invoquez un Ange puissant et faisant frémir vos ennemies. Il attaque 1 fois tout les 3tours")
-    .addField("HP", "150")
+    .setDescription("Vous invoquez un Ange puissant et faisant frémir vos ennemies. Il attaque 1 fois tout les 3tours. Au bout du 6eme tours, il devient automatiquement une cible prioritaire par les mobs, même si celui-ci est placé en seconde ligne")
+    .addField("HP", "500")
     .addField("Attaque", "?Ange attaque")
-    .addField("Défense", "?Ange défense")
+    .addField("Défense", "?Aucune")
     .setImage("https://image.myanimelist.net/ui/z3a0S--4LnRurzJAHi0hLc7mUF0wHOYpG-DmXnKO5JE322e5dl0OZhyBMAbg8szq")
     message.channel.sendMessage(help_embed);
 }
     if(message.content === préfix + "Ange attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(150));
-    var max = Math.floor(Math.max(200)); 
+    var min = Math.floor(Math.min(400));
+    var max = Math.floor(Math.max(600)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("l'ange vous attaques avec un pouvoir divin faisant des ravages...", y)
@@ -1735,16 +1735,7 @@ if(message.content === préfix + "Saignement démoniaque"){
     .setImage("https://anilyze.files.wordpress.com/2015/08/horriblesubs-overlord-04-720p-mkv_snapshot_16-52_2015-08-06_22-33-52.jpg")
     message.channel.sendMessage(y);
 }
-if(message.content === préfix + "Ange défense"){
-    var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(0));
-    var max = Math.floor(Math.max(30)); 
-    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var y = new Discord.RichEmbed()
-    .addField("l'ange ne se défend pas et se contente de subir pendant qu'il rechargé son attaque", y)
-    .setColor("#ffffff")
-    message.channel.sendMessage(y);
-}
+
 
     
     
@@ -3057,6 +3048,15 @@ if(message.content === préfix + "Parchemin d'invocation'"){
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "Parchemin d'invocation"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("?Invocation divine", "700 pièces de bronze \n 300 pièces d'argent' \n 100 pièces d'or")
+    .addField("?Invocation d'ange", "200 pièces de bronze \n 50 pièces d'argent")
+    
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}
+    
 if(message.content === préfix + "Parchemin de fuite"){
     var help_embed = new Discord.RichEmbed()
     .addField("Parchemin de fuite simple", "50 pièces de bronze \n Utilisation une fois achetté: ?Parchemin de fuite simple")
