@@ -1736,7 +1736,39 @@ if(message.content === préfix + "Saignement démoniaque"){
     message.channel.sendMessage(y);
 }
 
+if(message.content === préfix + "?Invocation d'ange"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Ange")
+    .setColor("#ffffff")
+    .setDescription("Vous invoquez un Ange guerrier, il attaque et se défend à chaque tour si il est prit pour cible")
+    .addField("HP", "150")
+    .addField("Attaque", "?A attaque")
+    .addField("Défense", "?A défense")
+    .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/6/61/Overlord_EP04_009.png/revision/latest?cb=20150730115157")
+    message.channel.sendMessage(help_embed);
+}
+    if(message.content === préfix + "A attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(150)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("l'ange vous donnes un coups d'épée", y)
+    .setColor("#ffffff")
+    message.channel.sendMessage(y);
+}
 
+
+if(message.content === préfix + "A défense"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le guerrier angélique tente de bloquer l'attaque tant bien que mal", y)
+    .setColor("#ffffff")
+    message.channel.sendMessage(y);
+}
     
     
     if(message.content === préfix + "Esquive simple") {
