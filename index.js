@@ -5011,7 +5011,7 @@ if(message.content === préfix + "S Noble défense"){
     var maxss = Math.floor(Math.max(10)); 
     var w = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
     var y = new Discord.RichEmbed()
-    .addField("Gain du loot :exclamation: ",":third_place:  Pièce(s) de bronze" + y + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w)
+    .addField("Gain du loot :exclamation: ",":third_place:  Pièce(s) de bronze " + y + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w)
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }  
@@ -5028,7 +5028,7 @@ if(message.content === préfix + "Mort Guerrier aquatique"){
     var maxss = Math.floor(Math.max(15)); 
     var w = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
     var y = new Discord.RichEmbed()
-    .addField("Gain du loot :exclamation: ", ":third_place:  Pièce(s) de bronze" + y + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w)
+    .addField("Gain du loot :exclamation: ", ":third_place:  Pièce(s) de bronze " + y + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w)
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }  
@@ -5045,7 +5045,7 @@ if(message.content === préfix + "Mort Noble aquatique"){
     var maxss = Math.floor(Math.max(90)); 
     var w = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
     var y = new Discord.RichEmbed()
-    .addField("Gain du loot :exclamation: ",":third_place:  Pièce(s) de bronze" + y + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w +"\n futur item légendaire")
+    .addField("Gain du loot :exclamation: ",":third_place:  Pièce(s) de bronze " + y + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w +"\n futur item légendaire")
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }  
