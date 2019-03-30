@@ -3011,6 +3011,21 @@ if(message.content === préfix + "Achat : armure simple avec cotte de mailles"){
     .setColor("#0006a4")
     message.channel.sendMessage(y);    
 }
+    if(message.content === préfix + "Armure guerrier aquatique"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(150));
+    var max = Math.floor(Math.max(250)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var mins = Math.floor(Math.min(30));
+    var maxs = Math.floor(Math.max(50)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var y = new Discord.RichEmbed()
+  
+    .addField(":shield:  Armure du guerrier aquatique", "HP: " + y + ":hearts: \n Mana: " + x +":sparkles: ")
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);    
+}
+    
 if(message.content === préfix + "Achat : armure en plate"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(220));
