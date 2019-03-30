@@ -5027,10 +5027,25 @@ if(message.content === préfix + "Mort Guerrier aquatique"){
     var minss = Math.floor(Math.min(5));
     var maxss = Math.floor(Math.max(15)); 
     var w = Math.floor(Math.random() * (maxss - minss + 1) ) + minss;
+
+
+     var minsss = Math.floor(Math.min(150));
+    var maxsss = Math.floor(Math.max(250)); 
+    var z = Math.floor(Math.random() * (maxsss - minsss + 1) ) + minsss;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 30)
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", ":third_place:  Pièce(s) de bronze " + y + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w)
     .setColor("#9e9a9a")
+         var x = new Discord.RichEmbed()
+         .addField("Armure du guerrier aquatique", ":hearts: "+ z)
+         .setColor("#008cff")
+    else if(result < 101)
+        var y = new Discord.RichEmbed()
+         .addField("Gain du loot :exclamation: ", ":third_place:  Pièce(s) de bronze " + y + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w)
+    .setColor("#9e9a9a")
     message.channel.sendMessage(y);
+     message.channel.sendMessage(x);
 }  
 if(message.content === préfix + "Mort Noble aquatique"){
     var help_embed = new Discord.RichEmbed()
