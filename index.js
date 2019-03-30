@@ -5045,7 +5045,7 @@ if(message.content === préfix + "Mort Guerrier aquatique"){
          .addField("Gain du loot :exclamation: ", ":third_place:  Pièce(s) de bronze " + y + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w)
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
-     message.channel.sendMessage(z);
+ 
 }  
     
     
