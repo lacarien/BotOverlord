@@ -3022,7 +3022,7 @@ if(message.content === préfix + "Achat : armure simple avec cotte de mailles"){
     var y = new Discord.RichEmbed()
   
     .addField(":shield:  Armure du guerrier aquatique", "HP: " + y + ":hearts: \n Mana: " + x +":sparkles: ")
-    .setColor("#9e9a9a")
+    .setColor("#331988")
     message.channel.sendMessage(y);    
 }
     
@@ -5046,7 +5046,7 @@ if(message.content === préfix + "Mort Guerrier aquatique"){
         if(result < 30)
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", ":third_place:  Pièce(s) de bronze " + y + "\n :second_place:  Pièces d'argent " + x + "\n :first_place:  Pièces d'or " + w)
-    .setColor("#9e9a9a")
+    .setColor("#331988")
          .addField("Armure peu commune", "?Armure guerrier aquatique")
    
     else if(result < 101)
