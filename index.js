@@ -1088,7 +1088,7 @@ if(message.content === préfix + "Aura du gardien"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#0046ff")
-        .addField("Vous levez un pied et concentrez toute votre magie dans celui-ci pour impacter le sol et infligez des dégâts à tout les ennemies, non esquivable et non blocable(-50 de mana)"+ y)
+        .addField("Vous levez un pied et concentrez toute votre magie dans celui-ci pour impacter le sol et infligez des dégâts à tout les ennemies, non esquivable et non blocable(-50 de mana)", ":dagger: " + y)
         .setImage("https://www.pop-up-urbain.com/wp-content/uploads/2017/01/tumblr_o9fw2kC9cj1ucpcboo1_540.gif")
         message.channel.send(y);
     }
