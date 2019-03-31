@@ -1390,7 +1390,7 @@ if(message.content === préfix + "Drapeau de défense"){
     var y = new Discord.RichEmbed()
     .setColor("#00295b")
     .setImage("https://www.desktopbackground.org/p/2013/08/11/621417_deviantart-more-like-meh-demons-souls-wallpapers-by-hitokiriex_900x615_h.jpg")
-    .addField("Ses bloquages sont réduis pendant  2 tours et ses attaques augmentes pendant 2 tours (-30 de mana)", "Votre défense est réduite de :boom:  " + y + "\n vos dégats ont un bonus :crossed_swords:  " + x )
+    .addField("Ses bloquages sont réduis pendant  2 tours et ses attaques augmentes pendant 2 tours (-30 de mana)", "Votre blocage est réduite de :boom:  " + y + "\n vos dégats ont un bonus :crossed_swords:  " + x )
     message.channel.sendMessage(y);
 }
     if(message.content === préfix + "Charge de Berserk"){
@@ -1399,7 +1399,7 @@ if(message.content === préfix + "Drapeau de défense"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#00295b")
-        .addField("Vous foncez sur 2 ennemies et leur infligez à chacun de lourd dégats(-50 de mana)"+ y)
+        .addField("Vous foncez sur 2 ennemies et leur infligez à chacun de lourd dégats(-50 de mana)", ":crossed_swords:  " + y)
         .setImage("https://media.giphy.com/media/1k2XDMeOFWKwekvfQX/giphy.gif")
         message.channel.send(y);
     }
