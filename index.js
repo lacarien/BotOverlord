@@ -4699,7 +4699,7 @@ if(message.content === préfix + "Lancé de dague"){
     else if(x < 4)
     var y = new Discord.RichEmbed()
     .setColor("#4e8b27")
-    .setTitle("Vous lancé une dague qui endort votre ennemie au prochain tours(-40 de Mana)")
+    .setTitle("Vous lancé une dague qui paralyse votre ennemie, l'empechant de bloquer au prochain tours(-40 de Mana)")
     message.channel.sendMessage(y);
 }
  if(message.content === préfix + "Trouble démoniaque"){
