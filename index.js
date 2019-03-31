@@ -1082,6 +1082,16 @@ if(message.content === préfix + "Aura du gardien"){
     .setImage("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12f53076-bdc0-4ad4-8de8-3bd26a505de3/d6th824-629e9549-c08d-499f-bedb-a1b4f868d130.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEyZjUzMDc2LWJkYzAtNGFkNC04ZGU4LTNiZDI2YTUwNWRlM1wvZDZ0aDgyNC02MjllOTU0OS1jMDhkLTQ5OWYtYmVkYi1hMWI0Zjg2OGQxMzAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3iwD07G6xKOeXoizbMLn-l_CjggulZBUukDlivGlPho")
     message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "Tremblement de terre"){
+        var min = Math.floor(Math.min(30));
+        var max = Math.floor(Math.max(50)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#0046ff")
+        .addField("Vous levez un pied et concentrez toute votre magie dans celui-ci pour impacter le sol et infligez des dégâts à tout les ennemies, non esquivable et non blocable(-50 de mana)"+ y)
+        .setImage("https://www.pop-up-urbain.com/wp-content/uploads/2017/01/tumblr_o9fw2kC9cj1ucpcboo1_540.gif")
+        message.channel.send(y);
+    }
     
     if(message.content === préfix + "Provocation simple"){
         var min = Math.floor(Math.min(45));
@@ -1295,7 +1305,7 @@ if(message.content === préfix + "Tir explosif"){
     }
      if(message.content === préfix + "Cl Blocage"){
         var min = Math.floor(Math.min(55));
-        var max = Math.floor(Math.max(65)); 
+        var max = Math.floor(Math.max(60)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous executez un blocage digne d'un clerc", ":shield: "+y)
