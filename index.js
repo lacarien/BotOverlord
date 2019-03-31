@@ -4683,7 +4683,7 @@ if(message.content === préfix + "Coup de dague rapide"){
 }
 if(message.content === préfix + "Lancé de dague"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(30));
+    var min = Math.floor(Math.min(35));
     var max = Math.floor(Math.max(50)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor((Math.random() * 3) + 1);
