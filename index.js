@@ -1084,7 +1084,7 @@ if(message.content === préfix + "Aura du gardien"){
 }
     if(message.content === préfix + "Tremblement de terre"){
         var min = Math.floor(Math.min(30));
-        var max = Math.floor(Math.max(50)); 
+        var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#0046ff")
