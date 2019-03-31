@@ -1393,6 +1393,16 @@ if(message.content === préfix + "Drapeau de défense"){
     .addField("Ses bloquages sont réduis pendant  2 tours et ses attaques augmentes pendant 2 tours (-30 de mana)", "Votre défense est réduite de :boom:  " + y + "\n vos dégats ont un bonus :crossed_swords:  " + x )
     message.channel.sendMessage(y);
 }
+    if(message.content === préfix + "Charge de Berserk"){
+        var min = Math.floor(Math.min(60));
+        var max = Math.floor(Math.max(80)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#00295b")
+        .addField("Vous foncez sur 2 ennemies et leur infligez à chacun de lourd dégats(-50 de mana)"+ y)
+        .setImage("https://media.giphy.com/media/1k2XDMeOFWKwekvfQX/giphy.gif")
+        message.channel.send(y);
+    }
 
     if(message.content === préfix + "Tir à l'arc"){
         var min = Math.floor(Math.min(10));
