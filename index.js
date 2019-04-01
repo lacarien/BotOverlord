@@ -4655,7 +4655,7 @@ if(message.content === préfix + "Tornade ténénbreuse"){
 }
 
 if(message.content === préfix + "Tir magique"){
-    var min = Math.floor(Math.min(90));
+    var min = Math.floor(Math.min(110));
     var max = Math.floor(Math.max(130)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
@@ -4689,7 +4689,7 @@ if(message.content === préfix + "Coup de dague rapide"){
    var max = Math.floor(Math.max(110)); 
    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
       var result = Math.floor((Math.random() * 100) +1);
-   if(result < 80)
+   if(result < 70)
    var y = new Discord.RichEmbed()
    .addField("Vous lui infligé un coup de dague rapide et lui infligé", y)
    .setColor("#ff6000")
