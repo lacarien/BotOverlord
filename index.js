@@ -4610,12 +4610,12 @@ if(message.content === préfix + "Arc magique"){
 
 
 if(message.content === préfix + "Blocage démoniaque"){
-    var min = Math.floor(Math.min(80));
-    var max = Math.floor(Math.max(110)); 
+    var min = Math.floor(Math.min(110));
+    var max = Math.floor(Math.max(140)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("")
-    .addField("Votre bouclier prend une aura démoniaquue et aspire de votre mana pour bloquer le coups(-50 de Mana)", y)
+    .addField("Votre bouclier prend une aura démoniaquue et aspire de votre mana pour bloquer le coups(-60 de Mana)", y)
     .setImage("https://i.pinimg.com/originals/33/b6/5f/33b65fef141b7dd31737f84e8dda02f8.jpg")
     message.channel.send(y);
 }
@@ -4624,7 +4624,7 @@ if(message.content === préfix + "Parade folle"){
     var min = Math.floor(Math.min(120));
     var max = Math.floor(Math.max(160)); 
     var w = Math.floor(Math.random() * (max - min + 1) ) + min;
-    if(result < 30){
+    if(result < 35){
     var w = new Discord.RichEmbed()
     .setColor("#1a00ff")
     .addField("Vous réussiez la parade et vous lui infligez :crossed_swords: ", w)
@@ -4665,8 +4665,8 @@ if(message.content === préfix + "Tir magique"){
 }
 
 if(message.content === préfix + "Pluie de fleche"){
-    var min = Math.floor(Math.min(40));
-    var max = Math.floor(Math.max(60)); 
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(70)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Vous tirez en l'air, votre fleche explose et fait apparaitre une pluie de fleches qui blesse tout les ennemies(-50 de Mana)",":bow_and_arrow: "+ y)
@@ -4685,7 +4685,7 @@ if(message.content === préfix + "Invocation de gardien"){
 }
 if(message.content === préfix + "Coup de dague rapide"){
         
-    var min = Math.floor(Math.min(70));
+    var min = Math.floor(Math.min(80));
    var max = Math.floor(Math.max(110)); 
    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
       var result = Math.floor((Math.random() * 100) +1);
@@ -4703,8 +4703,8 @@ if(message.content === préfix + "Coup de dague rapide"){
 }
 if(message.content === préfix + "Lancé de dague"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(35));
-    var max = Math.floor(Math.max(50)); 
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(75)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor((Math.random() * 3) + 1);
     if(result < 2)
@@ -4724,15 +4724,15 @@ if(message.content === préfix + "Lancé de dague"){
 }
  if(message.content === préfix + "Trouble démoniaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(20));
-    var max = Math.floor(Math.max(50)); 
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(80)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
-        if(y < 30)
+        if(y < 45)
     var y = new Discord.RichEmbed()
-    .addField("Votre bouclier fait trembler votre adversaire et lui réduit sa défense au prochain tours (-50 de mana)", y)
+    .addField("Votre bouclier fait trembler votre adversaire et lui réduit son blocage au prochain tours (-50 de mana)", y)
     .setColor("#820000")
-        if(y > 30)
+        if(y > 45)
     var y = new Discord.RichEmbed()
     .setColor("#820000")
     .addField("Votre bouclier fait trembler de peur votre adversaire et lui réduit sa défense au prochain tours (-75 d'HP)", y)
