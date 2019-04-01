@@ -4679,7 +4679,7 @@ if(message.content === préfix + "Invocation de gardien"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#000000")
-    .addField("Fait apparaitre un golem de bois inoffensif qui se prendra tout les dégats à votre place", y + ":heart: ")
+    .addField("Fait apparaitre un golem de bois inoffensif qui se prendra tout les dégats à votre place.(-300 de mana / utilisable une fois par combats)", y + ":heart: ")
     .setImage("https://i.pinimg.com/originals/d0/0c/b9/d00cb927aa373746143cca0368271165.jpg")
     message.channel.send(y);
 }
