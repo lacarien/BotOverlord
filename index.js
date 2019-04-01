@@ -1182,7 +1182,7 @@ if(message.content === préfix + "Tir explosif"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#12110F")
-        .addField("Vous lancez des shurikens qui sont imblocables(-40 de mana)"+ y)
+        .addField("Vous lancez des shurikens qui sont imblocables(-40 de mana)," ":bow_and_arrow: " + y)
         .setImage("https://giphy.com/gifs/1jY3YT7UKsr6ELnuwt")
         message.channel.send(y);
     }
