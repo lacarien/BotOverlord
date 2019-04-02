@@ -1117,7 +1117,7 @@ if(message.content === préfix + "Aura du gardien"){
 
 
     if(message.content === préfix + "Tir rapide"){
-        var min = Math.floor(Math.min(25));
+        var min = Math.floor(Math.min(30));
         var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
@@ -1440,7 +1440,7 @@ if(message.content === préfix + "Drapeau de défense"){
         var max = Math.floor(Math.max(70)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous envoyez un sort sur votre adversaire",":sparkles: "+ y)
+        .addField("Vous envoyez un sort sur votre adversaire(-20 de Mana)",":sparkles: "+ y)
         .setImage("https://media.giphy.com/media/2sgF179xV3fH9GW2mJ/giphy.gif")
         message.channel.send(y);
     }
