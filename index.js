@@ -1409,7 +1409,7 @@ if(message.content === préfix + "Drapeau de défense"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#00295b")
-        .addField("Vous foncez sur 2 ennemies et leur infligez à chacun de lourd dégats(-50 de mana)", ":crossed_swords:  " + y)
+        .addField("Vous foncez sur 2 ennemies et leur infligez à chacun de lourd dégats imblocable(-50 de mana)", ":crossed_swords:  " + y)
         .setImage("https://media.giphy.com/media/1k2XDMeOFWKwekvfQX/giphy.gif")
         message.channel.send(y);
     }
