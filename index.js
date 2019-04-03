@@ -1117,15 +1117,15 @@ if(message.content === préfix + "Aura du gardien"){
 
 
     if(message.content === préfix + "Tir rapide"){
-        var min = Math.floor(Math.min(30));
-        var max = Math.floor(Math.max(40)); 
+        var min = Math.floor(Math.min(40));
+        var max = Math.floor(Math.max(55)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous tentez de lui envoyer une fleche rapide en direction de son torse, cherchant à viser un point vital. Vous perdez 30 de mana", ":bow_and_arrow: "+y)
         message.channel.send(y);
     }
     if(message.content === préfix + "Tir amélioré"){
-        var min = Math.floor(Math.min(55));
+        var min = Math.floor(Math.min(60));
         var max = Math.floor(Math.max(80)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
@@ -1138,7 +1138,7 @@ if(message.content === préfix + "Aura du gardien"){
         var max = Math.floor(Math.max(160)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous tirez un énorme tir explosif(-70 de Mana)",":bow_and_arrow: "+ y)
+        .addField("Vous tirez un énorme tir explosif(-50 de Mana)",":bow_and_arrow: "+ y)
         .setImage("https://media.discordapp.net/attachments/454694319396356128/556392560612868107/unknown.png?width=994&height=560")
         message.channel.send(y);
     }
