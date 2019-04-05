@@ -859,7 +859,7 @@ if(message.content === préfix + "PC Berserk"){
     .addField("33PC", "?Cl Coup d'épée")
     .addField("35PC", "?Cl blocage")
     .addField("37PC", "?Drapeau de soins")
-    .addField("39PC", "?Dome de soins")
+    .addField("39PC", "?Lourde épée")
     .addField("41PC", "?Lumière aveuglante(si PNJ) / ?Lumière éblouissante(si joueur)")
     .addField("43PC", "?Clerc ultime")
     .addField("45PC", "Vous pouvez évoluer")
