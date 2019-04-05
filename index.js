@@ -1456,6 +1456,19 @@ if(message.content === préfix + "Drapeau de défense"){
     }
     
     
+    if(message.content === préfix + "Drapeau de soins"){
+    var y = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .setImage("https://vignette.wikia.nocookie.net/contes-des-oublies/images/3/37/Healing_by_omuk-d6mznnr.jpg/revision/latest?cb=20161010000811&path-prefix=fr")
+    .setTitle("Vous invoquez un drapeau de soins. Chaque tours vous et vos alliées gagnez des HP durant 3 tours(-50 de mana)")
+    message.channel.sendMessage(y);
+}
+    
+    
 
 
     if(message.content === préfix + "Assassin ultime"){
