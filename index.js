@@ -3014,7 +3014,7 @@ if(message.content === préfix + "AAA"){
 if(message.content === préfix + "Armure HP"){
     var help_embed = new Discord.RichEmbed()
     .addField("Armure en cuir souple", "Prix : 70 pièces de bronze \n ?Achat : armure en cuir souple")
-    .addField("Armure simple avec cotte de mailles", "Prix : 150 pièces de bronze \n 45 pièces d'argent \n ?Achat : armure simple en cotte de mailles")
+    .addField("Armure simple avec cotte de mailles", "Prix : 150 pièces de bronze \n 45 pièces d'argent \n ?Achat : armure simple avec cotte de mailles")
     .addField("Armure en plate", "Prix: 500 pièces de bronze \n 210 pièces d'argent \n 70 pièces d'or \n ?Achat : armure en plate")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
