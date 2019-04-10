@@ -1290,7 +1290,7 @@ if(message.content === préfix + "Tir explosif"){
         if(result  < 75)
     var y = new Discord.RichEmbed()
         .setColor("#12110F")
-    .addField("Vous executez un blocage de faible qualité et réussisez à bloquer(-20 de Mana)", ":shield: ", y)
+    .addField("Vous executez un blocage de faible qualité et réussisez à bloquer(-20 de Mana)", ":shield: "+ y)
       .setImage("https://media.discordapp.net/attachments/536292650698014731/564852174803435540/latest.png?width=995&height=559")
        else if (result < 101)
     var y = new Discord.RichEmbed()
