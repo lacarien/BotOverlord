@@ -1176,17 +1176,7 @@ if(message.content === préfix + "Tir explosif"){
     .addField("Vous faites un tir explosif qui blesse 3 ennemis, c'est imblocable (-50 de mana)", "Le premier reçois " + y + "\n le deuxieme se prend " + x + "\n et le dernier du " + z)
     message.channel.sendMessage(y);
 }
-    if(message.content === préfix + "Shurikens"){
-        var min = Math.floor(Math.min(90));
-        var max = Math.floor(Math.max(100)); 
-        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-        var y = new Discord.RichEmbed()
-        .setColor("#12110F")
-        .addField("Vous lancez des shurikens qui sont imblocables(-40 de mana)", ":bow_and_arrow: " + y)
-        .setImage("https://giphy.com/gifs/1jY3YT7UKsr6ELnuwt")
-        message.channel.send(y);
-    }
-
+   
     if(message.content === préfix + "Soins de bas rang"){
         var min = Math.floor(Math.min(25));
         var max = Math.floor(Math.max(40)); 
