@@ -1176,6 +1176,25 @@ if(message.content === préfix + "Tir explosif"){
     .addField("Vous faites un tir explosif qui blesse 3 ennemis, c'est imblocable (-50 de mana)", "Le premier reçois " + y + "\n le deuxieme se prend " + x + "\n et le dernier du " + z)
     message.channel.sendMessage(y);
 }
+    
+    if(message.content === préfix + "Shurikens"){
+   
+    var min = Math.floor(Math.min(80));
+   var max = Math.floor(Math.max(100)); 
+   var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+      var result = Math.floor((Math.random() * 100) +1);
+   if(result < 70)
+   var y = new Discord.RichEmbed()
+   .addField("Vous lancez des shurikens tellement rapide, qu'ils sont inévitables (-40 de mana)", y)
+   .setColor("#ff2300")
+   .setImage("https://66.media.tumblr.com/87324f50f67709174b480ca24c9eec99/tumblr_n3gjc3TQIU1sji00bo1_500.gif")
+   if(result > 70)
+   var y = new Discord.RichEmbed()
+   .setColor("#ff2300")
+   .addField("Vous lancez des shurikens qui travèrsent la défense de votre ennemie, ce qui en devient imblocable (-40 de mana)", y)
+   .setImage("https://66.media.tumblr.com/87324f50f67709174b480ca24c9eec99/tumblr_n3gjc3TQIU1sji00bo1_500.gif")
+   message.channel.send(y);
+}
    
     if(message.content === préfix + "Soins de bas rang"){
         var min = Math.floor(Math.min(25));
@@ -1348,7 +1367,7 @@ if(message.content === préfix + "Tir explosif"){
 if(message.content === préfix + "Clonage"){
             var help_embed = new Discord.RichEmbed()
             .setColor("#ffffff")
-            .addField("Clonage (-100 de Mana)", "Vous invoquez un clone qui fera partie du ciblage obligatoirement. Néanmoins celui-ci meurt à la moindre attaque qu'il subit")
+            .addField("Clonage (-120 de Mana)", "Vous invoquez un clone qui fera partie du ciblage obligatoirement. Néanmoins celui-ci meurt à la moindre attaque qu'il subit")
             .addField("Attaque", "?Clone attaque")
             .addField("Défense", "?Clone défense")
             .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/3/30/Overlord_EP12_140.png/revision/latest/scale-to-width-down/200?cb=20150924122918")
