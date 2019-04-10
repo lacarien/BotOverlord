@@ -1284,21 +1284,20 @@ if(message.content === préfix + "Tir explosif"){
         var max = Math.floor(Math.max(35)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var result = Math.floor((Math.random() * 100) + 1);
-        if(result < 65)
-        var y = Math.floor(Math.floor(y) * 1.2)
+       
+        var x = Math.floor(Math.floor(y) * 1.2)
             if(result <  65)
-        var y = new Discord.RichEmbed()
-        
+        var a = new Discord.RichEmbed()  
             .setColor("#12110F")
         .addField("Vous executez un blocage de faible qualité et réussisez à bloquer(-20 de Mana)", ":shield: ", y)
         .setImage("https://media.discordapp.net/attachments/536292650698014731/564852174803435540/latest.png?width=995&height=559")
             else if (result < 101)
-        var y = new Discord.RichEmbed()
+        var a = new Discord.RichEmbed()
     .setColor("#12110F")
-            .addField("Vous executez un blocage de faible qualité mais pourtant éfficace et réussisez à bloquer(-20 de mana)", ":shield: "+ y)
+            .addField("Vous executez un blocage de faible qualité mais pourtant éfficace et réussisez à bloquer(-20 de mana)", ":shield: "+ x)
     .setImage("https://media.discordapp.net/attachments/536292650698014731/564852174803435540/latest.png?width=995&height=559")
         
-        message.channel.sendMessage(y);
+        message.channel.sendMessage(a);
     }
     
     if(message.content === préfix + "CH Blocage"){
