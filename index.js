@@ -1281,7 +1281,7 @@ if(message.content === préfix + "Tir explosif"){
      
     
     
-    if(message.content === préfix + "Bouclier d'adamantite"){
+        if(message.content === préfix + "Bouclier d'adamantite"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(25));
     var max = Math.floor(Math.max(35)); 
@@ -1292,7 +1292,7 @@ if(message.content === préfix + "Tir explosif"){
         .setColor("#12110F")
     .addField("Vous executez un blocage de faible qualité et réussisez à bloquer(-20 de Mana)", ":shield: ", y)
       .setImage("https://media.discordapp.net/attachments/536292650698014731/564852174803435540/latest.png?width=995&height=559")
-       if (result > 75)
+       else if (result < 101)
     var y = new Discord.RichEmbed()
 .setColor("#12110F")
       .addField("Vous executez un blocage de faible qualité mais pourtant éfficace sans aucun cout de mana", ":shield: "+ y)
