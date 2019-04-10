@@ -511,6 +511,16 @@ if(message.content === préfix + "PCP Démon"){
     .addField("42PC", "Le gardien peut choisir un être vivant comme étant son protégé, il passera plus de temps avec cette personne, la protegeant de quiconque pourrait lui faire du mal")
    message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "PCP Clerc"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#8c97d9")
+    .setTitle("PCP Clerc")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("32PC", "Le Clerc est entouré d'une petite aura quand il le désire qui prouve sa bienveillance")
+    .addField("36PC", "Le Clerc est tellement gentil, qu'il a du mal à refuser")
+    .addField("42PC", "Le Clerc arrive à calmer quelqu'un en detresse psychologique ")
+   message.channel.sendMessage(help_embed);
+}
 if(message.content === préfix + "PCP Berserk"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00295b")
