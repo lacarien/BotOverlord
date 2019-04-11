@@ -1041,7 +1041,7 @@ if(message.content === préfix + "Aura du gardien"){
     var y = new Discord.RichEmbed()
     .setColor("#8c97d9")
     .setImage("http://coolvibe.com/wp-content/uploads/2013/08/Fantasy-Art-Wesley-Burt-Fiendslayer-Paladin.jpg")
-    .addField("Le Champion devient quelque peu plus agile et puissant durant 2 tours (-30 de mana)", "Votre attaque est augmenté de :crossed_swords:   " + y  )
+    .addField("Le Champion devient quelque peu plus agile et puissant durant 4 tours (-30 de mana)", "Votre attaque est augmenté de :crossed_swords:   " + y  )
     message.channel.sendMessage(y);
 }  
     if(message.content === préfix + "Camouflage"){
