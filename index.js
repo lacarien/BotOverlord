@@ -729,7 +729,7 @@ if(message.content === préfix + "PC Berserk"){
         .addField("33PC", "?B Coup d'épée")
         .addField("35PC", "?B blocage")
         .addField("37PC", "?Charge de berserk")
-        .addField("39PC", "?L'attaque du monstre")
+        .addField("39PC", "?Crie du monstre")
         .addField("41PC", "?Brise garde")
         .addField("43PC", "Berserk ultime")
         .addField("45PC", "Vous pouvez évoluer")
