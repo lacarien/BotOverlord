@@ -1465,6 +1465,20 @@ if(message.content === préfix + "Drapeau de défense"){
         .setImage("https://media.giphy.com/media/1k2XDMeOFWKwekvfQX/giphy.gif")
         message.channel.send(y);
     }
+    
+        if(message.content === préfix + "Crie du monstre"){
+
+   var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 60)
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Votre adversaire ne pourra pas attaquer au prochain tours (-30 de mana, ne peu pas être utilisé 2 fois d'affilés et 3 fois max par combat)")
+    .setColor("#00295b")
+    .setImage("https://i2.wp.com/www.lantredugeek.net/wp-content/uploads/2017/10/blackclover-astacri.jpg?resize=752%2C440&ssl=1")
+    if(result > 60)
+    .setTitle("C'est un echec")
+    .setColor("#00295b")
+    message.channel.sendMessage(help_embed);
+}
 
     if(message.content === préfix + "Tir à l'arc"){
         var min = Math.floor(Math.min(10));
@@ -1475,6 +1489,7 @@ if(message.content === préfix + "Drapeau de défense"){
         .setImage("https://media.giphy.com/media/5QI6YQxisFehaLlQ8I/giphy.gif")
         message.channel.send(y);
     }
+   
 
     
     if(message.content === préfix + "Magie simple"){
