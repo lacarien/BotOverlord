@@ -1144,8 +1144,8 @@ if(message.content === préfix + "Aura du gardien"){
         message.channel.send(y);
     }
     if(message.content === préfix + "Tir amélioré"){
-        var min = Math.floor(Math.min(60));
-        var max = Math.floor(Math.max(80)); 
+        var min = Math.floor(Math.min(65));
+        var max = Math.floor(Math.max(85)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous tirez une fleche puissante(-30 de Mana)",":bow_and_arrow: "+ y)
