@@ -1475,6 +1475,7 @@ if(message.content === préfix + "Drapeau de défense"){
     .setColor("#00295b")
     .setImage("https://i2.wp.com/www.lantredugeek.net/wp-content/uploads/2017/10/blackclover-astacri.jpg?resize=752%2C440&ssl=1")
     if(result > 60)
+        var help_embed = new Discord.RichEmbed()
     .setTitle("C'est un echec")
     .setColor("#00295b")
     message.channel.sendMessage(help_embed);
