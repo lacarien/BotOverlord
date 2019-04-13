@@ -1824,6 +1824,23 @@ if(message.content === préfix + "Saignement démoniaque"){
           
     }
     
+     if(message.content === préfix + "Réanimation"){
+    var help_embed = new Discord.RichEmbed()
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 90)
+    var y = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Vous réaparaisez en tant que monstre...Vous ne méritez pas le pardon de dieu", "?Réanimation monstrueuse")
+    .setImage("http://charlessledge.com/wp-content/uploads/2016/10/You-Must-Travel-Through-The-Abyss-Before-You-Can-Soar-To-New-Heights.jpg")
+        else
+    var y = new Discord.RichEmbed()
+    .addField("Dieu a eu pitié de vous, que vous soyez croyant ou non.", "Vous réanimez en tant qu'humain avec une nouvelle apparence et une mémoire totalement vide même si vous connaissez ce monde en tant qu'humain lambda la prochaine fois que vous mourrez vous ferez ?Réanimation 2")
+    .setImage("https://images4.alphacoders.com/847/84794.jpg")
+    .setColor("#ffffff")
+    
+    message.channel.sendMessage(y);
+}
+    
     if(message.content === préfix + "Invocation divine"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("L'Ange")
