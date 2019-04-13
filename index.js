@@ -485,7 +485,7 @@ if(message.content === préfix + "PCP Humain"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#90c830")
     .setTitle("PCP Elf")
-    .setDescription("Ils peuvent communiquer avec la nature, dans Les endroit où elle est fortement présente ils peuvent demander à cette dernier des informations (Les personne qui sont passer par ici, leurs nombre, ce genre de choses) mais cela reste bien vague vous n'aurez jamais une description physique,un arbre n'a pas d'oeil. Et vous n'aurez pas une conversation entière d'un groupe.")
+    .setDescription("Ils peuvent communiquer avec la nature, dans Les endroits où elle est fortement présente ils peuvent demander à cette dernier des informations (Les personnes qui sont passés par ici, leurs nombres, ce genre de choses) mais cela reste bien vague vous n'aurez jamais une description physique,un arbre n'a pas d'oeil. Et vous n'aurez pas une conversation entière d'un groupe.")
     message.channel.sendMessage(help_embed);
 }
     
