@@ -237,7 +237,7 @@ if(message.content === préfix + "Miner"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#7c7c70")
         .addField("Automaton", "Vous êtes un Automaton, vous avez le corps d'une machine à l'apparence humaine")
-        .addField("Bonus", "Vous avez une classe privilégié ")
+        .addField("Bonus", "Vous avez une classe privilégié et avez une résistance parfaite au poison")
         .addField("Malus", "A obligatoirement un maître")
         .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/3/35/Overlord_III_EP01_011.png/revision/latest?cb=20180713084418")
         .setFooter("Menu Automaton")
