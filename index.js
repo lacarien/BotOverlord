@@ -480,6 +480,15 @@ if(message.content === préfix + "PCP Humain"){
     .setDescription("Vous êtes Humain, on ne dirait pas mais rien que le nom est pas mal, en effet, vous pouvez vous ballader partout dans les zones humaines sans avoir de problème")
     message.channel.sendMessage(help_embed);
 }
+    
+    if(message.content === préfix + "PCP Elf"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#90c830")
+    .setTitle("PCP Elf")
+    .setDescription("Ils peuvent communiquer avec la nature, dans Les endroit où elle est fortement présente ils peuvent demander à cette dernier des informations (Les personne qui sont passer par ici, leurs nombre, ce genre de choses) mais cela reste bien vague vous n'aurez jamais une description physique,un arbre n'a pas d'oeil. Et vous n'aurez pas une conversation entière d'un groupe.")
+    message.channel.sendMessage(help_embed);
+}
+    
 if(message.content === préfix + "PCP Vampire"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ff0000")
