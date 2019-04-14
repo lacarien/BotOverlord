@@ -1771,7 +1771,7 @@ if(message.content === préfix + "Saignement démoniaque"){
     if(message.content === préfix + "La survie ou la mort"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#16ff00")
-    .setTitle("Vous êtes immortel durant 2heurs mais vous ne pouvez pas attaquer, seulement utiliser des actions passifs. Vous avez également un +40 en roll de force et un +40 en roll pour ne pas se faire assommer si votre classe vous défavorises \n \n Mais, en contre partie durant 3jours vous ne pourrez plus combattre")
+    .setTitle("Vous êtes immortel durant 2heurs mais vous ne pouvez pas attaquer, seulement utiliser des actions passifs. Vous avez également un +40 en roll de force et un +40 en roll pour ne pas se faire assommer si votre classe vous défavorises \n Mais, en contre partie durant 3jours vous ne pourrez plus combattre")
     .setImage("https://media.discordapp.net/attachments/542016323484385300/566914873452265472/maxresdefault.jpg?width=994&height=560")
     message.channel.sendMessage(help_embed);
 }
