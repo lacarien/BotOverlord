@@ -1787,7 +1787,7 @@ if(message.content === préfix + "Saignement démoniaque"){
         message.channel.sendMessage(help_embed);
     }
 
-    if(message.content === préfix + "?Tire pleine puissance"){
+    if(message.content === préfix + "Tire pleine puissance"){
         var min = Math.floor(Math.min(4000));
         var max = Math.floor(Math.max(5000)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -1796,6 +1796,10 @@ if(message.content === préfix + "Saignement démoniaque"){
         .addField("Ho grand maitre.... \n Ho celui à qui je veille \n sachez que je vous aimes sans pouvoir vous le montrer \n et c'est pour cella que je détruirais votre ennemie juré","Cette attaque est inévitable et imblocable :skull_crossbones:  "+ y)
         .setImage("https://j.gifs.com/XLQj8A.gif")
         message.channel.send(y);
+          var x = new Discord.RichEmbed()
+        .setColor("#9c9c9c")
+        .setTitle("Vous êtes dans l'incapacité de vous battres durant 1semaine")
+        message.channel.send(x);
     }
 
 
