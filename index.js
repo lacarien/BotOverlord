@@ -1793,7 +1793,7 @@ if(message.content === préfix + "Saignement démoniaque"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#9c9c9c")
-        .addField("Ho grand maitre.... \n Ho celui à qui je veille \n sachez que je vous aimes sans pouvoir vous le montrer \n et c'est pour cella que je détruirais votre ennemie juré","Cette attaque est inévitable et imblocable :skull_crossbones:  "+ y)
+        .addField("Ho grand maitre.... \n Ho celui à qui je veille \n sachez que je vous aime sans pouvoir vous le montrer \n et c'est pour cela que je détruirais votre ennemie jurée","Cette attaque est inévitable et imblocable :skull_crossbones:  "+ y)
         .setImage("https://j.gifs.com/XLQj8A.gif")
         message.channel.send(y);
           var x = new Discord.RichEmbed()
