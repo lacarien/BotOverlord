@@ -619,7 +619,7 @@ if(message.content === préfix + "PCP Automaton"){
         .setTitle("PC Automaton")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("10PC", "Vous obtenez la compétence ?Magic gun")
-        .addField("25PC", "Vous obtenez la compétence ?Réparage automatique")
+        .addField("25PC", "Vous obtenez la compétence ?Réparation automatique")
         .addField("40PC", "Vous obtenez la compétence ?Tire pleine puissance")
         message.channel.sendMessage(help_embed);
     }
