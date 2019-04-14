@@ -1787,7 +1787,16 @@ if(message.content === préfix + "Saignement démoniaque"){
         message.channel.sendMessage(help_embed);
     }
 
-
+    if(message.content === préfix + "?Tire pleine puissance"){
+        var min = Math.floor(Math.min(4000));
+        var max = Math.floor(Math.max(5000)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#9c9c9c")
+        .addField("Ho grand maitre.... \n Ho celui à qui je veille \n sachez que je vous aimes sans pouvoir vous le montrer \n et c'est pour cella que je détruirais votre ennemie","Cette attaque est inévitable et imblocable :skull_crossbones:  "+ y)
+        .setImage("https://gifs.com/gif/one-punch-man-amv-saitama-and-genos-vs-meteor-k82JEE")
+        message.channel.send(y);
+    }
 
 
 
