@@ -1195,7 +1195,7 @@ if(message.content === préfix + "Aura du gardien"){
         var y = new Discord.RichEmbed()
         .addField("Le piège s'actionne et inflige des dégats en plus de bloquer le coup de l'ennemie.", ":anger:  "+y)
         .setColor("#019521")
-        if else
+        else if (result > 50)
         var y = new Discord.RichEmbed()
         .setTitle("Le piège ne s'actione pas, peut-être une prochaine fois")
         message.channel.send(y);
