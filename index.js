@@ -530,6 +530,16 @@ if(message.content === préfix + "PCP Démon"){
     .addField("42PC", "Le Clerc arrive à calmer quelqu'un en detresse psychologique ")
    message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "PCP Classe Automaton"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#bcb9b6")
+    .setTitle("PCP Classe Automaton")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("32PC", "Possibilité de changer 1 fois par moi d'apparence")
+    .addField("36PC", "Votre énérgie commence à être si puissante que vous devez vous reposer régulièrement")
+    .addField("42PC", "Vous n'avez pas peur de l'adversité")
+    message.channel.sendMessage(help_embed);
+}
 if(message.content === préfix + "PCP Berserk"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00295b")
