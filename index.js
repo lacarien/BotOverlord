@@ -1168,6 +1168,15 @@ if(message.content === préfix + "Aura du gardien"){
         .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
         message.channel.send(y);
     }
+    if(message.content === préfix + "Tir puissant"){
+        var min = Math.floor(Math.min(140));
+        var max = Math.floor(Math.max(150)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous tirez une fleche très puissante(-50 de Mana)",":bow_and_arrow: "+ y)
+        .setImage("https://media.discordapp.net/attachments/536292650698014731/569875791190556683/SAVE_20190422_152229.gif")
+        message.channel.send(y);
+    }
         if(message.content === préfix + "Tir énèrgétique"){
         var min = Math.floor(Math.min(130));
         var max = Math.floor(Math.max(160)); 
