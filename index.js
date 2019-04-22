@@ -1197,7 +1197,7 @@ if(message.content === préfix + "Aura du gardien"){
         .setColor("#019521")
         else if (result > 50)
         var y = new Discord.RichEmbed()
-        .setTitle("Le piège ne s'actione pas, peut-être une prochaine fois")
+        .setTitle("Le piège ne s'actionne pas, peut-être une prochaine fois")
         message.channel.send(y);
     }
         if(message.content === préfix + "Tir énèrgétique"){
