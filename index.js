@@ -836,6 +836,22 @@ if(message.content === préfix + "PC Berserk"){
         .addField("30PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
     }
+    
+    if(message.content === préfix + "PC Grand Archer"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#019521")
+        .setTitle("PC Grand Archer")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("30PC", "?50HP + 50 de Mana / ?Piège à loup")
+         .addField("33PC", "?Tir puissant")
+        .addField("35PC", "?Super fuite")
+        .addField("37PC", "?Camouflage")
+        .addField("39PC", "?Bandage")
+        .addField("41PC", "?....")
+        .addField("43PC", "GA ultime")
+        .addField("45PC", "Vous pouvez évoluer")
+        message.channel.sendMessage(help_embed);
+    }
 
  if(message.content === préfix + "PC Classe Automaton"){
         var help_embed = new Discord.RichEmbed()
