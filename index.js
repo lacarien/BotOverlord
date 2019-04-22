@@ -1177,6 +1177,29 @@ if(message.content === préfix + "Aura du gardien"){
         .setImage("https://media.discordapp.net/attachments/536292650698014731/569875791190556683/SAVE_20190422_152229.gif")
         message.channel.send(y);
     }
+    if(message.content === préfix + "Piège à loup"){
+        var help_embed = new Discord.RichEmbed()
+        .setTitle("Vous invoquez un piège à loup devant vous invisible à l'oeil nue. 1 pièges max d'activé et il ne s'active qu'une fois si celui-ci fonctionne(-100 de mana)")
+        .setColor("#019521")
+        .setDescription("Votre piège à une chance de se déclancher lorsque que quelqu'un vous attaques, cela ne fonctionne pas contre des ultimes ou des attaques à distance: ?Piège")
+        .setImage("https://1.bp.blogspot.com/-GY5W6jVP850/WNwKqzuXizI/AAAAAAAABuM/AlfAEZ7FuDAK5y_qnZy0qp06wvCqM826QCLcB/s1600/Overlord_Characters.png")
+        message.channel.sendMessage(help_embed);
+    }
+
+    if(message.content === préfix + "Piège"){
+        var result = Math.floor((Math.random() * 100) + 1);
+        var min = Math.floor(Math.min(60));
+        var max = Math.floor(Math.max(90)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        if (result < 50)
+        var y = new Discord.RichEmbed()
+        .addField("Le piège s'actionne et inflige des dégats en plus de bloquer le coup de l'ennemie.", ":anger:  "+y)
+        .setColor("#019521")
+        if else
+        var y = new Discord.RichEmbed()
+        .setTitle("Le piège ne s'actione pas, peut-être une prochaine fois")
+        message.channel.send(y);
+    }
         if(message.content === préfix + "Tir énèrgétique"){
         var min = Math.floor(Math.min(130));
         var max = Math.floor(Math.max(160)); 
