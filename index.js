@@ -1903,6 +1903,17 @@ if(message.content === préfix + "Saignement démoniaque"){
           
     }
     
+    if(message.content === préfix + "Réanimation monstrueuse"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Liste des posibilités de réanimation")
+    .setDescription("?Réanimation d'animal \n ?Réanimation du malade \n ?Réanimation monstre \n ?Réanimation d'esprit")
+    .addField("/!\ ", "Votre transformation est temporaire, faites un roll pour savoir combien de temps vous y resterez \n Roll>80 = 5Mois \n Roll>50 = 3mois \n Roll>0 = 2mois")
+    .setImage("https://trustmyscience.com/wp-content/uploads/2016/11/trou-noir-supermassif.jpg")
+    .setFooter("Menu des monstres")
+    message.channel.sendMessage(help_embed);
+
+}
+    
      if(message.content === préfix + "Réanimation"){
     var help_embed = new Discord.RichEmbed()
     var result = Math.floor((Math.random() * 100) + 1);
