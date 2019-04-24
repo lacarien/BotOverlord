@@ -596,7 +596,7 @@ if(message.content === préfix + "PCP Automaton"){
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("10PC", "Vous obtenez la compétence ?Drain de vie")
         .addField("25PC", "Vous obtenez la compétence ?Blocage surhumain")
-        .addField("40PC", "Vous obtenez la capacité à vous transformer(en cours de travaux)")
+        .addField("40PC", "Vous obtenez la compétence ?Transformation vampirique")
         message.channel.sendMessage(help_embed);
     }
 
