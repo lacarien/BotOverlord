@@ -1914,6 +1914,17 @@ if(message.content === préfix + "Saignement démoniaque"){
 
 }
     
+    if(message.content === préfix + "Réanimation d'animal "){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("La réanimation en animal")
+    .setDescription("Vous allez réaparaitre en tant qu'animal parmis les choix ci-dessous. Néanmoins vous serez comme un nouveau 'humain' avec donc une nouvelle mémoire bloqué dans un corps d'animal plutôt...Robuste")
+    .addField("Liste des animaux", "?Réanimation loup de givre \n ?Réanimation grand ours \n ?Réanimation aigle celeste \n ?Réanimation chat \n ?Réanimation lion")
+    .setImage("https://couleur-science.eu/img/black-hole-2.jpg")
+    .setFooter("Menu des monstres")
+    message.channel.sendMessage(help_embed);
+
+}
+    
      if(message.content === préfix + "Réanimation"){
     var help_embed = new Discord.RichEmbed()
     var result = Math.floor((Math.random() * 100) + 1);
