@@ -1920,6 +1920,40 @@ if(message.content === préfix + "Saignement démoniaque"){
     message.channel.sendMessage(y);
 }
     
+    if(message.content === préfix + "Réanimation 2"){
+    var help_embed = new Discord.RichEmbed()
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 50)
+    var y = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Vous réaparaisez en tant que monstre...Vous ne méritez pas le pardon de dieu", "?Réanimation monstrueuse")
+    .setImage("http://charlessledge.com/wp-content/uploads/2016/10/You-Must-Travel-Through-The-Abyss-Before-You-Can-Soar-To-New-Heights.jpg")
+        else
+    var y = new Discord.RichEmbed()
+    .addField("Dieu a eu pitié encore de vous, que vous soyez croyant ou non. sachez que vous avez de la chance", "Vous réanimez en tant qu'humain avec une nouvelle apparence et une mémoire totalement vide même si vous connaissez ce monde en tant qu'humain lambda la prochaine fois que vous mourrez vous ferez ?Réanimation 3")
+    .setImage("https://images4.alphacoders.com/847/84794.jpg")
+    .setColor("#ffffff")
+    
+    message.channel.sendMessage(y);
+}
+    if(message.content === préfix + "Réanimation 3"){
+    var help_embed = new Discord.RichEmbed()
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result > 20)
+    var y = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("Vous réaparaisez en tant que monstre...Vous ne méritez pas le pardon de dieu", "?Réanimation monstrueuse")
+    .setImage("http://charlessledge.com/wp-content/uploads/2016/10/You-Must-Travel-Through-The-Abyss-Before-You-Can-Soar-To-New-Heights.jpg")
+        else
+    var y = new Discord.RichEmbed()
+    .addField("Whow...La ce n'est plus Dieu qui a eu pitié...Mais c'est qu'il doit vous aimer ou bien c'est la chance qui a décidé de vous chérir", "Vous réanimez en tant qu'humain avec une nouvelle apparence et une mémoire totalement vide même si vous connaissez ce monde en tant qu'humain lambda la prochaine fois que vous mourrez vous ferez ?Réanimation 4")
+    .setImage("https://images4.alphacoders.com/847/84794.jpg")
+    .setColor("#ffffff")
+    
+    message.channel.sendMessage(y);
+}
+
+    
     if(message.content === préfix + "Invocation divine"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("L'Ange")
