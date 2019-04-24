@@ -1914,13 +1914,26 @@ if(message.content === préfix + "Saignement démoniaque"){
 
 }
     
+if(message.content === préfix + "Réanimation du malade"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("La réanimation du malade")
+    .setDescription("Vous n'avez pas une mémoire différente et n'avez pas changé physiquement, mais alors...Ou est le problème ? \n Alala, idiot que vous êtes vous n'arrivez plus à reconnaitre personne ne voyant que des ombres flottantes indéscriptibles et n'arrivez plus à comprendre la langue lambda. En effet vous arriverez seulement à communiquer avec les autres monstres ou bien les démons, mais attention...Vous reconnaitrez que leur voix et non leurs ombres. \n Vous alez donc sombrer dans la folie la plus total étant donné que vous serez dans l'obligation d'attaquer tout ce que vous ne comprendrez pas donc tout sauf les démons qui ne vous serons pas néfastes et les autres monstres s'ils décident de s'allier, seul les démons peuvent vous aider...Ou vous enfoncer mais rien ne vous empeches de les attaquer")
+    .addField("Changement physique", "Vos yeux saignent régulièrement, laissant des filets de sang sur vos joues \n votre respiration est saccadé en présence de 2 personnes minimum et vous pouvez exploser un cable pour aucune raison à toute instant si votre réspiration ne se calme pas \n Vous riez régulièrement pour aucune raison...")
+    .addField("Stats", "1500HP \n 500 de mana \n Vous n'avez que l'attaque de base de votre classe(si votre attaque consomme du mana, alors cela sera gratuit) et n'utilisez que des parades simples(si vous êtes un archer ou un mage, alors dans le RP vous vous servirez de votre couteau, la folie à l'etat pure)")
+    .setImage("https://wallpaperplay.com/walls/full/2/9/b/115097.jpg")
+    .setFooter("Menu du malade")
+    message.channel.sendMessage(help_embed);
+
+}
+
+    
     if(message.content === préfix + "Réanimation d'animal"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("La réanimation en animal")
     .setDescription("Vous allez réaparaitre en tant qu'animal parmis les choix ci-dessous. Néanmoins vous serez comme un nouveau 'humain' avec donc une nouvelle mémoire bloqué dans un corps d'animal plutôt...Robuste")
     .addField("Liste des animaux", "?Réanimation loup de givre \n ?Réanimation grand ours \n ?Réanimation aigle celeste \n ?Réanimation chat \n ?Réanimation lion")
     .setImage("https://couleur-science.eu/img/black-hole-2.jpg")
-    .setFooter("Menu des monstres")
+    .setFooter("Menu des animaux")
     message.channel.sendMessage(help_embed);
 
 }
