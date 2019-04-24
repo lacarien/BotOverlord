@@ -1914,7 +1914,7 @@ if(message.content === préfix + "Saignement démoniaque"){
 
 }
     
-    if(message.content === préfix + "Réanimation d'animal "){
+    if(message.content === préfix + "Réanimation d'animal"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("La réanimation en animal")
     .setDescription("Vous allez réaparaitre en tant qu'animal parmis les choix ci-dessous. Néanmoins vous serez comme un nouveau 'humain' avec donc une nouvelle mémoire bloqué dans un corps d'animal plutôt...Robuste")
