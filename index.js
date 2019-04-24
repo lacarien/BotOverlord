@@ -1910,6 +1910,17 @@ if(message.content === préfix + "Saignement démoniaque"){
     .addField("/!\ ", "Votre transformation est temporaire, faites un roll pour savoir combien de temps vous y resterez \n Roll>80 = 5Mois \n Roll>50 = 3mois \n Roll>0 = 2mois")
     .setImage("https://trustmyscience.com/wp-content/uploads/2016/11/trou-noir-supermassif.jpg")
     .setFooter("Menu des monstres")
+    .setColor("#000000")
+    message.channel.sendMessage(help_embed);
+
+}
+    if(message.content === préfix + "Réanimation d'esprit"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("La réanimation d'esprit, j'éspère que vous aimez le RP passifs")
+    .setDescription("Vous êtes un esprit, vous pouvez vous rendre matériel 1 heure par jour(pas d'abus) et pouvez lire et parler dans les pensées des autres. Attention vous ne pouvez pas combattre et n'avez plus dutout la même apparence, vous êtes un esprit qui cherche à faire du mal à tourmenter tout le monde, sauf la race que vous veiller à protéger mentalement. Vous choisirez lors de votre update, la race que vous allez veiller")
+    .setImage("https://media.discordapp.net/attachments/549628514303737856/560852234829824001/abf0826023a0f49070112b59640109e7.png?width=415&height=585")
+    .setFooter("Menu d'esprit")
+    .setColor("#000000")
     message.channel.sendMessage(help_embed);
 
 }
@@ -1921,6 +1932,7 @@ if(message.content === préfix + "Réanimation du malade"){
     .addField("Changement physique", "Vos yeux saignent régulièrement, laissant des filets de sang sur vos joues \n votre respiration est saccadé en présence de 2 personnes minimum et vous pouvez exploser un cable pour aucune raison à toute instant si votre réspiration ne se calme pas \n Vous riez régulièrement pour aucune raison...")
     .addField("Stats", "1500HP \n Vous n'avez que l'attaque de base de votre classe(si votre attaque consomme du mana, alors cela sera gratuit) et n'utilisez que des parades simples(si vous êtes un archer ou un mage, alors dans le RP vous vous servirez de votre couteau, la folie à l'etat pure)")
     .setImage("https://wallpaperplay.com/walls/full/2/9/b/115097.jpg")
+    .setColor("#000000")
     .setFooter("Menu du malade")
     message.channel.sendMessage(help_embed);
 
@@ -1933,6 +1945,7 @@ if(message.content === préfix + "Réanimation du malade"){
     .setDescription("Vous allez réaparaitre en tant qu'animal parmis les choix ci-dessous. Néanmoins vous serez comme un nouveau 'humain' avec donc une nouvelle mémoire bloqué dans un corps d'animal plutôt...Robuste")
     .addField("Liste des animaux", "?Réanimation loup de givre \n ?Réanimation grand ours \n ?Réanimation aigle celeste \n ?Réanimation chat \n ?Réanimation lion")
     .setImage("https://couleur-science.eu/img/black-hole-2.jpg")
+    .setColor("#000000")
     .setFooter("Menu des animaux")
     message.channel.sendMessage(help_embed);
 
