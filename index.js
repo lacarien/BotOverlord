@@ -2000,6 +2000,29 @@ if(message.content === préfix + "Réanimation chat"){
     message.channel.sendMessage(help_embed);
 
 }
+    
+    if(message.content === préfix + "Chat attaque"){
+    var y = new Discord.RichEmbed()
+    .setImage("http://www.fondsecran.eu/a/get_photo/518365/2560/1600")
+    .addField("Le chat vous donne un coup de griffe", "Durant 5 tours vos attaques seront divisés par 2 comme si vous étiez ralentit")
+    .setColor("#ff00ce")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Chat défense"){
+    var help_embed = new Discord.RichEmbed()
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 40)
+    var y = new Discord.RichEmbed()
+    .setTitle("Le chat évite l'attaque")
+    .setImage("https://www.10wallpaper.com/wallpaper/medium/1105/cheshire_Desktop_Wallpapers_medium.jpg")
+    .setColor("#ff00ce")
+     else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("Le chat se prend tout les dégats")
+    message.channel.sendMessage(y);
+}
 
 if(message.content === préfix + "Réanimation grand ours"){
     var help_embed = new Discord.RichEmbed()
