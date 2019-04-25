@@ -1962,6 +1962,32 @@ if(message.content === préfix + "Réanimation du malade"){
     message.channel.sendMessage(help_embed);
 
 }
+    
+    if(message.content === préfix + "Aigle attaque"){
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(70)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setImage("http://www.wallpapers-hd-desktop.com/wp-content/uploads/2017/07/Aigle-31-640x480.jpg")
+    .addField("Vous faites une attaque en piqué imblocable pour la branche combattant, voleur et ranger(si vous attaquez un voleur ou un combattant alors celui-ci pourra vous attaquer juste après)", y)
+    .setColor("#b2adad")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Aigle défense"){
+    var help_embed = new Discord.RichEmbed()
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 55)
+    var y = new Discord.RichEmbed()
+    .setTitle("L'Aigle virevolte et esquive l'attaque")
+    .setImage("https://static-s.aa-cdn.net/img/gp/20600004769961/cinFszBOKEBS6PsZYYA-FwvwMSml9-EhFjv2wApBrTQPlknJ-A7Rbn2KWncZmugIGg=h900")
+    .setColor("#b2adad")
+     else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#b2adad")
+    .setTitle("L'aigle se prend tout les dégats")
+    message.channel.sendMessage(y);
+}
 
 if(message.content === préfix + "Réanimation chat"){
     var help_embed = new Discord.RichEmbed()
@@ -2008,7 +2034,7 @@ if(message.content === préfix + "Ours attaque"){
     
     if(message.content === préfix + "Réanimation loup de givre"){
     var help_embed = new Discord.RichEmbed()
-    .setTitle("La réanimation en aigle")
+    .setTitle("La réanimation en loup")
     .setDescription("Vous allez réaparaitre en tant que loup. Vous savez distinguer les odeurs et êtes un bon traqueur pour pourchasser une personne. Vous avez le droit de vous familliariser uniquement avec une seul personne, vous pourrez ainsi lui parler dans sa tête et uniquement dans sa tête")
     .addField("Stats", "700HP \n ?Loup attaque \n ?Loup défense")
     .setColor("#00ffe7")
