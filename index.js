@@ -2067,6 +2067,45 @@ if(message.content === préfix + "Ours attaque"){
 
 }
     
+    
+    if(message.content === préfix + "Loup attaque"){
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(70)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 65)
+    var y = new Discord.RichEmbed()
+    .addField("Le loup vous attaques", y)
+    .setImage("https://i.pinimg.com/originals/3e/36/52/3e3652d62a0e1f0d4bd884b4da955b1b.jpg")
+    .setColor("#00ffe7")
+     else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#00ffe7")
+    .addField("Le loup vous attaques et détruit votre blocage", y)
+    .setColor("https://cdn.wallpapersafari.com/62/9/XJt90y.jpg")
+    message.channel.sendMessage(y);
+}
+if(message.content === préfix + "Loup défense"){
+    var help_embed = new Discord.RichEmbed()
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 60)
+    var y = new Discord.RichEmbed()
+    .setTitle("Le loup se prend tout les dégats")
+    .setColor("#00ffe7")
+     else if (result < 75)
+    var y = new Discord.RichEmbed()
+    .setColor("#00ffe7")
+    .setImage("https://i.pinimg.com/originals/06/ff/f8/06fff8be1b3114ddbed966a95d36d270.jpg")
+    .setTitle("Le loup bloque ou évite de peu l'attaque et réduit l'attaque par 2")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#00ffe7")
+    .setImage("https://i.pinimg.com/originals/e5/28/9d/e5289d4dde75a59b503e8253439c824d.jpg")
+    .setTitle("Le loup évite l'attaque")
+    message.channel.sendMessage(y);
+}
+    
      if(message.content === préfix + "Réanimation"){
     var help_embed = new Discord.RichEmbed()
     var result = Math.floor((Math.random() * 100) + 1);
