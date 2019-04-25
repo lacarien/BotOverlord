@@ -1941,7 +1941,7 @@ if(message.content === préfix + "Réanimation du malade"){
     if(message.content === préfix + "Réanimation monstre"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("La réanimation en monstre")
-    .setDescription("Vous voila donc un monstre...Mais vous êtes quoi comme monstre ? Laissez moi vous expliquer. \n Vous avez le choix entre tous les mobs du serveur hormis les Boss. Après cela, vous serez bloqué dans une zone mais...Si vous êtes une chouette du vent alors vous serez dans la forêt calme, et si vous êtes un un guerrier aquatique alors vous serez en permanence sur le bord de la plage calme. Vous ne pourrez pas sortir de ce territoire sauf de force si on vous captures, mais votre instinct vous forceras à y retourner dès que possible")
+    .setDescription("Vous voila donc un monstre...Mais vous êtes quoi comme monstre ? Laissez moi vous expliquer. \n Vous avez le choix entre tous les mobs du serveur hormis les Boss. Après cela, vous serez bloqué dans une zone mais...Si vous êtes une chouette du vent alors vous serez dans la forêt calme, et si vous êtes un un guerrier aquatique alors vous serez en permanence sur le bord de la plage calme. Vous ne pourrez pas sortir de ce territoire sauf de force ou si on vous captures, mais votre instinct vous forceras à y retourner dès que possible")
     .setImage("https://image.winudf.com/v2/image/Y29tLkdhbGF4eUx3cC5TdXBlcm5vdmEwNF9zY3JlZW5zaG90c18zXzc0NTAyYWI1/screen-3.jpg?h=800&fakeurl=1&type=.jpg")
     .setFooter("Menu du monstre")
     message.channel.sendMessage(help_embed);
