@@ -1907,7 +1907,7 @@ if(message.content === préfix + "Saignement démoniaque"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("Liste des posibilités de réanimation")
     .setDescription("?Réanimation d'animal \n ?Réanimation du malade \n ?Réanimation monstre \n ?Réanimation d'esprit")
-    .addField("/!\ ", "Votre transformation est temporaire, faites un roll pour savoir combien de temps vous y resterez \n Roll>80 = 5Mois \n Roll>50 = 3mois \n Roll>0 = 2mois")
+    .addField("!! Attention, pour toute les réanimations vous avez perdu la mémoire sauf pour la réanimation du malade. Mais il y a aussi la durée à prendre en compte !!", "Votre transformation est temporaire, faites un roll pour savoir combien de temps vous y resterez \n Roll>80 = 5Mois \n Roll>50 = 3mois \n Roll>0 = 2mois")
     .setImage("https://trustmyscience.com/wp-content/uploads/2016/11/trou-noir-supermassif.jpg")
     .setFooter("Menu des monstres")
     .setColor("#000000")
@@ -1943,10 +1943,46 @@ if(message.content === préfix + "Réanimation du malade"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("La réanimation en animal")
     .setDescription("Vous allez réaparaitre en tant qu'animal parmis les choix ci-dessous. Néanmoins vous serez comme un nouveau 'humain' avec donc une nouvelle mémoire bloqué dans un corps d'animal plutôt...Robuste")
-    .addField("Liste des animaux", "?Réanimation loup de givre \n ?Réanimation grand ours \n ?Réanimation aigle celeste \n ?Réanimation chat \n ?Réanimation lion")
+    .addField("Liste des animaux", "?Réanimation loup de givre \n ?Réanimation grand ours \n ?Réanimation aigle celeste \n ?Réanimation chat")
     .setImage("https://couleur-science.eu/img/black-hole-2.jpg")
     .setColor("#000000")
     .setFooter("Menu des animaux")
+    message.channel.sendMessage(help_embed);
+
+}
+    
+    if(message.content === préfix + "Réanimation aigle celeste"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("La réanimation en aigle")
+    .setDescription("Vous allez réaparaitre en tant qu'aigle. Vous avez une vision total quand vous êtes à l'extérieur et n'avez pas besoin de faire un repérage dans votre chanel pour savoir qui s'y trouve. Si vous volez, les combattants et voleurs ne pourront pas vous toucher(logique) mais les rangers et les mages...Vous avez le droit de choisir un maitre a qui vous pourrez uniquement murmurer des choses dans l'oreille")
+    .addField("Stats", "300HP \n ?Aigle attaque \n ?Aigle défense")
+    .setColor("#b2adad")
+    .setImage("http://www.wallpapers-hd-desktop.com/wp-content/uploads/2017/07/Aigle-08-640x480.jpg")
+    .setFooter("Menu de l'aigle celeste")
+    message.channel.sendMessage(help_embed);
+
+}
+
+if(message.content === préfix + "Réanimation chat"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("La réanimation en chat")
+    .setDescription("Vous allez réapparaitre en chat, mais attention, vous n'êtes pas un chat classique, en effet vous pouvez parler et avez la capacité à ressentir les émotions des autres et à les comprendres")
+    .addField("Stats", "50HP \n ?Chat attaque \n ?Chat défense")
+    .setColor("#ff00ce")
+    .setImage("http://4everstatic.com/images/dessins/digital-art/chat-noir,-chat-dessine-154897.jpg")
+    .setFooter("Menu du chat")
+    message.channel.sendMessage(help_embed);
+
+}
+
+if(message.content === préfix + "Réanimation grand ours"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("La réanimation en grand ours")
+    .setColor("#635a64")
+    .setDescription("Vous allez réapparaitre en grand ours(vous avez le droit d'avoir une armure dans votre description physique), vous ne pouvez parler avec personne sauf avec les autres personnes dans votre cas")
+    .addField("Stats", "1500HP \n ?Ours attaque")
+    .setImage("http://www.yukokusamurai.com/data/archive/img/2643079267.jpeg")
+    .setFooter("Menu de l'ours")
     message.channel.sendMessage(help_embed);
 
 }
