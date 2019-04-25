@@ -1987,6 +1987,18 @@ if(message.content === préfix + "Réanimation grand ours"){
 
 }
     
+    if(message.content === préfix + "Réanimation loup de givre"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("La réanimation en aigle")
+    .setDescription("Vous allez réaparaitre en tant que loup. Vous savez distinguer les odeurs et êtes un bon traqueur pour pourchasser une personne. Vous avez le droit de vous familliariser uniquement avec une seul personne, vous pourrez ainsi lui parler dans sa tête et uniquement dans sa tête")
+    .addField("Stats", "700HP \n ?Loup attaque \n ?Loup défense")
+    .setColor("#00ffe7")
+    .setImage("http://images5.fanpop.com/image/photos/31400000/Wolf-fantasy-31454823-1280-800.jpg")
+    .setFooter("Menu de l'aigle celeste")
+    message.channel.sendMessage(help_embed);
+
+}
+    
      if(message.content === préfix + "Réanimation"){
     var help_embed = new Discord.RichEmbed()
     var result = Math.floor((Math.random() * 100) + 1);
