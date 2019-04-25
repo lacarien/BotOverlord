@@ -2039,7 +2039,7 @@ if(message.content === préfix + "Ours attaque"){
     .addField("Stats", "700HP \n ?Loup attaque \n ?Loup défense")
     .setColor("#00ffe7")
     .setImage("http://images5.fanpop.com/image/photos/31400000/Wolf-fantasy-31454823-1280-800.jpg")
-    .setFooter("Menu de l'aigle celeste")
+    .setFooter("Menu du loup")
     message.channel.sendMessage(help_embed);
 
 }
