@@ -1987,6 +1987,24 @@ if(message.content === préfix + "Réanimation grand ours"){
 
 }
     
+    if(message.content === préfix + "Ours attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(120));
+    var max = Math.floor(Math.max(150)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 70)
+    var y = new Discord.RichEmbed()
+    .addField("L'ours donne un énorme coups de patte", y)
+    .setImage("http://img.xooimage.com/files110/f/9/0/spirit-bear-4da9aba.png")
+    .setColor("#635a64")
+     if else
+    var y = new Discord.RichEmbed()
+    .setColor("#635a64")
+    .setTitle("L'ours est trop lent...Peut-être une prochainne fois")
+    message.channel.sendMessage(y);
+}
+    
     if(message.content === préfix + "Réanimation loup de givre"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("La réanimation en aigle")
