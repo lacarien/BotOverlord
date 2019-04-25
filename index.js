@@ -2004,7 +2004,7 @@ if(message.content === préfix + "Réanimation chat"){
     if(message.content === préfix + "Chat attaque"){
     var y = new Discord.RichEmbed()
     .setImage("http://www.fondsecran.eu/a/get_photo/518365/2560/1600")
-    .addField("Le chat vous donne un coup de griffe", "Durant 5 tours vos attaques seront divisés par 2 comme si vous étiez ralentit")
+    .addField("Le chat vous donne un coup de griffe", "Durant 3 tours vos attaques seront divisés par 2 comme si vous étiez ralentit")
     .setColor("#ff00ce")
     message.channel.send(y);
 }
