@@ -1984,7 +1984,7 @@ if(message.content === préfix + "Aigle défense"){
     .setColor("#b2adad")
      else if (result < 101)
     var y = new Discord.RichEmbed()
-    .setColor("#b2adad")
+    .setColor("#ff0000")
     .setTitle("L'aigle se prend tout les dégats")
     message.channel.sendMessage(y);
 }
