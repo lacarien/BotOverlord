@@ -510,6 +510,22 @@ if(message.content === préfix + "PCP Démon"){
     .setDescription("1 fois tous les 3 jours, en fixant la personne droit dans les yeux vous pouvez enclencher une sorte de flash back lui remémorant tous les moments tragiques de sa vie, l'effet aura pour bute de le briser intérieurement même un grand musclor qui a un sang froid extrême sera affecté")
     message.channel.sendMessage(help_embed);
 }
+    
+    if(message.content === préfix + "PCP Druid"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("PCP Druid")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("15PC", "Vous pouvez faire apparaitre un inventaire de poche qui peu contenir max 1 objet")
+    .addField("18P", "Vous pouvez voir un léger filet de mana autour de la personne, celle-ci vous permets de savoir si la personne est triste, enragé, fou, heureux et j'en passe. Mais en aucun cas cela ne montre sa puissance")
+    .addField("20PC", "Vous pouvez placer une marque sur une personne ou un objet, elle disparait si elle est placée a la lumière d'une orbe ou au bout de 24H. Elle permet au mage de connaitre l'emplacement de la marque, utilisable une fois par jour et uniquement sur une personne à la fois.")
+    .addField("23PC", "Vous pouvez vous approcher doucement d'un animal, il ne vous feras jamais rien de stupide")
+    .addField("25PC", "Vous pouvez faire disparaitre un objet innanimé pour une durée d'une journée. Il doit peser moins de 10Kg")
+    .addField("27PC", "Vous pouvez invoquer un petit arbre qui pourra se ballader partout dans des endroits ou la nature y repose, mais en rien cela ne sera une grande aide. Vous pouvez lui parler mais...Il ne vous répondras pas")
+    .addField("29PC", "Vous pouvez vous téléportez à une distance de max 10mètres. Utilisable 1 fois par jour")
+    message.channel.sendMessage(help_embed);
+}
+    
     if(message.content === préfix + "PCP Gardien"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#1a00ff")
@@ -704,6 +720,8 @@ if(message.content === préfix + "PCP Automaton"){
         .addField("15PC", "Vous pouvez devenir Archer")
         message.channel.sendMessage(help_embed);
     }
+    
+    
 
      
    if(message.content === préfix + "PC Paladin"){
