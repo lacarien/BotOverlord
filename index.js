@@ -983,6 +983,15 @@ if(message.content === préfix + "PC Berserk"){
         .setImage("http://s1.1zoom.me/big0/177/Stormfall_Age_of_War_Knight_Armor_Swords_522831_1280x800.jpg")
         message.channel.send(y);
     }
+     if(message.content === préfix + "Attaque lourde"){
+        var min = Math.floor(Math.min(130));
+        var max = Math.floor(Math.max(150)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous lui infligez un gros coup d'épée(-60 de mana)", ":crossed_swords:  "+y)
+        .setImage("https://j.gifs.com/r8m3X4.gif")
+        message.channel.send(y);
+    }
     if(message.content === préfix + "CH Coup d'épée"){
         var min = Math.floor(Math.min(75));
         var max = Math.floor(Math.max(85)); 
