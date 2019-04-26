@@ -1206,11 +1206,11 @@ if(message.content === préfix + "Aura du gardien"){
         message.channel.send(y);
     }
     if(message.content === préfix + "Réparation"){
-        var min = Math.floor(Math.min(100));
-        var max = Math.floor(Math.max(150)); 
+        var min = Math.floor(Math.min(120));
+        var max = Math.floor(Math.max(170)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous récupérez du mana contre de la vitalité(-50 HP)",":wrench:  "+ y)
+        .addField("Vous récupérez du mana contre de la vitalité(-50 HP)",":wrench:  "+ y + " :sparkles: ")
         .setImage("https://www.syanart.com/wp-content/uploads/2016/04/One-Punch-Man-Genos.jpg")
         message.channel.send(y);
     }
