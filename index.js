@@ -1205,6 +1205,16 @@ if(message.content === préfix + "Aura du gardien"){
         .setImage("https://media.discordapp.net/attachments/536292650698014731/569875791190556683/SAVE_20190422_152229.gif")
         message.channel.send(y);
     }
+    if(message.content === préfix + "Réparation"){
+        var min = Math.floor(Math.min(100));
+        var max = Math.floor(Math.max(150)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous récupérez du mana contre de la vitalité(-50 HP)",":wrench:  "+ y)
+        .setImage("https://www.syanart.com/wp-content/uploads/2016/04/One-Punch-Man-Genos.jpg")
+        message.channel.send(y);
+    }
+    
     if(message.content === préfix + "Piège à loup"){
         var help_embed = new Discord.RichEmbed()
         .setTitle("Vous invoquez un piège à loup devant vous invisible à l'oeil nue. 1 pièges max d'activé et il ne s'active qu'une fois si celui-ci fonctionne(-100 de mana)")
