@@ -1561,6 +1561,16 @@ if(message.content === préfix + "Drapeau de défense"){
         message.channel.send(y);
     }
     
+    if(message.content === préfix + "Brise garde"){
+        var min = Math.floor(Math.min(120));
+        var max = Math.floor(Math.max(140)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setImage("https://j.gifs.com/WLQGov.gif")
+        .addField("Vous foncez sur votre adversaire, venant mettre un gros coup de poings, traversant le blocage de votre ennemie(sauf les blocages de la branche mage)", ":punch:  "+y)
+        message.channel.send(y);
+    }
+    
         if(message.content === préfix + "Crie du monstre"){
 
    var result = Math.floor((Math.random() * 100) + 1);
