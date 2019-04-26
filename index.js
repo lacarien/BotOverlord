@@ -1563,11 +1563,11 @@ if(message.content === préfix + "Drapeau de défense"){
     
     if(message.content === préfix + "Brise garde"){
         var min = Math.floor(Math.min(120));
-        var max = Math.floor(Math.max(140)); 
+        var max = Math.floor(Math.max(160)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setImage("https://j.gifs.com/WLQGov.gif")
-        .addField("Vous foncez sur votre adversaire, venant mettre un gros coup de poings, traversant le blocage de votre ennemie(sauf les blocages de la branche mage)", ":punch:  "+y)
+        .addField("Vous foncez sur votre adversaire, venant mettre un gros coup de poings, traversant le blocage de votre ennemie sauf les blocages de la branche mage (-50 de mana)", ":punch:  "+y)
         message.channel.send(y);
     }
     
