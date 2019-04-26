@@ -988,7 +988,7 @@ if(message.content === préfix + "PC Berserk"){
         var max = Math.floor(Math.max(150)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous lui infligez un gros coup d'épée(-60 de mana)", ":crossed_swords:  "+y)
+        .addField("Vous lui infligez un gros coup d'épée(-60 de mana) elle est impossible à parade", ":crossed_swords:  "+y)
         .setImage("https://j.gifs.com/r8m3X4.gif")
         message.channel.send(y);
     }
