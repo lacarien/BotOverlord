@@ -5074,7 +5074,7 @@ if(message.content === préfix + "Livre abandonné"){
     .setColor("#e200ff")
     .setTitle("Livre abandonné")
     .setDescription("Ce livre abandonné appartenait à un ancien sorcier qui se dirigeait vers la voix de la mélancolie et de la nécromancie")
-    .addField("Bonus", "?Tornade ténénbreuse \n ?Invocation de gardien")
+    .addField("Bonus", "?Tornade ténébreuse \n ?Invocation de gardien")
     .addField("Passifs", "Ce livre abandonné vous permet de lire dans les pensées d'une personne avant de débuter une dicussion. Utilisable une fois par jour")
     message.channel.sendMessage(help_embed);
 }
@@ -5120,7 +5120,7 @@ if(message.content === préfix + "Parade folle"){
     .setImage("http://i.imgur.com/Lpv5HId.jpg")}
     message.channel.send(w);
 }
-if(message.content === préfix + "Tornade ténénbreuse"){
+if(message.content === préfix + "Tornade ténébreuse"){
     var result = Math.floor((Math.random() * 100) + 1);
     var min = Math.floor(Math.min(200));
     var max = Math.floor(Math.max(250)); 
