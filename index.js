@@ -1571,6 +1571,21 @@ if(message.content === préfix + "Drapeau de défense"){
         .setImage("https://media.giphy.com/media/1k2XDMeOFWKwekvfQX/giphy.gif")
         message.channel.send(y);
     }
+    if(message.content === préfix + "Enchainement d'ennemie"){
+    var y = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(40)); 
+    var mins = Math.floor(Math.min(70));
+    var maxs = Math.floor(Math.max(90));
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var x = Math.floor(Math.random() * (maxs - mins) + 1) + mins;
+    var lol = new Discord.RichEmbed()
+    .setColor("#00295b")
+    .setImage("https://gifs.com/gif/p8kE42")
+    .addField("Vous foncez sur une personne de la première ligne et il ne peu pas bloquer l'attaque" + y)
+    .addField("Puis pendant qu'il ou elle est déstabilisé par l'attaque, vous en proffitez pour attaquer une personne de la 2eme ligne et lui infliger(-60 de mana)", x)
+    message.channel.sendMessage(lol);
+}  
     
     if(message.content === préfix + "Brise garde"){
         var min = Math.floor(Math.min(120));
