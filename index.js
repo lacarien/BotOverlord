@@ -2985,8 +2985,8 @@ if(message.content === préfix + "La flamme immortel"){
     
 if(message.content === préfix + "FI attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(70));
-    var max = Math.floor(Math.max(100)); 
+    var min = Math.floor(Math.min(130));
+    var max = Math.floor(Math.max(170)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result > 50)
@@ -3008,7 +3008,7 @@ if(message.content === préfix + "FI attaque"){
 
 if(message.content === préfix + "FI défense"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(60));
+    var min = Math.floor(Math.min(80));
     var max = Math.floor(Math.max(100)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
@@ -3484,9 +3484,9 @@ if(message.content === préfix + "AAA"){
 
 if(message.content === préfix + "Armure HP"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Armure en cuir souple", "Prix : 70 pièces de bronze \n ?Achat : armure en cuir souple")
-    .addField("Armure simple avec cotte de mailles", "Prix : 150 pièces de bronze \n 45 pièces d'argent \n ?Achat : armure simple avec cotte de mailles")
-    .addField("Armure en plate", "Prix: 500 pièces de bronze \n 210 pièces d'argent \n 70 pièces d'or \n ?Achat : armure en plate")
+    .addField("Armure en cuir souple / level 5 minimum", "Prix : 70 pièces de bronze \n ?Achat : armure en cuir souple")
+    .addField("Armure simple avec cotte de mailles / level 25minimum", "Prix : 150 pièces de bronze \n 45 pièces d'argent \n ?Achat : armure simple avec cotte de mailles")
+    .addField("Armure en plate / level 40minimum", "Prix: 500 pièces de bronze \n 210 pièces d'argent \n 70 pièces d'or \n ?Achat : armure en plate")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }
@@ -3494,9 +3494,9 @@ if(message.content === préfix + "Armure HP"){
 
 if(message.content === préfix + "Armure mana"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Armure en tissus fin", "Prix : 70 pièces de bronze \n ?Achat : armure en tissus fin")
-    .addField("Armure de sorcier traditionnel", "Prix : 150 pièces de bronze \n 45 pièces d'argent \n ?Achat : armure de sorcier traditionnel")
-    .addField("Armure de sorcier reconnu", "Prix: 500 pièces de bronze \n 210 pièces d'argent \n 70 pièces d'or \n ?Achat : armure de sorcier reconnu")
+    .addField("Armure en tissus fin / level 5 minimum", "Prix : 70 pièces de bronze \n ?Achat : armure en tissus fin")
+    .addField("Armure de sorcier traditionnel / level 25 minimum", "Prix : 150 pièces de bronze \n 45 pièces d'argent \n ?Achat : armure de sorcier traditionnel")
+    .addField("Armure de sorcier reconnu / level 40 minimum", "Prix: 500 pièces de bronze \n 210 pièces d'argent \n 70 pièces d'or \n ?Achat : armure de sorcier reconnu")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
 }
