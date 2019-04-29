@@ -507,7 +507,7 @@ if(message.content === préfix + "PCP Démon"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ff7a00")
     .setTitle("PCP Démon")
-    .setDescription("1 fois tous les 3 jours, en fixant la personne droit dans les yeux vous pouvez enclencher une sorte de flash back lui remémorant tous les moments tragiques de sa vie, l'effet aura pour bute de le briser intérieurement même un grand musclor qui a un sang froid extrême sera affecté")
+    .setDescription("1 fois toute les 2 semaines, en fixant la personne droit dans les yeux vous pouvez enclencher une sorte de flash back lui remémorant tous les moments tragiques de sa vie, l'effet aura pour bute de le briser intérieurement même un grand musclor qui a un sang froid extrême sera affecté. L'effet durera 3 jours")
     message.channel.sendMessage(help_embed);
 }
     
