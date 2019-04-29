@@ -536,6 +536,17 @@ if(message.content === préfix + "PCP Démon"){
     .addField("42PC", "Le gardien peut choisir un être vivant comme étant son protégé, il passera plus de temps avec cette personne, la protegeant de quiconque pourrait lui faire du mal")
    message.channel.sendMessage(help_embed);
 }
+    
+        if(message.content === préfix + "PCP Grand Archer"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("PCP Grand Archer")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("32PC", "à votre apparence on sait que vous êtes un Archer qui n'est pas un simple amateur")
+    .addField("36PC", "Le grand archer est un pisteur né, il arrive maintenant à suivre des traces de pas d'un groupe de personne et de savoir leur nombre exacte. (en lien avec la PCP 8 du ranger)")
+    .addField("42PC", "Le Grand archer peu faire une esquive sans roll (à une attaque de RP passifs, impossible de l'utiliser si on essaye de vous assommer) une fois tout les jours maximum")
+   message.channel.sendMessage(help_embed);
+}
     if(message.content === préfix + "PCP Clerc"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#8c97d9")
