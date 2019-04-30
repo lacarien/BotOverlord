@@ -1581,7 +1581,7 @@ if(message.content === préfix + "Drapeau de défense"){
     var x = Math.floor(Math.random() * (maxs - mins) + 1) + mins;
     var lol = new Discord.RichEmbed()
     .setColor("#00295b")
-    .setImage("https://gifs.com/gif/p8kE42")
+    .setImage("https://j.gifs.com/p8kE42.gif")
     .addField("Vous foncez sur une personne de la première ligne et il ne peu pas bloquer l'attaque", y)
     .addField("Puis pendant qu'il ou elle est déstabilisé par l'attaque, vous en proffitez pour attaquer une personne de la 2eme ligne et lui infliger(-60 de mana)", x)
     message.channel.sendMessage(lol);
