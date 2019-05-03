@@ -1936,8 +1936,8 @@ if(message.content === préfix + "Saignement démoniaque"){
         .setColor("#76ff00")
         .addField("Vous régénérez", y)
         message.channel.send(y);
-        var mins = Math.floor(Math.min(50));
-        var maxs = Math.floor(Math.max(80)); 
+        var mins = Math.floor(Math.min(80));
+        var maxs = Math.floor(Math.max(90)); 
         var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var w = new Discord.RichEmbed()
         .setColor("#ff8b00")
@@ -1947,14 +1947,14 @@ if(message.content === préfix + "Saignement démoniaque"){
     }
     if(message.content === préfix + "Drain de vie 5"){
         var min = Math.floor(Math.min(60));
-        var max = Math.floor(Math.max(50)); 
+        var max = Math.floor(Math.max(70)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed() 
         .setColor("#76ff00")
         .addField("Vous régénérez", y)
         message.channel.send(y);
-        var mins = Math.floor(Math.min(60));
-        var maxs = Math.floor(Math.max(70)); 
+        var mins = Math.floor(Math.min(90));
+        var maxs = Math.floor(Math.max(100)); 
         var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var w = new Discord.RichEmbed()
         .setColor("#ff8b00")
@@ -1963,15 +1963,15 @@ if(message.content === préfix + "Saignement démoniaque"){
         message.channel.send(w);
     }
     if(message.content === préfix + "Drain de vie 6"){
-        var min = Math.floor(Math.min(50));
-        var max = Math.floor(Math.max(70)); 
+        var min = Math.floor(Math.min(70));
+        var max = Math.floor(Math.max(80)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed() 
         .setColor("#76ff00")
         .addField("Vous régénérez", y)
         message.channel.send(y);
-        var mins = Math.floor(Math.min(70));
-        var maxs = Math.floor(Math.max(80)); 
+        var mins = Math.floor(Math.min(100));
+        var maxs = Math.floor(Math.max(110)); 
         var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var w = new Discord.RichEmbed()
         .setColor("#ff8b00")
@@ -1980,15 +1980,15 @@ if(message.content === préfix + "Saignement démoniaque"){
         message.channel.send(w);
     }
 if(message.content === préfix + "Drain de vie 7"){
-    var min = Math.floor(Math.min(65));
-    var max = Math.floor(Math.max(75)); 
+    var min = Math.floor(Math.min(90));
+    var max = Math.floor(Math.max(110)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed() 
     .setColor("#76ff00")
     .addField("Vous régénérez", y)
     message.channel.send(y);
-    var mins = Math.floor(Math.min(80));
-    var maxs = Math.floor(Math.max(100)); 
+    var mins = Math.floor(Math.min(120));
+    var maxs = Math.floor(Math.max(130)); 
     var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var w = new Discord.RichEmbed()
     .setColor("#ff8b00")
@@ -1997,34 +1997,17 @@ if(message.content === préfix + "Drain de vie 7"){
     message.channel.send(w);
 }
 
-if(message.content === préfix + "Drain de vie 8"){
-    var min = Math.floor(Math.min(70));
-    var max = Math.floor(Math.max(80)); 
-    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var y = new Discord.RichEmbed() 
-    .setColor("#76ff00")
-    .addField("Vous régénérez", y)
-    message.channel.send(y);
-    var mins = Math.floor(Math.min(90));
-    var maxs = Math.floor(Math.max(110)); 
-    var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
-    var w = new Discord.RichEmbed()
-    .setColor("#ff8b00")
-    .addField("Et vous infligez de gros dégats", w)
-    .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
-    message.channel.send(w);
-}
 
 if(message.content === préfix + "Drain de vie 8"){
-    var min = Math.floor(Math.min(80));
-    var max = Math.floor(Math.max(100)); 
+    var min = Math.floor(Math.min(100));
+    var max = Math.floor(Math.max(120)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed() 
     .setColor("#76ff00")
     .addField("Vous régénérez", y)
     message.channel.send(y);
-    var mins = Math.floor(Math.min(90));
-    var maxs = Math.floor(Math.max(120)); 
+    var mins = Math.floor(Math.min(130));
+    var maxs = Math.floor(Math.max(150)); 
     var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var w = new Discord.RichEmbed()
     .setColor("#ff8b00")
