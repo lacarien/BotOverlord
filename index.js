@@ -622,8 +622,15 @@ if(message.content === préfix + "PCP Automaton"){
         .setTitle("PC Vampire")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("10PC", "Vous obtenez la compétence ?Drain de vie")
+        .addField("15PC", "Vous obtenez la compétence ?Drain de vie 2")
+        .addField("20PC", "Vous obtenez la compétence ?Drain de vie 3")
+        .addField("25PC", "Vous obtenez la compétence ?Drain de vie 4")
         .addField("25PC", "Vous obtenez la compétence ?Blocage surhumain")
+        .addField("30PC", "Vous obtenez la compétence ?Drain de vie 5")
+        .addField("35PC", "Vous obtenez la compétence ?Drain de vie 6")
+        .addField("40PC", "Vous obtenez la compétence ?Drain de vie 7")
         .addField("40PC", "Vous obtenez la compétence ?Transformation vampirique")
+        .addField("45PC", "Vous obtenez la compétence ?Drain de vie 8")
         message.channel.sendMessage(help_embed);
     }
 
