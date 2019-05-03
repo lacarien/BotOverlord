@@ -1886,6 +1886,145 @@ if(message.content === préfix + "Saignement démoniaque"){
         .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
         message.channel.send(w);
     }
+      if(message.content === préfix + "Drain de vie 2"){
+        var min = Math.floor(Math.min(30));
+        var max = Math.floor(Math.max(50)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed() 
+        .setColor("#76ff00")
+        .addField("Vous régénérez", y)
+        message.channel.send(y);
+        var mins = Math.floor(Math.min(40));
+        var maxs = Math.floor(Math.max(70)); 
+        var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var w = new Discord.RichEmbed()
+        .setColor("#ff8b00")
+        .addField("Et vous infligez de gros dégats", w)
+        .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
+        message.channel.send(w);
+    }
+
+    if(message.content === préfix + "Drain de vie 3"){
+        var min = Math.floor(Math.min(35));
+        var max = Math.floor(Math.max(55)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed() 
+        .setColor("#76ff00")
+        .addField("Vous régénérez", y)
+        message.channel.send(y);
+        var mins = Math.floor(Math.min(45));
+        var maxs = Math.floor(Math.max(75)); 
+        var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var w = new Discord.RichEmbed()
+        .setColor("#ff8b00")
+        .addField("Et vous infligez de gros dégats", w)
+        .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
+        message.channel.send(w);
+    }
+    if(message.content === préfix + "Drain de vie 4"){
+        var min = Math.floor(Math.min(40));
+        var max = Math.floor(Math.max(60)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed() 
+        .setColor("#76ff00")
+        .addField("Vous régénérez", y)
+        message.channel.send(y);
+        var mins = Math.floor(Math.min(50));
+        var maxs = Math.floor(Math.max(80)); 
+        var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var w = new Discord.RichEmbed()
+        .setColor("#ff8b00")
+        .addField("Et vous infligez de gros dégats", w)
+        .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
+        message.channel.send(w);
+    }
+    if(message.content === préfix + "Drain de vie 5"){
+        var min = Math.floor(Math.min(45));
+        var max = Math.floor(Math.max(65)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed() 
+        .setColor("#76ff00")
+        .addField("Vous régénérez", y)
+        message.channel.send(y);
+        var mins = Math.floor(Math.min(55));
+        var maxs = Math.floor(Math.max(85)); 
+        var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var w = new Discord.RichEmbed()
+        .setColor("#ff8b00")
+        .addField("Et vous infligez de gros dégats", w)
+        .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
+        message.channel.send(w);
+    }
+    if(message.content === préfix + "Drain de vie 6"){
+        var min = Math.floor(Math.min(50));
+        var max = Math.floor(Math.max(70)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed() 
+        .setColor("#76ff00")
+        .addField("Vous régénérez", y)
+        message.channel.send(y);
+        var mins = Math.floor(Math.min(55));
+        var maxs = Math.floor(Math.max(85)); 
+        var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var w = new Discord.RichEmbed()
+        .setColor("#ff8b00")
+        .addField("Et vous infligez de gros dégats", w)
+        .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
+        message.channel.send(w);
+    }
+if(message.content === préfix + "Drain de vie 7"){
+    var min = Math.floor(Math.min(55));
+    var max = Math.floor(Math.max(75)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed() 
+    .setColor("#76ff00")
+    .addField("Vous régénérez", y)
+    message.channel.send(y);
+    var mins = Math.floor(Math.min(60));
+    var maxs = Math.floor(Math.max(90)); 
+    var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var w = new Discord.RichEmbed()
+    .setColor("#ff8b00")
+    .addField("Et vous infligez de gros dégats", w)
+    .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
+    message.channel.send(w);
+}
+
+if(message.content === préfix + "Drain de vie 8"){
+    var min = Math.floor(Math.min(60));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed() 
+    .setColor("#76ff00")
+    .addField("Vous régénérez", y)
+    message.channel.send(y);
+    var mins = Math.floor(Math.min(65));
+    var maxs = Math.floor(Math.max(95)); 
+    var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var w = new Discord.RichEmbed()
+    .setColor("#ff8b00")
+    .addField("Et vous infligez de gros dégats", w)
+    .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
+    message.channel.send(w);
+}
+
+if(message.content === préfix + "Drain de vie 8"){
+    var min = Math.floor(Math.min(65));
+    var max = Math.floor(Math.max(85)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed() 
+    .setColor("#76ff00")
+    .addField("Vous régénérez", y)
+    message.channel.send(y);
+    var mins = Math.floor(Math.min(70));
+    var maxs = Math.floor(Math.max(100)); 
+    var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var w = new Discord.RichEmbed()
+    .setColor("#ff8b00")
+    .addField("Et vous infligez de gros dégats", w)
+    .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
+    message.channel.send(w);
+}
 
 
     if(message.content === préfix + "écailles renforcées"){
