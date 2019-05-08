@@ -2397,9 +2397,9 @@ if(message.content === préfix + "Chevalier attaque"){
     var max = Math.floor(Math.max(70)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
-    .addField("Le chevalier vous infliges un coupd d'épée imblocable", y)
+    .addField("Le chevalier vous infliges un coup d'épée imblocable", y)
     .setColor("#000000")
-    .setImage("https://i.imgur.com/ATCBQw4.gif?noredirect")
+    .setImage("https://d.wattpad.com/story_parts/684781223/images/157be6d70d9c556d711500985972.gif")
     message.channel.sendMessage(y);
 }
 
