@@ -2367,6 +2367,64 @@ if(message.content === préfix + "Loup défense"){
     
     message.channel.sendMessage(y);
 }
+    if(message.content === préfix + "Bouclier de squelette"){
+        var min = Math.floor(Math.min(40));
+        var max = Math.floor(Math.max(45)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous invoquez un mur de squelette devant votre alliée. Au prochain coup qu'il se recevra, l'attaque sera diminué", ":shield: "+y)
+        .setImage("https://j.gifs.com/E8xvYg.gif")
+        .setColor("#000000")
+        message.channel.send(y);
+    }
+    
+    if(message.content === préfix + "Invocation chevalier"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Chevalier mort(-350 mana)")
+    .setColor("#000000")
+    .setDescription("Vous invoquez un chevalier squelettique")
+    .addField("HP", "250")
+    .addField("Attaque", "?Chevalier attaque")
+    .addField("Défense", "?Chevalier défense")
+    .setImage("https://vignette.wikia.nocookie.net/overlord8371/images/6/6a/Death_Knight_Databook_01.png/revision/latest?cb=20190206001525&path-prefix=fr")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "Chevalier attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(70)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le chevalier vous infliges un coupd d'épée imblocable", y)
+    .setColor("#000000")
+    .setImage("https://i.imgur.com/ATCBQw4.gif?noredirect")
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Chevalier défense"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 80)
+    var y = new Discord.RichEmbed()
+    .addField("Le chevalier bloque l'attaque à l'aide de son bouclier", y)
+    .setImage("https://pm1.narvii.com/6782/bacc97ce1fbdf149a459b55b6138b343392eea39v2_hq.jpg")
+    .setColor("#000000")
+        else if(result < 90)
+    var y = new Discord.RichEmbed()
+    .setColor("#000000")
+    .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/9/92/Death_Knight_Profile.png/revision/latest?cb=20151130052156")
+    .setAuthor("Le chevalier ne bloque pas mais il reçoit uniquement la moitié des dégats")
+    else if(result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#000000")
+    .setTitle("Le chevalier se prend tout les dégats sans broncher")
+    message.channel.sendMessage(y);
+}
 
     
     if(message.content === préfix + "Invocation divine"){
@@ -2403,6 +2461,8 @@ if(message.content === préfix + "Loup défense"){
     .setImage("https://media.discordapp.net/attachments/541643841061519361/560871237660966913/latest.png?width=832&height=468")
     message.channel.sendMessage(help_embed);
 }
+    
+    
     if(message.content === préfix + "A attaque"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(100));
