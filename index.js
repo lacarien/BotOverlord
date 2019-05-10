@@ -1030,8 +1030,8 @@ if(message.content === préfix + "PC Berserk"){
     }
     if(message.content === préfix + "Coup bas"){
         
-         var min = Math.floor(Math.min(15));
-        var max = Math.floor(Math.max(25)); 
+         var min = Math.floor(Math.min(20));
+        var max = Math.floor(Math.max(30)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous lui infligé un coup de dague impossible à bloquer. Vous perdez 40 de mana", ":dagger: "+y)
@@ -1042,16 +1042,16 @@ if(message.content === préfix + "PC Berserk"){
     
      if(message.content === préfix + "Coup de dague"){
         
-        var min = Math.floor(Math.min(45));
+        var min = Math.floor(Math.min(50));
        var max = Math.floor(Math.max(70)); 
        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
           var result = Math.floor((Math.random() * 100) +1);
-       if(result < 90)
+       if(result < 85)
        var y = new Discord.RichEmbed()
        .addField("Vous lui infligé un coup de dague rapide et lui infligé",":dagger: "+ y)
        .setColor("#ff6000")
        .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/b/ba/Overlord_II_EP06_097.png/revision/latest?cb=20180216051904")
-       if(result > 90)
+       if(result > 85)
        var y = new Discord.RichEmbed()
        .setColor("#ff6000")
        .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup ",":dagger: "+ y)
@@ -1060,7 +1060,7 @@ if(message.content === préfix + "PC Berserk"){
    }
      if(message.content === préfix + "G Coup de dague"){
         
-        var min = Math.floor(Math.min(100));
+        var min = Math.floor(Math.min(115));
        var max = Math.floor(Math.max(130)); 
        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
           var result = Math.floor((Math.random() * 100) +1);
@@ -1079,7 +1079,7 @@ if(message.content === préfix + "PC Berserk"){
     
      if(message.content === préfix + "Coup furtif"){
         
-    var min = Math.floor(Math.min(100));
+    var min = Math.floor(Math.min(105));
    var max = Math.floor(Math.max(120)); 
    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
       var result = Math.floor((Math.random() * 100) +1);
