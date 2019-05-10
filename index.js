@@ -508,6 +508,7 @@ if(message.content === préfix + "PCP Démon"){
     .setColor("#ff7a00")
     .setTitle("PCP Démon")
     .setDescription("1 fois toute les 2 semaines, en fixant la personne droit dans les yeux vous pouvez enclencher une sorte de flash back lui remémorant tous les moments tragiques de sa vie, l'effet aura pour bute de le briser intérieurement même un grand musclor qui a un sang froid extrême sera affecté. L'effet durera 3 jours")
+    .addField("2-PCP Démon","Le démon peu faire un pacte avec une autre personne (autre que démon, soyez logique). Le démon pourra: \n -Communiquer avec la personne par télépathie \n -Se téléporter à la personne deux fois par jour si est seulement si le démon ou bien la personne ne sont pas en combat(si vous êtes entrain de fuir cela ne marche pas) et la disparition et l'apparition du démon ne doit pas être en public \n -C'est un pacte donc...pour recevoir son aide et sa loyauté il faut bien sur un contre partie que seul le démon peut choisir d'accepter ou non et le démon peut modifier les thermes du contrat comme il le souhaite si la demande si la contre partie ne lui plait pas ou n'est pas à son avantage. C'est un démon donc...Les contre parties gentilles n'existent pas")
     message.channel.sendMessage(help_embed);
 }
     
