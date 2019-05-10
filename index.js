@@ -700,6 +700,7 @@ if(message.content === préfix + "PCP Automaton"){
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("5PC", "Vous obtenez l'attaque spécial ?Coup bas")
         .addField("10PC", "Vous obtenez la compétence ?Voleur ultime")
+        .addField("13PC", "Vous obtenez la compétence ?Esquive")
         .addField("15PC", "Vous pouvez devenir Assassin")
         message.channel.sendMessage(help_embed);
     }
@@ -711,6 +712,7 @@ if(message.content === préfix + "PCP Automaton"){
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("5PC", "Vous obtenez la compétence spécial ?Soins de bas rang")
         .addField("10PC", "Vous obtenez la compétence ?Mage ultime")
+        .addField("13PC", "Vous obtenez la compétence ?Blocage magique")
         .addField("15PC", "Vous pouvez devenir Druid ou Sorcier")
         message.channel.sendMessage(help_embed);
     }
@@ -723,6 +725,7 @@ if(message.content === préfix + "PCP Automaton"){
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("5PC", "Vous obtenez 20hp en plus")
         .addField("10PC", "Vous obtenez la compétence ?Combattant ultime")
+        .addField("13PC", "Vous obtenez ?C Coup d'épée ou bien ?Blocage supérieure selon votre futur choix de classe (13PC) pour le combattant")
         .addField("15PC", "Vous pouvez devenir Paladin ou Chevalier")
         message.channel.sendMessage(help_embed);
     }
@@ -735,6 +738,7 @@ if(message.content === préfix + "PCP Automaton"){
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("5PC", "Vous obtenez la compétence ?Tire rapide")
         .addField("10PC", "Vous obtenez la compétence ?Ranger ultime")
+        .addField("10PC", "Vous obtenez la compétence ?Blocage rapide")
         .addField("15PC", "Vous pouvez devenir Archer")
         message.channel.sendMessage(help_embed);
     }
@@ -818,7 +822,7 @@ if(message.content === préfix + "PC Berserk"){
         .setColor("#00ffe7")
         .setTitle("PC Sorcier")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Sort simple + ?Blocage magique + 70 de Mana")
+        .addField("15PC", "?Sort simple + 70 de Mana")
         .addField("18PC", "?Sort de soins")
         .addField("22PC", "?Tornade de flamme")
         .addField("25PC", " ?Sorcier ultime")
@@ -846,10 +850,10 @@ if(message.content === préfix + "PC Berserk"){
         .setColor("#ff0000")
         .setTitle("PC Assassin")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-        .addField("15PC", "?Coup de dague + ?Esquive")
+        .addField("15PC", "?Coup de dague")
         .addField("20PC", "?Camouflage")
         .addField("25PC", "?Assassin ultime")
-        .addField("30PC", "Vous pouvez passer Grand Assassin ou Grand illusionist ")
+        .addField("30PC", "Vous pouvez passer Grand Assassin ou Ninja")
         message.channel.sendMessage(help_embed);
     }
     if(message.content === préfix + "PC Grand Assassin"){
@@ -908,9 +912,9 @@ if(message.content === préfix + "PC Berserk"){
         .addField("33PC", "?Tir explosif")
         .addField("35PC", "?Tir énèrgétique")
         .addField("37PC", "200 de Mana en plus / ?Réparation")
-        .addField("39PC", "???")
+        .addField("39PC", "Renforcement")
         .addField("41PC", "?Invocation de drone")
-        .addField("43PC", "???")
+        .addField("43PC", "Super bolt")
         .addField("43PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
     }
@@ -1140,7 +1144,7 @@ if(message.content === préfix + "Aura du gardien"){
         var max = Math.floor(Math.max(200)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous envoyez un sort qui brule votre adversaire. -100 de mana", ":fire: "+y)
+        .addField("Vous envoyez un sort qui brule votre adversaire. -125 de mana", ":fire: "+y)
         .setImage("https://media.giphy.com/media/x49CbUokcHQZdaSyga/giphy.gif   ")
         .setColor("#e65e0d")
         message.channel.send(y);
@@ -1233,11 +1237,11 @@ if(message.content === préfix + "Aura du gardien"){
         message.channel.send(y);
     }
     if(message.content === préfix + "Réparation"){
-        var min = Math.floor(Math.min(120));
+        var min = Math.floor(Math.min(130));
         var max = Math.floor(Math.max(170)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous récupérez du mana contre de la vitalité(-50 HP)",":wrench:  "+ y + " :sparkles: ")
+        .addField("Vous récupérez de la vitalité contre du mana(-200 de mana)",":heart:   "+ y)
         .setImage("https://www.syanart.com/wp-content/uploads/2016/04/One-Punch-Man-Genos.jpg")
         message.channel.send(y);
     }
@@ -1253,8 +1257,8 @@ if(message.content === préfix + "Aura du gardien"){
 
     if(message.content === préfix + "Piège"){
         var result = Math.floor((Math.random() * 100) + 1);
-        var min = Math.floor(Math.min(60));
-        var max = Math.floor(Math.max(90)); 
+        var min = Math.floor(Math.min(90));
+        var max = Math.floor(Math.max(110)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         if (result < 50)
         var y = new Discord.RichEmbed()
@@ -2372,7 +2376,7 @@ if(message.content === préfix + "Loup défense"){
         var max = Math.floor(Math.max(45)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous invoquez un mur de squelette devant votre alliée. Au prochain coup qu'il se recevra, l'attaque sera diminué", ":shield: "+y)
+        .addField("Vous invoquez un mur de squelette devant votre alliée. Au prochain coup qu'il se recevra, l'attaque sera diminué(-50 de mana)", ":shield: "+y)
         .setImage("https://j.gifs.com/E8xvYg.gif")
         .setColor("#000000")
         message.channel.send(y);
