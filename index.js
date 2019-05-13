@@ -1255,6 +1255,26 @@ if(message.content === préfix + "Aura du gardien"){
         .setImage("https://media.discordapp.net/attachments/536292650698014731/569877071694921728/c60158208dcd2a4a60a3a546aa2591f5.png")
         message.channel.sendMessage(help_embed);
     }
+    
+    if(message.content === préfix + "Coup d'estoc"){
+   
+    var min = Math.floor(Math.min(75));
+   var max = Math.floor(Math.max(90)); 
+   var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+      var result = Math.floor((Math.random() * 100) +1);
+   if(result < 70)
+   var y = new Discord.RichEmbed()
+   .addField("Vous donnez un coups d'épée impossible à esquiver(-50 mana)", y)
+   .setColor("#939696")
+   .setImage("https://media.discordapp.net/attachments/536292650698014731/576329839280128001/245039-akame-ga-kill-dashing-tatsumi.gif")
+   else
+   var y = new Discord.RichEmbed()
+   .setColor("#939696")
+   .addField("Vous donnez un coups d'épée simple(-20 mana)", y)
+   .setImage("https://media.discordapp.net/attachments/536292650698014731/576329895924465666/15302dc904ff91928a7d8fb4df970497.gif")
+   message.channel.send(y);
+}
+
 
     if(message.content === préfix + "Piège"){
         var result = Math.floor((Math.random() * 100) + 1);
