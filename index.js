@@ -1334,6 +1334,25 @@ if(message.content === préfix + "Tir explosif"){
     message.channel.sendMessage(y);
 }
     
+      if(message.content === préfix + "Dague sinistre"){
+        
+    var min = Math.floor(Math.min(100));
+   var max = Math.floor(Math.max(130)); 
+   var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+      var result = Math.floor((Math.random() * 100) +1);
+   if(result < 90)
+   var y = new Discord.RichEmbed()
+   .addField("Vous disparaissez et réapparaissez dans le dos de votre adversaire qui est en seconde ligne venant essayer d'enfoncer la dague dans son dos(-100 de mana)", y)
+   .setColor("#ff2300")
+   .setImage("https://www.eclypsia.com/public/upload/news/2012_08/gw2-theif-class1.jpg")
+   if(result > 90)
+   var y = new Discord.RichEmbed()
+   .setColor("#ff2300")
+   .addField("Vous disparaissez et réapparaissez dans le dos de votre adversaire qui est en seconde ligne venant essayer d'enfoncer la dague dans son dos. Impossible à bloquer(-100 de mana)", y)
+   .setImage("https://www.lebusmagique.fr/medias/images/thief-02-concept-art-1-.jpg")
+   message.channel.send(y);
+}
+    
     if(message.content === préfix + "Shurikens"){
    
     var min = Math.floor(Math.min(80));
