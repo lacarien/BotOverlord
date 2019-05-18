@@ -865,7 +865,7 @@ if(message.content === préfix + "PC Berserk"){
         .addField("30PC", "?Faible blocage")
         .addField("33PC", "?G coup de dague")
         .addField("35PC", "?Fuite amélioré")
-        .addField("37PC", "?Dague multiple")
+        .addField("37PC", "?Dague sinistre")
         .addField("39PC", "?Poison de corruption")
         .addField("41PC", "?Le faux mort")
         .addField("43PC", "Grand Assassin ultime")
