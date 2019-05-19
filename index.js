@@ -1006,6 +1006,29 @@ if(message.content === préfix + "PC Berserk"){
         .setImage("http://s1.1zoom.me/big0/177/Stormfall_Age_of_War_Knight_Armor_Swords_522831_1280x800.jpg")
         message.channel.send(y);
     }
+    
+      
+    if(message.content === préfix + "Fumée sanglante"){
+        var min = Math.floor(Math.min(90));
+        var max = Math.floor(Math.max(110)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous lancez une fumée de couleur sang sur la deuxième ligne qui est imblocable(-150)", y)
+        .setColor("#12110F")
+        .setImage("https://www.unesourisetmoi.info/data/medias/photos/290/fumee-rouge.jpg")
+        message.channel.send(y);
+    }
+    if(message.content === préfix + "Poison de corruption"){
+        var min = Math.floor(Math.min(70));
+        var max = Math.floor(Math.max(90)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous lancez une fumée de couleur verte sur la deuxième ligne qui est inévitable(-150)", y)
+        .setColor("#ff0000")
+        .setImage("https://ns328286.ip-37-187-113.eu/ew/wallpapers/800x480/03694_800x480.jpg")
+        message.channel.send(y);
+    }
+    
      if(message.content === préfix + "Attaque lourde"){
         var min = Math.floor(Math.min(130));
         var max = Math.floor(Math.max(150)); 
