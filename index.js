@@ -1685,6 +1685,17 @@ if(message.content === préfix + "Drapeau de défense"){
     .setColor("#00295b")
     message.channel.sendMessage(help_embed);
 }
+    
+    if(message.content === préfix + "écrase coeur"){
+        var min = Math.floor(Math.min(40));
+        var max = Math.floor(Math.max(60)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous compresez spirituellement le coeur de votre ennemie(imblocable). Celui-ci sera la cible prioritaire de votre invocation(-50 de mana)", ":broken_heart:  "+y)
+        .setImage("https://media1.tenor.com/images/6c99a6492ff1cf7c6259ca03cd433cf6/tenor.gif?itemid=9475074")
+        .setColor("#e200ff")
+        message.channel.send(y);
+    }
 
     if(message.content === préfix + "Tir à l'arc"){
         var min = Math.floor(Math.min(10));
