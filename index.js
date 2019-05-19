@@ -1013,7 +1013,7 @@ if(message.content === préfix + "PC Berserk"){
         var max = Math.floor(Math.max(110)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous lancez une fumée de couleur sang sur la deuxième ligne qui est imblocable(-150)", y)
+        .addField("Vous lancez une fumée de couleur sang sur la première ligne qui est imblocable(-150)", y)
         .setColor("#12110F")
         .setImage("https://www.unesourisetmoi.info/data/medias/photos/290/fumee-rouge.jpg")
         message.channel.send(y);
