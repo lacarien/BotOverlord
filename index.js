@@ -42,6 +42,38 @@ client.on('message', message => {
         console.log("Un utilisateur à utiliser la commande d'aide.")
     }
     
+    if(message.content === préfix + "Météo") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 40){
+    var result = new Discord.RichEmbed() 
+    .setTitle("C'est un temps parfait, aucun nuage à l'horizon")
+    .setColor("#00ff04")
+    .setImage("http s://s2.best-wallpaper.net/wallpaper/1920x1080/1711/Anime-trees-sunset-clouds-nature-landscape_1920x1080.jpg")}
+    else if(result < 60){
+    var result = new Discord.RichEmbed() 
+    .setTitle("Aujourd'hui le temps n'est pas idéal, la pluie est au rendez-vous")
+    .setColor("#00afff")
+    .setImage("https://media.discordapp.net/attachments/549628514303737856/581863637170389012/fantasy-art-water-nature-reflection-rain-morning-29273-wallhere.com_1.jpg?width=895&height=560")}
+    else if(result < 70){
+        var result = new Discord.RichEmbed() 
+        .setTitle("Vous pouvez sentir quelque chose sur vos épaules...Et oui c'est bien de la neige")
+        .setColor("#6faecb")
+        .setImage("http://s1.1zoom.me/b5050/208/400825-sepik_1400x1050.jpg")}
+    else if(result < 85){
+    var result = new Discord.RichEmbed() 
+    .setTitle("La brume se lève, votre vision devient trouble")
+    .setColor("#818e94")
+    .setImage("https://s2.best-wallpaper.net/wallpaper/1920x1200/1807/Forest-trees-haze-fog-morning_1920x1200.jpg")}
+    else if(result < 101){
+        var result = new Discord.RichEmbed() 
+        .setTitle("Le vent se lève, attention as vous")
+        .setImage("http://www.fondsecran.eu/pictures/2012/0206/1/monsters-birds-magic-the-gathering-giant-realistic-warriors-1600x1171-wallpaper-488183.jpg")}
+    
+
+    message.channel.send(result);
+
+}
+    
     if(message.content === préfix + "Métiers"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
