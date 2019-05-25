@@ -75,7 +75,7 @@ client.on('message', message => {
 }
     
     if(message.content === "tu penses quoi de Octogone ?"){
-    message.send("Il est moche, j'ai envie de vomir à chaque fois que je le voie, c'est insupportable")
+    message.send("`\n Octogone est moche, j'ai envie de vomir à chaque fois que je le voie, c'est insupportable. Une fois j'ai même eu envie de me suicider")
 }
 
     
