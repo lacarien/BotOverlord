@@ -1787,6 +1787,8 @@ if(message.content === préfix + "Drapeau de défense"){
     .setImage("https://media.discordapp.net/attachments/454694319396356128/581398959587590144/Screenshot_2019-05-24-10-30-21-1.png?width=318&height=468")
     message.channel.send(y);
 }
+    
+    
 if(message.content === préfix + "Lame noir"){
         
     var min = Math.floor(Math.min(180));
@@ -1795,14 +1797,14 @@ if(message.content === préfix + "Lame noir"){
       var result = Math.floor((Math.random() * 100) +1);
    if(result < 60)
    var y = new Discord.RichEmbed()
-   .addField("Votre dague sombre et vous infligez de lourd dégats à votre adversaire (-150 de Mana)", y)
+   .addField("Vous lancez votre dague sombre qui transperce spirituellement votre adversaire(-220 de Mana)", y)
    .setColor("#ff2300")
    .setImage("https://1920x1080hdwallpapers.com/image/201511/fantasy/3017/dark-elf-evil-sword-hairstyle-armor.jpg")
    if(result > 60)
    var y = new Discord.RichEmbed()
    .setColor("#ff2300")
-   .addField("Vous lancez votre dague sombre qui traverse votre adversaire et inflige la moitié des dégats à la personne juste dérrière lui, impossible à esquiver et à bloquer (si il est seul, alors il se prend tous les dégats)(-150 de Mana)", y)
-   .setImage("http://s1.1zoom.me/big0/817/DOTA_2_Phantom_assassin_477640.jpg")
+   .addField("Vous lancez votre dague sombre qui traverse votre adversaire et inflige la moitié des dégats à la personne juste dérrière lui, impossible à esquiver et à bloquer (si il est seul, alors il se prend tous les dégats)(-220 de Mana)", y)
+   .setImage("https://c.wallhere.com/photos/3d/c2/sword_demon_blue_eyes_armor_shadow_fantasy_art-262927.jpg!d")
    message.channel.send(y);
 }
     
