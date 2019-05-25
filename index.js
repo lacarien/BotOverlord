@@ -48,7 +48,7 @@ client.on('message', message => {
     var result = new Discord.RichEmbed() 
     .setTitle("C'est un temps parfait, aucun nuage à l'horizon")
     .setColor("#00ff04")
-    .setImage("http s://s2.best-wallpaper.net/wallpaper/1920x1080/1711/Anime-trees-sunset-clouds-nature-landscape_1920x1080.jpg")}
+    .setImage("https://s2.best-wallpaper.net/wallpaper/1920x1080/1711/Anime-trees-sunset-clouds-nature-landscape_1920x1080.jpg")}
     else if(result < 60){
     var result = new Discord.RichEmbed() 
     .setTitle("Aujourd'hui le temps n'est pas idéal, la pluie est au rendez-vous")
@@ -67,7 +67,7 @@ client.on('message', message => {
     else if(result < 101){
         var result = new Discord.RichEmbed() 
         .setTitle("Le vent se lève, attention as vous")
-        .setImage("http://www.fondsecran.eu/pictures/2012/0206/1/monsters-birds-magic-the-gathering-giant-realistic-warriors-1600x1171-wallpaper-488183.jpg")}
+        .setImage("http://cache.desktopnexus.com/thumbseg/2408/2408928-bigthumbnail.jpg")}
     
 
     message.channel.send(result);
