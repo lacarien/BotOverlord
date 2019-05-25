@@ -1777,6 +1777,35 @@ if(message.content === préfix + "Drapeau de défense"){
         message.channel.send(y);
     }
     
+     if(message.content === préfix + "Le faux mort"){
+    var min = Math.floor(Math.min(200));
+    var max = Math.floor(Math.max(240)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous faites semblant d'être mort mais au dernier moment vous foncez sur votre ennemie pour lui infliger de très lourd dégats(-150 de Mana et utilisable qu'une fois par combat). La sainte bénédiction ne fonctionne pas et impossible de l'enchainer avec un camouflage", y)
+    .setColor("#ff2300")
+    .setImage("https://media.discordapp.net/attachments/454694319396356128/581398959587590144/Screenshot_2019-05-24-10-30-21-1.png?width=318&height=468")
+    message.channel.send(y);
+}
+if(message.content === préfix + "Lame noir"){
+        
+    var min = Math.floor(Math.min(180));
+   var max = Math.floor(Math.max(220)); 
+   var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+      var result = Math.floor((Math.random() * 100) +1);
+   if(result < 60)
+   var y = new Discord.RichEmbed()
+   .addField("Votre dague sombre et vous infligez de lourd dégats à votre adversaire (-150 de Mana)", y)
+   .setColor("#ff2300")
+   .setImage("https://1920x1080hdwallpapers.com/image/201511/fantasy/3017/dark-elf-evil-sword-hairstyle-armor.jpg")
+   if(result > 60)
+   var y = new Discord.RichEmbed()
+   .setColor("#ff2300")
+   .addField("Vous lancez votre dague sombre qui traverse votre adversaire et inflige la moitié des dégats à la personne juste dérrière lui, impossible à esquiver et à bloquer (si il est seul, alors il se prend tous les dégats)(-150 de Mana)", y)
+   .setImage("http://s1.1zoom.me/big0/817/DOTA_2_Phantom_assassin_477640.jpg")
+   message.channel.send(y);
+}
+    
     
     if(message.content === préfix + "Drapeau de soins"){
     var y = new Discord.RichEmbed()
@@ -1849,6 +1878,43 @@ if(message.content === préfix + "Drapeau de défense"){
         .addField("Vous executez un violent d'épée(-150 de Mana)",":crossed_swords: "+  l)
         .setImage("https://thumbs.gfycat.com/MintyConstantAnkole-size_restricted.gif")
         message.channel.send(l);
+    }
+    
+    
+    if(message.content === préfix + "Gardien ultime"){
+        var min = Math.floor(Math.min(40));
+        var max = Math.floor(Math.max(60)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#1611c3")
+        .addField("Vous devenez resistant durant 4 tours(-300 de Mana)", ":shield:  " + y)
+        message.channel.send(y);
+        var mins = Math.floor(Math.min(250));
+        var maxs = Math.floor(Math.max(300)); 
+        var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var w = new Discord.RichEmbed() 
+        .setColor("#e60505")
+        .addField("Vous régénérez de la vitalité en concentrant votre énergie dans votre lourde épée", ":heart:  "+ w)
+        .setImage("https://j.gifs.com/gZkx1j.gif")
+        message.channel.send(w);
+    }
+
+    if(message.content === préfix + "Berserk ultime"){
+        var min = Math.floor(Math.min(200));
+        var max = Math.floor(Math.max(300)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#c50e0e")
+        .addField("Vous ne pouvez plus utilisez aucune défense durant 3 tours et perdez des HP(-300 de Mana)", ":shield:  " + y)
+        message.channel.send(y);
+        var mins = Math.floor(Math.min(100));
+        var maxs = Math.floor(Math.max(150)); 
+        var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var w = new Discord.RichEmbed() 
+        .setColor("#e60505")
+        .addField("Vos attaques sont inévitables et imparables durant 4 tours et vos compétences n'utilisent plus de mana en plus d'avoir un bonus de dégats", ":crossed_swords:  "+ w)
+        .setImage("https://j.gifs.com/5QWAnX.gif")
+        message.channel.send(w);
     }
     
     if(message.content === préfix + "Chevalier ultime"){
