@@ -75,6 +75,60 @@ client.on('message', message => {
 
 }
     
+    if(message.content === préfix + "Wiki"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("Sommaire du wiki par zone")
+    .setDescription("L'ancien temps \n Le royaume principal \n La zone sombre \n Les abysses \n L'arbre des morts")
+   
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "L'ancien temps"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("L'ancien temps")
+    .setDescription("La création du monde \n Les PNJ de l'ancien temps")
+   
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Le royaume principal"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("Le royaume principal")
+    .setDescription("Le lore du royaume principal \n Les PNJ du royaume principal")
+   
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Zone sombre"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("Zone sombre")
+    .setDescription("Le lore de la zone sombre \n Les PNJ de la zone sombre")
+   
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "Les abysses"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("Les abysses")
+    .setDescription("Le lore des abysses \n Les PNJ des abysses")
+   
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "L'arbre des morts"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("L'arbre des morts'")
+    .setDescription("Le lore du grand arbre")
+   
+    message.channel.sendMessage(help_embed);
+}
+
+    
     if(message.content === "tu penses quoi de Octogone ?"){
     message.reply("`\n Octogone est moche, j'ai envie de vomir à chaque fois que je le voie, c'est insupportable. Une fois j'ai même eu envie de me suicider")
 }
