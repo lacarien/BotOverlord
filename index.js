@@ -1778,12 +1778,14 @@ if(message.content === préfix + "Drapeau de défense"){
         message.channel.send(y);
     }
     
+    
+    
        if(message.content === préfix + "Le faux mort"){
         var min = Math.floor(Math.min(200));
         var max = Math.floor(Math.max(240)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous faites semblant d'être mort mais au dernier moment vous foncez sur votre ennemie pour lui infliger de très lourd dégats(-150 de Mana et utilisable qu'une fois par combat). La sainte bénédiction ne fonctionne pas et impossible de l'enchainer avec un camouflage", ":dagger:  " +y)
+        .addField("Vous simulez une mort pour ensuite tendre un piège à votre ennemie(-150 de Mana, utilisable qu'une fois par combat et la sainte bénédiction ne fonctionne pas et impossible de l'enchainer avec un camouflage)", ":dagger:  " +y)
         .setImage("https://i.pinimg.com/736x/2f/0a/39/2f0a391b33d16504b99d5c94a9501900.jpg")
         .setColor("#ff2300")
         message.channel.send(y);
