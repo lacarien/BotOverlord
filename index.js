@@ -1778,16 +1778,18 @@ if(message.content === préfix + "Drapeau de défense"){
         message.channel.send(y);
     }
     
-     if(message.content === préfix + "Le faux mort"){
-    var min = Math.floor(Math.min(200));
-    var max = Math.floor(Math.max(240)); 
-    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var y = new Discord.RichEmbed()
-    .addField("Vous faites semblant d'être mort mais au dernier moment vous foncez sur votre ennemie pour lui infliger de très lourd dégats(-150 de Mana et utilisable qu'une fois par combat). La sainte bénédiction ne fonctionne pas et impossible de l'enchainer avec un camouflage", y)
-    .setColor("#ff2300")
-    .setImage("https://media.discordapp.net/attachments/454694319396356128/581398959587590144/Screenshot_2019-05-24-10-30-21-1.png?width=318&height=468")
-    message.channel.send(y);
-}
+       if(message.content === préfix + "Le faux mort"){
+        var min = Math.floor(Math.min(200));
+        var max = Math.floor(Math.max(240)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setImage("https://i.pinimg.com/736x/2f/0a/39/2f0a391b33d16504b99d5c94a9501900.jpg")
+        .setColor("#ff2300")
+        .addField("Vous faites semblant d'être mort mais au dernier moment vous foncez sur votre ennemie pour lui infliger de très lourd dégats(-150 de Mana et utilisable qu'une fois par combat). La sainte bénédiction ne fonctionne pas et impossible de l'enchainer avec un camouflage", y)
+        message.channel.send(y);
+    }
+    
+
     
     
 if(message.content === préfix + "Lame noir"){
