@@ -6090,7 +6090,7 @@ if(message.content === préfix + "Arrive dans l'église") {
     .setImage("http://vignette1.wikia.nocookie.net/berserk/images/0/05/Mozgus_Manga.jpg/revision/latest?cb=20140416220234")}
     
 
-    message.channel.send(result);
+    message.channel.sendMessage(result);
 
 }
 
