@@ -597,6 +597,19 @@ if(message.content === préfix + "PCP Démon"){
     .addField("42PC", "Le Clerc arrive à calmer quelqu'un en detresse psychologique ")
    message.channel.sendMessage(help_embed);
 }
+    
+        if(message.content === préfix + "PCP commune"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#8c97d9")
+    .setTitle("PCP Commune")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("20PC", "Vous avez une petite aura que vous pouvez faire sortir difficilement à l'aide d'un roll")
+    .addField("30PC", "Vous avez une aura que vous pouvez faire sortir quand vous voulez")
+    .addField("45PC", "Vous avez une aura plus grande que la moyenne que vous pouvez faire sortir quand vous voulez.")
+   message.channel.sendMessage(help_embed);
+}
+    
+    
     if(message.content === préfix + "PCP Classe Automaton"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#bcb9b6")
