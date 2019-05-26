@@ -133,7 +133,7 @@ if(message.content === préfix + "L'arbre des morts"){
     message.reply("`\n Octogone est moche, j'ai envie de vomir à chaque fois que je le voie, c'est insupportable. Une fois j'ai même eu envie de me suicider")
 }
 
-    if(message.content === "^^Kiss @Overlord"){
+    if(message.content === "^^Kiss @Overlord#7651"){
     message.reply("PUTAIN MAIS LÂCHE MOI SALE SOUS ÊTRE")
 }
     
