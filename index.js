@@ -1783,10 +1783,9 @@ if(message.content === préfix + "Drapeau de défense"){
         var max = Math.floor(Math.max(240)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
+        .addField("Vous faites semblant d'être mort mais au dernier moment vous foncez sur votre ennemie pour lui infliger de très lourd dégats(-150 de Mana et utilisable qu'une fois par combat). La sainte bénédiction ne fonctionne pas et impossible de l'enchainer avec un camouflage", ":dagger:  " +y)
         .setImage("https://i.pinimg.com/736x/2f/0a/39/2f0a391b33d16504b99d5c94a9501900.jpg")
         .setColor("#ff2300")
-        .setTitle("Vous faites semblant d'être mort mais au dernier moment vous foncez sur votre ennemie pour lui infliger de très lourd dégats(-150 de Mana et utilisable qu'une fois par combat). La sainte bénédiction ne fonctionne pas et impossible de l'enchainer avec un camouflage")
-        .setDescription(":dagger:  " +y)
         message.channel.send(y);
     }
     
@@ -1796,7 +1795,7 @@ if(message.content === préfix + "Drapeau de défense"){
 if(message.content === préfix + "Lame noir"){
         
     var min = Math.floor(Math.min(180));
-   var max = Math.floor(Math.max(220)); 
+   var max = Math.floor(Math.max(200)); 
    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
       var result = Math.floor((Math.random() * 100) +1);
    if(result < 60)
@@ -2985,46 +2984,6 @@ if(message.content === préfix + "Arrive dans la forêt") {
 
 }
 
-if(message.content === préfix + "Les zones"){
-    var help_embed = new Discord.RichEmbed()
-    .setColor("#f0ff00")
-    .setTitle("Marécage")
-    .setDescription("?Arrive dans le marécage")
-    .addField("Forêt", "?Arrive dans la forêt")
-    .addField("Royaume ou village en cas d'agression et de Roll réussie celon la situation", "?SOS")
-    message.channel.sendMessage(help_embed);
-}
-    
-    
-if(message.content === préfix + "C"){
-    var help_embed = new Discord.RichEmbed()
-    .setColor("#f0ff00")
-    .setTitle("Marécage")
-    .setDescription("?Arrive dans le marécage")
-    .addField("Forêt", "?Arrive dans la forêt")
-    .addField("Royaume ou village en cas d'agression et de Roll réussie celon la situation", "?SOS")
-    message.channel.sendMessage(help_embed);
-}
-    
-if(message.content === préfix + "B"){
-    var help_embed = new Discord.RichEmbed()
-    .setColor("#f0ff00")
-    .setTitle("Marécage")
-    .setDescription("?Arrive dans le marécage")
-    .addField("Forêt", "?Arrive dans la forêt")
-    .addField("Royaume ou village en cas d'agression et de Roll réussie celon la situation", "?SOS")
-    message.channel.sendMessage(help_embed);
-}
-    
-if(message.content === préfix + "A"){
-    var help_embed = new Discord.RichEmbed()
-    .setColor("#f0ff00")
-    .setTitle("Marécage")
-    .setDescription("?Arrive dans le marécage")
-    .addField("Forêt", "?Arrive dans la forêt")
-    .addField("Royaume ou village en cas d'agression et de Roll réussie celon la situation", "?SOS")
-    message.channel.sendMessage(help_embed);
-}
 
 if(message.content === préfix + "Apparition marécage") {
     var result = Math.floor((Math.random() * 100) + 1);
