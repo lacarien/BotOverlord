@@ -1785,7 +1785,8 @@ if(message.content === préfix + "Drapeau de défense"){
         var y = new Discord.RichEmbed()
         .setImage("https://i.pinimg.com/736x/2f/0a/39/2f0a391b33d16504b99d5c94a9501900.jpg")
         .setColor("#ff2300")
-        .addField("Vous faites semblant d'être mort mais au dernier moment vous foncez sur votre ennemie pour lui infliger de très lourd dégats(-150 de Mana et utilisable qu'une fois par combat). La sainte bénédiction ne fonctionne pas et impossible de l'enchainer avec un camouflage", y)
+        .setTitle("Vous faites semblant d'être mort mais au dernier moment vous foncez sur votre ennemie pour lui infliger de très lourd dégats(-150 de Mana et utilisable qu'une fois par combat). La sainte bénédiction ne fonctionne pas et impossible de l'enchainer avec un camouflage")
+        .setDescription(":dagger:  " +y)
         message.channel.send(y);
     }
     
@@ -1910,7 +1911,7 @@ if(message.content === préfix + "Lame noir"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#c50e0e")
-        .addField("Vous ne pouvez plus utilisez aucune défense durant 3 tours et perdez des HP(-300 de Mana)", ":shield:  " + y)
+        .addField("Vous ne pouvez plus utilisez aucune défense durant 3 tours et perdez des HP(-300 de Mana)", ":broken_heart:   " + y)
         message.channel.send(y);
         var mins = Math.floor(Math.min(100));
         var maxs = Math.floor(Math.max(150)); 
