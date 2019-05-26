@@ -6064,17 +6064,9 @@ if(message.content === préfix + "Transformation aquatique"){
     .setImage("https://theglorioblog.files.wordpress.com/2015/12/opm9seaking.jpg")
     message.channel.sendMessage(help_embed);
 }
-});
-
-
-
-
-
-
-
-
-////  NOUVELLE ZONE //////////
-
+    
+    
+    
 if(message.content === préfix + "Arrive dans l'église") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 99){
@@ -6102,6 +6094,16 @@ if(message.content === préfix + "Eglise lugubre"){
     .setImage("http://i1.cdnds.net/12/32/gaming_dark_souls_prepare_to_die_dlc_1.jpg")
     message.channel.sendMessage(help_embed);
 }
+});
+
+
+
+
+
+
+
+
+
 
 
 
