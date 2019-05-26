@@ -2994,6 +2994,37 @@ if(message.content === préfix + "Les zones"){
     .addField("Royaume ou village en cas d'agression et de Roll réussie celon la situation", "?SOS")
     message.channel.sendMessage(help_embed);
 }
+    
+    
+if(message.content === préfix + "C"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#f0ff00")
+    .setTitle("Marécage")
+    .setDescription("?Arrive dans le marécage")
+    .addField("Forêt", "?Arrive dans la forêt")
+    .addField("Royaume ou village en cas d'agression et de Roll réussie celon la situation", "?SOS")
+    message.channel.sendMessage(help_embed);
+}
+    
+if(message.content === préfix + "B"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#f0ff00")
+    .setTitle("Marécage")
+    .setDescription("?Arrive dans le marécage")
+    .addField("Forêt", "?Arrive dans la forêt")
+    .addField("Royaume ou village en cas d'agression et de Roll réussie celon la situation", "?SOS")
+    message.channel.sendMessage(help_embed);
+}
+    
+if(message.content === préfix + "A"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#f0ff00")
+    .setTitle("Marécage")
+    .setDescription("?Arrive dans le marécage")
+    .addField("Forêt", "?Arrive dans la forêt")
+    .addField("Royaume ou village en cas d'agression et de Roll réussie celon la situation", "?SOS")
+    message.channel.sendMessage(help_embed);
+}
 
 if(message.content === préfix + "Apparition marécage") {
     var result = Math.floor((Math.random() * 100) + 1);
