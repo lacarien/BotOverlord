@@ -6073,6 +6073,35 @@ if(message.content === préfix + "Transformation aquatique"){
 
 
 
+////  NOUVELLE ZONE //////////
+
+if(message.content === préfix + "Arrive dans l'église") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 99){
+    var result = new Discord.RichEmbed() 
+    .setColor("#FFD700")
+    .setTitle("L'église est...Normal")}
+    else if(result < 101){
+        var result = new Discord.RichEmbed() 
+    .setColor("#FFFFFF")
+    .setTitle("PNJ")
+    .setDescription("Marnox le grand prêtre rentre dans l'église avec une atitude totalement silencieuse et plate. Vous n'aurez pas le temps de faire quoi que ce soit que sa présence vous rendras encore plus religieu qu'avant. Il repartira peu de temps après avoir fait sa prière.")
+    .addField("Si vous l'avez déjà vue une fois", "?Eglise lugubre")
+    .setImage("http://vignette1.wikia.nocookie.net/berserk/images/0/05/Mozgus_Manga.jpg/revision/latest?cb=20140416220234")}
+    
+
+    message.channel.send(result);
+
+}
+
+if(message.content === préfix + "Eglise lugubre"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Une apparence bien trompense...")
+    .setColor(" #000000")
+    .setDescription("Ce n'était pas Marnox qui était rentrée dans l'église...Non....Impossible étant donné que celui-ci était en pélerinage. En réalité ce dernier vous avez observé dans l'église depuis bien longtemps, l'un des trois démons c'était fait un plaisir de voir votre dévouement en dieu comme une partie de divertissement...Un portail s'ouvrir dérrière vous et des tentacules vous saisirent bras et jambes pour vous emporter dans les abysses durant 1 semaines ou vous y perdrez la fois envers Dieu devenant petit à petit un démon....")
+    .setImage("http://i1.cdnds.net/12/32/gaming_dark_souls_prepare_to_die_dlc_1.jpg")
+    message.channel.sendMessage(help_embed);
+}
 
 
 
