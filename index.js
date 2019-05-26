@@ -16,6 +16,7 @@ client.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setTitle("Overlord")
         .setDescription("Vous aurez un résumé de l'univers")
+        .addField("Wiki du serveur", "Wiki")
         .addField("Personnage et stats", "C'est ici que vous comprendrez ce que vous devrez faire apres votre fiche")
         .addField("Race", "Liste des espèces")
         .addField("Classe", "Liste des classes")
