@@ -1164,8 +1164,8 @@ if(message.content === préfix + "PC Berserk"){
     }
     if(message.content === préfix + "Coup bas"){
         
-         var min = Math.floor(Math.min(20));
-        var max = Math.floor(Math.max(30)); 
+         var min = Math.floor(Math.min(30));
+        var max = Math.floor(Math.max(40)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous lui infligé un coup de dague impossible à bloquer. Vous perdez 40 de mana", ":dagger: "+y)
