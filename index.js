@@ -105,7 +105,7 @@ if(message.content === préfix + "L'ancien temps"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
     .addField("Un début de faiblesse", "Avec le temps...Les êtres supérieurs créèrent des petites cités ou toute race étaient accéptés, mais cela était bien trop beau pour durer.... \n La différence intelectuelle des hauts elfes et des humanoïdes, la force physique des meilleurs chevaliers humanoïdes contre celle des meilleurs hauts Lézards....Et tout un dictionnaire de différence prouvait que ''L'humanoïde'' été l'être le plus polyvalent en tout point, mais celui qui ne sera jamais le meilleur dans un domaine si son oposant decide s'entrainer dans ce même domaine. \n C'est alors que l'humanoïde voulue dépasser les autres éspèces et les plus intéligent décidèrent de créer 2 entités. Ce qui en résultera 2 humains identiques à l'homme d'aujourdhui mais...Cette être été bien trop faible en tout point...Ils décidèrent de ce porter alors vers la recherche d'un nouvelle être")
-    .addField("Suite","2-La création du monde")
+    .addField("Suite","3-La création du monde")
   
     message.channel.sendMessage(help_embed);
 }
