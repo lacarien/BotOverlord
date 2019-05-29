@@ -6155,6 +6155,21 @@ if(message.content === préfix + "Eglise lugubre"){
     .setImage("http://i1.cdnds.net/12/32/gaming_dark_souls_prepare_to_die_dlc_1.jpg")
     message.channel.sendMessage(help_embed);
 }
+    
+    if(message.content === préfix + "Arrive dans la rivière noire") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 60){
+    var result = new Discord.RichEmbed() 
+    .setColor("#a90f0f")
+    .setImage("https://i.pinimg.com/originals/80/e9/e9/80e9e99e1886239716032fc01a923fe0.jpg")
+    .setTitle("Un animal géant vous fonces dessus vous retirant 20% de vos HP")}
+    else if(result < 101){
+        var result = new Discord.RichEmbed() 
+    .setColor("#06af2b")
+    .setTitle("C'est bien calme...")}
+    message.channel.send(result);
+
+}
 });
 
 
