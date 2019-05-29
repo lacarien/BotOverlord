@@ -6170,6 +6170,25 @@ if(message.content === préfix + "Eglise lugubre"){
     message.channel.send(result);
 
 }
+    
+    if(message.content === préfix + "Arrive cher le Druid") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 90){
+    var result = new Discord.RichEmbed() 
+    .setColor("#06af2b")
+    .setTitle("Le druide ne fait rien")}
+    else if(result < 98){
+        var result = new Discord.RichEmbed() 
+    .setColor("#06af2b")
+    .setTitle("Le druide rentre cher lui venant vous remarquer dans sa propriété. Il reste droit face à vous du haut de ses 1m30 dégeant aucune magie à première vue. Si vous restez 10minutes de plus alors il vous transformera en lapin durant 2jours et fera un petit tours dans sa maison avant de repartir tranquillement")}
+    else if(result < 101){
+        var result = new Discord.RichEmbed() 
+    .setColor("#a90f0f")
+    .setTitle("Le druide arrive...Il vous remarques et par réflexe il vous saisie avec des lianes et vous fais bouffer l'eau à plusieurs reprise avant de vous lancer contre un arbre vous transformant en chat durant 5jours")}
+    message.channel.send(result);
+
+}
+
 });
 
 
