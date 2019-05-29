@@ -6188,6 +6188,63 @@ if(message.content === préfix + "Eglise lugubre"){
     message.channel.send(result);
 
 }
+    
+    
+    if(message.content === préfix + "Arrive plaine sombre") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 30){
+    var result = new Discord.RichEmbed() 
+    .setColor("#00421a")
+    .setImage("https://images-ext-1.discordapp.net/external/8XGiV7jTKHvbDJ0RvALPi_wjlwPhU8jNX8J9WpshDZs/https/media.discordapp.net/attachments/536292650698014731/569877071694921728/c60158208dcd2a4a60a3a546aa2591f5.png")
+    .setTitle("Vous marchez sur un piège à loups magique qui absorbe 30% de votre mana")}
+    else if(result < 60){
+        var result = new Discord.RichEmbed() 
+    .setColor("#00421a")
+    .setImage("https://cdna.artstation.com/p/assets/images/images/012/856/400/large/gwenaelle-michel-space-concept-001-v3-wm.jpg?1536853549")
+    .setTitle("Une barrière invisible apparait devans vous, vous empechants de rester dans cette zone, vous devez partir")}
+    else if(result < 99){
+        var result = new Discord.RichEmbed() 
+    .setColor("#00421a")
+    .setImage("https://media.discordapp.net/attachments/581867542574923834/581872673387315201/378211.jpg?width=729&height=467")
+    .setTitle("Les yeux d'une statue s'illuminent et vous devenez immobilisez sur place durant 10minutes")}
+    else if(result < 101){
+        var result = new Discord.RichEmbed() 
+    .setColor("#a90f0f")
+    .setTitle("Rois squelette")
+    .setDescription("Du haut d'une colline ou dérrière celle-ci ce trouvait un champs de ruine, une masse squelettique apparut")
+    .addField("HP", "15 000")
+    .addField("Attaque", "GS attaque")
+    .addField("Info supplémentaire", "Il est toujours en première ligne")}
+    message.channel.send(result);
+
+}
+
+if(message.content === préfix + "GS attaque"){
+    if(result < 70){
+    var w = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .setTitle("Un chevalier squelettique sort de la grande masse, venant se placer sur le front")
+    .addField("HP", "350")
+    .addField("Attaque", "?Chevalier attaque")
+    .addField("Défense", "?Chevalier défense")
+    .setImage("https://vignette.wikia.nocookie.net/overlord8371/images/6/6a/Death_Knight_Databook_01.png/revision/latest?cb=20190206001525&path-prefix=fr")}
+    else if(result < 101){
+    var w = new Discord.RichEmbed() 
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(15)); 
+    var w = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var w = new Discord.RichEmbed()
+    .setColor("#37ac0f")
+    .addField("Des squelettes sortent du géant venant rejoindre le front")
+    .addField("Squelette","Vous avancez dans l'obscurité quand soudainement...Une horde de squelette apparait")
+    .addField("Nombre d'énnemie: ", y)
+    .addField("Point de vie d'un énnemie", "40")
+    .addField("Attaque", "?Squelette attaque")
+    .addField("Défense", "Aucune")
+    .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/2/20/Overlord_II_EP03_051.png/revision/latest?cb=20180127032839")}
+    message.channel.send(w);
+}
+
 
 });
 
