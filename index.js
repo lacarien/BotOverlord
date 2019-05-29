@@ -6235,8 +6235,7 @@ if(message.content === préfix + "GS attaque"){
     else if(result < 101){
     var y = new Discord.RichEmbed() 
     .setColor("#37ac0f")
-    .addField("Des squelettes sortent du géant venant rejoindre le front")
-    .addField("Squelette","Vous avancez dans l'obscurité quand soudainement...Une horde de squelette apparait")
+    .setTitle("Des squelettes sortent du géant venant rejoindre le front")
     .addField("Nombre d'énnemie: ", y)
     .addField("Point de vie d'un énnemie", "40")
     .addField("Attaque", "?Squelette attaque")
