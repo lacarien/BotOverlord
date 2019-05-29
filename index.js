@@ -6220,6 +6220,9 @@ if(message.content === préfix + "Eglise lugubre"){
 }
 
 if(message.content === préfix + "GS attaque"){
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(15)); 
+    var w = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 70){
     var w = new Discord.RichEmbed()
     .setColor("#1a00ff")
@@ -6230,10 +6233,6 @@ if(message.content === préfix + "GS attaque"){
     .setImage("https://vignette.wikia.nocookie.net/overlord8371/images/6/6a/Death_Knight_Databook_01.png/revision/latest?cb=20190206001525&path-prefix=fr")}
     else if(result < 101){
     var w = new Discord.RichEmbed() 
-    var min = Math.floor(Math.min(10));
-    var max = Math.floor(Math.max(15)); 
-    var w = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var w = new Discord.RichEmbed()
     .setColor("#37ac0f")
     .addField("Des squelettes sortent du géant venant rejoindre le front")
     .addField("Squelette","Vous avancez dans l'obscurité quand soudainement...Une horde de squelette apparait")
