@@ -6223,8 +6223,9 @@ if(message.content === préfix + "GS attaque"){
     var min = Math.floor(Math.min(10));
     var max = Math.floor(Math.max(15)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var result = Math.floor((Math.random() * 100) + 1);
     if(result < 70){
-    var w = new Discord.RichEmbed()
+    var y = new Discord.RichEmbed()
     .setColor("#1a00ff")
     .setTitle("Un chevalier squelettique sort de la grande masse, venant se placer sur le front")
     .addField("HP", "350")
@@ -6232,7 +6233,7 @@ if(message.content === préfix + "GS attaque"){
     .addField("Défense", "?Chevalier défense")
     .setImage("https://vignette.wikia.nocookie.net/overlord8371/images/6/6a/Death_Knight_Databook_01.png/revision/latest?cb=20190206001525&path-prefix=fr")}
     else if(result < 101){
-    var w = new Discord.RichEmbed() 
+    var y = new Discord.RichEmbed() 
     .setColor("#37ac0f")
     .addField("Des squelettes sortent du géant venant rejoindre le front")
     .addField("Squelette","Vous avancez dans l'obscurité quand soudainement...Une horde de squelette apparait")
@@ -6241,7 +6242,7 @@ if(message.content === préfix + "GS attaque"){
     .addField("Attaque", "?Squelette attaque")
     .addField("Défense", "Aucune")
     .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/2/20/Overlord_II_EP03_051.png/revision/latest?cb=20180127032839")}
-    message.channel.send(w);
+    message.channel.send(y);
 }
 
 
