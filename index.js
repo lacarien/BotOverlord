@@ -6222,7 +6222,7 @@ if(message.content === préfix + "Eglise lugubre"){
 if(message.content === préfix + "GS attaque"){
     var min = Math.floor(Math.min(10));
     var max = Math.floor(Math.max(15)); 
-    var w = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 70){
     var w = new Discord.RichEmbed()
     .setColor("#1a00ff")
