@@ -6156,7 +6156,7 @@ if(message.content === préfix + "Eglise lugubre"){
     message.channel.sendMessage(help_embed);
 }
     
-    if(message.content === préfix + "Arrive dans la rivière noire") {
+    if(message.content === préfix + "Arrive dans la rivière noir") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 60){
     var result = new Discord.RichEmbed() 
