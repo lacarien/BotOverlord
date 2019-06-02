@@ -1006,7 +1006,7 @@ if(message.content === préfix + "PC Berserk"){
         .addField("35PC", "?Ch blocage")
         .addField("37PC", "?Enchainement d'ennemie ")
         .addField("39PC", "?Coup d'estoc")
-        .addField("41PC", "????")
+        .addField("41PC", "Parade amélioré")
         .addField("43PC", "Champion ultime")
         .addField("45PC", "Vous pouvez évoluer")
         message.channel.sendMessage(help_embed);
