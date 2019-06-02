@@ -92,6 +92,32 @@ if(message.content === préfix + "L'ancien temps"){
    
     message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "Les PNJ de l'ancien temps"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffd100")
+    .setTitle("Liste des PNJ principaux de l'ancien temps")
+    .setDescription("Le grand prêtre \n La créatrice \n Le corrompu \n à venir")
+   
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Le grand prêtre"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .addField("Surnom","Le grand prêtre")
+    .addField("Nom", "Marnox")
+    .addField("Participation dans l'ancien temps", "Marnox était avant la grande guerre un chercheur, l'un des fameux chercheurs qui avaient essayé de créer un être surpuissant ce qui en résultera un echec fatal. Il sera particulièrement en retrait durant la grande guerre.")
+    .addField("Participation dans le temps actuel", "Après avoir franchi le portail, Marnox continuera ses recherches un temps, seul comme un ermite. Puis un jour il crut recevoir un message du monde passé...Il émit plusieurs hypotèses à cela et décida dans créer un culte dans le bute de créer l'être le plus puissant qui pourra améliorer et diriger ce nouveau monde")
+    .addField("Un culte qui se base sur de simple présentiment...   ", "Marnox a crée sa cathédrale dans un des anciens mondes que la créatrice à sauvagement abandonné le considérant comme...Inutile. \n La cathédrale contient une statue d'une déesse, celle-ci représente le ''totem'' qui aurait pour bute de servir à la création du nouvelle être. Quand on regarde dans les yeux de la dèesse on arrive à connaitre un tant soit peu le culte bien qu'en aucun cas on est amené à y croire, après tout qui nous dis que cela n'est pas que pur mensonge ? ")
+    .addField("Ce que dit la ''statue''", "La statue qui parle dans les pensées donneraient comme information que le bute du culte est d'attendre patiemment le réveille de l'être suprême, mais attendre de manière bienveillante en aidant les faibles sous-êtres et en ne laissant rentrer personne qui ne croirait pas au culte. Il faudra au passage suivre tous les ordres de Marnox, après tout, c'est pour le bien de l'humanité, non ? Les croyants seront considérés apôtre par l'église vide au bout de 1 semaine si la personne remplie l'éthique")
+    .addField("éthique du culte", "1-Les membres et les apôtres doivent être respectueux de n'importe quel environnement \n 2-Ils doivent aider les sous-êtres qui soutiennent le culte \n 3-Ils doivent détruire les démons et doivent repousser les autres races le plus loin possible de l'église, après tout...C'est bien à cause de eux que le plan avait foiré, non ? \n 4-Ils ne doivent en aucun cas s'opposer aux ordres du grand prête, sinon quoi ils seront bannis de l'église et considéré comme une menace à réduire en cendre pour le bien de tous")
+    .addField("utilité dans le RP ?", "Event")
+    .addField("Influence dans le RP", "Event à risque pour le changement de comportement des croyants voir...Physique")
+    .addField("Description physique", "En tenue de prêtre comme à son habitude")
+    .setimage("http://vignette1.wikia.nocookie.net/berserk/images/0/05/Mozgus_Manga.jpg/revision/latest?cb=20140416220234")
+   
+    message.channel.sendMessage(help_embed);
+}
     
     if(message.content === préfix + "La création du monde"){
     var help_embed = new Discord.RichEmbed()
