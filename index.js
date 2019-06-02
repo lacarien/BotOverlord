@@ -114,7 +114,7 @@ if(message.content === préfix + "Le grand prêtre"){
     .addField("utilité dans le RP ?", "Event")
     .addField("Influence dans le RP", "Event à risque pour le changement de comportement des croyants voir...Physique")
     .addField("Description physique", "En tenue de prêtre comme à son habitude")
-    .setimage("http://vignette1.wikia.nocookie.net/berserk/images/0/05/Mozgus_Manga.jpg/revision/latest?cb=20140416220234")
+    .setImage("http://vignette1.wikia.nocookie.net/berserk/images/0/05/Mozgus_Manga.jpg/revision/latest?cb=20140416220234")
    
     message.channel.sendMessage(help_embed);
 }
