@@ -14,14 +14,13 @@ client.on('message', message => {
     
         if(message.content === préfix + "Help"){
         var help_embed = new Discord.RichEmbed()
-        .setTitle("Overlord")
+        .setTitle("Wiki")
         .setDescription("Vous aurez un résumé de l'univers")
-        .addField("Wiki du serveur", "Wiki")
         .addField("Personnage et stats", "C'est ici que vous comprendrez ce que vous devrez faire apres votre fiche")
         .addField("Race", "Liste des espèces")
         .addField("Classe", "Liste des classes")
-        .addField("Combats", "Explication des combats")
         .addField("Métiers", "Liste des métiers")
+        .addField("PC", "Menu des levels")
         .setImage("https://1.bp.blogspot.com/-GY5W6jVP850/WNwKqzuXizI/AAAAAAAABuM/AlfAEZ7FuDAK5y_qnZy0qp06wvCqM826QCLcB/s1600/Overlord_Characters.png")
         .setFooter("Menu de base")
         message.channel.sendMessage(help_embed);
@@ -30,14 +29,14 @@ client.on('message', message => {
 
     if(message.content === préfix + "help"){
         var help_embed = new Discord.RichEmbed()
-        .setTitle("Overlord")
+        .setTitle("Wiki")
         .setDescription("Vous aurez un résumé de l'univers")
         .addField("Personnage et stats", "C'est ici que vous comprendrez ce que vous devrez faire apres votre fiche")
         .addField("Race", "Liste des espèces")
         .addField("Classe", "Liste des classes")
-        .addField("Combats", "Explication des combats")
         .addField("Métiers", "Liste des métiers")
-        .setImage("https://www.animenachrichten.de/wp-content/uploads/2017/07/Overlord-Review.jpg")
+        .addField("PC", "Menu des levels")
+        .setImage("https://1.bp.blogspot.com/-GY5W6jVP850/WNwKqzuXizI/AAAAAAAABuM/AlfAEZ7FuDAK5y_qnZy0qp06wvCqM826QCLcB/s1600/Overlord_Characters.png")
         .setFooter("Menu de base")
         message.channel.sendMessage(help_embed);
         console.log("Un utilisateur à utiliser la commande d'aide.")
@@ -651,6 +650,7 @@ if(message.content === préfix + "Berserk"){
         .setDescription("On arrive sur la partie technique. à chaque level que vous donnes le bot, vous gagnerez 1PC, ce point sera un moyen de savoir à partir de quand vous debloquerez une améliration")
         .addField("Catégorie Race", "Faites ?PC [Nom de votre Race]")
         .addField("Catégorie classe", "Faites ?PC [Nom de votre classe]")
+        .addField("PCP Commun", "?PCP commmune")
         message.channel.sendMessage(help_embed);
     }
 if(message.content === préfix + "PCP Humain"){
