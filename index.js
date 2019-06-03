@@ -118,7 +118,7 @@ if(message.content === préfix + "Le grand prêtre"){
     message.channel.sendMessage(help_embed);
 }
     
-      if(message.content === préfix + "La création du monde"){
+      if(message.content === préfix + "La création du mondes fail"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
     .addField("Underlord","Il y a de cela de très nombreuses génération il y avait simplement ce qu'on nommait les ''êtres supérieurs'' du à leur puissance, ces êtres peuplés la surface du monde et était peu nombreux, environ 1/10000 de la population d'aujourd'hui. Ils étaient tous puissants et uniques en leur genre. Les 9/10 étaient des ''humanoïdes'' de forte ressemblance à un humain étant donné qu'ils avaient pour la plupart des capacités physiques ou spirituels débordante. \n En ce temps la il n'y avait pas de démon, simplement les humanoïdes, les hauts elfes et une infinité d'espèces. \n Les automates avaient été pour la plupart crée en ce temps bien que les 3/4 fut abandonnés et reprit par des chercheurs du temps 'actuel' qui ont seulement fait 1/20 du travail des êtres supérieurs pour contempler leur oeuvres, autant dire que la différence intellectuelle des chercheurs d'avant comparés à aujourd'hui est littéralement énorme")
@@ -132,7 +132,7 @@ if(message.content === préfix + "Le grand prêtre"){
     message.channel.sendMessage(help_embed);
 }
     
-    if(message.content === préfix + "La création du mondes"){
+    if(message.content === préfix + "La création du monde"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
     .addField("Underlord","Il y a de cela de très nombreuses génération il y avait simplement ce qu'on nommait les ''êtres supérieurs'' du à leur puissance, ces êtres peuplés la surface du monde et était peu nombreux, environ 1/10000 de la population d'aujourd'hui. Ils étaient tous puissants et uniques en leur genre. Les 9/10 étaient des ''humanoïdes'' de forte ressemblance à un humain étant donné qu'ils avaient pour la plupart des capacités physiques ou spirituels débordante. \n En ce temps la il n'y avait pas de démon, simplement les humanoïdes, les hauts elfes et une infinité d'espèces. \n Les automates avaient été pour la plupart crée en ce temps bien que les 3/4 fut abandonnés et reprit par des chercheurs du temps 'actuel' qui ont seulement fait 1/20 du travail des êtres supérieurs pour contempler leur oeuvres, autant dire que la différence intellectuelle des chercheurs d'avant comparés à aujourd'hui est littéralement énorme")
