@@ -1490,6 +1490,25 @@ if(message.content === préfix + "Aura du gardien"){
    .setImage("https://media.discordapp.net/attachments/536292650698014731/576329895924465666/15302dc904ff91928a7d8fb4df970497.gif")
    message.channel.send(y);
 }
+    
+    if(message.content === préfix + "Parade amélioré"){
+    var result = Math.floor((Math.random() * 100) + 1);
+    var min = Math.floor(Math.min(95));
+    var max = Math.floor(Math.max(140)); 
+    var w = Math.floor(Math.random() * (max - min + 1) ) + min;
+    if(result < 30){
+    var w = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .addField("Vous réussiez la parade et vous lui envoyez une vague d'énérgie en plus d'un coup tranchant   :crossed_swords: ", w)
+    .setImage("https://j.gifs.com/5QWDJB.gif")}
+    else if(result < 101){
+    var w = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Vous loupez votre parade et subisez tout les dégats")
+    .setImage("http://i.imgur.com/Lpv5HId.jpg")}
+    message.channel.send(w);
+}
+
 
 
     if(message.content === préfix + "Piège"){
@@ -6177,7 +6196,7 @@ if(message.content === préfix + "Eglise lugubre"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("Une apparence bien trompense...")
     .setColor(" #000000")
-    .setDescription("Ce n'était pas Marnox qui était rentrée dans l'église...Non....Impossible étant donné que celui-ci était en pélerinage. En réalité ce dernier vous avez observé dans l'église depuis bien longtemps, l'un des trois démons c'était fait un plaisir de voir votre dévouement en dieu comme une partie de divertissement...Un portail s'ouvrir dérrière vous et des tentacules vous saisirent bras et jambes pour vous emporter dans les abysses durant 1 semaines ou vous y perdrez la fois envers Dieu devenant petit à petit un demi démon....Ou bien vous arriverez à garder la tête haute et sortirait des abysses avec beaucoup de difficulté mentalement")
+    .setDescription("Ce n'était pas Marnox qui était rentrée dans l'église...Non....Impossible étant donné que celui-ci était en pélerinage. En réalité ce dernier vous avez observé dans l'église depuis bien longtemps, l'un des trois démons c'était fait un plaisir de voir votre dévouement en dieu comme une partie de divertissement...Un portail s'ouvrir dérrière vous et des tentacules vous saisirent bras et jambes pour vous emporter dans les abysses durant 1 semaines ou vous y perdrez la fois envers Dieu devenant petit à petit un demi démon....Ou bien vous arriverez à garder la tête haute et sortirait des abysses avec beaucoup de difficulté mentalement et deviendrais un demi ange")
     .setImage("http://i1.cdnds.net/12/32/gaming_dark_souls_prepare_to_die_dlc_1.jpg")
     message.channel.sendMessage(help_embed);
 }
