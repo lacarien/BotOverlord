@@ -128,7 +128,6 @@ if(message.content === préfix + "Le grand prêtre"){
     .addField("Le choix crucial", "Leur puissance était faible, mais leur supériorité numérique était ahurissant. \n C'est alors qu'une décision fut prise... Tous les êtres supérieurs se regroupèrent à un endroit et les 200 meilleurs mages défensives se chargèrent de créer une barrière magique, laissant les démons exploser leur cranes et leur tentacules contre la barrière infranchissable, s'entassant comme des rats affaiblissant la protection à l'usure. Pendant que la barrière tenait le coups, les plus fidèles croyant et plus puissant mage se chargèrent de créer un ''monde parallèle'' ou ils y balancèrent nos 2 humains qui avaient été placés en phase d'hibernation ainsi que 2 clones féminin et masculin de chaque espèces sans oublie les automates. Ils avaient été crée sur place et d'une rapidité qui aura comme résultat d'affaiblir les espèces dans tous les domaines. \n 5minutes...Il restait 5 minutes avant que la barrière explose...") 
     .addField("Une lueur d'éspoir", "Nos êtres supérieurs étés des génies mais...Il était impossible de contenir le portail ouvert trop longtemps et il était impossible de faire rentrer tout le monde à l'intérieur de peur de créer de l'instabilité dans ce nouveau monde qui aura pour bute d'éviter les erreurs du passé. C'est alors que sur nos 1 800 humanoïdes ainsi que hauts êtres qui restaient, c'est alors que petit à petit avec une pièce de l'ancien temps, le pile ou face eu lieu, un moyen de choisir votre sort futur plutôt égale. Des forts pouvaient gagner, comme des plus faibles. Environ 500 personnes avaient été envoyé dans le portail quand aux autres....Ils eu à peine eu le temps de dire leur chaleureux adieu à leurs anciens proche que le bouclier se fit détruire. Leur seule solution a été de litéralement concentrer toute leur énérgie en une bombe pour réduire en cendre cette univers corrompu.") 
     .addField("Un nouveau monde", "Underlord était née, enfin...Le monde parallèle d'Underlord. Il restait donc nos ''survivants'', le problème est que la casi totalité était en phase d'hibernation, probablement que le voyage avait été trop ardu pour les plus faibles d'entre eux. \n Ils étaient un nombre de 10 que l'on surnormera les êtres dit ''divains'', ces derniers pris le choix de disperser au 4 coins du monde les personnes en hibernations tout en leur détruisant la mémoire pensants qu'il fallait cacher le passé pour créer un meilleur Futur.") 
-
     .setImage("https://media.discordapp.net/attachments/549628514303737856/582997634537488414/138323935360.png?width=749&height=469")
     message.channel.sendMessage(help_embed);
 }
@@ -141,6 +140,7 @@ if(message.content === préfix + "Le grand prêtre"){
     .setImage("https://media.discordapp.net/attachments/549628514303737856/582997634537488414/138323935360.png?width=749&height=469")
     message.channel.sendMessage(help_embed);
 }
+    
      if(message.content === préfix + "2-La création du monde"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
