@@ -720,6 +720,15 @@ if(message.content === préfix + "PCP Démon"){
     message.channel.sendMessage(help_embed);
 }
     
+    if(message.content === préfix + "PCP Liche"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#a65fe2")
+    .setTitle("PCP Liche")
+    .setDescription("Vous n'avez ni besoin de boire, ni besoin de manger et vous ne ressentez pas la douleur bien que vous ressentez toujours la peur en cas de danger")
+    .addField("2-PCP Liche","Vous pouvez communiquer spirituellement avec un ancien joueur mort si vous retrouvez son squelette, si la personne est morte il y a plus de 2 mois, alors cela ne fonctionne plus")
+    message.channel.sendMessage(help_embed);
+}
+    
     if(message.content === préfix + "PCP Druid"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#939696")
