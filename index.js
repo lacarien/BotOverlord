@@ -476,11 +476,13 @@ if(message.content === préfix + "Miner"){
         message.channel.sendMessage(help_embed);
     }
 
-  if(message.content === préfix + "Beastman"){
+if(message.content === préfix + "Beastman"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#a94329")
         .setTitle("Beastman")
         .setDescription("Vous êtes un homme ou une femme qui avait des ressemblances physiques à un animal")
+        .addField("Bonus", "Vous vous entendez bien avec les lézards et les elfs")
+        .addField("Malus", "Votre apparence ne vous permet pas forcément de rester totalement discret")
         .setImage("https://media.discordapp.net/attachments/536292650698014731/585798353187635210/thumb-1920-834932.png?width=936&height=585")
         .setFooter("Menu Beastman")
         message.channel.sendMessage(help_embed);
