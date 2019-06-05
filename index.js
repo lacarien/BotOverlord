@@ -423,8 +423,8 @@ if(message.content === préfix + "Miner"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#a65fe2")
         .addField("Liche", "Vous êtes un ou une Liche, Vous avez une intéligence surdéveloppé, un vraie surdoué")
-        .addField("Bonus", "La classe Nécromancien vous est résérvé")
-        .addField("Malus", "Vous avez un roll de -20 en résistance physique")
+        .addField("Bonus", "La classe Nécromancien vous est résérvé et vous commencez avec un bonus de 30 de mana")
+        .addField("Malus", "Vous avez un roll de -20 en résistance physique et si vous prenez une autre classe que mage vous subirez un malus de -50% d'HP")
         .setImage("https://i.pinimg.com/originals/4a/79/24/4a79245a91bf71321c25d624f6ff0163.jpg")
         .setFooter("Menu Liche")
         message.channel.sendMessage(help_embed);
