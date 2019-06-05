@@ -719,7 +719,7 @@ if(message.content === préfix + "PCP Humain"){
     .setColor("#81b4bc")
     .setTitle("PCP Nymphe")
     .setDescription(" Les Nymphes, étant des êtres Semi-Oniriques, possèdent un rythme de sommeil particulier qui s'accentue avec le temps.Plus une Nymphe est puissante , plus son sommeil est important. Lors que la Nymphe s'endort le corps physique de de la Nymphe se paralyse et un corps Onirique se forme. Celui-ci est un reflet de l'Esprit de la Nymphe, lorsque celui-ci subit un dommage, la santé mentale de la nymphe est alors directement impacté et la Nymphe se réveille alors faisant disparaître le Corps Onirique. Ce corps peux facilement se promener n'importe où dans le monde et interagir avec celui-ci comme il le souhaite. Celui-ci semble aussi réel que son corps d'origine, mais ne dispose pas de la capacité de supporter plus d'une seul attaque au vu de la faible résistance de celui-ci. En effets, en combat se prendre 1 pv de dommage signifie la destruction du corps onirique. \n Level 1/20 : Sommeil Aléatoire une fois par jour durant 4 heures \n Level 20/40 : Sommeil aléatoire de 12 heures \n Level 40 : Plus aucune contrainte")
-    .addField("2-PCP Liche","Une nymphe dispose de la capacité à faire revivre des moments du passé d'une personne  en rêve mais aussi d'extraire et consommer les Rêves et Cauchemars de ceux-ci.")
+    .addField("2-PCP Nymphe","Une nymphe dispose de la capacité à faire revivre des moments du passé d'une personne  en rêve mais aussi d'extraire et consommer les Rêves et Cauchemars de ceux-ci.")
     message.channel.sendMessage(help_embed);
 }
 
