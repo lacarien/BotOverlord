@@ -849,7 +849,7 @@ if(message.content === préfix + "PCP Champion"){
         .setTitle("PC Liche")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("10PC", "La liche peut invoquer un petit squelette de combat qui l'aide à combattre (?Invocation mini squelette)")
-        .addField("25PC", "Vous obtenez 200 de mana :sparkles: ")
+        .addField("25PC", "Vous obtenez 300 de mana :sparkles: et perdez 100HP :broken_heart:  \n pour ensuite obtenir ?Coquille squelettique")
         .addField("40PC", "La liche invoque un portail ou ressorte quotidiennement des squelettes (?Cimetiere ambulant")
         message.channel.sendMessage(help_embed);
     }
