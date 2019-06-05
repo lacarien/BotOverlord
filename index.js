@@ -464,6 +464,18 @@ if(message.content === préfix + "Miner"){
         .setFooter("Menu Elf")
         message.channel.sendMessage(help_embed);
     }
+    
+    if(message.content === préfix + "Nymphe"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#81b4bc")
+        .setTitle("Nymphe")
+        .setDescription("Vous êtes la représentation de ce qui pourrait se rapprocher à une déesse féminine. Vous avez des yeux et des cheveux argentés")
+        .addField("Bonus", "étant la représentation d'une divinité vous êtes forcément belle \n +40 de mana :sparkles: ")
+        .addField("Malus", "Vous êtes obligatoirement une femme et votre éspèce est grandement recherché pour être vendue au marcher noir \n -40 d'HP :broken_heart: ")
+        .setImage("https://media.discordapp.net/attachments/534758707561496580/585846279977041948/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.webp?width=373&height=560")
+        .setFooter("Menu Nymphe")
+        message.channel.sendMessage(help_embed);
+    }
 
     if(message.content === préfix + "Démon"){
         var help_embed = new Discord.RichEmbed()
@@ -702,6 +714,15 @@ if(message.content === préfix + "PCP Humain"){
     .setDescription("Vous êtes Humain, on ne dirait pas mais rien que le nom est pas mal, en effet, vous pouvez vous ballader partout dans les zones humaines sans avoir de problème")
     message.channel.sendMessage(help_embed);
 }
+    if(message.content === préfix + "PCP Nymphe"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#81b4bc")
+    .setTitle("PCP Nymphe")
+    .setDescription(" Les Nymphes, étant des êtres Semi-Oniriques, possèdent un rythme de sommeil particulier qui s'accentue avec le temps.Plus une Nymphe est puissante , plus son sommeil est important. Lors que la Nymphe s'endort le corps physique de de la Nymphe se paralyse et un corps Onirique se forme. Celui-ci est un reflet de l'Esprit de la Nymphe, lorsque celui-ci subit un dommage, la santé mentale de la nymphe est alors directement impacté et la Nymphe se réveille alors faisant disparaître le Corps Onirique. Ce corps peux facilement se promener n'importe où dans le monde et interagir avec celui-ci comme il le souhaite. Celui-ci semble aussi réel que son corps d'origine, mais ne dispose pas de la capacité de supporter plus d'une seul attaque au vu de la faible résistance de celui-ci. En effets, en combat se prendre 1 pv de dommage signifie la destruction du corps onirique. \n Level 1/20 : Sommeil Aléatoire une fois par jour durant 4 heures \n Level 20/40 : Sommeil aléatoire de 12 heures \n Level 40 : Plus aucune contrainte")
+    .addField("2-PCP Liche","Une nymphe dispose de la capacité à faire revivre des moments du passé d'une personne  en rêve mais aussi d'extraire et consommer les Rêves et Cauchemars de ceux-ci.")
+    message.channel.sendMessage(help_embed);
+}
+
     
     if(message.content === préfix + "PCP Elf"){
     var help_embed = new Discord.RichEmbed()
@@ -864,6 +885,18 @@ if(message.content === préfix + "PCP Champion"){
         .addField("40PC", "Vous pouvez réaparaitre attention...C'est à vos risques et périls ?Réanimation")
         message.channel.sendMessage(help_embed);
     }
+    
+     if(message.content === préfix + "PC Nymphe"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#81b4bc")
+        .setTitle("PC Nymphe")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("10PC", "Vous obtenez la compétence ?Appel de la nature")
+        .addField("25PC", "Vous obtenez la compétence ?Connaissance onirique")
+        .addField("40PC", "Vous obtenez la compétence ?Mimétisme élémentaire")
+        message.channel.sendMessage(help_embed);
+    }
+
     
     if(message.content === préfix + "PC Liche"){
         var help_embed = new Discord.RichEmbed()
