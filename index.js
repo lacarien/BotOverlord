@@ -384,7 +384,7 @@ if(message.content === préfix + "Miner"){
         .addField("Elf", "Vous êtes un Elf, une espece noble et rare")
         .addField("Automaton", "Vous êtes un Automaton, intérieurement vous ressemblez fortement à une machine mais extérieurement...")
         .addField("Liche", "Vous êtes un ancien sorcier mort qui se maintient dans un état de mort-vivant grâce à ses pouvoirs magiques")
-        .addField("Beastman","Vous êtes un homme annimal")
+        .addField("Beastman","Vous êtes un homme ou une femme annimal")
         .addField("Pour la précision sur les stats et autre", "?[Nom de votre race]")
         .addField("Pour les PCP", "?PCP [Race]")
         .setFooter("Menu des races RP")
