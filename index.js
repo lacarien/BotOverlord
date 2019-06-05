@@ -423,7 +423,7 @@ if(message.content === préfix + "Miner"){
         .setColor("#a65fe2")
         .addField("Liche", "Vous êtes un ou une Liche, Vous avez une intéligence surdéveloppé, un vraie surdoué")
         .addField("Bonus", "La classe Nécromancien vous est résérvé")
-        .addField("Malus", "Vous avez un roll de -20 en résistance physique")
+        .addField("Malus", "Vous avez un roll de -20 en résistance physique et si vous prennez une autre classe que mage, alors vos HP seront divisés par 2")
         .setImage("https://i.pinimg.com/originals/4a/79/24/4a79245a91bf71321c25d624f6ff0163.jpg")
         .setFooter("Menu Liche")
         message.channel.sendMessage(help_embed);
@@ -862,7 +862,7 @@ if(message.content === préfix + "PCP Automaton"){
         .setTitle("PC Liche")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("10PC", "La liche peut invoquer un petit squelette de combat qui l'aide à combattre (?Invocation mini squelette)")
-        .addField("25PC", "Vous obtenez 200 de mana :sparkles: ")
+        .addField("25PC", "Vous obtenez 300 de mana :sparkles:  et perdez 150HP :broken_heart:  \n vous obtenez également la capacité ?Coquille de squelette")
         .addField("40PC", "La liche invoque un portail ou ressorte quotidiennement des squelettes (?Cimetiere ambulant")
         message.channel.sendMessage(help_embed);
     }
