@@ -400,6 +400,7 @@ if(message.content === préfix + "Miner"){
         .setFooter("Menu Humain")
         message.channel.sendMessage(help_embed);
     }
+    
 
 // FAUNE : Utiliser la présentation suivante comme "Presets" pour les futurs fiches de faune.
 {
