@@ -419,16 +419,7 @@ if(message.content === préfix + "Miner"){
         message.channel.sendMessage(help_embed);
     }
     
-     if(message.content === préfix + "Liche"){
-        var help_embed = new Discord.RichEmbed()
-        .setColor("#a65fe2")
-        .addField("Liche", "Vous êtes un ou une Liche, Vous avez une intéligence surdéveloppé, un vraie surdoué")
-        .addField("Bonus", "La classe Nécromancien vous est résérvé et vous avez une total résistance au saignement")
-        .addField("Malus", "Vous avez un roll de -20 en résistance physique et si vous prennez une autre classe que mage, alors vos HP seront divisés par 2")
-        .setImage("https://i.pinimg.com/originals/4a/79/24/4a79245a91bf71321c25d624f6ff0163.jpg")
-        .setFooter("Menu Liche")
-        message.channel.sendMessage(help_embed);
-    }
+     
 
     if(message.content === préfix + "Lézard"){
         var help_embed = new Discord.RichEmbed()
