@@ -420,7 +420,7 @@ if(message.content === préfix + "Miner"){
     
      if(message.content === préfix + "Liche"){
         var help_embed = new Discord.RichEmbed()
-        .setColor("##a65fe2")
+        .setColor("#a65fe2")
         .addField("Liche", "Vous êtes un ou une Liche, Vous avez une intéligence surdéveloppé, un vraie surdoué")
         .addField("Bonus", "La classe Nécromancien vous est résérvé")
         .addField("Malus", "Vous avez un roll de -20 en résistance physique")
