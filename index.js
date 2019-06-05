@@ -383,6 +383,8 @@ if(message.content === préfix + "Miner"){
         .addField("Lézard", "Vous êtes un lézard, vous avez une bonne défense")
         .addField("Elf", "Vous êtes un Elf, une espece noble et rare")
         .addField("Automaton", "Vous êtes un Automaton, intérieurement vous ressemblez fortement à une machine mais extérieurement...")
+        .addField("Liche" "Vous êtes un ancien sorcier mort qui se maintient dans un état de mort-vivant grâce à ses pouvoirs magiques")
+        .addField("Beastman","Vous êtes un homme annimal")
         .addField("Pour la précision sur les stats et autre", "?[Nom de votre race]")
         .addField("Pour les PCP", "?PCP [Race]")
         .setFooter("Menu des races RP")
@@ -413,6 +415,17 @@ if(message.content === préfix + "Miner"){
         .addField("Malus", "Vous commencez avec 20HP en moins")
         .setImage("https://img-9gag-fun.9cache.com/photo/a47NvYd_700b.jpg")
         .setFooter("Menu Vampire")
+        message.channel.sendMessage(help_embed);
+    }
+    
+     if(message.content === préfix + "Liche"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("##a65fe2")
+        .addField("Liche", "Vous êtes un ou une Liche, Vous avez une intéligence surdéveloppé, un vraie surdoué")
+        .addField("Bonus", "La classe Nécromancien vous est résérvé")
+        .addField("Malus", "Vous avez un roll de -20 en résistance physique")
+        .setImage("https://i.pinimg.com/originals/4a/79/24/4a79245a91bf71321c25d624f6ff0163.jpg")
+        .setFooter("Menu Liche")
         message.channel.sendMessage(help_embed);
     }
 
