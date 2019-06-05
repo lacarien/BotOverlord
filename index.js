@@ -476,6 +476,15 @@ if(message.content === préfix + "Miner"){
         message.channel.sendMessage(help_embed);
     }
 
+  if(message.content === préfix + "Beastman"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#a94329")
+        .setTitle("Beastman")
+        .setDescription("Vous êtes un homme ou une femme qui avait des ressemblances physiques à un animal")
+        .setImage("https://media.discordapp.net/attachments/536292650698014731/585798353187635210/thumb-1920-834932.png?width=936&height=585")
+        .setFooter("Menu Beastman")
+        message.channel.sendMessage(help_embed);
+    }
 
 
 
@@ -732,6 +741,17 @@ if(message.content === préfix + "PCP Démon"){
     message.channel.sendMessage(help_embed);
 }
     
+    
+if(message.content === préfix + "PCP Beastman"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#a94329")
+    .setTitle("PCP Beastman")
+    .setDescription("Une fois par jour si vous avez déjà reniflé l'odeur d'une personne, vous pouvez suivre sa trace en vous concentrant sur son odorat récent( moins d'une heure), vous pourrez ensuite retrouver la personne. \n si vous vous arrêtez en cours de chemin, l'effet disparait \n si vous parlez en cours de chemin, l'effet disparait \n et une fois que vous êtes arrivé à destination, l'effet disparait")
+    .addField("2-PCP Beastman", "Vous pouvez faire ressortir votre nature en aucun cas hostile selon votre éspèce initial. Par exemple un homme loups pourra faire facilement transparaitre un sentiment d'homme à tout faire envers son interlocuteurs. Un ours lui fera ressentir un sentiment protecteur. \n bien entendue vous ne pourrez pas faire ressentir un sentiment protecteur envers votre ennemie, logique. \n il est à noter que plus votre apparence se rapprochera d'un animal, plus cela aura un effet conséquent")
+    message.channel.sendMessage(help_embed);
+
+}
+    
     if(message.content === préfix + "PCP Druid"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#939696")
@@ -853,6 +873,18 @@ if(message.content === préfix + "PCP Champion"){
         .addField("40PC", "La liche invoque un portail ou ressorte quotidiennement des squelettes (?Cimetiere ambulant")
         message.channel.sendMessage(help_embed);
     }
+    
+        if(message.content === préfix + "PC Beastman"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#a94329")
+        .setTitle("PC Beastman")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("10PC", "Vous obtenez la compétence ?Violente morsure")
+        .addField("25PC", "Vous obtenez la compétence ?Regard forceur")
+        .addField("40PC", "Vous obtenez la capacité ?Appelle à la meute")
+        message.channel.sendMessage(help_embed);
+    }
+
     
 if(message.content === préfix + "PCP Automaton"){
     var help_embed = new Discord.RichEmbed()
