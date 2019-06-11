@@ -2351,7 +2351,7 @@ if(message.content === préfix + "Lame noir"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#81b4bc")
-        .addField("La bouboule de mère nature fait un mur de liane devant vous et cela réduira les dégats que vous subirez", ":shield: "+y)
+        .addField("La bouboule de mère nature fait un mur de liane devant vous et cela réduira les dégats que vous subirez(-40 de mana)", ":shield: "+y)
         .setImage("https://cdn.discordapp.com/attachments/499161815549476864/587937711814475776/derya-kocaurlu-poupee.png")
         message.channel.send(y);
     }
