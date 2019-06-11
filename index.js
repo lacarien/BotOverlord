@@ -121,7 +121,7 @@ if(message.content === préfix + "Le grand prêtre"){
     if(message.content === préfix + "La créatrice"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#9c00ff")
-    .addField("Surnom","Le grand prêtre")
+    .addField("Surnom","La créatrice")
     .addField("Nom", "Seminia")
     .addField("Participation dans l'ancien temps", "La créatrice a tout simplement combattue lors de la grande guerre, elle y perdra nombreux de ses camarades et lors de la loterie pour décider qui restera, et qui vivera, elle a vie se derniers proches disparaitre")
     .addField("Participation dans l'ancien temps", "Seminia remarquant la stupidité de ces guerres, elle avait cré des univers de tests, tell que la zone noir, tous étaient des echecs, elle a souvent envoyé son esclave réalisé des voeux à l'aide de ses pouvoirs voulant redonner un semblant de sourire à ce monde. Auparavant Marnox lui avait parlé du fameux ancien monde comme quoi leurs anciens compagnons étaient encore en vie sous...une  différente forme...Mais Seminia refusa catégoriquement cette théorie, faisant comprendre à Marnox que le passé devait rester en arrière et qu'il fallait changer ce monde en un monde de paix")
