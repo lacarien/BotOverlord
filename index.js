@@ -118,6 +118,23 @@ if(message.content === préfix + "Le grand prêtre"){
     message.channel.sendMessage(help_embed);
 }
     
+    if(message.content === préfix + "La créatrice"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#9c00ff")
+    .addField("Surnom","Le grand prêtre")
+    .addField("Nom", "Seminia")
+    .addField("Participation dans l'ancien temps", "La créatrice a tout simplement combattue lors de la grande guerre, elle y perdra nombreux de ses camarades et lors de la loterie pour décider qui restera, et qui vivera, elle a vie se derniers proches disparaitre")
+    .addField("Participation dans l'ancien temps", "Seminia remarquant la stupidité de ces guerres, elle avait cré des univers de tests, tell que la zone noir, tous étaient des echecs, elle a souvent envoyé son esclave réalisé des voeux à l'aide de ses pouvoirs voulant redonner un semblant de sourire à ce monde. Auparavant Marnox lui avait parlé du fameux ancien monde comme quoi leurs anciens compagnons étaient encore en vie sous...une  différente forme...Mais Seminia refusa catégoriquement cette théorie, faisant comprendre à Marnox que le passé devait rester en arrière et qu'il fallait changer ce monde en un monde de paix")
+    .addField("Objectif et lien", "Seminia a abandonné le passé, désirant améliorer ce monde, créant une paix sans pareils, bien évidement...Cela est difficile, alors elle souhaite petit à petit créer une ville, puis un royaume, puis un monde (d'ou ses tests de dimension de poche). Elle a peu de lien avec les membres du passé, enfin...Uniquement avec Marnox bien qu'ils sont en désaccords sur beaucoup de points, il n'en reste pas moins qu'ils sont tous les 2 des anciens frères et soeur d'arme, aillant vécue le même passé")
+    .addField("utilité dans le RP ?", "Groupe fixe ou bien Event lorsque le petit mage passe offrir des voeux")
+    .addField("Influence dans le RP", "Event ou bien groupe fixe, il est conseillé de savoir argumenté devant ce personnage ou bien si vous rejoignez son groupe")
+    .addField("Description physique", "Toujours la même tenue avec le même parfum qui l'entoure qui parait si harmonieux à l'odeur")
+    .setimage("https://wallpaperscave.com/images/thumbs/wp-preview/800x500/18/08-17/anime-fateapocrypha-76745.jpg")
+   
+    message.channel.sendMessage(help_embed);
+}
+    
+    
       if(message.content === préfix + "La création du mondes fail"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
@@ -6171,7 +6188,7 @@ if(message.content === préfix + "Tombeau sinistre"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#9fa6a6")
     .setTitle("Le tombeau qui annonce votre fin...(-250 de mana)")
-    .setDescription("L'ennemie ne pourra plus bloquer, ni esquiver, ni attaquer, ni utiliser une compétence(sauf aura) tant qu'il n'a pas reçu de dégats. Il sera bloqué maximum 2 tours. Hors RP le tombeau consomme 100 de mana toute les 5minutes")
+    .setDescription("L'ennemie ne pourra plus attaquer ni utliser une compétence(sauf aura) tant qu'il n'a pas reçu de dégats. Il sera bloqué maximum 2 tours. Hors RP le tombeau consomme 100 de mana toute les 5minutes(si vous l'utilisez une 2eme fois lors d'un combat, cela coutera 200 de mana de plus)")
     .setImage("https://cdn.discordapp.com/attachments/454694319396356128/560458979575332881/unknown.png")
     message.channel.sendMessage(help_embed);
 }
