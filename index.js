@@ -2334,6 +2334,28 @@ if(message.content === préfix + "Lame noir"){
 
 
     }
+    
+        if(message.content === préfix + "Appell à la nature"){
+        var y = new Discord.RichEmbed()
+        .setColor("#81b4bc")
+        .setImage("http://images3.wikia.nocookie.net/__cb20110531165556/bestiaire-dofus/fr/images/a/a0/La_bloqueuse.jpg")
+        .addField("Invocation (-80 mana)", "Vous invoquez une petite bouboule de mère nature qui se tue en un coups et qui est en deuxième ligne")
+        .addField("Attaque" "?Défense de bouboule")
+        message.channel.sendMessage(y);
+          
+    }
+
+    if(message.content === préfix + "Défense de bouboule"){
+        var min = Math.floor(Math.min(70));
+        var max = Math.floor(Math.max(90)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#81b4bc")
+        .addField("La bouboule de mère nature fait un mur de liane devant vous et cela réduira les dégats que vous subirez", ":shield: "+y)
+        .setImage("https://cdn.discordapp.com/attachments/499161815549476864/587937711814475776/derya-kocaurlu-poupee.png")
+        message.channel.send(y);
+    }
+
 
     if(message.content === préfix + "Multi classe"){
     var y = new Discord.RichEmbed()
