@@ -129,7 +129,7 @@ if(message.content === préfix + "Le grand prêtre"){
     .addField("utilité dans le RP ?", "Groupe fixe ou bien Event lorsque le petit mage passe offrir des voeux")
     .addField("Influence dans le RP", "Event ou bien groupe fixe, il est conseillé de savoir argumenté devant ce personnage ou bien si vous rejoignez son groupe")
     .addField("Description physique", "Toujours la même tenue avec le même parfum qui l'entoure qui parait si harmonieux à l'odeur")
-    .setimage("https://wallpaperscave.com/images/thumbs/wp-preview/800x500/18/08-17/anime-fateapocrypha-76745.jpg")
+    .setImage("https://wallpaperscave.com/images/thumbs/wp-preview/800x500/18/08-17/anime-fateapocrypha-76745.jpg")
    
     message.channel.sendMessage(help_embed);
 }
