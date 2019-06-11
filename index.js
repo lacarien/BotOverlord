@@ -2340,7 +2340,7 @@ if(message.content === préfix + "Lame noir"){
         .setColor("#81b4bc")
         .setImage("http://images3.wikia.nocookie.net/__cb20110531165556/bestiaire-dofus/fr/images/a/a0/La_bloqueuse.jpg")
         .addField("Invocation (-80 mana)", "Vous invoquez une petite bouboule de mère nature qui se tue en un coups et qui est en deuxième ligne")
-        .addField("Attaque" "?Défense de bouboule")
+        .addField("Attaque", "?Défense de bouboule")
         message.channel.sendMessage(y);
           
     }
