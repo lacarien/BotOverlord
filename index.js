@@ -2890,8 +2890,8 @@ if(message.content === préfix + "Loup défense"){
     message.channel.sendMessage(y);
 }
     if(message.content === préfix + "Bouclier de squelette"){
-        var min = Math.floor(Math.min(40));
-        var max = Math.floor(Math.max(45)); 
+        var min = Math.floor(Math.min(70));
+        var max = Math.floor(Math.max(90)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous invoquez un mur de squelette devant votre alliée. Au prochain coup qu'il se recevra, l'attaque sera diminué(-50 de mana)", ":shield: "+y)
