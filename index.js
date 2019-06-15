@@ -2627,6 +2627,33 @@ if(message.content === préfix + "Drain de vie 8"){
           
     }
     
+if(message.content === préfix + "Transformation vampirique"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#dc322f")
+    .setTitle("Transformation vampirique")
+    .setDescription("Vous prennez une forme étrange et avez une nouvelle esquive temporaire. Toute vos attaques vous régénères en HP. Cette transformation dure 30minutes et vous ne pouvez qu'utiliser cette forme contre des joueurs ou des PNJ, mais jamais contre des monstres(ou bien, regen d'HP/2). Cela dure une fois par mois et vous êtes capable de traquer votre adversaire avec un roll de +30 si celui-ci fuit à pied")
+    .addField("Esquive temporaire", "Vous obtenez la compétence ?Esquive vampirique")
+    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/589330651078197248/dadadcavava.PNG")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Esquive vampirique") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 70)
+    var result = new Discord.RichEmbed() 
+    .setColor("#dc322f")
+    .setTitle("Le vampire évite en un clin d'oeil")
+    .setImage("https://pa1.narvii.com/6688/0497fca41b1310e5e9b89e68660846704b7c5ffb_hq.gif")
+    if(70 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#dc322f")
+    .setAuthor("Le vampire subit tout les dégats")
+    
+    message.channel.send(result);
+
+}
+    
+    
     if(message.content === préfix + "Réanimation monstrueuse"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("Liste des posibilités de réanimation")
