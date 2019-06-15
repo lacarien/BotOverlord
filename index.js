@@ -6124,6 +6124,20 @@ if(message.content === préfix + "Guerrier attaque"){
     .setColor("#331988")
     message.channel.sendMessage(y);
 }
+    
+    if(message.content === préfix + "F Guerrier attaque"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(300));
+    var max = Math.floor(Math.max(350)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    var y = new Discord.RichEmbed()
+    .addField("Le guerrier ouvre sa gueule et vous envoies une spiral d'eau vous réduisant vos dégats au prochain tours de moitié", y)
+    .setColor("#331988")
+    message.channel.sendMessage(y);
+}
+    
+    
 if(message.content === préfix + "Guerrier défense"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(20));
