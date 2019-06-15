@@ -1565,12 +1565,12 @@ if(message.content === préfix + "Aura du gardien"){
     }
 
 
-    if(message.content === préfix + "Tir rapide"){
+    if(message.content === préfix + "Tire rapide"){
         var min = Math.floor(Math.min(40));
         var max = Math.floor(Math.max(55)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .addField("Vous tentez de lui envoyer une fleche rapide en direction de son torse, cherchant à viser un point vital. Vous perdez 30 de mana", ":bow_and_arrow: "+y)
+        .addField("Vous tentez de lui envoyer une fleche rapide en direction de son torse, cherchant à viser un point vital. Vous perdez 40 de mana", ":bow_and_arrow: "+y)
         message.channel.send(y);
     }
     if(message.content === préfix + "Tir amélioré"){
@@ -2559,15 +2559,26 @@ if(message.content === préfix + "Drain de vie 8"){
 }
 
     if(message.content === préfix + "Magic gun"){
-        var min = Math.floor(Math.min(70));
-        var max = Math.floor(Math.max(80)); 
+        var min = Math.floor(Math.min(80));
+        var max = Math.floor(Math.max(90)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous pouvez uniquement utiliser cette compétence à longue porté. Vous visez un point vital et infligez du", ":gun: "+y)
+        .addField("Vous pouvez uniquement utiliser cette compétence à longue porté. Vous visez un point vital et infligez de lourd dégats(-50 de mana)", ":gun: "+y)
         .setImage("https://media.giphy.com/media/vgvVcpHvIEjO9yPQqg/giphy.gif")
         message.channel.send(y);
     }
+      if(message.content === préfix + "Violente morsure"){
+        var min = Math.floor(Math.min(50));
+        var max = Math.floor(Math.max(60)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous donnez un gros coups de griffe qui sonne votre ennemie l'empêchant d'attaquer(-50 de mana)", y)
+        .setColor("#a94329")
+        .setImage("https://cache.desktopnexus.com/thumbseg/1616/1616662-bigthumbnail.jpg")
+        message.channel.send(y);
+    }
+                
     
     if(message.content === préfix + "Réparation automatique"){
         var help_embed = new Discord.RichEmbed()
