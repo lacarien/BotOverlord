@@ -153,52 +153,45 @@ if(message.content === préfix + "Le grand prêtre"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
     .addField("Underlord","Il y a de cela de très nombreuses génération il y avait simplement ce qu'on nommait les ''êtres supérieurs'' du à leur puissance, ces êtres peuplés la surface du monde et était peu nombreux, environ 1/10000 de la population d'aujourd'hui. Ils étaient tous puissants et uniques en leur genre. Les 9/10 étaient des ''humanoïdes'' de forte ressemblance à un humain étant donné qu'ils avaient pour la plupart des capacités physiques ou spirituels débordante. \n En ce temps la il n'y avait pas de démon, simplement les humanoïdes, les hauts elfes et une infinité d'espèces. \n Les automates avaient été pour la plupart crée en ce temps bien que les 3/4 fut abandonnés et reprit par des chercheurs du temps 'actuel' qui ont seulement fait 1/20 du travail des êtres supérieurs pour contempler leur oeuvres, autant dire que la différence intellectuelle des chercheurs d'avant comparés à aujourd'hui est littéralement énorme")
-    .addField("Suite","2-La création du monde")
     .setImage("https://media.discordapp.net/attachments/549628514303737856/582997634537488414/138323935360.png?width=749&height=469")
     message.channel.sendMessage(help_embed);
 }
     
-     if(message.content === préfix + "2-La création du monde"){
+     if(message.content === préfix + "La création du monde"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
-    .addField("Un début de faiblesse", "Avec le temps...Les êtres supérieurs créèrent des petites cités ou toute race étaient accéptés, mais cela était bien trop beau pour durer.... \n La différence intelectuelle des hauts elfes et des humanoïdes, la force physique des meilleurs chevaliers humanoïdes contre celle des meilleurs hauts Lézards....Et tout un dictionnaire de différence prouvait que ''L'humanoïde'' été l'être le plus polyvalent en tout point, mais celui qui ne sera jamais le meilleur dans un domaine si son oposant decide s'entrainer dans ce même domaine. \n C'est alors que l'humanoïde voulue dépasser les autres éspèces et les plus intéligent décidèrent de créer 2 entités. Ce qui en résultera 2 humains identiques à l'homme d'aujourdhui mais...Cette être été bien trop faible en tout point...Ils décidèrent de ce porter alors vers la recherche d'un nouvelle être")
-    .addField("Suite","3-La création du monde")
-  
+    .addField("Un début de faiblesse", "Avec le temps...Les êtres supérieurs créèrent des petites cités ou toute race étaient accéptés, mais cela était bien trop beau pour durer.... \n La différence intelectuelle des hauts elfes et des humanoïdes, la force physique des meilleurs chevaliers humanoïdes contre celle des meilleurs hauts Lézards....Et tout un dictionnaire de différence prouvait que ''L'humanoïde'' été l'être le plus polyvalent en tout point, mais celui qui ne sera jamais le meilleur dans un domaine si son oposant decide s'entrainer dans ce même domaine. \n C'est alors que l'humanoïde voulue dépasser les autres éspèces et les plus intéligent décidèrent de créer 2 entités. Ce qui en résultera 2 humains identiques à l'homme d'aujourdhui mais...Cette être été bien trop faible en tout point...Ils décidèrent de ce porter alors vers la recherche d'un nouvelle être")  
     message.channel.sendMessage(help_embed);
 }
-           if(message.content === préfix + "3-La création du monde"){
+           if(message.content === préfix + "La création du monde"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100") 
    .addField("Le début d'un cauchemar"," Nos humains déssidèrent de créer 2 humains mais...Ils étaient bien trop faibles et leur Qi étaient néfaste à eux même. Alors ils ressayèrent mais cette fois-ci ils créèrent 2 Démons qui ressemblait à première vue à des humains, puis plus le temps passait, plus ces 2 démons commençait à devenir de plus en plus fort dépassant même les humanoïdes et toutes races confondues. Les 2 démons finiront par se rebeller envers leur maître qui seront dans l'incapacité de les stabiliser, leur force démonsielle faisait trember la terre ferme et terrifier même les plus forts Lézards. Les 2 démons rasèrent à eux seul leur cités ou ils avaient été crée mais la nouvelle se fit vite répendre...En seulement quelque jours les 10 000 êtres supérieurs restant étaient déjà en route pendant que nos 2 chères démons produisaient déjà en masse des nouveaux nées jusqu'à un nombre de 1 000 000 en seulement quelque jours.")
-    .addField("Suite","4-La création du monde")
     message.channel.sendMessage(help_embed);
 }
     
-         if(message.content === préfix + "4-La création du monde"){
+         if(message.content === préfix + "La création du monde"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
     .addField("Une guerre sans fin", "Le combat durera seulement une journée...Mais cette journée avait la sensation de duréer des siècles, aucun répis n'était permis de peur de perdre la victoire. les démons se faisaient réduire en cendre face aux êtres supérieurs d'Underlord, mais les 2 grands démons sacrifiaient plus rapidement leurs cellules pour créer des démons qu'il n'en mourait au large du front... \n plusieurs escouades d'élite fut créée ainsi qu'un bataillon regroupant les meilleurs pour son occuper. les escouades fut pour la plupart détruite...Mais permis à notre bataillon d'arriver au centre de la fournaise. Un combat intense eu lieu et la cohésion du groupe regroupant une personne de chaque espèce permis la victoire et la destruction des 2 démons. \n Malheureusement...Il y avait trop bien de démon et il ne restait que 2 000 être supérieurs souffrant le martyre et la fatigue, ils étaient tous fatigués, épuisés, La fin approche..") 
-    .addField("Suite","5-La création du monde")
     .setImage("http://paperlief.com/images/demons-vs-angels-war-wallpaper-1.jpg")
     message.channel.sendMessage(help_embed);
 }
-           if(message.content === préfix + "5-La création du monde"){
+           if(message.content === préfix + "La création du monde"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
     .addField("Le choix crucial", "Leur puissance était faible, mais leur supériorité numérique était ahurissant. \n C'est alors qu'une décision fut prise... Tous les êtres supérieurs se regroupèrent à un endroit et les 200 meilleurs mages défensives se chargèrent de créer une barrière magique, laissant les démons exploser leur cranes et leur tentacules contre la barrière infranchissable, s'entassant comme des rats affaiblissant la protection à l'usure. Pendant que la barrière tenait le coups, les plus fidèles croyant et plus puissant mage se chargèrent de créer un ''monde parallèle'' ou ils y balancèrent nos 2 humains qui avaient été placés en phase d'hibernation ainsi que 2 clones féminin et masculin de chaque espèces sans oublie les automates. Ils avaient été crée sur place et d'une rapidité qui aura comme résultat d'affaiblir les espèces dans tous les domaines. \n 5minutes...Il restait 5 minutes avant que la barrière explose...") 
-    .addField("Suite","6-La création du monde")
     .setImage("http://www.yukokusamurai.com/data/archive/img/3553549036.jpeg")
     message.channel.sendMessage(help_embed);
 }
-       if(message.content === préfix + "6-La création du monde"){
+       if(message.content === préfix + "La création du monde"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
     .addField("Une lueur d'éspoir", "Nos êtres supérieurs étés des génies mais...Il était impossible de contenir le portail ouvert trop longtemps et il était impossible de faire rentrer tout le monde à l'intérieur de peur de créer de l'instabilité dans ce nouveau monde qui aura pour bute d'éviter les erreurs du passé. C'est alors que sur nos 1 800 humanoïdes ainsi que hauts êtres qui restaient, c'est alors que petit à petit avec une pièce de l'ancien temps, le pile ou face eu lieu, un moyen de choisir votre sort futur plutôt égale. Des forts pouvaient gagner, comme des plus faibles. Environ 500 personnes avaient été envoyé dans le portail quand aux autres....Ils eu à peine eu le temps de dire leur chaleureux adieu à leurs anciens proche que le bouclier se fit détruire. Leur seule solution a été de litéralement concentrer toute leur énérgie en une bombe pour réduire en cendre cette univers corrompu.") 
-    .addField("Suite","FIN-La création du monde")
     .setImage("http://cdn.knowledgehi.com/1920x1200/20121021/explosion%20looking%20for%20sci%20fi%20fantasy%20wallpapers%20for%20dual%20monitors%201920x1200%20wallpaper_www.knowledgehi.com_23.jpg")
     message.channel.sendMessage(help_embed);
 }
-       if(message.content === préfix + "FIN-La création du monde"){
+       if(message.content === préfix + "La création du monde"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
     .setImage("https://media.discordapp.net/attachments/549628514303737856/582997154805579786/fantasy-art-anime-planet-space-Earth-nebula-28625-wallhere.com.jpg?width=749&height=469")
@@ -229,7 +222,6 @@ if(message.content === préfix + "Création du royaume"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
     .addField("Création du royaume", "Après que nos êtres ''divins'' décidèrent de repartir dans leur coin, le monde fut enfin née, les humains du à leur grande population prirent le controle des 8/10 des terres, ne laissant qu'aux autres races de minuscules espaces pour vivres les empechant d'augmenter en population de peur de déborder et de se faire repérer par les humains qui automatiquement attaqueraient ces derniers. Néanmoins cela n'empechera pas aux autres espèces d'évoluer à leur manière.")
-    .addField("Approndisement sur les démons actuel", "Démon actuel")
     .setImage("https://image.noelshack.com/fichiers/2017/16/1492529074-8-ville.jpg")
     message.channel.sendMessage(help_embed);
 }
