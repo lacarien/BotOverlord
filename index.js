@@ -202,7 +202,7 @@ if(message.content === préfix + "Le grand prêtre"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
     .setImage("https://media.discordapp.net/attachments/549628514303737856/582997154805579786/fantasy-art-anime-planet-space-Earth-nebula-28625-wallhere.com.jpg?width=749&height=469")
-    .addField("Un nouveau monde", "Underlord était née, enfin...Le monde parallèle d'Underlord. Il restait donc nos ''survivants'', le problème est que la casi totalité était en phase d'hibernation, probablement que le voyage avait été trop ardu pour les plus faibles d'entre eux. \n Ils étaient un nombre de 10 que l'on surnormera les êtres dit ''divains'', ces derniers pris le choix de disperser au 4 coins du monde les personnes en hibernations tout en leur détruisant la mémoire pensants qu'il fallait cacher le passé pour créer un meilleur Futur.") 
+    .addField("Un nouveau monde", "Underlord était née, enfin...Le monde parallèle d'Underlord. Il restait donc nos ''survivants'', le problème est que la casi totalité était en phase d'hibernation, probablement que le voyage avait été trop ardu pour les plus faibles d'entre eux. \n Ils étaient un nombre de 10 que l'on surnormera les êtres dit ''divins'', ces derniers pris le choix de disperser au 4 coins du monde les personnes en hibernations tout en leur détruisant la mémoire pensants qu'il fallait cacher le passé pour créer un meilleur Futur.") 
     message.channel.sendMessage(help_embed);
 }
     
