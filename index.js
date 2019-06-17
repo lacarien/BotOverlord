@@ -229,7 +229,7 @@ if(message.content === préfix + "Création du royaume"){
 if(message.content === préfix + "Création du royaume"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffd100")
-    .addField("Démon actuel", "Les démons qui était primitif dans le passé ont maintenant un minimum évolué bien qu'ils restent l'une des plus grandes menaces, cela en reste qu'il y a certain démon qui ont une forme humanoïde voir proche de celle d'autre espèce")
+    .addField("Démon actuel", "Les démons qui étaient primitif dans le passé ont maintenant un minimum évolué bien qu'ils restent l'une des plus grandes menaces, cela en reste qu'il y a certain démon qui ont une forme humanoïde voir proche de celle d'autre espèce")
     .setImage("https://i.pinimg.com/originals/5e/dd/8a/5edd8a4f024348630d49c4c886416fd0.jpg")
     message.channel.sendMessage(help_embed);
 }
