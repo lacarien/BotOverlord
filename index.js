@@ -1152,6 +1152,23 @@ if(message.content === préfix + "PC Berserk"){
     message.channel.sendMessage(help_embed);
 }
     
+        if(message.content === préfix + "PC Grand Sorcier"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00e9fc")
+        .setTitle("PC Grand Sorcier")
+        .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+        .addField("30PC", "250 de Mana")
+        .addField("33PC", "?Super blocage magique")
+        .addField("35PC", "?Fuite volante")
+        .addField("37PC", "?Renvoie")
+        .addField("39PC", "?Sort de confusion")
+        .addField("41PC", "?Blocage d'aura")
+        .addField("43PC", "Grand Sorcier ultime")
+        .addField("45PC", "Vous pouvez évoluer")
+        
+        message.channel.sendMessage(help_embed);
+    }
+    
     if(message.content === préfix + "PC Champion"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00295b")
