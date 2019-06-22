@@ -5864,7 +5864,7 @@ if(message.content === préfix + "épée de folie"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#e200ff")
     .setTitle("épée de folie")
-    .setDescription("Cette épée forgeait par des nomades a subi de nombreuse rituel...Celle-ci a la particularité de dégradé la santé mental de son propriétaire")
+    .setDescription("Cette épée d'ancien chevaliers, a été corrompu et a forcé les chevaliers à devenir de simple Nomade érrant dans les grottes. Si vous êtes un démon vous deviendrais encore plus violent et impulsifs qu'avant (pas forcé de faire du friendly fire) mais si vous êtes d'une autre race, vous deviendrez alors avec le temps un demi démon")
     .addField("Bonus", "?Parade folle \n ?Rire de fou")
     .addField("Passifs", "Une fois par jour, vous devrez faire un ?Roll qui aura pour objectif de savoir si votre santé mental se dégrade ou si elle ne bouge pas. Attention l'épée ne pourra jamais améliorer votre santé mental, seul les liens sociaux le permettront")
     message.channel.sendMessage(help_embed);
@@ -5906,7 +5906,7 @@ if(message.content === préfix + "Blocage démoniaque"){
 }
 if(message.content === préfix + "Parade folle"){
     var result = Math.floor((Math.random() * 100) + 1);
-    var min = Math.floor(Math.min(130));
+    var min = Math.floor(Math.min(135));
     var max = Math.floor(Math.max(160)); 
     var w = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 35){
@@ -5928,12 +5928,12 @@ if(message.content === préfix + "Tornade ténébreuse"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     if(result < 50)
     var y = new Discord.RichEmbed()
-    .addField("Vous envoyez un sort qui détruit votre adversaire, la compétence n'est pas bloquable(-175 de mana) :sparkles: ", y)
+    .addField("Vous envoyez un sort qui détruit votre adversaire, la compétence n'est pas bloquable(-200 de mana) :sparkles: ", y)
     .setImage("https://media.giphy.com/media/x49CbUokcHQZdaSyga/giphy.gif   ")
     .setColor("#000000")    
     if(result > 50)
     var y = new Discord.RichEmbed()
-    .addField("Vous envoyez un sort qui détruit votre adversaire, la compétence n'est pas esquivable(-175 de mana) :sparkles: ", y)
+    .addField("Vous envoyez un sort qui détruit votre adversaire, la compétence n'est pas esquivable(-200 de mana) :sparkles: ", y)
     .setImage("https://media.giphy.com/media/x49CbUokcHQZdaSyga/giphy.gif   ")
     .setColor("#000000")    
     message.channel.send(y);
@@ -5944,7 +5944,7 @@ if(message.content === préfix + "Tir magique"){
     var max = Math.floor(Math.max(130)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
-    .addField("Vous tirez une fleche magique(-30 de Mana)",":bow_and_arrow: "+ y)
+    .addField("Vous tirez une fleche magique(-20 de Mana)",":bow_and_arrow: "+ y)
     .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
     message.channel.send(y);
 }
@@ -5953,14 +5953,25 @@ if(message.content === préfix + "Pluie de fleche"){
     var min = Math.floor(Math.min(50));
     var max = Math.floor(Math.max(70)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var x = Math.floor((Math.random() * 100) + 1);
+    if ( x < 60)
     var y = new Discord.RichEmbed()
-    .addField("Vous tirez en l'air, votre fleche explose et fait apparaitre une pluie de fleches qui blesse tout les ennemies(-50 de Mana)",":bow_and_arrow: "+ y)
+    .addField("Vous tirez en l'air, votre fleche explose et fait apparaitre une pluie de fleches qui blesse tout les ennemies de manière inesquivables(-50 de Mana)",":bow_and_arrow: "+ y)
+    
     .setImage("https://cdn.discordapp.com/attachments/536292650698014731/551878057246326787/79925.png")
+    
+       else if ( x < 101)
+               var y = new Discord.RichEmbed()
+
+.addField("Vous tirez en l'air, votre fleche explose et fait apparaitre une pluie de fleches qui blesse tout les ennemies de manière inesquivables et imblocables(-50 de Mana)",":bow_and_arrow: "+ y)
+    
+    .setImage("https://cdn.discordapp.com/attachments/536292650698014731/551878057246326787/79925.png")
+    
     message.channel.send(y);
 }
 if(message.content === préfix + "Invocation de gardien"){   
     var min = Math.floor(Math.min(200));
-    var max = Math.floor(Math.max(300)); 
+    var max = Math.floor(Math.max(275)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#000000")
@@ -5970,18 +5981,23 @@ if(message.content === préfix + "Invocation de gardien"){
 }
 if(message.content === préfix + "Coup de dague rapide"){
         
-    var min = Math.floor(Math.min(80));
+    var min = Math.floor(Math.min(95));
    var max = Math.floor(Math.max(110)); 
    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
       var result = Math.floor((Math.random() * 100) +1);
-   if(result < 70)
+   if(result < 60)
    var y = new Discord.RichEmbed()
    .addField("Vous lui infligé un coup de dague rapide et lui infligé", y)
    .setColor("#ff6000")
    .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/b/ba/Overlord_II_EP06_097.png/revision/latest?cb=20180216051904")
-   else if (result < 101)
+   else if (result < 95)
    var y = new Discord.RichEmbed()
    .setColor("#ff6000")
+   .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup ", y)
+   .setImage("https://i.ytimg.com/vi/mmUlK_FAJqI/maxresdefault.jpg")
+    else if (result < 101)
+           var y = new Discord.RichEmbed()
+ .setColor("#ff6000")
    .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup ", y)
    .setImage("https://i.ytimg.com/vi/mmUlK_FAJqI/maxresdefault.jpg")
    message.channel.send(y);
@@ -5992,35 +6008,27 @@ if(message.content === préfix + "Lancé de dague"){
     var max = Math.floor(Math.max(75)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor((Math.random() * 3) + 1);
-    if(result < 2)
+    if( x < 2)
     var y = new Discord.RichEmbed()
-    .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 1tours impossible à bloquer(-30 de Mana)", y)
+    .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 2tours impossible à bloquer(-30 de Mana)", y)
     .setColor("#9f0000")
     .setImage("https://nerdblogdotcom.files.wordpress.com/2013/06/borborygmos-enraged.jpg")
     else if(x < 3)
     var y = new Discord.RichEmbed()
     .setColor("#4e8b27")
     .addField("Votre dague inflige des dégats pendant 3tours(-40 de Mana)", y)
-    else if(x < 4)
-    var y = new Discord.RichEmbed()
-    .setColor("#4e8b27")
-    .setTitle("Vous lancé une dague qui paralyse votre ennemie, l'empechant de bloquer au prochain tours(-40 de Mana)")
     message.channel.sendMessage(y);
 }
+    
  if(message.content === préfix + "Trouble démoniaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(50));
-    var max = Math.floor(Math.max(80)); 
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(40)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
-        if(y < 45)
-    var y = new Discord.RichEmbed()
-    .addField("Votre bouclier fait trembler votre adversaire et lui réduit son blocage au prochain tours (-50 de mana)", y)
-    .setColor("#820000")
-        if(y > 45)
     var y = new Discord.RichEmbed()
     .setColor("#820000")
-    .addField("Votre bouclier fait trembler de peur votre adversaire et lui réduit sa défense au prochain tours (-75 d'HP)", y)
+    .addField("Vous arrivez à bloquer une attaque imblocable(-50 de mana)", y)
     message.channel.sendMessage(y);
 }
 
