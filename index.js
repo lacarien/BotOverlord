@@ -5879,7 +5879,6 @@ if(message.content === préfix + "épée de folie"){
     .setTitle("épée de folie")
     .setDescription("Cette épée d'ancien chevaliers, a été corrompu et a forcé les chevaliers à devenir de simple Nomade érrant dans les grottes. Si vous êtes un démon vous deviendrais encore plus violent et impulsifs qu'avant (pas forcé de faire du friendly fire) mais si vous êtes d'une autre race, vous deviendrez alors avec le temps un demi démon")
     .addField("Bonus", "?Parade folle \n ?Rire de fou")
-    .addField("Passifs", "Une fois par jour, vous devrez faire un ?Roll qui aura pour objectif de savoir si votre santé mental se dégrade ou si elle ne bouge pas. Attention l'épée ne pourra jamais améliorer votre santé mental, seul les liens sociaux le permettront")
     message.channel.sendMessage(help_embed);
 }
 
