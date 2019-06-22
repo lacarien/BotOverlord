@@ -6025,7 +6025,6 @@ if(message.content === préfix + "Lancé de dague"){
     var y = new Discord.RichEmbed()
     .addField("Vous tirez une flèche empoisonnée qui n'inflige aucun dégats mais un poison durant 2tours impossible à bloquer(-30 de Mana)", y)
     .setColor("#9f0000")
-    .setImage("https://nerdblogdotcom.files.wordpress.com/2013/06/borborygmos-enraged.jpg")
     else if(x < 3)
     var y = new Discord.RichEmbed()
     .setColor("#4e8b27")
