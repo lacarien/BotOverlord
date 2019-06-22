@@ -846,6 +846,19 @@ if(message.content === préfix + "PCP Beastman"){
     .addField("42PC", "Le Grand archer peu faire une esquive sans roll (à une attaque de RP passifs, impossible de l'utiliser si on essaye de vous assommer) une fois tout les jours maximum")
    message.channel.sendMessage(help_embed);
 }
+    
+    if(message.content === préfix + "PCP Grand Assassin"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("PCP Grand Assassin")
+    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
+    .addField("32PC", "Les portes ne sont plus un problèmes pour vous, vous les crochetez sans problèmes, cependant attention à ne pas vous faire repérer ")
+    .addField("36PC", "L'assassin est un maitre de l'élimination rapide et discrète, quand il a acquis une cible sans ce faire repérer il à le droit à un bonus de +20 en discrétion")
+    .addField("42PC", "Quand vous le croiser vous savez qu'il n'est pas la pour plaisanter et qu'il ne faut pas lui chercher des noises au risques de le regretter très amèrement ")
+   message.channel.sendMessage(help_embed);
+}
+    
+    
     if(message.content === préfix + "PCP Clerc"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#8c97d9")
