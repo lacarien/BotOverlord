@@ -492,7 +492,7 @@ if(message.content === préfix + "Miner"){
         .addField("Bonus", "Vous êtes accepté par les autres démons bien qu'ils vous considèrent comme un esclave en premier lieu \n vous réduisez de 50% les dégats des sorts de soins")
         .addField("Malus", "Quotidiennement votre corps reçois des douleurs, comme par exemple vos yeux qui saignent, un mal de crane à en vouloir ce le taper contre un mur \n etc")
         .setImage("https://secure.static.tumblr.com/899b832161b8465d4c6bb8d704e3079a/ep3tyma/BBqni62m4/tumblr_static_tumblr_static__640.jpg ")
-        .setFooter("Menu Beastman")
+        .setFooter("Menu Demi démon")
         message.channel.sendMessage(help_embed);
     }
 
