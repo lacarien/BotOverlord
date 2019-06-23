@@ -488,7 +488,7 @@ if(message.content === préfix + "Miner"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#000000")
         .setTitle("Demi démon")
-        .setDescription("Vous êtes devenu un demi-démon. Vous avez perdu les PCP et les PC de votre ancienne race(vous gardez la PC 40). \n vous êtes totalement fou en présence d'une autre race(sauf démon) essayant de mettre KO la personne, même si c'était un ami, alors cela se fera à contrecoeur")
+        .setDescription("Vous êtes devenu un demi-démon. Vous avez perdu les PCP et les PC de votre ancienne race(vous gardez la PC 40) et vous recevez les 2 PC démon, mais également la première PCP démon bien qu'elle vous inflige la même sentence qu'à votre cible. \n vous êtes totalement fou en présence d'une autre race(sauf démon) essayant de mettre KO la personne, même si c'était un ami, alors cela se fera à contrecoeur")
         .addField("Bonus", "Vous êtes accepté par les autres démons bien qu'ils vous considèrent comme un esclave en premier lieu \n vous réduisez de 50% les dégats des sorts de soins")
         .addField("Malus", "Quotidiennement votre corps reçois des douleurs, comme par exemple vos yeux qui saignent, un mal de crane à en vouloir ce le taper contre un mur \n etc")
         .setImage("https://secure.static.tumblr.com/899b832161b8465d4c6bb8d704e3079a/ep3tyma/BBqni62m4/tumblr_static_tumblr_static__640.jpg ")
