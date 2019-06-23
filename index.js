@@ -233,6 +233,10 @@ if(message.content === préfix + "Création du royaume"){
     .setImage("https://i.pinimg.com/originals/5e/dd/8a/5edd8a4f024348630d49c4c886416fd0.jpg")
     message.channel.sendMessage(help_embed);
 }
+    
+    
+    
+    
 
     
 if(message.content === préfix + "Zone sombre"){
@@ -420,6 +424,7 @@ if(message.content === préfix + "Miner"){
         .addField("Automaton", "Vous êtes un Automaton, intérieurement vous ressemblez fortement à une machine mais extérieurement...")
         .addField("Liche", "Vous êtes un ancien sorcier mort qui se maintient dans un état de mort-vivant grâce à ses pouvoirs magiques")
         .addField("Beastman","Vous êtes un homme ou une femme annimal")
+        .addField("Demi démon","Cette race ne peut pas être pris lors de la création d'un personnage")
         .addField("Pour la précision sur les stats et autre", "?[Nom de votre race]")
         .addField("Pour les PCP", "?PCP [Race]")
         .setFooter("Menu des races RP")
@@ -477,6 +482,19 @@ if(message.content === préfix + "Miner"){
         .setFooter("Menu Lézard")
         message.channel.sendMessage(help_embed);
     }
+    
+    
+    if(message.content === préfix + "Demi démon"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setTitle("Demi démon")
+        .setDescription("Vous êtes devenu un demi-démon. Vous avez perdu les PCP et les PC de votre ancienne race(vous gardez la PC 40). \n vous êtes totalement fou en présence d'une autre race(sauf démon) essayant de mettre KO la personne, même si c'était un ami, alors cela se fera à contrecoeur")
+        .addField("Bonus", "Vous êtes accepté par les autres démons bien qu'ils vous considèrent comme un esclave en premier lieu \n vous réduisez de 50% les dégats des sorts de soins")
+        .addField("Malus", "Quotidiennement votre corps reçois des douleurs, comme par exemple vos yeux qui saignent, un mal de crane à en vouloir ce le taper contre un mur \n etc")
+        .setImage("https://secure.static.tumblr.com/899b832161b8465d4c6bb8d704e3079a/ep3tyma/BBqni62m4/tumblr_static_tumblr_static__640.jpg ")
+        .setFooter("Menu Beastman")
+        message.channel.sendMessage(help_embed);
+    }
 
     if(message.content === préfix + "Automaton"){
         var help_embed = new Discord.RichEmbed()
@@ -517,7 +535,7 @@ if(message.content === préfix + "Miner"){
         .setColor("#20ff00")
         .addField("Démon", "Vous êtes un Démon, vous avez une forme humanoïde bien que certain trait de votre apparence peuvent être différents que celui d'un humain")
         .addField("Bonus", "Vous régénèrez 2 fois plus vite votre mana et vos HP")
-        .addField("Malus", "Vous attaquez toujours en dernier et n'avez aucune compétences uniques pour votre espèce")
+        .addField("Malus", "Les sorts de soins vous infliges des dégats")
         .setImage("https://www.manga-news.com/public/images/vols/overlord-light-novel-12-jp.jpg")
         .setFooter("Menu Lézard")
         message.channel.sendMessage(help_embed);
