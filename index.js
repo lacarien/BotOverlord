@@ -6575,7 +6575,7 @@ if(message.content === préfix + "GS attaque"){
     
     
         if(message.content === préfix + "Mort test"){
-        message.channel.sendMessage(":?givelevel " +  get tag + " 50")
+        message.channel.sendMessage(":?givelevel " + " 50")
          console.log("Le test est effécuté")
 
     }
