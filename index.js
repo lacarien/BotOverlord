@@ -6575,12 +6575,16 @@ if(message.content === préfix + "GS attaque"){
     
     
         if(message.content === préfix + "Mort test"){
-        var help_embed = new Discord.RichEmbed()
         message.channel.sendMessage(":?givelevel " +  get tag() {  return `${this.username}#${this.discriminator}`;} + " 50")
          console.log("Le test est effécuté")
 
     }
 
+         if(message.content === préfix + "Test 123"){
+        message.channel.sendMessage("5/5")
+         console.log("Le test est effécuté")
+
+    }
 
 });
 
