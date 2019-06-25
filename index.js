@@ -6572,6 +6572,12 @@ if(message.content === préfix + "GS attaque"){
     .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/2/20/Overlord_II_EP03_051.png/revision/latest?cb=20180127032839")}
     message.channel.send(y);
 }
+    
+    
+        if(message.content === préfix + "?Mort test"){
+        var help_embed = new Discord.RichEmbed()
+        message.channel.sendMessage(":?givelevel" + reply + 50)
+    }
 
 
 });
