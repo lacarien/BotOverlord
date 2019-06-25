@@ -6576,7 +6576,7 @@ if(message.content === préfix + "GS attaque"){
     
         if(message.content === préfix + "?Mort test"){
         var help_embed = new Discord.RichEmbed()
-        message.channel.sendMessage(":?givelevel" + id + 50)
+        message.channel.sendMessage(":?givelevel" + tag + 50)
          console.log("Le test est effécuté")
 
     }
