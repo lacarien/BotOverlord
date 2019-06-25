@@ -6575,10 +6575,8 @@ if(message.content === préfix + "GS attaque"){
     
     
         if(message.content === préfix + "Mort test"){
-              get tag() {
-    return `${this.username}#${this.discriminator}`;
-}
-        message.channel.sendMessage(":?givelevel " + " 50")
+            const user = message.author;
+        message.channel.sendMessage(":?givelevel " + user + " 50")
          console.log("Le test est effécuté")
 
     }
@@ -6588,7 +6586,6 @@ if(message.content === préfix + "GS attaque"){
          console.log("Le test est effécuté")
 
     }
-
 });
 
 
