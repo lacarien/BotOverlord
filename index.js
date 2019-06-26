@@ -6729,10 +6729,10 @@ if(message.content === préfix + "GS attaque"){
     }
     
         var groupe = Math.floor
-    if(message.content === préfix + "Récompenses test" + groupe){    
+    if(message.content === préfix + "Récompenses " + groupe){    
         var XPmin = Math.floor(Math.min(20));
         var XPmax = Math.floor(Math.max(30)); 
-        var y = Math.floor(Math.random() * (XPmax - XPmin + 1) ) + min;
+        var y = Math.floor(Math.random() * (XPmax - XPmin + 1) ) + XPmin;
     if (groupe = 1){
     }
     if (groupe = 2){
