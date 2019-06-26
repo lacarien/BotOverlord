@@ -6728,34 +6728,23 @@ if(message.content === préfix + "GS attaque"){
 
     }
     
-   var groupe = [1,2,3,4,5,6,7] 
+    var groupe = (1,2,3,4,5,6,7)
    
-    if(message.content === préfix + "Récompenses " + groupe){    
+    if(message.content === préfix + "Récompenses " + groupe ){    
         var XPmin = Math.floor(Math.min(20));
         var XPmax = Math.floor(Math.max(30)); 
         var y = Math.floor(Math.random() * (XPmax - XPmin + 1) ) + XPmin;
              console.log("Le début est bon")
-    if (groupe = 1){
-        var y = y
-    }
-    if (groupe = 2){
-        var y = y/1.5
-    }
-    if (groupe = 3){
-        var y = y/2
-    }
-    if (groupe = 4){
-        var y = y/2.5
-    }
-    if (groupe = 5){
-        var y = y/3
-    }
-    if (groupe = 6){
-        var y = y/3.5
-    }
-    if (groupe = 7){
-        var y = y/4
-    }
+
+             if(groupe < 2){
+               }
+
+                else if(groupe < 3){
+                   }
+                else if(groupe < 4){
+                }
+                else if(groupe < 10){
+                }
     
     message.channel.sendMessage(y + " XP")
 
