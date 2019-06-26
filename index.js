@@ -6728,12 +6728,12 @@ if(message.content === préfix + "GS attaque"){
 
     }
     
-        var groupe = Math.floor((Math.random() * 100) + 1);
+        var groupe = Math.floor
     if(message.content === préfix + "Récompenses test" + groupe){    
         var XPmin = Math.floor(Math.min(20));
         var XPmax = Math.floor(Math.max(30)); 
         var y = Math.floor(Math.random() * (XPmax - XPmin + 1) ) + min;
-    if (Groupe = 1){
+    if (groupe = 1){
     }
     if (groupe = 2){
         var y = y/1.5
