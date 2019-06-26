@@ -2696,6 +2696,95 @@ if(message.content === préfix + "Magic gun 3"){
         .setImage("https://cache.desktopnexus.com/thumbseg/1616/1616662-bigthumbnail.jpg")
         message.channel.send(y);
     }
+    
+    if(message.content === préfix + "Invocation mini squelette"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Chevalier mort(-100 mana)")
+    .setColor("#000000")
+    .setDescription("Vous invoquez un mini squelette")
+    .addField("HP", "50")
+    .addField("Attaque", "?ms attaque")
+    .addField("Défense", "?ms défense")
+    .setImage("https://i.pinimg.com/564x/e1/eb/e4/e1ebe40009b64a51acb6400c342daf15.jpg")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "Invocation mini squelette 2"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Chevalier mort(-200 mana)")
+    .setColor("#000000")
+    .setDescription("Vous invoquez un mini squelette")
+    .addField("HP", "150")
+    .addField("Attaque", "?ms2 attaque")
+    .addField("Défense", "?ms2 défense")
+    .setImage("https://i.pinimg.com/564x/aa/bc/81/aabc8117fb902535fe8b7b923e695f59.jpg")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "Invocation mini squelette 3"){
+    var help_embed = new Discord.RichEmbed()
+    .setTitle("Chevalier mort(-400 mana)")
+    .setColor("#000000")
+    .setDescription("Vous invoquez un mini squelette")
+    .addField("HP", "300")
+    .addField("Attaque", "?ms3 attaque")
+    .addField("Défense", "?ms3 défense")
+    .setImage("https://i.pinimg.com/564x/94/b8/9e/94b89e75a8ba88213ae74cd222339354.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "ms attaque"){
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le mini squelette attaque, c'est imblocable", y)
+    .setColor("#000000")
+    message.channel.send(y);
+}
+if(message.content === préfix + "ms2 attaque"){
+    var min = Math.floor(Math.min(35));
+    var max = Math.floor(Math.max(55)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le mini squelette attaque, c'est imblocable", y)
+    .setColor("#000000")
+    message.channel.send(y);
+}
+if(message.content === préfix + "ms3 attaque"){
+    var min = Math.floor(Math.min(60));
+    var max = Math.floor(Math.max(75)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le mini squelette attaque, c'est imblocable", y)
+    .setColor("#000000")
+    message.channel.send(y);
+}
+if(message.content === préfix + "ms défense"){
+    var min = Math.floor(Math.min(0));
+    var max = Math.floor(Math.max(5)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le mini squelette bloque l'attaque", y)
+    .setColor("#000000")
+    message.channel.send(y);
+}
+if(message.content === préfix + "ms2 défense"){
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(20)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le mini squelette bloque l'attaque", y)
+    .setColor("#000000")
+    message.channel.send(y);
+}
+if(message.content === préfix + "ms3 défense"){
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Le mini squelette bloque l'attaque", y)
+    .setColor("#000000")
+    message.channel.send(y);
+}
                 
     
     if(message.content === préfix + "Réparation automatique"){
