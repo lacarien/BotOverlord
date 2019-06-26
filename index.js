@@ -6727,6 +6727,41 @@ if(message.content === préfix + "GS attaque"){
          console.log("Le test est effécuté")
 
     }
+    
+    
+        var groupe = Math.floor((Math() * 100) + 1);
+    if(message.content === préfix + "Récompenses test" + groupe){
+        var XPmin = Math.floor(Math.min(20));
+        var XPmax = Math.floor(Math.max(30)); 
+        var y = Math.floor(Math.random() * (XPmax - XPmin + 1) ) + min;
+    if (Groupe = 1){
+    }
+    if (groupe = 2){
+        var y = y/1.5
+    }
+    if (groupe = 3){
+        var y = y/2
+    }
+    if (groupe = 4){
+        var y = y/2.5
+    }
+    if (groupe = 5){
+        var y = y/3
+    }
+    if (groupe = 6){
+        var y = y/3.5
+    }
+    if (groupe = 7){
+        var y = y/4
+    }
+    
+    message.channel.sendMessage(y + " XP")
+
+     console.log("Le test est effécuté")
+
+}
+    
+    
 });
 
 
