@@ -2471,7 +2471,7 @@ if(message.content === préfix + "Saignement démoniaque"){
     message.channel.sendMessage(help_embed);
 }
     if(message.content === préfix + "Drain de vie"){
-        var min = Math.floor(Math.min(25);
+        var min = Math.floor(Math.min(25));
         var max = Math.floor(Math.max(45)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed() 
