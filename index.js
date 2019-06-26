@@ -6729,9 +6729,8 @@ if(message.content === préfix + "GS attaque"){
     }
     
     
-    var xgroupe = Math.floor(Math.min(0));
-    var ygroupe = Math.floor(Math.max(7)); 
-    var groupe = Math.floor(Math.random() * (ygroupe - xgroupe + 1) ) + xgroupe;
+
+    var groupe = Number(1)
 
 
     if(message.content === préfix + "Récompenses " + groupe ){    
