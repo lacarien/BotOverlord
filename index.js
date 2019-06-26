@@ -6728,8 +6728,10 @@ if(message.content === préfix + "GS attaque"){
 
     }
     
-    var groupe = Number(Math.floor(1,2,3,4,5,6,7));
-   
+    
+   var groupe = Math.floor(Math.min(0));
+    var groupe = Math.floor(Math.max(7)); 
+
     if(message.content === préfix + "Récompenses " + groupe ){    
         var XPmin = Math.floor(Math.min(20));
         var XPmax = Math.floor(Math.max(30)); 
@@ -6749,8 +6751,7 @@ if(message.content === préfix + "GS attaque"){
     message.channel.sendMessage(y + " XP")
 
      console.log("Le test est effécuté")
-
-}
+}   
     
     
 });
