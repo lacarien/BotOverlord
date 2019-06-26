@@ -6728,13 +6728,15 @@ if(message.content === préfix + "GS attaque"){
 
     }
     
-       
-    if(message.content === préfix + "Récompenses " + Math.floor = groupe){    
+       var groupe = Math.floor;
+
+    if(message.content === préfix + "Récompenses " + groupe){    
         var XPmin = Math.floor(Math.min(20));
         var XPmax = Math.floor(Math.max(30)); 
         var y = Math.floor(Math.random() * (XPmax - XPmin + 1) ) + XPmin;
              console.log("Le début est bon")
     if (groupe = 1){
+        var y = y
     }
     if (groupe = 2){
         var y = y/1.5
