@@ -6728,7 +6728,7 @@ if(message.content === préfix + "GS attaque"){
 
     }
     
-    var groupe = Number(Math.floor)
+    var groupe = Number()
    
     if(message.content === préfix + "Récompenses " + groupe ){    
         var XPmin = Math.floor(Math.min(20));
