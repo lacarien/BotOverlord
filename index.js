@@ -970,7 +970,9 @@ if(message.content === préfix + "PCP Champion"){
         .setTitle("PC Liche")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("10PC", "La liche peut invoquer un petit squelette de combat qui l'aide à combattre (?Invocation mini squelette)")
+        .addField("20PC", "La liche peut invoquer un petit squelette de combat qui l'aide à combattre (?Invocation mini squelette 2)")
         .addField("25PC", "Vous obtenez 300 de mana :sparkles: et perdez 100HP :broken_heart:  \n pour ensuite obtenir ?Coquille squelettique")
+        .addField("40PC", "La liche peut invoquer un petit squelette de combat qui l'aide à combattre (?Invocation mini squelette 3)")
         .addField("40PC", "La liche invoque un portail ou ressorte quotidiennement des squelettes (?Cimetiere ambulant")
         message.channel.sendMessage(help_embed);
     }
@@ -981,7 +983,9 @@ if(message.content === préfix + "PCP Champion"){
         .setTitle("PC Beastman")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("10PC", "Vous obtenez la compétence ?Violente morsure")
+        .addField("20PC", "Vous obtenez la compétence ?Violente morsure 2")
         .addField("25PC", "Vous obtenez la compétence ?Regard forceur")
+        .addField("35PC", "Vous obtenez la compétence ?Violente morsure 3")
         .addField("40PC", "Vous obtenez la capacité ?Appelle à la meute")
         message.channel.sendMessage(help_embed);
     }
@@ -1044,7 +1048,9 @@ if(message.content === préfix + "PCP Automaton"){
         .setTitle("PC Automaton")
         .setDescription("Voici ce que vous pourrez gagner à chaque étape")
         .addField("10PC", "Vous obtenez la compétence ?Magic gun")
+        .addField("20PC", "Vous obtenez la compétence ?Magic gun 2(si vous avez prit la classe Archer)")
         .addField("25PC", "Vous obtenez la compétence ?Réparation automatique")
+        .addField("35", "Vous obtenez la compétence ?Magic gun 3(si vous avez prit la classe Automaton)")
         .addField("40PC", "Vous obtenez la compétence ?Tire pleine puissance")
         message.channel.sendMessage(help_embed);
     }
@@ -1440,7 +1446,7 @@ if(message.content === préfix + "PC Berserk"){
         var max = Math.floor(Math.max(85)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
-        .setImage("https://wallpapersafari.com/w/2vMPhG")
+        .setImage("https://images-ext-1.discordapp.net/external/jvvKe9WhSE_9cC6OPwN84ThGj2FvzVXzK7pmFvxyS9s/https/i.pinimg.com/564x/07/82/ea/0782eab69709d1f48eff6e0d62c0994b.jpg")
         .addField("Vous donnez un coup d'épée puissant à votre adversaire", ":dagger: "+y)
         message.channel.send(y);
     }
@@ -2465,15 +2471,15 @@ if(message.content === préfix + "Saignement démoniaque"){
     message.channel.sendMessage(help_embed);
 }
     if(message.content === préfix + "Drain de vie"){
-        var min = Math.floor(Math.min(20));
-        var max = Math.floor(Math.max(40)); 
+        var min = Math.floor(Math.min(25);
+        var max = Math.floor(Math.max(45)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed() 
         .setColor("#76ff00")
-        .addField("Vous régénérez", y)
+        .addField("Vous régénérez(-80 de mana)", y)
         message.channel.send(y);
-        var mins = Math.floor(Math.min(35));
-        var maxs = Math.floor(Math.max(60)); 
+        var mins = Math.floor(Math.min(40));
+        var maxs = Math.floor(Math.max(65)); 
         var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var w = new Discord.RichEmbed()
         .setColor("#ff8b00")
@@ -2482,15 +2488,15 @@ if(message.content === préfix + "Saignement démoniaque"){
         message.channel.send(w);
     }
       if(message.content === préfix + "Drain de vie 2"){
-        var min = Math.floor(Math.min(30));
-        var max = Math.floor(Math.max(50)); 
+        var min = Math.floor(Math.min(35));
+        var max = Math.floor(Math.max(55)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed() 
         .setColor("#76ff00")
-        .addField("Vous régénérez", y)
+        .addField("Vous régénérez (-80 de mana)", y)
         message.channel.send(y);
-        var mins = Math.floor(Math.min(40));
-        var maxs = Math.floor(Math.max(70)); 
+        var mins = Math.floor(Math.min(45));
+        var maxs = Math.floor(Math.max(75)); 
         var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var w = new Discord.RichEmbed()
         .setColor("#ff8b00")
@@ -2500,15 +2506,15 @@ if(message.content === préfix + "Saignement démoniaque"){
     }
 
     if(message.content === préfix + "Drain de vie 3"){
-        var min = Math.floor(Math.min(35));
-        var max = Math.floor(Math.max(55)); 
+        var min = Math.floor(Math.min(40));
+        var max = Math.floor(Math.max(60)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed() 
         .setColor("#76ff00")
-        .addField("Vous régénérez", y)
+        .addField("Vous régénérez (-80 de mana)", y)
         message.channel.send(y);
-        var mins = Math.floor(Math.min(45));
-        var maxs = Math.floor(Math.max(75)); 
+        var mins = Math.floor(Math.min(50));
+        var maxs = Math.floor(Math.max(80)); 
         var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var w = new Discord.RichEmbed()
         .setColor("#ff8b00")
@@ -2522,7 +2528,7 @@ if(message.content === préfix + "Saignement démoniaque"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed() 
         .setColor("#76ff00")
-        .addField("Vous régénérez", y)
+        .addField("Vous régénérez (-80 de mana)", y)
         message.channel.send(y);
         var mins = Math.floor(Math.min(80));
         var maxs = Math.floor(Math.max(90)); 
@@ -2534,15 +2540,15 @@ if(message.content === préfix + "Saignement démoniaque"){
         message.channel.send(w);
     }
     if(message.content === préfix + "Drain de vie 5"){
-        var min = Math.floor(Math.min(60));
-        var max = Math.floor(Math.max(70)); 
+        var min = Math.floor(Math.min(65));
+        var max = Math.floor(Math.max(75)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed() 
         .setColor("#76ff00")
-        .addField("Vous régénérez", y)
+        .addField("Vous régénérez (-80 de mana)", y)
         message.channel.send(y);
-        var mins = Math.floor(Math.min(90));
-        var maxs = Math.floor(Math.max(100)); 
+        var mins = Math.floor(Math.min(95));
+        var maxs = Math.floor(Math.max(105)); 
         var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var w = new Discord.RichEmbed()
         .setColor("#ff8b00")
@@ -2551,15 +2557,15 @@ if(message.content === préfix + "Saignement démoniaque"){
         message.channel.send(w);
     }
     if(message.content === préfix + "Drain de vie 6"){
-        var min = Math.floor(Math.min(70));
-        var max = Math.floor(Math.max(80)); 
+        var min = Math.floor(Math.min(75));
+        var max = Math.floor(Math.max(85)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed() 
         .setColor("#76ff00")
-        .addField("Vous régénérez", y)
+        .addField("Vous régénérez (-80 de mana)", y)
         message.channel.send(y);
-        var mins = Math.floor(Math.min(100));
-        var maxs = Math.floor(Math.max(110)); 
+        var mins = Math.floor(Math.min(105));
+        var maxs = Math.floor(Math.max(115)); 
         var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
         var w = new Discord.RichEmbed()
         .setColor("#ff8b00")
@@ -2568,15 +2574,15 @@ if(message.content === préfix + "Saignement démoniaque"){
         message.channel.send(w);
     }
 if(message.content === préfix + "Drain de vie 7"){
-    var min = Math.floor(Math.min(90));
-    var max = Math.floor(Math.max(110)); 
+    var min = Math.floor(Math.min(95));
+    var max = Math.floor(Math.max(115)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed() 
     .setColor("#76ff00")
-    .addField("Vous régénérez", y)
+    .addField("Vous régénérez (-80 de mana)", y)
     message.channel.send(y);
-    var mins = Math.floor(Math.min(120));
-    var maxs = Math.floor(Math.max(130)); 
+    var mins = Math.floor(Math.min(125));
+    var maxs = Math.floor(Math.max(135)); 
     var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var w = new Discord.RichEmbed()
     .setColor("#ff8b00")
@@ -2587,15 +2593,15 @@ if(message.content === préfix + "Drain de vie 7"){
 
 
 if(message.content === préfix + "Drain de vie 8"){
-    var min = Math.floor(Math.min(100));
-    var max = Math.floor(Math.max(120)); 
+    var min = Math.floor(Math.min(105));
+    var max = Math.floor(Math.max(125)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed() 
     .setColor("#76ff00")
-    .addField("Vous régénérez", y)
+    .addField("Vous régénérez (-80 de mana)", y)
     message.channel.send(y);
-    var mins = Math.floor(Math.min(130));
-    var maxs = Math.floor(Math.max(150)); 
+    var mins = Math.floor(Math.min(135));
+    var maxs = Math.floor(Math.max(155)); 
     var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var w = new Discord.RichEmbed()
     .setColor("#ff8b00")
@@ -2630,13 +2636,59 @@ if(message.content === préfix + "Drain de vie 8"){
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .setColor("#ff8b00")
-        .addField("Vous pouvez uniquement utiliser cette compétence à longue porté. Vous visez un point vital et infligez de lourd dégats(-50 de mana)", ":gun: "+y)
+        .addField("Vous pouvez uniquement utiliser cette compétence à longue porté. Vous visez un point vital et infligez de lourd dégats(-80 de mana)", ":gun: "+y)
         .setImage("https://media.giphy.com/media/vgvVcpHvIEjO9yPQqg/giphy.gif")
         message.channel.send(y);
     }
+    
+    if(message.content === préfix + "Magic gun 2"){
+    var min = Math.floor(Math.min(135));
+    var max = Math.floor(Math.max(145)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#ff8b00")
+    .addField("Vous visez le point vital de votre cible, et lui infligez de lourd dégats(-80 de mana)", ":gun: "+y)
+    .setImage("https://media.giphy.com/media/vgvVcpHvIEjO9yPQqg/giphy.gif")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Magic gun 3"){
+    var min = Math.floor(Math.min(235));
+    var max = Math.floor(Math.max(245)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#ff8b00")
+    .addField("Vous visez le point vital de votre cible, et lui infligez de lourd dégats(-80 de mana)", ":gun: "+y)
+    .setImage("https://media.giphy.com/media/vgvVcpHvIEjO9yPQqg/giphy.gif")
+    message.channel.send(y);
+}
+
+    
       if(message.content === préfix + "Violente morsure"){
         var min = Math.floor(Math.min(50));
         var max = Math.floor(Math.max(60)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous donnez un gros coups de griffe qui sonne votre ennemie l'empêchant d'attaquer(-50 de mana)", y)
+        .setColor("#a94329")
+        .setImage("https://cache.desktopnexus.com/thumbseg/1616/1616662-bigthumbnail.jpg")
+        message.channel.send(y);
+    }
+    
+    if(message.content === préfix + "Violente morsure 2"){
+        var min = Math.floor(Math.min(80));
+        var max = Math.floor(Math.max(100)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous donnez un gros coups de griffe qui sonne votre ennemie l'empêchant d'attaquer(-50 de mana)", y)
+        .setColor("#a94329")
+        .setImage("https://cache.desktopnexus.com/thumbseg/1616/1616662-bigthumbnail.jpg")
+        message.channel.send(y);
+    }
+    
+    if(message.content === préfix + "Violente morsure 3"){
+        var min = Math.floor(Math.min(170));
+        var max = Math.floor(Math.max(190)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
         .addField("Vous donnez un gros coups de griffe qui sonne votre ennemie l'empêchant d'attaquer(-50 de mana)", y)
