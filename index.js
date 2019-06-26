@@ -6733,6 +6733,7 @@ if(message.content === préfix + "GS attaque"){
         var XPmin = Math.floor(Math.min(20));
         var XPmax = Math.floor(Math.max(30)); 
         var y = Math.floor(Math.random() * (XPmax - XPmin + 1) ) + XPmin;
+             console.log("Le début est bon")
     if (groupe = 1){
     }
     if (groupe = 2){
