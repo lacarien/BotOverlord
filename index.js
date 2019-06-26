@@ -6729,7 +6729,6 @@ if(message.content === préfix + "GS attaque"){
     }
     
     
-        var groupe = Math.floor
     if(message.content === préfix + "Récompenses test" + groupe){
         var XPmin = Math.floor(Math.min(20));
         var XPmax = Math.floor(Math.max(30)); 
