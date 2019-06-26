@@ -6728,8 +6728,8 @@ if(message.content === préfix + "GS attaque"){
 
     }
     
-const user = message.author;
-var groupe = message.author;
+
+var groupe = sendMessage;
     
     if(message.content === préfix + "Récompenses " + groupe){    
         var XPmin = Math.floor(Math.min(20));
