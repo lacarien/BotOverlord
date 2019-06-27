@@ -6741,7 +6741,7 @@ if(message.content === préfix + "GS attaque"){
 
 if(message.content === préfix + "Zone de pve"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Les zones de combats", ":frog: Marécage : LVL 0-15 \n :evergreen_tree: Forêt mystique : LVL 15-30 \n Montagne enneigé: LVL 30-45  \n :ocean: LVL 45-???")
+    .addField("Les zones de combats", ":frog: Marécage : LVL 0-15 \n :evergreen_tree: Forêt mystique : LVL 15-30 \n :mount_fuji: Montagne enneigé: LVL 30-45  \n :ocean: LVL 45-???")
     message.channel.sendMessage(help_embed);
 }
 
