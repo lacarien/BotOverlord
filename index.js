@@ -6748,8 +6748,13 @@ if(message.content === préfix + "Zone de pve"){
 
 if(message.content === préfix + "Tableau"){
     var help_embed = new Discord.RichEmbed()
-    .setColor("#217504")
-    .addField("|   Barème des levels   |", ":beginner: Level 1:   ???/20 \n Level 2:   20/40 \n Level 3:   40/60 \n Level 4:   60/80 \n Level 5:   80/100 \n Level 6:   100/120 \n Level 7:   120/140 \n Level 8:   140/160 \n Level 9:   160/180 \n Level 10:   180/200 \n Level 11:   200/220 \n Level 12:   220/240 \n Level 13:   240/260 \n Level 14:   260/280 \n :beginner: Level 15:   280/300 \n Level 16:   300/350 \n Level 17:   350/400 \n Level 18:   400/450 \n Level 19:   450/500 \n Level 20:   500/550 \n Level 21:   550/600 \n Level 22:   600/650 \n Level 23:   650/700 \n Level 24:   700/750 \n Level 25:   750/800 \n Level 26:   800/850 \n Level 27:   850/900 \n Level 28:   900/950 \n Level 29:   950/1000 \n :beginner: Level 30:   1000/1100 \n Level 31:   1100/1200 \n Level 32:   1200/1300 \n Level 33:   1300/1400 \n Level 34:   1400/1500 \n Level 35:   1500/1600 \n Level 36:   1600/1700 \n Level 37:   1700/1800 \n Level 38: 1800/1900 \n Level 39:   1900/2000 \n Level 40:   2000/2100 \n Level 41:   2100/2200 \n Level 42:   2200/2300 \n Level 43:   2300/2400 \n Level 44:   2400/2500 \ Level 45:   2500/???")
+    .addField("|   Barème des levels   |", ":beginner: Level 1:   ???/20 \n Level 2:   20/40 \n Level 3:   40/60 \n Level 4:   60/80 \n Level 5:   80/100 \n Level 6:   100/120 \n Level 7:   120/140 \n Level 8:   140/160 \n Level 9:   160/180 \n Level 10:   180/200 \n Level 11:   200/220 \n Level 12:   220/240 \n Level 13:   240/260 \n Level 14:   260/280 \n :beginner: Level 15:   280/300 \n Level 16:   300/350 \n Level 17:   350/400 \n Level 18:   400/450 \n Level 19:   450/500 \n Level 20:   500/550 \n Level 21:   550/600 \n Level 22:   600/650 \n Level 23:   650/700 \n Level 24:   700/750 \n Level 25:   750/800 \n Level 26:   800/850 \n Level 27:   850/900 \n Level 28:   900/950 \n Level 29:   950/1000")
+    message.channel.sendMessage(help_embed);
+}
+    
+    if(message.content === préfix + "Tableau"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("|   Barème des levels   |", ":beginner: Level 30:   1000/1100 \n Level 31:   1100/1200 \n Level 32:   1200/1300 \n Level 33:   1300/1400 \n Level 34:   1400/1500 \n Level 35:   1500/1600 \n Level 36:   1600/1700 \n Level 37:   1700/1800 \n Level 38: 1800/1900 \n Level 39:   1900/2000 \n Level 40:   2000/2100 \n Level 41:   2100/2200 \n Level 42:   2200/2300 \n Level 43:   2300/2400 \n Level 44:   2400/2500 \ Level 45:   2500/???")
     message.channel.sendMessage(help_embed);
 }
 
