@@ -21,6 +21,7 @@ client.on('message', message => {
         .addField("Classe", "Liste des classes")
         .addField("Métiers", "Liste des métiers")
         .addField("PC", "Menu des levels")
+        .addField("LVL", "Fonctionnement des levels")
         .setImage("https://1.bp.blogspot.com/-GY5W6jVP850/WNwKqzuXizI/AAAAAAAABuM/AlfAEZ7FuDAK5y_qnZy0qp06wvCqM826QCLcB/s1600/Overlord_Characters.png")
         .setFooter("Menu de base")
         message.channel.sendMessage(help_embed);
@@ -36,6 +37,7 @@ client.on('message', message => {
         .addField("Classe", "Liste des classes")
         .addField("Métiers", "Liste des métiers")
         .addField("PC", "Menu des levels")
+        .addField("LVL", "Fonctionnement des levels")
         .setImage("https://1.bp.blogspot.com/-GY5W6jVP850/WNwKqzuXizI/AAAAAAAABuM/AlfAEZ7FuDAK5y_qnZy0qp06wvCqM826QCLcB/s1600/Overlord_Characters.png")
         .setFooter("Menu de base")
         message.channel.sendMessage(help_embed);
@@ -6729,29 +6731,30 @@ if(message.content === préfix + "GS attaque"){
     }
     
     
+    if(message.content === préfix + "LVL"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Comment gagner de l'XP ?", "Il suffit de combattre des mobs dans les zones de PVE")
+    .addField("Tableau des levels", "?Tableau")
+    .addField("Les zones de pve", "?Zone de pve")
+    message.channel.sendMessage(help_embed);
+}
 
-var groupe = message
+if(message.content === préfix + "Zone de pve"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Les zones de combats", ":frog: Marécage : LVL 0-15 \n :evergreen_tree: Forêt mystique : LVL 15-30 \n Montagne enneigé: LVL 30-45  \n :ocean: LVL 45-???")
+    message.channel.sendMessage(help_embed);
+}
 
-    if(message.content === préfix + "Récompenses " + groupe ){    
-        var XPmin = Math.floor(Math.min(20));
-        var XPmax = Math.floor(Math.max(30)); 
-        var y = Math.floor(Math.random() * (XPmax - XPmin + 1) ) + XPmin;
-             console.log("Le début est bon")
 
-             if(groupe < 2){
-               }
+if(message.content === préfix + "Tableau"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Barème des levels", "Level 1:   ???/20 \n Level 2:   20/40 \n Level 3:   40/60 \n Level 4:   60/80 \n Level 5:   80/100 \n Level 6:   100/120 \n Level 7:   120/140 \n Level 8:   140/160 \n Level 9:   160/180 \n Level 10:   180/200 \n Level 11:   200/220 \n Level 12:   220/240 \n Level 13:   240/260 \n Level 14:   260/280 \n Level 15:   280/300 \n Level 16:   300/350 \n Level 17:   350/400 \n Level 18:   400/450 \n Level 19:   450/500 \n Level 20:   500/550 \n Level 21:   550/600 \n Level 22:   600/650 \n Level 23:   650/700 \n Level 24:   700/750 \n Level 25:   750/800 \n Level 26:   800/850 \n Level 27:   850/900 \n Level 28:   900/950 \n Level 29:   950/1000 \n A FINIR")
+    message.channel.sendMessage(help_embed);
+}
 
-                else if(groupe < 3){
-                   }
-                else if(groupe < 4){
-                }
-                else if(groupe < 10){
-                }
     
-    message.channel.sendMessage(y + " XP")
+    
 
-     console.log("Le test est effécuté")
-}   
     
     
 });
