@@ -3366,7 +3366,7 @@ if(message.content === préfix + "Créature des marécages"){
     .addField("Attaque", "?Petit coup de griffe")
     .addField("Attaque spécial", "En dessous de 15HP il ne l'utilise qu'une fois ?Petit cracha d'acide. Attention on ne peut pas bloquer le coup")
     .addField("Défense", "?Petite peau")
-    .addField("Mort de la créature", "Du level [1-10] ?M1 créature marécage \n Du level [11-15] ?M2 créature marécage \n Du level [16-???] ?M3 créature marécage \n si vous êtes en groupe = XP / Nombre de joueur")
+    .addField("Mort de la créature", "Du level [1-10] ?M1 créature marécage \n Du level [11-15] ?M2 créature marécage \n Du level [16-???] XP = 0 \n si vous êtes en groupe = XP total / Nombre de joueur")
     .setImage("http://img.over-blog-kiwi.com/1/21/05/60/20150615/ob_c78fcd_cameron-diaz-en-robe-transparente-refe.jpg")
     message.channel.sendMessage(help_embed);
 }
@@ -3489,6 +3489,7 @@ if(message.content === préfix + "Arbre maudit"){
     .addField("Point de vie", "120")
     .addField("Attaque", "?Arbre maudit attaque")
     .addField("Défense", "?Arbre maudit défense")
+    .addField("Mort de l'arbre", "Du level [1-10] ?M1 Arbre maudit \n Du level [11-15] ?M2 Arbre maudit \n Du level [16-???] XP = 0 \n si vous êtes en groupe = XP total / Nombre de joueur")
     .setImage("https://cdn.discordapp.com/attachments/538837191061930012/539055088652779521/monsters-magic-the-gathering-fantasy-art-swamps-wallpaper-516738.jpg")
     message.channel.sendMessage(help_embed);
 }
@@ -4661,6 +4662,52 @@ if(message.content === préfix + "M1 créature marécage"){
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }    
+    
+    if(message.content === préfix + "M2 créature marécage"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(1));
+    var max = Math.floor(Math.max(4)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var mins = Math.floor(Math.min(2));
+    var maxs = Math.floor(Math.max(4)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
+    .addField("Gain d'expérience :exclamation: ", x + "XP")
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}    
+    if(message.content === préfix + "M1 arbre maudit"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(10)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var mins = Math.floor(Math.min(6));
+    var maxs = Math.floor(Math.max(10)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
+    .addField("Gain d'expérience :exclamation: ", x + "XP")
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}    
+    
+    if(message.content === préfix + "M2 arbre maudit"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(10)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var mins = Math.floor(Math.min(4));
+    var maxs = Math.floor(Math.max(6)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
+    .addField("Gain d'expérience :exclamation: ", x + "XP")
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}    
+    
+    
     if(message.content === préfix + "Mort arbre maudit"){
     var help_embed = new Discord.RichEmbed()
     var min = Math.floor(Math.min(5));
