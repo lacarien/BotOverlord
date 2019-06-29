@@ -3366,6 +3366,7 @@ if(message.content === préfix + "Créature des marécages"){
     .addField("Attaque", "?Petit coup de griffe")
     .addField("Attaque spécial", "En dessous de 15HP il ne l'utilise qu'une fois ?Petit cracha d'acide. Attention on ne peut pas bloquer le coup")
     .addField("Défense", "?Petite peau")
+    .addField("Mort de la créature", "Du level [1-10] ?M1 créature marécage \n Du level [11-15] ?M2 créature marécage \n Du level [16-???] ?M3 créature marécage \n si vous êtes en groupe = XP / Nombre de joueur")
     .setImage("http://img.over-blog-kiwi.com/1/21/05/60/20150615/ob_c78fcd_cameron-diaz-en-robe-transparente-refe.jpg")
     message.channel.sendMessage(help_embed);
 }
@@ -4646,13 +4647,17 @@ if(message.content === préfix + "Parchemin de fuite haut") {
     message.channel.send(result);
 
 }     
-if(message.content === préfix + "Mort créature des marécages"){
+if(message.content === préfix + "M1 créature marécage"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(0));
-    var max = Math.floor(Math.max(3)); 
+    var min = Math.floor(Math.min(1));
+    var max = Math.floor(Math.max(4)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var mins = Math.floor(Math.min(6));
+    var maxs = Math.floor(Math.max(8)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
+    .addField("Gain d'expérience :exclamation: ", x + "XP")
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }    
@@ -4663,8 +4668,9 @@ if(message.content === préfix + "Mort créature des marécages"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
+    .addField("Gain d'expérience :exclamation: ", "Du level [1-10] ?EX1 arbre maudit \n Du level [11-15] ?EX2 arbre maudit \n Du level [16-???] ?EX3 arbre maudit")
     .setColor("#9e9a9a")
-    message.channel.sendMessage(y);
+ message.channel.sendMessage(y);
 }    
    
 if(message.content === préfix + "Mort lézard primitif"){
@@ -4674,6 +4680,7 @@ if(message.content === préfix + "Mort lézard primitif"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
+    .addField("Gain d'expérience :exclamation: ", "Du level [1-10] ?EX1 arbre maudit \n Du level [11-15] ?EX2 arbre maudit \n Du level [16-???] ?EX3 arbre maudit")
     .setColor("#ab5902")
     message.channel.sendMessage(y);
 }     
