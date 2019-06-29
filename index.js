@@ -4671,6 +4671,16 @@ if(message.content === préfix + "M1 créature marécage"){
     .setColor("#9e9a9a")
  message.channel.sendMessage(y);
 }    
+    if(message.content === préfix + "Mort créature des marécages"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(0));
+    var max = Math.floor(Math.max(3)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze")
+    .setColor("#9e9a9a")
+    message.channel.sendMessage(y);
+}    
    
 if(message.content === préfix + "Mort lézard primitif"){
     var help_embed = new Discord.RichEmbed()
