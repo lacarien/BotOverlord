@@ -4108,9 +4108,10 @@ if(message.content === préfix + "Chouette du vent"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("Chouette du vent")
     .setColor("#048502")
-    .addField("Point de vie", "500HP")
+    .addField("Point de vie", "400HP")
     .addField("Attaque", "?Chouette attaque")
     .addField("Défense", "?Chouette défense")
+    .addField("Mort chouette", "Du level [1-15] ?M1 chouette \n Du level [11-30] ?M2 chouette \n Du level [31-??] XP = 0 \n si vous êtes en groupe = XP total / Nombre de joueur")
     .setImage("https://media.discordapp.net/attachments/456251076253843456/541740554078257154/l1hi7um1wtl01.png?width=586&height=586")
     message.channel.sendMessage(help_embed);
 }
@@ -4119,8 +4120,8 @@ if(message.content === préfix + "Chouette du vent"){
 
 if(message.content === préfix + "Chouette attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(50));
-    var max = Math.floor(Math.max(80)); 
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(70)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result > 30)
@@ -4134,13 +4135,13 @@ if(message.content === préfix + "Chouette attaque"){
     .setColor("#026500")
     .addField("La Chouette vous lances un disque de vent qui vous empecheras de bloquer au prochain tour", y)
     .setImage("https://media.discordapp.net/attachments/456251076253843456/542739372689326090/Shrike-combat-PAXEast-screenshots-dauntless-1.png?width=1041&height=586")
-    message.channel.sendMessage(y);
+    message.channel.sendMessage(y);4
 }
 
 
 if(message.content === préfix + "Chouette défense"){
-    var min = Math.floor(Math.min(25));
-    var max = Math.floor(Math.max(30)); 
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(25)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("La chouette fait un bond en arrière, essayant d'éviter le coup", y)
@@ -4156,6 +4157,7 @@ if(message.content === préfix + "Chouette défense"){
     .addField("Point de vie", "40HP")
     .addField("Attaque", "?Gobelin attaque")
     .addField("Défense", "?Gobelin défense")
+    .addField("Mort du Gobelin", "Du level [1-15] ?M1 gobelin \n Du level [16-20] ?M2 gobelin \n Du level [21-30] ?M3 gobelin \n Du level [31-???] XP = 0 \n si vous êtes en groupe = XP total / Nombre de joueur")
     .setImage("https://media.discordapp.net/attachments/499161815549476864/541890154244341760/Reta.jpg?width=559&height=586")
     message.channel.sendMessage(help_embed);
 }
@@ -4187,9 +4189,10 @@ if(message.content === préfix + "Géant de la forêt"){
     var help_embed = new Discord.RichEmbed()
     .setTitle("Géant de la forêt")
     .setColor("#038913")
-    .addField("Point de vie", "2000HP")
+    .addField("Point de vie", "1000HP")
     .addField("Attaque", "?Géant attaque")
     .addField("Défense", "Le géant n'a pas de défense")
+    .addField("Mort géant", "Du level [1-15] ?M1 géant \n Du level [16-30] ?M2 géant \n Du level [31-35] ?M3 géant \n Du level [36-??] XP = 0 \n si vous êtes en groupe = XP total / Nombre de joueur")
     .setImage("https://i.pinimg.com/originals/37/e1/4a/37e14ac75bfb201334042027242b6d21.jpg")
     message.channel.sendMessage(help_embed);
 }
@@ -4197,13 +4200,13 @@ if(message.content === préfix + "Géant de la forêt"){
 
 if(message.content === préfix + "Géant attaque"){
     var help_embed = new Discord.RichEmbed()
-    var min = Math.floor(Math.min(125));
-    var max = Math.floor(Math.max(200)); 
+    var min = Math.floor(Math.min(90));
+    var max = Math.floor(Math.max(150)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result > 35)
     var y = Math.floor(Math.floor(y) * 0.5)
-        if(result >  35)
+        if(result >  40)
     var y = new Discord.RichEmbed()
     
         .setColor("#4e8b27")
@@ -4239,6 +4242,7 @@ if(message.content === préfix + "Apparition forêt") {
         .addField("Point de vie", "500HP")
         .addField("Attaque", "?Chouette attaque")
         .addField("Défense", "?Chouette défense")
+            .addField("Mort chouette", "Du level [1-15] ?M1 gobelin \n Du level [15-20] ?M2 gobelin \n Du level [20-30] ?M3 gobelin \n Du level [30-???] XP = 0 \n si vous êtes en groupe = XP total / Nombre de joueur")
         .setImage("https://media.discordapp.net/attachments/456251076253843456/541740554078257154/l1hi7um1wtl01.png?width=586&height=586")
         message.channel.sendMessage(help_embed);
     }}
@@ -4751,6 +4755,176 @@ if(message.content === préfix + "M1 créature marécage"){
     .setColor("#9e9a9a")
     message.channel.sendMessage(y);
 }  
+    
+     if(message.content === préfix + "M1 gobelin"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(7));
+    var max = Math.floor(Math.max(17)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(0));
+    var maxs = Math.floor(Math.max(2)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var minsz = Math.floor(Math.min(14));
+    var maxsz = Math.floor(Math.max(18)); 
+    var z = Math.floor(Math.random() * (maxsz - minsz + 1) ) + minsz;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+        .addField("Gain d'expérience :exclamation: ", z + "XP")
+    message.channel.sendMessage(y);
+}   
+         if(message.content === préfix + "M2 gobelin"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(7));
+    var max = Math.floor(Math.max(17)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(0));
+    var maxs = Math.floor(Math.max(2)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var minsz = Math.floor(Math.min(8));
+    var maxsz = Math.floor(Math.max(12)); 
+    var z = Math.floor(Math.random() * (maxsz - minsz + 1) ) + minsz;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+        .addField("Gain d'expérience :exclamation: ", z + "XP")
+    message.channel.sendMessage(y);
+}   
+             if(message.content === préfix + "M3 gobelin"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(7));
+    var max = Math.floor(Math.max(17)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(0));
+    var maxs = Math.floor(Math.max(2)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var minsz = Math.floor(Math.min(4));
+    var maxsz = Math.floor(Math.max(6)); 
+    var z = Math.floor(Math.random() * (maxsz - minsz + 1) ) + minsz;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+        .addField("Gain d'expérience :exclamation: ", z + "XP")
+    message.channel.sendMessage(y);
+}   
+    
+    if(message.content === préfix + "M1 chouette"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(26));
+    var max = Math.floor(Math.max(45)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(4));
+    var maxs = Math.floor(Math.max(6)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+      var minsz = Math.floor(Math.min(24));
+    var maxsz = Math.floor(Math.max(30)); 
+    var z = Math.floor(Math.random() * (maxsz - minsz + 1) ) + minsz;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+            .addField("Gain d'expérience :exclamation: ", z + "XP")
+    message.channel.sendMessage(y);
+}       
+        if(message.content === préfix + "M1 chouette"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(26));
+    var max = Math.floor(Math.max(45)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(4));
+    var maxs = Math.floor(Math.max(6)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+      var minsz = Math.floor(Math.min(24));
+    var maxsz = Math.floor(Math.max(30)); 
+    var z = Math.floor(Math.random() * (maxsz - minsz + 1) ) + minsz;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+            .addField("Gain d'expérience :exclamation: ", z + "XP")
+    message.channel.sendMessage(y);
+}       
+            if(message.content === préfix + "M2 chouette"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(26));
+    var max = Math.floor(Math.max(45)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(4));
+    var maxs = Math.floor(Math.max(6)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+      var minsz = Math.floor(Math.min(10));
+    var maxsz = Math.floor(Math.max(15)); 
+    var z = Math.floor(Math.random() * (maxsz - minsz + 1) ) + minsz;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+            .addField("Gain d'expérience :exclamation: ", z + "XP")
+    message.channel.sendMessage(y);
+}     
+    
+    if(message.content === préfix + "M1 géant"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(70));
+    var max = Math.floor(Math.max(100)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(20));
+    var maxs = Math.floor(Math.max(35)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var minsz = Math.floor(Math.min(45));
+    var maxsz = Math.floor(Math.max(60)); 
+    var z = Math.floor(Math.random() * (maxsz - minsz + 1) ) + minsz;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+                .addField("Gain d'expérience :exclamation: ", z + "XP")
+
+    message.channel.sendMessage(y);
+}
+    
+        if(message.content === préfix + "M2 géant"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(70));
+    var max = Math.floor(Math.max(100)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(20));
+    var maxs = Math.floor(Math.max(35)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var minsz = Math.floor(Math.min(20));
+    var maxsz = Math.floor(Math.max(30)); 
+    var z = Math.floor(Math.random() * (maxsz - minsz + 1) ) + minsz;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+                .addField("Gain d'expérience :exclamation: ", z + "XP")
+
+    message.channel.sendMessage(y);
+}
+    
+            if(message.content === préfix + "M3 géant"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(70));
+    var max = Math.floor(Math.max(100)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    var mins = Math.floor(Math.min(20));
+    var maxs = Math.floor(Math.max(35)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var minsz = Math.floor(Math.min(10));
+    var maxsz = Math.floor(Math.max(15)); 
+    var z = Math.floor(Math.random() * (maxsz - minsz + 1) ) + minsz;
+    var y = new Discord.RichEmbed()
+    .addField("Gain du loot :exclamation: ", y + "Pièce(s) de bronze" + "\n Pièces d'argent " + x)
+    .setColor("#9e9a9a")
+                .addField("Gain d'expérience :exclamation: ", z + "XP")
+
+    message.channel.sendMessage(y);
+}
     
     
     
