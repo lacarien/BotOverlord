@@ -790,7 +790,7 @@ client.on('message', message => {
          else if(result < 101)
            var y = new Discord.RichEmbed()
            .setColor("#6e61ae")
-        .setImage("Le déplacement se fait sans problème")
+        .setTitle("Le déplacement se fait sans problème")
         .setImage("https://vignette.wikia.nocookie.net/masseffect/images/8/80/NormandySR2B.jpg/revision/latest?cb=20120424160325&path-prefix=fr")
         message.channel.sendMessage(y);
 
