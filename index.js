@@ -924,6 +924,95 @@ if(message.content === préfix + "Paralysie"){
         .setTitle("Vous réussissez à fuir")
         message.channel.sendMessage(y);
     }
+    
+    
+      if(message.content === préfix + "Protection faible"){
+        var y = new Discord.RichEmbed()
+           var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 11)
+        var y = new Discord.RichEmbed()
+        .setColor("#0023ff")
+        .setImage("https://i.pinimg.com/736x/a8/26/58/a8265802c5cd97bbd353ebd6da93145a.jpg")
+        .setTitle("Votre faible protection annule l'attaque physique")
+        else if (result < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .setTitle("C'est un echec")
+        message.channel.sendMessage(y);
+    }
+     if(message.content === préfix + "Protection moyenne"){
+        var y = new Discord.RichEmbed()
+           var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 21)
+        var y = new Discord.RichEmbed()
+        .setColor("#0023ff")
+        .setImage("https://i.pinimg.com/736x/a8/26/58/a8265802c5cd97bbd353ebd6da93145a.jpg")
+        .setTitle("Votre faible protection annule l'attaque physique")
+        else if (result < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .setTitle("C'est un echec")
+        message.channel.sendMessage(y);
+    }
+        if(message.content === préfix + "Protection majeur"){
+        var y = new Discord.RichEmbed()
+           var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 31)
+        var y = new Discord.RichEmbed()
+        .setColor("#0023ff")
+        .setImage("https://i.pinimg.com/736x/a8/26/58/a8265802c5cd97bbd353ebd6da93145a.jpg")
+        .setTitle("Votre faible protection annule l'attaque physique")
+        else if (result < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .setTitle("C'est un echec")
+        message.channel.sendMessage(y);
+    }
+
+    /// RESISTANCE MAGIQUE ////
+
+        if(message.content === préfix + "Resistance faible"){
+        var y = new Discord.RichEmbed()
+           var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 11)
+        var y = new Discord.RichEmbed()
+        .setColor("#0023ff")
+        .setImage("https://i.pinimg.com/736x/76/a8/76/76a87647e067d403f6b4f04b9622a579.jpg")
+        .setTitle("Votre faible protection annule l'attaque physique")
+        else if (result < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .setTitle("C'est un echec")
+        message.channel.sendMessage(y);
+    }
+     if(message.content === préfix + "Resistance moyenne"){
+        var y = new Discord.RichEmbed()
+           var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 21)
+        var y = new Discord.RichEmbed()
+        .setColor("#0023ff")
+        .setImage("https://i.pinimg.com/736x/76/a8/76/76a87647e067d403f6b4f04b9622a579.jpg")
+        .setTitle("Votre faible protection annule l'attaque physique")
+        else if (result < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .setTitle("C'est un echec")
+        message.channel.sendMessage(y);
+    }
+        if(message.content === préfix + "Resistance majeur"){
+        var y = new Discord.RichEmbed()
+           var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 31)
+        var y = new Discord.RichEmbed()
+        .setColor("#0023ff")
+        .setImage("https://i.pinimg.com/736x/76/a8/76/76a87647e067d403f6b4f04b9622a579.jpg")
+        .setTitle("Votre faible protection annule l'attaque physique")
+        else if (result < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .setTitle("C'est un echec")
+        message.channel.sendMessage(y);
+    }
 
 
 
