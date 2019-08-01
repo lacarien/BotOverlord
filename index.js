@@ -456,7 +456,7 @@ client.on('message', message => {
         message.channel.sendMessage(y);
     }
 
-     if(message.content === préfix + "Boule de feux"){
+     if(message.content === préfix + "Boule de feu"){
         var y = new Discord.RichEmbed()
            var result = Math.floor((Math.random() * 100) + 1);
            if(result < 10)
@@ -491,7 +491,7 @@ client.on('message', message => {
     }
 
 
-    if(message.content === préfix + "Tornade feux"){
+    if(message.content === préfix + "Tornade feu"){
         var y = new Discord.RichEmbed()
            var result = Math.floor((Math.random() * 100) + 1);
            if(result < 10)
