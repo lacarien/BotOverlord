@@ -6,7 +6,7 @@ const client = new Discord.Client();
 var préfix = "?";
 
 
-client.login("NTgxODY4MzcxMzk4NzU0MzE0.XTiiag.W1k_2M42VQSQizmQYti2NQJGzEM");
+client.login(process.env.TOKEN);
 
 
 client.on('message', message => {
