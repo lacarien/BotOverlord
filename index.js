@@ -586,7 +586,7 @@ client.on('message', message => {
            var y = new Discord.RichEmbed()
       .setColor("#d98880") 
            .addField("Votre lance de glace blesse la cible !", "Cela retire 1 point de santé")
-           .setImage("https://media.discordapp.net/attachments/603629419063541788/605149381167022101/c55b34284c78a722f47e135c6766df3a.png")
+           .setImage("http://images2.wikia.nocookie.net/__cb20100504124042/fairytail/images/d/da/Freeze.jpg")
             else if(result < 101)
            var y = new Discord.RichEmbed()
                .setColor("#c0392b")
