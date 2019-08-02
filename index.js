@@ -782,7 +782,7 @@ client.on('message', message => {
       .setColor("#6e61ae") 
            .setTitle("Subitement vous avez un problème technique ne permettant plus à redémarrer les moteurs. Vous devrez attendre qu'un joueur vienne vous récupérer abandonnant votre ancien vaisseau")
            .setImage("https://vignette.wikia.nocookie.net/masstrek/images/9/9b/Fall_of_Denobula.jpg/revision/latest?cb=20121215021908")
-            else if(result < 30)
+            else if(result < 20)
            var y = new Discord.RichEmbed()
            .setColor("#6e61ae")
            .setTitle("Vous avez eu un problème technique. Si cela se reproduit votre vaisseau ne pourra plus se déplacer (temps de réparation : 24h(et seulement si il est toujours en êtat de se déplacer sinon 36h))")
