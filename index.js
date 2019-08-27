@@ -4,6 +4,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 var préfix = "?";
+var prefix = "?";
 
 
 client.login(process.env.TOKEN);
