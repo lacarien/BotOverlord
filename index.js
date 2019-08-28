@@ -2,10 +2,10 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 var fs = require("fs")
 var vm = require('vm')
-var prefix = "!";
+var prefix = "?";
 var préfix = "?";
 
-client.login("NjA5MDEyNjQwMTM5OTY4NTEy.XUwhWw.fthuC_q8vuFawgjjSQKVR0rTKY8");
+client.login(process.env.TOKEN);
 
 /*
 //message de bienvenue 
