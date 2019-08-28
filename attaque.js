@@ -1773,6 +1773,247 @@ if(message.content === préfix + "Tazer"){
 }
 
 
+if(message.content === prefix + "Epée MK-1")
+{
+
+    if(roll >= 0 && roll <= 19)
+    {
+        let EpéeMK10D = new Discord.RichEmbed()
+            .setColor("#ffffff")
+            .setAuthor("Vous manquez de peux votre cible et ne lui infligé aucun dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951657775267867/29b1ad4523e65bcddddb8cda3909d17f14b88892_hq.gif")
+        message.channel.send(EpéeMK10D)
+    }else if(roll >= 20 && roll <= 29)
+    {
+        let EpéeMK11D = new Discord.RichEmbed()
+            .setColor("#ff0000")
+            .setAuthor("Vous touchez votre ennemi mais ce n'est qu'une taillade et lui infligé 1 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951336269152258/source_1.gif")
+        message.channel.send(EpéeMK11D)
+    }else if(roll >= 30 && roll <= 79)
+    {
+        let EpéeMK12D = new Discord.RichEmbed()
+            .setColor("#ff0000")
+            .setAuthor("Vous portez un coup à votre ennemi sans hésitation et lui infligé 2 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951260327346186/tenor.gif")
+        message.channel.send(EpéeMK12D)
+    }
+    else if(roll >= 80 && roll <= 100)
+    {
+        let EpéeMK13D = new Discord.RichEmbed()
+            .setColor("#a70101")
+            .setAuthor("Vous tranchez bien comme il faut votre adversaire et lui infligé 3 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951310281244672/slahs.gif")
+        message.channel.send(EpéeMK13D)
+    }
+}
+
+if(message.content === prefix + "Epée MK-2")
+{
+
+    if(roll >= 0 && roll <= 19)
+    {
+        let EpéeMK20D = new Discord.RichEmbed()
+            .setColor("#ffffff")
+            .setAuthor("Vous manquez de peux votre cible et ne lui infligé aucun dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951657775267867/29b1ad4523e65bcddddb8cda3909d17f14b88892_hq.gif")
+        message.channel.send(EpéeMK20D)
+    }else if(roll >= 20 && roll <= 69)
+    {
+        let EpéeMK22D = new Discord.RichEmbed()
+            .setColor("#ff0000")
+            .setAuthor("Vous portez un coup à votre ennemi sans hésitation et lui infligé 2 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951260327346186/tenor.gif")
+        message.channel.send(EpéeMK22D)
+    }
+    else if(roll >= 70 && roll <= 100)
+    {
+        let EpéeMK23D = new Discord.RichEmbed()
+            .setColor("#a70101")
+            .setAuthor("Vous tranchez bien comme il faut votre adversaire et lui infligé 3 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951310281244672/slahs.gif")
+        message.channel.send(EpéeMK23D)
+    }
+}
+
+if(message.content === prefix + "Epée MK-3")
+{
+
+    if(roll >= 0 && roll <= 09)
+    {
+        let EpéeMK30D = new Discord.RichEmbed()
+            .setColor("#ffffff")
+            .setAuthor("Vous manquez de peux votre cible et ne lui infligé aucun dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951657775267867/29b1ad4523e65bcddddb8cda3909d17f14b88892_hq.gif")
+        message.channel.send(EpéeMK30D)
+    }else if(roll >= 10 && roll <= 49)
+    {
+        let EpéeMK32D = new Discord.RichEmbed()
+            .setColor("#ff0000")
+            .setAuthor("Vous portez un coup à votre ennemi sans hésitation et lui infligé 2 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951260327346186/tenor.gif")
+        message.channel.send(EpéeMK32D)
+    }
+    else if(roll >= 50 && roll <= 100)
+    {
+        let EpéeMK33D = new Discord.RichEmbed()
+            .setColor("#a70101")
+            .setAuthor("Vous tranchez bien comme il faut votre adversaire et lui infligé 3 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951310281244672/slahs.gif")
+        message.channel.send(EpéeMK33D)
+    }
+}
+
+if(message.content === prefix + "Epée MK-4")
+{
+
+    if(roll >= 0 && roll <= 09)
+    {
+        let EpéeMK40D = new Discord.RichEmbed()
+            .setColor("#ffffff")
+            .setAuthor("Vous manquez de peux votre cible et ne lui infligé aucun dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951657775267867/29b1ad4523e65bcddddb8cda3909d17f14b88892_hq.gif")
+        message.channel.send(EpéeMK40D)
+    }else if(roll >= 10 && roll <= 29)
+    {
+        let EpéeMK42D = new Discord.RichEmbed()
+            .setColor("#ff0000")
+            .setAuthor("Vous portez un coup à votre ennemi sans hésitation et lui infligé 2 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951260327346186/tenor.gif")
+        message.channel.send(EpéeMK42D)
+    }
+    else if(roll >= 30 && roll <= 70)
+    {
+        let EpéeMK43D = new Discord.RichEmbed()
+            .setColor("#a70101")
+            .setAuthor("Vous tranchez bien comme il faut votre adversaire et lui infligé 3 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615951310281244672/slahs.gif")
+        message.channel.send(EpéeMK43D)
+    }
+    else if(roll >= 70 && roll <= 100)
+    {
+        let EpéeMK44D = new Discord.RichEmbed()
+            .setColor("#00000")
+            .setAuthor("Vous infligez de sérieux dégat à votre ennemi et lui infligé 4 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615952919300145152/tenor.gif")
+        message.channel.send(EpéeMK44D)
+    }
+}
+
+
+if(message.content === prefix + "Hache MK-1")
+{
+
+    if(roll >= 0 && roll <= 29)
+    {
+        let HacheMK10D = new Discord.RichEmbed()
+            .setColor("#ffffff")
+            .setAuthor("Vous manquez de vitesse et votre cible à le temps d'equiver le coups")
+            .setImage("")
+        message.channel.send(HacheMK10D)
+    }else if(roll >= 30 && roll <= 59)
+    {
+        let HacheMK12D = new Discord.RichEmbed()
+            .setColor("#ff0000")
+            .setAuthor("Vous portez un coup à votre ennemi sans hésitation et lui infligé 2 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/540217343670747136/615962743328997376/darius_woadking_splash_0.jpg")
+        message.channel.send(HacheMK12D)
+    }
+    else if(roll >= 60 && roll <= 100)
+    {
+        let HacheMK13D = new Discord.RichEmbed()
+            .setColor("#a70101")
+            .setAuthor("Vous tranchez bien comme il faut votre adversaire et lui infligé 3 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/540217343670747136/615962743328997376/darius_woadking_splash_0.jpg")
+        message.channel.send(HacheMK13D)
+    }
+}
+
+if(message.content === prefix + "Hache MK-2")
+{
+
+    if(roll >= 0 && roll <= 29)
+    {
+        let HacheMK20D = new Discord.RichEmbed()
+            .setColor("#ffffff")
+            .setAuthor("Vous manquez de vitesse et votre cible à le temps d'equiver le coups")
+            .setImage("")
+        message.channel.send(HacheMK20D)
+    }else if(roll >= 30 && roll <= 49)
+    {
+        let HacheMK22D = new Discord.RichEmbed()
+            .setColor("#ff0000")
+            .setAuthor("Vous portez un coup à votre ennemi sans hésitation et lui infligé 2 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/540217343670747136/615962743328997376/darius_woadking_splash_0.jpg")
+        message.channel.send(HacheMK22D)
+    }
+    else if(roll >= 50 && roll <= 100)
+    {
+        let HacheMK23D = new Discord.RichEmbed()
+            .setColor("#a70101")
+            .setAuthor("Vous tranchez bien comme il faut votre adversaire et lui infligé 3 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/540217343670747136/615962743328997376/darius_woadking_splash_0.jpg")
+        message.channel.send(HacheMK23D)
+    }
+}
+
+if(message.content === prefix + "Hache MK-3")
+{
+
+    if(roll >= 0 && roll <= 29)
+    {
+        let HacheMK30D = new Discord.RichEmbed()
+            .setColor("#ffffff")
+            .setAuthor("Vous manquez de vitesse et votre cible à le temps d'equiver le coups")
+            .setImage("")
+        message.channel.send(HacheMK30D)
+    }else if(roll >= 30 && roll <= 79)
+    {
+        let HacheMK33D = new Discord.RichEmbed()
+            .setColor("#a70101")
+            .setAuthor("Vous tranchez bien comme il faut votre adversaire et lui infligé 3 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/540217343670747136/615962743328997376/darius_woadking_splash_0.jpg")
+        message.channel.send(HacheMK33D)
+    }
+    else if(roll >= 80 && roll <= 100)
+    {
+        let HacheMK34D = new Discord.RichEmbed()
+            .setColor("#000000")
+            .setAuthor("Vous infligez de sérieux dégat à votre ennemi et lui infligé 4 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/540217343670747136/615962743328997376/darius_woadking_splash_0.jpg")
+        message.channel.send(HacheMK34D)
+    }
+}
+
+if(message.content === prefix + "Hache MK-4")
+{
+
+    if(roll >= 0 && roll <= 19)
+    {
+        let HacheMK40D = new Discord.RichEmbed()
+            .setColor("#ffffff")
+            .setAuthor("Vous manquez de vitesse et votre cible à le temps d'equiver le coups")
+            .setImage("")
+        message.channel.send(HacheMK40D)
+    }else if(roll >= 20 && roll <= 69)
+    {
+        let HacheMK43D = new Discord.RichEmbed()
+            .setColor("#a70101")
+            .setAuthor("Vous tranchez bien comme il faut votre adversaire et lui infligé 3 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/540217343670747136/615962743328997376/darius_woadking_splash_0.jpg")
+        message.channel.send(HacheMK43D)
+    }
+    else if(roll >= 70 && roll <= 100)
+    {
+        let HacheMK44D = new Discord.RichEmbed()
+            .setColor("#000000")
+            .setAuthor("Vous infligez de sérieux dégat à votre ennemi et lui infligé 4 point de dégat")
+            .setImage("https://cdn.discordapp.com/attachments/540217343670747136/615962743328997376/darius_woadking_splash_0.jpg")
+        message.channel.send(HacheMK44D)
+    }
+}
+
+
 
 
 
