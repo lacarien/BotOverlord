@@ -341,5 +341,32 @@ if(message.content === préfix + "Laser mark 2"){
 
   message.channel.sendMessage(y);
 }
+    
+    
+        if(message.content === prefix + "Vaisseau")
+    {
+    let Vaisseau = new Discord.RichEmbed()
+        .addField("**__Vaisseau Scout__**", "```diff\n+Le vaisseau scout est parfait pour les voyages rapide et conçus pour réduire au maximum tout problème technique``` ")
+        .addField("Blindage","**8**",true)
+        .addField("Caractéristique","**?Esquive Scout** ",true)
+        .addField("Voyage spatiale","**?Voyage spatial scout**",true)
+        .addField("Attaque","**?Laser mark 1**",true)
+        .addField("**__Vaisseau technicien__**", "```diff\n+Le vaisseau technicien est spécialisé dans la réparation de vaisseau```")
+        .addField("Blindage","**12**",true)
+        .addField("Caractéristique","**réparation 2x rapide**",true)
+        .addField("Voyage spatiale","**?Voyage spatiale technicien** ",true)
+        .addField("Attaque","**?Laser mark 1** ",true)
+        .addField("**__Vaisseau d'assault__**", "```diff\n+Les vaisseaux d'assault sont spécialisé dans la recherche et la déstruction``` ")
+        .addField("Blindage","**10**",true)
+        .addField("Caractéristique spécial","**Rien**",true)
+        .addField("Voyage spatiale","**?Voyage spatiale assault** ",true)
+        .addField("Attaque","**?Laser mark 2** ",true)
+        .addField("**__Croiseur spatiale__**", "```diff\n+Les croiseur sont conçus pour être résistant et est spécialisé dans le transport de troupe```")
+        .addField("Blindage","**15**",true)
+        .addField("Caractéristique spécial","**Rien**",true)
+        .addField("Voyage spatiale","**?Voyage spatiale croiseur** ",true)
+        .addField("Attaque","**Laser mark 2** ",true)
+    message.channel.send(Vaisseau)
+    }
 
 });
