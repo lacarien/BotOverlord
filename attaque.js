@@ -1078,6 +1078,699 @@ if(message.content === prefix + "Lance MK-4")
     }
 }
 
+/// Vielle attaque 
+
+
+if(message.content === préfix + "Grenade"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 20)
+    var y = new Discord.RichEmbed()
+    .setColor("#f9ebea")
+    .setTitle("Vous lancez une grenade qui explose proche de votre cible, mais pas assez près pour la blesser, néanmoins elle pourra ressentir le grand souffle de l'explosion")
+    else if (result < 30)
+    var y = new Discord.RichEmbed()
+    .addField("La grenade explose proche de votre cible, le souffle de l'explosion ainsi que la chaleur qu'elle dégage l'affecte", "Cela retire 1 point de santé")
+    .setColor("#d98880")
+    .setImage("https://i.pinimg.com/originals/68/34/84/68348466b7c0cdcd1c5ac628314a4020.gif")
+    else if (result < 80)
+         var y = new Discord.RichEmbed()
+    .setColor("#c0392b")
+    .addField("La grenade explose à l'emplacement ciblé. Elle blesse l'objectif sans vraiment atteindre à ses points vitaux", "Cela lui retire 2 points de santé")
+    .setImage("https://media.discordapp.net/attachments/603629419063541788/603995716146298881/explode.png")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#922b21")
+    .addField("La grenade explose à seulement quelques pas de la cible, l'explosion a grandement blessé l'objectif !", "Cela lui retire 3 points de santé")
+    .setImage("https://media1.tenor.com/images/0e939fe3de17e3d87395308991aad285/tenor.gif?itemid=8319886")
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Assassinat"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 50)
+       var y = new Discord.RichEmbed()
+       .setColor("#f9ebea")
+       .setTitle("Vous vous approchez de la personne endormie mais....La personne se réveille subitement se tournant vers vous, un coups de chance ou bien le destin ?")
+       else if (result < 70)
+       var y = new Discord.RichEmbed()
+       .addField("Vous tentez votre assassinat sur la cible en question venant lui infliger de lourd dégat la faisant se réveiller dans une grande douleur", "Cela retire 3 point de santé")
+       .setColor("#d98880")
+       .setImage("https://www.wallpaperflare.com/static/629/229/292/fantasy-art-assassins-fantasy-art-wallpaper.jpg")
+    else if (result < 90)
+         var y = new Discord.RichEmbed()
+    .setColor("#c0392b")
+    .addField("Vous tentez d'assassiner la cible en question mais...L'assassinat n'est pas parfait, vous touchez un point vital qui fera probablement réveiller la cible dans d'atroce souffrance", "Cela lui retire 4 points de santé")
+    .setImage("https://vignette.wikia.nocookie.net/powerlisting/images/7/7a/The_Neutral.jpg/revision/latest?cb=20170623221129")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#922b21")
+    .addField("Vous avez vue quelque chose ? Bizarre...Peut-être mon halucination", "Votre cible perd 5 points de santé")
+    .setImage("https://s1.1zoom.me/big3/301/DOTA_2_Phantom_assassin_499023.jpg")
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Explosion"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 20)
+       var y = new Discord.RichEmbed()
+       .addField("L'explosion n'a pas un grand impact", "Cela retire 1 point de santé")
+       .setImage("https://media.discordapp.net/attachments/603629419063541788/604001087397167104/image0.jpg")
+       .setColor("#d98880") 
+       else if (result < 40)
+       var y = new Discord.RichEmbed()
+       .addField("L'explosion a touché la cible", "Cela retire 2 point de santé")
+       .setColor("#d98880")
+       .setImage("https://media.discordapp.net/attachments/603629419063541788/603998799001682008/image0.jpg?width=606&height=559")
+    else if (result < 70)
+         var y = new Discord.RichEmbed()
+    .setColor("#c0392b")
+    .addField("L'explosion a fait de très lourd dégats !", "Cela lui retire 3 points de santé")
+    .setImage("https://media.discordapp.net/attachments/603629419063541788/603998799001682008/image0.jpg?width=606&height=559")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#922b21")
+    .addField("l'explosion a touché des points vitaux...", "Votre cible perd 4 points de santé")
+    .setImage("https://media.discordapp.net/attachments/603629419063541788/604004711372292108/image0.gif")
+    message.channel.sendMessage(y);
+}
+
+
+if(message.content === préfix + "Magie secondaire glace"){
+     var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 90)
+       var y = new Discord.RichEmbed()
+       .addField("Vous venez à lancer un sort de basse classe de glace", "Cela retire 1 point de santé")
+       .setImage("https://i.pinimg.com/originals/2a/74/4b/2a744b3ae6e2022896b1318e86d88654.jpg")
+       .setColor("#d98880") 
+         else if(result < 101)
+       var y = new Discord.RichEmbed()
+     .addField("Vous venez à lancer un sort de basse classe de glace qui l'empeche d'utiliser son arme principale durant 2tours (ou bien 10min)", "Cela retire 1 point de santé")
+       .setImage("https://i.pinimg.com/originals/2a/74/4b/2a744b3ae6e2022896b1318e86d88654.jpg")
+       .setColor("#d98880") 
+              message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Magie secondaire foudre"){
+     var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 95)
+       var y = new Discord.RichEmbed()
+       .addField("Vous venez à lancer un sort de basse classe de foudre", "Cela retire 1 point de santé")
+       .setImage("https://i.pinimg.com/originals/7f/ef/b3/7fefb335896250cdcb8148d0bdfe80af.jpg")
+       .setColor("#d98880") 
+         else if(result < 101)
+       var y = new Discord.RichEmbed()
+     .addField("Vous venez à lancer un sort de basse classe de foudre qui l'empeche d'attaquer durant 1tours (ou bien 5min)", "Cela retire 1 point de santé")
+       .setImage("https://i.pinimg.com/originals/7f/ef/b3/7fefb335896250cdcb8148d0bdfe80af.jpg")
+       .setColor("#d98880") 
+              message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Magie secondaire feux"){
+     var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 90)
+       var y = new Discord.RichEmbed()
+       .addField("Vous venez à lancer un sort de basse classe de feux", "Cela retire 1 point de santé")
+       .setImage("http://gwenfantastic.g.w.pic.centerblog.net/a5im5xs7.jpg")
+       .setColor("#d98880") 
+         else if(result < 101)
+       var y = new Discord.RichEmbed()
+     .addField("Vous venez à lancer un sort de basse classe de feux qui brule la cible", "Cela retire 2 point de santé")
+       .setImage("http://gwenfantastic.g.w.pic.centerblog.net/a5im5xs7.jpg")
+       .setColor("#d98880") 
+              message.channel.sendMessage(y);
+}
+
+  if(message.content === préfix + "Magie secondaire poison"){
+     var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 90)
+       var y = new Discord.RichEmbed()
+       .addField("Vous venez à lancer un sort de basse classe de poison", "Cela retire 1 point de santé")
+       .setImage("https://sites.google.com/site/fagewiki/_/rsrc/1451614313413/specializations/mage-specializations/blood-mage/Blood%20Mage.jpg?height=400&width=282")
+       .setColor("#d98880") 
+         else if(result < 101)
+       var y = new Discord.RichEmbed()
+     .addField("Vous venez à lancer un sort de basse classe de poison. Si il est en blessure grave, alors cela le rend inconscient", "Cela retire 1 point de santé")
+       .setImage("https://sites.google.com/site/fagewiki/_/rsrc/1451614313413/specializations/mage-specializations/blood-mage/Blood%20Mage.jpg?height=400&width=282")
+       .setColor("#d98880") 
+              message.channel.sendMessage(y);
+}
+
+
+
+ if(message.content === préfix + "Magie précise glace"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 10)
+       var y = new Discord.RichEmbed()
+             .setColor("#d98880") 
+       .addField("Vous invoquez une flèche de foudre, elle touche sa cible et l'empeche d'utiliser son arme principale durant 1 tours (ou bien 10min)", "Cela retire 1 point de santé")
+       .setImage("https://media.discordapp.net/attachments/603629419063541788/605143194853703703/1ddcee7437ac200e8bd24a51da24279d.png?width=395&height=559")
+       if(result < 15)
+       var y = new Discord.RichEmbed()
+             .setColor("#d98880") 
+       .addField("Vous invoquez une flèche de glace, elle touche sa cible et l'empeche d'utiliser son arme principale durant 2 tours (ou bien 10min)", "Cela retire 2 point de santé")
+       .setImage("https://media.discordapp.net/attachments/603629419063541788/605143194853703703/1ddcee7437ac200e8bd24a51da24279d.png?width=395&height=559")
+       else if (result < 23)
+       var y = new Discord.RichEmbed()
+       .setTitle("Vous invoquez une flèche de glace mais celle-ci n'atteint pas sa cible")
+    .setColor("#f9ebea")
+    else if (result < 40)
+         var y = new Discord.RichEmbed()
+    .addField("Vous invoquez une flèche de glace et cette dérnière blesse votre cible", "Cela retire 1 point de santé")
+    .setImage("https://media.discordapp.net/attachments/603629419063541788/605143727614328964/images.png")
+    .setColor("#d98880") 
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .addField("Vous invoquez une flèche de glace et cette dérnière blesse grandement un cible", "Cela retire 2 point de santé")
+    .setColor("#d98880")
+    .setImage("https://media.discordapp.net/attachments/603629419063541788/605143727614328964/images.png")
+    message.channel.sendMessage(y);
+}
+
+  if(message.content === préfix + "Magie précise foudre"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 10)
+       var y = new Discord.RichEmbed()
+             .setColor("#d98880") 
+       .addField("Vous invoquez une flèche de glace, elle touche sa cible et l'empeche d'attaquer durant 1 tours( ou bien 5min)", "Cela retire 1 point de santé")
+       .setImage("https://media.discordapp.net/attachments/603629419063541788/605143194853703703/1ddcee7437ac200e8bd24a51da24279d.png?width=395&height=559")
+       if(result < 15)
+       var y = new Discord.RichEmbed()
+             .setColor("#d98880") 
+       .addField("Vous invoquez une flèche de glace, elle touche sa cible et l'empeche d'attaquer durant 1 tours(ou bien 5min)", "Cela retire 2 point de santé")
+       .setImage("https://media.discordapp.net/attachments/603629419063541788/605143194853703703/1ddcee7437ac200e8bd24a51da24279d.png?width=395&height=559")
+       else if (result < 23)
+       var y = new Discord.RichEmbed()
+       .setTitle("Vous invoquez une flèche de foudre mais celle-ci n'atteint pas sa cible")
+    .setColor("#f9ebea")
+    else if (result < 40)
+         var y = new Discord.RichEmbed()
+    .addField("Vous invoquez une flèche de foudre et cette dérnière blesse votre cible", "Cela retire 1 point de santé")
+    .setImage("https://media.discordapp.net/attachments/603629419063541788/605143727614328964/images.png")
+    .setColor("#d98880") 
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .addField("Vous invoquez une flèche de foudre et cette dérnière blesse grandement un cible", "Cela retire 2 point de santé")
+    .setColor("#d98880")
+    .setImage("https://media.discordapp.net/attachments/603629419063541788/605143727614328964/images.png")
+    message.channel.sendMessage(y);
+}
+
+ if(message.content === préfix + "Boule de feux"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 10)
+       var y = new Discord.RichEmbed()
+    .setColor("#f9ebea")
+    .setTitle("Votre boule de feux frole la cible mais la rate")
+       else if(result < 30)
+       var y = new Discord.RichEmbed()
+  .setColor("#d98880") 
+       .addField("Vous envoyez une boule de feux sur la cible", "Cela retire 1 point de santé")
+       .setImage("https://media.discordapp.net/attachments/603629419063541788/605149381167022101/c55b34284c78a722f47e135c6766df3a.png")
+        else if(result < 101)
+       var y = new Discord.RichEmbed()
+           .setColor("#c0392b")
+    .addField("Vous envoyez une boule de feux sur la cible, la blessant grandement", "Cela lui retire 2 points de santé")
+    .setImage("https://media.discordapp.net/attachments/603629419063541788/605150395735736333/4ed3178b86948349379f3f32384e5333.png?width=432&height=559")  
+    message.channel.sendMessage(y);
+
+
+var x = new Discord.RichEmbed()
+      var z = Math.floor((Math.random() * 100) + 1);
+         if(z < 50)
+       var x = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Rien ne se produit en plus")  
+       else if(z < 101)
+       var x = new Discord.RichEmbed()
+    .setColor("#ff5700")
+    .setTitle("Cela produit une brulure ! Cela retire 1 point de santé en plus")  
+    message.channel.sendMessage(x);
+
+}
+
+
+if(message.content === préfix + "Tornade feux"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 10)
+       var y = new Discord.RichEmbed()
+    .setColor("#f9ebea")
+    .setTitle("Votre tornade de feux rate la cible")
+       else if(result < 70)
+       var y = new Discord.RichEmbed()
+  .setColor("#d98880") 
+       .addField("Vous invoquez une tornade de feux qui blesse les cibles", "Cela retire 1 point de santé")
+       .setImage("https://mobimg.b-cdn.net/lwallpaper_img/fire_tornado/real/1_fire_tornado.jpg")
+        else if(result < 90)
+       var y = new Discord.RichEmbed()
+           .setColor("#c0392b")
+    .addField("Vous invoquez une tornade de feux qui blesse grandement plusieurs ennemies", "Cela retire 2 points de santé")
+    .setImage("https://magic.wizards.com/sites/mtg/files/images/wallpaper/Firespout_FTV_iPad_Wallpaper.jpg")
+     else if(result < 101)
+       var y = new Discord.RichEmbed()
+   .setColor("#922b21")
+    .addField("Votre tornade de feux touche les points vitaux des cibles !", "Cela retire 3 points de santé")
+    .setImage("https://thumbs.dreamstime.com/b/tornade-rouge-d%C3%A9truisant-la-maison-117162582.jpg")
+         message.channel.sendMessage(y);
+ 
+       var x = new Discord.RichEmbed()
+      var z = Math.floor((Math.random() * 100) + 1);
+         if(z < 90)
+       var x = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Rien ne se produit en plus")  
+       else if(z < 101)
+       var x = new Discord.RichEmbed()
+    .setColor("#ff5700")
+    .setTitle("Cela produit une brulure ! Cela retire 1 point de santé en plus")  
+    message.channel.sendMessage(x);
+
+
+}
+
+
+if(message.content === préfix + "Explosion magique"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 10)
+       var y = new Discord.RichEmbed()
+    .setColor("#f9ebea")
+    .setTitle("Votre explosion rate la cible")
+        else if(result < 20)
+       var y = new Discord.RichEmbed()
+           .setColor("#c0392b")
+    .addField("Votre explosion fait de faible dégats", "Cela retire 2 points de santé")
+    .setImage("https://i.pinimg.com/originals/0d/e4/2b/0de42bae5f8c69dba96621b6c25389b1.jpg")
+     else if(result < 50)
+       var y = new Discord.RichEmbed()
+   .setColor("#922b21")
+    .addField("L'explosion magique touche un point non vital", "Cela retire 3 points de santé")
+    .setImage("https://i.ytimg.com/vi/5_uKZ8jBKWE/maxresdefault.jpg")
+else if(result < 90)
+       var y = new Discord.RichEmbed()
+    .addField("Un point vital a été touché par l'explosion magique !", "Cela retire 4 points de santé")
+    .setImage("https://iamnotashamedofthegospelofchrist.files.wordpress.com/2013/06/air_burst_lg.jpeg")
+    .setColor("#c0392b")
+        else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#922b21")
+    .addField("l'explosion fait...Mal...", "Votre cible perd 5 points de santé")
+    .setImage("http://www.anime-evo.net/wp-content/uploads/2016/03/Konosuba_10_18.jpg")
+         message.channel.sendMessage(y);
+ 
+       var x = new Discord.RichEmbed()
+      var z = Math.floor((Math.random() * 100) + 1);
+         if(z < 90)
+       var x = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Rien ne se produit en plus")  
+       else if(z < 101)
+       var x = new Discord.RichEmbed()
+    .setColor("#ff5700")
+    .setTitle("Cela produit une brulure ! Cela retire 1 point de santé en plus")  
+    message.channel.sendMessage(x);
+
+
+}
+
+if(message.content === préfix + "Lance de glace"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 20)
+       var y = new Discord.RichEmbed()
+    .setColor("#f9ebea")
+    .setTitle("Votre lance de glace rate la cible")
+       else if(result < 50)
+       var y = new Discord.RichEmbed()
+  .setColor("#d98880") 
+       .addField("Votre lance de glace blesse la cible !", "Cela retire 1 point de santé")
+       .setImage("https://media.discordapp.net/attachments/603629419063541788/605149381167022101/c55b34284c78a722f47e135c6766df3a.png")
+        else if(result < 101)
+       var y = new Discord.RichEmbed()
+           .setColor("#c0392b")
+    .addField("Votre lance touche un point vital !", "Cela lui retire 2 points de santé")
+    .setImage("https://images2.alphacoders.com/616/thumb-350-616976.png")  
+    message.channel.sendMessage(y);
+
+
+var x = new Discord.RichEmbed()
+      var z = Math.floor((Math.random() * 100) + 1);
+         if(z < 75)
+       var x = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Rien ne se produit en plus")  
+       else if(z < 101)
+       var x = new Discord.RichEmbed()
+    .setColor("#00daff")
+    .setTitle("Cela gèle l'adversaire et ignore les points de santé bonus de la cible")  
+    message.channel.sendMessage(x);
+
+}
+
+
+if(message.content === préfix + "Arc de foudre"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 10)
+       var y = new Discord.RichEmbed()
+    .setColor("#f9ebea")
+    .setTitle("Votre arc de foudre rate la cible")
+       else if(result < 70)
+       var y = new Discord.RichEmbed()
+  .setColor("#d98880") 
+       .addField("L'arc de foudre touche la cible", "Cela retire 1 point de santé")
+       .setImage("https://i.pinimg.com/236x/0f/97/8b/0f978b7926dcffce4d724f46d1af3ae9--wizards-dark.jpg")
+        else if(result < 101)
+       var y = new Discord.RichEmbed()
+           .setColor("#c0392b")
+    .addField("L'arc de foudre touche un point vital !", "Cela lui retire 2 points de santé")
+    .setImage("https://i.pinimg.com/originals/f4/72/eb/f472eb846640788d857d2b342866419d.jpg")  
+    message.channel.sendMessage(y);
+
+
+var x = new Discord.RichEmbed()
+      var z = Math.floor((Math.random() * 100) + 1);
+         if(z < 65)
+       var x = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Rien ne se produit en plus")  
+       else if(z < 101)
+       var x = new Discord.RichEmbed()
+    .setColor("#ffeb00")
+    .setTitle("Cela paralyse la cible l'empechant de se défendre au prochain tours")  
+    message.channel.sendMessage(x);
+
+}
+
+
+ if(message.content === préfix + "Toucher mortel"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 90)
+       var y = new Discord.RichEmbed()
+    .setColor("#f9ebea")
+    .setTitle("Votre arc de foudre rate la cible")
+        else if(result < 101)
+       var y = new Discord.RichEmbed()
+           .setColor("#ff0000")
+    .addField("Vous le touchez et lui infliger une grande décharge dans tout son corps", "Cela lui retire 5 points de santé")
+    .setImage("https://i.pinimg.com/originals/f4/72/eb/f472eb846640788d857d2b342866419d.jpg")  
+    message.channel.sendMessage(y);
+
+
+var x = new Discord.RichEmbed()
+      var z = Math.floor((Math.random() * 100) + 1);
+         if(z < 40)
+       var x = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Rien ne se produit en plus")  
+       else if(z < 101)
+       var x = new Discord.RichEmbed()
+    .setColor("#ffeb00")
+    .setTitle("Cela paralyse la cible l'empechant de se défendre au prochain tours")  
+    message.channel.sendMessage(x);
+
+}
+
+ if(message.content === préfix + "Crachat acide"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 60)
+       var y = new Discord.RichEmbed()
+    .setColor("#f9ebea")
+    .setTitle("Votre cracha d'acide rate la cible")
+       else if(result < 70)
+       var y = new Discord.RichEmbed()
+  .setColor("#d98880") 
+       .addField("Votre cacha d'acide blesse la cible", "Cela retire 1 point de santé")
+       .setImage("https://vignette.wikia.nocookie.net/torar/images/8/85/Venir.jpg/revision/latest/scale-to-width-down/290?cb=20130615022555")
+        else if(result < 101)
+       var y = new Discord.RichEmbed()
+      .setColor("#922b21")
+    .addField("Votre lancé touche la cible sur un point vital !", "Cela lui retire 3 points de santé")
+    .setImage("https://vignette.wikia.nocookie.net/torar/images/8/85/Venir.jpg/revision/latest/scale-to-width-down/290?cb=20130615022555")
+    message.channel.sendMessage(y);
+
+
+}
+if(message.content === préfix + "Vague poison"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 30)
+       var y = new Discord.RichEmbed()
+    .setColor("#f9ebea")
+    .setTitle("La vague de poison rate")
+       else if(result < 101)
+       var y = new Discord.RichEmbed()
+  .setColor("#d98880") 
+       .addField("Vous invoquez une grande fumée de poison dans toute la zone sur les cibles ennemies", "Cela retire 1 point de santé")
+       .setImage("https://cdn.wallpapersafari.com/87/88/NQJrdI.jpg")
+    message.channel.sendMessage(y);
+
+
+var x = new Discord.RichEmbed()
+      var z = Math.floor((Math.random() * 100) + 1);
+         if(z < 30)
+       var x = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Rien ne se produit en plus")  
+       else if(z < 70)
+       var x = new Discord.RichEmbed()
+    .setColor("#4c9b36")
+    .setTitle("Cela inflige 1 point de santé en plus à la cible")
+       else if(z < 101)
+       var x = new Discord.RichEmbed()
+    .setColor("#4c9b36")
+    .setTitle("Cela inflige 1 point de santé en plus mais cela vous rends également 1 point de santé pour le nombre d'ennemie touché(vous ne pouvez pas revenir à santé stable)")    
+    message.channel.sendMessage(x);
+}
+
+ if(message.content === préfix + "Poison de folie"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 10)
+       var y = new Discord.RichEmbed()
+    .setColor("#f9ebea")
+    .setTitle("Votre poison ne blesse pas la cible")
+       else if(result < 50)
+       var y = new Discord.RichEmbed()
+  .setColor("#d98880") 
+       .addField("Le poison blesse la cible légerement", "Cela retire 1 point de santé")
+       .setImage("https://vignette.wikia.nocookie.net/astrohanasia/images/a/a4/Wizardry.jpg/revision/latest?cb=20180519184203")
+        else if(result < 101)
+       var y = new Discord.RichEmbed()
+       .setColor("#c0392b")
+    .addField("Le poison blesse grandement la cible", "Cela lui retire 2 points de santé")
+    .setImage("https://vignette.wikia.nocookie.net/astrohanasia/images/a/a4/Wizardry.jpg/revision/latest?cb=20180519184203")  
+    message.channel.sendMessage(y);
+
+var x = new Discord.RichEmbed()
+      var z = Math.floor((Math.random() * 100) + 1);
+         if(z < 10)
+       var x = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Rien ne se produit en plus")  
+       else if(z < 30)
+       var x = new Discord.RichEmbed()
+    .setColor("#4c9b36")
+    .setTitle("Votre cible ratera la prochaine attaque")
+       else if(z < 70)
+       var x = new Discord.RichEmbed()
+    .setColor("#4c9b36")
+    .setTitle("Votre cible ratera les 2 prochaines attaque")  
+     else if(z < 101)
+       var x = new Discord.RichEmbed()
+    .setColor("#4c9b36")
+    .setTitle("Votre cible ratera les 3 prochaines attaque")      
+    message.channel.sendMessage(x);
+
+}
+
+
+if(message.content === préfix + "Magie précise poison"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 10)
+       var y = new Discord.RichEmbed()
+             .setColor("#d98880") 
+       .addField("Vous lancez un sort précis de poison", "Cela retire 1 point de santé")
+       .setImage("https://media.discordapp.net/attachments/603629419063541788/605148549600116738/a51ccea46693501986dd9359076ab24a.png")
+       if(result < 15)
+       var y = new Discord.RichEmbed()
+             .setColor("#d98880") 
+       .addField("Vous invoquez une boule de feux, elle touche sa cible en la brulant grandement !", "Cela retire 3 point de santé")
+       .setImage("https://media.discordapp.net/attachments/603629419063541788/605148549600116738/a51ccea46693501986dd9359076ab24a.png")
+       else if (result < 23)
+       var y = new Discord.RichEmbed()
+       .setTitle("Vous invoquez une flèche de foudre mais celle-ci n'atteint pas sa cible")
+    .setColor("#f9ebea")
+    else if (result < 40)
+         var y = new Discord.RichEmbed()
+    .addField("Vous invoquez une boule de feux venant blesser la cible", "Cela retire 1 point de santé")
+    .setImage("https://media.discordapp.net/attachments/603629419063541788/605148549600116738/a51ccea46693501986dd9359076ab24a.png")
+    .setColor("#d98880") 
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .addField("Vous invoquez une boule feux venant blesser grandement la cible", "Cela retire 2 point de santé")
+    .setColor("#d98880")
+    .setImage("https://media.discordapp.net/attachments/603629419063541788/605148549600116738/a51ccea46693501986dd9359076ab24a.png")
+    message.channel.sendMessage(y);
+}
+
+
+
+
+
+
+
+
+if(message.content === préfix + "Paralysie"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+       if(result < 10)
+       var y = new Discord.RichEmbed()
+  .setTitle("La cible ne reçoit aucun dégat")
+    .setColor("#f9ebea")
+       if(result < 30)
+       var y = new Discord.RichEmbed()
+       .setTitle("La cible ne reçoit aucun dégat mais est paraylsé pendant 1 tours(ou bien 5min)")
+       .setColor("#f9ebea")
+       else if (result < 35)
+       var y = new Discord.RichEmbed()
+     .addField("La cible est blessé mais n'est pas paralysé", "Cela retire 1 point de santé")
+    .setColor("#d98880")
+    .setImage("https://ns328286.ip-37-187-113.eu/ew/wallpapers/800x480/16744_800x480.jpg")
+     else if (result < 101)
+       var y = new Discord.RichEmbed()
+     .addField("La cible est blessé et paralysé pendant 1 tours(ou bien 5min)", "Cela retire 1 point de santé")
+    .setColor("#d98880")
+    .setImage("https://ns328286.ip-37-187-113.eu/ew/wallpapers/800x480/16744_800x480.jpg")
+
+    message.channel.sendMessage(y);
+}
+
+
+if(message.content === préfix + "Protection faible"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 11)
+    var y = new Discord.RichEmbed()
+    .setColor("#0023ff")
+    .setImage("https://i.pinimg.com/736x/a8/26/58/a8265802c5cd97bbd353ebd6da93145a.jpg")
+    .setTitle("Votre faible protection annule l'attaque physique")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("C'est un echec")
+    message.channel.sendMessage(y);
+}
+ if(message.content === préfix + "Protection moyenne"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 21)
+    var y = new Discord.RichEmbed()
+    .setColor("#0023ff")
+    .setImage("https://i.pinimg.com/736x/a8/26/58/a8265802c5cd97bbd353ebd6da93145a.jpg")
+    .setTitle("Votre faible protection annule l'attaque physique")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("C'est un echec")
+    message.channel.sendMessage(y);
+}
+    if(message.content === préfix + "Protection majeur"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 31)
+    var y = new Discord.RichEmbed()
+    .setColor("#0023ff")
+    .setImage("https://i.pinimg.com/736x/a8/26/58/a8265802c5cd97bbd353ebd6da93145a.jpg")
+    .setTitle("Votre faible protection annule l'attaque physique")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("C'est un echec")
+    message.channel.sendMessage(y);
+}
+
+/// RESISTANCE MAGIQUE ////
+
+    if(message.content === préfix + "Resistance faible"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 11)
+    var y = new Discord.RichEmbed()
+    .setColor("#0023ff")
+    .setImage("https://i.pinimg.com/736x/76/a8/76/76a87647e067d403f6b4f04b9622a579.jpg")
+    .setTitle("Votre faible protection annule l'attaque physique")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("C'est un echec")
+    message.channel.sendMessage(y);
+}
+ if(message.content === préfix + "Resistance moyenne"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 21)
+    var y = new Discord.RichEmbed()
+    .setColor("#0023ff")
+    .setImage("https://i.pinimg.com/736x/76/a8/76/76a87647e067d403f6b4f04b9622a579.jpg")
+    .setTitle("Votre faible protection annule l'attaque physique")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("C'est un echec")
+    message.channel.sendMessage(y);
+}
+    if(message.content === préfix + "Resistance majeur"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 31)
+    var y = new Discord.RichEmbed()
+    .setColor("#0023ff")
+    .setImage("https://i.pinimg.com/736x/76/a8/76/76a87647e067d403f6b4f04b9622a579.jpg")
+    .setTitle("Votre faible protection annule l'attaque physique")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("C'est un echec")
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Seringue"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 40)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("Vous ratez votre coups")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#16ff00")
+    .setTitle("Vous réussissez à planter votre seringue sur la cible !")
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Tazer"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 40)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("Vous ratez votre coups")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#16ff00")
+    .setTitle("Vous réussissez à rendre inconscient la cible !")
+    message.channel.sendMessage(y);
+}
 
 
 
