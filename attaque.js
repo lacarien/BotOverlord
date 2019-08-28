@@ -2016,7 +2016,105 @@ if(message.content === prefix + "Hache MK-4")
 
 
 
+if(message.content === préfix + "Couteau MK-1"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 30)
+    var y = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Votre couteau frolle la cible")
+    .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615876776228290560/22bbade48e2ffa2c50968c635445b6a1.gif")
+    else if (result < 40)
+    var y = new Discord.RichEmbed()
+    .setColor("#d98880") 
+    .setTitle("Vous plantez la cible, cela retire 1 point de santé")
+    .setImage("https://wallpaperplay.com/walls/full/5/1/8/72567.jpg")
+    else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#d98880")
+    .setImage("https://wallpaperplay.com/walls/full/5/1/8/72567.jpg")
+    .setTitle("Vous plantez la cible sur un point non vital, cela retire 2 points de santé")
 
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Couteau MK-2"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 10)
+    var y = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Votre couteau frolle la cible")
+    .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615876776228290560/22bbade48e2ffa2c50968c635445b6a1.gif")
+    else if (result < 50)
+    var y = new Discord.RichEmbed()
+    .setColor("#d98880") 
+    .setTitle("Vous plantez la cible, cela retire 1 point de santé")
+    .setImage("https://wallpaperplay.com/walls/full/5/1/8/72567.jpg")
+    else if (result < 90)
+    var y = new Discord.RichEmbed()
+    .setColor("#d98880")
+    .setImage("https://media.discordapp.net/attachments/615874638001471498/615876762600996879/giphy.gif")
+    .setTitle("Vous plantez la cible sur un point non vital, cela retire 2 points de santé")
+        else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#d98880")
+    .setImage("https://img4.goodfon.com/wallpaper/nbig/7/fd/soldat-naemnik-art-nozh-shlem-maska-kostium-zashchita-skhvat.jpg")
+    .setTitle("Vous plantez la cible sur un point vital, cela retire 3 points de santé")
+
+    message.channel.sendMessage(y);
+}
+
+
+
+if(message.content === préfix + "Couteau MK-3"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 10)
+    var y = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Votre couteau frolle la cible")
+    .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615876776228290560/22bbade48e2ffa2c50968c635445b6a1.gif")
+    else if (result < 30)
+    var y = new Discord.RichEmbed()
+    .setColor("#d98880") 
+    .setTitle("Vous plantez la cible, cela retire 1 point de santé")
+    .setImage("https://wallpaperplay.com/walls/full/5/1/8/72567.jpg")
+    else if (result < 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#d98880")
+    .setImage("https://media.discordapp.net/attachments/615874638001471498/615876762600996879/giphy.gif")
+    .setTitle("Vous plantez la cible sur un point non vital, cela retire 2 points de santé")
+        else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#d98880")
+    .setImage("https://img4.goodfon.com/wallpaper/nbig/7/fd/soldat-naemnik-art-nozh-shlem-maska-kostium-zashchita-skhvat.jpg")
+    .setTitle("Vous plantez la cible sur un point vital, cela retire 3 points de santé")
+
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Couteau MK-4"){
+    var y = new Discord.RichEmbed()
+       var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 10)
+    var y = new Discord.RichEmbed()
+    .setColor("#ffffff")
+    .setTitle("Votre couteau frolle la cible")
+    .setImage("https://cdn.discordapp.com/attachments/615874638001471498/615876776228290560/22bbade48e2ffa2c50968c635445b6a1.gif")
+    else if (result < 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#d98880")
+    .setImage("https://media.discordapp.net/attachments/615874638001471498/615876762600996879/giphy.gif")
+    .setTitle("Vous plantez la cible sur un point non vital, cela retire 2 points de santé")
+        else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#d98880")
+    .setImage("https://img4.goodfon.com/wallpaper/nbig/7/fd/soldat-naemnik-art-nozh-shlem-maska-kostium-zashchita-skhvat.jpg")
+    .setTitle("Vous plantez la cible sur un point vital, cela retire 3 points de santé")
+
+    message.channel.sendMessage(y);
+}
 
 
 
