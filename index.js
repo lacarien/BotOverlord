@@ -174,4 +174,172 @@ client.on("message",message =>
         .setTitle("Vous réussissez à fuir")
         message.channel.sendMessage(y);
     }
+    
+    
+    if(message.content === préfix + "Voyage spatiale scout"){
+  var y = new Discord.RichEmbed()
+     var result = Math.floor((Math.random() * 100) + 1);
+     if(result < 1)
+     var y = new Discord.RichEmbed()
+  .setColor("#6e61ae")
+  .setImage("https://images.alphacoders.com/505/505470.jpg")
+  .setTitle("Votre vaisseau se fait subitement toucher par un vaisseau ennemi qui était camouflé. Vous finisez sur la planète la plus proche que vous pourrez atteindre avec votre vaiseau détruit tout comme les 3/4 du matériel à l'intérieur devenant impossible à réparer")
+     else if(result < 3)
+     var y = new Discord.RichEmbed()
+.setColor("#6e61ae") 
+     .setTitle("Subitement vous avez un problème technique ne permettant plus à redémarrer les moteurs. Vous devrez attendre qu'un joueur vienne vous récupérer abandonnant votre ancien vaisseau")
+     .setImage("https://vignette.wikia.nocookie.net/masstrek/images/9/9b/Fall_of_Denobula.jpg/revision/latest?cb=20121215021908")
+      else if(result < 10)
+     var y = new Discord.RichEmbed()
+     .setColor("#6e61ae")
+     .setTitle("Vous avez eu un problème technique. Si cela se reproduit votre vaisseau ne pourra plus se déplacer (temps de réparation : 24h(et seulement si il est toujours en êtat de se déplacer sinon 36h))")
+  .setImage("https://crossingzebras.com/wp-content/uploads/2013/02/EVE_CaldariPrimeAftermath.jpg")
+   else if(result < 101)
+     var y = new Discord.RichEmbed()
+     .setColor("#6e61ae")
+  .setTitle("Le déplacement se fait sans problème")
+  .setImage("http://66.media.tumblr.com/tumblr_lshxphqGQk1qmpg90o1_500.gif")
+  message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Voyage spatiale technicien"){
+  var y = new Discord.RichEmbed()
+     var result = Math.floor((Math.random() * 100) + 1);
+     if(result < 1)
+     var y = new Discord.RichEmbed()
+  .setColor("#6e61ae")
+  .setImage("https://images.alphacoders.com/505/505470.jpg")
+  .setTitle("Votre vaisseau se fait subitement toucher par un vaisseau ennemi qui était camouflé. Vous finisez sur la planète la plus proche que vous pourrez atteindre avec votre vaiseau détruit tout comme les 3/4 du matériel à l'intérieur devenant impossible à réparer")
+     else if(result < 5)
+     var y = new Discord.RichEmbed()
+.setColor("#6e61ae") 
+     .setTitle("Subitement vous avez un problème technique ne permettant plus à redémarrer les moteurs. Vous devrez attendre qu'un joueur vienne vous récupérer abandonnant votre ancien vaisseau")
+     .setImage("https://vignette.wikia.nocookie.net/masstrek/images/9/9b/Fall_of_Denobula.jpg/revision/latest?cb=20121215021908")
+      else if(result < 25)
+     var y = new Discord.RichEmbed()
+     .setColor("#6e61ae")
+     .setTitle("Vous avez eu un problème technique. Si cela se reproduit votre vaisseau ne pourra plus se déplacer (temps de réparation : 24h(et seulement si il est toujours en êtat de se déplacer sinon 36h))")
+  .setImage("https://crossingzebras.com/wp-content/uploads/2013/02/EVE_CaldariPrimeAftermath.jpg")
+   else if(result < 101)
+     var y = new Discord.RichEmbed()
+     .setColor("#6e61ae")
+  .setTitle("Le déplacement se fait sans problème")
+  .setImage("http://66.media.tumblr.com/tumblr_lshxphqGQk1qmpg90o1_500.gif")
+  message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Voyage spatiale assaut"){
+  var y = new Discord.RichEmbed()
+     var result = Math.floor((Math.random() * 100) + 1);
+     if(result < 1)
+     var y = new Discord.RichEmbed()
+  .setColor("#6e61ae")
+  .setImage("https://images.alphacoders.com/505/505470.jpg")
+  .setTitle("Votre vaisseau se fait subitement toucher par un vaisseau ennemi qui était camouflé. Vous finisez sur la planète la plus proche que vous pourrez atteindre avec votre vaiseau détruit tout comme les 3/4 du matériel à l'intérieur devenant impossible à réparer")
+     else if(result < 5)
+     var y = new Discord.RichEmbed()
+.setColor("#6e61ae") 
+     .setTitle("Subitement vous avez un problème technique ne permettant plus à redémarrer les moteurs. Vous devrez attendre qu'un joueur vienne vous récupérer abandonnant votre ancien vaisseau")
+     .setImage("https://vignette.wikia.nocookie.net/masstrek/images/9/9b/Fall_of_Denobula.jpg/revision/latest?cb=20121215021908")
+      else if(result < 20)
+     var y = new Discord.RichEmbed()
+     .setColor("#6e61ae")
+     .setTitle("Vous avez eu un problème technique. Si cela se reproduit votre vaisseau ne pourra plus se déplacer (temps de réparation : 24h(et seulement si il est toujours en êtat de se déplacer sinon 36h))")
+  .setImage("https://crossingzebras.com/wp-content/uploads/2013/02/EVE_CaldariPrimeAftermath.jpg")
+   else if(result < 101)
+     var y = new Discord.RichEmbed()
+     .setColor("#6e61ae")
+  .setTitle("Le déplacement se fait sans problème")
+  .setImage("http://66.media.tumblr.com/tumblr_lshxphqGQk1qmpg90o1_500.gif")
+  message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Voyage spatiale croiseur"){
+  var y = new Discord.RichEmbed()
+     var result = Math.floor((Math.random() * 100) + 1);
+     if(result < 1)
+     var y = new Discord.RichEmbed()
+  .setColor("#6e61ae")
+  .setImage("https://images.alphacoders.com/505/505470.jpg")
+  .setTitle("Votre vaisseau se fait subitement toucher par un vaisseau ennemi qui était camouflé. Vous finisez sur la planète la plus proche que vous pourrez atteindre avec votre vaiseau détruit tout comme les 3/4 du matériel à l'intérieur devenant impossible à réparer")
+     else if(result < 5)
+     var y = new Discord.RichEmbed()
+.setColor("#6e61ae") 
+     .setTitle("Subitement vous avez un problème technique ne permettant plus à redémarrer les moteurs. Vous devrez attendre qu'un joueur vienne vous récupérer abandonnant votre ancien vaisseau")
+     .setImage("https://vignette.wikia.nocookie.net/masstrek/images/9/9b/Fall_of_Denobula.jpg/revision/latest?cb=20121215021908")
+      else if(result < 30)
+     var y = new Discord.RichEmbed()
+     .setColor("#6e61ae")
+     .setTitle("Vous avez eu un problème technique. Si cela se reproduit votre vaisseau ne pourra plus se déplacer (temps de réparation : 24h(et seulement si il est toujours en êtat de se déplacer sinon 36h))")
+  .setImage("https://crossingzebras.com/wp-content/uploads/2013/02/EVE_CaldariPrimeAftermath.jpg")
+   else if(result < 101)
+     var y = new Discord.RichEmbed()
+     .setColor("#6e61ae")
+  .setTitle("Le déplacement se fait sans problème")
+  .setImage("http://66.media.tumblr.com/tumblr_lshxphqGQk1qmpg90o1_500.gif")
+  message.channel.sendMessage(y);
+}
+
+
+
+if(message.content === préfix + "Esquive scout"){
+  var y = new Discord.RichEmbed()
+     var result = Math.floor((Math.random() * 100) + 1);
+  if(result < 10)
+  var y = new Discord.RichEmbed()
+  .setColor("#0027a4")
+  .setImage("https://media.moddb.com/images/groups/1/3/2632/we_are_under_attack_by_ka4xid-d51b7la.jpg")
+  .setTitle("Votre vaisseau évite le tire")
+  else if (result < 101)
+  var y = new Discord.RichEmbed()
+  .setColor("#ff0000")
+  .setTitle("Vous subissez le tire")
+  message.channel.sendMessage(y);
+}
+
+
+if(message.content === préfix + "Laser mark 1"){
+  var y = new Discord.RichEmbed()
+     var result = Math.floor((Math.random() * 100) + 1);
+  if(result < 40)
+  var y = new Discord.RichEmbed()
+  .setColor("#0027a4")
+  .setImage("http://masseffectuniverse.fr/wp-content/uploads/2012/04/Mass-effect-3-normandy-sr2-alliance-2560x16001.jpg")
+  .setTitle("Votre tire passe proche du vaisseau ennemie mais...Il ne le touche pas")
+  else if (result < 90)
+  var y = new Discord.RichEmbed()
+  .setColor("#df6504")
+  .setTitle("Votre tire touche le vaisseau adverse, cela inflige 3 points de dégats")
+  .setImage("http://remlok-industries.fr/wp-content/uploads/2016/11/ED-Combat-9.jpg")
+  else if (result < 101)
+  var y = new Discord.RichEmbed()
+  .setColor("#df4004")
+  .setTitle("Votre tire touche le vaisseau adervse, cela inflige 4 points de dégats")
+  .setImage("http://remlok-industries.fr/wp-content/uploads/2016/11/ED-Combat-9.jpg")
+
+  message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Laser mark 2"){
+  var y = new Discord.RichEmbed()
+     var result = Math.floor((Math.random() * 100) + 1);
+  if(result < 30)
+  var y = new Discord.RichEmbed()
+  .setColor("#0027a4")
+  .setImage("http://masseffectuniverse.fr/wp-content/uploads/2012/04/Mass-effect-3-normandy-sr2-alliance-2560x16001.jpg")
+  .setTitle("Votre tire passe proche du vaisseau ennemie mais...Il ne le touche pas")
+  else if (result < 80)
+  var y = new Discord.RichEmbed()
+  .setColor("#df6504")
+  .setTitle("Votre tire touche le vaisseau adverse, cela inflige 3 points de dégats")
+  .setImage("http://remlok-industries.fr/wp-content/uploads/2016/11/ED-Combat-9.jpg")
+  else if (result < 101)
+  var y = new Discord.RichEmbed()
+  .setColor("#df4004")
+  .setTitle("Votre tire touche le vaisseau adervse, cela inflige 4 points de dégats")
+  .setImage("http://remlok-industries.fr/wp-content/uploads/2016/11/ED-Combat-9.jpg")
+
+  message.channel.sendMessage(y);
+}
+
 });
