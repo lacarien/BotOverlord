@@ -44,7 +44,7 @@ client.on("message",message =>
 
     //Inclusion des fichier externe
     eval(fs.readFileSync(__dirname + '/bestiaire.js')+'');
-    eval(fs.readFileSync(__dirname + '/watson.js')+'');
+   // eval(fs.readFileSync(__dirname + '/watson.js')+'');
     eval(fs.readFileSync(__dirname + '/attaque.js')+'');
     eval(fs.readFileSync(__dirname + '/pnj.js')+'');
     eval(fs.readFileSync(__dirname + '/Economie.js')+'');
