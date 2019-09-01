@@ -48,6 +48,9 @@ client.on("message",message =>
     eval(fs.readFileSync(__dirname + '/attaque.js')+'');
     eval(fs.readFileSync(__dirname + '/pnj.js')+'');
     eval(fs.readFileSync(__dirname + '/Economie.js')+'');
+    
+    eval(fs.readFileSync(__dirname + '/UnderlordMenu.js')+'');
+
 
 
 
