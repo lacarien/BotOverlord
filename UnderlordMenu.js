@@ -284,7 +284,7 @@ if(message.content === préfix + "Combattant ultime"){
     var l = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var l = new Discord.RichEmbed()
     .setColor("#ff8b00")
-    .addField("Vous executez un violent coup qui inflige", ":crossed_swords: "+ l)
+    .addField("Vous executez un violent coup qui inflige de lourd dégats (-50 de mana)", ":crossed_swords: "+ l)
     .setImage("https://cdn.discordapp.com/attachments/532644881588551683/535086945420967937/Combattant_ultime.gif")
     message.channel.send(l);
 }
@@ -358,7 +358,7 @@ if(message.content === préfix + "Mage ultime"){
     var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var w = new Discord.RichEmbed() 
     .setColor("#ff8b00")
-    .addField("Vous executez un puissant sort su votre ennemie", ":crossed_swords: "+ w)
+    .addField("Vous executez un puissant sort su votre ennemie (-100 de mana)", ":crossed_swords: "+ w)
     message.channel.send(w);
 }
 
@@ -404,7 +404,7 @@ if(message.content === préfix + "Voleur ultime"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#ff8b00")
-    .addField("Vous executez un back stab qui inflige de lourd dégats (-100 de mana)", ":crossed_swords: "+ y)
+    .addField("Vous executez un back stab qui inflige de lourd dégats (-50 de mana)", ":crossed_swords: "+ y)
     .setImage("https://media.giphy.com/media/1woWwqPRWY6xGVHQ8M/giphy.gif")
     message.channel.send(y);
 }
