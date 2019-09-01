@@ -104,7 +104,7 @@ if(message.content === préfix + "Beastman"){
 if(message.content === préfix + "Race underlord"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffffff")
-    .addField("Liste des races", "?Humain \n ?Vampire \n ?Beastman \n ?Démon \n ?Nymphe \n ?Elf \n ?Automaton \n ?Lézard \n Liche")
+    .addField("Liste des races", "?Humain \n ?Vampire \n ?Beastman \n ?Démon \n ?Nymphe \n ?Elf \n ?Automaton \n ?Lézard \n ?Liche")
     message.channel.sendMessage(help_embed);
 }
 
