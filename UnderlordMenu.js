@@ -257,6 +257,219 @@ if(message.content === préfix + "Passifs combattant"){
 
 
 
+/// ATTAQUE CLASSE PALIER 1 ///
+/// ATTAQUE CLASSE PALIER 1 ///
+/// ATTAQUE CLASSE PALIER 1 ///
+
+if(message.content === préfix + "Coup d'épée"){
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous lui infligez un coup d'épée rapide qui inflige", ":dagger: "+ y )
+    .setImage("https://cdn.discordapp.com/attachments/534821670217711626/535086034459820042/Coup_depee.gif")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Combattant ultime"){
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#76ff00")
+    .addField("Vous régénérez", y)
+    message.channel.send(y);
+    var mins = Math.floor(Math.min(20));
+    var maxs = Math.floor(Math.max(40)); 
+    var l = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var l = new Discord.RichEmbed()
+    .setColor("#ff8b00")
+    .addField("Vous executez un violent coup qui inflige", ":crossed_swords: "+ l)
+    .setImage("https://cdn.discordapp.com/attachments/532644881588551683/535086945420967937/Combattant_ultime.gif")
+    message.channel.send(l);
+}
+
+if(message.content === préfix + "Blocage simple"){
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(15)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous executez un blocage simple et réussisez à bloquer", ":shield: "+y)
+    .setImage("https://www.bestfunforall.com/wallpaperbetter/imgs/38%20knight%20medieval%20wallpaper%20%201.jpg")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Blocage supérieure"){
+    var min = Math.floor(Math.min(35));
+    var max = Math.floor(Math.max(45)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous executez un blocage supérieure et réussisez à bloquer", ":shield: "+y)
+    .setImage("https://media.discordapp.net/attachments/499161815549476864/541320990614093825/2530.gif")
+    message.channel.send(y);
+}
+
+/// MAGE ///
+/// MAGE ///
+
+
+if(message.content === préfix + "M Blocage simple"){
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(15)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous executez un blocage magique de faible rang (-10 mana)", ":shield: " + y)
+    .setImage("https://i.pinimg.com/originals/eb/79/c4/eb79c4cc671a7b01a989809d1c7edbae.png")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Magie simple"){
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous envoyez un sort de bas rang (-10 mana)", ":sparkles: "+y)
+    .setImage("https://media.giphy.com/media/lYfMRNGRIyOOQo9PKl/giphy.gif")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Soins de bas rang"){
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous soignez une personne au choix, ou bien vous même (-20 mana)", ":heartpulse: "+y)
+    .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/7/71/Overlord_III_EP07_131.png/revision/latest/scale-to-width-down/640?cb=20180828050559")
+    message.channel.send(y);
+}
+
+
+if(message.content === préfix + "Mage ultime"){
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(60)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#00f5ff")
+    .addField("Vous régénérez du Mana", y)
+    .setImage("https://media.giphy.com/media/Bp4Iz5pItPXI3ErsAf/giphy.gif")
+    message.channel.send(y);
+    var mins = Math.floor(Math.min(40));
+    var maxs = Math.floor(Math.max(65)); 
+    var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var w = new Discord.RichEmbed() 
+    .setColor("#ff8b00")
+    .addField("Vous executez un puissant sort su votre ennemie", ":crossed_swords: "+ w)
+    message.channel.send(w);
+}
+
+/// Voleur ///
+/// Voleur ///
+
+
+if(message.content === préfix + "V Coup d'épée"){
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous lui infligez un coup d'épée rapide qui inflige", ":dagger: "+ y )
+    .setImage("https://i.pinimg.com/originals/77/1f/13/771f13c36fa5bcb8847b285508f5e8c5.jpg")
+    message.channel.send(y);
+}
+
+
+if(message.content === préfix + "V Blocage simple"){
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(10)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous executez un blocage magique de faible rang et réussisez à bloquer", ":shield: " + y)
+    .setImage("https://i.pinimg.com/originals/77/1f/13/771f13c36fa5bcb8847b285508f5e8c5.jpg")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Coup bas"){
+        
+    var min = Math.floor(Math.min(30));
+   var max = Math.floor(Math.max(40)); 
+   var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+   var y = new Discord.RichEmbed()
+   .addField("Vous lui infligé un coup de dague impossible à bloquer. Vous perdez 40 de mana", ":dagger: "+y)
+   .setImage("https://media.giphy.com/media/XptviXceQG8pjLZ0FD/giphy.gif")
+   message.channel.send(y);
+}
+
+if(message.content === préfix + "Voleur ultime"){   
+    var min = Math.floor(Math.min(55));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#ff8b00")
+    .addField("Vous executez un back stab qui inflige de lourd dégats (-100 de mana)", ":crossed_swords: "+ y)
+    .setImage("https://media.giphy.com/media/1woWwqPRWY6xGVHQ8M/giphy.gif")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Esquive") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 50)
+    var result = new Discord.RichEmbed() 
+    .setColor("#00ff27")
+    .setTitle("Votre esquive est réussie, mais attention...Ne prenez pas trop la confiance")
+    .setImage("https://static.zerochan.net/Abyss.Watchers.full.2146072.jpg")
+    if(50 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Vous subisez tout les dégats, sa fait mal...")
+    message.channel.send(result);
+
+}
+
+/// Ranger ///
+/// Ranger ///
+/// Ranger ///
+
+if(message.content === préfix + "Tir à l'arc"){
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(35)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous tirez une fleche rapide sur votre ennemie",":bow_and_arrow: "+y)
+    .setImage("https://media.giphy.com/media/5QI6YQxisFehaLlQ8I/giphy.gif")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "R Blocage simple"){
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(10)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous executez un blocage magique de faible rang et réussisez à bloquer", ":shield: " + y)
+    .setImage("https://wallpapercave.com/wp/wp1954538.jpg")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Ranger ultime"){
+    var min = Math.floor(Math.min(55));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#ff8b00")
+    .addField("Vous effectuez un tir parfait(-80 de mana)", ":crossed_swords: "+ y)
+    .setImage("https://media.giphy.com/media/uUl8lkfxMYLi5q9wp8/giphy.gif")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Blocage rapide"){
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(25)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous executez un blocage rapide et réussisez à bloquer", ":shield: "+y)
+    .setImage("https://cdn.discordapp.com/attachments/499161815549476864/541313060917215253/BDci.gif")
+    message.channel.send(y);
+}
+
+
 
 
 
