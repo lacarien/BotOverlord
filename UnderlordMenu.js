@@ -105,7 +105,6 @@ if(message.content === préfix + "Race underlord"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffffff")
     .addField("Liste des races", "?Humain \n ?Vampire \n ?Beastman \n ?Démon \n ?Nymphe \n ?Elf \n ?Automaton \n ?Lézard \n Liche")
-    .setImage("https://media.discordapp.net/attachments/536292650698014731/585798353187635210/thumb-1920-834932.png?width=936&height=585")
     message.channel.sendMessage(help_embed);
 }
 
@@ -114,7 +113,6 @@ if(message.content === préfix + "Classe underlord"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffffff")
     .addField("Liste des races", "?Humain \n ?Vampire \n ?Beastman \n ?Démon \n ?Nymphe \n ?Elf \n ?Automaton \n ?Lézard \n Liche")
-    .setImage("https://media.discordapp.net/attachments/536292650698014731/585798353187635210/thumb-1920-834932.png?width=936&height=585")
     message.channel.sendMessage(help_embed);
 }
 
