@@ -3,7 +3,7 @@ if(message.content === préfix + "Help underlord"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffffff")
     .addField("Préfix du bot", "?")
-    .addField("Sommaire :", "?Race underlord \n ?Contexte underlord \n ?Classe underlord \n ?Race underlord ")
+    .addField("Sommaire :", "?Race underlord \n ?Contexte underlord \n ?Classe underlord \n ?Race underlord \n Shop underlord")
     .setFooter("Menu underlord")
 
     message.channel.sendMessage(help_embed);
@@ -334,3 +334,208 @@ if(message.content === préfix + "CS Beastman"){
     .addField("Liste des coups spéciaux", "lvl 10 : ?Violente morsure \n lvl 20 : ?Violente morsure 2 \n lvl 25 : ?Regarde féroce \n lvl 35 : ?Violente morsure 3 \n lvl 40 : Appelle à la meute")
     message.channel.sendMessage(help_embed);
 }
+
+/// SHOP ////// SHOP ////// SHOP ////// SHOP ////// SHOP ///
+/// SHOP ////// SHOP ////// SHOP ////// SHOP ////// SHOP ///
+/// SHOP ////// SHOP ////// SHOP ////// SHOP ////// SHOP ///
+/// SHOP ////// SHOP ////// SHOP ////// SHOP ////// SHOP ///
+/// SHOP ////// SHOP ////// SHOP ////// SHOP ////// SHOP ///
+/// SHOP ////// SHOP ////// SHOP ////// SHOP ////// SHOP ///
+    
+if(message.content === préfix + "Shop underlord"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#f0ff00")
+    .addField("Listes des articles par catégories", "?Parchemin \n ?Armure \n ?Potion \n ?Divers");
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Divers"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#f0ff00")
+    .addField("Il n'y a absolument rien pour le moment @~@, après rien ne vous interdit d'acheter du vide", "9999999 pièces de cuivre");
+    message.channel.sendMessage(help_embed);
+}   
+
+/// ARMURE ///
+/// ARMURE ///
+    
+if(message.content === préfix + "Armure"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Les armures", "La branche mage / ranger ne peu que s'équipper des armures qui offrent du mana, sinon ils auront un malus sur le loot de 25%. Et inversement pour les combattants et les voleurs")
+    .addField("Armure qui augmente les HP", "?Armure HP")
+    .addField("Armure qui augmente le capacité de mana", "?Armure mana")
+    .addField("Comment s'équiper d'une armure ?", "Après avoir fait la commande de l'armure que vous désirez, retirez la somme que vous avez payé depuis votre inventaire. Vous pouvez l'équiper quand vous voulez à condition de faire une action RP")
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Armure HP"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Armure en cuir souple / level 5 minimum", "Prix : 100 pièces de cuivre \n ?Armure en cuir souple")
+    .addField("Armure simple avec cotte de mailles / level 25minimum", "???? \n Armure simple avec cotte de mailles")
+    .addField("Armure en plate / level 40minimum", "???? \n Armure en plate")
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Armure en cuir souple"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField(":shield:  Armure en cuir souple", "HP:" + y + ":hearts: ")
+    .setColor("#0009ff")
+    message.channel.sendMessage(y);
+}
+
+
+
+if(message.content === préfix + "Armure mana"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Armure en tissus fin / level 5 minimum", "Prix : 100 pièces de cuivre \n ?Armure en tissus fin")
+    .addField("Armure de sorcier traditionnel / level 25 minimum", "??? \n ?Armure de sorcier traditionnel")
+    .addField("Armure de sorcier reconnu / level 40 minimum", "???? \n ?Armure de sorcier reconnu")
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Achat : armure en tissus fin"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField(":shield:  Armure en tissus fin", "Mana:" + y + ":sparkles: ")
+    .setColor("#0009ff")
+    message.channel.sendMessage(y);
+}
+
+/// Parchemin ///
+/// Parchemin ///
+
+if(message.content === préfix + "Parchemin"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Parchemin", "Ils sont tous à utilisation unique")
+    .addField("Liste des parchemins", "?Parchemin de fuite \n ?Parchemin d'invocation \n ?Parchemin de message")
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Parchemin de fuite"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Parchemin de fuite simple", "60 pièces de cuivre \n ?Parchemin de fuite simple")
+    .addField("Parchemin de fuite", "??? \n  ?Parchemin de fuite normal")
+    .addField("Parchemin de fuite haut", "??? \n ?Parchemin de fuite haut")
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "Parchemin de fuite simple") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 70)
+    var result = new Discord.RichEmbed() 
+    .setColor("#00ff37")
+    .setAuthor("Le parchemin vous téléporte à votre domicile")
+    else if (result < 101)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Le parchemin ne fonctionne pas")
+    message.channel.send(result);
+
+}
+if(message.content === préfix + "Parchemin de fuite normal") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 80)
+    var result = new Discord.RichEmbed() 
+    .setColor("#00ff37")
+    .setAuthor("Le parchemin vous téléporte à votre domicile")
+    else if(result < 101)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Le parchemin ne fonctionne pas")
+    message.channel.send(result);
+
+}
+if(message.content === préfix + "Parchemin de fuite haut") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 90)
+    var result = new Discord.RichEmbed() 
+    .setColor("#00ff37")
+    .setAuthor("Le parchemin vous téléporte à votre domicile")
+    else if(result < 101)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Le parchemin ne fonctionne pas")
+    message.channel.send(result);
+
+}     
+
+
+if(message.content === préfix + "Parchemin d'invocation"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("?Invocation divine", " ??? ")
+    .addField("?Invocation d'ange", " ??? ")
+    .addField("[§]", "Hep hep hep, on le fera plus tard, calmos sur les invocations, tu es pas dans pokemon à ce que je sache")
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}
+
+/// POTION ///
+/// POTION ///
+/// POTION ///
+
+if(message.content === préfix + "Potion"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Liste des potions", "?Potion HP et ?Potion mana")
+    .addField("Note à savoir", "Vous ne pouvez pas utiliser une potion et en même temps attaque")
+    .setColor("#f0ff00")
+    .setFooter("Même si c'est pas de l'alcool, faite attention à ne pas trop en boire, sa donne des douleurs d'estomac")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Potion HP"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Potion d'HP faible'", "40 pièces de cuivre")
+    .addField("Potion d'HP", "???")
+    .addField("Potion d'HP haute", "???")
+    .setFooter("Les potions d'HP")
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "Potion d'HP faible"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Créer par la force de simples mages après de nombreuse tentative... ", y)
+    .setColor("#ff0000")
+    .setImage("https://media.discordapp.net/attachments/542028605874634752/542053551619440640/568061fd015a05580add57ed64de815e.png")
+    message.channel.sendMessage(y);
+}
+
+
+if(message.content === préfix + "Potion mana"){
+    var help_embed = new Discord.RichEmbed()
+    .addField("Potion de mana faible", "35 pièces de bronze")
+    .addField("Potion de mana", "100 pièces de bronze" + " \n 10 pièces d'argent")
+    .addField("Potion de mana haute", "300 pièces de bronze" + "\n 30 pièces d'argent" + "\n 10 pièces d'or   ")
+    .setFooter("Les potions de mana")
+    .setColor("#f0ff00")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Potion de mana faible"){
+    var help_embed = new Discord.RichEmbed()
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(70)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Créer par la force de simples mages après de nombreuse tentative... ", y)
+    .setColor("#00ffe7")
+    .setImage("https://media.discordapp.net/attachments/542028605874634752/542053261130334228/da66dd28623e31be7cd6ff36e7a849ae.png?width=404&height=585")
+    message.channel.sendMessage(y);
+}
+
