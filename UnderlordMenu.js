@@ -492,4 +492,68 @@ if(message.content === préfix + "Blocage rapide"){
 /// Coups spéciaux race palier 1 ///
 /// Coups spéciaux race palier 1 ///
 
+if(message.content === préfix + "CS Humain"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .addField("Liste des coups spéciaux", "lvl 10 : ?Sainte bénédiction \n lvl 30 : ?Multi classe \n lvl 40 : Réanimation")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "CS Vampire"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#dc322f")
+    .addField("Liste des coups spéciaux", "lvl 10 : ?Drain de vie \n lvl 15 : ?Drain de vie 2 \n lvl 20 : ?Drain de vie 3 \n lvl 25 : ?Drain de vie 4 + ?Blocage surhumain \n lvl 30 : ?Drain de vie 5 \n lvl 35 : ?Drain de vie 6 \n lvl 40 : ?Drain de vie 7 + ?Transformation vampirique \n lvl 40 : ?Drain de vie 8")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "CS Automaton"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#7c7c70")
+    .addField("Liste des coups spéciaux", "lvl 10 : ?Magic gun \n lvl 20 : ?Magic gun 2 (si vous avez prit la classe archer) \n lvl 25 : ?Réparation automatique \n lvl 35 : ?Magic gun 3 (si vous avez prit la classe automaton) \n lvl 40: Tire pleine puissance")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "CS Liche"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#a65fe2")
+    .addField("Liste des coups spéciaux", "lvl 10 : ?Invocation mini squelette \n lvl 20 : ?Invocation mini squelette 2 \n lvl 30 : ?Coquille squelettique \n lvl 35 : ?Invocation mini squelette 3 \n lvl 40 : ?Cimetiere ambulant")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "CS Lézard"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#20ff00")
+    .addField("Liste des coups spéciaux", "lvl 10 : ?écailles renforcées \n lvl 30 : ?Vous obtenez 300HP \n lvl 40 : ?La survie ou la mort")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "CS Elf"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#90c830")
+    .addField("Liste des coups spéciaux", "lvl 10 : ?Soins de la nature \n lvl 30 : ?Mana de la nature \n lvl 40 : ?Baiser de mère nature")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "CS Nymphe"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#81b4bc")
+    .addField("Liste des coups spéciaux", "lvl 10 : ?Appell de la nature \n lvl 30 : ?Connaissance onirique \n lvl 40 : ?Mimétisme élémentaire")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "CS Démon"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#20ff00")
+    .addField("Liste des coups spéciaux", "lvl 10 : ?Vague négative \n lvl 30 : ?Saignement démoniaque \n lvl 40 : ?Transformation démoniaque")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "CS Beastman"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#a94329")
+    .addField("Liste des coups spéciaux", "lvl 10 : ?Violente morsure \n lvl 20 : ?Violente morsure 2 \n lvl 25 : ?Regarde féroce \n lvl 35 : ?Violente morsure 3 \n lvl 40 : Appelle à la meute")
+    message.channel.sendMessage(help_embed);
+}
 
