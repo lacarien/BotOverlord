@@ -541,20 +541,24 @@ if(message.content === préfix + "Potion de mana faible"){
 
 
 
+var number = NOMBRE 
+NOMBRE = parseFloat(message.content)
 
-if(Number = message.content - préfix -"test"){
+if(message.content === préfix + "Test " + NOMBRE){
+    NOMBRE = parseFloat(message.content)
     var y = new Discord.RichEmbed()
-    if(Number < 3)
+    if(NOMBRE < 3)
     var y = new Discord.RichEmbed()
     .setTitle("Premier")
     .setColor("#00ffe7")
-    else if(Number < 10)
+    else if(NOMBRE < 10)
     var y = new Discord.RichEmbed()
     .setTitle("Deuxième")
-    else if(Number < 15)
+    else if(NOMBRE < 15)
     var y = new Discord.RichEmbed()
     .setTitle("Deuxième")
     message.channel.sendMessage(y);
 }
+
 
 
