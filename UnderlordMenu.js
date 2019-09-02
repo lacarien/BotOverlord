@@ -449,13 +449,22 @@ if(message.content === préfix + "R Blocage simple"){
 }
 
 if(message.content === préfix + "Ranger ultime"){
-    var min = Math.floor(Math.min(55));
+    var min = Math.floor(Math.min(60));
     var max = Math.floor(Math.max(80)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#ff8b00")
-    .addField("Vous effectuez un tir parfait(-80 de mana)", ":crossed_swords: "+ y)
+    .addField("Vous effectuez un tir parfait(-70 de mana)", ":crossed_swords: "+ y)
     .setImage("https://media.giphy.com/media/uUl8lkfxMYLi5q9wp8/giphy.gif")
+    message.channel.send(y);
+}
+if(message.content === préfix + "Tire rapide"){
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(60)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous tentez de lui envoyer une fleche rapide en direction de son torse, cherchant à viser un point vital(-50 de mana)", ":bow_and_arrow: "+y)
+    .setImage("https://cdn.suwalls.com/wallpapers/fantasy/archer-girl-25615-1920x1080.jpg")
     message.channel.send(y);
 }
 
