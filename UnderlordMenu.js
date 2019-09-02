@@ -35,7 +35,7 @@ if(message.content === préfix + "Liche"){
     .setColor("#a65fe2")
     .addField("Liche", "Vous êtes une liche,  un ancien mage ayant tout sacrifié pour obtenir la vie éternelle par un état de ''Mort-vie''. Vous restez totalement conscient et surtout très intelligent.")
     .addField("Bonus", "Vous avez un bonus de 10% de mana et vous êtes immunisé au poison et au saignement (simple calcule rapide à faire, n'hésitez pas à contacter le staff si vous y arrivez pas il n'y a aucune honte !)")
-    .addField("Malus", "Vous avez un roll de -40 en résistance physique et si vous prenez une autre classe que mage vous subirez un malus de -20% d'HP")
+    .addField("Malus", "Vous avez un roll de -40 en résistance physique et si vous prenez une autre classe que mage vous subirez un malus de -20% d'HP. Les sorts de soins vous infliges des dégats multipliés par 1.5")
     .addField("Coups spéciaux", "?CS Liche")
     .setImage("https://i.imgur.com/ZaA9j6e.jpg")
     message.channel.sendMessage(help_embed);
