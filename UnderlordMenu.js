@@ -540,17 +540,22 @@ if(message.content === préfix + "Potion de mana faible"){
 }
 
 
-if(message.content === préfix + "Test " + Number){
+
+var Number = S
+
+if(message.content === préfix + "Test " + S){
     var y = new Discord.RichEmbed()
-    if(Number < 3)
+    if(S < 3)
     var y = new Discord.RichEmbed()
     .setTitle("Premier")
     .setColor("#00ffe7")
-    else if(Number < 10)
+    else if(S < 10)
     var y = new Discord.RichEmbed()
     .setTitle("Deuxième")
-    else if(Number < 15)
+    else if(S < 15)
     var y = new Discord.RichEmbed()
     .setTitle("Deuxième")
     message.channel.sendMessage(y);
 }
+
+
