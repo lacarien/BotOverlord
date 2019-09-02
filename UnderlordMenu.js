@@ -578,7 +578,7 @@ if(message.content === préfix + "Drain de vie"){
     var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var w = new Discord.RichEmbed()
     .setColor("#dc322f")
-    .addField("Les points de dégâts que vous infligez vous font également régénérer de la santé (-40 Mana)", w)
+    .addField("Les points de dégâts que vous infligez vous font également régénérer de la santé (-40 Mana et Cooldown : une fois par combat)", w)
     .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
     message.channel.send(w);
 }
@@ -589,7 +589,7 @@ if(message.content === préfix + "Drain de vie 2"){
     var w = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var w = new Discord.RichEmbed()
     .setColor("#dc322f")
-    .addField("Les points de dégâts que vous infligez vous font également régénérer de la santé (-50 Mana)", w)
+    .addField("Les points de dégâts que vous infligez vous font également régénérer de la santé (-50 Mana et Cooldown : une fois par combat)", w)
     .setImage("https://media.giphy.com/media/1yMcjoBnar5FjzguDY/giphy.gif")
     message.channel.send(w);
 }
@@ -600,7 +600,7 @@ if(message.content === préfix + "Magic gun"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#7c7c70")
-    .addField("Vous pouvez uniquement utiliser cette compétence à longue porté. Vous visez un point vital et infligez de lourd dégats(-60 de mana)", ":gun: "+y)
+    .addField("Vous pouvez uniquement utiliser cette compétence à longue porté. Vous visez un point vital et infligez de lourd dégats(-60 de mana et Cooldown : une fois par combat)", ":gun: "+y)
     .setImage("https://media.giphy.com/media/vgvVcpHvIEjO9yPQqg/giphy.gif")
     message.channel.send(y);
 }
@@ -608,7 +608,7 @@ if(message.content === préfix + "Magic gun"){
 if(message.content === préfix + "Invocation mini squelette"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#a65fe2")
-    .setDescription("Vous invoquez un mini squelette qui se place devant vous en première ligne (-50 mana)")
+    .setDescription("Vous invoquez un mini squelette qui se place devant vous en première ligne (-50 mana et Cooldown : une fois par combat)")
     .addField("HP", "60")
     .addField("Attaque", "?ms attaque")
     .addField("Défense", "?ms défense")
@@ -639,14 +639,14 @@ if(message.content === préfix + "écailles renforcées"){
     var y = new Discord.RichEmbed()
     .setColor("#859900")
     .setImage("http://33.media.tumblr.com/eb728f63a9481148b5432b7bdc343a86/tumblr_neantpDeML1su5akfo2_1280.jpg")
-    .addField("Vous diminuez les dégats de 25% pendant 3 tours(ce tours est compris dedans (-50 mana)). Vous avez juste à faire **Dégats prit X 0.75**", ":shield: "+y)
+    .setTitle(":shield: Vous diminuez les dégats de 25% pendant 3 tours(ce tours est compris dedans (-50 mana et Cooldown : une fois par combat)). Vous avez juste à faire **Dégats prit X 0.75**")
     message.channel.send(y);
 }
 
 if(message.content === préfix + "Soins de la nature"){
     var y = new Discord.RichEmbed()
     .setColor("#90c830")
-    .addField("Vous rénérez 50% de votre santé ou celle d'un alliée graçe à la nature qui vous entoures. Si ce dernier a au dessus de 1000 HP alors cela régène 25% d'HP", y)
+    .setTitle(":heart: Vous rénérez 50% de votre santé ou celle d'un alliée graçe à la nature qui vous entoures. Si ce dernier a au dessus de 1000 HP alors cela régène 25% d'HP (Cooldown : 24h)")
     .setImage("https://www.homewallmurals.co.uk/ekmps/shops/allwallpapers/images/vlies-wallpaper-mural-green-forest-10112-[2]-27940-p.jpg")
     message.channel.send(y);
       
@@ -656,7 +656,7 @@ if(message.content === préfix + "Appell à la nature"){
     var y = new Discord.RichEmbed()
     .setColor("#81b4bc")
     .setImage("http://images3.wikia.nocookie.net/__cb20110531165556/bestiaire-dofus/fr/images/a/a0/La_bloqueuse.jpg")
-    .addField("Invocation (-80 mana)", "Vous invoquez une petite bouboule de mère nature qui se tue en un coups et qui est en deuxième ligne. Vous pouvez choisir de passer en première ligne pour la protéger si vous êtes seul.")
+    .addField("Invocation (-80 mana)", "Vous invoquez une petite bouboule de mère nature qui se tue en un coups et qui est en deuxième ligne. Vous pouvez choisir de passer en première ligne pour la protéger si vous êtes seul (Cooldown : une fois par combat)")
     .addField("Attaque", "?Défense de bouboule")
     message.channel.sendMessage(y); }
       
@@ -676,7 +676,7 @@ if(message.content === préfix + "Défense de bouboule"){
 if(message.content === préfix + "Vague négative"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#20ff00")
-    .addField("Vous diminuez la défense ennnemie de 25% pendant 3 tours(ce tours est compris dedans (-50 mana)). Vous avez juste à faire **Dégats envoyé X 1.25**", ":skull_crossbones:  "+y)
+    .addField("Vous diminuez la défense ennnemie de 25% pendant 3 tours(ce tours est compris dedans (-50 mana et Cooldown : une fois par combat)). Vous avez juste à faire **Dégats envoyé X 1.25**", ":skull_crossbones:  "+y)
     .setImage("https://www.journaldugeek.com/wp-content/blogs.dir/1/files/2017/05/ETD-1.png")
     message.channel.sendMessage(help_embed);
 }
@@ -686,7 +686,7 @@ if(message.content === préfix + "Violente morsure"){
     var max = Math.floor(Math.max(60)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
-    .addField("Vous donnez un gros coups de griffe qui sonne votre ennemie l'empêchant d'attaquer(-60 de mana)", y)
+    .addField("Vous donnez un gros coups de griffe qui sonne votre ennemie l'empêchant d'attaquer(-60 de mana et Cooldown : une fois par combat)", y)
     .setColor("#a94329")
     .setImage("https://cache.desktopnexus.com/thumbseg/1616/1616662-bigthumbnail.jpg")
     message.channel.send(y);
