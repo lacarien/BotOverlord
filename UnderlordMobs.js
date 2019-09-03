@@ -58,7 +58,7 @@ if(message.content === préfix + "écureuil attaque"){
     .setColor("#0a6930")
         else if(result < 101)
     var y = new Discord.RichEmbed()
-    .setColor("#0a69304")
+    .setColor("#0a6930")
     .addField("L'écureuil vole en l'air et vous craches dessus. Il est intouchable au prochain tours", ":dagger: " +y)
     message.channel.sendMessage(y);
 }
@@ -69,7 +69,7 @@ if(message.content === préfix + "écureuil défense"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("L'écureuil étant probablement un atardé ne se défendait pas, préférant hurler comme un dégénéré", ":shield: " +y)
-    .setColor("#0a69304")
+    .setColor("#0a6930")
     message.channel.send(y);
 }
 
@@ -122,7 +122,6 @@ if(message.content === préfix + "BF défense"){
     var max = Math.floor(Math.max(15)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
-        if(result < 90)
     var y = new Discord.RichEmbed()
     .addField("Le beastman réduit les dégats",":shield: " + y)
     .setColor("#a14d00")
@@ -134,7 +133,11 @@ if(message.content === préfix + "BF attaque"){
     var max = Math.floor(Math.max(25)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
-    .addField("L'écureuil étant probablement un atardé ne se défendait pas, préférant hurler comme un dégénéré", ":shield: " +y)
+    .addField("Le Beastman utilise toute ses forces pour vous envoyer une lance à toute vitesse", ":shield: " +y)
+    .setColor("#0a69304")
+    if(result < 90)
+    var y = new Discord.RichEmbed()
+    .addField("Le Beastman vous donnes un coups de griffe", ":shield: " + y)
     .setColor("#0a69304")
     message.channel.send(y);
 }
