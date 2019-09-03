@@ -144,7 +144,7 @@ if(message.content === préfix + "Voleur"){
     .addField("Voleur", "Vous êtes une classe à faible HP mais qui fait de lourd dégats")
     .addField("Evolution lvl 15", "?Assassin")
     .addField("Liste d'attaque", "?Attaque voleur")
-    .addField("Bonus passifs", "?Passif voleur")
+    .addField("Bonus passifs", "?Passifs voleur")
     .setImage("https://vignette.wikia.nocookie.net/hai-to-gensou-no-grimgal/images/0/0c/Haruhiro%27s_anime_gallery.jpg/revision/latest/zoom-crop/width/320/height/320?cb=20160518071825")
     message.channel.sendMessage(help_embed);
 }
@@ -155,7 +155,7 @@ if(message.content === préfix + "Ranger"){
     .addField("Ranger", "Vous êtes une classe qui attaque à distance faisant de gros dégats")
     .addField("Evolution lvl 15", "?Archer")
     .addField("Liste d'attaque", "?Attaque ranger")
-    .addField("Bonus passifs", "?Passif ranger")
+    .addField("Bonus passifs", "?Passifs ranger")
     .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/5/59/Overlord_EP07_015.png/revision/latest?cb=20150822091615")
     message.channel.sendMessage(help_embed);
 }
@@ -167,7 +167,7 @@ if(message.content === préfix + "Mage"){
     .addField("Mage", "Vous avez 20HP en plus")
     .addField("Evolution lvl 15", "?Sorcier \n Les Nymphes et les Elfs peuvent evoluer en ?Druide")
     .addField("Liste d'attaque", "?Attaque mage")
-    .addField("Bonus passifs", "?Passif mage")
+    .addField("Bonus passifs", "?Passifs mage")
     .setImage("https://static.zerochan.net/Evileye.%28Overlord%29.full.2317125.png")
     message.channel.sendMessage(help_embed);
 }
