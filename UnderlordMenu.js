@@ -121,7 +121,7 @@ if(message.content === préfix + "Race underlord"){
 if(message.content === préfix + "Classe underlord"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ffffff")
-    .addField("Liste des races", "?Humain \n ?Vampire \n ?Beastman \n ?Démon \n ?Nymphe \n ?Elf \n ?Automaton \n ?Lézard \n Liche")
+    .addField("Liste des classes du lvl 1 à 15", "?Combattant \ ?Ranger \n ?Voleur \n ?Mage")
     message.channel.sendMessage(help_embed);
 }
 
