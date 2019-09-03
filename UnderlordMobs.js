@@ -138,7 +138,7 @@ if(message.content === préfix + "BF attaque"){
     if(result < 90)
     var y = new Discord.RichEmbed()
     .addField("Le Beastman vous donnes un coups de griffe", ":shield: " + y)
-    .setColor("#0a69304")
+    .setColor("#0a6930")
     message.channel.send(y);
 }
 
