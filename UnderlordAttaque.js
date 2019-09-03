@@ -94,7 +94,7 @@ if(message.content === préfix + "Soins de la nature"){
       
 }  
 
-if(message.content === préfix + "Appel à la nature"){
+if(message.content === préfix + "Appell de la nature"){
     var y = new Discord.RichEmbed()
     .setColor("#81b4bc")
     .setImage("http://images3.wikia.nocookie.net/__cb20110531165556/bestiaire-dofus/fr/images/a/a0/La_bloqueuse.jpg")
