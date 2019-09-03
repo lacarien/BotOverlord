@@ -98,7 +98,7 @@ if(message.content === préfix + "Appell à la nature"){
     var y = new Discord.RichEmbed()
     .setColor("#81b4bc")
     .setImage("http://images3.wikia.nocookie.net/__cb20110531165556/bestiaire-dofus/fr/images/a/a0/La_bloqueuse.jpg")
-    .addField("Invocation (-80 mana)", "Vous invoquez une petite bouboule de mère nature qui se tue en un coups et qui est en deuxième ligne. Vous pouvez choisir de passer en première ligne pour la protéger si vous êtes seul (Cooldown : une fois par combat)")
+    .addField("Invocation (-60 mana)", "Vous invoquez une petite bouboule de mère nature qui se tue en un coups et qui est en deuxième ligne. Vous pouvez choisir de passer en première ligne pour la protéger si vous êtes seul (Cooldown : une fois par combat)")
     .addField("Attaque", "?Défense de bouboule")
     message.channel.sendMessage(y); }
       
@@ -264,7 +264,7 @@ if(message.content === préfix + "V Blocage simple"){
     message.channel.send(y);
 }
 
-if(message.content === préfix + "Coup bas"){
+if(message.content === préfix + "Coups bas"){
         
     var min = Math.floor(Math.min(30));
    var max = Math.floor(Math.max(40)); 
