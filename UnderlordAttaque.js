@@ -259,7 +259,7 @@ if(message.content === préfix + "V Blocage simple"){
     var max = Math.floor(Math.max(10)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
-    .addField("Vous executez un blocage magique de faible rang et réussisez à bloquer", ":shield: " + y)
+    .addField("Vous bloquez l'attaque avec votre dague", ":shield: " + y)
     .setImage("https://i.pinimg.com/originals/77/1f/13/771f13c36fa5bcb8847b285508f5e8c5.jpg")
     message.channel.send(y);
 }
@@ -320,7 +320,7 @@ if(message.content === préfix + "R Blocage simple"){
     var max = Math.floor(Math.max(10)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
-    .addField("Vous executez un blocage magique de faible rang et réussisez à bloquer", ":shield: " + y)
+    .addField("Vous essayez de bloquer l'attaque du mieux que vous pouvez", ":shield: " + y)
     .setImage("https://wallpapercave.com/wp/wp1954538.jpg")
     message.channel.send(y);
 }
