@@ -64,8 +64,8 @@ if(message.content === préfix + "écureuil attaque"){
 }
 
 if(message.content === préfix + "écureuil défense"){
-    var min = Math.floor(Math.min(0));
-    var max = Math.floor(Math.max(5)); 
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(10)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("L'écureuil étant probablement un atardé ne se défendait pas, préférant hurler comme un dégénéré", ":shield: " +y)
@@ -129,8 +129,8 @@ if(message.content === préfix + "BF défense"){
 }
 
 if(message.content === préfix + "BF attaque"){
-    var min = Math.floor(Math.min(20));
-    var max = Math.floor(Math.max(25)); 
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(30)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Le Beastman utilise toute ses forces pour vous envoyer une lance à toute vitesse", ":dagger: " +y)
