@@ -134,11 +134,11 @@ if(message.content === préfix + "BF attaque"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Le Beastman utilise toute ses forces pour vous envoyer une lance à toute vitesse", ":shield: " +y)
-    .setColor("#0a69304")
+    .setColor("#a14d00")
     if(result < 90)
     var y = new Discord.RichEmbed()
-    .addField("Le Beastman vous donnes un coups de griffe", ":shield: " + y)
-    .setColor("#0a69304")
+    .addField("Le Beastman vous donnes un coups de griffe", ":dagger:  " + y)
+    .setColor("#a14d00")
     message.channel.send(y);
 }
 
