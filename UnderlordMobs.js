@@ -22,7 +22,7 @@ if(message.content === préfix + "M1 écureuil"){
     var max = Math.floor(Math.max(3)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var mins = Math.floor(Math.min(5));
-    var maxs = Math.floor(Math.max(3)); 
+    var maxs = Math.floor(Math.max(7)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
@@ -36,8 +36,8 @@ if(message.content === préfix + "M2 écureuil"){
     var min = Math.floor(Math.min(1));
     var max = Math.floor(Math.max(3)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var mins = Math.floor(Math.min(1));
-    var maxs = Math.floor(Math.max(3)); 
+    var mins = Math.floor(Math.min(3));
+    var maxs = Math.floor(Math.max(5)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
@@ -90,8 +90,8 @@ if(message.content === préfix + "M1 beastman"){
     var min = Math.floor(Math.min(2));
     var max = Math.floor(Math.max(4)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var mins = Math.floor(Math.min(4));
-    var maxs = Math.floor(Math.max(8)); 
+    var mins = Math.floor(Math.min(6));
+    var maxs = Math.floor(Math.max(10)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
@@ -105,8 +105,8 @@ if(message.content === préfix + "M2 beastman"){
     var min = Math.floor(Math.min(2));
     var max = Math.floor(Math.max(4)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var mins = Math.floor(Math.min(2));
-    var maxs = Math.floor(Math.max(4)); 
+    var mins = Math.floor(Math.min(4));
+    var maxs = Math.floor(Math.max(6)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
@@ -189,8 +189,8 @@ if(message.content === préfix + "M1 zonchi"){
     var min = Math.floor(Math.min(3));
     var max = Math.floor(Math.max(5)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var mins = Math.floor(Math.min(5));
-    var maxs = Math.floor(Math.max(9)); 
+    var mins = Math.floor(Math.min(7));
+    var maxs = Math.floor(Math.max(11)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
@@ -204,8 +204,8 @@ if(message.content === préfix + "M2 zonchi"){
     var min = Math.floor(Math.min(3));
     var max = Math.floor(Math.max(5)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var mins = Math.floor(Math.min(2));
-    var maxs = Math.floor(Math.max(4)); 
+    var mins = Math.floor(Math.min(4));
+    var maxs = Math.floor(Math.max(6)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
@@ -219,8 +219,8 @@ if(message.content === préfix + "M3 zonchi"){
     var min = Math.floor(Math.min(3));
     var max = Math.floor(Math.max(5)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var mins = Math.floor(Math.min(1));
-    var maxs = Math.floor(Math.max(3)); 
+    var mins = Math.floor(Math.min(3));
+    var maxs = Math.floor(Math.max(5)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
@@ -262,8 +262,8 @@ if(message.content === préfix + "M1 golemo"){
     var min = Math.floor(Math.min(4));
     var max = Math.floor(Math.max(6)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var mins = Math.floor(Math.min(8));
-    var maxs = Math.floor(Math.max(11)); 
+    var mins = Math.floor(Math.min(10));
+    var maxs = Math.floor(Math.max(13)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
@@ -277,8 +277,8 @@ if(message.content === préfix + "M2 golemo"){
     var min = Math.floor(Math.min(4));
     var max = Math.floor(Math.max(6)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var mins = Math.floor(Math.min(3));
-    var maxs = Math.floor(Math.max(5)); 
+    var mins = Math.floor(Math.min(5));
+    var maxs = Math.floor(Math.max(7)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
@@ -292,8 +292,8 @@ if(message.content === préfix + "M3 golemo"){
     var min = Math.floor(Math.min(4));
     var max = Math.floor(Math.max(6)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var mins = Math.floor(Math.min(2));
-    var maxs = Math.floor(Math.max(3)); 
+    var mins = Math.floor(Math.min(4));
+    var maxs = Math.floor(Math.max(6)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
