@@ -347,7 +347,7 @@ if(message.content === préfix + "Plaine") {
 /// GRANDE PLAINE /// 
 
 
-if(message.content === préfix + "Plaine") {
+if(message.content === préfix + "Grande plaine") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 10){
     var result = new Discord.RichEmbed() 
