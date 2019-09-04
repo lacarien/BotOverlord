@@ -177,8 +177,8 @@ if(message.content === préfix + "Blocage simple"){
 }
 
 if(message.content === préfix + "Blocage supérieure"){
-    var min = Math.floor(Math.min(35));
-    var max = Math.floor(Math.max(45)); 
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(25)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Vous executez un blocage supérieure et réussisez à bloquer", ":shield: "+y)
