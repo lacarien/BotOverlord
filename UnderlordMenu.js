@@ -164,7 +164,7 @@ if(message.content === préfix + "Ranger"){
 if(message.content === préfix + "Mage"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00ffe7")
-    .addField("Mage", "Vous avez 20HP en plus")
+    .addField("Mage", "Vous avez 20Mana en plus")
     .addField("Evolution lvl 15", "?Sorcier \n Les Nymphes et les Elfs peuvent evoluer en ?Druide")
     .addField("Liste d'attaque", "?Attaque mage")
     .addField("Bonus passifs", "?Passifs mage")
