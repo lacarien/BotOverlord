@@ -227,7 +227,6 @@ if(message.content === préfix + "Attaque voleur"){
 if(message.content === préfix + "Passifs voleur"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ff0000")
-    .addField("[!] ATTENTION [!]", "Ce système ne fonctionne non pas avec votre level d'XP, mais avec le level de Mee6. Merci")
     .addField("LVL 3", "+10 dans les Roll de discrétion (exemple: s'approcher dans le dos discrétement)")
     .addField("LVL 6", "+10 dans les Roll d'action d'agilité (exemple: esquiver un coup de poings ou escalader un arbre ou autre)")
     .addField("LVL 10", "+10 dans les Roll de discrétion (exemple: s'approcher dans le dos discrétement)")
@@ -237,7 +236,6 @@ if(message.content === préfix + "Passifs voleur"){
 if(message.content === préfix + "Passifs ranger"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#019521")
-    .addField("[!] ATTENTION [!]", "Ce système ne fonctionne non pas avec votre level d'XP, mais avec le level de Mee6. Merci")
     .addField("LVL 3", "+10 dans les Rolls visuelles (exemple: regarder au loin)")
     .addField("LVL 6", "Vous pouvez retrouver les traces de passage d'un joueur d'il y a 6heures (avec un Roll pour la recherche des traces). Mais vous ne pouvez pas encore reconnaitre leur nombre exacte")
     .addField("LVL 10", "+10 dans les Rolls visuelles (exemple: regarder au loin)")
@@ -247,7 +245,6 @@ if(message.content === préfix + "Passifs ranger"){
 if(message.content === préfix + "Passifs mage"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00ffe7")
-    .addField("[!] ATTENTION [!]", "Ce système ne fonctionne non pas avec votre level d'XP, mais avec le level de Mee6. Merci")
     .addField("LVL 3", "Vous pouvez faires apparaitre une boule lumineuse de mana pour vous éclairer dans l'obscurité")
     .addField("LVL 6", "Vous pouvez vous méthamorphoser en humanoîde pendant 30minutes grand max(Si vous subisez des dégats, l'effet disparait)")
     .addField("LVL 10", "Vous pouvez voler en l'air pendant 10minutes grand maximum(Interdit en plein combat)")
@@ -257,7 +254,6 @@ if(message.content === préfix + "Passifs mage"){
 if(message.content === préfix + "Passifs combattant"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#1a00ff")
-    .addField("[!] ATTENTION [!]", "Ce système ne fonctionne non pas avec votre level d'XP, mais avec le level de Mee6. Merci")
     .addField("LVL 3", "+10 dans les Roll d'action de force (exemple: donner un coup de poings)")
     .addField("LVL 6", "Vous avez de bonnes connaissances sur les armures et les armes")
     .addField("LVL 10", "+10 dans les Roll d'action de force (exemple: donner un coup de poings)")
