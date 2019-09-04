@@ -1,4 +1,19 @@
 
+if(message.content === préfix + "Fuite") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 30)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setColor("#1fff00")
+    .setAuthor("Vous fuyez")
+    else if (result < 101)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("La fuite est impossible")
+    message.channel.send(result);
+
+}
+
 /// Attaque des races palier 1 ! ///
 /// Attaque des races palier 1 ! ///
 /// Attaque des races palier 1 ! ///
@@ -259,7 +274,7 @@ if(message.content === préfix + "V Blocage simple"){
     var max = Math.floor(Math.max(10)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
-    .addField("Vous bloquez l'attaque avec votre dague", ":shield: " + y)
+    .addField("Vous executez un blocage magique de faible rang et réussisez à bloquer", ":shield: " + y)
     .setImage("https://i.pinimg.com/originals/77/1f/13/771f13c36fa5bcb8847b285508f5e8c5.jpg")
     message.channel.send(y);
 }
@@ -320,7 +335,7 @@ if(message.content === préfix + "R Blocage simple"){
     var max = Math.floor(Math.max(10)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
-    .addField("Vous essayez de bloquer l'attaque du mieux que vous pouvez", ":shield: " + y)
+    .addField("Vous executez un blocage magique de faible rang et réussisez à bloquer", ":shield: " + y)
     .setImage("https://wallpapercave.com/wp/wp1954538.jpg")
     message.channel.send(y);
 }
