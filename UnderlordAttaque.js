@@ -306,7 +306,7 @@ if(message.content === préfix + "Esquive") {
 /// Ranger ///
 /// Ranger ///
 
-if(message.content === préfix + "Tir à l'arc"){
+if(message.content === préfix + "Tire à l'arc"){
     var min = Math.floor(Math.min(20));
     var max = Math.floor(Math.max(35)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
