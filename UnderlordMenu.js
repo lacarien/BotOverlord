@@ -165,7 +165,7 @@ if(message.content === préfix + "Mage"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00ffe7")
     .addField("Mage", "Vous avez 20Mana en plus")
-    .addField("Evolution lvl 15", "?Sorcier \n Sorcier sombre \n Les Nymphes et les Elfs peuvent evoluer en ?Druide ")
+    .addField("Evolution lvl 15", "?Sorcier \n ?Sorcier sombre \n Les Nymphes et les Elfs peuvent evoluer en ?Druide ")
     .addField("Liste d'attaque", "?Attaque mage")
     .addField("Bonus passifs", "?Passifs mage")
     .setImage("https://static.zerochan.net/Evileye.%28Overlord%29.full.2317125.png")
