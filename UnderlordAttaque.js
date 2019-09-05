@@ -216,8 +216,8 @@ if(message.content === préfix + "M Blocage simple"){
 }
 
 if(message.content === préfix + "Magie simple"){
-    var min = Math.floor(Math.min(20));
-    var max = Math.floor(Math.max(40)); 
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(30)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Vous envoyez un sort de bas rang (-10 mana)", ":sparkles: "+y)
