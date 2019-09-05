@@ -181,7 +181,7 @@ if(message.content === préfix + "Mage"){
 if(message.content === préfix + "Attaque combattant"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#1a00ff")
-    .addField("LVL 1", "?Coup d'épée + ?Blocage simple")
+    .addField("LVL 0", "?Coup d'épée + ?Blocage simple")
     .addField("LVL 7", "?Combattant ultime")
     .addField("LVL 12 si vous voudrez évoluer en tant que chevalier", "?C Coup d'épée")
     .addField("LVL 12 si vous voudrez évoluer en tant que paladin", "?Blocage supérieure")
@@ -191,7 +191,7 @@ if(message.content === préfix + "Attaque combattant"){
 if(message.content === préfix + "Attaque mage"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00ffe7")
-    .addField("LVL 1", "?M Blocage simple + ?Magie simple")
+    .addField("LVL 0", "?M Blocage simple + ?Magie simple")
     .addField("LVL 4", "?Soins de bas rang")
     .addField("LVL 9", "?Mage ultime")
     .addField("LVL 12 si vous voudrez évoluer en tant que Sorcier", "?Sort simple")
@@ -203,7 +203,7 @@ if(message.content === préfix + "Attaque mage"){
 if(message.content === préfix + "Attaque ranger"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#019521")
-    .addField("LVL 1", "?Tire à l'arc + ?R Blocage simple")
+    .addField("LVL 0", "?Tire à l'arc + ?R Blocage simple")
     .addField("LVL 4", "Tire rapide")
     .addField("LVL 9", "?Ranger ultime")
     .addField("LVL 12", "?Blocage rapide")
@@ -213,7 +213,7 @@ if(message.content === préfix + "Attaque ranger"){
 if(message.content === préfix + "Attaque voleur"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ff0000")
-    .addField("LVL 1", "?Coup d'épée + ?V Blocage simple")
+    .addField("LVL 0", "?Coup d'épée + ?V Blocage simple")
     .addField("LVL 4", "?Coups bas")
     .addField("LVL 9", "?Voleur ultime")
     .addField("LVL 12", "?Esquive")
