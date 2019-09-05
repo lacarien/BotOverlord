@@ -157,8 +157,8 @@ if(message.content === préfix + "Combattant ultime"){
     .setColor("#76ff00")
     .addField("Vous régénérez", y)
     message.channel.send(y);
-    var mins = Math.floor(Math.min(20));
-    var maxs = Math.floor(Math.max(40)); 
+    var mins = Math.floor(Math.min(40));
+    var maxs = Math.floor(Math.max(60)); 
     var l = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var l = new Discord.RichEmbed()
     .setColor("#ff8b00")
