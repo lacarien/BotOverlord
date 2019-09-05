@@ -153,7 +153,7 @@ if(message.content === préfix + "Ranger"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#019521")
     .addField("Ranger", "Vous êtes une classe qui attaque à distance faisant de gros dégats")
-    .addField("Evolution lvl 15", "?Archer")
+    .addField("Evolution lvl 15", "?Archer \n ?Arbalétrier")
     .addField("Liste d'attaque", "?Attaque ranger")
     .addField("Bonus passifs", "?Passifs ranger")
     .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/5/59/Overlord_EP07_015.png/revision/latest?cb=20150822091615")
@@ -165,7 +165,7 @@ if(message.content === préfix + "Mage"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00ffe7")
     .addField("Mage", "Vous avez 20Mana en plus")
-    .addField("Evolution lvl 15", "?Sorcier \n Les Nymphes et les Elfs peuvent evoluer en ?Druide")
+    .addField("Evolution lvl 15", "?Sorcier \n Sorcier sombre \n Les Nymphes et les Elfs peuvent evoluer en ?Druide ")
     .addField("Liste d'attaque", "?Attaque mage")
     .addField("Bonus passifs", "?Passifs mage")
     .setImage("https://static.zerochan.net/Evileye.%28Overlord%29.full.2317125.png")
@@ -195,7 +195,8 @@ if(message.content === préfix + "Attaque mage"){
     .addField("LVL 4", "?Soins de bas rang")
     .addField("LVL 9", "?Mage ultime")
     .addField("LVL 12 si vous voudrez évoluer en tant que Sorcier", "?Sort simple")
-    .addField("LVL 12 si vous voudrez évoluer en tant que Sorcier", "?Sort naturel")
+    .addField("LVL 12 si vous voudrez évoluer en tant que Druide", "?Sort naturel")
+    .addField("LVL 12 si vous voudrez évoluer en tant que Sorcier sombre", "?Soins maléfique")
     message.channel.sendMessage(help_embed);
 }
 
