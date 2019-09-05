@@ -133,7 +133,7 @@ if(message.content === préfix + "Combattant"){
     .addField("Combattant", "Vous avez 20HP en plus")
     .addField("Evolution lvl 15", "?Chevalier ou ?Paladin")
     .addField("Liste d'attaque", "?Attaque combattant")
-    .addField("Bonus passifs", "?Passif combattant")
+    .addField("Bonus passifs", "?Passifs combattant")
     .setImage("https://vignette.wikia.nocookie.net/douze-salopards/images/a/ac/Elite-knight-cover_dark-souls_1364x1600_marked.jpg/revision/latest?cb=20171124095832&path-prefix=fr")
     message.channel.sendMessage(help_embed);
 }
