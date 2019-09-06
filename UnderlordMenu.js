@@ -635,7 +635,7 @@ if(message.content === préfix + "Paladin"){
     .addField("Evolution lvl 30", "?Berserk ou ?Champion")
     .addField("Liste d'attaque", "?Attaque paladin")
     .addField("Bonus passifs", "?Passifs paladin")
-    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540975588173676579/1104530.png")
+    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540955169005764671/Screenshot_2019-01-29-09-54-16-1.png")
     message.channel.sendMessage(help_embed);
 }
 
