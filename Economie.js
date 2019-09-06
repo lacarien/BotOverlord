@@ -1,6 +1,6 @@
 //Shop
 
-if(message.content === prefix + "Shop")
+if(message.content === prefix + "Shop dawn of life")
 {
     let Shop = new Discord.RichEmbed()
         .setAuthor("Une fois dans la boutique un vendeur viens vous rejoindre")
