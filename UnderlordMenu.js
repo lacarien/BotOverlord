@@ -353,8 +353,12 @@ if(message.content === préfix + "Divers"){
     message.channel.sendMessage(help_embed);
 }   
 
-/// ARMURE ///
-/// ARMURE ///
+/// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ///
+/// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ///
+/// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ///
+/// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ///
+
+
     
 if(message.content === préfix + "Armure"){
     var help_embed = new Discord.RichEmbed()
@@ -516,9 +520,9 @@ if(message.content === préfix + "Potion d'HP faible"){
 
 if(message.content === préfix + "Potion mana"){
     var help_embed = new Discord.RichEmbed()
-    .addField("Potion de mana faible", "35 pièces de bronze")
-    .addField("Potion de mana", "100 pièces de bronze" + " \n 10 pièces d'argent")
-    .addField("Potion de mana haute", "300 pièces de bronze" + "\n 30 pièces d'argent" + "\n 10 pièces d'or   ")
+    .addField("Potion de mana faible", "40 pièces de cuivre")
+    .addField("Potion de mana", "???")
+    .addField("Potion de mana haute", "???")
     .setFooter("Les potions de mana")
     .setColor("#f0ff00")
     message.channel.sendMessage(help_embed);
@@ -536,6 +540,9 @@ if(message.content === préfix + "Potion de mana faible"){
     message.channel.sendMessage(y);
 }
 
+/// CIBLAGE ///
+/// CIBLAGE ///
+/// CIBLAGE ///
 /// CIBLAGE ///
 
 
@@ -603,5 +610,76 @@ if(message.content === préfix + "Ciblage 7") {
 }
 
 
+/// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ///
+/// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ///
+/// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ///
+/// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ///
+/// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ////// CLASSE PALIER 2 ///
 
+
+if(message.content === préfix + "Chevalier"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .addField("Combattant", "Vous avez 30HP")
+    .addField("Evolution lvl 30", "?Berserk ou ?Champion")
+    .addField("Liste d'attaque", "?Attaque chevalier")
+    .addField("Bonus passifs", "?Passifs chevalier")
+    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540975588173676579/1104530.png")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Paladin"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#150696")
+    .addField("Paladin", "Vous avez 70HP en plus")
+    .addField("Evolution lvl 30", "?Berserk ou ?Champion")
+    .addField("Liste d'attaque", "?Attaque paladin")
+    .addField("Bonus passifs", "?Passifs paladin")
+    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540975588173676579/1104530.png")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Archer"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#019521")
+    .addField("Archer", "Vous êtes l'évolution du Ranger")
+    .addField("Evolution lvl 30", "?Grand archer \n ?Classe automaton (pour les automates)")
+    .addField("Liste d'attaque", "?Attaque archer")
+    .addField("Bonus passifs", "?Passifs archer")
+    .setImage("https://wallup.net/wp-content/uploads/2017/11/23/522460-archer-fantasy_art-748x693.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Arbalétrier"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00db2f")
+    .addField("Arbalétrier", "Vous êtes l'évolution du Ranger mais...Sous une forme un peu plus typé support")
+    .addField("Evolution lvl 30", "?Grand arbalétrier")
+    .addField("Liste d'attaque", "?Attaque arbalétrier")
+    .addField("Bonus passifs", "?Passifs arbalétrier")
+    .setImage("http://s1.1zoom.me/b5739/801/Diablo_III_Hunter_Armor_Crossbow_519914_1920x1080.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Sorcier"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#83fff3")
+    .addField("Sorcier", "Vous êtes un sorcier, suivant la voie des plus grands")
+    .addField("Evolution lvl 30", "?Grand sorcier \n ?Prêtre")
+    .addField("Liste d'attaque", "?Attaque sorcier")
+    .addField("Bonus passifs", "?Passifs sorcier")
+    .setImage("https://static.fnac-static.com/multimedia/Images/FD/Comete/68418/CCP_IMG_ORIGINAL/840839.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Sorcier sombre"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#4e9f98")
+    .addField("Sorcier", "Vous êtes un sorcier sombre, vous ne suivez pas la voie des plus grands...Mais en tout cas il est certain que cela soit une voie qui a déjà été emprunté par quelqu'un ou...D'autres personnes...")
+    .addField("Evolution lvl 30", "?Sorcier obscure \n ?Nécromancien (uniquement pour les liches)")
+    .addField("Liste d'attaque", "?Attaque sorcier sombre")
+    .addField("Bonus passifs", "?Passifs sorcier sombre")
+    .setImage("https://images.alphacoders.com/983/983381.jpg")
+    message.channel.sendMessage(help_embed);
+}
 
