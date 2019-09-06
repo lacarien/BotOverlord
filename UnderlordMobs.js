@@ -64,8 +64,8 @@ if(message.content === préfix + "écureuil attaque"){
 }
 
 if(message.content === préfix + "écureuil défense"){
-    var min = Math.floor(Math.min(5));
-    var max = Math.floor(Math.max(10)); 
+    var min = Math.floor(Math.min(2));
+    var max = Math.floor(Math.max(7)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("L'écureuil étant probablement un atardé ne se défendait pas, préférant hurler comme un dégénéré", ":shield: " +y)
