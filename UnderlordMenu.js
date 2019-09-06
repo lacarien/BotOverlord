@@ -632,7 +632,7 @@ if(message.content === préfix + "Paladin"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#150696")
     .addField("Paladin", "Vous avez 70HP en plus")
-    .addField("Evolution lvl 30", "?Berserk ou ?Champion")
+    .addField("Evolution lvl 30", "?Gardien ou ?Clerc")
     .addField("Liste d'attaque", "?Attaque paladin")
     .addField("Bonus passifs", "?Passifs paladin")
     .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540955169005764671/Screenshot_2019-01-29-09-54-16-1.png")
@@ -675,7 +675,7 @@ if(message.content === préfix + "Sorcier"){
 if(message.content === préfix + "Sorcier sombre"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#4e9f98")
-    .addField("Sorcier", "Vous êtes un sorcier sombre, vous ne suivez pas la voie des plus grands...Mais en tout cas il est certain que cela soit une voie qui a déjà été emprunté par quelqu'un ou...D'autres personnes...")
+    .addField("Sorcie sombre", "Vous êtes un sorcier sombre, vous ne suivez pas la voie des plus grands...Mais en tout cas il est certain que cela soit une voie qui a déjà été emprunté par quelqu'un ou...D'autres personnes...")
     .addField("Evolution lvl 30", "?Sorcier obscure \n ?Nécromancien (uniquement pour les liches)")
     .addField("Liste d'attaque", "?Attaque sorcier sombre")
     .addField("Bonus passifs", "?Passifs sorcier sombre")
