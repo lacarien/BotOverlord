@@ -620,8 +620,8 @@ if(message.content === préfix + "Ciblage 7") {
 if(message.content === préfix + "Chevalier"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#1a00ff")
-    .addField("Combattant", "Vous avez 30HP")
-    .addField("Evolution lvl 30", "?Berserk ou ?Champion")
+    .addField("Chevalier", "Vous avez 30HP")
+    .addField("Evolution lvl 30", "?Berserk(Résérvé pour les démons) ou ?Champion")
     .addField("Liste d'attaque", "?Attaque chevalier")
     .addField("Bonus passifs", "?Passifs chevalier")
     .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540975588173676579/1104530.png")
@@ -632,7 +632,7 @@ if(message.content === préfix + "Paladin"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#150696")
     .addField("Paladin", "Vous avez 70HP en plus")
-    .addField("Evolution lvl 30", "?Gardien ou ?Clerc")
+    .addField("Evolution lvl 30", "?Gardien \n ?Clerc(résérvé aux humains) \n ?Gardien infernal (uniquement pour les démons)")
     .addField("Liste d'attaque", "?Attaque paladin")
     .addField("Bonus passifs", "?Passifs paladin")
     .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540955169005764671/Screenshot_2019-01-29-09-54-16-1.png")
@@ -665,7 +665,7 @@ if(message.content === préfix + "Sorcier"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#83fff3")
     .addField("Sorcier", "Vous êtes un sorcier, suivant la voie des plus grands")
-    .addField("Evolution lvl 30", "?Grand sorcier \n ?Prêtre")
+    .addField("Evolution lvl 30", "?Grand sorcier \n ?Prêtre(impossible pour les liches, les démons et les vampires)")
     .addField("Liste d'attaque", "?Attaque sorcier")
     .addField("Bonus passifs", "?Passifs sorcier")
     .setImage("https://static.fnac-static.com/multimedia/Images/FD/Comete/68418/CCP_IMG_ORIGINAL/840839.jpg")
@@ -683,3 +683,13 @@ if(message.content === préfix + "Sorcier sombre"){
     message.channel.sendMessage(help_embed);
 }
 
+if(message.content === préfix + "Assassin"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .addField("Assassin", "Vous êtes un assassin spécialisé dans...Vous m'avez compris")
+    .addField("Evolution lvl 30", "?Grand assassin (impossible pour les Nymphes et les Elfs) \n ?Ninja")
+    .addField("Liste d'attaque", "?Attaque Assassin")
+    .addField("Bonus passifs", "?Passifs Assassin")
+    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540206387842514985/Screenshot_2019-01-29-09-55-06-1.png")
+    message.channel.sendMessage(help_embed);
+}
