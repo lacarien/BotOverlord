@@ -91,7 +91,7 @@ if(message.content === préfix + "M1 beastman"){
     var max = Math.floor(Math.max(4)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var mins = Math.floor(Math.min(6));
-    var maxs = Math.floor(Math.max(10)); 
+    var maxs = Math.floor(Math.max(12)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
@@ -105,8 +105,8 @@ if(message.content === préfix + "M2 beastman"){
     var min = Math.floor(Math.min(2));
     var max = Math.floor(Math.max(4)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var mins = Math.floor(Math.min(4));
-    var maxs = Math.floor(Math.max(6)); 
+    var mins = Math.floor(Math.min(5));
+    var maxs = Math.floor(Math.max(7)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain du loot :exclamation: ", y + "Pièce(s) de cuivre")
