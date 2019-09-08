@@ -165,7 +165,7 @@ if(message.content === préfix + "Mage"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00ffe7")
     .addField("Mage", "Vous avez 20Mana en plus")
-    .addField("Evolution lvl 15", "?Sorcier \n ?Sorcier sombre \n Les Nymphes et les Elfs peuvent evoluer en ?Druide ")
+    .addField("Evolution lvl 15", "?Sorcier \n ?Sorcier sombre \n Les Nymphes et les Elfs peuvent evoluer en ?Druid ")
     .addField("Liste d'attaque", "?Attaque mage")
     .addField("Bonus passifs", "?Passifs mage")
     .setImage("https://static.zerochan.net/Evileye.%28Overlord%29.full.2317125.png")
@@ -672,6 +672,17 @@ if(message.content === préfix + "Sorcier"){
     message.channel.sendMessage(help_embed);
 }
 
+if(message.content === préfix + "Druid"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00d536")
+    .addField("Druide", "Vous êtes un sorcier de la nature, un bon support")
+    .addField("Evolution lvl 30", "?Grand druid")
+    .addField("Liste d'attaque", "?Attaque druid")
+    .addField("Bonus passifs", "?Passifs druid")
+    .setImage("https://images.alphacoders.com/767/thumb-350-767907.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
 if(message.content === préfix + "Sorcier sombre"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#4e9f98")
@@ -693,3 +704,95 @@ if(message.content === préfix + "Assassin"){
     .setImage("https://cdn.discordapp.com/attachments/454694319396356128/540206387842514985/Screenshot_2019-01-29-09-55-06-1.png")
     message.channel.sendMessage(help_embed);
 }
+
+
+/// LISTE DATTAQUE PALLIER 2 ///
+/// LISTE DATTAQUE PALLIER 2 ///
+/// LISTE DATTAQUE PALLIER 2 ///
+/// LISTE DATTAQUE PALLIER 2 ///
+/// LISTE DATTAQUE PALLIER 2 ///
+/// LISTE DATTAQUE PALLIER 2 ///
+
+
+
+if(message.content === préfix + "Attaque chevalier"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .addField("LVL 15", "?Blocage amélioré")
+    .addField("LVL 18", "?Coup multiple")
+    .addField("LVL 22", "?Parade \n ou ?Interception simple")
+    .addField("LVL 25", "?Chevalier ultime")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "Attaque paladin"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .addField("LVL 15", "?P Coup d'épée")
+    .addField("LVL 18", "?Provocation simple")
+    .addField("LVL 22", "?Slash d'érnergie \n ou ?Aura de paladin")
+    .addField("LVL 25", "?Chevalier ultime")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Attaque archer"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#019521")
+    .addField("LVL 15", "?Tir amélioré")
+    .addField("LVL 18", "?Esquive simple")
+    .addField("LVL 20", "?Fuite amélioré")
+    .addField("LVL 22", "?Flèche empoisonné \n ou ?Flèche vifs")
+    .addField("LVL 25", "?Archer ultime")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "Attaque arbalétrier"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00db2f")
+    .addField("LVL 15", "?Tir précis")
+    .addField("LVL 18", "?Esquive rapide")
+    .addField("LVL 20", "?Fuite amélioré")
+    .addField("LVL 22", "?Don de sang \n ?Bandage")
+    .addField("LVL 25", "?Arbalétrier ultime")
+    message.channel.sendMessage(help_embed);
+}
+
+
+if(message.content === préfix + "Attaque sorcier"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#83fff3")
+    .addField("LVL 15", "?Sort simple")
+    .addField("LVL 18", "?Sort de soins")
+    .addField("LVL 20", "?Tornade de flamme \n ou ?Régénération de mana")
+    .addField("LVL 25", "?Sorcier ultime")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Attaque sorcier sombre"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#4e9f98")
+    .addField("LVL 15", "?Sort maléfique")
+    .addField("LVL 18", "?Soins obscure")
+    .addField("LVL 20", "?Sort terrifiant \n ou ?Vague de poison")
+    .addField("LVL 25", "?Sorcier sombre ultime")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Attaque druid"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00d536")
+    .addField("LVL 15", "?Sort naturel")
+    .addField("LVL 18", "?Soins de druid")
+    .addField("LVL 20", "?Soins de la forêt \n ou ?Racine naturel")
+    .addField("LVL 25", "?Druid ultime")
+    message.channel.sendMessage(help_embed);
+}
+
+
+
+
+
+
+
