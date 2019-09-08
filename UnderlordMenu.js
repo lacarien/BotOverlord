@@ -754,7 +754,7 @@ if(message.content === préfix + "Attaque arbalétrier"){
     .addField("LVL 15", "?Tir précis")
     .addField("LVL 18", "?Esquive rapide")
     .addField("LVL 20", "?Fuite amélioré")
-    .addField("LVL 22", "?Don de sang \n ?Bandage")
+    .addField("LVL 22", "?Don de sang \n ou ?Bandage")
     .addField("LVL 25", "?Arbalétrier ultime")
     message.channel.sendMessage(help_embed);
 }
