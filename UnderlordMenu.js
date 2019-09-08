@@ -774,7 +774,7 @@ if(message.content === préfix + "Attaque sorcier sombre"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#4e9f98")
     .addField("LVL 15", "?Sort maléfique")
-    .addField("LVL 18", "?Soins obscure")
+    .addField("LVL 18", "?Vole de mana simple")
     .addField("LVL 20", "?Sort terrifiant \n ou ?Vague de poison")
     .addField("LVL 25", "?Sorcier sombre ultime")
     message.channel.sendMessage(help_embed);
