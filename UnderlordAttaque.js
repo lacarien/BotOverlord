@@ -177,11 +177,24 @@ if(message.content === préfix + "Blocage simple"){
     message.channel.send(y);
 }
 
+
+if(message.content === préfix + "C Coup d'épée"){
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(35)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .addField("Vous lui infligez un coup d'épée puissant qui inflige de lourd dégat",":dagger: "+ y)
+    .setImage("https://images2.alphacoders.com/942/942471.jpg")
+    message.channel.send(y);
+}   
+
 if(message.content === préfix + "Blocage supérieure"){
     var min = Math.floor(Math.min(20));
     var max = Math.floor(Math.max(25)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
+    .setColor("#150696")
     .addField("Vous executez un blocage supérieure et réussisez à bloquer", ":shield: "+y)
     .setImage("https://media.discordapp.net/attachments/499161815549476864/541320990614093825/2530.gif")
     message.channel.send(y);
