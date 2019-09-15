@@ -474,6 +474,19 @@ if(message.content === préfix + "Coup de dague"){
    message.channel.send(y);
 }
 
+if(message.content === préfix + "Soins de bas rang"){
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#4e9f98")
+    .addField("Vous soignez une personne au choix uniquement Démon, vampire, ou bien encore liche, Vous ne pouvez pas blesser un ennemie (-70 mana). Si vous l'utilisez contre un", ":heartpulse: "+y)
+    .setImage("https://images3.alphacoders.com/868/thumb-350-868847.png")
+    message.channel.send(y);
+}
+
+
+
 
 
 
