@@ -1,4 +1,18 @@
 
+if(message.content === préfix + "Fuite") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 30)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setColor("#1fff00")
+    .setAuthor("Vous fuyez")
+    else if (result < 101)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("La fuite est impossible")
+    message.channel.send(result);
+
+}
 
 /// Attaque des races palier 1 ! ///
 /// Attaque des races palier 1 ! ///
@@ -157,8 +171,8 @@ if(message.content === préfix + "Combattant ultime"){
     .setColor("#76ff00")
     .addField("Vous régénérez", y)
     message.channel.send(y);
-    var mins = Math.floor(Math.min(30));
-    var maxs = Math.floor(Math.max(50)); 
+    var mins = Math.floor(Math.min(20));
+    var maxs = Math.floor(Math.max(40)); 
     var l = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var l = new Discord.RichEmbed()
     .setColor("#ff8b00")
@@ -177,24 +191,23 @@ if(message.content === préfix + "Blocage simple"){
     message.channel.send(y);
 }
 
-
 if(message.content === préfix + "C Coup d'épée"){
     var min = Math.floor(Math.min(25));
-    var max = Math.floor(Math.max(35)); 
+    var max = Math.floor(Math.max(45)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#1a00ff")
     .addField("Vous lui infligez un coup d'épée puissant qui inflige de lourd dégat",":dagger: "+ y)
     .setImage("https://images2.alphacoders.com/942/942471.jpg")
     message.channel.send(y);
-}   
+}
+
 
 if(message.content === préfix + "Blocage supérieure"){
     var min = Math.floor(Math.min(20));
     var max = Math.floor(Math.max(25)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
-    .setColor("#150696")
     .addField("Vous executez un blocage supérieure et réussisez à bloquer", ":shield: "+y)
     .setImage("https://media.discordapp.net/attachments/499161815549476864/541320990614093825/2530.gif")
     message.channel.send(y);
@@ -215,7 +228,7 @@ if(message.content === préfix + "M Blocage simple"){
 }
 
 if(message.content === préfix + "Magie simple"){
-    var min = Math.floor(Math.min(25));
+    var min = Math.floor(Math.min(20));
     var max = Math.floor(Math.max(30)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
@@ -319,7 +332,7 @@ if(message.content === préfix + "Esquive") {
 /// Ranger ///
 /// Ranger ///
 
-if(message.content === préfix + "Tire à l'arc"){
+if(message.content === préfix + "Tir à l'arc"){
     var min = Math.floor(Math.min(20));
     var max = Math.floor(Math.max(35)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -368,3 +381,112 @@ if(message.content === préfix + "Blocage rapide"){
     .setImage("https://cdn.discordapp.com/attachments/499161815549476864/541313060917215253/BDci.gif")
     message.channel.send(y);
 }
+
+/// ATTAQUE CLASSE PALIER 2 ///
+/// ATTAQUE CLASSE PALIER 2 ///
+/// ATTAQUE CLASSE PALIER 2 ///
+
+if(message.content === préfix + "P Coup d'épée"){
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(35)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous lui infligez un coup d'épée lent qui inflige", ":dagger: "+y)
+    .setColor("#150696")
+    .setImage("https://media.wizards.com/images/magic/som/factionwars/hotspots/lg/131603d.jpg")
+    message.channel.send(y);
+}
+
+
+
+if(message.content === préfix + "Blocage amélioré"){
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(23)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous executez un blocage supérieure et réussisez à bloquer", ":shield: "+y)
+    .setColor("#1a00ff")
+    .setImage("https://media.discordapp.net/attachments/499161815549476864/541320990614093825/2530.gif")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Sort simple"){
+    var min = Math.floor(Math.min(32));
+    var max = Math.floor(Math.max(45)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#83fff3")
+    .addField("Vous envoyez un sort sur votre adversaire(-30 de Mana)",":sparkles: "+ y)
+    .setImage("https://media.giphy.com/media/2sgF179xV3fH9GW2mJ/giphy.gif")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Sort maléfique"){
+    var min = Math.floor(Math.min(22));
+    var max = Math.floor(Math.max(55)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#4e9f98")
+    .addField("Vous envoyez un sort maléfique sur votre adversaire(-30 de Mana)",":sparkles: "+ y)
+    .setImage("https://fantasyinspiration.com/wp-content/uploads/2011/08/mages-13.jpg")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Sort naturel"){
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(35)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#00d536")
+    .addField("Vous attaquez votre adversaire en faisant apparaitre temporairement une tentacule d'épine qui vient frapper ce dernier (-20 de mana)", ":sparkles: "+y)
+    .setImage("https://stmed.net/sites/default/files/druid-wallpapers-28126-4501005.jpg")
+    message.channel.send(y);
+}
+
+
+if(message.content === préfix + "Tir amélioré"){
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(45)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#019521")
+    .addField("Vous tirez une fleche puissante(-20 de Mana)",":bow_and_arrow: "+ y)
+    .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Coup de dague"){
+        
+    var min = Math.floor(Math.min(30));
+   var max = Math.floor(Math.max(35)); 
+   var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+      var result = Math.floor((Math.random() * 100) +1);
+   if(result < 85)
+   var y = new Discord.RichEmbed()
+   .addField("Vous lui infligé un coup de dague rapide et lui infligé",":dagger: "+ y)
+   .setColor("#ff6000")
+   .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/b/ba/Overlord_II_EP06_097.png/revision/latest?cb=20180216051904")
+   if(result > 85)
+   var y = new Discord.RichEmbed()
+   .setColor("#ff6000")
+   .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup ",":dagger: "+ y)
+   .setImage("https://i.ytimg.com/vi/mmUlK_FAJqI/maxresdefault.jpg")
+   message.channel.send(y);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
