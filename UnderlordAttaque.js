@@ -416,7 +416,7 @@ if(message.content === préfix + "Sort simple"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#83fff3")
-    .addField("Vous envoyez un sort sur votre adversaire(-30 de Mana)",":sparkles: "+ y)
+    .addField("Vous envoyez un sort sur votre adversaire(-15 de Mana)",":sparkles: "+ y)
     .setImage("https://media.giphy.com/media/2sgF179xV3fH9GW2mJ/giphy.gif")
     message.channel.send(y);
 }
@@ -427,7 +427,7 @@ if(message.content === préfix + "Sort maléfique"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#4e9f98")
-    .addField("Vous envoyez un sort maléfique sur votre adversaire(-30 de Mana)",":sparkles: "+ y)
+    .addField("Vous envoyez un sort maléfique sur votre adversaire(-15 de Mana)",":sparkles: "+ y)
     .setImage("https://fantasyinspiration.com/wp-content/uploads/2011/08/mages-13.jpg")
     message.channel.send(y);
 }
@@ -438,7 +438,7 @@ if(message.content === préfix + "Sort naturel"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#00d536")
-    .addField("Vous attaquez votre adversaire en faisant apparaitre temporairement une tentacule d'épine qui vient frapper ce dernier (-20 de mana)", ":sparkles: "+y)
+    .addField("Vous attaquez votre adversaire en faisant apparaitre temporairement une tentacule d'épine qui vient frapper ce dernier (-15 de mana)", ":sparkles: "+y)
     .setImage("https://stmed.net/sites/default/files/druid-wallpapers-28126-4501005.jpg")
     message.channel.send(y);
 }
@@ -466,7 +466,7 @@ if(message.content === préfix + "Coup de dague"){
    .addField("Vous lui infligé un coup de dague rapide et lui infligé",":dagger: "+ y)
    .setColor("#ff6000")
    .setImage("https://vignette.wikia.nocookie.net/overlordmaruyama/images/b/ba/Overlord_II_EP06_097.png/revision/latest?cb=20180216051904")
-   if(result > 85)
+   else if(result < 101)
    var y = new Discord.RichEmbed()
    .setColor("#ff6000")
    .addField("Vous lui infligé un coup de dague rapide, il ne peut pas bloquer le coup ",":dagger: "+ y)
@@ -480,7 +480,7 @@ if(message.content === préfix + "Soins de bas rang"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#4e9f98")
-    .addField("Vous soignez une personne au choix uniquement Démon, vampire, ou bien encore liche, Vous ne pouvez pas blesser un ennemie (-70 mana). Si vous l'utilisez contre un", ":heartpulse: "+y)
+    .addField("Vous soignez une personne au choix uniquement Démon, vampire, ou bien encore liche, Vous ne pouvez pas blesser un ennemie (-50 mana). Si vous l'utilisez contre un", ":heartpulse: "+y)
     .setImage("https://images3.alphacoders.com/868/thumb-350-868847.png")
     message.channel.send(y);
 }
@@ -488,6 +488,61 @@ if(message.content === préfix + "Soins de bas rang"){
 
 
 
+if(message.content === préfix + "Coup multiple"){
+    var min = Math.floor(Math.min(45));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous lui infligez un enchainement d'épée(-40 de mana)", ":crossed_swords:  "+y)
+    .setColor("#1a00ff")
+    .setImage("https://media.discordapp.net/attachments/534758707561496580/541557069506150420/Chevalier_Hish_Hish_lequipe_est_toka.gif")
+    message.channel.send(y);
+}
+
+
+if(message.content === préfix + "Parade"){
+    var result = Math.floor((Math.random() * 100) + 1);
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(50)); 
+    var w = Math.floor(Math.random() * (max - min + 1) ) + min;
+    if(result < 30)
+    var w = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .addField("Vous réussiez la parade et vous lui infligez ", w)
+    .setImage("https://media.giphy.com/media/1yn1R1HrcRiOUuMQ01/giphy.gif")
+    else if(result < 101)
+    var w = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Vous loupez votre parade et subisez tout les dégats")
+    .setImage("http://i.imgur.com/Lpv5HId.jpg")
+    message.channel.send(w);
+}
+
+if(message.content === préfix + "Interception simple") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 30)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setAuthor("Vous interceptez l'attaque et prennez les dégats à la place de votre alliée")
+    .setImage("https://i.pinimg.com/originals/b4/01/59/b401598358b447e2a7add16858192f73.jpg")
+    else if (result < 101)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Vous n'êtes pas assé rapide")
+    message.channel.send(result);
+
+}
+
+if(message.content === préfix + "Provocation simple"){
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(60)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous faites saigner un seul ennemie et celui-ci ne peu pas attaquer un de vos alliées durant le tours(-50 de Mana)", y)
+    .setImage("https://s1.1zoom.me/big3/708/DOTA_2_Chaos_Knight_499941.jpg")
+    .setColor("#150696")
+    message.channel.send(y);
+}
 
 
 
