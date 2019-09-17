@@ -530,7 +530,7 @@ if(message.content === préfix + "Provocation simple"){
     message.channel.send(y);
 }
 
-if(message.content === préfix + "Slash d'érnergie"){
+if(message.content === préfix + "Slash d'énergie"){
     var min = Math.floor(Math.min(25));
     var max = Math.floor(Math.max(35)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
