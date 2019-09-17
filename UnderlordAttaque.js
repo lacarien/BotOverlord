@@ -1,5 +1,6 @@
 
 
+
 /// Attaque des races palier 1 ! ///
 /// Attaque des races palier 1 ! ///
 /// Attaque des races palier 1 ! ///
@@ -397,8 +398,8 @@ if(message.content === préfix + "Blocage amélioré"){
 }
 
 if(message.content === préfix + "Sort simple"){
-    var min = Math.floor(Math.min(32));
-    var max = Math.floor(Math.max(45)); 
+    var min = Math.floor(Math.min(45));
+    var max = Math.floor(Math.max(70)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#83fff3")
@@ -408,8 +409,8 @@ if(message.content === préfix + "Sort simple"){
 }
 
 if(message.content === préfix + "Sort maléfique"){
-    var min = Math.floor(Math.min(22));
-    var max = Math.floor(Math.max(55)); 
+    var min = Math.floor(Math.min(35));
+    var max = Math.floor(Math.max(80)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#4e9f98")
@@ -419,12 +420,12 @@ if(message.content === préfix + "Sort maléfique"){
 }
 
 if(message.content === préfix + "Sort naturel"){
-    var min = Math.floor(Math.min(25));
-    var max = Math.floor(Math.max(35)); 
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(50)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#00d536")
-    .addField("Vous attaquez votre adversaire en faisant apparaitre temporairement une tentacule d'épine qui vient frapper ce dernier (-15 de mana)", ":sparkles: "+y)
+    .addField("Vous attaquez votre adversaire en faisant apparaitre temporairement une tentacule d'épine qui vient frapper ce dernier (-10 de mana)", ":sparkles: "+y)
     .setImage("https://stmed.net/sites/default/files/druid-wallpapers-28126-4501005.jpg")
     message.channel.send(y);
 }
@@ -466,8 +467,41 @@ if(message.content === préfix + "Soins maléfique"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#4e9f98")
-    .addField("Vous soignez une personne au choix uniquement Démon, vampire, ou bien encore liche, Vous ne pouvez pas blesser un ennemie (-50 mana). Si vous l'utilisez contre un", ":heartpulse: "+y)
+    .addField("Vous soignez une personne au choix uniquement Démon, vampire, ou bien encore liche, Vous ne pouvez pas blesser un ennemie (-50 mana)", ":black_heart:  "+y)
     .setImage("https://images3.alphacoders.com/868/thumb-350-868847.png")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Soins obscure"){
+    var min = Math.floor(Math.min(80));
+    var max = Math.floor(Math.max(150)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#4e9f98")
+    .addField("Vous soignez une personne au choix uniquement Démon, vampire, ou bien encore liche, Vous ne pouvez pas blesser un ennemie (-100 mana).", ":black_heart:  "+y)
+    .setImage("https://images3.alphacoders.com/868/thumb-350-868847.png")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Sort de soins"){
+    var min = Math.floor(Math.min(60));
+    var max = Math.floor(Math.max(90)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#4e9f98")
+    .addField("Vous soignez n'importe qui sauf démon, vampire ou bien encore liche, vous infligez des dégats à ces derniers(-70 mana).", ":heartpulse: "+y)
+    .setImage("https://static.tvtropes.org/pmwiki/pub/images/whitemage2_9544.jpg")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Soins de druid"){
+    var min = Math.floor(Math.min(130));
+    var max = Math.floor(Math.max(150)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#00ffe7")
+    .addField("Vous soignez une personne au choix, ou bien vous même grâce à une grande puissance naturel. Ne peu pas être utilisé 2 fois d'affilées(-100 de Mana)", ":sparkling_heart:  "+y)
+    .setImage("https://static.tvtropes.org/pmwiki/pub/images/whitemage2_9544.jpg")
     message.channel.send(y);
 }
 
@@ -562,6 +596,10 @@ if(message.content === préfix + "A Blocage faible"){
     .setColor("#1a00ff")
     message.channel.send(y);
 }
+
+
+
+
 
 
 
