@@ -53,19 +53,19 @@ if(message.content === prefix + "MineurNovice")
                                     if(mine2 >= 0 && mine <= 9)
                                     {
                                          let embed = new Discord.RichEmbed()
-                                             .setColor("#00bf00")
+                                             .setColor("#a4a4a4")
                                              .setDescription("***Vous récoltez 2 minerais de bronze supplémentaire ainsi qu'un minerais de fer***")
                                          message.channel.send(embed);
                                     }else if(mine2 >= 10 && mine <= 24)
                                     {
                                          let embed = new Discord.RichEmbed()
-                                             .setColor("#00bf00")
+                                             .setColor("#a4a4a4")
                                              .setDescription("***Vous récoltez 2 minerais de bronze supplémentaire***")
                                          message.channel.send(embed);
                                     }else if(mine2 >= 25 && mine2 <= 49)
                                     {
                                         let embed = new Discord.RichEmbed()
-                                             .setColor("#00bf00")
+                                             .setColor("#a4a4a4")
                                              .setDescription("***Vous récoltez 1 minerais de bronze supplémentaire***")
                                          message.channel.send(embed);
                                     }else if(mine2 >= 50 && mine2 <= 100)
@@ -115,25 +115,25 @@ if(message.content === prefix + "MineurNovice")
                                        if(mine2 >= 0 && mine2 <= 4)
                                        {
                                             let embed = new Discord.RichEmbed()
-                                                .setColor("#00bf00")
+                                                .setColor("#a4a4a4")
                                                 .setDescription("***Vous récoltez 2 minerais de bronze supplémentaire ainsi qu'un minerais de fer***")
                                             message.channel.send(embed);
                                        }else if(mine2 >= 5 && mine <= 19)
                                        {
                                             let embed = new Discord.RichEmbed()
-                                                .setColor("#00bf00")
+                                                .setColor("#a4a4a4")
                                                 .setDescription("***Vous récoltez 2 minerais de bronze supplémentaire***")
                                             message.channel.send(embed);
                                        }else if(mine2 >= 20 && mine2 <= 54)
                                        {
                                            let embed = new Discord.RichEmbed()
-                                                .setColor("#00bf00")
+                                                .setColor("#a4a4a4")
                                                 .setDescription("***Vous récoltez 1 minerais de bronze supplémentaire***")
                                             message.channel.send(embed);
                                        }else if(mine2 >= 55 && mine2 <= 100)
                                        {
                                             let embed = new Discord.RichEmbed()
-                                                .setColor("#bf0000")
+                                                .setColor("#a4a4a4")
                                                 .setDescription("***La galerie s'éffondre et dans la fuite vous perdez tout vos minerais ainsi que 10% de vos hp***")
                                             message.channel.send(embed);
                                        }
@@ -238,19 +238,19 @@ if(message.content === prefix + "Mineur")
                                     if(mine2 >= 0 && mine <= 9)
                                     {
                                          let embed = new Discord.RichEmbed()
-                                             .setColor("#00bf00")
+                                             .setColor("#a4a4a4")
                                              .setDescription("***Vous récoltez 3 minerais de bronze supplémentaire ainsi que 3 minerais de fer ainsi qu'un minerais d'ébonite***")
                                          message.channel.send(embed);
                                     }else if(mine2 >= 10 && mine <= 29)
                                     {
                                          let embed = new Discord.RichEmbed()
-                                             .setColor("#00bf00")
+                                             .setColor("#a4a4a4")
                                              .setDescription("***Vous récoltez 2 minerais de bronze supplémentaire ainsi que 2 minerais de fer***")
                                          message.channel.send(embed);
                                     }else if(mine2 >= 30 && mine2 <= 59)
                                     {
                                         let embed = new Discord.RichEmbed()
-                                             .setColor("#00bf00")
+                                             .setColor("#a4a4a4")
                                              .setDescription("***Vous récoltez 1 minerais de bronze supplémentaire ainsi qu'un minerais de fer***")
                                          message.channel.send(embed);
                                     }else if(mine2 >= 60 && mine2 <= 100)
@@ -573,7 +573,7 @@ if(message.content === prefix + "Herboriste")
                 if(mine >= 0 && mine <= 14 )
                 {
                     let embed = new Discord.RichEmbed()
-                        .setColor("#00bf00")
+                        .setColor("#31c623")
                         .setDescription("***Vous trouvez et récoltez 2 lys de sang sans le moindre soucis***")
                         .addField(":four_leaf_clover:", "continuer",true)
                         .addField(":x:", "S'arrêter",true)
@@ -597,19 +597,19 @@ if(message.content === prefix + "Herboriste")
                                     if(mine2 >= 0 && mine <= 9)
                                     {
                                          let embed = new Discord.RichEmbed()
-                                             .setColor("#00bf00")
+                                             .setColor("#31c623")
                                              .setDescription("***Vous récoltez 3 lys de sang supplémentaire ainsi que 3 obscurcine et 1 rose des vents***")
                                          message.channel.send(embed);
                                     }else if(mine2 >= 10 && mine <= 29)
                                     {
                                          let embed = new Discord.RichEmbed()
-                                             .setColor("#00bf00")
+                                             .setColor("#31c623")
                                              .setDescription("***Vous récoltez 2 lys de sang supplémentaire ainsi que 2 obscurcine***")
                                          message.channel.send(embed);
                                     }else if(mine2 >= 30 && mine2 <= 59)
                                     {
                                         let embed = new Discord.RichEmbed()
-                                             .setColor("#00bf00")
+                                             .setColor("#31c623")
                                              .setDescription("***Vous récoltez 1 lys de sang supplémentaire ainsi qu'une obscurcine***")
                                          message.channel.send(embed);
                                     }else if(mine2 >= 60 && mine2 <= 100)
@@ -635,7 +635,7 @@ if(message.content === prefix + "Herboriste")
                 }else if (mine >= 15 && mine <= 79)
                 {
                     let embed = new Discord.RichEmbed()
-                        .setColor("#bf0000")
+                        .setColor("#31c623")
                         .setDescription("***Vous récoltez 2 lys de sang après avoir cherché pendant un moment***")
                         .addField(":four_leaf_clover: ", "continuer",true)
                         .addField(":x:", "S'arrêter",true)
@@ -659,19 +659,19 @@ if(message.content === prefix + "Herboriste")
                                        if(mine2 >= 0 && mine2 <= 4)
                                        {
                                             let embed = new Discord.RichEmbed()
-                                                .setColor("#00bf00")
+                                                .setColor("#31c623")
                                                 .setDescription("***Vous récoltez 3 lys de sang supplémentaire ainsi que 3 obscurcine***")
                                             message.channel.send(embed);
                                        }else if(mine2 >= 5 && mine <= 19)
                                        {
                                             let embed = new Discord.RichEmbed()
-                                                .setColor("#00bf00")
+                                                .setColor("#31c623")
                                                 .setDescription("***Vous récoltez 2 lys de sang supplémentaire ainsi que 2 obscurcine***")
                                             message.channel.send(embed);
                                        }else if(mine2 >= 20 && mine2 <= 59)
                                        {
                                            let embed = new Discord.RichEmbed()
-                                                .setColor("#00bf00")
+                                                .setColor("#31c623")
                                                 .setDescription("***Vous récoltez 1 lys de sang supplémentaire ainsi qu'une obscurcine***")
                                             message.channel.send(embed);
                                        }else if(mine2 >= 60 && mine2 <= 100)
