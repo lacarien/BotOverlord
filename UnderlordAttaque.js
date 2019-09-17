@@ -1,6 +1,5 @@
 
 
-
 /// Attaque des races palier 1 ! ///
 /// Attaque des races palier 1 ! ///
 /// Attaque des races palier 1 ! ///
@@ -479,7 +478,7 @@ if(message.content === préfix + "Soins obscure"){
     var y = new Discord.RichEmbed()
     .setColor("#4e9f98")
     .addField("Vous soignez une personne au choix uniquement Démon, vampire, ou bien encore liche, Vous ne pouvez pas blesser un ennemie (-100 mana).", ":black_heart:  "+y)
-    .setImage("https://images3.alphacoders.com/868/thumb-350-868847.png")
+    .setImage("http://image.noelshack.com/fichiers/2014/11/1394467398-monstre-legion-putride.jpg")
     message.channel.send(y);
 }
 
