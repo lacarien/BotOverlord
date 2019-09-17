@@ -339,7 +339,7 @@ if(message.content === préfix + "CS Beastman"){
 /// SHOP ////// SHOP ////// SHOP ////// SHOP ////// SHOP ///
 /// SHOP ////// SHOP ////// SHOP ////// SHOP ////// SHOP ///
     
-if(message.content === préfix + "Shop underlord"){
+/*if(message.content === préfix + "Shop underlord"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#f0ff00")
     .addField("Listes des articles par catégories", "?Parchemin \n ?Armure \n ?Potion \n ?Divers");
@@ -351,7 +351,7 @@ if(message.content === préfix + "Divers"){
     .setColor("#f0ff00")
     .addField("Il n'y a absolument rien pour le moment @~@, après rien ne vous interdit d'acheter du vide", "9999999 pièces de cuivre");
     message.channel.sendMessage(help_embed);
-}   
+} */
 
 /// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ///
 /// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ////// ARMURE ///
@@ -360,7 +360,7 @@ if(message.content === préfix + "Divers"){
 
 
     
-if(message.content === préfix + "Armure"){
+/* if(message.content === préfix + "Armure"){
     var help_embed = new Discord.RichEmbed()
     .addField("Les armures", "La branche mage / ranger ne peu que s'équipper des armures qui offrent du mana, sinon ils auront un malus sur le loot de 25%. Et inversement pour les combattants et les voleurs")
     .addField("Armure qui augmente les HP", "?Armure HP")
@@ -538,8 +538,7 @@ if(message.content === préfix + "Potion de mana faible"){
     .setColor("#00ffe7")
     .setImage("https://media.discordapp.net/attachments/542028605874634752/542053261130334228/da66dd28623e31be7cd6ff36e7a849ae.png?width=404&height=585")
     message.channel.sendMessage(y);
-}
-
+} */
 /// CIBLAGE ///
 /// CIBLAGE ///
 /// CIBLAGE ///
