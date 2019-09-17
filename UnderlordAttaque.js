@@ -537,7 +537,7 @@ if(message.content === préfix + "Slash d'énergie"){
     var y = new Discord.RichEmbed()
     .addField("Vous envoyez un slash d'énergie sur la première rangé (max 3 personnes) avec une attaque non évitable et non blocable (-40 mana)", ":comet:  "+y)
     .setColor("#150696")
-    .setImage("https://tenor.com/Zydm.gif")
+    .setImage("https://tenor.com/view/mikaela-hyakuya-sword-slash-anime-gif-12247182")
     message.channel.send(y);
 }
 
