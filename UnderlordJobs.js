@@ -31,7 +31,7 @@ if(message.content === prefix + "MineurNovice")
                     let embed = new Discord.RichEmbed()
                         .setColor("#a4a4a4")
                         .setDescription("***Vous récoltez 1 minerais sans problème***")
-                        .addField(":gem:", "continuer",true)
+                        .addField(":gem:", "Continuer",true)
                         .addField(":x:", "S'arrêter",true)
                     message.channel.send(embed).then(async message => 
                     {
@@ -93,7 +93,7 @@ if(message.content === prefix + "MineurNovice")
                     let embed = new Discord.RichEmbed()
                         .setColor("#a4a4a4")
                         .setDescription("***Vous récoltez 1 minerais avez quelques difficultés***")
-                        .addField(":gem:", "continuer",true)
+                        .addField(":gem:", "Continuer",true)
                         .addField(":x:", "S'arrêter",true)
                     message.channel.send(embed).then(async message => 
                         {
@@ -216,7 +216,7 @@ if(message.content === prefix + "Mineur")
                     let embed = new Discord.RichEmbed()
                         .setColor("#a4a4a4")
                         .setDescription("***Vous récoltez 2 minerais sans problème***")
-                        .addField(":gem:", "continuer",true)
+                        .addField(":gem:", "Continuer",true)
                         .addField(":x:", "S'arrêter",true)
                     message.channel.send(embed).then(async message => 
                     {
@@ -278,7 +278,7 @@ if(message.content === prefix + "Mineur")
                     let embed = new Discord.RichEmbed()
                         .setColor("#a4a4a4")
                         .setDescription("***Vous récoltez 2 minerais avez quelques difficultés***")
-                        .addField(":gem:", "continuer",true)
+                        .addField(":gem:", "Continuer",true)
                         .addField(":x:", "S'arrêter",true)
                     message.channel.send(embed).then(async message => 
                         {
@@ -398,7 +398,7 @@ if(message.content === prefix + "HerboristeNovice")
                     let embed = new Discord.RichEmbed()
                         .setColor("#22b548")
                         .setDescription("***Vous trouvez et récoltez 1 lys de sang sans le moindre soucis***")
-                        .addField(":four_leaf_clover:", "continuer",true)
+                        .addField(":four_leaf_clover:", "Continuer",true)
                         .addField(":x:", "S'arrêter",true)
                     message.channel.send(embed).then(async message => 
                     {
@@ -460,7 +460,7 @@ if(message.content === prefix + "HerboristeNovice")
                     let embed = new Discord.RichEmbed()
                         .setColor("##22b548")
                         .setDescription("***Vous récoltez 1 lys de sang après avoir cherché pendant un moment***")
-                        .addField(":four_leaf_clover: ", "continuer",true)
+                        .addField(":four_leaf_clover: ", "Continuer",true)
                         .addField(":x:", "S'arrêter",true)
                     message.channel.send(embed).then(async message => 
                         {
@@ -575,7 +575,7 @@ if(message.content === prefix + "Herboriste")
                     let embed = new Discord.RichEmbed()
                         .setColor("#31c623")
                         .setDescription("***Vous trouvez et récoltez 2 lys de sang sans le moindre soucis***")
-                        .addField(":four_leaf_clover:", "continuer",true)
+                        .addField(":four_leaf_clover:", "Continuer",true)
                         .addField(":x:", "S'arrêter",true)
                     message.channel.send(embed).then(async message => 
                     {
@@ -637,7 +637,7 @@ if(message.content === prefix + "Herboriste")
                     let embed = new Discord.RichEmbed()
                         .setColor("#31c623")
                         .setDescription("***Vous récoltez 2 lys de sang après avoir cherché pendant un moment***")
-                        .addField(":four_leaf_clover: ", "continuer",true)
+                        .addField(":four_leaf_clover: ", "Continuer",true)
                         .addField(":x:", "S'arrêter",true)
                     message.channel.send(embed).then(async message => 
                         {
