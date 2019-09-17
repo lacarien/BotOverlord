@@ -530,14 +530,36 @@ if(message.content === préfix + "Provocation simple"){
     message.channel.send(y);
 }
 
-if(message.content === préfix + "Slash d'énergie"){
+if(message.content === préfix + "Slash d'érnergie"){
     var min = Math.floor(Math.min(25));
     var max = Math.floor(Math.max(35)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .addField("Vous envoyez un slash d'énergie sur la première rangé (max 3 personnes) avec une attaque non évitable et non blocable (-40 mana)", ":comet:  "+y)
     .setColor("#150696")
-    .setImage("https://tenor.com/view/mikaela-hyakuya-sword-slash-anime-gif-12247182")
+    .setImage("https://cdn.discordapp.com/attachments/611216227687333888/623559112655110164/tenor.gif")
+    message.channel.send(y);
+}
+
+if(message.content === préfix + "Camouflage"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#939696")
+    .setTitle("Vous vous disimulez dans l'obscurité petit à petit...(-70Mana)")
+    .setDescription("Pendant 2 tours grand max, personne ne peus vous attaquer. Si vous attaquez votre coup sera doublé uniquement pendant votre temps d'action (pas d'ultime)")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/2/24/SAO_E06.png/revision/latest?cb=20140328034307")
+    message.channel.sendMessage(help_embed);
+}
+
+
+
+
+if(message.content === préfix + "A Blocage faible"){
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(15)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .addField("Vous executez un blocage supérieure et réussisez à bloquer", ":shield: "+y)
+    .setColor("#1a00ff")
     message.channel.send(y);
 }
 
