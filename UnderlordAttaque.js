@@ -1,19 +1,4 @@
 
-if(message.content === préfix + "Fuite") {
-    var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 30)
-    var result = new Discord.RichEmbed() 
-    .setColor("#ff0000")
-    .setColor("#1fff00")
-    .setAuthor("Vous fuyez")
-    else if (result < 101)
-    var result = new Discord.RichEmbed() 
-    .setColor("#ff0000")
-    .setAuthor("La fuite est impossible")
-    message.channel.send(result);
-
-}
-
 /// Attaque des races palier 1 ! ///
 /// Attaque des races palier 1 ! ///
 /// Attaque des races palier 1 ! ///
@@ -544,7 +529,7 @@ if(message.content === préfix + "Provocation simple"){
     message.channel.send(y);
 }
 
-if(message.content === préfix + "Slash d'érnergie"){
+if(message.content === préfix + "Slash d'énergie"){
     var min = Math.floor(Math.min(25));
     var max = Math.floor(Math.max(35)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
