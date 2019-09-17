@@ -474,7 +474,7 @@ if(message.content === préfix + "Coup de dague"){
    message.channel.send(y);
 }
 
-if(message.content === préfix + "Soins de bas rang"){
+if(message.content === préfix + "Soins maléfique"){
     var min = Math.floor(Math.min(40));
     var max = Math.floor(Math.max(80)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
