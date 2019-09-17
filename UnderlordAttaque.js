@@ -1,4 +1,5 @@
 
+
 /// Attaque des races palier 1 ! ///
 /// Attaque des races palier 1 ! ///
 /// Attaque des races palier 1 ! ///
@@ -435,7 +436,7 @@ if(message.content === préfix + "Tir amélioré"){
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#019521")
-    .addField("Vous tirez une fleche puissante(-20 de Mana)",":bow_and_arrow: "+ y)
+    .addField("Vous tirez une fleche puissante(-10 de Mana)",":bow_and_arrow: "+ y)
     .setImage("https://media.giphy.com/media/kiJ8TzLnvfZdUhVcbW/giphy.gif")
     message.channel.send(y);
 }
@@ -529,7 +530,7 @@ if(message.content === préfix + "Provocation simple"){
     message.channel.send(y);
 }
 
-if(message.content === préfix + "Slash d'énergie"){
+if(message.content === préfix + "Slash d'érnergie"){
     var min = Math.floor(Math.min(25));
     var max = Math.floor(Math.max(35)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
