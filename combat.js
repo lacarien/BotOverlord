@@ -407,7 +407,7 @@ if(message.content === préfix + "SL esquive") {
 // Immortel
 
 
-if(message.content === préfix + "I attaque") {
+if(message.content === préfix + "C attaque") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 61)
     var result = new Discord.RichEmbed() 
@@ -423,7 +423,7 @@ if(message.content === préfix + "I attaque") {
     
 }
 
-if(message.content === préfix + "I blocage") {
+if(message.content === préfix + "C blocage") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 20)
     var result = new Discord.RichEmbed() 
