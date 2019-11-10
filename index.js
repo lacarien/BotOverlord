@@ -1,13 +1,13 @@
 const Discord = require('discord.js')
-const bot = new Discord.Client()
-client.login(process.env.TOKEN);
+const client = new Discord.Client()
+client.on(process.env.TOKEN);
 
 
 var préfix = "?";
  var fs = require("fs")
  var vm = require('vm')
 
-bot.on("message",message =>{
+client.on("message",message =>{
      eval(fs.readFileSync(__dirname + '/combat.js')+'');
    /* eval(fs.readFileSync(__dirname + '/watson.js')+'');
     eval(fs.readFileSync(__dirname + '/attaque.js')+'');
