@@ -480,7 +480,7 @@ if(message.content === préfix + "SS attaque") {
     message.channel.send(result);
 }
 
-if(message.content === préfix + "S blocage") {
+if(message.content === préfix + "SS blocage") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 80)
     var result = new Discord.RichEmbed() 
@@ -496,7 +496,7 @@ if(message.content === préfix + "S blocage") {
 }
 
 
-if(message.content === préfix + "S esquive") {
+if(message.content === préfix + "SS esquive") {
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 60)
     var result = new Discord.RichEmbed() 
