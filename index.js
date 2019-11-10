@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
-bot.on(process.env.TOKEN);
+client.on(process.env.TOKEN);
 
 
 var préfix = "?";
