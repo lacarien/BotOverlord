@@ -71,16 +71,16 @@ bot.on("message",message =>{
 
     if(message.content === préfix + "Histoire"){
         var y = new Discord.RichEmbed()
-        .addField("L'ouverture d'un monde nouveau", "La science avançait à grands pas, bien que mélanger les ADN cher l'homme étaient interdits, "
-                    +"rien ne pouvez interdire la curiosité de l'homme, une organisation son chargea et créera par"
-                    +" la suite d'innombrable espèce humanoïde gardé dans le plus grand des secrets. Vampire, ghoul, "
-                    +"harpie et j'en passe. \n malheureusement un jour l'état ne pouvait plus cacher l'existence des centres d'expérimentation"
-                    +" après que ces derniers finirent détruit chacun leur tours de l'intérieur par leurs créations et que ces dernières attaquèrent des villes, ")
-        .addField("(suite)", "il était devenu difficile de les cacher et l'êtat envoya les autorités sont charger, mais la menace était bien trop importantes..."
-        +" Les premières créations étaient devenues folles à cause des années passées sont voir la lumière du jour,"
-        +" leur follie était tell qui était impossible de communiquer avec ces dernieres. Un groupe nommé le CSM(centre de sécurité millitaire),"
-        +" calma vite l'hostilité...Une unité d'élite comme jamais vue apparavent avec des équipements adaptés à leurs ennemies"
-        +" Une fois la menace calmé, le CSM fit placé au sommet comme les sauveurs de l'humanité")
+        .addField("L'ouverture d'un monde nouveau", "La science avançait à grands pas, bien que mélanger les ADN chez l’homme était interdit, "
+                    +"rien ne pouvez interdire la curiosité de l’homme, une organisation s’en chargea et créera par"
+                    +" la suite d’innombrable espèce humanoïdes garder dans le plus grand des secrets. Vampire, ghoul, harpie et j’en passe. "
+                    +"\n Malheureusement un jour l’état ne pouvait plus cacher l’existence des centres d’expérimentations"
+                    +" après que ces derniers finirent détruit chacun leurs tours de l’intérieure par leurs créations et que ces dernières attaquèrent des villes, ")
+        .addField("(suite)", " il était devenu difficile de les cachées et l’état envoya les autorités qui étaient chargées d’eux.Mais la menace était bien trop importante. . ."
+        +"  Les premières créations étaient devenues folles à cause des années passées sans voir la lumière du jour, "
+        +" leur folie était tel qu’il était impossible de communiquer avec ces dernières. Un groupe nommé le CSM (Centre de sécurité militaire),"
+        +" calma vite l’hostilité. . Une unité d’élite comme jamais vue au paravant avec des équipements adaptés à leurs ennemies une fois la menace calme,"
+        +" le CSM dit placer au sommet comme les sauveurs de l’humanité.")
         .setColor("#8c8989")
         .setImage("https://wallpaperbro.com/img/470306.jpg")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
@@ -88,13 +88,7 @@ bot.on("message",message =>{
     }
     if(message.content === préfix + "Histoire"){
         var y = new Discord.RichEmbed()           
-        .addField("Un début d'anarchie...", "40ans après la nouvelle génération de mutants ont enfin un esprit lambda comme tout le monde"
-                +" parfois même certains mutant sont plus humains que l'homme en général. Du coter du CSM, leur nombre a diminuer"
-                +" et leur puissance a augmenté, la nouvelle de génération de mutant est bien silencieuse et encore inconnus...Mais le CSM a encore besoin de troupe pour exterminer les mutants qui se montreraient hostiles."
-                +" Le jeu du chat et la souris n'a clairement pas fini, le CSM compte bien traquer la vermine jusqu'au bout et pour cela"
-                +" le CSM a mis en place des couvres feux, des caméras de surveillances, etc."
-                 +" Le monde actuel se transforme en une forme de dictature crée par la peur de l'inconnue...Peut"
-                 +" être qu'un jour un groupe vaincra ou bien une nouvelle organisation arrivera à calmer le jeu.")
+        .addField("Un début d'anarchie...", "40ans après la nouvelle génération. Les mutants ont enfin un esprit lambda comme tout le monde parfois Même certains mutants sont plus humains que l’homme en général. Du côté du CSM, leur nombre a diminuer et leur puissance à augmenté, la nouvelle de génération de mutant est bien silencieuse et encore inconnue. . . Mais le CSM a encore besoin de troupe pour exterminer les mutants qui se montreraient hostiles. Le jeu du chat et la souris n’a clairement pas finit, le CSm compte bien traquer la vermine jusqu’au bout et pour cela le CSM a mis en place des couvres feux, des caméras de surveillances, ect. Le monde actuel se transforme en une forme de dictature crée par la peur de l’inconnue. . . Peut être qu’un jour un groupe vaincra ou bien une nouvelle organisation arrivera à calmer le jeu")
         .setColor("#8c8989")
         .setImage("https://wallpaperbro.com/img/470306.jpg")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
@@ -369,5 +363,5 @@ if(message.content === préfix + "Destructeur"){
 bot.on('ready', function () {
     console.log("Je suis connecté !")
     })
-    bot.login("NTgxODY4MzcxMzk4NzU0MzE0.XcNKdA.5fcKSRcds-xKWcCdWf0Ukjvd4UA")
+    client.user.setGame("?Help");
     
