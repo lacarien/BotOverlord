@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
-client.on(process.env.TOKEN);
+bot.on(process.env.TOKEN);
 
 
 var préfix = "?";
@@ -360,7 +360,7 @@ if(message.content === préfix + "Destructeur"){
 
 
 })
-bot.on('ready', function () {
+client.on('ready', function () {
     console.log("Je suis connecté !")
     })
     client.user.setGame("?Help");
