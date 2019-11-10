@@ -362,6 +362,7 @@ if(message.content === préfix + "Destructeur"){
 })
 client.on('ready', function () {
     console.log("Je suis connecté !")
+     client.user.setGame("?Help");
+
     })
-    client.user.setGame("?Help");
     
