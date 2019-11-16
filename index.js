@@ -46,12 +46,48 @@ client.on("message",message =>{
         .addField(":spy: Cher les mutants", "Vous avez faim ? Et bien mangez et entraînez vous. Un staff vous préviendras via une action RP"
                    +" lorsque votre personnage sera prêt. Puis quand l'évolution commencera, durant quelques jours votre personnage"
                    +" aura la moitié de ses HP et se sentira ultra faible avant de littéralement exploser dans sa nouvelle forme")
-        .addField(":bangbang:  évolution épique", "Uniquement pour les mutants, à la fin de votre transformation vous aurez cette commande à faire ?Pouvoir épique")
+        .addField(":bangbang:  évolution épique", "Uniquement pour les mutants, à la fin de votre transformation vous aurez cette commande à faire ?Pouvoir épique. Attention, vous ne pourrez choisir qu'une seul compétence !")
         .setColor("#8c8989")
         .setImage("http://shortyawards.com.s3.amazonaws.com/entries/level-up-logo.jpg")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
     }
+
+    
+    if(message.content === préfix + "Pouvoir épique") {
+        var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 26){
+        var result = new Discord.RichEmbed() 
+        .setColor("#af1616")
+        .addField(":crossed_swords: Soifs de combats", "Choisissez une personne, durant 1 semaine vous lui infligerez le double des dégâts, renouvelable toutes les 1semaines")
+        .addField(":detective: Flaire de prédateur", "Choisissez une personne, durant 1 semaine vous saurez exactement la position de la personne ainsi que les pulsions de son coeur")
+        .setImage("https://data.whicdn.com/images/251651837/original.gif")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");}
+        else if (result < 51){
+        var result = new Discord.RichEmbed() 
+        .setColor("#10d33b")
+        .addField(":diamond_shape_with_a_dot_inside: Resurrection", "Quand vous serez mort(n'importe la manière), vous serez réanimé d'ici 12h n'importe où et devrez retaper la commande de pouvoir épique")
+        .addField(":beginner: Instinct primaire", "Choisisez 3 personnes au choix. Quand vous tomberez contre eux, vous aurez un bonus de 5HP")
+        .setImage("https://owips.com/sites/default/files/clipart/drawn-anger/448841/drawn-anger-anime-448841-3447811.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");}
+        else if(result < 76){
+        var result = new Discord.RichEmbed() 
+        .setColor("#c5c5c5")
+        .addField(":detective: Indetectable", "Quand vous tuez une personne(comme un PNJ par exemple), vous pouvez lui voler son apparence, mais vous serez dans l'impossibilité de revenir en arrière sauf pour reprendre votre apparence d'origine")
+        .addField(":bust_in_silhouette: Invisibilité", "Vous pouvez devenir invisible 30min grand max(mais ne pourrais pas bouger), temps de recharge : 18h")
+        .setImage("https://i.pinimg.com/originals/f2/c1/90/f2c190d4fec71cddb7dfae514aa05075.png")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");}
+        else if (result < 101){
+        var result = new Discord.RichEmbed() 
+        .setColor("#ab2195")
+        .addField(":trident: Flaire surdéveloppé", "Vous pouvez détécter à l'odeur du sang si la personne est un mutant ou non. Si le mutant a déjà évolué alors vous devrez faire un roll.")
+        .addField(":eye: Ultrason", "Vous pouvez détecter toute les personnes du chanel(même si elles sont cachées) et vous pouvez savoirs sur quoi ils se focalisent. Temps de recharge : 12h")
+        .setImage("https://images.hdqwalls.com/wallpapers/bthumb/elesis-elsword-anime-character-4k-7i.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");}
+        message.channel.send(result);
+    
+    }
+
 
 
 
