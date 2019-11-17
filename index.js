@@ -151,7 +151,7 @@ client.on("message",message =>{
                   +"une agence d'immobilier... Vous serez payé par les personnes qui voudront de vos services/bien \n Si vous faites partie du CSM"
                   +" vous aurez un salaire fixe et recevrez des primes en fonction de vos actions. \n Et si vous n'avez pas de travailler vous aurez"
                   +" juste à faire une commande quotidiennement pour gagner de l'argent (un peu comme le RSA)")
-        .addField(":moneybag: Salaire CSM et RSA", "?Salaire")
+        .addField(":moneybag: Salaire CSM et RSA mais également quartier noir", "?Salaire")
         .addField(":credit_card: Shop", " ?Boutique CSM \n ?Marché noir")
         .setImage("http://goboiano.com/wp-content/uploads/2017/01/72E78042-5AD9-4524-9959-A0BB2EA45F55.png")
         .setColor("#efed13")
@@ -163,7 +163,12 @@ client.on("message",message =>{
         var y = new Discord.RichEmbed()
         .addField(":notepad_spiral: Règle pour avoir son salaire", "Vous devez obligatoire jouer au minimum 1h dans les 24h qui suivent")
         .addField(":smiley_cat: RSA", "Vous gagnez 10€/jours")
-        .addField(":gun: CSM", "Membre du CSM : 15€/jours \nCaporal : +5€/jours \nSergent : +10€/jours \nAdjudant : +15€/jours \n Lieutenant : +20€\jours")
+        .addField(":gun: CSM", "__Patrouilleur du CSM__ : 20€/jours \nCaporal : +5€/jours \nSergent : +10€/jours \nAdjudant : +15€/jours \n Lieutenant : +20€\jours")
+        .addField(":gun: CSM", "__Gérant d'interrogatoire__ : 12€/jours \nCaporal : +5€/jours \nSergent : +10€/jours \nAdjudant : +15€/jours \n Lieutenant : +20€\jours")
+        .addField(":gun: CSM", "__Netoyeur__ : 15€/jours \nCaporal : +5€/jours \nSergent : +10€/jours \nAdjudant : +15€/jours \n Lieutenant : +20€\jours")
+        .addField(":crossed_swords: Quartier noir", "__Garde mercenaire__ : Vous devez repousser le CSM qui tenterait de rentrer dans le quartier noir et défendre les mercenaires \n **Salaire :** 15€ \nChevalier noir : +5€\jours")
+        .addField(":crossed_swords: Quartier noir", "__Espion__ : Vous devez rapporter des informations à votre chef mercenaire \n **Salaire :** à voir directement avec votre mercenaire du coin")
+        .addField(":crossed_swords: Quartier noir", "__Gérant immobilier du quartier noir__ : Vous pouvez fournir un lieu pour dormir mais...La sécurité n'est vraiment pas au rendez vous \n **Salaire :** RSA + 5€ par chambre par jour")
         .setColor("#efed13")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
