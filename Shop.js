@@ -32,6 +32,7 @@ if(message.content === préfix + "Boutique CSM"){
 
                     switch (reaction.emoji.name) {
                         case '⏭':
+                            message.delete()
                             let embed = new Discord.RichEmbed()
                                 .setColor("#b8b8b8")
                                 .setAuthor("TEST")
