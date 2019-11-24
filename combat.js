@@ -367,7 +367,7 @@ if(message.content === préfix + "SL attaque") {
     var result = new Discord.RichEmbed() 
     .setColor("#000000")
     .addField("Vous donnez un coups d'épée sur un point critique de la cible !", "5")
-    .setImage("https://media.giphy.com/media/SSQh422HSUbkUXf8pf/giphy.gif")
+    .setImage("https://gph.is/g/ZyzGpoW")
     message.channel.send(result);
     
 }
