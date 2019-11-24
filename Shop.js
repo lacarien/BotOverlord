@@ -1,7 +1,7 @@
 
 
 
-if(message.content === prefix + "Boutique CSM"){
+if(message.content === préfix + "Boutique CSM"){
     const filter = (reaction, user) => ['⏮','⏭',].includes(reaction.emoji.name) &&user.id === message.author.id;
     let embed = new Discord.RichEmbed()
 
