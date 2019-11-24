@@ -30,7 +30,7 @@ if(message.content === préfix + "Boutique CSM"){
                                             {
                                                 //const reaction = collected.first();
 
-                                                if(reaction.emoji.name === '1️⃣')
+                                                if(reaction.emoji.name === '2️⃣')
                                                 {
                                                     message.delete()
                                                 
@@ -62,10 +62,6 @@ if(message.content === préfix + "Boutique CSM"){
                                                 });
                                         });
                         break;
-                        case '🔙':
-                        message.delete();
-                        break;
-
                     
                     }  
                 });
