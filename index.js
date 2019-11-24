@@ -9,8 +9,8 @@ var préfix = "?";
 
 client.on("message",message =>{
      eval(fs.readFileSync(__dirname + '/combat.js')+'');
-   /* eval(fs.readFileSync(__dirname + '/watson.js')+'');
-    eval(fs.readFileSync(__dirname + '/attaque.js')+'');
+    eval(fs.readFileSync(__dirname + '/Shop.js')+'');
+   /* eval(fs.readFileSync(__dirname + '/attaque.js')+'');
     eval(fs.readFileSync(__dirname + '/pnj.js')+'');
     eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
