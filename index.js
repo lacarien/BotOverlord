@@ -207,10 +207,15 @@ client.on("message",message =>{
                                 message.channel.send(embed).then(async message => 
                                     {
                                         await message.react('⏮'); 
+                                        if(reaction.emoji.name === '⏮')
+                                        {
+                                            message.delete()
+                                            //message.channel.bulkDelete(2);
+                                        }
                                     });
                     break;  
                     case '⏮':
-                            let embed = new Discord.RichEmbed()
+                            new embed = new Discord.RichEmbed()
                             .addField("**__Kevlar__**", "```Protection qui augmente votre vitalité. Vous ne pouvez en porter qu'un``` ")
                             .addField("Kevlar soldat","**HP :** :heart: 2 || **Prix :** :money_with_wings: 70€ ",true)
                             .addField("Kevlar caporal","**HP :** :heart: 3 || **Prix :** :money_with_wings: 100€ ",true)
@@ -230,6 +235,11 @@ client.on("message",message =>{
                                 message.channel.send(embed).then(async message => 
                                     {
                                         await message.react('⏮'); 
+                                        if(reaction.emoji.name === '⏮')
+                                                              {
+                                                                  message.delete()
+                                                                  //message.channel.bulkDelete(2);
+                                                              }
                                     });
                     break;
                 }
