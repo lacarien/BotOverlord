@@ -23,14 +23,14 @@ if(message.content === préfix + "Boutique CSM"){
                                 .setAuthor("TEST")
                                 message.channel.send(embed).then(async message => 
                                     { 
-                                        await message.react('2️⃣')
+                                        await message.react('🔙')
 
                                         let collector = message.createReactionCollector(filter,{time: 3600000,errors:['time']});
                                         collector.on('collect', (reaction, collector) =>
                                             {
                                                 //const reaction = collected.first();
 
-                                                if(reaction.emoji.name === '2️⃣')
+                                                if(reaction.emoji.name === '🔙')
                                                 {
                                                     message.delete()
                                                 
@@ -40,20 +40,19 @@ if(message.content === préfix + "Boutique CSM"){
                                     });
                         break;
                         case '2️⃣':
-                                message.delete()
                                 let embed2 = new Discord.RichEmbed()
                                     .setColor("#b8b8b8")
                                     .setAuthor("TEST 2")
                                     message.channel.send(embed2).then(async message => 
                                         { 
-                                            await message.react('1️⃣')
+                                            await message.react('🔙')
     
                                             let collector = message.createReactionCollector(filter,{time: 3600000,errors:['time']});
                                             collector.on('collect', (reaction, collector) =>
                                                 {
                                                     //const reaction = collected.first();
     
-                                                    if(reaction.emoji.name === '1️⃣')
+                                                    if(reaction.emoji.name === '🔙')
                                                     {
                                                         message.delete()
                                                     
