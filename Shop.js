@@ -44,10 +44,10 @@ if(message.content === préfix + "Boutique CSM"){
                         break;
                         case '2️⃣':
                                 message.delete()
-                                let embed = new Discord.RichEmbed()
+                                let embed2 = new Discord.RichEmbed()
                                     .setColor("#b8b8b8")
                                     .setAuthor("TEST 2")
-                                    message.channel.send(embed).then(async message => 
+                                    message.channel.send(embed2).then(async message => 
                                         { 
                                             await message.react('1️⃣')
     
