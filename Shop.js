@@ -35,7 +35,22 @@ if(message.content === préfix + "Boutique CSM"){
                             let embed = new Discord.RichEmbed()
                                 .setColor("#b8b8b8")
                                 .setAuthor("TEST")
-                            
+                                message.channel.send(embed).then(async message => 
+                                    { 
+                                        await message.react('⏮')
+
+                                        let collector = message.createReactionCollector(filter,{time: 3600000,errors:['time']});
+                                        collector.on('collect', (reaction, collector) =>
+                                            {
+                                                //const reaction = collected.first();
+
+                                                if(reaction.emoji.name === '⏮')
+                                                {
+                                                    message.delete()
+                                                    //message.channel.bulkDelete(2);
+                                                }
+                                            });
+                                    });
                         break;
 
                     
