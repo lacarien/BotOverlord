@@ -4,8 +4,6 @@
 if(message.content === préfix + "Boutique CSM"){
     const filter = (reaction, user) => ['1️⃣','2️⃣',].includes(reaction.emoji.name) &&user.id === message.author.id;
     let embed = new Discord.RichEmbed()
-
-    .addField("**__Kevlar__**", "```Protection qui augmente votre vitalité. Vous ne pouvez en porter qu'un``` ")
         .addField("Sommaire :","**Page 1:** 1️⃣ || **Page 2:** 2️⃣",true)
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
     message.channel.send(embed).then(async message => 
