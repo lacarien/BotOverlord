@@ -2,7 +2,7 @@
 
 
 if(message.content === préfix + "Boutique CSM"){
-    const filter = (reaction, user) => ['1️⃣','2️⃣',].includes(reaction.emoji.name) &&user.id === message.author.id;
+    const filter = (reaction, user) => ['1️⃣','2️⃣','🔙'].includes(reaction.emoji.name) &&user.id === message.author.id;
     let embed = new Discord.RichEmbed()
         .addField("Sommaire :","**Page 1:** 1️⃣ || **Page 2:** 2️⃣",true)
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
@@ -62,6 +62,9 @@ if(message.content === préfix + "Boutique CSM"){
                                                     }
                                                 });
                                         });
+                        break;
+                        case '🔙':
+                        message.delete();
                         break;
 
                     
