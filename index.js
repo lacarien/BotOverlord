@@ -174,25 +174,6 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-    
-
-    if(message.content === préfix + "Marché noir"){
-        var y = new Discord.RichEmbed()
-        .addField("**__Kevlar__**", "```Protection qui augmente votre vitalité. Vous ne pouvez en porter qu'un``` ")
-        .addField("Kevlar volé","**HP :** :heart: 1 || **Prix :** :money_with_wings: 60€ ",true)
-        .addField("Kevlar robuste","**HP :** :heart: 3 || **Prix :** :money_with_wings: 140€ ",true)
-        .addField("Kevlar pro","**HP :** :heart: 5 || **Prix :** :money_with_wings: 230€ ",true)
-        .addField("**__talkys-walky__**", "```Vous permet de communiquer jusqu'à une certaine distance``` ")
-        .addField("talkys-walky standart","**Porté de channel :** :loudspeaker: 3 || **Prix :** :money_with_wings: 50€ ",true)
-        .addField("talkys-walky pro","**Porté de channel :** :loudspeaker: 5 || **Prix :** :money_with_wings: 100€",true)
-        .addField("**__Trousse de secours__**", "```Pour pouvoir remettre en êtat quelqu'un en situation critique (1HP(En gros pour évitez qu'il meurt d'hémoragie))``` ")
-        .addField(":heart_decoration: Medikit","**Prix :** : :money_with_wings: 50€")
-        .addField("**__Pistolet de détresse__**", "```Si vous n'avez plus votre radio, le pistolet de détresse est visible à 1 channel à la ronde(inutilisable dans un batiment)``` ")
-        .addField(":gun:  Lance fusé","**Prix :** : :money_with_wings: 10€")
-        .setColor("#efed13")
-        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
-        message.channel.send(y);
-    }
 
 
 
