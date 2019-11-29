@@ -55,7 +55,7 @@ if(message.content === préfix + "Boutique CSM"){
                         break;
                         case '2️⃣':
                                 let embed2 = new Discord.RichEmbed()
-                                .addField("**__Amnésique__**", "```Amnésie résérvé au grade minimum de caporal``` ")
+                                .addField("**__Amnésique__**", "```Amnésique résérvé au grade minimum de caporal``` ")
                                 .addField("Classe A","**Gratuite pour les SGT et plus sinon :syringe: 50€** / éfficacité : 12h",true)
                                 .addField("Classe B","**Obtention :** Après validation d'un LTN / éfficacité : 7jours",true)
                                 .addField("Classe C","**HP :**Obtention :** Après demande directe au directeur et validation des 4 Héroes du CSM(LTN) / éfficacité : ???",true)
