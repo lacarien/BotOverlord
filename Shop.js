@@ -58,7 +58,7 @@ if(message.content === préfix + "Boutique CSM"){
                                 .addField("**__Amnésique__**", "```Amnésique résérvé au grade minimum de caporal``` ")
                                 .addField("Classe A :syringe:","**Gratuite pour les SGT et plus sinon 50€** / éfficacité : 12h",true)
                                 .addField("Classe B :syringe::syringe:","**Obtention :** Après validation d'un LTN / éfficacité : 7jours",true)
-                                .addField("Classe C :warning: :syringe:","**HP :**Obtention :** Après demande directe au directeur et validation des 4 Héroes du CSM(LTN) / éfficacité : ???",true)
+                                .addField("Classe C :warning: :syringe:","**Obtention :** Après demande directe au directeur et validation des 4 Héroes du CSM(LTN) / éfficacité : ???",true)
                                 .setColor("#efed13")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed2).then(async message => 
