@@ -3,17 +3,18 @@ const client = new Discord.Client()
 client.login(process.env.TOKENS);
 
 
-var préfix = "?";
+
  var fs = require("fs")
  var vm = require('vm')
-
+var préfix = "?";
  
-
-client.on("message",message =>{
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
-
     const args = message.content.slice(prefix.length).split(' ');
     const command = args.shift().toLowerCase();
+
+client.on("message",message =>{
+
+  
+
      /*eval(fs.readFileSync(__dirname + '/combat.js')+'');
     eval(fs.readFileSync(__dirname + '/Shop.js')+'');
    /* eval(fs.readFileSync(__dirname + '/attaque.js')+'');
