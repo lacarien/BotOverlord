@@ -7,7 +7,13 @@ var préfix = "?";
  var fs = require("fs")
  var vm = require('vm')
 
+ 
+
 client.on("message",message =>{
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
+
+    const args = message.content.slice(prefix.length).split(' ');
+    const command = args.shift().toLowerCase();
      /*eval(fs.readFileSync(__dirname + '/combat.js')+'');
     eval(fs.readFileSync(__dirname + '/Shop.js')+'');
    /* eval(fs.readFileSync(__dirname + '/attaque.js')+'');
@@ -82,8 +88,17 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-
+    if(command === préfix + "Test : "){
+        const amount = parseInt(args[0]);
+	    if (isNaN(amount)) {
+		return message.reply('that doesn\'t seem to be a valid number.');
+	    }
+        var y = new Discord.RichEmbed()
+        .addField("BLA BLA", ":dagger: "+ z)
+        message.channel.send(y);
+    }
     
+
    
 
 })
