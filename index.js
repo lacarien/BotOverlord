@@ -18,7 +18,7 @@ client.on("message",message =>{
 
 
 
-    if(message.content === préfix + "Help" || "help"){
+    if(message.content === préfix + "Help"){
         var y = new Discord.RichEmbed()
         .addField(":book:  ?Histoire")
         .addField(":man_detective: ?Classe")
@@ -30,7 +30,7 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-    if(message.content === préfix + "Classe" || "classe"){
+    if(message.content === préfix + "Classe"){
         var y = new Discord.RichEmbed()
         .addField(":dagger: Voleur", "Fort dégats pour faible HP !")
         .addField(":crossed_swords: épéiste", "Dégats moyen pour HP moyen !")
@@ -40,7 +40,7 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-    if(message.content === préfix + "Histoire" || "histoire"){
+    if(message.content === préfix + "Histoire"){
         var y = new Discord.RichEmbed()
         .setAuthor("SOON")
         .setColor("#ff4600")
@@ -48,7 +48,7 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-    if(message.content === préfix + "Espece" || "espece"){
+    if(message.content === préfix + "Espece"){
         var y = new Discord.RichEmbed()
         .addField("Liste des especes", ":upside_down: Humain \n:imp: Demon\n:robot: Automate")
         .setColor("#ff4600")
@@ -56,7 +56,7 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-    if(message.content === préfix + "Coup special" || "coup special"){
+    if(message.content === préfix + "Coup special"){
         var y = new Discord.RichEmbed()
         .addField("Explication","Les coups spéciaux ne sont utilisé qu'une fois par combat, vous ne pouvez en choisir qu'une seul")
         .addField("?Final slash", "__Prérequis :__ Demon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'executez")
