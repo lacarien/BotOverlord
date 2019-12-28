@@ -6,6 +6,7 @@ client.login(process.env.TOKENS);
 var préfix = "?";
  var fs = require("fs")
  var vm = require('vm')
+var i = nextInt();
 
 client.on("message",message =>{
      /*eval(fs.readFileSync(__dirname + '/combat.js')+'');
@@ -69,16 +70,25 @@ client.on("message",message =>{
 
     if(message.content === préfix + "Liste d'attaque"){
         var y = new Discord.RichEmbed()
-        .addField("Explication","Pour chaque classe et race vous avez des compétences différente selon le lvl")
-        .addField("?Humain", "__Prérequis :__ Demon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'executez")
-        .addField("?Demon", "__Prérequis :__ Aucun \nVous attaquez plusieurs cible à la fois")
-        .addField("?Automate", "__Prérequis :__ Aucun \nVous attaquez plusieurs cible à la fois")
+        .addField("Explication","Ici vous trouverez la liste d'attaque pour les classes et les races")
+        .addField("**?Humain**", "__Passif__ : Vos HP se bloque une premiere fois à 1HP avant de subir un autre coups et de réelment mourir")
+        .addField("?Demon", "__Passif__ : Régénération 2 fois plus rapide")
+        .addField("?Automate", "__Passif__ :Imunisé au poison")
         .addField("**===================================**", "**===================================**")
-        .addField("", "")
+        .addField("**Voleur**", "LVL 1 : ?Coup de dague : [Vos dégats] + ?VEsquive : [Dégats reçu]\nLVL 5 ?Faible blocage : [Dégats reçu]\n LVL10 Evolution ?Assassin")
+        .addField("**épéiste**", "LVL 1 : ?Coup d'épée : [Vos dégats] + ?Esquive : [Dégats reçu]\nLVL 2 ?Blocage : [Dégats reçu]\n LVL10 Evolution ?Chevalier")
+        .addField("**Paladin**", "LVL 1 : ?Coup de masse : [Vos dégats] + ?PBlocage : [Dégats reçu]\nLVL 5 ?PEsquive: [Dégats reçu]\n LVL10 Evolution ?Wall")
         .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
     }
+
+    if(message.content === préfix + "Test : "+ i ){
+        var y = new Discord.RichEmbed()
+        .addField("BLA BLA", ":dagger: "+ y )
+        message.channel.send(y);
+    }
+    
 
    
 
