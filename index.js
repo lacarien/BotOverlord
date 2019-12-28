@@ -8,7 +8,7 @@ client.login(process.env.TOKENS);
  var vm = require('vm')
 var préfix = "?";
  
-    const args = message.content.slice(prefix.length).split(' ');
+
     const command = args.shift().toLowerCase();
 
 client.on("message",message =>{
