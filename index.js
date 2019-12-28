@@ -82,9 +82,9 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-    if(message.content === préfix + "Test : "+ message.content ){
+    if(message.content === préfix + "Test : "+ message ){
         var y = new Discord.RichEmbed()
-        .addField("BLA BLA", ":dagger: "+ y )
+        .addField("BLA BLA", ":dagger: "+ message)
         message.channel.send(y);
     }
     
