@@ -78,29 +78,9 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-    
+   
 
-
-
-  
-
-    
-
-
-
-  
-
-
-
-
-
-
-    
-
-
-
-
-})
+}
 client.on('ready', function () {
     console.log("Je suis connecté !")
      client.user.setGame("?Help");
