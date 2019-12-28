@@ -66,7 +66,7 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-    if(message.content === préfix + "Liste d'attaque" || "liste d'attaque"){
+    if(message.content === préfix + "Liste d'attaque"){
         var y = new Discord.RichEmbed()
         .addField("Explication","Pour chaque classe et race vous avez des compétences différente selon le lvl")
         .addField("?Humain", "__Prérequis :__ Demon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'executez")
@@ -80,7 +80,7 @@ client.on("message",message =>{
 
    
 
-}
+})
 client.on('ready', function () {
     console.log("Je suis connecté !")
      client.user.setGame("?Help");
