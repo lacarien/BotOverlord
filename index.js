@@ -6,7 +6,6 @@ client.login(process.env.TOKENS);
 var préfix = "?";
  var fs = require("fs")
  var vm = require('vm')
-var i = nextInt();
 
 client.on("message",message =>{
      /*eval(fs.readFileSync(__dirname + '/combat.js')+'');
@@ -83,7 +82,7 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-    if(message.content === préfix + "Test : "+ i ){
+    if(message.content === préfix + "Test : "+ message.content ){
         var y = new Discord.RichEmbed()
         .addField("BLA BLA", ":dagger: "+ y )
         message.channel.send(y);
