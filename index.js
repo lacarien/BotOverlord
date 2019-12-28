@@ -20,11 +20,12 @@ client.on("message",message =>{
 
     if(message.content === préfix + "Help"){
         var y = new Discord.RichEmbed()
-        .addField(":book:  ?Histoire")
-        .addField(":man_detective: ?Classe")
-        .addField(":eyes: ?Espece")
+        .addField(":book:  ?Histoire", "Ici vous aurez un résumé du thème du serveur")
+        .addField(":man_detective: ?Classe", "Ici vous aurez la liste des classes")
+        .addField(":eyes: ?Espece", "Ici vous aurez la liste des especes")
         .addField(":crossed_swords: ?Coup special")
         .addField(":video_game: ?Liste d'attaque")
+        .addField(":video_game: ?Fiche RP", "Ici vous aurez le model de la fiche RP")
         .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
@@ -50,7 +51,7 @@ client.on("message",message =>{
 
     if(message.content === préfix + "Espece"){
         var y = new Discord.RichEmbed()
-        .addField("Liste des especes", ":upside_down: Humain \n:imp: Demon\n:robot: Automate")
+        .addField("Liste des especes", ":upside_down: **Humain**\nBLABLABLA \n:imp: **Demon**\nBLABLABLA\n:robot: **Automate**\nBLABLABLA")
         .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
@@ -72,7 +73,8 @@ client.on("message",message =>{
         .addField("?Humain", "__Prérequis :__ Demon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'executez")
         .addField("?Demon", "__Prérequis :__ Aucun \nVous attaquez plusieurs cible à la fois")
         .addField("?Automate", "__Prérequis :__ Aucun \nVous attaquez plusieurs cible à la fois")
-        .addField("==============================", "**==============================**")
+        .addField("**===================================**", "**===================================**")
+        .addField("", "")
         .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
