@@ -32,9 +32,10 @@ client.on("message",message =>{
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
+        var result = Math.floor(`${args}`* 100);
         var y = new Discord.RichEmbed()
-        .addField("BLALBLA", `${args}`)
-        message.channel.send(y);
+        .addField("BLALBLA", result)
+        message.channel.send(result);
     }
 
     
