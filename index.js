@@ -32,8 +32,9 @@
             if (!args.length) {
                 return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
             }
-            var al = Math.floor((Math.random() * 5) + 0.4);
-            var result = Math.floor(`${args}`* al );
+            var max_value = Math.floor(`${args}`*2.5);
+            var min_value = Math.floor(`${args}`*0.5)
+            var result = Math.floor((Math.random() * max_value) + min_value);
             var y = new Discord.RichEmbed()
             .addField("**Vous infligez un bon coup d'épée dans le torse de votre adversaire**",":crossed_swords:" + result)
             .setImage("https://i.pinimg.com/originals/d5/23/c5/d523c5604de784ddd5c0758b3a8c4145.jpg")
