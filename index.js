@@ -286,12 +286,13 @@
 
     if(message.content === préfix + "Crocro") {
         var result = new Discord.RichEmbed() 
-        .addField("Nom du monstre", "Crocro")
+        .addField("Nom du monstre", "**__Crocro__**")
+        .setColor("#ff8300")
         .setImage("https://media.discordapp.net/attachments/641785123590635520/660925278540922920/Crocro.jpg?width=559&height=559")
-        .addField("HP","100")
-        .addField("Passifs", "Aucune")
-        .addField("Attaque", "?Croco_attaque")
-        .addField("Défense", "?Croco_défense  [dégats reçu]")
+        .addField(":heart: HP",":heart: 100")
+        .addField(":beginner: Passifs", ":beginner: Aucune")
+        .addField(":crossed_swords: Attaque", "?Croco_attaque")
+        .addField(":shield: Défense", "?Croco_défense  [dégats reçu]")
         message.channel.send(result)
     }
 
