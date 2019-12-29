@@ -51,14 +51,20 @@
                 .addField(":video_game: ?Liste d'attaque")
                 .addField(":video_game: ?Fiche RP", "Ici vous aurez le model de la fiche RP")
                 .addField(":chart_with_upwards_trend: ?Level", "Ici vous aurez les paliers entre chaque level")
+                .addField(":bar_chart: ?Bonus [nom de la classe]", "Pour savoir le gain de caracthéristique à chaque level up")
                 .setColor("#ff4600")
                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                 message.channel.send(y);
             }
 
+
             if(message.content === préfix + "Level"){
                 message.channel.send(`${message.author} Voici le tableau des levels`);
-                message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 100 XP\n#-Lvl  3 : 300 XP\n#-Lvl  4 : 400 XP\n#-LVl  5 : 500 XP\n#-Lvl  6 : 600 XP\n#-Lvl  7 : 700 XP\n#-Lvl 8 : 800 XP\n#-Lvl 9 : 900 XP\n#-Lvl 10 : 1000 XP```");
+                message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 100 XP\n#-Lvl  3 : 300 XP\n#-Lvl  4 : 400 XP\n#-LVl  5 : 500 XP\n#-Lvl  6 : 600 XP\n#-Lvl  7 : 700 XP\n#-Lvl  8 : 800 XP\n#-Lvl  9 : 900 XP\n#-Lvl  10 : 1000 XP```");
+            }
+            if(message.content === préfix + "Bonus  épéiste"){
+                message.channel.send(`${message.author} Voici le tableau des levels`);
+                message.channel.send("```markdown\n#-Du Lvl 1 à 10 pour chaque level```\n**+2AT :crossed_swords: \n+2HP :heartpulse: ");
             }
 
             
