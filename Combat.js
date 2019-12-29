@@ -1,8 +1,5 @@
 
 
-
-client.on("message",message =>{
-
     if (!message.content.startsWith(préfix) || message.author.bot) return;
 
     const args = message.content.slice(préfix.length).split(' ');
@@ -117,4 +114,3 @@ if(message.content === préfix + "Roll") {
     message.channel.send(result);
 
 }
-})
