@@ -36,7 +36,7 @@
             var result = Math.floor(`${args}`* al );
             var y = new Discord.RichEmbed()
             .addField("BLALBLA", result)
-            message.channel.send(result);
+            message.channel.send(y);
         }
 
         
