@@ -50,10 +50,18 @@
                 .addField(":crossed_swords: ?Coup special")
                 .addField(":video_game: ?Liste d'attaque")
                 .addField(":video_game: ?Fiche RP", "Ici vous aurez le model de la fiche RP")
+                .addField(":chart_with_upwards_trend: ?Level", "Ici vous aurez les paliers entre chaque level")
                 .setColor("#ff4600")
                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                 message.channel.send(y);
             }
+
+            if(message.content === préfix + "Level"){
+                message.channel.send("```markdown\n #-Lvl  1 : 0 XP\n #-LVl  2 : 100 XP\n#-Lvl  3 : 300 XP\n#-Lvl  4 : 400 XP\n#-LVl  5 : 500 XP\n #-Lvl  6 : 600 XP\n#-Lvl  7 : 700 XP\n#-Lvl 8 : 800 XP\n#-Lvl 9 : 900 XP\n#-Lvl 10 : 1000 XP```");
+            }
+
+            
+
 
             if(message.content === préfix + "Classe"){
                 var y = new Discord.RichEmbed()
@@ -283,6 +291,17 @@
         .setImage("https://vignette.wikia.nocookie.net/bleach/images/5/55/Ep231ByakuyaVsSenbonzakura.png/revision/latest?cb=20110419032710&path-prefix=en")
         message.channel.send(y);
     }
+    /// MONSTRE //////////////////////////
+        /// MONSTRE //////////////////////////
+            /// MONSTRE //////////////////////////
+                /// MONSTRE //////////////////////////
+                    /// MONSTRE //////////////////////////
+                        /// MONSTRE //////////////////////////
+                            /// MONSTRE //////////////////////////
+                                /// MONSTRE //////////////////////////
+                                    /// MONSTRE //////////////////////////
+                                        /// MONSTRE //////////////////////////
+                                            /// MONSTRE //////////////////////////
 
     if(message.content === préfix + "Crocro") {
         var result = new Discord.RichEmbed() 
@@ -346,6 +365,7 @@
         .addField(":moneybag: Récompenses", "?Récompenses_Rongeurs [lvl]")
         message.channel.send(result)
     }    
+
 
 
 
