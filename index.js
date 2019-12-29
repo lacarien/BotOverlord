@@ -32,7 +32,8 @@
             if (!args.length) {
                 return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
             }
-            var al = Math.floor((Math.random() * 5) + 1);
+            var al = Math.floor((Math.random() * 5) + 0.2);
+            var al = al + Math.floor( + (Math.random() * 10) + 1);
             var result = Math.floor(`${args}`* al );
             var y = new Discord.RichEmbed()
             .addField("**Vous infligez un bon coup d'épée dans le torse de votre adversaire**",":crossed_swords:" + result)
