@@ -30,9 +30,8 @@ client.on("message",message =>{
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
-        var y = new Discord.RichEmbed()
-        .addField("BLA BLA", ":dagger: " `${args}`)
-        message.channel.send(y);
+        
+        message.channel.send(`Vous executez un violent coups : ${args}`);
     }
   
 
