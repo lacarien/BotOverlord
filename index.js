@@ -6,16 +6,16 @@ client.login(process.env.TOKENS);
 
  var fs = require("fs")
  var vm = require('vm')
-var préfix = "?";
+ var préfix = "?";
  
 
    
 
 client.on("message",message =>{
 
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
+    if (!message.content.startsWith(préfix) || message.author.bot) return;
 
-    const args = message.content.slice(prefix.length).split(' ');
+    const args = message.content.slice(préfix.length).split(' ');
     const command = args.shift().toLowerCase();
 
     if (command === 'args-info') {
