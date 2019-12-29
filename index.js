@@ -25,6 +25,15 @@ client.on("message",message =>{
     
         message.channel.send(`Command name: ${command}\nArguments: ${args}`);
     }
+
+    if(command === "Test :"){
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var y = new Discord.RichEmbed()
+        .addField("BLA BLA", ":dagger: "+ `${args}`)
+        message.channel.send(y);
+    }
   
 
      /*eval(fs.readFileSync(__dirname + '/combat.js')+'');
@@ -101,15 +110,7 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-    if(command === préfix + "Test : "){
-        const amount = parseInt(args[0]);
-	    if (isNaN(amount)) {
-		return message.reply('that doesn\'t seem to be a valid number.');
-	    }
-        var y = new Discord.RichEmbed()
-        .addField("BLA BLA", ":dagger: "+ z)
-        message.channel.send(y);
-    }
+    
     
 
    
