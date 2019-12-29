@@ -32,7 +32,7 @@
             if (!args.length) {
                 return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
             }
-            var al = Math.floor((Math.random() * 5) + 0.5);
+            var al = Math.floor((Math.random() * 5) + 1);
             var result = Math.floor(`${args}`* al );
             var y = new Discord.RichEmbed()
             .addField("BLALBLA", result)
