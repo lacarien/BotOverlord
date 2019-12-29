@@ -35,7 +35,8 @@
             var al = Math.floor((Math.random() * 5) + 1);
             var result = Math.floor(`${args}`* al );
             var y = new Discord.RichEmbed()
-            .addField("BLALBLA", result)
+            .addField("**Vous infligez un bon coup de genou dans la figure de votre adversaire**",":crossed_swords:" + result)
+            .setImage("https://tenor.com/view/boros-anime-gif-7390562")
             message.channel.send(y);
         }
 
