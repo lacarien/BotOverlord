@@ -81,7 +81,7 @@
                 var y = new Discord.RichEmbed()
                 .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+3AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.5ES** :man_running: ")
                 .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+6AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+1ES** :man_running: ")
-                .Setimage("https://i.pinimg.com/originals/5d/ff/3a/5dff3a4218e9cd05ac9e54da8f73741e.jpg")
+                .setimage("https://i.pinimg.com/originals/5d/ff/3a/5dff3a4218e9cd05ac9e54da8f73741e.jpg")
                 message.channel.send(y);
             }
             if(message.content === préfix + "Bonus paladin"){
