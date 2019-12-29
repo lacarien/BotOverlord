@@ -68,6 +68,18 @@
                 .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+4AT** :crossed_swords: \n**+4HP** :heartpulse:")
                 message.channel.send(y);
             }
+            if(message.content === préfix + "Bonus voleur"){
+                var y = new Discord.RichEmbed()
+                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+3AT** :crossed_swords: \n**+1HP** :heartpulse: ")
+                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+6AT** :crossed_swords: \n**+2HP** :heartpulse:")
+                message.channel.send(y);
+            }
+            if(message.content === préfix + "Bonus paladin"){
+                var y = new Discord.RichEmbed()
+                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+3HP** :heartpulse: ")
+                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+2AT** :crossed_swords: \n**+6HP** :heartpulse:")
+                message.channel.send(y);
+            }
 
             
 
