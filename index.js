@@ -253,6 +253,7 @@
         .setImage("https://watchmojo.blog/wp-content/uploads/2017/10/03783e5db8d66964aecfa2ec007a687b7c4166f897af06179b85463c6db77c93.jpg")
         message.channel.send(y);
     }
+
     if(command === 'vblocage'){
         if (!args.length) {
             return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
@@ -281,6 +282,17 @@
         .addField("**Vous bloquez l'attaque difficilement et ne prennez qu'une partie des dégats**",":shield: " + result)
         .setImage("https://vignette.wikia.nocookie.net/bleach/images/5/55/Ep231ByakuyaVsSenbonzakura.png/revision/latest?cb=20110419032710&path-prefix=en")
         message.channel.send(y);
+    }
+
+    if(message.content === préfix + "Crocro") {
+        var result = new Discord.RichEmbed() 
+        .addField("Nom du monstre", "Crocro")
+        .setImage("https://media.discordapp.net/attachments/641785123590635520/660925278540922920/Crocro.jpg?width=559&height=559")
+        .addField("HP","100")
+        .addField("Passifs", "Aucune")
+        .addField("Attaque", "?Croco_attaque")
+        .addField("Défense", "?Croco_défense  [dégats reçu]")
+        message.channel.send(result)
     }
 
 
