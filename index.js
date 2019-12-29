@@ -175,7 +175,7 @@ if(command === 'coup-dague'){
     message.channel.send(y);
 }
 
-if(command === 'VEsquive'){
+if(command === 'vesquive'){
     if (!args.length) {
         return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
     }
@@ -193,7 +193,7 @@ if(command === 'VEsquive'){
     .setImage("https://cdn.discordapp.com/attachments/499161815549476864/643101853327818772/ezgif.com-gif-maker_4.gif")
     message.channel.send(y);
 }
-if(command === 'Esquive'){
+if(command === 'esquive'){
     if (!args.length) {
         return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
     }
@@ -211,7 +211,7 @@ if(command === 'Esquive'){
     .setImage("https://cdn.discordapp.com/attachments/499161815549476864/643101853327818772/ezgif.com-gif-maker_4.gif")
     message.channel.send(y);
 }
-if(command === 'PEsquive'){
+if(command === 'pesquive'){
     if (!args.length) {
         return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
     }
