@@ -57,7 +57,8 @@
             }
 
             if(message.content === préfix + "Level"){
-                message.channel.send("```markdown\n #-Lvl  1 : 0 XP\n #-LVl  2 : 100 XP\n#-Lvl  3 : 300 XP\n#-Lvl  4 : 400 XP\n#-LVl  5 : 500 XP\n #-Lvl  6 : 600 XP\n#-Lvl  7 : 700 XP\n#-Lvl 8 : 800 XP\n#-Lvl 9 : 900 XP\n#-Lvl 10 : 1000 XP```");
+                message.channel.send(`${message.author} Voici le tableau des levels`);
+                message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 100 XP\n#-Lvl  3 : 300 XP\n#-Lvl  4 : 400 XP\n#-LVl  5 : 500 XP\n#-Lvl  6 : 600 XP\n#-Lvl  7 : 700 XP\n#-Lvl 8 : 800 XP\n#-Lvl 9 : 900 XP\n#-Lvl 10 : 1000 XP```");
             }
 
             
