@@ -32,7 +32,7 @@
             if (!args.length) {
                 return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
             }
-            var al = Math.floor((Math.random() * 5) + 0.2);
+            var al = Math.floor((Math.random() * 5) + 0.4);
             var sa = Math.floor( + (Math.random() * 10) + 1);
             var result = Math.floor(`${args}`* al );
             var result = al + sa;
