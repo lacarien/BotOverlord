@@ -293,6 +293,7 @@
         .addField(":beginner: Passifs", "Aucune")
         .addField(":crossed_swords: Attaque", "?Croco_attaque")
         .addField(":shield: Défense", "?Croco_défense  [dégats reçu]")
+        .addField(":moneybag: Récompenses", "?Récompenses_Crocro [lvl]")
         message.channel.send(result)
     }
 
@@ -305,8 +306,36 @@
         .addField(":beginner: Passifs", "Aucune")
         .addField(":crossed_swords: Attaque", "?Nidrats_attaque")
         .addField(":shield: Défense", "?Nidrats_défense  [dégats reçu]")
+        .addField(":moneybag: Récompenses", "?Récompenses_Nidrats [lvl]")
         message.channel.send(result)
     }
+
+    if(message.content === préfix + "Aragnator") {
+        var result = new Discord.RichEmbed() 
+        .addField("Nom du monstre", "**__Aragnator__**")
+        .setColor("#ff8300")
+        .setImage("https://cdn.discordapp.com/attachments/641785123590635520/660927665192173638/215387ac70dda5e6b97acb390da2e505.png")
+        .addField(":heart: HP","100")
+        .addField(":beginner: Passifs", "Aucune")
+        .addField(":crossed_swords: Attaque", "?Aragnator_attaque")
+        .addField(":shield: Défense", "?Aragnator_défense  [dégats reçu]")
+        .addField(":moneybag: Récompenses", "?Récompenses_Aragnator [lvl]")
+        message.channel.send(result)
+    }  
+    if(message.content === préfix + "Gnome pyromane") {
+        var result = new Discord.RichEmbed() 
+        .addField("Nom du monstre", "**__Gnome pyromane__**")
+        .setColor("#ff8300")
+        .setImage("https://cdn.discordapp.com/attachments/641785123590635520/660927665192173638/215387ac70dda5e6b97acb390da2e505.png")
+        .addField(":heart: HP","100")
+        .addField(":beginner: Passifs", "Aucune")
+        .addField(":crossed_swords: Attaque", "?Gnome_attaque")
+        .addField(":shield: Défense", "?Gnome_défense  [dégats reçu]")
+        .addField(":moneybag: Récompenses", "?Récompenses_Gnome_pyromane [lvl]")
+        message.channel.send(result)
+    }    
+
+
 
 
 
