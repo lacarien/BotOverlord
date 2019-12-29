@@ -183,7 +183,7 @@ if(command === 'vesquive'){
     var max_value = Math.floor(`${args}`*2);
     var min_value = Math.floor(`${args}`*1)
     var result = Math.floor((Math.random() * max_value) + min_value);
-    if(nombre < 40)
+    if(nombre < 60)
     var y = new Discord.RichEmbed()
     .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
     .setImage("https://i.imgur.com/LQzeVqf.png")
@@ -201,7 +201,7 @@ if(command === 'esquive'){
     var max_value = Math.floor(`${args}`*2);
     var min_value = Math.floor(`${args}`*1)
     var result = Math.floor((Math.random() * max_value) + min_value);
-    if(nombre < 35)
+    if(nombre < 65)
     var y = new Discord.RichEmbed()
     .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
     .setImage("https://i.imgur.com/LQzeVqf.png")
@@ -219,7 +219,7 @@ if(command === 'pesquive'){
     var max_value = Math.floor(`${args}`*2);
     var min_value = Math.floor(`${args}`*1)
     var result = Math.floor((Math.random() * max_value) + min_value);
-    if(nombre < 30)
+    if(nombre < 70)
     var y = new Discord.RichEmbed()
     .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
     .setImage("https://i.imgur.com/LQzeVqf.png")
