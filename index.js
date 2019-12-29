@@ -64,8 +64,8 @@
             }
             if(message.content === préfix + "Bonus épéiste"){
                 var y = new Discord.RichEmbed()
-                .addField("```markdown\n#-Du Lvl 1 à 10 pour chaque level```", "**+2AT** :crossed_swords: \n**+2HP** :heartpulse: ")
-                .addField("```markdown\n#-Du Lvl 11 à 20 pour chaque level```","**+4AT** :crossed_swords: \n**+4HP** :heartpulse:")
+                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+2HP** :heartpulse: ")
+                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+4AT** :crossed_swords: \n**+4HP** :heartpulse:")
                 message.channel.send(y);
             }
 
