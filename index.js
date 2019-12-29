@@ -28,12 +28,12 @@ client.on("message",message =>{
         message.channel.send(`Command name: ${command}\nArguments: ${args}`);
     }
 
-    if(command === 'test :'){
+    if(command === 'test'){
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
-        
-        message.channel.send(`Command name: ${command}\nArguments: ${args}`);
+       
+        message.channel.send(`${args}`);
     }
 
     
