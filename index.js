@@ -326,12 +326,24 @@
         var result = new Discord.RichEmbed() 
         .addField("Nom du monstre", "**__Gnome pyromane__**")
         .setColor("#ff8300")
-        .setImage("https://cdn.discordapp.com/attachments/641785123590635520/660927665192173638/215387ac70dda5e6b97acb390da2e505.png")
+        .setImage("https://media.discordapp.net/attachments/641785123590635520/660928322817228800/03837f895424ab2c5ae6987a2404e383.png?width=447&height=559")
         .addField(":heart: HP","100")
         .addField(":beginner: Passifs", "Aucune")
         .addField(":crossed_swords: Attaque", "?Gnome_attaque")
         .addField(":shield: Défense", "?Gnome_défense  [dégats reçu]")
         .addField(":moneybag: Récompenses", "?Récompenses_Gnome_pyromane [lvl]")
+        message.channel.send(result)
+    }    
+    if(message.content === préfix + "Rongeurs") {
+        var result = new Discord.RichEmbed() 
+        .addField("Nom du monstre", "**__Rongeurs__**")
+        .setColor("#ff8300")
+        .setImage("https://media.discordapp.net/attachments/641785123590635520/660929529170362415/Cranium-rats-5e-e1539179461219.png")
+        .addField(":heart: HP","100")
+        .addField(":beginner: Passifs", "Aucune")
+        .addField(":crossed_swords: Attaque", "?Rongeurs_attaque")
+        .addField(":shield: Défense", "?Rongeurs_défense  [dégats reçu]")
+        .addField(":moneybag: Récompenses", "?Récompenses_Rongeurs [lvl]")
         message.channel.send(result)
     }    
 
