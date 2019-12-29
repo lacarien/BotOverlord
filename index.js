@@ -52,7 +52,7 @@
                 .addField(":video_game: ?Fiche RP", "Ici vous aurez le model de la fiche RP")
                 .addField(":chart_with_upwards_trend: ?Level", "Ici vous aurez les paliers entre chaque level")
                 .addField(":bar_chart: ?Bonus [nom de la classe]", "Pour savoir le gain de caracthéristique à chaque level up")
-                .addField(":nazar_amulet: ?PointCara", "Ici vous trouverez l'utilité des points de caracthéristiques")
+                .addField(":nazar_amulet: ?Point cara", "Ici vous trouverez l'utilité des points de caracthéristiques")
                 .setColor("#ff4600")
                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                 message.channel.send(y);
@@ -62,6 +62,7 @@
                 var y = new Discord.RichEmbed()
                 .addField("__**Les points de caracthéristiques**__"," à chaque level vous gagnerez un point de caracthéristique, chaque ''stats'' apport différent bonus.")
                 .addField("__**Répartition des points**__","**puissance :** ``1 point dans puissance c'est 1 de dégats en plus !``\n**résistance physique :** ``1 point dans résistance physique c'est 0.5 en armure !``\n**résistance magique :** ``1 point dans résistance magique c'est 0.5 en armure magique !\n**vitalité :** 1 point dans vitalité c'est 5HP en plus !\n**agilité :** 1 point dans l'agilité c'est 0.5 en esquive !")
+                message.channel.send(y);
             }
 
 
