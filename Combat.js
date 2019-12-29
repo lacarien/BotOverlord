@@ -1,3 +1,13 @@
+
+
+
+client.on("message",message =>{
+
+    if (!message.content.startsWith(préfix) || message.author.bot) return;
+
+    const args = message.content.slice(préfix.length).split(' ');
+    const command = args.shift().toLowerCase();
+
 if(command === 'coup-epee'){
     if (!args.length) {
         return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
@@ -107,3 +117,4 @@ if(message.content === préfix + "Roll") {
     message.channel.send(result);
 
 }
+})
