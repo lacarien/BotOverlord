@@ -28,24 +28,12 @@
             message.channel.send(`Command name: ${command}\nArguments: ${args}`);
         }
 
-        if(command === 'coup-epee'){
-            if (!args.length) {
-                return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
-            }
-            var max_value = Math.floor(`${args}`*2.5);
-            var min_value = Math.floor(`${args}`*0.5)
-            var result = Math.floor((Math.random() * max_value) + min_value);
-            var y = new Discord.RichEmbed()
-            .addField("**Vous infligez un bon coup d'épée dans le torse de votre adversaire**",":crossed_swords:" + result)
-            .setImage("https://i.pinimg.com/originals/d5/23/c5/d523c5604de784ddd5c0758b3a8c4145.jpg")
-            message.channel.send(y);
-        }
-
+        
         
     
 
-        /*eval(fs.readFileSync(__dirname + '/combat.js')+'');
-        eval(fs.readFileSync(__dirname + '/Shop.js')+'');
+        eval(fs.readFileSync(__dirname + '/Combat.js')+'');
+       /* eval(fs.readFileSync(__dirname + '/Shop.js')+'');
     /* eval(fs.readFileSync(__dirname + '/attaque.js')+'');
         eval(fs.readFileSync(__dirname + '/pnj.js')+'');
         eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
@@ -110,9 +98,9 @@
             .addField("?Demon", "__Passif__ : Régénération 2 fois plus rapide")
             .addField("?Automate", "__Passif__ :Imunisé au poison")
             .addField("**===================================**", "**===================================**")
-            .addField("**Voleur**", "LVL 1 : ?Coup de dague : [Vos dégats] + ?VEsquive : [Dégats reçu]\nLVL 5 ?Faible blocage : [Dégats reçu]\n LVL10 Evolution ?Assassin")
-            .addField("**épéiste**", "LVL 1 : ?Coup d'épée : [Vos dégats] + ?Esquive : [Dégats reçu]\nLVL 2 ?Blocage : [Dégats reçu]\n LVL10 Evolution ?Chevalier")
-            .addField("**Paladin**", "LVL 1 : ?Coup de masse : [Vos dégats] + ?PBlocage : [Dégats reçu]\nLVL 5 ?PEsquive: [Dégats reçu]\n LVL10 Evolution ?Wall")
+            .addField("**Voleur**", "LVL 1 : ?coup-dague [Vos dégats] + ?VEsquive [Dégats reçu]\nLVL 5 ?Faible blocage [Dégats reçu]\n LVL10 Evolution ?Assassin")
+            .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Dégats reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL10 Evolution ?Chevalier")
+            .addField("**Paladin**", "LVL 1 : ?coup-masse [Vos dégats] + ?PBlocage [Dégats reçu]\nLVL 5 ?PEsquive [Dégats reçu]\n LVL10 Evolution ?Wall")
             .setColor("#ff4600")
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
