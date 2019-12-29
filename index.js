@@ -58,6 +58,12 @@
                 message.channel.send(y);
             }
 
+            if(message.content === préfix + "Point cara"){
+                var y = new Discord.RichEmbed()
+                .addField("__**Les points de caracthéristiques**__"," à chaque level vous gagnerez un point de caracthéristique, chaque ''stats'' apport différent bonus.")
+                .addField("__**Répartition des points**__","**puissance :** ``1 point dans puissance c'est 1 de dégats en plus !``\n")
+            }
+
 
             if(message.content === préfix + "Level"){
                 message.channel.send(`${message.author} Voici le tableau des levels`);
@@ -66,20 +72,20 @@
             }
             if(message.content === préfix + "Bonus épéiste"){
                 var y = new Discord.RichEmbed()
-                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+2HP** :heartpulse: ")
-                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+4AT** :crossed_swords: \n**+4HP** :heartpulse:")
+                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+10HP** :heartpulse: \n **+0.5AR** :shield:")
+                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+4AT** :crossed_swords: \n**+15HP** :heartpulse: \n **+1AR** :shield: ")
                 message.channel.send(y);
             }
             if(message.content === préfix + "Bonus voleur"){
                 var y = new Discord.RichEmbed()
-                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+3AT** :crossed_swords: \n**+1HP** :heartpulse: ")
-                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+6AT** :crossed_swords: \n**+2HP** :heartpulse:")
+                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+3AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.5ES** :man_running: ")
+                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+6AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+1ES** :man_running: ")
                 message.channel.send(y);
             }
             if(message.content === préfix + "Bonus paladin"){
                 var y = new Discord.RichEmbed()
-                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+3HP** :heartpulse: ")
-                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+2AT** :crossed_swords: \n**+6HP** :heartpulse:")
+                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+15HP** :heartpulse: \n **+0.5AR** :shield:")
+                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+3AT** :crossed_swords: \n**20HP** :heartpulse: \n **+0.5AR** :shield: \n **+0.5ARM** :beginner: ")
                 message.channel.send(y);
             }
 
