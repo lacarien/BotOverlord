@@ -289,10 +289,22 @@
         .addField("Nom du monstre", "**__Crocro__**")
         .setColor("#ff8300")
         .setImage("https://media.discordapp.net/attachments/641785123590635520/660925278540922920/Crocro.jpg?width=559&height=559")
-        .addField(":heart: HP",":heart: 100")
-        .addField(":beginner: Passifs", ":beginner: Aucune")
+        .addField(":heart: HP","100")
+        .addField(":beginner: Passifs", "Aucune")
         .addField(":crossed_swords: Attaque", "?Croco_attaque")
         .addField(":shield: Défense", "?Croco_défense  [dégats reçu]")
+        message.channel.send(result)
+    }
+
+    if(message.content === préfix + "Nid'rats") {
+        var result = new Discord.RichEmbed() 
+        .addField("Nom du monstre", "**__Nid'rats__**")
+        .setColor("#ff8300")
+        .setImage("https://media.discordapp.net/attachments/641785123590635520/660925652085637147/Roi_des_Rats.png?width=990&height=560")
+        .addField(":heart: HP","100")
+        .addField(":beginner: Passifs", "Aucune")
+        .addField(":crossed_swords: Attaque", "?Nidrats_attaque")
+        .addField(":shield: Défense", "?Nidrats_défense  [dégats reçu]")
         message.channel.send(result)
     }
 
