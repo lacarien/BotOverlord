@@ -323,8 +323,11 @@
         if(`${args}`==2){
         var minXP = Math.floor(Math.min(0));
         var maxXP = Math.floor(Math.max(8)); 
-        }
         var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+        } else {
+            XXP = 0;
+        }
+        
         var XP = Math.floor(30/`${args}`)
         var XP = Math.floor(XP + XXP)
         var minM = Math.floor(Math.min(10));
