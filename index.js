@@ -468,7 +468,7 @@ if(command === 'crocro_défense'){
     var nombre = Math.floor((Math.random() * 100) + 1);
     var max_value = Math.floor(`${args}`*1);
     var min_value = Math.floor(`${args}`*0.8)
-    var result = Math.floor((Math.random() * max_value) + min_value);
+    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 91)
     var y = new Discord.RichEmbed()
     .addField(":shield: Le crocro ne peu pas bloquer l'attaque, seul sa chaire réduire les dégats",":anger: " + result)
@@ -588,7 +588,7 @@ if(command === 'aragnator_défense'){
     var nombre = Math.floor((Math.random() * 100) + 1);
     var max_value = Math.floor(`${args}`*1.2);
     var min_value = Math.floor(`${args}`*0.7)
-    var x = Math.floor(Math.random() * ( min_value - max_value + 1) ) + max_value;
+    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 76)
     var y = new Discord.RichEmbed()
     .addField(":shield: L'Aragnator viendra réduire les dégats grâce à ses écailles",":anger: " + result)
