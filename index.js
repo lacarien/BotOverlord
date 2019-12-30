@@ -324,6 +324,7 @@
         var minXP = Math.floor(Math.min(-5));
         var maxXP = Math.floor(Math.max(5)); 
         var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+        }
         if(`${args}`==2){
         var minXP = Math.floor(Math.min(0));
         var maxXP = Math.floor(Math.max(5)); 
