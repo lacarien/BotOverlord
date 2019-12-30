@@ -265,11 +265,12 @@
             var nombre = Math.floor((Math.random() * 100) + 1);
             var max_value = Math.floor(`${args}`*2);
             var min_value = Math.floor(`${args}`*1)
+            var degats = Math.floor(Math.random() * (min_value - max_value + 1) ) + min_value;
             var result = Math.floor((Math.random() * max_value) + min_value);
             if(nombre < 70)
             var y = new Discord.RichEmbed()
             .setColor("#ff0000")
-            .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+            .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + degats)
             .setImage("https://i.imgur.com/LQzeVqf.png")
             else if(nombre < 101)
             var y = new Discord.RichEmbed()
