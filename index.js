@@ -293,7 +293,7 @@ if(command === 'rafale_de_coups'){
         var y = new Discord.RichEmbed()
         .setColor("#51fcfe")
         .setAuthor("Vous esquivez l'attaque")
-        .setImage("https://www.fightersgeneration.com/nf7/char/alucard-castlevania-netflix-fight.gif")
+        .setImage("https://tenor.com/view/samurai-champloo-gif-10886504")
         message.channel.send(y);
     }
     if(command === 'mega_esquive'){
@@ -313,7 +313,7 @@ if(command === 'rafale_de_coups'){
         var y = new Discord.RichEmbed()
         .setColor("#51fcfe")
         .setAuthor("Vous esquivez l'attaque")
-        .setImage("https://i.pinimg.com/originals/ea/2f/23/ea2f238c841768542bfcc232bd4fd22c.gif")
+        .setImage("https://www.fightersgeneration.com/nf7/char/alucard-castlevania-netflix-fight.gif")
         message.channel.send(y);
     }
     if(command === 'supra_esquive'){
@@ -333,7 +333,7 @@ if(command === 'rafale_de_coups'){
         var y = new Discord.RichEmbed()
         .setColor("#51fcfe")
         .setAuthor("Vous esquivez l'attaque")
-        .setImage("https://cdn.discordapp.com/attachments/499161815549476864/643101853327818772/ezgif.com-gif-maker_4.gif")
+        .setImage("https://i.pinimg.com/originals/ea/2f/23/ea2f238c841768542bfcc232bd4fd22c.gif")
         message.channel.send(y);
     }
     if(command === 'divin_esquive'){
