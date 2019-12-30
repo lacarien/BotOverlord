@@ -555,7 +555,7 @@ if(message.content === préfix + "Aragnator") {
     .addField("Nom du monstre", "**__Aragnator__**")
     .setColor("#ff8300")
     .setImage("https://cdn.discordapp.com/attachments/641785123590635520/660927665192173638/215387ac70dda5e6b97acb390da2e505.png")
-    .addField(":heart: HP","80")
+    .addField(":heart: HP","100")
     .addField(":beginner: Passifs", ":fire: Immunisé aux dégats de feux")
     .addField(":crossed_swords: Attaque", "?Aragnator_attaque")
     .addField(":shield: Défense", "?Aragnator_défense  [dégats reçu]")
@@ -563,8 +563,8 @@ if(message.content === préfix + "Aragnator") {
     message.channel.send(result)
 }  
 if(message.content === préfix + "Aragnator_attaque"){
-    var min = Math.floor(Math.min(30));
-    var max = Math.floor(Math.max(45)); 
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(40)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var mins = Math.floor(Math.min(5));
     var maxs = Math.floor(Math.max(15)); 
@@ -608,7 +608,7 @@ if(message.content === préfix + "Gnome pyromane") {
     .setColor("#ff8300")
     .setImage("https://media.discordapp.net/attachments/641785123590635520/660928322817228800/03837f895424ab2c5ae6987a2404e383.png?width=447&height=559")
     .addField(":heart: HP","40")
-    .addField(":shield: Armure","10")
+    .addField(":shield: Armure","5")
     .addField(":beginner: Passifs", ":fire: Immunisé aux dégats de feux")
     .addField(":crossed_swords: Attaque", "?Gnome_attaque")
     .addField(":shield: Défense", "?Gnome_défense  [dégats reçu]")
