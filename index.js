@@ -139,6 +139,8 @@
                 .addField("**?Humain**", "__Passif__ : Vos HP se bloque une premiere fois à 1HP avant de subir un autre coups et de réelment mourir")
                 .addField("?Demon", "__Passif__ : Régénération 2 fois plus rapide")
                 .addField("?Automate", "__Passif__ :Imunisé au poison")
+                message.channel.send(y);
+                var y = new Discord.RichEmbed()
                 .addField("**===================================**", "**===================================**")
                 .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Dégats reçu]\nLVL 5 ?VBlocage [Dégats reçu]\n LVL10 Evolution ?Assassin")
                 .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Dégats reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL10 Evolution ?Chevalier")
