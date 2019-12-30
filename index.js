@@ -341,8 +341,7 @@
         var result = Math.floor((Math.random() * max_value) + min_value);
         if(nombre < 91)
         var y = new Discord.RichEmbed()
-        .addField("Le crocro ne peu pas bloquer l'attaque, seul sa chaire réduire les dégats",":shield: " + result)
-        .setImage("https://vignette.wikia.nocookie.net/bleach/images/5/55/Ep231ByakuyaVsSenbonzakura.png/revision/latest?cb=20110419032710&path-prefix=en")
+        .addField(":shield: Le crocro ne peu pas bloquer l'attaque, seul sa chaire réduire les dégats",":anger: " + result)
         else if (nombre< 101)
         var y = new Discord.RichEmbed()
         .addField("Le crocro vient donc rapidement se déplacer sur le côté, venant éviter votre attaque",":man_running:  ")
