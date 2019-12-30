@@ -320,15 +320,9 @@
         if (!args.length) {
             return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
         }
+        if(`${args}`==2){
         var minXP = Math.floor(Math.min(0));
-        var maxXP = Math.floor(Math.max(10)); 
-        if(`${args}`>2){
-        var minXP = Math.floor(Math.min(0));
-        var maxXP = Math.floor(Math.max(5)); 
-        }
-        if(`${args}`>=3){
-            var minXP = Math.floor(Math.min(0));
-            var maxXP = Math.floor(Math.max(3)); 
+        var maxXP = Math.floor(Math.max(8)); 
         }
         var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
         var XP = Math.floor(30/`${args}`)
