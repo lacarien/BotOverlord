@@ -320,29 +320,11 @@
         if (!args.length) {
             return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
         }
-
-        if(`${args}`<=1){
-            var min = Math.floor(Math.min(15));
-            var max = Math.floor(Math.max(20)); 
-            var XP = Math.floor(Math.random() * (max - min + 1) ) + min;
-        }
-        if(`${args}`==2){
-            var min = Math.floor(Math.min(10));
-            var max = Math.floor(Math.max(15)); 
-            var XP = Math.floor(Math.random() * (max - min + 1) ) + min;
-        }
-        if(`${args}`==3){
-            var min = Math.floor(Math.min(5));
-            var max = Math.floor(Math.max(10)); 
-            var XP = Math.floor(Math.random() * (max - min + 1) ) + min;
-        }
-        if(`${args}`==4){
-            var min = Math.floor(Math.min(0));
-            var max = Math.floor(Math.max(5)); 
-            var XP = Math.floor(Math.random() * (max - min + 1) ) + min;
-        if(`${args}`>=5){
-            var XP = 0;
-        }
+        var minXP = Math.floor(Math.min(0));
+        var maxXP = Math.floor(Math.max(10)); 
+        var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+        var XP = Math.floor(30/`${args}`)
+        var XP = Math.floor(XP + XXP)
         var minM = Math.floor(Math.min(10));
         var maxM = Math.floor(Math.max(20)); 
         var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
@@ -350,7 +332,7 @@
         .addField("Récompenses du crocro", "**XP :** " + XP +"\n**Mercure :** " + Mercure + "\n**SOON**")
         .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
         message.channel.send(y);
-    }}
+    }
     
 
     
