@@ -322,11 +322,11 @@
         }
         var minXP = Math.floor(Math.min(0));
         var maxXP = Math.floor(Math.max(10)); 
-        if(`${args}`<3){
+        if(`${args}`>3){
         var minXP = Math.floor(Math.min(0));
         var maxXP = Math.floor(Math.max(5)); 
         }
-        if(`${args}`<4){
+        if(`${args}`>=4){
             var minXP = Math.floor(Math.min(0));
             var maxXP = Math.floor(Math.max(3)); 
         }
