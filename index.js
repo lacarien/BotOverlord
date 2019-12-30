@@ -286,40 +286,12 @@
         }
         var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*1.2);
-        var min_value = Math.floor(`${args}`*0.6)
-        var result = Math.floor((Math.random() * max_value) + min_value);
-        if(nombre < 81)
-        var y = new Discord.RichEmbed()
-        .addField("**Vous bloquez l'attaque difficilement et ne prennez qu'une partie des dégats**",":shield: " + result)
-        .setImage("https://watchmojo.blog/wp-content/uploads/2017/10/03783e5db8d66964aecfa2ec007a687b7c4166f897af06179b85463c6db77c93.jpg")
-        message.channel.send(y);
-    }
-
-    if(command === 'vblocage'){
-        if (!args.length) {
-            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
-        }
-        var nombre = Math.floor((Math.random() * 100) + 1);
-        var max_value = Math.floor(`${args}`*1.3);
-        var min_value = Math.floor(`${args}`*0.7)
-        var result = Math.floor((Math.random() * max_value) + min_value);
-        if(nombre < 81)
-        var y = new Discord.RichEmbed()
-        .addField("**Vous bloquez l'attaque difficilement et ne prennez qu'une partie des dégats**",":shield: " + result)
-        .setImage("https://qph.fs.quoracdn.net/main-qimg-09aba45d6fd4f04253e85a4f89127be2")
-        message.channel.send(y);
-    }
-
-    if(command === 'pblocage'){
-        if (!args.length) {
-            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
-        }
-        var max_value = Math.floor(`${args}`*1.2);
         var min_value = Math.floor(`${args}`*0.5)
         var result = Math.floor((Math.random() * max_value) + min_value);
+        if(nombre < 81)
         var y = new Discord.RichEmbed()
-        .addField("**Vous bloquez l'attaque difficilement et ne prennez qu'une partie des dégats**",":shield: " + result)
-        .setImage("https://vignette.wikia.nocookie.net/bleach/images/5/55/Ep231ByakuyaVsSenbonzakura.png/revision/latest?cb=20110419032710&path-prefix=en")
+        .addField(":shield: **Vous bloquez l'attaque difficilement et ne prennez qu'une partie des dégats**",":anger: " + result)
+        .setImage("https://watchmojo.blog/wp-content/uploads/2017/10/03783e5db8d66964aecfa2ec007a687b7c4166f897af06179b85463c6db77c93.jpg")
         message.channel.send(y);
     }
     /// MONSTRE //////////////////////////
