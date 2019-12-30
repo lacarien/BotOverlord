@@ -320,16 +320,30 @@
         if (!args.length) {
             return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
         }
+        if(`${args}`==1){
+        var minXP = Math.floor(Math.min(-5));
+        var maxXP = Math.floor(Math.max(5)); 
+        var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
         if(`${args}`==2){
         var minXP = Math.floor(Math.min(0));
-        var maxXP = Math.floor(Math.max(8)); 
+        var maxXP = Math.floor(Math.max(5)); 
         var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-        } else {
-            XXP = 0;
         }
-        
+        if(`${args}`==2){
+        var minXP = Math.floor(Math.min(0));
+        var maxXP = Math.floor(Math.max(3)); 
+        var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+        }
+        if(`${args}`<4){ 
         var XP = Math.floor(30/`${args}`)
         var XP = Math.floor(XP + XXP)
+        } else if (`${args}`==4) {
+        var minXP = Math.floor(Math.min(0));
+        var maxXP = Math.floor(Math.max(3)); 
+        var XX = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+        } else {
+        var XP = 0;
+        }
         var minM = Math.floor(Math.min(10));
         var maxM = Math.floor(Math.max(20)); 
         var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
