@@ -1,3 +1,5 @@
+if (!message.content.startsWith(préfix) || message.author.bot) return;
+
 if(message.content === préfix + "Crocro") {
     var result = new Discord.RichEmbed() 
     .addField("Nom du monstre", "**__Crocro__**")
