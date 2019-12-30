@@ -163,8 +163,8 @@
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
         var nombre = Math.floor((Math.random() * 100) + 1);
-        var max_value = Math.floor(`${args}`*2.5);
-        var min_value = Math.floor(`${args}`*0.5)
+        var max_value = Math.floor(`${args}`*2);
+        var min_value = Math.floor(`${args}`*0.8)
         var result = Math.floor((Math.random() * max_value) + min_value);
         if(nombre < 81)
         var y = new Discord.RichEmbed()
@@ -184,8 +184,8 @@
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
         var nombre = Math.floor((Math.random() * 100) + 1);
-        var max_value = Math.floor(`${args}`*2);
-        var min_value = Math.floor(`${args}`*0.8)
+        var max_value = Math.floor(`${args}`*1.8);
+        var min_value = Math.floor(`${args}`*1)
         var result = Math.floor((Math.random() * max_value) + min_value);
         if(nombre < 81)
         var y = new Discord.RichEmbed()
@@ -314,11 +314,9 @@
         if (!args.length) {
             return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
         }
-        var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*1.2);
         var min_value = Math.floor(`${args}`*0.5)
         var result = Math.floor((Math.random() * max_value) + min_value);
-        if(nombre < 81)
         var y = new Discord.RichEmbed()
         .addField("**Vous bloquez l'attaque difficilement et ne prennez qu'une partie des dégats**",":shield: " + result)
         .setImage("https://vignette.wikia.nocookie.net/bleach/images/5/55/Ep231ByakuyaVsSenbonzakura.png/revision/latest?cb=20110419032710&path-prefix=en")
@@ -341,13 +339,47 @@
         .addField("Nom du monstre", "**__Crocro__**")
         .setColor("#ff8300")
         .setImage("https://media.discordapp.net/attachments/641785123590635520/660925278540922920/Crocro.jpg?width=559&height=559")
-        .addField(":heart: HP","100")
+        .addField(":heart: HP","40")
         .addField(":beginner: Passifs", "Aucune")
-        .addField(":crossed_swords: Attaque", "?Croco_attaque")
-        .addField(":shield: Défense", "?Croco_défense  [dégats reçu]")
+        .addField(":crossed_swords: Attaque", "?croco_attaque")
+        .addField(":shield: Défense", "?croco_défense  [dégats reçu]")
         .addField(":moneybag: Récompenses", "?Récompenses_Crocro [lvl]")
         message.channel.send(result)
     }
+    if(message.content === préfix + "crocro_attaque"){
+        var min = Math.floor(Math.min(10));
+        var max = Math.floor(Math.max(25)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 80)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff8300")
+        .addField("Le crocro vous fonces dessus venant vous infliger des petits dégats", y)
+            else if (result < 90)
+        var y = new Discord.RichEmbed()
+        .setTitle("Le crocro adversaire rate son attaque")
+        .setColor("#ff8300")
+        message.channel.sendMessage(y);
+    }
+    if(command === 'crocro_défense'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1);
+        var min_value = Math.floor(`${args}`*0.8)
+        var result = Math.floor((Math.random() * max_value) + min_value);
+        if(nombre < 91)
+        var y = new Discord.RichEmbed()
+        .addField("Le crocro ne peu pas bloquer l'attaque, seul sa chaire réduire les dégats",":shield: " + result)
+        .setImage("https://vignette.wikia.nocookie.net/bleach/images/5/55/Ep231ByakuyaVsSenbonzakura.png/revision/latest?cb=20110419032710&path-prefix=en")
+        else if (nombre< 101)
+        var y = new Discord.RichEmbed()
+        .addField("Le crocro vient donc rapidement se déplacer sur le côté, venant éviter votre attaque",":man_running:  ")
+        message.channel.send(y);
+    }
+
+
 
     if(message.content === préfix + "Nid'rats") {
         var result = new Discord.RichEmbed() 
