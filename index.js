@@ -57,6 +57,12 @@
                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                 message.channel.send(y);
             }
+            if(message.content === préfix + "Fiche RP"){
+                message.channel.send("```!! ━―━―━👤 **__PERSONNEL__** 👤━―━―━ !!\n\n **Nom :**\n**Prénom :**\n**Âge : **\n\n**Race : **\n**Sexe :**\n**Orientation sexuelle :**\n\n**Poids :**\n **Taille :**\n\n**Personnalité :**\n\n**Histoire :**\n\n\n**__APPARENCE :__**\n\n**Caractéristique physique :** \n\n**Image :**\n\n\n!! ━―━―━🗡️ **__COMBAT__** 🗡️━―━―━ !!\n\n" 
+                +"**Classe :** ?\n**Compétence spé :** ?\n\n**Niveau : ** ?\n**Exp :** ?/?\n\n**HP : ** ?/?\n**Armure : ** ?\n**Armure magique :** ?\n**MP :** ?/?\n0 **Attaque total**\n0 **Esquive total**\n\n\n!! ━―━―━💠 **__Caractéristiques__** 💠━―━―━ !!\n\n\n 0/? **point libre restant**\n"
+                +"0 **points de puissance**\n\n0 **points de résistance physique**\n\n0 **points de résistance magique**\n\n0 **points de vitalité**\n0 **points d'agilité**\n!! ━―━―━📚 **__Métiers__** 📚━―━―━ !!\n\n\n**Chasseur niveau 1 :** 0/?XP\n\n**Pêcheur niveau 1 :** 0/?XP\n\n**Cueilleur niveau 1 :** 0/?XP\n\n **Mineur niveau 1 :** 0/?XP\n\n**Bucheron niveau 1 :** 0/?XP\n\n**Cuisinier niveau 1 :** 0/?XP\n\n**Alchimiste niveau 1 :** 0/?XP\n\n"
+                +"**Bijoutier niveau 1 : ** 0/?XP\n\n**Forgeron niveau 1 :** 0/?XP\n\n**Couturier niveau 1 :** 0/?XP\n\n\n!! ━―━―━💼 **__Inventaire__** 💼━―━―━ !!");
+            }
 
             if(message.content === préfix + "Point cara"){
                 var y = new Discord.RichEmbed()
