@@ -556,15 +556,15 @@ if(message.content === préfix + "Aragnator") {
     .setColor("#ff8300")
     .setImage("https://cdn.discordapp.com/attachments/641785123590635520/660927665192173638/215387ac70dda5e6b97acb390da2e505.png")
     .addField(":heart: HP","80")
-    .addField(":beginner: Passifs", "Aucune")
+    .addField(":beginner: Passifs", ":fire: Immunisé aux dégats de feux")
     .addField(":crossed_swords: Attaque", "?Aragnator_attaque")
     .addField(":shield: Défense", "?Aragnator_défense  [dégats reçu]")
     .addField(":moneybag: Récompenses", "?Récompenses_Aragnator [lvl]")
     message.channel.send(result)
 }  
 if(message.content === préfix + "Aragnator_attaque"){
-    var min = Math.floor(Math.min(20));
-    var max = Math.floor(Math.max(40)); 
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(45)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var mins = Math.floor(Math.min(5));
     var maxs = Math.floor(Math.max(15)); 
@@ -578,7 +578,7 @@ if(message.content === préfix + "Aragnator_attaque"){
     var y = new Discord.RichEmbed()
     .addField("l'argnator vient ouvrir sa bouche venant faire comme un lance flamme", ":crossed_swords:" + y)
     .addField("Les flammes auront pour effet de vous bruler pendant 3 tours, à chaque tours vous recevrez donc une petite quantité de dégats, seul l'armure magique réduit les dégats", ":fire: " + x)
-    .setImage("http://emeraude1977.e.m.pic.centerblog.net/o/ce59089f.png")
+    .setImage("https://media.discordapp.net/attachments/641775756191727648/661299374256816188/0e7b8a36ac4c90b0b3f2dbf5afd9a07b328bccbcv2_hq.png?width=419&height=559")
     .setColor("#ff8300")
     message.channel.sendMessage(y);
 }
@@ -588,7 +588,7 @@ if(command === 'aragnator_défense'){
         return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
     }
     var nombre = Math.floor((Math.random() * 100) + 1);
-    var max_value = Math.floor(`${args}`*1.2);
+    var max_value = Math.floor(`${args}`*1.3);
     var min_value = Math.floor(`${args}`*0.7)
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 76)
@@ -607,13 +607,43 @@ if(message.content === préfix + "Gnome pyromane") {
     .addField("Nom du monstre", "**__Gnome pyromane__**")
     .setColor("#ff8300")
     .setImage("https://media.discordapp.net/attachments/641785123590635520/660928322817228800/03837f895424ab2c5ae6987a2404e383.png?width=447&height=559")
-    .addField(":heart: HP","100")
-    .addField(":beginner: Passifs", "Aucune")
+    .addField(":heart: HP","40")
+    .addField(":shield: Armure","10")
+    .addField(":beginner: Passifs", ":fire: Immunisé aux dégats de feux")
     .addField(":crossed_swords: Attaque", "?Gnome_attaque")
     .addField(":shield: Défense", "?Gnome_défense  [dégats reçu]")
     .addField(":moneybag: Récompenses", "?Récompenses_Gnome_pyromane [lvl]")
     message.channel.send(result)
 }    
+
+if(message.content === préfix + "Gnome_attaque"){
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(30)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 70)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff8300")
+    .addField("Le Gnome fera apparaitre une boule de feu dans sa main gauche et viendra vous l'envoyer à petite puissance !\n l'armure ne réduira pas les dégats !", ":crossed_swords:" + y)
+        else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setTitle("Le Gnome essayera de lancer un boule de feu mais cette dérnière vous frolleras seulement")
+    .setColor("#ff8300")
+    message.channel.sendMessage(y);
+}
+if(command === 'gnome_défense'){
+    if (!args.length) {
+        return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+    }
+    var max_value = Math.floor(`${args}`*0.8);
+    var min_value = Math.floor(`${args}`*0.6)
+    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value; 
+    var y = new Discord.RichEmbed()
+    .setColor("#ff8300")
+    .addField(":shield: Notre chère petit gnome placera ses bras en croix de manière à bloquer l'attaque",":anger: " + result)
+    message.channel.send(y);
+}
+
 if(message.content === préfix + "Rongeurs") {
     var result = new Discord.RichEmbed() 
     .addField("Nom du monstre", "**__Rongeurs__**")
