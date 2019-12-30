@@ -309,7 +309,7 @@
         .addField("Nom du monstre", "**__Crocro__**")
         .setColor("#ff8300")
         .setImage("https://media.discordapp.net/attachments/641785123590635520/660925278540922920/Crocro.jpg?width=559&height=559")
-        .addField(":heart: HP","40")
+        .addField(":heart: HP","25")
         .addField(":beginner: Passifs", "Aucune")
         .addField(":crossed_swords: Attaque", "?croco_attaque")
         .addField(":shield: Défense", "?croco_défense  [dégats reçu]")
