@@ -285,7 +285,7 @@ if(command === 'rafale_de_coups'){
         var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*2);
         var min_value = Math.floor(`${args}`*1)
-        var result = Math.floor((Math.random() * max_value) + min_value);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 65)
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
@@ -305,7 +305,7 @@ if(command === 'rafale_de_coups'){
         var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*2);
         var min_value = Math.floor(`${args}`*1)
-        var result = Math.floor((Math.random() * max_value) + min_value);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 65)
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
@@ -325,7 +325,7 @@ if(command === 'rafale_de_coups'){
         var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*2);
         var min_value = Math.floor(`${args}`*1)
-        var result = Math.floor((Math.random() * max_value) + min_value);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 60)
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
@@ -345,7 +345,7 @@ if(command === 'rafale_de_coups'){
         var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*2);
         var min_value = Math.floor(`${args}`*1)
-        var result = Math.floor((Math.random() * max_value) + min_value);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 55)
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
@@ -579,6 +579,23 @@ if(message.content === préfix + "Aragnator_attaque"){
     .setImage("http://emeraude1977.e.m.pic.centerblog.net/o/ce59089f.png")
     .setColor("#ff8300")
     message.channel.sendMessage(y);
+}
+
+if(command === 'Aragnator_défense'){
+    if (!args.length) {
+        return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+    }
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    var max_value = Math.floor(`${args}`*1.2);
+    var min_value = Math.floor(`${args}`*0.7)
+    var result = Math.floor((Math.random() * max_value) + min_value);
+    if(nombre < 76)
+    var y = new Discord.RichEmbed()
+    .addField(":shield: L'Aragnator viendra réduire les dégats grâce à ses écailles",":anger: " + result)
+    else if (nombre< 101)
+    var y = new Discord.RichEmbed()
+    .setTitle(":bat: L'Aragnator va voler en l'air et faire des looopings pour ne pas se faire toucher")
+    message.channel.send(y);
 }
 
 if(message.content === préfix + "Gnome pyromane") {
