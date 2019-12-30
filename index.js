@@ -140,6 +140,8 @@
                 .addField("?Demon", "__Passif__ : Régénération 2 fois plus rapide")
                 .addField("?Automate", "__Passif__ :Imunisé au poison")
                 message.channel.send(y);
+            }
+            if(message.content === préfix + "Liste d'attaque"){
                 var y = new Discord.RichEmbed()
                 .addField("**===================================**", "**===================================**")
                 .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Dégats reçu]\nLVL 5 ?VBlocage [Dégats reçu]\n LVL10 Evolution ?Assassin")
