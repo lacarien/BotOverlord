@@ -284,11 +284,9 @@
         if (!args.length) {
             return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
         }
-        var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*1.2);
         var min_value = Math.floor(`${args}`*0.5)
-        var result = Math.floor((Math.random() * max_value) + min_value);
-        if(nombre < 81)
+        var result = Math.floor((Math.random() * max_value) + min_value);  
         var y = new Discord.RichEmbed()
         .addField(":shield: **Vous bloquez l'attaque difficilement et ne prennez qu'une partie des dégats**",":anger: " + result)
         .setImage("https://watchmojo.blog/wp-content/uploads/2017/10/03783e5db8d66964aecfa2ec007a687b7c4166f897af06179b85463c6db77c93.jpg")
