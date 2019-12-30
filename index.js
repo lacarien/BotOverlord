@@ -313,12 +313,49 @@
         .addField(":beginner: Passifs", "Aucune")
         .addField(":crossed_swords: Attaque", "?croco_attaque")
         .addField(":shield: Défense", "?croco_défense  [dégats reçu]")
-        .addField(":moneybag: Récompenses", "?Récompenses_Crocro [lvl]")
+        .addField(":moneybag: Récompenses", "?Récompenses_crocro [lvl]")
         message.channel.send(result)
     }
+    if(command === 'récompenses_crocro'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+        }
+        if(`${args}`<=1){
+            var min = Math.floor(Math.min(15));
+            var max = Math.floor(Math.max(20)); 
+            var XP = Math.floor(Math.random() * (max - min + 1) ) + min;
+        }
+        if(`${args}`=2){
+            var min = Math.floor(Math.min(10));
+            var max = Math.floor(Math.max(15)); 
+            var XP = Math.floor(Math.random() * (max - min + 1) ) + min;
+        }
+        if(`${args}`=3){
+            var min = Math.floor(Math.min(5));
+            var max = Math.floor(Math.max(10)); 
+            var XP = Math.floor(Math.random() * (max - min + 1) ) + min;
+        }
+        if(`${args}`=4){
+            var min = Math.floor(Math.min(0));
+            var max = Math.floor(Math.max(5)); 
+            var XP = Math.floor(Math.random() * (max - min + 1) ) + min;
+        if(`${args}`>=5){
+            var XP = 0;
+        }
+        var minM = Math.floor(Math.min(10));
+        var maxM = Math.floor(Math.max(20)); 
+        var Mercure = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Récompenses du crocro", "**XP :** " + XP +"\n**Mercure :** " + Mercure + "\n**SOON**")
+        .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
+        message.channel.send(y);
+    }}
+    
+
+    
     if(message.content === préfix + "crocro_attaque"){
-        var min = Math.floor(Math.min(10));
-        var max = Math.floor(Math.max(25)); 
+        var min = Math.floor(Math.min(7));
+        var max = Math.floor(Math.max(20)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var result = Math.floor((Math.random() * 100) + 1);
         if(result < 80)
@@ -355,10 +392,10 @@
         .addField("Nom du monstre", "**__Nid'rats__**")
         .setColor("#ff8300")
         .setImage("https://media.discordapp.net/attachments/641785123590635520/660925652085637147/Roi_des_Rats.png?width=990&height=560")
-        .addField(":heart: HP","100")
+        .addField(":heart: HP","40")
         .addField(":beginner: Passifs", "Aucune")
         .addField(":crossed_swords: Attaque", "?Nidrats_attaque")
-        .addField(":shield: Défense", "?Nidrats_défense  [dégats reçu]")
+        .addField(":shield: Défense", "Aucune")
         .addField(":moneybag: Récompenses", "?Récompenses_Nidrats [lvl]")
         message.channel.send(result)
     }
