@@ -613,7 +613,7 @@ if(message.content === préfix + "Gnome pyromane") {
     .addField("Nom du monstre", "**__Gnome pyromane__**")
     .setColor("#ff8300")
     .setImage("https://media.discordapp.net/attachments/641785123590635520/660928322817228800/03837f895424ab2c5ae6987a2404e383.png?width=447&height=559")
-    .addField(":heart: HP","40")
+    .addField(":heart: HP","80")
     .addField(":shield: Armure","5")
     .addField(":beginner: Passifs", ":fire: Immunisé aux dégats de feux")
     .addField(":crossed_swords: Attaque", "?Gnome_attaque")
