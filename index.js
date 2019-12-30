@@ -576,7 +576,7 @@
         var y = new Discord.RichEmbed()
         .addField("l'argnator vient ouvrir sa bouche venant faire comme un lance flamme", ":crossed_swords:" + y)
         .addField("Les flammes auront pour effet de vous bruler pendant 3 tours, à chaque tours vous recevrez donc une petite quantité de dégats, seul l'armure magique réduit les dégats", ":fire: " + x)
-        .setImage("https://media.discordapp.net/attachments/641785123590635520/660925278540922920/Crocro.jpg?width=559&height=559")
+        .setImage("http://emeraude1977.e.m.pic.centerblog.net/o/ce59089f.png")
         .setColor("#ff8300")
         message.channel.sendMessage(y);
     }
