@@ -48,7 +48,6 @@
                 .addField(":man_detective: ?Classe", "Ici vous aurez la liste des classes")
                 .addField(":eyes: ?Espece", "Ici vous aurez la liste des especes")
                 .addField(":crossed_swords: ?Coup special", "Lors de la création de votre personnage, vous ne pourrez choisir qu'un seul coup spécial !")
-                .addField("")
                 .addField(":video_game: ?Liste d'attaque")
                 .addField(":video_game: ?Fiche RP", "Ici vous aurez le model de la fiche RP")
                 .addField(":chart_with_upwards_trend: ?Level", "Ici vous aurez les paliers entre chaque level")
@@ -259,6 +258,107 @@ if(command === 'rafale_de_coups'){
     // ESQUIVE /////////////////////////////
     // ESQUIVE /////////////////////////////
     // ESQUIVE /////////////////////////////
+    if(command === 'esquive'){
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2);
+        var min_value = Math.floor(`${args}`*1)
+        var result = Math.floor((Math.random() * max_value) + min_value);
+        if(nombre < 70)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+        .setImage("https://i.imgur.com/LQzeVqf.png")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#51fcfe")
+        .setAuthor("Vous esquivez l'attaque")
+        .setImage("https://cdn.discordapp.com/attachments/499161815549476864/643101853327818772/ezgif.com-gif-maker_4.gif")
+        message.channel.send(y);
+    }
+    if(command === 'super_esquive'){
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2);
+        var min_value = Math.floor(`${args}`*1)
+        var result = Math.floor((Math.random() * max_value) + min_value);
+        if(nombre < 65)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+        .setImage("https://i.imgur.com/LQzeVqf.png")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#51fcfe")
+        .setAuthor("Vous esquivez l'attaque")
+        .setImage("https://tenor.com/view/samurai-champloo-gif-10886504")
+        message.channel.send(y);
+    }
+    if(command === 'mega_esquive'){
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2);
+        var min_value = Math.floor(`${args}`*1)
+        var result = Math.floor((Math.random() * max_value) + min_value);
+        if(nombre < 65)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+        .setImage("https://i.imgur.com/LQzeVqf.png")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#51fcfe")
+        .setAuthor("Vous esquivez l'attaque")
+        .setImage("https://www.fightersgeneration.com/nf7/char/alucard-castlevania-netflix-fight.gif")
+        message.channel.send(y);
+    }
+    if(command === 'supra_esquive'){
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2);
+        var min_value = Math.floor(`${args}`*1)
+        var result = Math.floor((Math.random() * max_value) + min_value);
+        if(nombre < 60)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+        .setImage("https://i.imgur.com/LQzeVqf.png")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#51fcfe")
+        .setAuthor("Vous esquivez l'attaque")
+        .setImage("https://i.pinimg.com/originals/ea/2f/23/ea2f238c841768542bfcc232bd4fd22c.gif")
+        message.channel.send(y);
+    }
+    if(command === 'divin_esquive'){
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2);
+        var min_value = Math.floor(`${args}`*1)
+        var result = Math.floor((Math.random() * max_value) + min_value);
+        if(nombre < 55)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+        .setImage("https://i.imgur.com/LQzeVqf.png")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#51fcfe")
+        .setAuthor("Vous esquivez l'attaque")
+        .setImage("https://cdn.discordapp.com/attachments/499161815549476864/643101853327818772/ezgif.com-gif-maker_4.gif")
+        message.channel.send(y);
+    }
+
 
   
 
