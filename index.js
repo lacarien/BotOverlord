@@ -345,7 +345,7 @@
         }
         var minM = Math.floor(Math.min(10));
         var maxM = Math.floor(Math.max(20)); 
-        var Mercure = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
         var y = new Discord.RichEmbed()
         .addField("Récompenses du crocro", "**XP :** " + XP +"\n**Mercure :** " + Mercure + "\n**SOON**")
         .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
