@@ -564,9 +564,9 @@ if(message.content === préfix + "Aragnator_attaque"){
     var min = Math.floor(Math.min(20));
     var max = Math.floor(Math.max(40)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
-    var min = Math.floor(Math.min(10));
-    var max = Math.floor(Math.max(20)); 
-    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var mins = Math.floor(Math.min(5));
+    var maxs = Math.floor(Math.max(15)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 70)
     var y = new Discord.RichEmbed()
@@ -574,7 +574,8 @@ if(message.content === préfix + "Aragnator_attaque"){
     .addField("L'Aragnator vous fonces dessus à pleine vitesse piquant vers l'avant !", ":crossed_swords:" + y)
         else if (result < 101)
     var y = new Discord.RichEmbed()
-    .setTitle("l'argnator ")
+    .addField("l'argnator vient ouvrir sa bouche venant faire comme un lance flamme", ":crossed_swords:" + y)
+    .addField("Les flammes auront pour effet de vous bruler pendant 3 tours, à chaque tours vous recevrez donc une petite quantité de dégats, seul l'armure magique réduit les dégats", ":fire: " + x)
     .setImage("https://media.discordapp.net/attachments/641785123590635520/660925278540922920/Crocro.jpg?width=559&height=559")
     .setColor("#ff8300")
     message.channel.sendMessage(y);
