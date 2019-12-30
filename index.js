@@ -166,7 +166,7 @@
         var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*2);
         var min_value = Math.floor(`${args}`*0.8)
-        var result = Math.floor((Math.random() * max_value) + min_value);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 81)
         var y = new Discord.RichEmbed()
         .addField("**Vous infligez un bon coup d'épée dans le torse de votre adversaire**",":crossed_swords:" + result)
@@ -187,7 +187,7 @@
         var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*1.8);
         var min_value = Math.floor(`${args}`*1)
-        var result = Math.floor((Math.random() * max_value) + min_value);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 81)
         var y = new Discord.RichEmbed()
         .addField("**Vous infligez un bon coup dans le visage de votre adversaire**",":crossed_swords:" + result)
@@ -205,7 +205,7 @@
         var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*2.2);
         var min_value = Math.floor(`${args}`*1)
-        var result = Math.floor((Math.random() * max_value) + min_value);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 65)
         var y = new Discord.RichEmbed()
         .addField("**Vous infligez un coup précis et puissant à votre adversaire**",":crossed_swords:" + result)
