@@ -47,7 +47,8 @@
                 .addField(":book:  ?Histoire", "Ici vous aurez un résumé du thème du serveur")
                 .addField(":man_detective: ?Classe", "Ici vous aurez la liste des classes")
                 .addField(":eyes: ?Espece", "Ici vous aurez la liste des especes")
-                .addField(":crossed_swords: ?Coup special")
+                .addField(":crossed_swords: ?Coup special", "Lors de la création de votre personnage, vous ne pourrez choisir qu'un seul coup spécial !")
+                .addField("")
                 .addField(":video_game: ?Liste d'attaque")
                 .addField(":video_game: ?Fiche RP", "Ici vous aurez le model de la fiche RP")
                 .addField(":chart_with_upwards_trend: ?Level", "Ici vous aurez les paliers entre chaque level")
@@ -126,22 +127,22 @@
                 var y = new Discord.RichEmbed()
                 .addField("Explication","Les coups spéciaux ne sont utilisé qu'une fois par combat, vous ne pouvez en choisir qu'une seul")
                 .addField("?Final slash", "__Prérequis :__ Demon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'executez")
-                .addField("?Tornade", "__Prérequis :__ Aucun \nVous attaquez plusieurs cible à la fois")
+                .addField("?Rafale de coups", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaque physique à un seul ennemie")
                 .setColor("#ff4600")
                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                 message.channel.send(y);
             }
 
             if(message.content === préfix + "Liste d'attaque"){
+                message.channel.send("**Ici vous trouverez les passifs des éspèces mais égalements la liste des attaques par classe**");
                 var y = new Discord.RichEmbed()
-                .addField("Explication","Ici vous trouverez la liste d'attaque pour les classes et les races")
                 .addField("**?Humain**", "__Passif__ : Vos HP se bloque une premiere fois à 1HP avant de subir un autre coups et de réelment mourir")
                 .addField("?Demon", "__Passif__ : Régénération 2 fois plus rapide")
                 .addField("?Automate", "__Passif__ :Imunisé au poison")
                 .addField("**===================================**", "**===================================**")
-                .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?VEsquive [Dégats reçu]\nLVL 5 ?VBlocage [Dégats reçu]\n LVL10 Evolution ?Assassin")
-                .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Dégats reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL10 Evolution ?Chevalier")
-                .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?PBlocage [Dégats reçu]\nLVL 5 ?PEsquive [Dégats reçu]\n LVL10 Evolution ?Wall")
+                .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Points d'agilité] [Dégats reçu]\nLVL 5 ?VBlocage [Dégats reçu]\n LVL10 Evolution ?Assassin")
+                .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Points d'agilité] [Dégats reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL10 Evolution ?Chevalier")
+                .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?PBlocage [Dégats reçu]\nLVL 5 ?Esquive [Points d'agilité] [Dégats reçu]\n LVL10 Evolution ?Juggernaut")
                 .setColor("#ff4600")
                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                 message.channel.send(y);
@@ -202,7 +203,7 @@
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
         var nombre = Math.floor((Math.random() * 100) + 1);
-        var max_value = Math.floor(`${args}`*3);
+        var max_value = Math.floor(`${args}`*2.2);
         var min_value = Math.floor(`${args}`*1)
         var result = Math.floor((Math.random() * max_value) + min_value);
         if(nombre < 65)
@@ -231,6 +232,20 @@
     .setImage("https://thumbs.gfycat.com/IdleDefiantGrouse-size_restricted.gif")
     .addField(":trident: **__Final slash__**", "Arme en main, vous venez foncer sur votre adversaire, vous avez prit connaissance de son êtat vital et sachez qu'il n'en a plus pour très longtemps, vous venez abréger ses souffrances !")
     message.channel.send(result)
+}
+if(command === 'rafale de coups'){
+    if (!args.length) {
+        return message.channel.send(`Il faut mettre un nombre, ${message.author}!`);
+    }
+   
+    var max_value = Math.floor(`${args}`*3.5);
+    var min_value = Math.floor(`${args}`*2.5)
+    var result = Math.floor((Math.random() * max_value) + min_value);
+    var y = new Discord.RichEmbed()
+    .setColor("#0012ff")
+    .addField("**Vous teniez votre arme fermement en main...Vous vous concentrez sur votre force physique ainsi que votre determination avant d'infliger de lourd dégats à la cible **",":crossed_swords:" + result)
+    .setImage("https://media1.tenor.com/images/e26e70a652ded0851347808067873e38/tenor.gif?itemid=14687288")
+    message.channel.send(y);
 }
     
 
