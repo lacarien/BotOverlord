@@ -62,7 +62,7 @@
             if(message.content === préfix + "Point cara"){
                 var y = new Discord.RichEmbed()
                 .addField("__**Les points de caracthéristiques**__"," à chaque level vous gagnerez un point de caracthéristique, chaque ''stats'' apport différent bonus.")
-                .addField("__**Répartition des points**__","**puissance :** ``1 point dans puissance c'est 1 de dégats en plus !``\n**résistance physique :** ``1 point dans résistance physique c'est 0.5 en armure !``\n**résistance magique :** ``1 point dans résistance magique c'est 0.5 en armure magique !``\n**vitalité :** ``1 point dans vitalité c'est 5HP en plus !``\n**agilité :** ``1 point dans l'agilité c'est 0.5 en esquive !``")
+                .addField("__**Répartition des points**__","**puissance :** ``1 point dans puissance c'est 1 de dégats en plus !``\n**résistance physique :** ``1 point dans résistance physique c'est 0.5 en armure``\n**résistance magique :** ``1 point dans résistance magique c'est 0.5 en armure magique !``\n**vitalité :** ``1 point dans vitalité c'est 5HP en plus !``\n**agilité :** ``1 point dans l'agilité c'est 0.5 en esquive !``")
                 message.channel.send(y);
             }
 
@@ -81,8 +81,8 @@
             }
             if(message.content === préfix + "Bonus voleur"){
                 var y = new Discord.RichEmbed()
-                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+3AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.5ES** :man_running: ")
-                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+6AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+1ES** :man_running: ")
+                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+3AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.1ES** :man_running: ")
+                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+6AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.2ES** :man_running: ")
                 .setImage("https://i.pinimg.com/originals/5d/ff/3a/5dff3a4218e9cd05ac9e54da8f73741e.jpg")
                 message.channel.send(y);
             }
@@ -125,7 +125,7 @@
 
             if(message.content === préfix + "Coup special"){
                 var y = new Discord.RichEmbed()
-                .addField("Explication","Les coups spéciaux ne sont utilisé qu'une fois par combat, vous ne pouvez en choisir qu'une seul")
+                .addField("Explication","Les coups spéciaux ne sont utilisé qu'une fois par combat, vous ne pouvez en choisir qu'une seul et c'est utilisable une fois toute les 2H")
                 .addField("?Final slash", "__Prérequis :__ Demon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'executez")
                 .addField("?Rafale_de_coups", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaque physique à un seul ennemie")
                 .setColor("#ff4600")
@@ -140,9 +140,11 @@
                 .addField("?Demon", "__Passif__ : Régénération 2 fois plus rapide")
                 .addField("?Automate", "__Passif__ :Imunisé au poison")
                 .addField("**===================================**", "**===================================**")
-                .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Points d'agilité] [Dégats reçu]\nLVL 5 ?VBlocage [Dégats reçu]\n LVL10 Evolution ?Assassin")
-                .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Points d'agilité] [Dégats reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL10 Evolution ?Chevalier")
-                .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?PBlocage [Dégats reçu]\nLVL 5 ?Esquive [Points d'agilité] [Dégats reçu]\n LVL10 Evolution ?Juggernaut")
+                .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Dégats reçu]\nLVL 5 ?VBlocage [Dégats reçu]\n LVL10 Evolution ?Assassin")
+                .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Dégats reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL10 Evolution ?Chevalier")
+                .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?PBlocage [Dégats reçu]\nLVL 5 ?Esquive [Dégats reçu]\n LVL10 Evolution ?Juggernaut")
+                .addField("**===================================**", "**===================================**")
+                .addField("**Info pour les esquives", "Si vous avez 0 points en agilité : Esquive [dégats reçu]\n Si vous en avez 1 au total : Super_esquive [dégats reçu]\n Si 2 : Mega_esquive [dégats reçu]\n Si 3 : Supra_esquive [dégats reçu]\n Et si 4 : Divin_esquive [dégats_reçu]")
                 .setColor("#ff4600")
                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                 message.channel.send(y);
@@ -262,16 +264,101 @@ if(command === 'rafale_de_coups'){
         var max_value = Math.floor(`${args}`*2);
         var min_value = Math.floor(`${args}`*1)
         var result = Math.floor((Math.random() * max_value) + min_value);
-        if(nombre < 75)
+        if(nombre < 70)
         var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
         .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
         .setImage("https://i.imgur.com/LQzeVqf.png")
         else if(nombre < 101)
         var y = new Discord.RichEmbed()
+        .setColor("#51fcfe")
         .setAuthor("Vous esquivez l'attaque")
         .setImage("https://cdn.discordapp.com/attachments/499161815549476864/643101853327818772/ezgif.com-gif-maker_4.gif")
         message.channel.send(y);
     }
+    if(command === 'super_esquive'){
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2);
+        var min_value = Math.floor(`${args}`*1)
+        var result = Math.floor((Math.random() * max_value) + min_value);
+        if(nombre < 65)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+        .setImage("https://i.imgur.com/LQzeVqf.png")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#51fcfe")
+        .setAuthor("Vous esquivez l'attaque")
+        .setImage("https://www.fightersgeneration.com/nf7/char/alucard-castlevania-netflix-fight.gif")
+        message.channel.send(y);
+    }
+    if(command === 'mega_esquive'){
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2);
+        var min_value = Math.floor(`${args}`*1)
+        var result = Math.floor((Math.random() * max_value) + min_value);
+        if(nombre < 65)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+        .setImage("https://i.imgur.com/LQzeVqf.png")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#51fcfe")
+        .setAuthor("Vous esquivez l'attaque")
+        .setImage("https://i.pinimg.com/originals/ea/2f/23/ea2f238c841768542bfcc232bd4fd22c.gif")
+        message.channel.send(y);
+    }
+    if(command === 'supra_esquive'){
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2);
+        var min_value = Math.floor(`${args}`*1)
+        var result = Math.floor((Math.random() * max_value) + min_value);
+        if(nombre < 60)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+        .setImage("https://i.imgur.com/LQzeVqf.png")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#51fcfe")
+        .setAuthor("Vous esquivez l'attaque")
+        .setImage("https://cdn.discordapp.com/attachments/499161815549476864/643101853327818772/ezgif.com-gif-maker_4.gif")
+        message.channel.send(y);
+    }
+    if(command === 'divin_esquive'){
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2);
+        var min_value = Math.floor(`${args}`*1)
+        var result = Math.floor((Math.random() * max_value) + min_value);
+        if(nombre < 55)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+        .setImage("https://i.imgur.com/LQzeVqf.png")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#51fcfe")
+        .setAuthor("Vous esquivez l'attaque")
+        .setImage("https://cdn.discordapp.com/attachments/499161815549476864/643101853327818772/ezgif.com-gif-maker_4.gif")
+        message.channel.send(y);
+    }
+
+
+
  
     // blocage /////////////////////////////
     // BLOCAGE /////////////////////////////
