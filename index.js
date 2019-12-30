@@ -158,7 +158,7 @@
                             //// LISTE D'ATTAQUE ///////////////////////////////////
                             //// LISTE D'ATTAQUE ///////////////////////////////////
         
-    if(command === 'coup-epee'){
+    if(command === 'coup_epee'){
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
@@ -172,14 +172,14 @@
         .setImage("https://i.pinimg.com/originals/d5/23/c5/d523c5604de784ddd5c0758b3a8c4145.jpg")
         else if(nombre < 101)
         var y = new Discord.RichEmbed()
-        .setAuthor("**Votre épée ne touche pas la cible**")
+        .setAuthor("Votre épée ne touche pas la cible")
         .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
         message.channel.send(y);
     }
 
 
 
-    if(command === 'coup-masse'){
+    if(command === 'coup_masse'){
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
@@ -197,7 +197,7 @@
         .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
         message.channel.send(y);
     }
-    if(command === 'coup-dague'){
+    if(command === 'coup_dague'){
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
         }
@@ -324,7 +324,7 @@
         if(result < 80)
         var y = new Discord.RichEmbed()
         .setColor("#ff8300")
-        .addField("Le crocro vous fonces dessus venant vous infliger des petits dégats", y)
+        .addField("Le crocro vous fonces dessus venant vous infliger des petits dégats", ":crossed_swords:" + y)
             else if (result < 90)
         var y = new Discord.RichEmbed()
         .setTitle("Le crocro adversaire rate son attaque")
