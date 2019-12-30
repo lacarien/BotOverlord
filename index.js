@@ -284,8 +284,8 @@
         if (!args.length) {
             return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
         }
-        var max_value = Math.floor(`${args}`*1.2);
-        var min_value = Math.floor(`${args}`*0.5)
+        var max_value = Math.floor(`${args}`*0.5);
+        var min_value = Math.floor(`${args}`*1.2)
         var result = Math.floor((Math.random() * max_value) + min_value);  
         var y = new Discord.RichEmbed()
         .addField(":shield: **Vous bloquez l'attaque difficilement et ne prennez qu'une partie des dégats**",":anger: " + result)
