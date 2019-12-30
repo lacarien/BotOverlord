@@ -240,7 +240,7 @@ if(command === 'rafale_de_coups'){
    
     var max_value = Math.floor(`${args}`*3.5);
     var min_value = Math.floor(`${args}`*2.5)
-    var result = Math.floor((Math.random() * max_value) + min_value);
+    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     var y = new Discord.RichEmbed()
     .setColor("#0012ff")
     .addField("**Vous teniez votre arme fermement en main...Vous vous concentrez sur votre force physique ainsi que votre determination avant d'infliger de lourd dégats à la cible **",":crossed_swords:" + result)
