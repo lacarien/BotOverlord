@@ -331,18 +331,18 @@
         var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
         }
         if(`${args}`==3){
-        var minXP = Math.floor(Math.min(0));
+        var minXP = Math.floor(Math.min(-2));
         var maxXP = Math.floor(Math.max(3)); 
         var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
         }
         if(`${args}`<4){ 
         var XP = Math.floor(30/`${args}`)
         var XP = Math.floor(XP + XXP)
-        } else if (`${args}`==4) {
+        } else if (`${args}`== 4) {
         var minXP = Math.floor(Math.min(0));
         var maxXP = Math.floor(Math.max(3)); 
         var XP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-        } else {
+        } else if (`${args}`> 4) {
         var XP = 0;
         }
         var minM = Math.floor(Math.min(10));
