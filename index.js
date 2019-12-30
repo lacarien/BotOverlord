@@ -73,22 +73,22 @@
             }
             if(message.content === préfix + "Bonus épéiste"){
                 var y = new Discord.RichEmbed()
-                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+10HP** :heartpulse: \n **+0.5AR** :shield:")
-                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+4AT** :crossed_swords: \n**+15HP** :heartpulse: \n **+1AR** :shield: ")
+                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+5HP** :heartpulse: ")
+                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+3AT** :crossed_swords: \n**+10HP** :heartpulse: \n **+0.5AR** :shield: ")
                 .setImage("https://wallpaperaccess.com/full/141779.jpg")
                 message.channel.send(y);
             }
             if(message.content === préfix + "Bonus voleur"){
                 var y = new Discord.RichEmbed()
-                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+3AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.1ES** :man_running: ")
-                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+6AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.2ES** :man_running: ")
+                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n **+0.1ES** :man_running: ")
+                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+5AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.1ES** :man_running: ")
                 .setImage("https://i.pinimg.com/originals/5d/ff/3a/5dff3a4218e9cd05ac9e54da8f73741e.jpg")
                 message.channel.send(y);
             }
             if(message.content === préfix + "Bonus paladin"){
                 var y = new Discord.RichEmbed()
-                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+15HP** :heartpulse: \n **+0.5AR** :shield:")
-                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+3AT** :crossed_swords: \n**+20HP** :heartpulse: \n **+0.5AR** :shield: \n **+0.5ARM** :beginner: ")
+                .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+10HP** :heartpulse:")
+                .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+2AT** :crossed_swords: \n**+15HP** :heartpulse: \n **+0.5AR** :shield:")
                 .setImage("https://images.alphacoders.com/522/thumb-1920-522947.jpg")
                 message.channel.send(y);
             }
@@ -509,18 +509,77 @@ if(message.content === préfix + "Nidrats_attaque"){
     message.channel.sendMessage(y);
 }
 
+if(command === 'récompenses_nidrats'){
+    if (!args.length) {
+        return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+    }
+    if(`${args}`==1){
+    var minXP = Math.floor(Math.min(-5));
+    var maxXP = Math.floor(Math.max(5)); 
+    var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+    }
+    if(`${args}`==2){
+    var minXP = Math.floor(Math.min(0));
+    var maxXP = Math.floor(Math.max(5)); 
+    var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+    }
+    if(`${args}`==3){
+    var minXP = Math.floor(Math.min(-2));
+    var maxXP = Math.floor(Math.max(3)); 
+    var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+    }
+    if(`${args}`<4){ 
+    var XP = Math.floor(30/`${args}`)
+    var XP = Math.floor(XP + XXP)
+    } else if (`${args}`== 4) {
+    var minXP = Math.floor(Math.min(0));
+    var maxXP = Math.floor(Math.max(3)); 
+    var XP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+    } else if (`${args}`> 4) {
+    var XP = 0;
+    }
+    var minM = Math.floor(Math.min(10));
+    var maxM = Math.floor(Math.max(20)); 
+    var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+    var y = new Discord.RichEmbed()
+    .addField("Récompenses du crocro", "**XP :** " + XP +"\n**Mercure :** " + Mercure + "\n**SOON**")
+    .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
+    message.channel.send(y);
+}
+
+
 if(message.content === préfix + "Aragnator") {
     var result = new Discord.RichEmbed() 
     .addField("Nom du monstre", "**__Aragnator__**")
     .setColor("#ff8300")
     .setImage("https://cdn.discordapp.com/attachments/641785123590635520/660927665192173638/215387ac70dda5e6b97acb390da2e505.png")
-    .addField(":heart: HP","100")
+    .addField(":heart: HP","80")
     .addField(":beginner: Passifs", "Aucune")
     .addField(":crossed_swords: Attaque", "?Aragnator_attaque")
     .addField(":shield: Défense", "?Aragnator_défense  [dégats reçu]")
     .addField(":moneybag: Récompenses", "?Récompenses_Aragnator [lvl]")
     message.channel.send(result)
 }  
+if(message.content === préfix + "Aragnator_attaque"){
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var min = Math.floor(Math.min(10));
+    var max = Math.floor(Math.max(20)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 70)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff8300")
+    .addField("L'Aragnator vous fonces dessus à pleine vitesse piquant vers l'avant !", ":crossed_swords:" + y)
+        else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setTitle("l'argnator ")
+    .setImage("https://media.discordapp.net/attachments/641785123590635520/660925278540922920/Crocro.jpg?width=559&height=559")
+    .setColor("#ff8300")
+    message.channel.sendMessage(y);
+}
+
 if(message.content === préfix + "Gnome pyromane") {
     var result = new Discord.RichEmbed() 
     .addField("Nom du monstre", "**__Gnome pyromane__**")
@@ -545,6 +604,22 @@ if(message.content === préfix + "Rongeurs") {
     .addField(":moneybag: Récompenses", "?Récompenses_Rongeurs [lvl]")
     message.channel.send(result)
 }    
+if(message.content === préfix + "Aragnator_attaque"){
+    var min = Math.floor(Math.min(20));
+    var max = Math.floor(Math.max(40)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 95)
+    var y = new Discord.RichEmbed()
+    .setColor("#ff8300")
+    .addField("Un grand nombre de bébé rats déscendes du Nid venant se jeter sur vous !", ":crossed_swords:" + y)
+        else if (result < 101)
+    var y = new Discord.RichEmbed()
+    .setTitle("Un Crocro sort du Nid'rats")
+    .setImage("https://media.discordapp.net/attachments/641785123590635520/660925278540922920/Crocro.jpg?width=559&height=559")
+    .setColor("#ff8300")
+    message.channel.sendMessage(y);
+}
 
 
 
