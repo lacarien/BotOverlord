@@ -265,7 +265,7 @@ if(command === 'rafale_de_coups'){
         var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*2);
         var min_value = Math.floor(`${args}`*1)
-        var result = Math.floor((Math.random() * max_value) + min_value);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 70)
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
