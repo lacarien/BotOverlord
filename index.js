@@ -215,30 +215,30 @@
         .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
         message.channel.send(y);
     }
+    //// LISTE D'ATTAQUE ///////////////////////////////////
+            //// LISTE D'ATTAQUE ///////////////////////////////////
+                //// LISTE D'ATTAQUE ///////////////////////////////////
+                //// LISTE D'ATTAQUE ///////////////////////////////////
+                    //// LISTE D'ATTAQUE ///////////////////////////////////
+                    //// LISTE D'ATTAQUE ///////////////////////////////////
+                        //// LISTE D'ATTAQUE ///////////////////////////////////
+                        //// LISTE D'ATTAQUE ///////////////////////////////////
+                            //// LISTE D'ATTAQUE ///////////////////////////////////
+                            //// LISTE D'ATTAQUE ///////////////////////////////////
+    if(message.content === préfix + "Final slash") {
+    var result = new Discord.RichEmbed() 
+    .setColor("#0012ff")
+    .setImage("https://thumbs.gfycat.com/IdleDefiantGrouse-size_restricted.gif")
+    .addField(":trident: **__Final slash__**", "Arme en main, vous venez foncer sur votre adversaire, vous avez prit connaissance de son êtat vital et sachez qu'il n'en a plus pour très longtemps, vous venez abréger ses souffrances !")
+    message.channel.send(result)
+}
+    
 
     // ESQUIVE /////////////////////////////
     // ESQUIVE /////////////////////////////
     // ESQUIVE /////////////////////////////
     // ESQUIVE /////////////////////////////
 
-    if(command === 'vesquive'){
-        if (!args.length) {
-            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
-        }
-        var nombre = Math.floor((Math.random() * 100) + 1);
-        var max_value = Math.floor(`${args}`*2);
-        var min_value = Math.floor(`${args}`*1)
-        var result = Math.floor((Math.random() * max_value) + min_value);
-        if(nombre < 70)
-        var y = new Discord.RichEmbed()
-        .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
-        .setImage("https://i.imgur.com/LQzeVqf.png")
-        else if(nombre < 101)
-        var y = new Discord.RichEmbed()
-        .setAuthor("Vous esquivez l'attaque")
-        .setImage("https://qph.fs.quoracdn.net/main-qimg-884de075e24bf47b1e03cdbab5370296")
-        message.channel.send(y);
-    }
     if(command === 'esquive'){
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
@@ -257,24 +257,7 @@
         .setImage("https://cdn.discordapp.com/attachments/499161815549476864/643101853327818772/ezgif.com-gif-maker_4.gif")
         message.channel.send(y);
     }
-    if(command === 'pesquive'){
-        if (!args.length) {
-            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
-        }
-        var nombre = Math.floor((Math.random() * 100) + 1);
-        var max_value = Math.floor(`${args}`*2);
-        var min_value = Math.floor(`${args}`*1)
-        var result = Math.floor((Math.random() * max_value) + min_value);
-        if(nombre < 80)
-        var y = new Discord.RichEmbed()
-        .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
-        .setImage("https://i.imgur.com/LQzeVqf.png")
-        else if(nombre < 101)
-        var y = new Discord.RichEmbed()
-        .setAuthor("Vous esquivez l'attaque")
-        .setImage("https://cdn.discordapp.com/attachments/499161815549476864/643101853327818772/ezgif.com-gif-maker_4.gif")
-        message.channel.send(y);
-    }
+ 
     // blocage /////////////////////////////
     // BLOCAGE /////////////////////////////
     // blocage /////////////////////////////
