@@ -127,7 +127,7 @@
                 var y = new Discord.RichEmbed()
                 .addField("Explication","Les coups spéciaux ne sont utilisé qu'une fois par combat, vous ne pouvez en choisir qu'une seul")
                 .addField("?Final slash", "__Prérequis :__ Demon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'executez")
-                .addField("?Rafale de coups", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaque physique à un seul ennemie")
+                .addField("?Rafale_de_coups", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaque physique à un seul ennemie")
                 .setColor("#ff4600")
                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                 message.channel.send(y);
@@ -233,7 +233,7 @@
     .addField(":trident: **__Final slash__**", "Arme en main, vous venez foncer sur votre adversaire, vous avez prit connaissance de son êtat vital et sachez qu'il n'en a plus pour très longtemps, vous venez abréger ses souffrances !")
     message.channel.send(result)
 }
-if(command === 'rafale de coups'){
+if(command === 'rafale_de_coups'){
     if (!args.length) {
         return message.channel.send(`Il faut mettre un nombre, ${message.author}!`);
     }
