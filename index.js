@@ -581,7 +581,7 @@ if(message.content === préfix + "Aragnator_attaque"){
     message.channel.sendMessage(y);
 }
 
-if(command === 'Aragnator_défense'){
+if(command === 'aragnator_défense'){
     if (!args.length) {
         return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
     }
