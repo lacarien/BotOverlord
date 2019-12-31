@@ -681,9 +681,9 @@ if(command === 'apparition_ruine') {
         return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
     }
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 40){
+    if(result < 50){
         var x = 1;
-    } else if (result < 80){
+    } else if (result < 90){
         var x = 2;
     } else if (result < 101){
         var x = 3;
@@ -692,13 +692,13 @@ if(command === 'apparition_ruine') {
     var random = Math.floor((Math.random() * 100) + 1);
     var A = 0;
     var B = 0;
-    while(x!=0){  
+    while(ennemies!=0){  
         if(random < 60){
             A = A+1;
         } else if (random < 101){
             B = B+1;
         }
-        x=x-1;
+        ennemies=ennemies-1;
     } 
     message.channel.send("**__Des monstres viennent apparaitre__**")
     var mes = new Discord.RichEmbed() 
