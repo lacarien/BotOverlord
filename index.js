@@ -624,7 +624,7 @@
         }
         var minXP = Math.floor(Math.min(20));
         var maxXP = Math.floor(Math.max(30)); 
-        var XP = Math.floor(Math.random() * (maxXP - minxXP + 1) ) + minXP;
+        var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         if(`${args}`<4){
             var A = Math.floor(4-`${args}`);
             var XP = Math.floor(XP*(1+(0.2*A)));
