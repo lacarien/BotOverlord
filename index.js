@@ -702,14 +702,14 @@ if(command === 'apparition_chemin') {
     } 
     message.channel.send("**__Des monstres viennent apparaitre__**")
     var mes = new Discord.RichEmbed() 
-    .addField("__**Crocro**__", "Nombre de crocro : " + A)
-    .addField("**__Nid'rats__**", "Nombre de nid'rats : "+B)
+    .addField(":rat: __**Crocro**__", "**Nombre de crocro :** " + A)
+    .addField(":rat: **__Nid'rats__**", "**Nombre de nid'rats :** "+B)
     .setColor("#ff8300")
     .setImage("https://i.pinimg.com/originals/71/71/c0/7171c0b7ba3b53ca7931581fc54f1f9e.jpg")
     message.channel.send(mes)
 }
 
-if(command === 'apparition_chemin') {
+if(command === 'apparition_plaine_chaude') {
     if (!args.length) {
         return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
     }
@@ -735,8 +735,8 @@ if(command === 'apparition_chemin') {
     } 
     message.channel.send("**__Des monstres viennent apparaitre__**")
     var mes = new Discord.RichEmbed() 
-    .addField("__**Aragnator**__", "Nombre d'aragnator : " + A)
-    .addField("**__Gnome pyroman__**", "Nombre de gnome : "+B)
+    .addField(":bat: __**Aragnator**__", "**Nombre d'aragnator :** " + A)
+    .addField(":japanese_ogre: **__Gnome pyroman__**", "**Nombre de gnome :** "+B)
     .setColor("#ff8300")
     .setImage("https://cdn.discordapp.com/attachments/454694319396356128/661506598258343948/restricted___underworld_premade_by_frozenstocks_dbcjnpp-fullview.png")
     message.channel.send(mes)
