@@ -707,6 +707,39 @@ if(command === 'apparition_chemin') {
     .setColor("#ff8300")
     .setImage("https://i.pinimg.com/originals/71/71/c0/7171c0b7ba3b53ca7931581fc54f1f9e.jpg")
     message.channel.send(mes)
+}
+
+if(command === 'apparition_chemin') {
+    if (!args.length) {
+        return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
+    }
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 50){
+        var x = 1;
+    } else if (result < 90){
+        var x = 2;
+    } else if (result < 101){
+        var x = 3;
+    }
+    var ennemies= Math.floor(`${args}`*x);
+    var random = Math.floor((Math.random() * 100) + 1);
+    var A = 0;
+    var B = 0;
+    while(ennemies!=0){  
+        if(random < 60){
+            A = A+1;
+        } else if (random < 101){
+            B = B+1;
+        }
+        ennemies=ennemies-1;
+    } 
+    message.channel.send("**__Des monstres viennent apparaitre__**")
+    var mes = new Discord.RichEmbed() 
+    .addField("__**Aragnator**__", "Nombre d'aragnator : " + A)
+    .addField("**__Gnome pyroman__**", "Nombre de gnome : "+B)
+    .setColor("#ff8300")
+    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/661506598258343948/restricted___underworld_premade_by_frozenstocks_dbcjnpp-fullview.png")
+    message.channel.send(mes)
 }    
 
 
