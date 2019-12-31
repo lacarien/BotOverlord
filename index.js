@@ -608,6 +608,7 @@ if(command === 'aragnator_défense'){
     message.channel.send(y);
 }
 
+
 if(message.content === préfix + "Gnome pyromane") {
     var result = new Discord.RichEmbed() 
     .addField("Nom du monstre", "**__Gnome pyromane__**")
@@ -662,6 +663,52 @@ if(message.content === préfix + "Rongeurs") {
     .addField(":moneybag: Récompenses", "?Récompenses_Rongeurs [lvl]")
     message.channel.send(result)
 }    
+
+// APPARITION ETAGE 1 ///////////
+                        // APPARITION ETAGE 1 ///////////
+                                        // APPARITION ETAGE 1 ///////////
+                                        // APPARITION ETAGE 1 ///////////
+                                                        // APPARITION ETAGE 1 ///////////
+// APPARITION ETAGE 1 ///////////
+                                                        // APPARITION ETAGE 1 ///////////
+                      // APPARITION ETAGE 1 ///////////
+                                                        // APPARITION ETAGE 1 ///////////
+    // APPARITION ETAGE 1 ///////////
+                                                        // APPARITION ETAGE 1 ///////////
+
+if(command === 'apparition_ruine') {
+    if (!args.length) {
+        return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
+    }
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 40){
+        var x = 1;
+    } else if (result < 80){
+        var x = 2;
+    } else if (result < 101){
+        var x = 3;
+    }
+    var ennemies= Math.floor(`${args}`*x);
+    var random = Math.floor((Math.random() * 100) + 1);
+    var A = 0;
+    var B = 0;
+    while(x!=0){  
+        if(random < 60){
+            A = A+1;
+        } else if (random < 101){
+            B = B+1;
+        }
+        x=x-1;
+    } 
+    message.channel.send("**__Des monstres viennent apparaitre__**")
+    var mes = new Discord.RichEmbed() 
+    .addField("__**Crocro**__", "Nombre de crocro : " + A)
+    .addField("**__Nid'rats__**", "Nombre de nid'rats : "+B)
+    .setColor("#ff8300")
+    .setImage("https://i.pinimg.com/originals/71/71/c0/7171c0b7ba3b53ca7931581fc54f1f9e.jpg")
+    message.channel.send(mes)
+}    
+
 
 
 
