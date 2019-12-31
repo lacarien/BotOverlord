@@ -631,7 +631,7 @@
         }
         if(`${args}`>4){
             var A = Math.floor(4-`${args}`);
-            var XP = Math.floor(XP*(1+(0.2*A)));
+            var XP = Math.floor(XP*(1+(0.3*A)));
         }
         var minM = Math.floor(Math.min(10));
         var maxM = Math.floor(Math.max(20)); 
