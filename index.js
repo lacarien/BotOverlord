@@ -121,7 +121,8 @@
                 .addField(":crossed_swords: épéiste", "Dégats moyen pour HP moyen !")
                 .addField(":shield: Paladin", "Beaucoup d'HP pour faible dégats !")
                 .setColor("#ff4600")
-                .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+                .setImage("https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                .setFooter("©[LCR] Production", "https://images-ext-2.discordapp.net/external/S1FceVsNLT4rcbavTGHim2Qp3fFbZopiSTqg3UsgHGw/https/i.pinimg.com/originals/2f/22/e5/2f22e5e72a18ee90cc1074445838a082.jpg?width=373&height=559");
                 message.channel.send(y);
             }
 
