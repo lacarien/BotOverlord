@@ -625,26 +625,16 @@
         var minXP = Math.floor(Math.min(20));
         var maxXP = Math.floor(Math.max(30)); 
         var XP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-        var A = 0;
-        var B = `${args}`;
+        var A = 4;
+        var B = 1;
         if(`${args}`<4){
-            while(`${args}`!=4){
-                A = A+1;
-                B = B+1;
+            while(A != `${args}`){
+                var B = B-0.3;
+                var A = A+1;
             }
-                A = A*0.3;
-                A = XP * A;
-                XP = XP + A;
         }
-        if(`${args}`>4){
-            while(`${args}`!=4){
-            var A = A+1;
-            var B = B-1;
-            }
-            var A = A*0.3;
-            var A = XP * A;
-            var XP = XP - A;
-        }
+        var XP = XP*B;
+         
         var minM = Math.floor(Math.min(10));
         var maxM = Math.floor(Math.max(20)); 
         var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
