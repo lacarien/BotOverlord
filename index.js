@@ -44,15 +44,16 @@
 
             if(message.content === préfix + "Help"){
                 var y = new Discord.RichEmbed()
-                .addField(":book:  ?Histoire", "Ici vous aurez un résumé du thème du serveur")
-                .addField(":man_detective: ?Classe", "Ici vous aurez la liste des classes")
-                .addField(":eyes: ?Espece", "Ici vous aurez la liste des especes")
-                .addField(":crossed_swords: ?Coup special", "Lors de la création de votre personnage, vous ne pourrez choisir qu'un seul coup spécial !")
-                .addField(":video_game: ?Liste d'attaque")
-                .addField(":video_game: ?Fiche RP", "Ici vous aurez le model de la fiche RP")
-                .addField(":chart_with_upwards_trend: ?Level", "Ici vous aurez les paliers entre chaque level")
-                .addField(":bar_chart: ?Bonus [nom de la classe]", "Pour savoir le gain de caracthéristique à chaque level up")
-                .addField(":nazar_amulet: ?Point cara", "Ici vous trouverez l'utilité des points de caracthéristiques")
+                .addField(":book:  **?Histoire**", "Ici vous aurez un résumé du thème du serveur")
+                .addField(":man_detective: **?Classe**", "Ici vous aurez simplement la liste des classes lors de la création de votre personnage")
+                .addField(":eyes: **?Espece**", "Ici vous aurez la liste des especes")
+                .addField(":crossed_swords: **?Coup special**", "Lors de la création de votre personnage, vous ne pourrez choisir qu'un seul coup spécial !")
+                .addField(":video_game: **?Liste d'attaque**", "C'est le plus important ! selon votre classe vous aurez différantes attaques !")
+                .addField(":video_game: **?Fiche RP**", "Ici vous aurez le model de la fiche RP")
+                .addField(":chart_with_upwards_trend: **?Level**", "Ici vous aurez les paliers entre chaque level")
+                .addField(":bar_chart: **?Bonus [nom de la classe]**", "Pour savoir le gain de caracthéristique à chaque level up")
+                .addField(":nazar_amulet: **?Point cara**", "Ici vous trouverez l'utilité des points de caracthéristiques")
+                .addField(":park: **?étage**", "Ici vous aurez la liste des étages ainsi qu'un rapide résumé de leur thème")
                 .setColor("#ff4600")
                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                 message.channel.send(y);
@@ -96,6 +97,18 @@
                 .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+10HP** :heartpulse:")
                 .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+2AT** :crossed_swords: \n**+15HP** :heartpulse: \n **+0.5AR** :shield:")
                 .setImage("https://images.alphacoders.com/522/thumb-1920-522947.jpg")
+                message.channel.send(y);
+            }
+
+            if(message.content === préfix + "étage"){
+                var y = new Discord.RichEmbed()
+                .addField("Liste des étages", "__**Il est à noter que l'étage de base est le 0 et que plus vous avancerez plus vous déscendrez.**__\n" 
+                +":fire: **étage -1 :** C'est létage de la lave, le Boss serait...Un poil trop cuit\n"
+                +":ice_cube: **étage -2 :** C'est létage de la glace, pensez à mettre un pull ! \n"
+                +":classical_building: **étage -3 :** C'est létage d'une ancienne ville maintenant abandonné....\n"
+                +"**étage -4 :** SOON")
+                .setColor("#ff4600")
+                .setFooter("©[LCR] Production", "https://images-ext-2.discordapp.net/external/S1FceVsNLT4rcbavTGHim2Qp3fFbZopiSTqg3UsgHGw/https/i.pinimg.com/originals/2f/22/e5/2f22e5e72a18ee90cc1074445838a082.jpg?width=373&height=559");
                 message.channel.send(y);
             }
 
