@@ -629,12 +629,12 @@
         var B = `${args}`;
         if(`${args}`<4){
             while(`${args}`!=4){
-                var A = A+1;
-                var B = B+1;
-                }
-                var A = A*0.3;
-                var A = XP * A;
-                var XP = XP + A;
+                A = A+1;
+                B = B+1;
+            }
+                A = A*0.3;
+                A = XP * A;
+                XP = XP + A;
         }
         if(`${args}`>4){
             while(`${args}`!=4){
