@@ -676,7 +676,7 @@ if(message.content === préfix + "Rongeurs") {
     // APPARITION ETAGE 1 ///////////
                                                         // APPARITION ETAGE 1 ///////////
 
-if(command === 'apparition_ruine') {
+if(command === 'apparition_chemin') {
     if (!args.length) {
         return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
     }
