@@ -202,9 +202,6 @@
         .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
         message.channel.send(y);
     }
-
-
-
     if(command === 'coup_masse'){
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
@@ -619,6 +616,41 @@ if(command === 'aragnator_défense'){
     var y = new Discord.RichEmbed()
     .setColor("#ff8300")
     .setTitle(":bat: L'Aragnator va voler en l'air et faire des looopings pour ne pas se faire toucher")
+    message.channel.send(y);
+}
+if(command === 'récompenses_aragnator'){
+    if (!args.length) {
+        return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+    }
+    var minXP = Math.floor(Math.min(20));
+    var maxXP = Math.floor(Math.max(30)); 
+    var XP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+    var A = 0;
+    var B = `${args}`
+    if(`${args}`<4){
+        while(`${args}`!=4){
+            var A = A+1;
+            var B = B-1;
+            }
+            var A = A*0.3;
+            var A = XP * A;
+            var XP = XP + A;
+    }
+    if(`${args}`>4){
+        while(`${args}`!=4){
+        var A = A+1;
+        var B = B-1;
+        }
+        var A = A*0.3;
+        var A = XP * A;
+        var XP = XP - A;
+    }
+    var minM = Math.floor(Math.min(10));
+    var maxM = Math.floor(Math.max(20)); 
+    var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+    var y = new Discord.RichEmbed()
+    .addField("Récompenses du crocro", "**XP :** " + XP +"\n**Mercure :** " + Mercure + "\n**SOON**")
+    .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
     message.channel.send(y);
 }
 
