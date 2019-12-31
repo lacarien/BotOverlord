@@ -108,7 +108,7 @@
                 +":classical_building: **étage -3 :** C'est létage d'une ancienne ville maintenant abandonné....\n"
                 +"**étage -4 :** SOON")
                 .setColor("#ff4600")
-                .setimage("https://media.discordapp.net/attachments/454694319396356128/661514404273324033/2f22e5e72a18ee90cc1074445838a082.png")
+                .setImage("https://media.discordapp.net/attachments/454694319396356128/661514404273324033/2f22e5e72a18ee90cc1074445838a082.png")
                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                 message.channel.send(y);
             }
