@@ -710,8 +710,8 @@
         var maxM = Math.floor(Math.max(20)); 
         var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
         var y = new Discord.RichEmbed()
-        .setTitle("Récompenses de l'argnator")
-        .setAuthor(":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n**SOON**")
+        .setTitle(":bat: Récompenses de l'argnator")
+        .saddField("",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n**SOON**")
         .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
         message.channel.send(y);
     }
