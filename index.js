@@ -578,6 +578,29 @@
         .addField(":moneybag: Récompenses", "?Récompenses_Rat_Alpha [lvl]")
         message.channel.send(result)
     }
+    if(command === 'récompenses_rat_alpha'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre le lvl que vous avez, ${message.author}!`);
+        }
+        var minXP = Math.floor(Math.min(30));
+        var maxXP = Math.floor(Math.max(40)); 
+        var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+        if(`${args}`<4){
+            var A = Math.floor(4-`${args}`);
+            var XP = Math.floor(XP*(1+(0.2*A)));
+        }
+        if(`${args}`>4){
+            var A = Math.floor(4-`${args}`);
+            var XP = Math.floor(XP*(1+(0.3*A)));
+        }
+        var minM = Math.floor(Math.min(20));
+        var maxM = Math.floor(Math.max(30)); 
+        var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+        var y = new Discord.RichEmbed()
+        .addField("Récompenses du crocro", ":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n**SOON**")
+        .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
+        message.channel.send(y);
+    }
 
     if(message.content === préfix + "Alpha_attaque"){
         var min = Math.floor(Math.min(20));
