@@ -610,7 +610,7 @@
         } else if(alea < 101){
         var y = new Discord.RichEmbed()
         .setColor("#ff8300")
-        .setTitle(":rat: **Le rat viendra éviter l'attaque en faisant un bond sur le côté !")
+        .setTitle(":rat: Le rat viendra éviter l'attaque en faisant un bond sur le côté !")
             
         }
         message.channel.send(y);
@@ -806,15 +806,15 @@
             var x = 3;
         }
         var ennemies= Math.floor(`${args}`*x);
-        var random = Math.floor((Math.random() * 100) + 1);
+        var random = Math.floor((Math.random() * 110) + 1);
         var A = 0;
         var B = 0;
         while(ennemies!=0){  
-            if(random < 60){
+            if(random < 0){
                 A = A+1;
-            } else if (random < 101){
+            } else if (random < 105){
                 B = B+1;
-            }
+            } else if (random < 101)
             ennemies=ennemies-1;
         } 
         message.channel.send("**__Des monstres viennent apparaitre__**")
