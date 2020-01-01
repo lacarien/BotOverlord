@@ -773,23 +773,36 @@
             var x = 3;
         }
         var ennemies= Math.floor(`${args}`*x);
-        var random = Math.floor((Math.random() * 100) + 1);
+        var random = Math.floor((Math.random() * 110) + 1);
         var A = 0;
         var B = 0;
+        var C = 0;
         while(ennemies!=0){  
             if(random < 60){
                 A = A+1;
-            } else if (random < 101){
+            } else if (random < 105){
                 B = B+1;
+            } else if (random < 111){
+                C = C++;
             }
             ennemies=ennemies-1;
         } 
-        message.channel.send("**__Des monstres viennent apparaitre__**")
+        if(C < 1){
         var mes = new Discord.RichEmbed() 
+        .setTitle(":vs: Des monstres viennent d'apparaitre !")
         .addField(":rat: __**Crocro**__", "**Nombre de crocro :** " + A)
         .addField(":rat: **__Nid'rats__**", "**Nombre de nid'rats :** "+B)
         .setColor("#ff8300")
         .setImage("https://i.pinimg.com/originals/71/71/c0/7171c0b7ba3b53ca7931581fc54f1f9e.jpg")
+        } else if(C > 0){
+            var mes = new Discord.RichEmbed()
+        .setTitle(":vs: Des monstres viennent d'apparaitre !\n Mais attention ! L'Alpha approche !")
+        .addField(":rat: __**Crocro**__", "**Nombre de crocro :** " + A)
+        .addField(":rat: **__Nid'rats__**", "**Nombre de nid'rats :** "+B)
+        .addField(":rat: **_Rat alpha__**", "**Nombre d'Alpha :** " + C)
+        .setColor("#ff8300")
+        .setImage("https://i.pinimg.com/originals/71/71/c0/7171c0b7ba3b53ca7931581fc54f1f9e.jpg")
+        }
         message.channel.send(mes)
     }
 
@@ -806,15 +819,15 @@
             var x = 3;
         }
         var ennemies= Math.floor(`${args}`*x);
-        var random = Math.floor((Math.random() * 110) + 1);
+        var random = Math.floor((Math.random() * 100) + 1);
         var A = 0;
         var B = 0;
         while(ennemies!=0){  
-            if(random < 0){
+            if(random < 60){
                 A = A+1;
-            } else if (random < 105){
+            } else if (random < 101){
                 B = B+1;
-            } else if (random < 101)
+            }
             ennemies=ennemies-1;
         } 
         message.channel.send("**__Des monstres viennent apparaitre__**")
