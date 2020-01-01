@@ -1,3 +1,4 @@
+client.on("message",message =>{
 
 
 
@@ -71,7 +72,7 @@ if(message.content === préfix + "Commerce"){
                                         });
                         break;
                         case '❤️':
-                                let embed2 = new Discord.RichEmbed()
+                                let embed3 = new Discord.RichEmbed()
                                 .addField("**__Liste des potions__**", "```Attention à bien respecter les conditions d'utilisation d'une potion !``` ")
                                 .addField("``Potion faible de MP``","?Achat MPF \n:dollar: **Prix :** ??")
                                 .addField("``Potion faible d'HP``","?Achat HPF\n:dollar: **Prix :** ??")
@@ -100,6 +101,6 @@ if(message.content === préfix + "Commerce"){
                 });
         });
 }
-
+})
 /// MARCHE NOIR
 
