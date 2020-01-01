@@ -566,6 +566,56 @@
         message.channel.send(y);
     }
 
+    if(message.content === préfix + "Rat alpha") {
+        var result = new Discord.RichEmbed() 
+        .addField("Nom du monstre", "**__Rat alpha__**")
+        .setColor("#ff8300")
+        .setImage("https://cdn.discordapp.com/attachments/641775756191727648/661684852432699412/lava-rat-sarah-stanaland.png")
+        .addField(":heart: HP","70")
+        .addField(":beginner: Passifs", ":fire: Immunisé contre les dégats de feu")
+        .addField(":crossed_swords: Attaque", "?Alpha_attaque")
+        .addField(":shield: Défense", "?Alpha_défense [dégats reçu]")
+        .addField(":moneybag: Récompenses", "?Récompenses_Rat_Alpha [lvl]")
+        message.channel.send(result)
+    }
+
+    if(message.content === préfix + "Alpha_attaque"){
+        var min = Math.floor(Math.min(20));
+        var max = Math.floor(Math.max(40)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;   
+        var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 85)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff8300")
+        .addField("Le rat Alpha fonce sur vous à vives alures avant de vous mordre fermement !", ":crossed_swords:" + y)
+            else if (result < 101)
+        var y = new Discord.RichEmbed()
+        .setTitle("**L'alpha viendra hurler au sang avant de montrer ses crocs en signe de menace")
+        .setColor("#ff8300")
+        message.channel.sendMessage(y);
+    }
+
+    if(command === 'alpha_défense'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+        }
+        var max_value = Math.floor(`${args}`*1.2);
+        var min_value = Math.floor(`${args}`*0.9)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value; 
+        var alea = Math.floor((Math.random() * 100) + 1);
+        if(alea<60){
+        var y = new Discord.RichEmbed()
+        .setColor("#ff8300")
+        .addField(":shield: Le rat subira l'attaque, sa faible résistance diminuera de peu les dégats !",":anger: " + result)
+        } else if(alea < 101){
+        var y = new Discord.RichEmbed()
+        .setColor("#ff8300")
+        .setTitle(":rat: **Le rat viendra éviter l'attaque en faisant un bond sur le côté !")
+            
+        }
+        message.channel.send(y);
+    }
+
 
     if(message.content === préfix + "Aragnator") {
         var result = new Discord.RichEmbed() 
