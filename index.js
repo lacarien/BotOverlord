@@ -32,7 +32,7 @@
                 
             
 
-            /* eval(fs.readFileSync(__dirname + '/Combats.js')+'');
+             eval(fs.readFileSync(__dirname + '/Shop.js')+'');
             /* eval(fs.readFileSync(__dirname + '/Shop.js')+'');
             /* eval(fs.readFileSync(__dirname + '/attaque.js')+'');
                 eval(fs.readFileSync(__dirname + '/pnj.js')+'');
@@ -54,10 +54,14 @@
                     .addField(":bar_chart: **?Bonus [nom de la classe]**", "Pour savoir le gain de caracthéristique à chaque level up")
                     .addField(":nazar_amulet: **?Point cara**", "Ici vous trouverez l'utilité des points de caracthéristiques")
                     .addField(":park: **?étage**", "Ici vous aurez la liste des étages ainsi qu'un rapide résumé de leur thème")
+                    .addField(":office: **?Commerce**", "Ici vous trouverez le shop inRP ")
+                    .addField(":hammer_pick: **?Artisanat**", "Ici vous trouverez la liste des différents type de fabrication ainsi que les ressources nécéssaires.")
                     .setColor("#ff4600")
                     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                     message.channel.send(y);
                 }
+
+                
                 if(message.content === préfix + "Fiche RP"){
                     message.channel.send("```!! ━―━―━👤 **__PERSONNEL__** 👤━―━―━ !!\n\n **Nom :**\n**Prénom :**\n**Âge : **\n\n**Race : **\n**Sexe :**\n**Orientation sexuelle :**\n\n**Poids :**\n **Taille :**\n\n**Personnalité :**\n\n**Histoire :**\n\n\n**__APPARENCE :__**\n\n**Caractéristique physique :** \n\n**Image :**\n\n\n!! ━―━―━🗡️ **__COMBAT__** 🗡️━―━―━ !!\n\n" 
                     +"**Classe :** ?\n**Compétence spé :** ?\n\n**Niveau : ** 1\n**Exp :** 50/50\n\n**HP : ** 0/0\n**Armure : ** 0\n**Armure magique :** 0\n**MP :** 0/0\n0 **Attaque total**\n0 **Esquive total**\n\n\n!! ━―━―━💠 **__Caractéristiques__** 💠━―━―━ !!\n\n\n0/? **point libre restant**\n\n"
