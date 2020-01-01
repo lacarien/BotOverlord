@@ -773,11 +773,11 @@
             var x = 3;
         }
         var ennemies= Math.floor(`${args}`*x);
-        var random = Math.floor((Math.random() * 110) + 1);
         var A = 0;
         var B = 0;
         var C = 0;
         while(ennemies!=0){  
+            var random = Math.floor((Math.random() * 110) + 1);
             if(random < 60){
                 A = A+1;
             } else if (random < 105){
