@@ -1,7 +1,7 @@
 
 
 if(message.content === préfix + "Commerce"){
-    const filter = (reaction, user) => ['1️⃣','2️⃣','🔙'].includes(reaction.emoji.name) &&user.id === message.author.id;
+    const filter = (reaction, user) => ['🛡️','⚔️','❤️','🔙'].includes(reaction.emoji.name) &&user.id === message.author.id;
     let embed = new Discord.RichEmbed()
         .setColor("#ff4600")
         .addField("**Sommaire du commerce**","**Armure :** 🛡️\n**Arme :** ⚔️\n**Potion :** ❤️")
