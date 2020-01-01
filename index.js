@@ -777,13 +777,13 @@
         var B = 0;
         var C = 0;
         while(ennemies!=0){  
-            var random = Math.floor((Math.random() * 110) + 1);
+            var random = Math.floor((Math.random() * 100) + 1);
             if(random < 60){
                 A = A+1;
-            } else if (random < 105){
+            } else if (random < 95){
                 B = B+1;
-            } else if (random < 111){
-                C = C++;
+            } else if (random < 101){
+                C = C+1;
             }
             ennemies=ennemies-1;
         } 
