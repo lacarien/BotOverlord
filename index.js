@@ -459,8 +459,36 @@
         var minM = Math.floor(Math.min(10));
         var maxM = Math.floor(Math.max(20)); 
         var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+        var result2 = Math.floor((Math.random() * 100) + 1);
+        var Peau = 0;
+        if(result2 < 80){
+            Peau = Peau + 1;
+        } else if(result2 < 90){
+            Peau = Peau + 2;
+        } else if(result2 < 101){
+            Peau = 0;
+        }
+        var result3 = Math.floor((Math.random() * 100) + 1);
+        var Queu = 0;
+        if(result3 < 40){
+            Queu = Queu +1;
+        } else if(result3 < 96){
+            Queu = 0;
+        } else if(result3 < 101){
+            Queu = Queu + 2;
+          
+        }
+        var result4 = Math.floor((Math.random() * 100) + 1);
+        var Oeil = 0;
+        if(result4 < 25){
+            Oeil= Oeil +1;
+        } else if(result4 < 96){
+            Oeil = 0;
+        }
+
+
         var y = new Discord.RichEmbed()
-        .addField("Récompenses du crocro", "**XP :** " + XP +"\n**Mercure :** " + Mercure + "\n**SOON**")
+        .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:rat: **Peau de crocro :** "+ Peau +"\n:bug: **Queu de crocro :** " + Queu + "\n:eye: **Oeil de crocro :** " + Oeil)
         .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
         message.channel.send(y);
     }
@@ -534,7 +562,7 @@
 
     if(command === 'récompenses_nidrats'){
         if (!args.length) {
-            return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+            return message.channel.send(`Il faut mettre ton level, ${message.author}!`);
         }
         if(`${args}`==1){
         var minXP = Math.floor(Math.min(-5));
@@ -565,7 +593,7 @@
         var maxM = Math.floor(Math.max(20)); 
         var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
         var y = new Discord.RichEmbed()
-        .addField("Récompenses du crocro", "**XP :** " + XP +"\n**Mercure :** " + Mercure + "\n**SOON**")
+        .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n**SOON**")
         .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
         message.channel.send(y);
     }
@@ -625,7 +653,7 @@
 
     if(command === 'alpha_défense'){
         if (!args.length) {
-            return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+            return message.channel.send(`Il faut mettre les dégats que prends l'Alpha, ${message.author}!`);
         }
         var max_value = Math.floor(`${args}`*1.2);
         var min_value = Math.floor(`${args}`*0.9)
@@ -698,7 +726,7 @@
     }
     if(command === 'récompenses_aragnator'){
         if (!args.length) {
-            return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+            return message.channel.send(`Il faut mettre ton lvl; ${message.author}!`);
         }
         var minXP = Math.floor(Math.min(20));
         var maxXP = Math.floor(Math.max(30)); 
