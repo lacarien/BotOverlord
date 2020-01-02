@@ -76,7 +76,7 @@ if(message.content === préfix + "Commerce"){
                                 .addField("``Potion faible d'HP``","?Achat HPF\n:dollar: **Prix :** ??")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
-                                    message.channel.send(embed2).then(async message => 
+                                    message.channel.send(embed3).then(async message => 
                                         { 
                                             await message.react('🔙')
     
