@@ -46,16 +46,16 @@
                     var y = new Discord.RichEmbed()
                     .addField(":book:  **?Histoire**", "Ici vous aurez un résumé du thème du serveur")
                     .addField(":man_detective: **?Classe**", "Ici vous aurez simplement la liste des classes lors de la création de votre personnage")
-                    .addField(":eyes: **?Espece**", "Ici vous aurez la liste des especes")  
-                    .addField(":crossed_swords: **?Coup special**", "Lors de la création de votre personnage, vous ne pourrez choisir qu'un seul coup spécial !")
-                    .addField(":video_game: **?Liste d'attaque**", "C'est le plus important ! selon votre classe vous aurez différantes attaques !")
-                    .addField(":video_game: **?Fiche RP**", "Ici vous aurez le model de la fiche RP")
+                    .addField(":eyes: **?Espece**", "Ici vous aurez la liste des espèces")  
+                    .addField(":crossed_swords: **?Ultime**", "Lors de la création de votre personnage, vous ne pourrez choisir qu'une seul ultime !")
+                    .addField(":video_game: **?Liste d'attaque**", "C'est le plus important ! Selon votre classe vous aurez différentes attaques !")
+                    .addField(":video_game: **?Fiche RP**", "Ici vous aurez le modèle de la fiche RP")
                     .addField(":chart_with_upwards_trend: **?Level**", "Ici vous aurez les paliers entre chaque level")
-                    .addField(":bar_chart: **?Bonus [nom de la classe]**", "Pour savoir le gain de caracthéristique à chaque level up")
-                    .addField(":nazar_amulet: **?Point cara**", "Ici vous trouverez l'utilité des points de caracthéristiques")
-                    .addField(":park: **?étage**", "Ici vous aurez la liste des étages ainsi qu'un rapide résumé de leur thème")
+                    .addField(":bar_chart: **?Bonus [nom de la classe]**", "Pour savoir le gain de caractéristique à chaque level up")
+                    .addField(":nazar_amulet: **?Point cara**", "Ici vous trouverez l'utilité des points de caractéristiques")
+                    .addField(":park: **?étage**", "Ici vous aurez la liste des étages ainsi qu'un rapide résumé de leurs thèmes")
                     .addField(":office: **?Commerce**", "Ici vous trouverez le shop inRP ")
-                    .addField(":hammer_pick: **?Artisanat**", "Ici vous trouverez la liste des différents type de fabrication ainsi que les ressources nécéssaires.")
+                    .addField(":hammer_pick: **?Artisanat**", "Ici vous trouverez la liste des différents type de fabrication ainsi que les ressources nécessaires.")
                     .setColor("#ff4600")
                     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                     message.channel.send(y);
@@ -122,9 +122,9 @@
 
                 if(message.content === préfix + "Classe"){
                     var y = new Discord.RichEmbed()
-                    .addField(":dagger: Voleur", "Fort dégats pour faible HP !")
-                    .addField(":crossed_swords: épéiste", "Dégats moyen pour HP moyen !")
-                    .addField(":shield: Paladin", "Beaucoup d'HP pour faible dégats !")
+                    .addField(":dagger: Voleur", "Forts dégâts pour faibles HP !")
+                    .addField(":crossed_swords: Épéiste", "Dégâts moyens pour HP moyens !")
+                    .addField(":shield: Paladin", "Beaucoup d'HP pour faibles dégâts !")
                     .setColor("#ff4600")
                     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                     message.channel.send(y);
@@ -146,22 +146,22 @@
                     message.channel.send(y);
                 }
 
-                if(message.content === préfix + "Coup special"){
+                if(message.content === préfix + "Ultime"){
                     var y = new Discord.RichEmbed()
-                    .addField("Explication","Les coups spéciaux ne sont utilisé qu'une fois par combat, vous ne pouvez en choisir qu'une seul et c'est utilisable une fois toute les 2H")
-                    .addField("?Final slash", "__Prérequis :__ Demon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'executez")
-                    .addField("?Rafale_de_coups", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaque physique à un seul ennemie")
+                    .addField("Explication","Les coups spéciaux ne sont utilisés qu'une fois par combat, vous ne pouvez en choisir qu'un seul et ce n'est utilisable qu'une fois toute les 12H")
+                    .addField("?Final slash", "__Prérequis :__ Démon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'exécutez")
+                    .addField("?Rafale_de_coups", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaques physiques à un seul ennemie")
                     .setColor("#ff4600")
                     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                     message.channel.send(y);
                 }
 
                 if(message.content === préfix + "Liste d'attaque"){
-                    message.channel.send("**Ici vous trouverez les passifs des éspèces mais égalements la liste des attaques par classe**");
+                    message.channel.send("**Ici vous trouverez les passifs des espèces mais également la liste des attaques par classe**");
                     var y = new Discord.RichEmbed()
-                    .addField("**?Humain**", "__Passif__ : Vos HP se bloque une premiere fois à 1HP avant de subir un autre coups et de réelment mourir")
+                    .addField("**?Humain**", "__Passif__ : Vos HP se bloquent une première fois à 1HP avant de subir un autre coups et de réellement mourir")
                     .addField("?Demon", "__Passif__ : Régénération 2 fois plus rapide")
-                    .addField("?Automate", "__Passif__ :Imunisé au poison")
+                    .addField("?Automate", "__Passif__ :Immunité au poison")
                     message.channel.send(y);
                 }
                 if(message.content === préfix + "Liste d'attaque"){
@@ -220,7 +220,7 @@
             .setImage("https://img4.goodfon.com/wallpaper/nbig/8/1e/japanese-power-monter-blade-manga-man-warrior-fight-armor-as.jpg")
             else if(nombre < 101)
             var y = new Discord.RichEmbed()
-            .setAuthor("**Votre arme ne touche pas la cible**")
+            .setAuthor("Votre arme ne touche pas la cible")
             .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
             message.channel.send(y);
         }
@@ -234,11 +234,11 @@
             var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
             if(nombre < 65)
             var y = new Discord.RichEmbed()
-            .addField("**Vous infligez un coup précis et puissant à votre adversaire**",":crossed_swords:" + result)
+            .addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
             .setImage("https://i.ytimg.com/vi/O_0CTVFL_Ns/maxresdefault.jpg")
             else if(nombre < 101)
             var y = new Discord.RichEmbed()
-            .setAuthor("**Votre arme ne touche pas la cible**")
+            .setAuthor("Votre arme ne touche pas la cible")
             .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
             message.channel.send(y);
         }
@@ -256,7 +256,7 @@
         var result = new Discord.RichEmbed() 
         .setColor("#0012ff")
         .setImage("https://thumbs.gfycat.com/IdleDefiantGrouse-size_restricted.gif")
-        .addField(":trident: **__Final slash__**", "Arme en main, vous venez foncer sur votre adversaire, vous avez prit connaissance de son êtat vital et sachez qu'il n'en a plus pour très longtemps, vous venez abréger ses souffrances !")
+        .addField(":trident: **__Final slash__**", "Arme en main, vous venez foncer sur votre adversaire, vous avez pris connaissance de son état vital et sachez qu'il n'en a plus pour très longtemps, vous venez abréger ses souffrances !")
         message.channel.send(result)
     }
     if(command === 'rafale_de_coups'){
@@ -269,7 +269,7 @@
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         var y = new Discord.RichEmbed()
         .setColor("#0012ff")
-        .addField("**Vous teniez votre arme fermement en main...Vous vous concentrez sur votre force physique ainsi que votre determination avant d'infliger de lourd dégats à la cible **",":crossed_swords:" + result)
+        .addField("**Vous tenez votre arme fermement en main...Vous vous concentrez sur votre force physique ainsi que votre détermination avant d'infliger de lourds dégâts à la cible **",":crossed_swords:" + result)
         .setImage("https://media1.tenor.com/images/e26e70a652ded0851347808067873e38/tenor.gif?itemid=14687288")
         message.channel.send(y);
     }
@@ -290,7 +290,7 @@
             if(nombre < 70)
             var y = new Discord.RichEmbed()
             .setColor("#ff0000")
-            .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+            .addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
             .setImage("https://i.imgur.com/LQzeVqf.png")
             else if(nombre < 101)
             var y = new Discord.RichEmbed()
@@ -310,7 +310,7 @@
             if(nombre < 65)
             var y = new Discord.RichEmbed()
             .setColor("#ff0000")
-            .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+            .addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
             .setImage("https://i.imgur.com/LQzeVqf.png")
             else if(nombre < 101)
             var y = new Discord.RichEmbed()
@@ -330,7 +330,7 @@
             if(nombre < 65)
             var y = new Discord.RichEmbed()
             .setColor("#ff0000")
-            .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+            .addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
             .setImage("https://i.imgur.com/LQzeVqf.png")
             else if(nombre < 101)
             var y = new Discord.RichEmbed()
@@ -350,7 +350,7 @@
             if(nombre < 60)
             var y = new Discord.RichEmbed()
             .setColor("#ff0000")
-            .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+            .addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
             .setImage("https://i.imgur.com/LQzeVqf.png")
             else if(nombre < 101)
             var y = new Discord.RichEmbed()
@@ -370,7 +370,7 @@
             if(nombre < 55)
             var y = new Discord.RichEmbed()
             .setColor("#ff0000")
-            .addField("**Vous n'arrivez pas à esquiver et prennez une grande partie des dégats**",":crossed_swords:" + result)
+            .addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
             .setImage("https://i.imgur.com/LQzeVqf.png")
             else if(nombre < 101)
             var y = new Discord.RichEmbed()
@@ -397,7 +397,7 @@
             var max = Math.floor(Math.max(`${args}`*1.2)); 
             var result = Math.floor(Math.random() * (max - min + 1) ) + min;
             var y = new Discord.RichEmbed()
-            .addField(":shield: **Vous bloquez l'attaque difficilement et ne prennez qu'une partie des dégats**",":anger: " + result)
+            .addField(":shield: ** Vous bloquez l'attaque difficilement et ne prenez qu'une partie des dégâts**",":anger: " + result)
             .setImage("https://watchmojo.blog/wp-content/uploads/2017/10/03783e5db8d66964aecfa2ec007a687b7c4166f897af06179b85463c6db77c93.jpg")
             message.channel.send(y);
         }
