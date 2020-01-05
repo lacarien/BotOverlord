@@ -106,10 +106,10 @@
 
                 if(message.content === préfix + "étage"){
                     var y = new Discord.RichEmbed()
-                    .addField("Liste des étages", "__**Il est à noter que l'étage de base est le 0 et que plus vous avancerez plus vous déscendrez.**__\n" 
-                    +":fire: **étage -1 :** C'est létage de la lave, le Boss serait...Un poil trop cuit\n"
-                    +":ice_cube: **étage -2 :** C'est létage de la glace, pensez à mettre un pull ! \n"
-                    +":classical_building: **étage -3 :** C'est létage d'une ancienne ville maintenant abandonné....\n"
+                    .addField("Liste des étages", "__**Il est à noter que l'étage de base est le 0 et que plus vous avancerez plus vous descendrez.**__\n" 
+                    +":fire: **étage -1 :** C'est l'étage de la lave, le Boss serait...Un poil trop cuit\n"
+                    +":ice_cube: **étage -2 :** C'est l'étage de la glace, pensez à mettre un pull ! \n"
+                    +":classical_building: **étage -3 :** C'est l'étage d'une ancienne ville maintenant abandonné....\n"
                     +"**étage -4 :** SOON")
                     .setColor("#ff4600")
                     .setImage("https://media.discordapp.net/attachments/454694319396356128/661514404273324033/2f22e5e72a18ee90cc1074445838a082.png")
@@ -421,7 +421,7 @@
         .setColor("#ff8300")
         .setImage("https://media.discordapp.net/attachments/641785123590635520/660925278540922920/Crocro.jpg?width=559&height=559")
         .addField(":heart: HP","25")
-        .addField(":beginner: Passifs", "Aucune")
+        .addField(":beginner: Passif", "Aucun")
         .addField(":crossed_swords: Attaque", "?crocro_attaque")
         .addField(":shield: Défense", "?crocro_défense  [dégats reçu]")
         .addField(":moneybag: Récompenses", "?Récompenses_crocro [lvl]")
@@ -537,7 +537,7 @@
         .setColor("#ff8300")
         .setImage("https://media.discordapp.net/attachments/641785123590635520/660925652085637147/Roi_des_Rats.png?width=990&height=560")
         .addField(":heart: HP","40")
-        .addField(":beginner: Passifs", "Aucune")
+        .addField(":beginner: Passif", "Aucun")
         .addField(":crossed_swords: Attaque", "?Nidrats_attaque")
         .addField(":shield: Défense", "Aucune")
         .addField(":moneybag: Récompenses", "?Récompenses_Nidrats [lvl]")
@@ -551,7 +551,7 @@
         if(result < 95)
         var y = new Discord.RichEmbed()
         .setColor("#ff8300")
-        .addField("Un grand nombre de bébé rats déscendes du Nid venant se jeter sur vous !", ":crossed_swords:" + y)
+        .addField("Un grand nombre de bébés rats déscend du Nid venant se jeter sur vous !", ":crossed_swords:" + y)
             else if (result < 101)
         var y = new Discord.RichEmbed()
         .setTitle("Un Crocro sort du Nid'rats")
@@ -679,9 +679,9 @@
         .setColor("#ff8300")
         .setImage("https://cdn.discordapp.com/attachments/641785123590635520/660927665192173638/215387ac70dda5e6b97acb390da2e505.png")
         .addField(":heart: HP","100")
-        .addField(":beginner: Passifs", ":fire: Immunisé aux dégats de feux")
+        .addField(":beginner: Passif", ":fire: Immunisé aux dégâts de feu")
         .addField(":crossed_swords: Attaque", "?Aragnator_attaque")
-        .addField(":shield: Défense", "?Aragnator_défense  [dégats reçu]")
+        .addField(":shield: Défense", "?Aragnator_défense  [dégâts reçu]")
         .addField(":moneybag: Récompenses", "?Récompenses_Aragnator [lvl]")
         message.channel.send(result)
     }  
@@ -696,11 +696,11 @@
         if(result < 70)
         var y = new Discord.RichEmbed()
         .setColor("#ff8300")
-        .addField("L'Aragnator vous fonces dessus à pleine vitesse piquant vers l'avant !", ":crossed_swords:" + y)
+        .addField("L'Aragnator vous fonce dessus à pleine vitesse piquant vers l'avant !", ":crossed_swords:" + y)
             else if (result < 101)
         var y = new Discord.RichEmbed()
-        .addField("l'argnator vient ouvrir sa bouche venant faire comme un lance flamme", ":crossed_swords:" + y)
-        .addField("Les flammes auront pour effet de vous bruler pendant 3 tours, à chaque tours vous recevrez donc une petite quantité de dégats, seul l'armure magique réduit les dégats", ":fire: " + x)
+        .addField("l'Argnator vient ouvrir sa bouche venant faire comme un lance flamme", ":crossed_swords:" + y)
+        .addField("Les flammes auront pour effet de vous brûler pendant 3 tours, à chaque tour vous recevrez donc une petite quantité de dégâts, seul l'armure magique réduit les dégâts", ":fire: " + x)
         .setImage("https://media.discordapp.net/attachments/641775756191727648/661299374256816188/0e7b8a36ac4c90b0b3f2dbf5afd9a07b328bccbcv2_hq.png?width=419&height=559")
         .setColor("#ff8300")
         message.channel.sendMessage(y);
@@ -721,7 +721,7 @@
         else if (nombre< 101)
         var y = new Discord.RichEmbed()
         .setColor("#ff8300")
-        .setTitle(":bat: L'Aragnator va voler en l'air et faire des looopings pour ne pas se faire toucher")
+        .setTitle(":bat: L'Aragnator va voler en l'air et faire des loopings pour ne pas se faire toucher")
         message.channel.send(y);
     }
     if(command === 'récompenses_aragnator'){
@@ -757,7 +757,7 @@
         .setImage("https://media.discordapp.net/attachments/641785123590635520/660928322817228800/03837f895424ab2c5ae6987a2404e383.png?width=447&height=559")
         .addField(":heart: HP","80")
         .addField(":shield: Armure","5")
-        .addField(":beginner: Passifs", ":fire: Immunisé aux dégats de feux")
+        .addField(":beginner: Passifs", ":fire: Immunisé aux dégâts de feu")
         .addField(":crossed_swords: Attaque", "?Gnome_attaque")
         .addField(":shield: Défense", "?Gnome_défense  [dégats reçu]")
         .addField(":moneybag: Récompenses", "?Récompenses_Gnome_pyromane [lvl]")
@@ -772,10 +772,10 @@
         if(result < 70)
         var y = new Discord.RichEmbed()
         .setColor("#ff8300")
-        .addField("Le Gnome fera apparaitre une boule de feu dans sa main gauche et viendra vous l'envoyer à petite puissance !\n l'armure ne réduira pas les dégats !", ":crossed_swords:" + y)
+        .addField("Le Gnome fera apparaiître une boule de feu dans sa main gauche et viendra vous l'envoyer à petite puissance !\n l'armure ne réduira pas les dégâts !", ":crossed_swords:" + y)
             else if (result < 101)
         var y = new Discord.RichEmbed()
-        .setTitle("Le Gnome essayera de lancer un boule de feu mais cette dérnière vous frolleras seulement")
+        .setTitle("Le Gnome essayera de lancer un boule de feu mais cette dernière vous froleras seulement")
         .setColor("#ff8300")
         message.channel.sendMessage(y);
     }
