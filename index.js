@@ -286,17 +286,17 @@
         if(nombre < 30){
         var y = new Discord.RichEmbed()
         .setColor("#0012ff")
-        .addField("**D'une grande inspiration, votre arme n'est plus que partie intégrante de votre corps. Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était. Vous venez infliger une paralysie à**`` 1``**ennemie ainsi que des dégats**",":crossed_swords:" + result)
+        .addField("**D'une grande inspiration, votre arme n'est plus que partie intégrante de votre corps. Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était. \n Vous venez infliger une paralysie à**`` 1``**ennemie ainsi que des dégats**",":crossed_swords:" + result)
         .setImage("https://media.giphy.com/media/KbZTktant06AvqUwZz/giphy.gif")
         } else if(nombre < 70){
         var y = new Discord.RichEmbed()
         .setColor("#0012ff")
-        .addField("**D'une grande inspiration, votre arme n'est plus que partie intégrante de votre corps. Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était. Vous venez infliger une paralysie à** ``2``**ennemie ainsi que des dégats**",":crossed_swords:" + result)
+        .addField("**D'une grande inspiration, votre arme n'est plus que partie intégrante de votre corps. Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était. \n Vous venez infliger une paralysie à** ``2``**ennemie ainsi que des dégats**",":crossed_swords:" + result)
         .setImage("https://media.giphy.com/media/KbZTktant06AvqUwZz/giphy.gif")
         } else if(nombre < 101){
         var y = new Discord.RichEmbed()
         .setColor("#0012ff")
-        .addField("**D'une grande inspiration, votre arme n'est plus que partie intégrante de votre corps. Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était. Vous venez infliger une paralysie à**`` 3``**ennemie ainsi que des dégats**",":crossed_swords:" + result)
+        .addField("**D'une grande inspiration, votre arme n'est plus que partie intégrante de votre corps. Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était.\n Vous venez infliger une paralysie à**`` 3``**ennemie ainsi que des dégats**",":crossed_swords:" + result)
         .setImage("https://media.giphy.com/media/KbZTktant06AvqUwZz/giphy.gif")
         }
         message.channel.send(y);
