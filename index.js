@@ -151,6 +151,7 @@
                     .addField("Explication","Les coups spéciaux ne sont utilisés qu'une fois par combat, vous ne pouvez en choisir qu'un seul et ce n'est utilisable qu'une fois toute les 12H")
                     .addField("?Final slash", "__Prérequis :__ Démon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'exécutez")
                     .addField("?Rafale_de_coups", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaques physiques à un seul ennemie")
+                    .addField("?Paralysie", "__Prérequis :__ Aucun \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
                     .setColor("#ff4600")
                     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                     message.channel.send(y);
@@ -193,7 +194,7 @@
                 return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
             }
             var nombre = Math.floor((Math.random() * 100) + 1);
-            var max_value = Math.floor(`${args}`*2);
+            var max_value = Math.floor(`${args}`*1.8);
             var min_value = Math.floor(`${args}`*0.8)
             var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
             if(nombre < 81)
@@ -211,7 +212,7 @@
                 return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
             }
             var nombre = Math.floor((Math.random() * 100) + 1);
-            var max_value = Math.floor(`${args}`*1.8);
+            var max_value = Math.floor(`${args}`*1.6);
             var min_value = Math.floor(`${args}`*1)
             var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
             if(nombre < 81)
@@ -229,7 +230,7 @@
                 return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
             }
             var nombre = Math.floor((Math.random() * 100) + 1);
-            var max_value = Math.floor(`${args}`*2.2);
+            var max_value = Math.floor(`${args}`*2);
             var min_value = Math.floor(`${args}`*1)
             var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
             if(nombre < 65)
@@ -265,12 +266,40 @@
         }
     
         var max_value = Math.floor(`${args}`*3.5);
-        var min_value = Math.floor(`${args}`*2.5)
+        var min_value = Math.floor(`${args}`*2.8)
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         var y = new Discord.RichEmbed()
         .setColor("#0012ff")
         .addField("**Vous tenez votre arme fermement en main...Vous vous concentrez sur votre force physique ainsi que votre détermination avant d'infliger de lourds dégâts à la cible **",":crossed_swords:" + result)
         .setImage("https://media1.tenor.com/images/e26e70a652ded0851347808067873e38/tenor.gif?itemid=14687288")
+        message.channel.send(y);
+    }
+
+    if(command === 'Paralysie'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2.2);
+        var min_value = Math.floor(`${args}`*1.8)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 30){
+        var y = new Discord.RichEmbed()
+        .setColor("#0012ff")
+        .addField("**Vous prenez une grande inspiration, et d'un seul coup votre arme n'est plus que partie intégrante de votre corps. Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était. Vous venez infliger une paralysie à**`` 1 ``**ennemie ainsi que des dégats**",":crossed_swords:" + result)
+        .setImage("https://media.giphy.com/media/KbZTktant06AvqUwZz/giphy.gif")
+        } else if(nombre < 70){
+        var y = new Discord.RichEmbed()
+        .setColor("#0012ff")
+        .addField("**Vous prenez une grande inspiration, et d'un seul coup votre arme n'est plus que partie intégrante de votre corps. Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était. Vous venez infliger une paralysie à**`` 2 ``**ennemie ainsi que des dégats**",":crossed_swords:" + result)
+        .setImage("https://media.giphy.com/media/KbZTktant06AvqUwZz/giphy.gif")
+        } else if(nombre < 101){
+        var y = new Discord.RichEmbed()
+        .setColor("#0012ff")
+        .addField("**Vous prenez une grande inspiration, et d'un seul coup votre arme n'est plus que partie intégrante de votre corps. Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était. Vous venez infliger une paralysie à**`` 3 ``**ennemie ainsi que des dégats**",":crossed_swords:" + result)
+        .setImage("https://media.giphy.com/media/KbZTktant06AvqUwZz/giphy.gif")
+        }
+        
         message.channel.send(y);
     }
         
