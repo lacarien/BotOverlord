@@ -275,7 +275,7 @@
         message.channel.send(y);
     }
 
-    if(command === 'Paralysie'){
+    if(command === 'paralysie'){
         if (!args.length) {
             return message.channel.send(`Il faut mettre un nombre, ${message.author}!`);
         }
@@ -299,7 +299,6 @@
         .addField("**Vous prenez une grande inspiration, et d'un seul coup votre arme n'est plus que partie intégrante de votre corps. Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était. Vous venez infliger une paralysie à**`` 3 ``**ennemie ainsi que des dégats**",":crossed_swords:" + result)
         .setImage("https://media.giphy.com/media/KbZTktant06AvqUwZz/giphy.gif")
         }
-        
         message.channel.send(y);
     }
         
