@@ -177,6 +177,45 @@
                     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
                     message.channel.send(y);
                 }
+                /// CLASSE /////////////////////////////////////////////////
+                /// CLASSE /////////////////////////////////////////////////
+                /// CLASSE /////////////////////////////////////////////////    
+                /// CLASSE /////////////////////////////////////////////////
+                    /// CLASSE /////////////////////////////////////////////////
+                        /// CLASSE /////////////////////////////////////////////////
+                            /// CLASSE /////////////////////////////////////////////////
+                                /// CLASSE /////////////////////////////////////////////////
+                                    /// CLASSE /////////////////////////////////////////////////
+
+                                    if(message.content === préfix + "Assassin"){
+                                        var help_embed = new Discord.RichEmbed()
+                                        .setColor("#d20000")
+                                        .addField("Assassin", "Vous êtes un assassin, vous êtes spécialisé dans les dégats physique et puissante, le plus grand des DPS")
+                                        .addField("Liste d'attaque", "?Assassin attaque")
+                                        .setImage("https://images3.alphacoders.com/673/673498.jpg")
+                                        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                                        message.channel.sendMessage(help_embed);
+                                    }
+                                    if(message.content === préfix + "Ninja"){
+                                        var help_embed = new Discord.RichEmbed()
+                                        .setColor("#000000")
+                                        .addField("Assassin", "Vous êtes un ninja, vous êtes spécialisé dans les dégats physique mais vous savez également manier la magie !, vous êtes un bon DPS utilisant la magie de manière sournoise !")
+                                        .addField("Liste d'attaque", "?Ninja attaque")
+                                        .setImage("https://images3.alphacoders.com/673/673498.jpg")
+                                        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                                        message.channel.sendMessage(help_embed);
+                                    }
+                                    if(message.content === préfix + "Samourai"){
+                                        var help_embed = new Discord.RichEmbed()
+                                        .setColor("#000000")
+                                        .addField("Samourai", "Vous êtes une classe polyvalente moins résistante qu'un chevalier en therme d'armure mais qui se rattrape sur une faible magie")
+                                        .addField("Liste d'attaque", "?Samourai attaque")
+                                        .setImage("https://images2.alphacoders.com/593/593884.jpg")
+                                        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                                        message.channel.sendMessage(help_embed);
+                                    }
+                
+                
 
                 //// LISTE D'ATTAQUE ///////////////////////////////////
                 //// LISTE D'ATTAQUE ///////////////////////////////////
