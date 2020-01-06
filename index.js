@@ -168,9 +168,9 @@
                 if(message.content === préfix + "Liste d'attaque"){
                     var y = new Discord.RichEmbed()
                     .addField("**===================================**", "**===================================**")
-                    .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Dégats reçu]\nLVL 5 ?Blocage [Dégats reçu]\n LVL10 Evolution ?Assassin")
-                    .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Dégats reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL10 Evolution ?Chevalier")
-                    .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?Blocage [Dégats reçu]\nLVL 5 ?Esquive [Dégats reçu]\n LVL10 Evolution ?Juggernaut")
+                    .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup fatal [Vos dégâts] **ou** ?Coup simple [Vos dégats]\nLVL10 Evolution ?Assassin ou ?Ninja")
+                    .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup perçant [Vos dégâts] **ou** ?Coup saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
+                    .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 5 ?Crie de provocation **ou** ?Coup etourdissant [Vos dégâts] \nLVL10 Evolution ?Juggernaut ou ?Moine")
                     .addField("**===================================**", "**===================================**")
                     .addField("**Info pour les esquives", "Si vous avez 0 points en agilité : Esquive [dégats reçu]\n Si vous en avez 1 au total : Super_esquive [dégats reçu]\n Si 2 : Mega_esquive [dégats reçu]\n Si 3 : Supra_esquive [dégats reçu]\n Et si 4 : Divin_esquive [dégats_reçu]")
                     .setColor("#ff4600")
