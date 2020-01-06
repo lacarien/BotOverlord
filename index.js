@@ -201,7 +201,7 @@
                                         .setColor("#000000")
                                         .addField("Assassin", "Vous êtes un ninja, vous êtes spécialisé dans les dégats physique mais vous savez également manier la magie !, vous êtes un bon DPS utilisant la magie de manière sournoise !")
                                         .addField("Liste d'attaque", "?Ninja attaque")
-                                        .setImage("https://images3.alphacoders.com/673/673498.jpg")
+                                        .setImage("https://wallup.net/wp-content/uploads/2017/05/29/402275-fantasy_art-Ninja-mask.jpg")
                                         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                         message.channel.sendMessage(help_embed);
                                     }
