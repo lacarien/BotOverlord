@@ -72,8 +72,8 @@ if(message.content === préfix + "Commerce"){
                         case '❤️':
                                 let embed3 = new Discord.RichEmbed()
                                 .addField("**__Liste des potions__**", "```Attention à bien respecter les conditions d'utilisation d'une potion !``` ")
-                                .addField("``Potion faible de MP``","?Achat MPF \n:dollar: **Prix :** 200")
-                                .addField("``Potion faible d'HP``","?Achat HPF\n:dollar: **Prix :** 200")
+                                .addField("``Potion faible de MP``","?Achat MPF \n:dollar: **Prix :** 200 Mercure\n:dollar: **Revente :** 75 Mercure")
+                                .addField("``Potion faible d'HP``","?Achat HPF\n:dollar: **Prix :** 200 Mercure\n:dollar: **Prix :** 75 Mercure")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed3).then(async message => 
@@ -121,9 +121,9 @@ if(message.content === préfix + "Artisanat"){
                         case '🛡️':
                             let embed = new Discord.RichEmbed()
                             .addField("**__Liste des armures__**", "```Attention à bien respecter les conditions d'utilisation d'une armure``` ")
-                            .addField("``Casque de rat``","?Fabrication casque de rat\n:scales: **Ressource :** 5 Peaux de crocro /\ 3 Queues de crocro /\ 2 ailes d'Aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier: 2")
-                            .addField("``Plastron de rat``","?Fabrication plastron de rat\n:scales: **Ressource :** 5 Peaux de crocro /\ 3 Queues de crocro /\ 2 ailes d'Aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier : 2") 
-                            .addField("``Botte de rat``","?Fabrication bottes de rat\n:scales: **Ressource :** 5 Peaux de crocro /\ 3 yeux de Nid'Rat /\ 2 ailes d'Aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier : 2")
+                            .addField("``Casque de rat``","?Fabrication casque de rat\n:scales: **Ressource :** 5 peaux de Crocro /\ 3 Queues de crocro /\ 2 ailes d'Aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier: 2")
+                            .addField("``Plastron de rat``","?Fabrication plastron de rat\n:scales: **Ressource :** 5 peaux de Crocro /\ 3 Queues de crocro /\ 2 ailes d'Aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier : 2") 
+                            .addField("``Botte de rat``","?Fabrication bottes de rat\n:scales: **Ressource :** 5 peaux de Crocro /\ 3 yeux de Nid'Rat /\ 2 ailes d'Aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier : 2")
                             .setColor("#8c8c8c")
                             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                              message.channel.send(embed).then(async message => 
@@ -147,8 +147,8 @@ if(message.content === préfix + "Artisanat"){
                         case '⚔️':
                                 let embed2 = new Discord.RichEmbed()
                                 .addField("**__Liste des armes__**", "```Attention à bien respecter les conditions d'utilisation d'une arme ``` ")
-                                .addField("``Epee en fer``","?Fabrication epee en fer\n:dollar: **Prix :** ??\n**/!\** Interdit pour les voleurs !\n:scales: **Ressource :** 5 Peaux de crocro /\ 3 Queues de crocro /\ 2 Cornes de Gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
-                                .addField("``Dague en fer``","?Fabrication dague en fer\n:dollar: **Prix :** ??\n **/!\** Résérvé aux voleurs !\n:scales: **Ressource :** 5 Peaux de crocro /\ 3 Queues de crocro /\ 2 Cornes de Gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
+                                .addField("``Epee en fer``","?Fabrication epee en fer\n:dollar: **Prix :** ??\n**/!\** Interdit pour les voleurs !\n:scales: **Ressource :** 5 peaux de Crocro /\ 3 queues de Crocro /\ 2 cornes de Gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
+                                .addField("``Dague en fer``","?Fabrication dague en fer\n:dollar: **Prix :** ??\n **/!\** Résérvé aux voleurs !\n:scales: **Ressource :** 5 peaux de Crocro /\ 3 queues de Crocro /\ 2 cornes de Gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed2).then(async message => 
