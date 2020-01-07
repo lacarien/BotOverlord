@@ -33,7 +33,7 @@
             
 
              eval(fs.readFileSync(__dirname + '/Shop.js')+'');
-            /* eval(fs.readFileSync(__dirname + '/Shop.js')+'');
+             eval(fs.readFileSync(__dirname + 'Item.js')+'');
             /* eval(fs.readFileSync(__dirname + '/attaque.js')+'');
                 eval(fs.readFileSync(__dirname + '/pnj.js')+'');
                 eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
@@ -80,7 +80,9 @@
                 if(message.content === préfix + "Level"){
                     message.channel.send(`${message.author} Voici le tableau des levels`);
                     message.channel.send("```fix\n-Du Lvl 1 à 10 vous gagnez à chaque level 3 points de caracthéristique```")
-                    message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 100 XP\n#-Lvl  3 : 300 XP\n#-Lvl  4 : 400 XP\n#-LVl  5 : 500 XP\n#-Lvl  6 : 600 XP\n#-Lvl  7 : 700 XP\n#-Lvl  8 : 800 XP\n#-Lvl  9 : 900 XP\n#-Lvl  10 : 1000 XP```");
+                    message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 100 XP\n#-Lvl  3 : 200 XP\n#-Lvl  4 : 300 XP\n#-LVl  5 : 400 XP\n#-Lvl  6 : 500 XP\n#-Lvl  7 : 600 XP\n#-Lvl  8 : 700 XP\n#-Lvl  9 : 800 XP\n#-Lvl  10 : 900 XP```");
+                    message.channel.send(`${message.author} Voici le tableau des levels des metiers`);
+                    message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 50 XP\n#-Lvl  3 : 100 XP\n#-Lvl  4 : 175 XP\n#-LVl  5 : 250 XP\n#-Lvl  6 :350 XP\n#-Lvl  7 : 450 XP\n#-Lvl  8 : 600 XP\n#-Lvl  9 : 750 XP\n#-Lvl  10 : 950 XP```");
                 }
                 if(message.content === préfix + "Bonus épéiste"){
                     var y = new Discord.RichEmbed()
@@ -552,8 +554,8 @@
         } else if (`${args}`> 4) {
         var XP = 0;
         }
-        var minM = Math.floor(Math.min(10));
-        var maxM = Math.floor(Math.max(20)); 
+        var minM = Math.floor(Math.min(5));
+        var maxM = Math.floor(Math.max(10)); 
         var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
         var result2 = Math.floor((Math.random() * 100) + 1);
         var Peau = 0;
@@ -685,8 +687,8 @@
         } else if (`${args}`> 4) {
         var XP = 0;
         }
-        var minM = Math.floor(Math.min(10));
-        var maxM = Math.floor(Math.max(20)); 
+        var minM = Math.floor(Math.min(7));
+        var maxM = Math.floor(Math.max(12)); 
         var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
         var y = new Discord.RichEmbed()
         .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n**SOON**")
@@ -835,12 +837,28 @@
             var A = Math.floor(4-`${args}`);
             var XP = Math.floor(XP*(1+(0.3*A)));
         }
-        var minM = Math.floor(Math.min(10));
-        var maxM = Math.floor(Math.max(20)); 
+        var result2 = Math.floor((Math.random() * 100) + 1);
+        if(result2 < 80){
+            Peau = Peau + 1;
+        } else if(result2 < 90){
+            Peau = Peau + 2;
+        } else if(result2 < 101){
+            Peau = 0;
+        }
+        var result4 = Math.floor((Math.random() * 100) + 1);
+        var Corne = 0;
+        if(result4 < 30){
+            Corne= Corne +1;
+        } else if(result4 < 96){
+            Corne = 0;
+        }
+        
+        var minM = Math.floor(Math.min(15));
+        var maxM = Math.floor(Math.max(25)); 
         var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
         var y = new Discord.RichEmbed()
         .setTitle(":bat: Récompenses de l'argnator")
-        .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n**SOON**")
+        .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:smiling_imp: **peau d'Aragnator:** "+ Peau +"\n:large_blue_diamond: **ailes d'Aragnator :** " + Corne)
         .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
         message.channel.send(y);
     }
@@ -887,6 +905,49 @@
         .addField(":shield: Notre chère petit gnome placera ses bras en croix de manière à bloquer l'attaque",":anger: " + result)
         message.channel.send(y);
     }
+
+    if(command === 'récompenses_Gnome_pyromane'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre ton lvl; ${message.author}!`);
+        }
+        var minXP = Math.floor(Math.min(20));
+        var maxXP = Math.floor(Math.max(30)); 
+        var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+        if(`${args}`<4){
+            var A = Math.floor(4-`${args}`);
+            var XP = Math.floor(XP*(1+(0.2*A)));
+        }
+        if(`${args}`>4){
+            var A = Math.floor(4-`${args}`);
+            var XP = Math.floor(XP*(1+(0.3*A)));
+        }
+        var minM = Math.floor(Math.min(15));
+        var maxM = Math.floor(Math.max(25)); 
+        var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+        var Peau = 0;
+        var result2 = Math.floor((Math.random() * 100) + 1);
+        if(result2 < 80){
+            Peau = Peau + 1;
+        } else if(result2 < 90){
+            Peau = Peau + 2;
+        } else if(result2 < 101){
+            Peau = 0;
+        }
+        var result4 = Math.floor((Math.random() * 100) + 1);
+        var Corne = 0;
+        if(result4 < 30){
+            Corne= Corne +1;
+        } else if(result4 < 96){
+            Corne = 0;
+        }
+        var y = new Discord.RichEmbed()
+        .setTitle(":bat: Récompenses du gnome pyromane")
+        .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:smiling_imp: **peau de Gnome :** "+ Peau +"\n:large_blue_diamond: **cornes de Gnome :** " + Corne)
+        .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
+        message.channel.send(y);
+    }
+
+    
 
     if(message.content === préfix + "Rongeurs") {
         var result = new Discord.RichEmbed() 
