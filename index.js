@@ -207,11 +207,37 @@
                                     }
                                     if(message.content === préfix + "Samourai"){
                                         var help_embed = new Discord.RichEmbed()
-                                        .setColor("#000000")
+                                        .setColor("#7e7e7e")
                                         .addField("Samourai", "Vous êtes une classe polyvalente moins résistante qu'un chevalier en therme d'armure mais qui se rattrape sur une faible magie")
                                         .addField("Liste d'attaque", "?Samourai attaque")
                                         .setImage("https://images2.alphacoders.com/593/593884.jpg")
                                         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                                        message.channel.sendMessage(help_embed);
+                                    }
+                                    if(message.content === préfix + "Chevalier"){
+                                        var help_embed = new Discord.RichEmbed()
+                                        .setColor("#00148f")
+                                        .addField("Chevalier", "Vous êtes une classe polyvalente, vous avez une bonne résistance physique et avez des capacités également polyvalente, vous êtes un couteau suisse, quelqu'un d'utile dans de nombreuses situations !")
+                                        .addField("Liste d'attaque", "?Chevalier attaque")
+                                        .setImage("https://wallpapertag.com/wallpaper/full/3/6/8/905963-fantasy-knight-wallpaper-1920x1080-for-1080p.jpg")
+                                        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                                        message.channel.sendMessage(help_embed);
+                                    }
+
+                                    if(message.content === préfix + "Juggernaut"){
+                                        var help_embed = new Discord.RichEmbed()
+                                        .setColor("#000f6c")
+                                        .addField("Chevalier", "Vous êtes le tank avec la plus grande resistance physique")
+                                        .addField("Liste d'attaque", "?Juggernaut attaque")
+                                        .setImage("https://i.pinimg.com/originals/63/0b/b1/630bb129c3862047dbb320e751629f80.jpg")
+                                        message.channel.sendMessage(help_embed);
+                                    }
+                                    if(message.content === préfix + "Seigneur"){
+                                        var help_embed = new Discord.RichEmbed()
+                                        .setColor("#e5e5e5")
+                                        .addField("Seigneur", "Vous êtes de la classe seigneur, vous avez un très bon support en plus d'être un bon sac à PV, un rôle important dans un gros groupe comparé à cette éghoïste de juggernaut !")
+                                        .addField("Liste d'attaque", "?Seigneur attaque")
+                                        .setImage("https://images8.alphacoders.com/722/thumb-1920-722470.png")
                                         message.channel.sendMessage(help_embed);
                                     }
                 
