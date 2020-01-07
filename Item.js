@@ -5,14 +5,17 @@
             if(result < 40)
             var result = new Discord.RichEmbed() 
             .setColor("#898989")
+            .setImage("http://wallpapersdsc.net/wp-content/uploads/2017/04/Sword-HD-Desktop.jpg")
             .addField("Vous achetez une épée en fer", ":crossed_swords: 1")
             if(result < 80)
             var result = new Discord.RichEmbed()
             .setColor("#898989")
+            .setImage("http://wallpapersdsc.net/wp-content/uploads/2017/04/Sword-HD-Desktop.jpg")
             .addField("Vous achetez une épée en fer", ":crossed_swords: 2")
             else if(result < 101)
             var result = new Discord.RichEmbed() 
             .setcolor("#898989")
+            .setImage("http://wallpapersdsc.net/wp-content/uploads/2017/04/Sword-HD-Desktop.jpg")
             .addField("Vous achetez une épée en fer", ":crossed_swords: 3") 
             message.channel.send(result);
 
@@ -22,14 +25,17 @@
             if(result < 30)
             var result = new Discord.RichEmbed() 
             .setColor("#898989")
+            .setImage("http://cdn.miscellaneoushi.com/1920x1440/20140310/weapons%20swords%20celtic%20albion_www.miscellaneoushi.com_14.jpg")
             .addField("Vous achetez une dague en fer", ":crossed_swords: 1")
             if(result < 80)
             var result = new Discord.RichEmbed()
             .setColor("#898989")
+            .setImage("http://cdn.miscellaneoushi.com/1920x1440/20140310/weapons%20swords%20celtic%20albion_www.miscellaneoushi.com_14.jpg")
             .addField("Vous achetez une dague en fer", ":crossed_swords: 2")
             else if(result < 101)
             var result = new Discord.RichEmbed() 
-            .setcolor("#898989")
+            .setColor("#898989")
+            .setImage("http://cdn.miscellaneoushi.com/1920x1440/20140310/weapons%20swords%20celtic%20albion_www.miscellaneoushi.com_14.jpg")
             .addField("Vous achetez une dague en fer", ":crossed_swords: 3") 
             message.channel.send(result);
 
@@ -39,7 +45,8 @@
             var maxM = Math.floor(Math.max(15)); 
             var HP = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
             var result = new Discord.RichEmbed() 
-            .setcolor("#898989")
+            .setColor("#62A140")
+            .setImage("http://s1.1zoom.net/big0/715/DOTA_2_Legion_Commander_442254.jpg")
             .addField("Vous achetez un casque de rat", ":gift_heart: " + HP) 
             message.channel.send(result);
 
@@ -49,7 +56,8 @@
             var maxM = Math.floor(Math.max(15)); 
             var HP = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
             var result = new Discord.RichEmbed() 
-            .setcolor("#898989")
+            .setColor("#62A140")
+            .setImage("http://s1.1zoom.net/big0/715/DOTA_2_Legion_Commander_442254.jpg")
             .addField("Vous achetez un plastron de rat", ":gift_heart: " + HP) 
             message.channel.send(result);
 
@@ -59,7 +67,8 @@
             var maxM = Math.floor(Math.max(15)); 
             var HP = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
             var result = new Discord.RichEmbed() 
-            .setcolor("#898989")
+            .setColor("#62A140")
+            .setImage("http://s1.1zoom.net/big0/715/DOTA_2_Legion_Commander_442254.jpg")
             .addField("Vous achetez des bottes de rat", ":gift_heart: " + HP) 
             message.channel.send(result);
 
