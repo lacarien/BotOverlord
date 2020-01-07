@@ -25,17 +25,17 @@
             if(result < 30)
             var result = new Discord.RichEmbed() 
             .setColor("#898989")
-            .setImage("http://cdn.miscellaneoushi.com/1920x1440/20140310/weapons%20swords%20celtic%20albion_www.miscellaneoushi.com_14.jpg")
+            .setImage("https://cdn.discordapp.com/attachments/641778159464742942/664036348952313866/weapons20swords20celtic20albion_www.png")
             .addField("Vous achetez une dague en fer", ":crossed_swords: 1")
             if(result < 80)
             var result = new Discord.RichEmbed()
             .setColor("#898989")
-            .setImage("http://cdn.miscellaneoushi.com/1920x1440/20140310/weapons%20swords%20celtic%20albion_www.miscellaneoushi.com_14.jpg")
+            .setImage("https://cdn.discordapp.com/attachments/641778159464742942/664036348952313866/weapons20swords20celtic20albion_www.png")
             .addField("Vous achetez une dague en fer", ":crossed_swords: 2")
             else if(result < 101)
             var result = new Discord.RichEmbed() 
             .setColor("#898989")
-            .setImage("http://cdn.miscellaneoushi.com/1920x1440/20140310/weapons%20swords%20celtic%20albion_www.miscellaneoushi.com_14.jpg")
+            .setImage("https://cdn.discordapp.com/attachments/641778159464742942/664036348952313866/weapons20swords20celtic20albion_www.png")
             .addField("Vous achetez une dague en fer", ":crossed_swords: 3") 
             message.channel.send(result);
 
@@ -43,7 +43,7 @@
         if(message.content === préfix + "Achat casque de rat") {
             var minM = Math.floor(Math.min(5));
             var maxM = Math.floor(Math.max(15)); 
-            var HP = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+            var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
             var result = new Discord.RichEmbed() 
             .setColor("#62A140")
             .setImage("http://s1.1zoom.net/big0/715/DOTA_2_Legion_Commander_442254.jpg")
@@ -54,7 +54,7 @@
         if(message.content === préfix + "Achat plastron de rat") {
             var minM = Math.floor(Math.min(5));
             var maxM = Math.floor(Math.max(15)); 
-            var HP = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+            var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
             var result = new Discord.RichEmbed() 
             .setColor("#62A140")
             .setImage("http://s1.1zoom.net/big0/715/DOTA_2_Legion_Commander_442254.jpg")
@@ -65,7 +65,7 @@
         if(message.content === préfix + "Achat bottes de rat") {
             var minM = Math.floor(Math.min(5));
             var maxM = Math.floor(Math.max(15)); 
-            var HP = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+            var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
             var result = new Discord.RichEmbed() 
             .setColor("#62A140")
             .setImage("http://s1.1zoom.net/big0/715/DOTA_2_Legion_Commander_442254.jpg")
