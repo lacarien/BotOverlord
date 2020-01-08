@@ -123,7 +123,7 @@ if(message.content === préfix + "Artisanat"){
                             .addField("**__Liste des armures__**", "```Attention à bien respecter les conditions d'utilisation d'une armure``` ")
                             .addField("``Casque de rat``","?Fabrication casque de rat\n:scales: **Ressource :** 5 peaux de Crocro /\ 3 Queues de crocro /\ 2 Ailes d'aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier: 2")
                             .addField("``Plastron de rat``","?Fabrication plastron de rat\n:scales: **Ressource :** 5 peaux de Crocro /\ 3 Queues de crocro /\ 2 Ailes d'aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier : 2") 
-                            .addField("``Botte de rat``","?Fabrication bottes de rat\n:scales: **Ressource :** 5 peaux de Crocro /\ 3 yeux de Nid'Rat /\ 2 Ailes d'aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier : 2")
+                            .addField("``Botte de rat``","?Fabrication bottes de rat\n:scales: **Ressource :** 5 peaux de Crocro /\ 3 Queues de crocro /\ 2 Ailes d'aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier : 2")
                             .setColor("#8c8c8c")
                             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                              message.channel.send(embed).then(async message => 
