@@ -93,10 +93,39 @@ if(message.content === préfix + "Queues de crocro"){
     message.channel.sendMessage(help_embed);
 }
 
+if(message.content === préfix + "Queues de crocro"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00148f")
+    .addField(":fire: __**Croco des plaines**__", "**Achat** : :moneybag: ``12 de Mercure``\n**Revente** : :moneybag: ``3 de Mercure``\n**Liste d'utilisation** : Armure de crocro || Arme en fer")
+    .setImage("https://lh4.googleusercontent.com/-0X3phCZZsfo/Tz4X2duAU_I/AAAAAAAAGEM/LLdJ5aqGzIw/Cape%20de%20l%27Homme%20Ours.png")
+    .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Queues de crocro"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00148f")
+    .addField(":fire: __**Croco des plaines**__", "**Achat** : :moneybag: ``12 de Mercure``\n**Revente** : :moneybag: ``3 de Mercure``\n**Liste d'utilisation** : Armure de crocro || Arme en fer")
+    .setImage("https://lh4.googleusercontent.com/-0X3phCZZsfo/Tz4X2duAU_I/AAAAAAAAGEM/LLdJ5aqGzIw/Cape%20de%20l%27Homme%20Ours.png")
+    .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+
+
 if(message.content === préfix + "Ailes d'aragnator"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00148f")
     .addField(":fire: __**Aragnator des plaines chaudes**__", "**Achat** : :moneybag: ``16 de Mercure``\n**Revente** : :moneybag: ``5 de Mercure``\n**Liste d'utilisation** : Armure de crocro || Potion faible d'HP")
+    .setImage("https://lh4.googleusercontent.com/-0X3phCZZsfo/Tz4X2duAU_I/AAAAAAAAGEM/LLdJ5aqGzIw/Cape%20de%20l%27Homme%20Ours.png")
+    .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "Cornes de gnome"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00148f")
+    .addField(":fire: __**Gnome pyromane des plaines chaudes**__", "**Achat** : :moneybag: ``16 de Mercure``\n**Revente** : :moneybag: ``5 de Mercure``\n**Liste d'utilisation** : Armure de crocro || Potion faible de mana")
     .setImage("https://lh4.googleusercontent.com/-0X3phCZZsfo/Tz4X2duAU_I/AAAAAAAAGEM/LLdJ5aqGzIw/Cape%20de%20l%27Homme%20Ours.png")
     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
     message.channel.sendMessage(help_embed);
