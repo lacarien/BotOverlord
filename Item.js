@@ -75,11 +75,13 @@
         }     
 
 
-if(message.content === préfix + "Peaux de crocro"){
+if(message.content === préfix + "peaux de Crocro"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00148f")
-    .addField("Location du loot", "Crocro\nChemin du palier 1")
-    .addField("Achat", "?")
+    .addField("**Nom du mob**", "``Crocro``")
+	.addField("**Localisation**", ":fire: ``''Chemin'' de l'étage -1``")
+    .addField("**Achat**", ":moneybag: ``8 de Mercure``")
+	.addField("**Revente**", ":moneybag: ``2 de Mercure``")
     .setImage("https://lh4.googleusercontent.com/-0X3phCZZsfo/Tz4X2duAU_I/AAAAAAAAGEM/LLdJ5aqGzIw/Cape%20de%20l%27Homme%20Ours.png")
     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
     message.channel.sendMessage(help_embed);
