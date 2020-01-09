@@ -170,9 +170,9 @@ client.on("message",message =>{
     if(message.content === préfix + "Liste d'attaque"){
         var y = new Discord.RichEmbed()
         .addField("**===================================**", "**===================================**")
-        .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup fatal [Vos dégâts] **ou** ?Coup simple [Vos dégats]\nLVL10 Evolution ?Assassin ou ?Ninja")
-        .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup perçant [Vos dégâts] **ou** ?Coup saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
-        .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 5 ?Crie de provocation **ou** ?Coup etourdissant [Vos dégâts] \nLVL10 Evolution ?Juggernaut ou ?Moine")
+        .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_fatal [Vos dégâts] **ou** ?Coup_simple [Vos dégats]\nLVL10 Evolution ?Assassin ou ?Ninja")
+        .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_perçant [Vos dégâts] **ou** ?Coup_saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
+        .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 5 ?Crie_de_provocation **ou** ?Coup_etourdissant [Vos dégâts] \nLVL10 Evolution ?Juggernaut ou ?Moine")
         .addField("**===================================**", "**===================================**")
         .addField("**Info pour les esquives", "Si vous avez 0 points en agilité : Esquive [dégats reçu]\n Si vous en avez 1 au total : Super_esquive [dégats reçu]\n Si 2 : Mega_esquive [dégats reçu]\n Si 3 : Supra_esquive [dégats reçu]\n Et si 4 : Divin_esquive [dégats_reçu]")
         .setColor("#ff4600")
@@ -317,7 +317,7 @@ if(command === 'coup_fatal'){
         return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
     }
     var nombre = Math.floor((Math.random() * 100) + 1);
-    var max_value = Math.floor(`${args}`*2.2);
+    var max_value = Math.floor(`${args}`*2.3);
     var min_value = Math.floor(`${args}`*1.4)
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 55)
@@ -335,8 +335,8 @@ if(command === 'coup_simple'){
         return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
     }
     var nombre = Math.floor((Math.random() * 100) + 1);
-    var max_value = Math.floor(`${args}`*1.8);
-    var min_value = Math.floor(`${args}`*0.8)
+    var max_value = Math.floor(`${args}`*1.7);
+    var min_value = Math.floor(`${args}`*0.7)
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 80)
     var y = new Discord.RichEmbed()
@@ -350,7 +350,7 @@ if(command === 'coup_simple'){
     }
 
 
-    
+
 
 //// LISTE D'ATTAQUE ///////////////////////////////////
     //// LISTE D'ATTAQUE ///////////////////////////////////
@@ -974,7 +974,7 @@ Peau = Peau + 1;
 Peau = Peau + 2;
 } else if(result2 < 101){
 Peau = 0;
-}
+}   
 var result4 = Math.floor((Math.random() * 100) + 1);
 var Corne = 0;
 if(result4 < 30){
