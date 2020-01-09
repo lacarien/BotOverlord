@@ -294,7 +294,7 @@ message.channel.send(y);
 }
 if(command === 'coup_dague'){
 if (!args.length) {
-    return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+    return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*2);
@@ -302,7 +302,7 @@ var min_value = Math.floor(`${args}`*1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 65)
 var y = new Discord.RichEmbed()
-.addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
+.addField("**Vous utilisez votre dague venant planter l'ennemie**",":crossed_swords:" + result)
 .setImage("https://i.ytimg.com/vi/O_0CTVFL_Ns/maxresdefault.jpg")
 else if(nombre < 101)
 var y = new Discord.RichEmbed()
@@ -310,6 +310,48 @@ var y = new Discord.RichEmbed()
 .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
 message.channel.send(y);
 }
+
+
+if(command === 'coup_fatal'){
+    if (!args.length) {
+        return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
+    }
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    var max_value = Math.floor(`${args}`*2.2);
+    var min_value = Math.floor(`${args}`*1.4)
+    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+    if(nombre < 55)
+    var y = new Discord.RichEmbed()
+    .addField("**Vous utilisez votre dague venant planter l'ennemie**",":crossed_swords:" + result)
+    .setImage("https://i.pinimg.com/originals/2c/c6/d5/2cc6d59191b85bd7f108ad763b179f93.jpg")
+    else if(nombre < 101)
+    var y = new Discord.RichEmbed()
+    .setAuthor("Votre arme ne touche pas la cible")
+    .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
+    message.channel.send(y);
+    }
+if(command === 'coup_simple'){
+    if (!args.length) {
+        return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
+    }
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    var max_value = Math.floor(`${args}`*1.8);
+    var min_value = Math.floor(`${args}`*0.8)
+    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+    if(nombre < 80)
+    var y = new Discord.RichEmbed()
+    .addField("**Vous utilisez votre dague venant planter l'ennemie**",":crossed_swords:" + result)
+    .setImage("https://cdn.discordapp.com/attachments/454694319396356128/664758075353464853/213802.png")
+    else if(nombre < 101)
+    var y = new Discord.RichEmbed()
+    .setAuthor("Votre arme ne touche pas la cible")
+    .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
+    message.channel.send(y);
+    }
+
+
+    
+
 //// LISTE D'ATTAQUE ///////////////////////////////////
     //// LISTE D'ATTAQUE ///////////////////////////////////
         //// LISTE D'ATTAQUE ///////////////////////////////////
