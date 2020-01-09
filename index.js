@@ -942,7 +942,7 @@ Corne = 0;
 }
 var y = new Discord.RichEmbed()
 .setTitle(":bat: Récompenses du gnome pyromane")
-.addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:smiling_imp: **peau de Gnome :** "+ Peau +"\n:large_blue_diamond: **cornes de Gnome :** " + Corne)
+.addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:smiling_imp: **Peau de gnome :** "+ Peau +"\n:large_blue_diamond: **Cornes de gnome :** " + Corne)
 .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
 message.channel.send(y);
 }
