@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
+const talkedRecently = new Set();
 client.login(process.env.TOKENS);
 
 
@@ -34,8 +35,8 @@ client.on("message",message =>{
 
  eval(fs.readFileSync(__dirname + '/Shop.js')+'');
  eval(fs.readFileSync(__dirname + '/Item.js')+'');
-/* eval(fs.readFileSync(__dirname + '/attaque.js')+'');
-    eval(fs.readFileSync(__dirname + '/pnj.js')+'');
+/* eval(fs.readFileSync(__dirname + '/farm.js')+'');
+  /*  eval(fs.readFileSync(__dirname + '/pnj.js')+'');
     eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
 
@@ -1093,6 +1094,13 @@ var mes = new Discord.RichEmbed()
 .setColor("#ff8300")
 .setImage("https://cdn.discordapp.com/attachments/454694319396356128/661506598258343948/restricted___underworld_premade_by_frozenstocks_dbcjnpp-fullview.png")
 message.channel.send(mes)
+if (talkedRecently.has(message.author.id))
+  return;
+  talkedRecently.add(message.author.id);
+  setTimeout(() => {
+    // Removes the user from the set after 2.5 seconds
+    talkedRecently.delete(message.author.id);
+  }, 2500);
 }    
 
 
