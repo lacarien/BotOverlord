@@ -1100,7 +1100,7 @@ if (talkedRecently.has(message.author.id))
   setTimeout(() => {
     // Removes the user from the set after 2.5 seconds
     talkedRecently.delete(message.author.id);
-  }, 2500);
+  }, 10);
 }    
 
 
