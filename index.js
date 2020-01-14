@@ -53,7 +53,7 @@ client.on("message",message =>{
 
         setTimeout(() => {
             talkedRecently.delete(message.author.id)
-        }, 60000);}
+        }, 60);}
     }
             
 
