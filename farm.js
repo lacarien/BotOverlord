@@ -3,7 +3,7 @@ var préfix = "?";
 
 client.on("message",message =>{
 
-
+ss
 if(command === 'chasser_plaine'){
     if (!args.length) {
     return message.channel.send(`Il faut mettre votre level de metier, ${message.author}!`);
