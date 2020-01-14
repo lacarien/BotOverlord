@@ -1,5 +1,3 @@
-const talkedRecently = new Set();
-
 
 
 
