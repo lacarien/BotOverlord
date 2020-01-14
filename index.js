@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 const talkedRecently = new Set();
+
 client.login(process.env.TOKENS);
 
 
@@ -19,20 +20,8 @@ client.on("message",message =>{
     const args = message.content.slice(préfix.length).split(' ');
     const command = args.shift().toLowerCase();
 
-    switch (args[0]){
-        case 'Test':
-         if(talkedRecently.has(message.author.id)){
-        message.channel.send("Test de cooldown, attends 10sec"); 
-     } else {
-         message.channel.send("C'est bon il n'y a plus le cooldown")
+ 
 
-         talkedRecently.add(message.author.id);
-         setTimeout(() => {
-        talkedRecently.delete(message.author.id)
-         }, 30000);
-     }
-    break;
-}
     if (command === 'args-info') {
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
@@ -51,7 +40,19 @@ client.on("message",message =>{
   /*  eval(fs.readFileSync(__dirname + '/pnj.js')+'');
     eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
-
+    switch(args[0]){
+        case 'test' :
+            if(talkedRecently.has(message.author.id)){
+                message.reply("Cooldown");
+            }else{
+                message.reply("Plus de cooldown");
+                talkedRecently.add(message.author.id);
+                setTimeout(() => {
+                    talkedRecently.delete(message.author.id)
+                }, 30000);
+                }
+            }
+    }
 
 
 
