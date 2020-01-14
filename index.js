@@ -18,9 +18,20 @@ client.on("message",message =>{
 
     const args = message.content.slice(préfix.length).split(' ');
     const command = args.shift().toLowerCase();
+    switch (args[0]){
+        case 'cooldown':
+         if(message.content === préfix + "Test"){
+        message.channel.send("Test de cooldown, attends 10sec"); 
+     } else {
+         message.channel.send("C'est bon il n'y a plus le cooldown")
 
-    
-
+         talkedRecently.add(message.author.id);
+         setTimeout(() => {
+        talkedRecently.delete(message.author.id)
+         }, 30000);
+     }
+    break;
+}
     if (command === 'args-info') {
         if (!args.length) {
             return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
@@ -1094,13 +1105,6 @@ var mes = new Discord.RichEmbed()
 .setColor("#ff8300")
 .setImage("https://cdn.discordapp.com/attachments/454694319396356128/661506598258343948/restricted___underworld_premade_by_frozenstocks_dbcjnpp-fullview.png")
 message.channel.send(mes)
-if (talkedRecently.has(message.author.id))
-  return;
-  talkedRecently.add(message.author.id);
-  setTimeout(() => {
-    // Removes the user from the set after 2.5 seconds
-    talkedRecently.delete(message.author.id);
-  }, 10);
 }    
 
 
