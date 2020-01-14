@@ -19,8 +19,8 @@ client.on("message",message =>{
     const args = message.content.slice(préfix.length).split(' ');
     const command = args.shift().toLowerCase();
     switch (args[0]){
-        case 'cooldown':
-         if(message.content === préfix + "Test"){
+        case message.content === préfix + 'cooldown':
+         if(talkedRecently.has(message.author.id)){
         message.channel.send("Test de cooldown, attends 10sec"); 
      } else {
          message.channel.send("C'est bon il n'y a plus le cooldown")
