@@ -51,9 +51,9 @@ client.on("message",message =>{
                     talkedRecently.delete(message.author.id)
                 }, 30000);
                 }
+                break;
             }
-            break;
-    });
+            
 
 
 
