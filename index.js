@@ -40,7 +40,7 @@ client.on("message",message =>{
   /*  eval(fs.readFileSync(__dirname + '/pnj.js')+'');
     eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
-
+    if(message.content === préfix + "Farm"){
     if (talkedRecently.has(message.author.id)) {
         message.channel.send("Attendre 1 minutes==== " + message.author);
     } else {
@@ -54,6 +54,7 @@ client.on("message",message =>{
       talkedRecently.delete(message.author.id);
     }, 60000);
     }
+}
             
 
 
