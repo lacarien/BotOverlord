@@ -40,23 +40,15 @@ client.on("message",message =>{
   /*  eval(fs.readFileSync(__dirname + '/pnj.js')+'');
     eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
-    switch(args[0]){
-        case 'test' :
-            if(talkedRecently.has(message.author.id)){
-                message.reply("Cooldown");
-            }else{
-                message.reply("Plus de cooldown");
-                talkedRecently.add(message.author.id);
-                setTimeout(() => {
-                    talkedRecently.delete(message.author.id)
-                }, 30000);
-                }
-                break;
-            }
      if(message.content === préfix + "Abricot"){    
+
         if(talkedRecently.add(message.author.id)){
-        message.channel.send("C'est la suie de la commande, lalala, c'est un test");
-        } else { message.reply("Plus de cooldown");
+        message.channel.send("Il faut patient 1min +", message.author);
+
+        } else { 
+            
+            message.channel.send("Lalalalaaaaaaaaaaaaaaaaaaaaaa")
+           
         talkedRecently.add(message.author.id);
 
         setTimeout(() => {
