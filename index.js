@@ -1123,7 +1123,7 @@ if(command === 'chasser_plaine'){
         var XP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
         var y = new Discord.RichEmbed()
         .setColor("#b9b9b9")
-        .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:brown_circle:  **Coble :** " + cobl + "\n:black_circle:  **Adamin :** "+ Adam +"\n:bug: **Queu de crocro :** " + Queu + "\n:large_orange_diamond:  **Rubi :** " + rubi)
+        .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:brown_circle:  **Coble :** " + cobl + "\n:black_circle:  **Adamin :** "+ Adam +"\n:large_orange_diamond:  **Rubi :** " + rubi)
         .setImage("https://cdn.discordapp.com/attachments/641777958490472478/665929848182669361/Dr.png")
         message.channel.send(y);
 
