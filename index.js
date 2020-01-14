@@ -52,6 +52,7 @@ client.on("message",message =>{
                 }, 30000);
                 }
             }
+            break;
     })
 
 
