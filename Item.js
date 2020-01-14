@@ -14,7 +14,7 @@
             .addField("Vous achetez une épée en fer", ":crossed_swords: 2")
             else if(result < 101)
             var result = new Discord.RichEmbed() 
-            .setcolor("#898989")
+            .setColor("#898989")
             .setImage("http://wallpapersdsc.net/wp-content/uploads/2017/04/Sword-HD-Desktop.jpg")
             .addField("Vous achetez une épée en fer", ":crossed_swords: 3") 
             message.channel.send(result);
@@ -40,6 +40,7 @@
             message.channel.send(result);
 
         }     
+
         if(message.content === préfix + "Achat casque de rat") {
             var minM = Math.floor(Math.min(5));
             var maxM = Math.floor(Math.max(15)); 
@@ -51,6 +52,7 @@
             message.channel.send(result);
 
         } 
+
         if(message.content === préfix + "Achat plastron de rat") {
             var minM = Math.floor(Math.min(5));
             var maxM = Math.floor(Math.max(15)); 
@@ -72,7 +74,7 @@
             .addField("Vous achetez des bottes de rat", ":gift_heart: " + HP) 
             message.channel.send(result);
 
-        }     
+            }     
 
 
 if(message.content === préfix + "Peaux de crocro"){
