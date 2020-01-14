@@ -53,6 +53,15 @@ client.on("message",message =>{
                 }
                 break;
             }
+     if(message.content === préfix + "Abricot"){    
+        if(talkedRecently.add(message.author.id)){
+        message.channel.send("C'est la suie de la commande, lalala, c'est un test");
+        } else { message.reply("Plus de cooldown");
+        talkedRecently.add(message.author.id);
+        setTimeout(() => {
+            talkedRecently.delete(message.author.id)
+        }, 30000);}
+    }
             
 
 
