@@ -1,4 +1,7 @@
+const talkedRecently = new Set();
+var préfix = "?";
 
+client.on("message",message =>{
 
 
 if(command === 'chasser_plaine'){
@@ -34,3 +37,4 @@ if(command === 'chasser_plaine'){
     }, 60000);
     }
 }
+});
