@@ -40,20 +40,20 @@ client.on("message",message =>{
   /*  eval(fs.readFileSync(__dirname + '/pnj.js')+'');
     eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
-     if(message.content === préfix + "Abricot"){    
-
+   
         if(talkedRecently.add(message.author.id)){
-        message.channel.send("Il faut patient 1min +", message.author);
+            message.channel.send("Commande du futur");
 
         } else { 
-            
-            message.channel.send("Lalalalaaaaaaaaaaaaaaaaaaaaaa")
-           
-        talkedRecently.add(message.author.id);
 
+            if(message.content === préfix + "Abricot"){   
+            
+            message.channel.send("The command in the futur")
+            }
+        talkedRecently.add(message.author.id);
         setTimeout(() => {
-            talkedRecently.delete(message.author.id)
-        }, 60);}
+        talkedRecently.delete(message.author.id)
+        }, 60000);}
     }
             
 
