@@ -58,9 +58,10 @@ client.on("message",message =>{
         message.channel.send("C'est la suie de la commande, lalala, c'est un test");
         } else { message.reply("Plus de cooldown");
         talkedRecently.add(message.author.id);
+
         setTimeout(() => {
             talkedRecently.delete(message.author.id)
-        }, 30000);}
+        }, 60000);}
     }
             
 
