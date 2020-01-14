@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const talkedRecently = new Set();
+
 
 client.login(process.env.TOKENS);
 
@@ -36,25 +36,11 @@ client.on("message",message =>{
 
  eval(fs.readFileSync(__dirname + '/Shop.js')+'');
  eval(fs.readFileSync(__dirname + '/Item.js')+'');
-/* eval(fs.readFileSync(__dirname + '/farm.js')+'');
+ eval(fs.readFileSync(__dirname + '/farm.js')+'');
   /*  eval(fs.readFileSync(__dirname + '/pnj.js')+'');
     eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
-    if(message.content === préfix + "Farm"){
-    if (talkedRecently.has(message.author.id)) {
-        message.channel.send("Attendre 1 minutes==== " + message.author);
-    } else {
-
-       message.channel.send("Yata !")
-
-
-    talkedRecently.add(message.author.id);
-    setTimeout(() => {
-      // Removes the user from the set after a minute
-      talkedRecently.delete(message.author.id);
-    }, 60000);
-    }
-}
+   
             
 
 
