@@ -1111,16 +1111,16 @@ if(command === 'chasser_plaine'){
         
         var minXP = Math.floor(Math.min(0));
         var maxXP = Math.floor(Math.max(1)); 
-        var rubi = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+        var rubi = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         var minXP = Math.floor(Math.min(0));
         var maxXP = Math.floor(Math.max(3)); 
-        var Adam = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+        var Adam = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         var minXP = Math.floor(Math.min(5));
         var maxXP = Math.floor(Math.max(30)); 
-        var cobl = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+        var cobl = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         var minXP = Math.floor(Math.min(3));
         var maxXP = Math.floor(Math.max(5)); 
-        var XP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+        var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         var y = new Discord.RichEmbed()
         .setColor("#b9b9b9")
         .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:brown_circle:  **Coble :** " + cobl + "\n:black_circle:  **Adamin :** "+ Adam +"\n:large_orange_diamond:  **Rubi :** " + rubi)
