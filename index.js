@@ -42,10 +42,10 @@ client.on("message",message =>{
 
 
     if (talkedRecently.has(message.author.id)) {
-        msg.channel.send("Attendre 1 minutes==== " + message.author);
+        message.channel.send("Attendre 1 minutes==== " + message.author);
     } else {
 
-       msg.channel.send("Yata !")
+       message.channel.send("Yata !")
 
 
     talkedRecently.add(message.author.id);
