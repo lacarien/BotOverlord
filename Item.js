@@ -80,8 +80,19 @@
     if(message.content === préfix + "Peau de crocro"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00148f")
-        .addField("**Crocro du palier 1**", " :fire: **Localisation : Plaine chaude**\n:dollar: **Prix d'achat : 20 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**\n:third_place: **Appentissage du metier couturier :** ?Couture crocro")
+        .addField("**Crocro du palier 1**", " :fire: **Localisation : Plaine chaude**\n:dollar: **Prix d'achat : 20 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**\n:third_place: **Appentissage du metier couturier :** ``?Couture peau de crocro``")
         .setImage("https://lh4.googleusercontent.com/-0X3phCZZsfo/Tz4X2duAU_I/AAAAAAAAGEM/LLdJ5aqGzIw/Cape%20de%20l%27Homme%20Ours.png")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
         message.channel.sendMessage(help_embed);
     }
+    if(message.content === préfix + "Queu de crocro"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00148f")
+        .addField("**Crocro du palier 1**", " :fire: **Localisation : Plaine chaude**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 15 Mercure**\n:third_place: **Appentissage du metier couturier :** ``?Couture queu de crocro``")
+        .setImage("https://i.pinimg.com/736x/cf/34/c9/cf34c94e2eab837d0e53465afe99bb15.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+
+    
+
