@@ -687,7 +687,7 @@ var result = new Discord.RichEmbed()
 message.channel.send(result)
 }
 if(message.content === préfix + "Nidrats_attaque"){
-var min = Math.floor(Math.min(10));
+var min = Math.floor(Math.min(15));
 var max = Math.floor(Math.max(30)); 
 var y = Math.floor(Math.random() * (max - min + 1) ) + min;
 var result = Math.floor((Math.random() * 100) + 1);
@@ -704,42 +704,61 @@ message.channel.sendMessage(y);
 }
 
 if(command === 'récompenses_nidrats'){
-if (!args.length) {
-return message.channel.send(`Il faut mettre ton level, ${message.author}!`);
-}
-if(`${args}`==1){
-var minXP = Math.floor(Math.min(-5));
-var maxXP = Math.floor(Math.max(5)); 
-var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-}
-if(`${args}`==2){
-var minXP = Math.floor(Math.min(0));
-var maxXP = Math.floor(Math.max(5)); 
-var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-}
-if(`${args}`==3){
-var minXP = Math.floor(Math.min(-2));
-var maxXP = Math.floor(Math.max(3)); 
-var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-}
-if(`${args}`<4){ 
-var XP = Math.floor(30/`${args}`)
-var XP = Math.floor(XP + XXP)
-} else if (`${args}`== 4) {
-var minXP = Math.floor(Math.min(0));
-var maxXP = Math.floor(Math.max(3)); 
-var XP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-} else if (`${args}`> 4) {
-var XP = 0;
-}
-var minM = Math.floor(Math.min(7));
-var maxM = Math.floor(Math.max(12)); 
-var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
-var y = new Discord.RichEmbed()
-.addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n**SOON**")
-.setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
-message.channel.send(y);
-}
+    if (!args.length) {
+    return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+    }
+    if(`${args}`==1){
+    var minXP = Math.floor(Math.min(-5));
+    var maxXP = Math.floor(Math.max(5)); 
+    var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+    }
+    if(`${args}`==2){
+    var minXP = Math.floor(Math.min(0));
+    var maxXP = Math.floor(Math.max(5)); 
+    var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+    }
+    if(`${args}`==3){
+    var minXP = Math.floor(Math.min(-2));
+    var maxXP = Math.floor(Math.max(3)); 
+    var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+    }
+    if(`${args}`<4){ 
+    var XP = Math.floor(30/`${args}`)
+    var XP = Math.floor(XP + XXP)
+    } else if (`${args}`== 4) {
+    var minXP = Math.floor(Math.min(0));
+    var maxXP = Math.floor(Math.max(3)); 
+    var XP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+    } else if (`${args}`> 4) {
+    var XP = 0;
+    }
+    var minM = Math.floor(Math.min(5));
+    var maxM = Math.floor(Math.max(10)); 
+    var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+    var result2 = Math.floor((Math.random() * 100) + 1);
+    var Peau = 0;
+    if(result2 < 80){
+    Peau = Peau + 1;
+    } else if(result2 < 90){
+    Peau = Peau + 2;
+    } else if(result2 < 101){
+    Peau = 0;
+    }
+    var result3 = Math.floor((Math.random() * 100) + 1);
+    var Queu = 0;
+    if(result3 < 40){
+    Queu = Queu +1;
+    } else if(result3 < 96){
+    Queu = 0;
+    } else if(result3 < 101){
+    Queu = Queu + 2;
+    
+    }
+    var y = new Discord.RichEmbed()
+    .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:rat: **Peau de crocro :** "+ Peau +"\n:bug: **Queu de crocro :** " + Queu)
+    .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
+    message.channel.send(y);
+    }
 
 if(message.content === préfix + "Rat alpha") {
 var result = new Discord.RichEmbed() 
