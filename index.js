@@ -79,7 +79,7 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
-s
+
     if(message.content === préfix + "Level"){
         message.channel.send(`${message.author} Voici le tableau des levels`);
         message.channel.send("```fix\n-Du Lvl 1 à 10 vous gagnez à chaque level 3 points de caracthéristique```")
@@ -1161,7 +1161,7 @@ message.channel.send(result);
 
 
     
-sss
+
 
 
 })
