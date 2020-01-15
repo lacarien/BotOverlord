@@ -93,7 +93,7 @@
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
         message.channel.sendMessage(help_embed);
     }
-    if(message.content === préfix + "Aile d'aragnator "){
+    if(message.content === préfix + "Ailes d'aragnator"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00148f")
         .addField("**Aragnator du palier 1**", " :fire: **Localisation : Plaine chaude**\n:dollar: **Prix d'achat : 40 Mercure**\n:moneybag: **Prix de revente : 20 Mercure**\n:third_place: **Appentissage du metier alchimiste :** ``?Alchimie aile d'argnator``")
