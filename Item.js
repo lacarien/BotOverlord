@@ -101,7 +101,7 @@
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
         message.channel.sendMessage(help_embed);
     }
-    if(message.content === préfix + " Corne de gnome"){
+    if(message.content === préfix + "Corne de gnome"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00148f")
         .addField("**Gnome pyromane du palier 1**", " :fire: **Localisation : Plaine chaude**\n:dollar: **Prix d'achat : 50 Mercure**\n:moneybag: **Prix de revente : 25 Mercure**\n:third_place: **Appentissage du metier alchimiste :** ``?Alchimie corne de gnome``")
