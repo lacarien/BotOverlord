@@ -145,18 +145,88 @@
 
         if(message.content === préfix + "Espece"){
             var y = new Discord.RichEmbed()
-            .addField("Liste des especes", ":upside_down: **Humain**\nBLABLABLA \n:imp: **Demon**\nBLABLABLA\n:robot: **Automate**\nBLABLABLA")
+            .addField("Liste des especes", ":upside_down: **Humain**\n:imp: **Demon**\n:robot: **Automate**\n:elf: **Elfe**\n**Mi-humain**\n**Werebeast**\n**Draconien**\n**Vampire**\n**Elu**\n**Démon**\n**Automate**")
             .setColor("#ff4600")
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         }
+        if(message.content === préfix + "Humain"){
+            var y = new Discord.RichEmbed()
+            .addField("__**Humain**__", ":trident: **Bonus :** Aucun\n:fleur_de_lis: **Malus :** Aucun\n:notepad_spiral: **Description :** Race étant la plus courante dans ce monde, ils n'ont rien d'extraordinaire comparé autre race mais cependant ils ne sont pas faible pour autant")
+            .setImage("https://media.discordapp.net/attachments/661225907578601472/661226564083515402/60195005_p0_master1200.jpg?width=484&height=559")
+            .setColor("#acacac")
+            .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+            message.channel.send(y);
+        }
+        if(message.content === préfix + "Elfe"){
+            var y = new Discord.RichEmbed()
+            .addField("__**Elfe**__", ":trident: **Bonus :** +15% de MP\n:fleur_de_lis: **Malus : -10% d'HP** Aucun\n:notepad_spiral: **Description :** Race plutôt rare et beaucoup on était rendu en esclave par les humains du à leurs grande affinité avec la magie ainsi que leurs un grand lien avec la nature pouvant donc comprendre celle ci pour ainsi par exemple trouver son chemin dans un labyrinthe ils sont cependant plus faible physiquement que les humains")
+            .setImage("https://www.nautiljon.com/images/description/00/07/1543596772591_image.jpg")
+            .setColor("#5db234")
+            .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+            message.channel.send(y);
+        }
+        if(message.content === préfix + "Mi-humain"){
+            var y = new Discord.RichEmbed()
+            .addField("__**Mi-humain**__", ":trident: **Bonus :** +5% d'HP\n:fleur_de_lis: **Malus : -10% d'MP** Aucun\n:notepad_spiral: **Description :** Des hybrides . . . cette race vient de l'union entre un Werebeast et un Humain leurs sens sont beaucoup moins développé que celle d'un Werebeast mais le sont plus que les humains")
+            .setImage("https://www.itl.cat/pngfile/big/136-1362573_photo-wallpaper-forest-girl-dark-anime-art-neko.jpg")
+            .setColor("#8297e6")
+            .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+            message.channel.send(y);
+        }
+        if(message.content === préfix + "Werebeast"){
+            var y = new Discord.RichEmbed()
+            .addField("__**Werebeast**__", ":trident: **Bonus :** +10% d'HP\n:fleur_de_lis: **Malus : -20% d'MP** Aucun\n:notepad_spiral: **Description :** : Des êtres à l'apparence bestiale que cela soit tigre, ours, chien la seul chose qui les différencie des animaux est qu'ils sont doué d'intelligence et sont civilisé tous comme n'importe qu'elle race, cependant la colère peuvent les faires devenir agressif facilement voir même leurs faire perdre la raison")
+            .setimage("https://images-ext-1.discordapp.net/external/h94W9g2Bt4FJhoUXFmY8BgcAq2hEoklgxH8z9r12fkQ/%3Fwidth%3D445%26height%3D559/https/media.discordapp.net/attachments/661225907578601472/661226930548506624/2622507c6bb258d9e7995b2fec3ff1b9.jpg")
+            .setColor("#4063e6")
+            .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+            message.channel.send(y);
+        }
+        if(message.content === préfix + "Draconien"){
+            var y = new Discord.RichEmbed()
+            .addField("__**Draconien**__", ":trident: **Bonus :** +20% d'armure\n:fleur_de_lis: **Malus : -10% d'attaque** Aucun\n:notepad_spiral: **Description :** : : Cette race est un mystère pour ce monde . . . des êtres à la fois humain et dragon mais ils n'existent pas de Werebeast dragon, cependant ils existent quand même, certain disent qu'ils sont les évolutions des Dragons, qu'ils se sont adapté, ce qui leurs on fait prendre forme humaine")
+            .setimage("https://cdn.discordapp.com/attachments/661225907578601472/661227000488394774/darkchain_aka__harvey_by_darkavey_dcpzs0s-pre.jpg")
+            .setColor("#f27e2e")
+            .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+            message.channel.send(y);
+        }   
+        if(message.content === préfix + "Vampire"){
+            var y = new Discord.RichEmbed()
+            .addField("__**Vampire**__", ":trident: **Bonus :** -20% d'armure\n:fleur_de_lis: **Malus : +10% d'attaque** Aucun\n:notepad_spiral: **Description :** : Un être buveur de sang beaucoup repoussée par les humains du au on dit de la population disant que les vampires ne sont que des monstre assoiffé de sang, ce qui est vrai pour certain mais une petite partie d'entre eux cependant car même si la seul véritable nourriture qui les rassasies vraiment est le sang humain cependant ils ne sont pas méchant pour autant simplement si ils n'en boivent pas au moins 1L toute les semaine cela va leurs faire perdre la tête et les faires rentrer dans une rage de sang venant s'attaquer à n'importe qui pour boire son sang jusqu'à être rassasié")
+            .setimage("https://cdn.discordapp.com/attachments/661225907578601472/661227000488394774/darkchain_aka__harvey_by_darkavey_dcpzs0s-pre.jpg")
+            .setColor("#ff0000")
+            .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+            message.channel.send(y);
+        }   
+        if(message.content === préfix + "Elu"){
+            var y = new Discord.RichEmbed()
+            .addField("__**Elu**__", ":trident: **Bonus :** -20% d'armure\n:fleur_de_lis: **Malus : +20% d'armure magique** Aucun\n:notepad_spiral: **Description :** : Les Elus, une race que l'on pourrait comparer au ange et cela est le cas cependant les Elu sont née de parents humains ou de parents Elu ou d'un parents Humains et d'un parent Elu, ayant comme principale fonction de jouer les intermédiaires entre  les hommes et les démons à fin de protéger les humains de cette race corrompu il voue à leurs naissance une grande méfiance envers les démons ne pouvant donc jamais leurs faire confiance à 100% même si ils deviennent amis.")
+            .setimage("https://cdn.discordapp.com/attachments/661225907578601472/661227116171362336/Remilia.png")
+            .setColor("#ffffff")
+            .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+            message.channel.send(y);
+        } 
+        if(message.content === préfix + "Elu"){
+            var y = new Discord.RichEmbed()
+            .addField("__**Elu**__", ":trident: **Bonus :** -20% d'armure\n:fleur_de_lis: **Malus : +20% d'armure magique** Aucun\n:notepad_spiral: **Description :** : Les Elus, une race que l'on pourrait comparer au ange et cela est le cas cependant les Elu sont née de parents humains ou de parents Elu ou d'un parents Humains et d'un parent Elu, ayant comme principale fonction de jouer les intermédiaires entre  les hommes et les démons à fin de protéger les humains de cette race corrompu il voue à leurs naissance une grande méfiance envers les démons ne pouvant donc jamais leurs faire confiance à 100% même si ils deviennent amis.")
+            .setimage("https://cdn.discordapp.com/attachments/661225907578601472/661227221226356746/73696359_p0_master1200.jpg")
+            .setColor("#f31f1f")
+            .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+            message.channel.send(y);
+        }     
+
+
+
+        
+
 
         if(message.content === préfix + "Ultime"){
             var y = new Discord.RichEmbed()
             .addField("Explication","Les coups spéciaux ne sont utilisés qu'une fois par combat, vous ne pouvez en choisir qu'un seul et ce n'est utilisable qu'une fois toute les 12H")
             .addField("?Final slash", "__Prérequis :__ Démon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'exécutez")
-            .addField("?Rafale_de_coups", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaques physiques à un seul ennemie")
-            .addField("?Paralysie", "__Prérequis :__ Aucun \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
+            .addField("?Rafale_de_coups [Vos dégats]", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaques physiques à un seul ennemie")
+            .addField("?Paralysie [Vos dégats]", "__Prérequis :__ Aucun \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
+            .addField("?Soif_de_sang [Vos dégats]","__Prérequis : Mi__ Aucun \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
             .setColor("#ff4600")
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
