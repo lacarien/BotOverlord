@@ -193,7 +193,7 @@
         if(message.content === préfix + "Vampire"){
             var y = new Discord.RichEmbed()
             .addField("__**Vampire**__", ":trident: **Bonus :** -20% d'armure\n:fleur_de_lis: **Malus :** +10% d'attaque\n:notepad_spiral: **Description :** : Un être buveur de sang beaucoup repoussée par les humains du au on dit de la population disant que les vampires ne sont que des monstre assoiffé de sang, ce qui est vrai pour certain mais une petite partie d'entre eux cependant car même si la seul véritable nourriture qui les rassasies vraiment est le sang humain cependant ils ne sont pas méchant pour autant simplement si ils n'en boivent pas au moins 1L toute les semaine cela va leurs faire perdre la tête et les faires rentrer dans une rage de sang venant s'attaquer à n'importe qui pour boire son sang jusqu'à être rassasié")
-            .setImage("https://cdn.discordapp.com/attachments/661225907578601472/661227000488394774/darkchain_aka__harvey_by_darkavey_dcpzs0s-pre.jpg")
+            .setImage("https://cdn.discordapp.com/attachments/661225907578601472/661227116171362336/Remilia.png")
             .setColor("#ff0000")
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
@@ -201,7 +201,7 @@
         if(message.content === préfix + "Elu"){
             var y = new Discord.RichEmbed()
             .addField("__**Elu**__", ":trident: **Bonus :** -20% d'armure\n:fleur_de_lis: **Malus :** +20% d'armure magique\n:notepad_spiral: **Description :** : Les Elus, une race que l'on pourrait comparer au ange et cela est le cas cependant les Elu sont née de parents humains ou de parents Elu ou d'un parents Humains et d'un parent Elu, ayant comme principale fonction de jouer les intermédiaires entre  les hommes et les démons à fin de protéger les humains de cette race corrompu il voue à leurs naissance une grande méfiance envers les démons ne pouvant donc jamais leurs faire confiance à 100% même si ils deviennent amis.")
-            .setImage("https://cdn.discordapp.com/attachments/661225907578601472/661227116171362336/Remilia.png")
+            .setImage("https://cdn.discordapp.com/attachments/661225907578601472/661227221226356746/73696359_p0_master1200.jpg")
             .setColor("#ffffff")
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
