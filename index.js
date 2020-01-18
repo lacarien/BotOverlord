@@ -192,7 +192,7 @@
         }   
         if(message.content === préfix + "Vampire"){
             var y = new Discord.RichEmbed()
-            .addField("__**Vampire**__", ":trident: **Bonus :** -20% d'armure\n:fleur_de_lis: **Malus :** +10% d'attaque\n:notepad_spiral: **Description :** : Un être buveur de sang beaucoup repoussée par les humains du au on dit de la population disant que les vampires ne sont que des monstre assoiffé de sang, ce qui est vrai pour certain mais une petite partie d'entre eux cependant car même si la seul véritable nourriture qui les rassasies vraiment est le sang humain cependant ils ne sont pas méchant pour autant simplement si ils n'en boivent pas au moins 1L toute les semaine cela va leurs faire perdre la tête et les faires rentrer dans une rage de sang venant s'attaquer à n'importe qui pour boire son sang jusqu'à être rassasié")
+            .addField("__**Vampire**__", ":trident: **Bonus :** +10% d'attaque\n:fleur_de_lis: **Malus :** -20% d'armure\n:notepad_spiral: **Description :** : Un être buveur de sang beaucoup repoussée par les humains du au on dit de la population disant que les vampires ne sont que des monstre assoiffé de sang, ce qui est vrai pour certain mais une petite partie d'entre eux cependant car même si la seul véritable nourriture qui les rassasies vraiment est le sang humain cependant ils ne sont pas méchant pour autant simplement si ils n'en boivent pas au moins 1L toute les semaine cela va leurs faire perdre la tête et les faires rentrer dans une rage de sang venant s'attaquer à n'importe qui pour boire son sang jusqu'à être rassasié")
             .setImage("https://cdn.discordapp.com/attachments/661225907578601472/661227116171362336/Remilia.png")
             .setColor("#ff0000")
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
@@ -200,12 +200,30 @@
         }   
         if(message.content === préfix + "Elu"){
             var y = new Discord.RichEmbed()
-            .addField("__**Elu**__", ":trident: **Bonus :** -20% d'armure\n:fleur_de_lis: **Malus :** +20% d'armure magique\n:notepad_spiral: **Description :** : Les Elus, une race que l'on pourrait comparer au ange et cela est le cas cependant les Elu sont née de parents humains ou de parents Elu ou d'un parents Humains et d'un parent Elu, ayant comme principale fonction de jouer les intermédiaires entre  les hommes et les démons à fin de protéger les humains de cette race corrompu il voue à leurs naissance une grande méfiance envers les démons ne pouvant donc jamais leurs faire confiance à 100% même si ils deviennent amis.")
+            .addField("__**Elu**__", ":trident: **Bonus :** +20% d'armure magique\n:fleur_de_lis: **Malus :** -20% d'armure\n:notepad_spiral: **Description :** : Les Elus, une race que l'on pourrait comparer au ange et cela est le cas cependant les Elu sont née de parents humains ou de parents Elu ou d'un parents Humains et d'un parent Elu, ayant comme principale fonction de jouer les intermédiaires entre  les hommes et les démons à fin de protéger les humains de cette race corrompu il voue à leurs naissance une grande méfiance envers les démons ne pouvant donc jamais leurs faire confiance à 100% même si ils deviennent amis.")
             .setImage("https://cdn.discordapp.com/attachments/661225907578601472/661227221226356746/73696359_p0_master1200.jpg")
             .setColor("#ffffff")
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         } 
+        if(message.content === préfix + "Automate"){
+            var y = new Discord.RichEmbed()
+            .addField("__**Automate**__", ":trident: **Bonus :** Immunisé au poison\n:fleur_de_lis: **Malus :** -20% d'armure\n:notepad_spiral: **Description :** : Race créer par les humains, ce sont des êtres mécanique fait à partir de métal et animé par la magie, cette race est cependant considéré comme hérésie pour les croyants les plus extrêmes car les automates ne sont pas l'œuvre de dieu et que seul dieu à le pouvoir de donner la vie et qu'en créant un automate cela voudrait dire qu'on essaye de se faire passer pour dieu, leurs créations date d'il y a des millénaire et la façon d'en créer à était perdu voir même oublié de rare schéma sont trouvable  mais même avec cela il est très rare d'arriver à donner la vie à un Automate même en y consacrant toute sa vie certain n'y arrive pas ")
+            .setImage("https://danbooru.donmai.us/data/__cz2128_delta_overlord_drawn_by_hh_101__3a474d29abe339371e5edf2fbdd421bb.jpg?download=1")
+            .setColor("#717171")
+            .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+            message.channel.send(y);
+        }
+        if(message.content === préfix + "Démon"){
+            var y = new Discord.RichEmbed()
+            .addField("__**Démon**__", ":trident: **Bonus :** +20% d'armure magique\n:fleur_de_lis: **Malus :** -10% d'attaque\n:notepad_spiral: **Description :** :  Des êtres maléfique . . . enfin d'après les saintes écritures car même si une grande majorité d'entre eux sont d'une nature maléfique ayant de mauvaise intention envers les autres races une petites partie d'entre eux ne sont cependant pas comme sa et peuvent tout aussi gentil que n'importe qui")
+            .setImage("https://media.discordapp.net/attachments/661225907578601472/661227290587299870/60340737_p0_master1200.jpg?width=1183&height=559")
+            .setColor("#a90000")
+            .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+            message.channel.send(y);
+        }  
+
+        
      
 
 
@@ -227,11 +245,6 @@
 
         if(message.content === préfix + "Liste d'attaque"){
             message.channel.send("**Ici vous trouverez les passifs des espèces mais également la liste des attaques par classe**");
-            var y = new Discord.RichEmbed()
-            .addField("**?Humain**", "__Passif__ : Vos HP se bloquent une première fois à 1HP avant de subir un autre coups et de réellement mourir")
-            .addField("?Demon", "__Passif__ : Régénération 2 fois plus rapide")
-            .addField("?Automate", "__Passif__ :Immunité au poison")
-            message.channel.send(y);
         }
         if(message.content === préfix + "Liste d'attaque"){
             var y = new Discord.RichEmbed()
@@ -1220,7 +1233,7 @@
         setTimeout(() => {
         // Removes the user from the set after a minute
         talkedRecently.delete(message.author.id);
-        }, 60000);
+        }, 3600000);
         }
     }
     if(command === 'chasser_chemin'){
@@ -1230,15 +1243,17 @@
         if (talkedRecently.has(message.author.id)) {
             message.channel.send("Attendre 1 minutes==== " + message.author);
         } else {
-            
-            var minXP = Math.floor(Math.min(0));
-            var maxXP = Math.floor(Math.max(1)); 
-            var rubi = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+            var result = Math.floor((Math.random() * 100) + 1);
+            if(result < 20){
+            rubi = 1
+            }else if(result < 101){
+            rubi = 0
+            }
             var minXP = Math.floor(Math.min(0));
             var maxXP = Math.floor(Math.max(3)); 
             var Adam = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
-            var minXP = Math.floor(Math.min(5));
-            var maxXP = Math.floor(Math.max(20)); 
+            var minXP = Math.floor(Math.min(0));
+            var maxXP = Math.floor(Math.max(2)); 
             var cobl = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
             var minXP = Math.floor(Math.min(3));
             var maxXP = Math.floor(Math.max(5)); 
@@ -1250,9 +1265,9 @@
                 var cobl = cobl*1.5;
             }
             var y = new Discord.RichEmbed()
-            .setColor("#b9b9b9")
-            .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:brown_circle:  ** :** " + cobl + "\n:black_circle:  **Adamin :** "+ Adam +"\n:large_orange_diamond:  **Rubi :** " + rubi)
-            .setImage("https://cdn.discordapp.com/attachments/641777958490472478/665929848182669361/Dr.png")
+            .setColor("#ff3d3d")
+            .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:brown_circle:  **Patte de larve :** " + cobl + "\n:black_circle:  **Aile de crofly:** "+ Adam +"\n:large_orange_diamond:  **Coeur de crona:** " + rubi)
+            .setImage("https://cdn.discordapp.com/attachments/641777958490472478/667050544636100628/CI_3DS_MonsterHunterStories_Towns_vulcano.png")
             message.channel.send(y);
 
 
@@ -1260,7 +1275,7 @@
         setTimeout(() => {
         // Removes the user from the set after a minute
         talkedRecently.delete(message.author.id);
-        }, 60000);
+        }, 3600000);
         }
     }
     
