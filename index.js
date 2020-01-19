@@ -21,7 +21,7 @@
 
         const args = message.content.slice(préfix.length).split(' ');
         const command = args.shift().toLowerCase();
-    
+        args = message.content.toLowerCase();
     
 
         if (command === 'args-info') {
