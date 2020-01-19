@@ -19,9 +19,9 @@
 
         if (!message.content.startsWith(préfix) || message.author.bot) return;
 
-        const args = message.content.slice(préfix.length).split(' ');
+        const args = message.content.slice(préfix.length).split(' ') & str.toLowerCase();
         const command = args.shift().toLowerCase();
-        const args = str.toLowerCase()
+    
     
 
         if (command === 'args-info') {
