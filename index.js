@@ -41,10 +41,10 @@
         eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
     
-        message.content =`${args}`.toLowerCase();         
+           
 
 
-        if(message.content === préfix + "help"){
+        if(message.content === préfix + "help" || message.content === préfix + "Help" ){
             var y = new Discord.RichEmbed()
             .addField(":book:  **?Histoire**", "Ici vous aurez un résumé du thème du serveur")
             .addField(":man_detective: **?Classe**", "Ici vous aurez simplement la liste des classes lors de la création de votre personnage")
@@ -64,14 +64,14 @@
         }
 
         
-        if(message.content === préfix + "fiche RP"){
+        if(message.content === préfix + "fiche RP" || message.content === préfix + "Fiche RP" ){
             message.channel.send("```!! ━―━―━👤 **__PERSONNEL__** 👤━―━―━ !!\n\n **Nom :**\n**Prénom :**\n**Âge : **\n\n**Race : **\n**Sexe :**\n**Orientation sexuelle :**\n\n**Poids :**\n **Taille :**\n\n**Personnalité :**\n\n**Histoire :**\n\n\n**__APPARENCE :__**\n\n**Caractéristique physique :** \n\n**Image :**\n\n\n!! ━―━―━🗡️ **__COMBAT__** 🗡️━―━―━ !!\n\n" 
             +"**Classe :** ?\n**Compétence spé :** ?\n\n**Niveau : ** 1\n**Exp :** 0/100\n\n**HP : ** 0/0\n**Armure : ** 0\n**Armure magique :** 0\n**MP :** 0/0\n0 **Attaque total**\n0 **Esquive total**\n\n\n!! ━―━―━💠 **__Caractéristiques__** 💠━―━―━ !!\n\n\n0/? **point libre restant**\n\n"
             +"0 **points de puissance**\n\n0 **points de résistance physique**\n\n0 **points de résistance magique**\n\n0 **points de vitalité**\n0 **points d'agilité**\n!! ━―━―━📚 **__Métiers__** 📚━―━―━ !!\n\n\n**Chasseur niveau 1 :** 0/50XP\n\n**Pêcheur niveau 1 :** 0/50XP\n\n**Cueilleur niveau 1 :** 0/50XP\n\n**Mineur niveau 1 :** 0/50XP\n\n**Bucheron niveau 1 :** 0/50XP\n\n**Cuisinier niveau 1 :** 0/50XP\n\n**Alchimiste niveau 1 :** 0/50XP\n\n"
             +"**Bijoutier niveau 1 : ** 0/50XP\n\n**Forgeron niveau 1 :** 0/50XP\n\n**Couturier niveau 1 :** 0/50XP\n\n\n!! ━―━―━💼 **__Inventaire__** 💼━―━―━ !!```");
         }
 
-        if(message.content === préfix + "Point cara"){
+        if(message.content === préfix + "Point cara" || message.content === préfix + "point cara"){
             var y = new Discord.RichEmbed()
             .addField("__**Les points de caracthéristiques**__"," à chaque level vous gagnerez un point de caracthéristique, chaque ''stats'' apport différent bonus.")
             .addField("__**Répartition des points**__","**puissance :** ``1 point dans puissance c'est 1 de dégats en plus !``\n**résistance physique :** ``1 point dans résistance physique c'est 0.5 en armure``\n**résistance magique :** ``1 point dans résistance magique c'est 0.5 en armure magique !``\n**vitalité :** ``1 point dans vitalité c'est 5HP en plus !``\n**agilité :** ``1 point dans l'agilité c'est 0.5 en esquive !``")
@@ -79,28 +79,28 @@
         }
 
 
-        if(message.content === préfix + "Level"){
+        if(message.content === préfix + "Level" || message.content === préfix + "level"){
             message.channel.send(`${message.author} Voici le tableau des levels`);
             message.channel.send("```fix\n-Du Lvl 1 à 10 vous gagnez à chaque level 3 points de caracthéristique```")
             message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 100 XP\n#-Lvl  3 : 200 XP\n#-Lvl  4 : 300 XP\n#-LVl  5 : 400 XP\n#-Lvl  6 : 500 XP\n#-Lvl  7 : 600 XP\n#-Lvl  8 : 700 XP\n#-Lvl  9 : 800 XP\n#-Lvl  10 : 900 XP```");
             message.channel.send(`${message.author} Voici le tableau des levels des metiers`);
             message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 50 XP\n#-Lvl  3 : 100 XP\n#-Lvl  4 : 175 XP\n#-LVl  5 : 250 XP\n#-Lvl  6 : 350 XP\n#-Lvl  7 : 450 XP\n#-Lvl  8 : 600 XP\n#-Lvl  9 : 750 XP\n#-Lvl  10 : 950 XP```");
         }
-        if(message.content === préfix + "Bonus épéiste"){
+        if(message.content === préfix + "Bonus épéiste" || message.content === préfix + "bonus épéiste"){
             var y = new Discord.RichEmbed()
             .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+5HP** :heartpulse: ")
             .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+3AT** :crossed_swords: \n**+10HP** :heartpulse: \n **+0.5AR** :shield: ")
             .setImage("https://wallpaperaccess.com/full/141779.jpg")
             message.channel.send(y);
         }
-        if(message.content === préfix + "Bonus voleur"){
+        if(message.content === préfix + "Bonus voleur" || message.content === préfix + "bonus voleur"){
             var y = new Discord.RichEmbed()
             .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n **+0.1ES** :man_running: ")
             .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+5AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.1ES** :man_running: ")
             .setImage("https://i.pinimg.com/originals/5d/ff/3a/5dff3a4218e9cd05ac9e54da8f73741e.jpg")
             message.channel.send(y);
         }
-        if(message.content === préfix + "Bonus paladin"){
+        if(message.content === préfix + "Bonus paladin" || message.content === préfix + "bonus paladin"){
             var y = new Discord.RichEmbed()
             .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+10HP** :heartpulse:")
             .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+2AT** :crossed_swords: \n**+15HP** :heartpulse: \n **+0.5AR** :shield:")
@@ -124,7 +124,7 @@
         
 
 
-        if(message.content === préfix + "Classe"){
+        if(message.content === préfix + "Classe" || message.content === préfix + "classe"){
             var y = new Discord.RichEmbed()
             .addField(":dagger: Voleur", "Forts dégâts pour faibles HP !")
             .addField(":crossed_swords: Épéiste", "Dégâts moyens pour HP moyens !")
@@ -134,7 +134,7 @@
             message.channel.send(y);
         }
 
-        if(message.content === préfix + "Histoire"){
+        if(message.content === préfix + "Histoire" || message.content === préfix + "histoire"){
             var y = new Discord.RichEmbed()
             .setAuthor("SOON")
             .setColor("#ff4600")
@@ -142,14 +142,14 @@
             message.channel.send(y);
         }
 
-        if(message.content === préfix + "Espece"){
+        if(message.content === préfix + "Espece" || message.content === préfix + "espece"){
             var y = new Discord.RichEmbed()
             .addField("Liste des especes", ":upside_down: **Humain**\n:imp: **Demon**\n:robot: **Automate**\n:elf: **Elfe**\n**Mi-humain**\n**Werebeast**\n**Draconien**\n**Vampire**\n**Elu**\n**Démon**\n**Automate**")
             .setColor("#ff4600")
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         }
-        if(message.content === préfix + "Humain"){
+        if(message.content === préfix + "Humain" || message.content === préfix + "humain"){
             var y = new Discord.RichEmbed()
             .addField("__**Humain**__", ":trident: **Bonus :** Aucun\n:fleur_de_lis: **Malus :** Aucun\n:notepad_spiral: **Description :** Race étant la plus courante dans ce monde, ils n'ont rien d'extraordinaire comparé autre race mais cependant ils ne sont pas faible pour autant")
             .setImage("https://media.discordapp.net/attachments/661225907578601472/661226564083515402/60195005_p0_master1200.jpg?width=484&height=559")
@@ -157,7 +157,7 @@
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         }
-        if(message.content === préfix + "Elfe"){
+        if(message.content === préfix + "Elfe" || message.content === préfix + "elfe"){
             var y = new Discord.RichEmbed()
             .addField("__**Elfe**__", ":trident: **Bonus :** +15% de MP\n:fleur_de_lis: **Malus :** -10% d'HP\n:notepad_spiral: **Description :** Race plutôt rare et beaucoup on était rendu en esclave par les humains du à leurs grande affinité avec la magie ainsi que leurs un grand lien avec la nature pouvant donc comprendre celle ci pour ainsi par exemple trouver son chemin dans un labyrinthe ils sont cependant plus faible physiquement que les humains")
             .setImage("https://www.nautiljon.com/images/description/00/07/1543596772591_image.jpg")
@@ -165,7 +165,7 @@
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         }
-        if(message.content === préfix + "Mi-humain"){
+        if(message.content === préfix + "Mi-humain" || message.content === préfix + "mi-humain"){
             var y = new Discord.RichEmbed()
             .addField("__**Mi-humain**__", ":trident: **Bonus :** +5% d'HP\n:fleur_de_lis: **Malus :** -10% d'MP\n:notepad_spiral: **Description :** Des hybrides . . . cette race vient de l'union entre un Werebeast et un Humain leurs sens sont beaucoup moins développé que celle d'un Werebeast mais le sont plus que les humains")
             .setImage("https://www.itl.cat/pngfile/big/136-1362573_photo-wallpaper-forest-girl-dark-anime-art-neko.jpg")
@@ -173,7 +173,7 @@
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         }
-        if(message.content === préfix + "Werebeast"){
+        if(message.content === préfix + "Werebeast" || message.content === préfix + "werebeast"){
             var y = new Discord.RichEmbed()
             .addField("__**Werebeast**__", ":trident: **Bonus :** +10% d'HP\n:fleur_de_lis: **Malus :** -20% d'MP\n:notepad_spiral: **Description :** : Des êtres à l'apparence bestiale que cela soit tigre, ours, chien la seul chose qui les différencie des animaux est qu'ils sont doué d'intelligence et sont civilisé tous comme n'importe qu'elle race, cependant la colère peuvent les faires devenir agressif facilement voir même leurs faire perdre la raison")
             .setImage("https://images-ext-1.discordapp.net/external/h94W9g2Bt4FJhoUXFmY8BgcAq2hEoklgxH8z9r12fkQ/%3Fwidth%3D445%26height%3D559/https/media.discordapp.net/attachments/661225907578601472/661226930548506624/2622507c6bb258d9e7995b2fec3ff1b9.jpg")
@@ -181,7 +181,7 @@
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         }
-        if(message.content === préfix + "Draconien"){
+        if(message.content === préfix + "Draconien" || message.content === préfix + "draconien"){
             var y = new Discord.RichEmbed()
             .addField("__**Draconien**__", ":trident: **Bonus :** +20% d'armure\n:fleur_de_lis: **Malus :** -10% d'attaque\n:notepad_spiral: **Description :** : : Cette race est un mystère pour ce monde . . . des êtres à la fois humain et dragon mais ils n'existent pas de Werebeast dragon, cependant ils existent quand même, certain disent qu'ils sont les évolutions des Dragons, qu'ils se sont adapté, ce qui leurs on fait prendre forme humaine")
             .setImage("https://cdn.discordapp.com/attachments/661225907578601472/661227000488394774/darkchain_aka__harvey_by_darkavey_dcpzs0s-pre.jpg")
@@ -189,7 +189,7 @@
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         }   
-        if(message.content === préfix + "Vampire"){
+        if(message.content === préfix + "Vampire" || message.content === préfix + "vampire"){
             var y = new Discord.RichEmbed()
             .addField("__**Vampire**__", ":trident: **Bonus :** +10% d'attaque\n:fleur_de_lis: **Malus :** -20% d'armure\n:notepad_spiral: **Description :** : Un être buveur de sang beaucoup repoussée par les humains du au on dit de la population disant que les vampires ne sont que des monstre assoiffé de sang, ce qui est vrai pour certain mais une petite partie d'entre eux cependant car même si la seul véritable nourriture qui les rassasies vraiment est le sang humain cependant ils ne sont pas méchant pour autant simplement si ils n'en boivent pas au moins 1L toute les semaine cela va leurs faire perdre la tête et les faires rentrer dans une rage de sang venant s'attaquer à n'importe qui pour boire son sang jusqu'à être rassasié")
             .setImage("https://cdn.discordapp.com/attachments/661225907578601472/661227116171362336/Remilia.png")
@@ -197,7 +197,7 @@
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         }   
-        if(message.content === préfix + "Elu"){
+        if(message.content === préfix + "Elu" || message.content === préfix + "elu"){
             var y = new Discord.RichEmbed()
             .addField("__**Elu**__", ":trident: **Bonus :** +20% d'armure magique\n:fleur_de_lis: **Malus :** -10% d'attaque\n:notepad_spiral: **Description :** : Les Elus, une race que l'on pourrait comparer au ange et cela est le cas cependant les Elu sont née de parents humains ou de parents Elu ou d'un parents Humains et d'un parent Elu, ayant comme principale fonction de jouer les intermédiaires entre  les hommes et les démons à fin de protéger les humains de cette race corrompu il voue à leurs naissance une grande méfiance envers les démons ne pouvant donc jamais leurs faire confiance à 100% même si ils deviennent amis.")
             .setImage("https://cdn.discordapp.com/attachments/661225907578601472/661227221226356746/73696359_p0_master1200.jpg")
@@ -205,7 +205,7 @@
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         } 
-        if(message.content === préfix + "Automate"){
+        if(message.content === préfix + "Automate" || message.content === préfix + "automate"){
             var y = new Discord.RichEmbed()
             .addField("__**Automate**__", ":trident: **Bonus :** -50%  de dmg sur les changements d'états \n:fleur_de_lis: **Malus :** -10% d'attaque\n:notepad_spiral: **Description :** : Race créer par les humains, ce sont des êtres mécanique fait à partir de métal et animé par la magie, cette race est cependant considéré comme hérésie pour les croyants les plus extrêmes car les automates ne sont pas l'œuvre de dieu et que seul dieu à le pouvoir de donner la vie et qu'en créant un automate cela voudrait dire qu'on essaye de se faire passer pour dieu, leurs créations date d'il y a des millénaire et la façon d'en créer à était perdu voir même oublié de rare schéma sont trouvable  mais même avec cela il est très rare d'arriver à donner la vie à un Automate même en y consacrant toute sa vie certain n'y arrive pas ")
             .setImage("https://danbooru.donmai.us/data/__cz2128_delta_overlord_drawn_by_hh_101__3a474d29abe339371e5edf2fbdd421bb.jpg?download=1")
@@ -213,7 +213,7 @@
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         }
-        if(message.content === préfix + "Démon"){
+        if(message.content === préfix + "Démon" || message.content === préfix + "démon"){
             var y = new Discord.RichEmbed()
             .addField("__**Démon**__", ":trident: **Bonus :** +10% d'attaque\n:fleur_de_lis: **Malus :** -20% d'armure magique\n:notepad_spiral: **Description :** :  Des êtres maléfique . . . enfin d'après les saintes écritures car même si une grande majorité d'entre eux sont d'une nature maléfique ayant de mauvaise intention envers les autres races une petites partie d'entre eux ne sont cependant pas comme sa et peuvent tout aussi gentil que n'importe qui")
             .setImage("https://media.discordapp.net/attachments/661225907578601472/661227290587299870/60340737_p0_master1200.jpg?width=1183&height=559")
@@ -230,7 +230,7 @@
         
 
 
-        if(message.content === préfix + "Ultime"){
+        if(message.content === préfix + "Ultime" || message.content === préfix + "ultime"){
             var y = new Discord.RichEmbed()
             .addField("Explication","Les coups spéciaux ne sont utilisés qu'une fois par combat, vous ne pouvez en choisir qu'un seul et ce n'est utilisable qu'une fois toute les 12H")
             .addField("?Final slash", "__Prérequis :__ Démon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'exécutez")
@@ -242,7 +242,7 @@
             message.channel.send(y);
         }
 
-        if(message.content === préfix + "Liste d'attaque"){
+        if(message.content === préfix + "Liste d'attaque" || message.content === préfix + "liste d'attaque"){
             message.channel.send("**Ici vous trouverez les passifs des espèces mais également la liste des attaques par classe**");
         }
         if(message.content === préfix + "Liste d'attaque"){
@@ -250,7 +250,7 @@
             .addField("**===================================**", "**===================================**")
             .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_fatal [Vos dégâts] **ou** ?Coup_simple [Vos dégats]\nLVL10 Evolution ?Assassin ou ?Ninja")
             .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_perçant [Vos dégâts] **ou** ?Coup_saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
-            .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 5 ?Crie_de_provocation **ou** ?Coup_etourdissant [Vos dégâts] \nLVL10 Evolution ?Juggernaut ou ?Moine")
+            .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 5 ?Crie_de_provocation **ou** ?Coup_etourdissant [Vos dégâts] \nLVL10 Evolution ?Juggernaut ou ?Seigneur")
             .addField("**===================================**", "**===================================**")
             .addField("**Info pour les esquives", "Si vous avez 0 points en agilité : Esquive [dégats reçu]\n Si vous en avez 1 au total : Super_esquive [dégats reçu]\n Si 2 : Mega_esquive [dégats reçu]\n Si 3 : Supra_esquive [dégats reçu]\n Et si 4 : Divin_esquive [dégats_reçu]")
             .setColor("#ff4600")
@@ -267,7 +267,7 @@
                         /// CLASSE /////////////////////////////////////////////////
                             /// CLASSE /////////////////////////////////////////////////
 
-                            if(message.content === préfix + "Assassin"){
+                            if(message.content === préfix + "Assassin" || message.content === préfix + "assassin"){
                                 var help_embed = new Discord.RichEmbed()
                                 .setColor("#d20000")
                                 .addField("Assassin", "Vous êtes un assassin, vous êtes spécialisé dans les dégats physique et puissante, le plus grand des DPS")
@@ -276,7 +276,7 @@
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                 message.channel.sendMessage(help_embed);
                             }
-                            if(message.content === préfix + "Ninja"){
+                            if(message.content === préfix + "Ninja" || message.content === préfix + "ninja"){
                                 var help_embed = new Discord.RichEmbed()
                                 .setColor("#000000")
                                 .addField("Assassin", "Vous êtes un ninja, vous êtes spécialisé dans les dégats physique mais vous savez également manier la magie !, vous êtes un bon DPS utilisant la magie de manière sournoise !")
@@ -285,7 +285,7 @@
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                 message.channel.sendMessage(help_embed);
                             }
-                            if(message.content === préfix + "Samourai"){
+                            if(message.content === préfix + "Samourai" || message.content === préfix + "samourai"){
                                 var help_embed = new Discord.RichEmbed()
                                 .setColor("#7e7e7e")
                                 .addField("Samourai", "Vous êtes une classe polyvalente moins résistante qu'un chevalier en therme d'armure mais qui se rattrape sur une faible magie")
@@ -294,7 +294,7 @@
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                 message.channel.sendMessage(help_embed);
                             }
-                            if(message.content === préfix + "Chevalier"){
+                            if(message.content === préfix + "Chevalier" || message.content === préfix + "chevalier"){
                                 var help_embed = new Discord.RichEmbed()
                                 .setColor("#00148f")
                                 .addField("Chevalier", "Vous êtes une classe polyvalente, vous avez une bonne résistance physique et avez des capacités également polyvalente, vous êtes un couteau suisse, quelqu'un d'utile dans de nombreuses situations !")
@@ -304,7 +304,7 @@
                                 message.channel.sendMessage(help_embed);
                             }
 
-                            if(message.content === préfix + "Juggernaut"){
+                            if(message.content === préfix + "Juggernaut" || message.content === préfix + "juggernaut"){
                                 var help_embed = new Discord.RichEmbed()
                                 .setColor("#000f6c")
                                 .addField("Chevalier", "Vous êtes le tank avec la plus grande resistance physique")
@@ -312,7 +312,7 @@
                                 .setImage("https://i.pinimg.com/originals/63/0b/b1/630bb129c3862047dbb320e751629f80.jpg")
                                 message.channel.sendMessage(help_embed);
                             }
-                            if(message.content === préfix + "Seigneur"){
+                            if(message.content === préfix + "Seigneur" || message.content === préfix + "seigneur"){
                                 var help_embed = new Discord.RichEmbed()
                                 .setColor("#e5e5e5")
                                 .addField("Seigneur", "Vous êtes de la classe seigneur, vous avez un très bon support en plus d'être un bon sac à PV, un rôle important dans un gros groupe comparé à cette éghoïste de juggernaut !")
