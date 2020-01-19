@@ -21,7 +21,6 @@
 
         const args = message.content.slice(préfix.length).split(' ');
         const command = args.shift().toLowerCase();
-        const petit = message.toLowerCase()
 
         if (command === 'args-info') {
             if (!args.length) {
@@ -46,7 +45,7 @@
 
 
 
-        if(petit.content === préfix + "help"){
+        if(message.content.toLowerCase === préfix + "help"){
             var y = new Discord.RichEmbed()
             .addField(":book:  **?Histoire**", "Ici vous aurez un résumé du thème du serveur")
             .addField(":man_detective: **?Classe**", "Ici vous aurez simplement la liste des classes lors de la création de votre personnage")
