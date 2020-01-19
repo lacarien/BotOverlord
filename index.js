@@ -334,7 +334,7 @@
                        if(message.content === préfix + "étage -1"){
                         var help_embed = new Discord.RichEmbed()
                         .setColor("#ff3d3d")
-                        .addField("**__Les activités de l'étage -1__**", "**?Chemin ardent**\n**Plaine chaude**\n**?Volcan actif**\n**?Forêt brulée**")
+                        .addField("**__Les activités de l'étage -1__**", ":park: **?Chemin ardent**\n:sunrise_over_mountains: **?Plaine chaude**\n:evergreen_tree: **?Forêt brulée**\n:fire: **Rivière brulée**\n:volcano: **?Volcan actif**")
                         .setImage("https://wallpapertag.com/wallpaper/full/2/5/e/433913-amazing-volcano-wallpaper-1920x1200-for-iphone-5s.jpg")
                         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                         message.channel.sendMessage(help_embed);
@@ -347,6 +347,39 @@
                         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                         message.channel.sendMessage(help_embed);
                     }
+                    if(message.content === préfix + "Plaine chaude" || message.content === préfix + "plaine chaude"){
+                        var help_embed = new Discord.RichEmbed()
+                        .setColor("#ff3d3d")
+                        .addField("**__Les activités des plaines chaudes__**", ":crossed_swords: **Zone de combat :** ``apparition_plaine_chaude``\n:sunflower: **Zone de métier :** ``?Cueillir_plaine [lvl du métier]``\n:compass: **Quête :** ``?Quête plaine``")
+                        .setImage("https://wallup.net/wp-content/uploads/2018/03/19/549710-digital_art-volcano-smoke-lava-painting-colourfull-748x421.jpg")
+                        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                        message.channel.sendMessage(help_embed);
+                    }
+                    if(message.content === préfix + "Forêt brulée" || message.content === préfix + "forêt brulée"){
+                        var help_embed = new Discord.RichEmbed()
+                        .setColor("#ff3d3d")
+                        .addField("**__Les activités de la forêt brulée__**", ":evergreen_tree: **Zone de métier :** ``?bucheronner_plaine [lvl du métier]``")
+                        .setImage("https://lyraina.files.wordpress.com/2012/05/12burningforest.jpg")
+                        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                        message.channel.sendMessage(help_embed);
+                    }
+                    if(message.content === préfix + "Rivière brulée" || message.content === préfix + "rivière brulée"){
+                        var help_embed = new Discord.RichEmbed()
+                        .setColor("#ff3d3d")
+                        .addField("**__Les activités de la rivière__**", "__**Vous pensiez qu'on pouver pêcher ici ?**__")
+                        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                        message.channel.sendMessage(help_embed);
+                    }
+                    if(message.content === préfix + "Volcan actif" || message.content === préfix + "Volcan actif"){
+                        var help_embed = new Discord.RichEmbed()
+                        .setColor("#ff3d3d")
+                        .addField("**__Les activités du volcan actif__**",":crown: **Entrée du donjon :** ``?Donjon volcan``\n:sunflower: **Zone de métier :** ``?Miner_volcan [lvl du métier]``")
+                        .setImage("https://i.pinimg.com/originals/84/0d/f3/840df3f6ab21e600b028b18c0c9fd36f.jpg")
+                        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                        message.channel.sendMessage(help_embed);
+                    }
+
+
 
 
 
