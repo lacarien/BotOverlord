@@ -41,8 +41,7 @@
         eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
     
-        `${args}` = toLowerCase();         
-
+        message.content =`${args}`.toLowerCase();         
 
 
         if(message.content === préfix + "help"){
