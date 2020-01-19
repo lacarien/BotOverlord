@@ -111,9 +111,9 @@
         if(message.content === préfix + "étage"){
             var y = new Discord.RichEmbed()
             .addField("Liste des étages", "__**Il est à noter que l'étage de base est le 0 et que plus vous avancerez plus vous descendrez.**__\n" 
-            +":fire: **étage -1 :** C'est l'étage de la lave, le Boss serait...Un poil trop cuit\n"
-            +":ice_cube: **étage -2 :** C'est l'étage de la glace, pensez à mettre un pull ! \n"
-            +":classical_building: **étage -3 :** C'est l'étage d'une ancienne ville maintenant abandonné....\n"
+            +":fire: **?étage -1 :** C'est l'étage de la lave, le Boss serait...Un poil trop cuit\n"
+            +":ice_cube: **?étage -2 :** C'est l'étage de la glace, pensez à mettre un pull ! \n"
+            +":classical_building: **?étage -3 :** C'est l'étage d'une ancienne ville maintenant abandonné....\n"
             +"**étage -4 :** SOON")
             .setColor("#ff4600")
             .setImage("https://media.discordapp.net/attachments/454694319396356128/661514404273324033/2f22e5e72a18ee90cc1074445838a082.png")
@@ -321,7 +321,37 @@
                                 message.channel.sendMessage(help_embed);
                             }
         
-        
+        /// ETAGE /////////////////////////////////////
+         /// ETAGE /////////////////////////////////////
+           /// ETAGE /////////////////////////////////////
+             /// ETAGE /////////////////////////////////////
+               /// ETAGE /////////////////////////////////////
+                /// ETAGE /////////////////////////////////////
+                  /// ETAGE /////////////////////////////////////
+                    /// ETAGE /////////////////////////////////////
+                       /// ETAGE /////////////////////////////////////
+
+                       if(message.content === préfix + "étage -1"){
+                        var help_embed = new Discord.RichEmbed()
+                        .setColor("#ff3d3d")
+                        .addField("**__Les activités de l'étage -1__**", "**?Chemin ardent**\n**Plaine chaude**\n**?Volcan actif**\n**?Forêt brulée**")
+                        .setImage("https://wallpapertag.com/wallpaper/full/2/5/e/433913-amazing-volcano-wallpaper-1920x1200-for-iphone-5s.jpg")
+                        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                        message.channel.sendMessage(help_embed);
+                    }
+                    if(message.content === préfix + "Chemin ardent" || message.content === préfix + "chemin ardent"){
+                        var help_embed = new Discord.RichEmbed()
+                        .setColor("#ff3d3d")
+                        .addField("**__Les activités du chemin ardent__**", ":crossed_swords: **Zone de combat :** ``?apparition_chemin``\n:dagger: **Zone de métier :** ``?chasser_chemin [lvl du métier]``\n:compass: **Quête :** ``?Quête chemin``")
+                        .setImage("https://i.pinimg.com/originals/11/dc/a5/11dca50156689001ae82ac2bcd6662ec.jpg")
+                        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+                        message.channel.sendMessage(help_embed);
+                    }
+
+
+
+
+
 
         //// LISTE D'ATTAQUE ///////////////////////////////////
         //// LISTE D'ATTAQUE ///////////////////////////////////
@@ -1240,7 +1270,7 @@
         return message.channel.send(`Il faut mettre votre level de metier, ${message.author}!`);
         }
         if (talkedRecently.has(message.author.id)) {
-            message.channel.send("Attendre 1 minutes==== " + message.author);
+            message.channel.send("Il faut attendre 60minutes. " + message.author);
         } else {
             var result = Math.floor((Math.random() * 100) + 1);
             if(result < 20){
