@@ -45,7 +45,7 @@
 
 
 
-        if(message.content.toLowerCase === préfix + "help"){
+        if(message.content === préfix + message.channel.toLowerCase() === "help"){
             var y = new Discord.RichEmbed()
             .addField(":book:  **?Histoire**", "Ici vous aurez un résumé du thème du serveur")
             .addField(":man_detective: **?Classe**", "Ici vous aurez simplement la liste des classes lors de la création de votre personnage")
