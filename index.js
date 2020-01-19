@@ -41,11 +41,11 @@
         eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
     
-                
+        `${args}` = toLowerCase();         
 
 
 
-        if(message.content === préfix + message.channel.toLowerCase() === "help"){
+        if(message.content === préfix + "help"){
             var y = new Discord.RichEmbed()
             .addField(":book:  **?Histoire**", "Ici vous aurez un résumé du thème du serveur")
             .addField(":man_detective: **?Classe**", "Ici vous aurez simplement la liste des classes lors de la création de votre personnage")
