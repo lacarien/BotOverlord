@@ -1,6 +1,6 @@
 
 
-    if(message.content === préfix + "Achat epee en fer") {
+    if(message.content === préfix + "Achat epee en fer" || message.content === préfix + "achat epee en fer") {
                 var result = Math.floor((Math.random() * 100) + 1);
                 if(result < 40)
                 var result = new Discord.RichEmbed() 
@@ -20,7 +20,7 @@
                 message.channel.send(result);
 
             } 
-            if(message.content === préfix + "Achat dague en fer") {
+            if(message.content === préfix + "Achat dague en fer" || message.content === préfix + "achat dague en fer") {
                 var result = Math.floor((Math.random() * 100) + 1);
                 if(result < 30)
                 var result = new Discord.RichEmbed() 
@@ -41,7 +41,7 @@
 
             }     
 
-            if(message.content === préfix + "Achat casque de rat") {
+            if(message.content === préfix + "Achat casque de rat" || message.content === préfix + "achat casque de rat") {
                 var minM = Math.floor(Math.min(5));
                 var maxM = Math.floor(Math.max(15)); 
                 var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
@@ -53,7 +53,7 @@
 
             } 
 
-            if(message.content === préfix + "Achat plastron de rat") {
+            if(message.content === préfix + "Achat plastron de rat" || message.content === préfix + "achat plastron de rat") {
                 var minM = Math.floor(Math.min(5));
                 var maxM = Math.floor(Math.max(15)); 
                 var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
@@ -64,7 +64,7 @@
                 message.channel.send(result);
 
             }     
-            if(message.content === préfix + "Achat bottes de rat") {
+            if(message.content === préfix + "Achat bottes de rat" || message.content === préfix + "achat bottes de rat") {
                 var minM = Math.floor(Math.min(5));
                 var maxM = Math.floor(Math.max(15)); 
                 var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
@@ -77,7 +77,7 @@
                 }     
 
 
-    if(message.content === préfix + "Peau de crocro"){
+    if(message.content === préfix + "Peau de crocro" || message.content === préfix + "peau de crocro"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00148f")
         .addField("**Crocro du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 20 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**\n:third_place: **Appentissage du metier couturier :** ``?Couture peau de crocro``")
@@ -85,7 +85,7 @@
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
         message.channel.sendMessage(help_embed);
     }
-    if(message.content === préfix + "Queu de crocro"){
+    if(message.content === préfix + "Queu de crocro" || message.content === préfix + "queu de crocro"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00148f")
         .addField("**Crocro du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 15 Mercure**\n:third_place: **Appentissage du metier couturier :** ``?Couture queu de crocro``")
@@ -93,7 +93,7 @@
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
         message.channel.sendMessage(help_embed);
     }
-    if(message.content === préfix + "Aile d'aragnator"){
+    if(message.content === préfix + "Aile d'aragnator" || message.content === préfix + "aile d'aragnator"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00148f")
         .addField("**Aragnator du palier 1**", " :fire: **Localisation : Plaine chaude**\n:dollar: **Prix d'achat : 40 Mercure**\n:moneybag: **Prix de revente : 20 Mercure**\n:third_place: **Appentissage du metier alchimiste :** ``?Alchimie aile d'argnator``")
@@ -101,7 +101,7 @@
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
         message.channel.sendMessage(help_embed);
     }
-    if(message.content === préfix + "Corne de gnome"){
+    if(message.content === préfix + "Corne de gnome" || message.content === préfix + "corne de gnome"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#00148f")
         .addField("**Gnome pyromane du palier 1**", " :fire: **Localisation : Plaine chaude**\n:dollar: **Prix d'achat : 50 Mercure**\n:moneybag: **Prix de revente : 25 Mercure**\n:third_place: **Appentissage du metier alchimiste :** ``?Alchimie corne de gnome``")
@@ -109,6 +109,8 @@
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
         message.channel.sendMessage(help_embed);
     }
+    
+    
 
 
 
