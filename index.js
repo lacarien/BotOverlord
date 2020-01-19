@@ -1,6 +1,8 @@
     const Discord = require('discord.js')
     const client = new Discord.Client()
     const talkedRecently = new Set()
+    
+
 
     client.login(process.env.TOKENS);
 
@@ -19,7 +21,7 @@
 
         const args = message.content.slice(préfix.length).split(' ');
         const command = args.shift().toLowerCase();
-
+        const args = str.toLowerCase()
     
 
         if (command === 'args-info') {
@@ -45,7 +47,7 @@
 
 
 
-        if(message.content === préfix + "Help" || message.content === préfix + "help" ){
+        if(message.content === préfix + "help"){
             var y = new Discord.RichEmbed()
             .addField(":book:  **?Histoire**", "Ici vous aurez un résumé du thème du serveur")
             .addField(":man_detective: **?Classe**", "Ici vous aurez simplement la liste des classes lors de la création de votre personnage")
@@ -65,7 +67,7 @@
         }
 
         
-        if(message.content === préfix + "Fiche RP"){
+        if(message.content === préfix + "fiche RP"){
             message.channel.send("```!! ━―━―━👤 **__PERSONNEL__** 👤━―━―━ !!\n\n **Nom :**\n**Prénom :**\n**Âge : **\n\n**Race : **\n**Sexe :**\n**Orientation sexuelle :**\n\n**Poids :**\n **Taille :**\n\n**Personnalité :**\n\n**Histoire :**\n\n\n**__APPARENCE :__**\n\n**Caractéristique physique :** \n\n**Image :**\n\n\n!! ━―━―━🗡️ **__COMBAT__** 🗡️━―━―━ !!\n\n" 
             +"**Classe :** ?\n**Compétence spé :** ?\n\n**Niveau : ** 1\n**Exp :** 0/100\n\n**HP : ** 0/0\n**Armure : ** 0\n**Armure magique :** 0\n**MP :** 0/0\n0 **Attaque total**\n0 **Esquive total**\n\n\n!! ━―━―━💠 **__Caractéristiques__** 💠━―━―━ !!\n\n\n0/? **point libre restant**\n\n"
             +"0 **points de puissance**\n\n0 **points de résistance physique**\n\n0 **points de résistance magique**\n\n0 **points de vitalité**\n0 **points d'agilité**\n!! ━―━―━📚 **__Métiers__** 📚━―━―━ !!\n\n\n**Chasseur niveau 1 :** 0/50XP\n\n**Pêcheur niveau 1 :** 0/50XP\n\n**Cueilleur niveau 1 :** 0/50XP\n\n**Mineur niveau 1 :** 0/50XP\n\n**Bucheron niveau 1 :** 0/50XP\n\n**Cuisinier niveau 1 :** 0/50XP\n\n**Alchimiste niveau 1 :** 0/50XP\n\n"
