@@ -427,7 +427,8 @@ if(command === 'coup_perçant'){
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 41)
     var y = new Discord.RichEmbed()
-    .addField("**Votre épée transperce le blocage de votre adversaire lui infligeant de grand dégats brute**",":crossed_swords:" + result)
+    .setColor("")
+    .addField("**__Votre épée transperce le blocage de votre adversaire lui infligeant de grand dégats brute__**",":crossed_swords:" + result)
     .setImage("http://progmonot.com/wp-content/uploads/2014/09/sao-II-episode-13-Kirito-DeathGun-Zaza-792x356.png")
     else if(nombre < 101)
     var y = new Discord.RichEmbed()
@@ -1416,7 +1417,7 @@ if(command === 'cueillir_plaine'){
         }
         var y = new Discord.RichEmbed()
         .setColor("#1bae00")
-        .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:brown_circle:  **Rosalis :** " + cobl + "\n:black_circle:  **Fleure de lave :** "+ Adam +"\n:large_orange_diamond:  **Fleure de magma** " + rubi)
+        .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:brown_circle:  **Rosalis :** " + cobl + "\n:black_circle:  **Fleur de lave :** "+ Adam +"\n:large_orange_diamond:  **Fleur de magma** " + rubi)
         .setImage("https://cdn.discordapp.com/attachments/641777958490472478/667001718541910087/latest.png")
         message.channel.send(y);
 
