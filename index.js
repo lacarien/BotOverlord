@@ -1317,7 +1317,7 @@
             var minXP = Math.floor(Math.min(0));
             var maxXP = Math.floor(Math.max(2)); 
             var cobl = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
-            var minXP = Math.floor(Math.min(3));
+            var minXP = Math.floor(Math.min(2));
             var maxXP = Math.floor(Math.max(5)); 
             var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
             if(`${args}`>=3){
@@ -1330,6 +1330,50 @@
             .setColor("#ff3d3d")
             .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:brown_circle:  **Patte de larve :** " + cobl + "\n:black_circle:  **Aile de crofly:** "+ Adam +"\n:large_orange_diamond:  **Coeur de crona:** " + rubi)
             .setImage("https://cdn.discordapp.com/attachments/641777958490472478/667050544636100628/CI_3DS_MonsterHunterStories_Towns_vulcano.png")
+            message.channel.send(y);
+
+
+        talkedRecently.add(message.author.id);
+        setTimeout(() => {
+        // Removes the user from the set after a minute
+        talkedRecently.delete(message.author.id);
+        }, 3600000);
+        }
+    }
+
+    
+    if(command === 'Cueillir_plaine'){
+        if (!args.length) {
+        return message.channel.send(`Il faut mettre votre level de metier, ${message.author}!`);
+        }
+        if (talkedRecently.has(message.author.id)) {
+            message.channel.send("Il faut attendre 60minutes. " + message.author);
+        } else {
+            var result = Math.floor((Math.random() * 100) + 1);
+            if(result < 10){
+            rubi = 1
+            }else if(result < 101){
+            rubi = 0
+            }
+            var minXP = Math.floor(Math.min(0));
+            var maxXP = Math.floor(Math.max(3)); 
+            var Adam = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+            var minXP = Math.floor(Math.min(0));
+            var maxXP = Math.floor(Math.max(2)); 
+            var cobl = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+            var minXP = Math.floor(Math.min(3));
+            var maxXP = Math.floor(Math.max(4)); 
+            var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+            if(`${args}`>=3){
+                var XP = XP;
+                var Adam = Adam*1.5;
+                var rubi = rubi*1.5;
+                var cobl = cobl*1.5;
+            }
+            var y = new Discord.RichEmbed()
+            .setColor("#1bae00")
+            .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:brown_circle:  **Rosalis :** " + cobl + "\n:black_circle:  **Fleure de lave :** "+ Adam +"\n:large_orange_diamond:  **Fleure de magma** " + rubi)
+            .setImage("https://cdn.discordapp.com/attachments/641777958490472478/667001718541910087/latest.png")
             message.channel.send(y);
 
 
