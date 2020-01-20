@@ -109,6 +109,81 @@
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
         message.channel.sendMessage(help_embed);
     }
+
+    if(message.content === préfix + "Coble" || message.content === préfix + "coble"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00148f")
+        .addField("**Coble du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+        .setImage("https://www.boutique-majama.fr/Files/23099/Img/17/Prothese-de-cornes-3-zoom.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+    if(message.content === préfix + "Adamin" || message.content === préfix + "adamin"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00148f")
+        .addField("**Adamin du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+        .setImage("https://www.boutique-majama.fr/Files/23099/Img/17/Prothese-de-cornes-3-zoom.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+    if(message.content === préfix + "Rubi" || message.content === préfix + "rubi"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00148f")
+        .addField("**Rubi du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+        .setImage("https://www.boutique-majama.fr/Files/23099/Img/17/Prothese-de-cornes-3-zoom.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+    if(message.content === préfix + "Patte de larve" || message.content === préfix + "patte de larve"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00148f")
+        .addField("**Patte de larve du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+        .setImage("https://www.boutique-majama.fr/Files/23099/Img/17/Prothese-de-cornes-3-zoom.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+    if(message.content === préfix + "Aile de crofly" || message.content === préfix + "aile de crofly"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00148f")
+        .addField("**Aile de crofly du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+        .setImage("https://www.boutique-majama.fr/Files/23099/Img/17/Prothese-de-cornes-3-zoom.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+    if(message.content === préfix + "Coeur de crona" || message.content === préfix + "coeur de crona"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00148f")
+        .addField("**Coeur de crona du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+        .setImage("https://www.boutique-majama.fr/Files/23099/Img/17/Prothese-de-cornes-3-zoom.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+    if(message.content === préfix + "Rosalis" || message.content === préfix + "rosalis"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00148f")
+        .addField("**Rosalis du palier 1**", " :fire: **Localisation : Plaine**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+        .setImage("https://www.boutique-majama.fr/Files/23099/Img/17/Prothese-de-cornes-3-zoom.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+    if(message.content === préfix + "Fleure de lave" || message.content === préfix + "fleure de lave"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00148f")
+        .addField("**Fleure de lave du palier 1**", " :fire: **Localisation : Plaine**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+        .setImage("https://www.boutique-majama.fr/Files/23099/Img/17/Prothese-de-cornes-3-zoom.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+    if(message.content === préfix + "Fleure de magma" || message.content === préfix + "fleure de magma"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#00148f")
+        .addField("**Fleure de magma du palier 1**", " :fire: **Localisation : Plaine**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+        .setImage("https://www.boutique-majama.fr/Files/23099/Img/17/Prothese-de-cornes-3-zoom.jpg")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+
+
     
     
 
