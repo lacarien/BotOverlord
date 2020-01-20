@@ -144,7 +144,7 @@
 
         if(message.content === préfix + "Espece" || message.content === préfix + "espece"){
             var y = new Discord.RichEmbed()
-            .addField("Liste des especes", ":upside_down: **Humain**\n:imp: **Demon**\n:robot: **Automate**\n:elf: **Elfe**\n**Mi-humain**\n**Werebeast**\n**Draconien**\n**Vampire**\n**Elu**\n**Démon**\n**Automate**")
+            .addField("Liste des especes", ":upside_down: **Humain**\n:imp: **Demon**\n:robot: **Automate**\n:elf: **Elfe**\n**Mi-humain**\n**Werebeast**\n**Draconien**\n**Vampire**\n**Elu**")
             .setColor("#ff4600")
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
@@ -213,7 +213,7 @@
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
         }
-        if(message.content === préfix + "Démon" || message.content === préfix + "démon"){
+        if(message.content === préfix + "Démon" || message.content === préfix + "démon" || message.content === préfix + "demon" || message.content === préfix + "Demon"){
             var y = new Discord.RichEmbed()
             .addField("__**Démon**__", ":trident: **Bonus :** +10% d'attaque\n:fleur_de_lis: **Malus :** -20% d'armure magique\n:notepad_spiral: **Description :** :  Des êtres maléfique . . . enfin d'après les saintes écritures car même si une grande majorité d'entre eux sont d'une nature maléfique ayant de mauvaise intention envers les autres races une petites partie d'entre eux ne sont cependant pas comme sa et peuvent tout aussi gentil que n'importe qui")
             .setImage("https://media.discordapp.net/attachments/661225907578601472/661227290587299870/60340737_p0_master1200.jpg?width=1183&height=559")
@@ -415,6 +415,50 @@
     .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
     message.channel.send(y);
     }
+
+    
+    if(command === 'coup_perçant'){
+        if (!args.length) {
+            return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1);
+        var min_value = Math.floor(`${args}`*0.5)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 41)
+        var y = new Discord.RichEmbed()
+        .addField("**Votre épée transperce le blocage de votre adversaire lui infligeant de grand dégats brute**",":crossed_swords:" + result)
+        .setImage("http://progmonot.com/wp-content/uploads/2014/09/sao-II-episode-13-Kirito-DeathGun-Zaza-792x356.png")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .addField("Votre épée ne brise pas la défense armure, lui infligeant de faible dégats", ":crossed_swords:" + result)
+        .setImage("http://progmonot.com/wp-content/uploads/2014/09/sao-II-episode-13-Kirito-DeathGun-Zaza-792x356.png")
+        message.channel.send(y);
+    }
+    if(command === 'coup_saignant'){
+        if (!args.length) {
+            return message.channel.send(`Merci d'écrire vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.2);
+        var min_value = Math.floor(`${args}`*0.8)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var max_value = Math.floor(`${args}`*0.3);
+        var min_value = Math.floor(`${args}`*0.1)
+        var saignement = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 70)
+        var y = new Discord.RichEmbed()
+        .addField("**Votre épée touchera donc votre cible venant lui infliger des dégats en plus de lui infliger des dégâts sur 3 tours(Cumul possible)**",":crossed_swords: " + result + "\n:drop_of_blood: " + saignement)
+        .setImage("https://i.pinimg.com/originals/2c/c6/d5/2cc6d59191b85bd7f108ad763b179f93.jpg")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        var y = new Discord.RichEmbed()
+        .setAuthor("Votre épée ne touche pas la cible")
+        .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
+        message.channel.send(y);
+    }
+
+
     if(command === 'coup_masse'){
     if (!args.length) {
         return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
