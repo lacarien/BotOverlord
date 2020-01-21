@@ -517,7 +517,7 @@ if (!args.length) {
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*2);
-var min_value = Math.floor(`${args}`*1)
+var min_value = Math.floor(`${args}`*1.35)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 65)
 var y = new Discord.RichEmbed()
@@ -539,7 +539,7 @@ if(command === 'coup_fatal'){
     }
     var nombre = Math.floor((Math.random() * 100) + 1);
     var max_value = Math.floor(`${args}`*2.3);
-    var min_value = Math.floor(`${args}`*1.4)
+    var min_value = Math.floor(`${args}`*1.6)
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 55)
     var y = new Discord.RichEmbed()
