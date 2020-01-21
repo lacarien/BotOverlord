@@ -250,7 +250,7 @@ eval(fs.readFileSync(__dirname + '/Item.js')+'');
         .addField("**===================================**", "**===================================**")
         .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_fatal [Vos dégâts] **ou** ?Coup_simple [Vos dégats]\nLVL10 Evolution ?Assassin ou ?Ninja")
         .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_perçant [Vos dégâts] **ou** ?Coup_saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
-        .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 5 ?Crie_de_provocation **ou** ?Coup_etourdissant [Vos dégâts] \nLVL10 Evolution ?Juggernaut ou ?Seigneur")
+        .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 5 ?Coup_provocateur **ou** ?Blocage_supérieur [Vos dégâts] \nLVL10 Evolution ?Juggernaut ou ?Seigneur")
         .addField("**===================================**", "**===================================**")
         .addField("**Info pour les esquives", "Si vous avez 0 points en agilité : Esquive [dégats reçu]\n Si vous en avez 1 au total : Super_esquive [dégats reçu]\n Si 2 : Mega_esquive [dégats reçu]\n Si 3 : Supra_esquive [dégats reçu]\n Et si 4 : Divin_esquive [dégats_reçu]")
         .setColor("#ff4600")
@@ -745,8 +745,8 @@ if(command === 'blocage_supérieur'){
     if (!args.length) {
         return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
     }
-    var min = Math.floor(Math.min(`${args}`*0.4));
-    var max = Math.floor(Math.max(`${args}`*1.1)); 
+    var min = Math.floor(Math.min(`${args}`*0.3));
+    var max = Math.floor(Math.max(`${args}`*1)); 
     var result = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#00d5ef")
