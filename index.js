@@ -407,10 +407,12 @@ var min_value = Math.floor(`${args}`*0.8)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 81)
 var y = new Discord.RichEmbed()
+.setColor("#e21700")
 .addField("**Vous infligez un bon coup d'épée dans le torse de votre adversaire**",":crossed_swords:" + result)
 .setImage("https://i.pinimg.com/originals/d5/23/c5/d523c5604de784ddd5c0758b3a8c4145.jpg")
 else if(nombre < 101)
 var y = new Discord.RichEmbed()
+.setColor("#000000")
 .setAuthor("Votre épée ne touche pas la cible")
 .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
 message.channel.send(y);
@@ -427,11 +429,12 @@ if(command === 'coup_perçant'){
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 41)
     var y = new Discord.RichEmbed()
-    .setColor("")
+    .setColor("#e21700")
     .addField("**__Votre épée transperce le blocage de votre adversaire lui infligeant de grand dégats brute__**",":crossed_swords:" + result)
     .setImage("http://progmonot.com/wp-content/uploads/2014/09/sao-II-episode-13-Kirito-DeathGun-Zaza-792x356.png")
     else if(nombre < 101)
     var y = new Discord.RichEmbed()
+    .setColor("#000000")
     .addField("Votre épée ne brise pas la défense armure, lui infligeant de faible dégats", ":crossed_swords:" + result)
     .setImage("http://progmonot.com/wp-content/uploads/2014/09/sao-II-episode-13-Kirito-DeathGun-Zaza-792x356.png")
     message.channel.send(y);
@@ -449,10 +452,12 @@ if(command === 'coup_saignant'){
     var saignement = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 70){
     var y = new Discord.RichEmbed()
+    .setColor("#e21700")
     .addField("**Votre épée touchera donc votre cible venant lui infliger des dégats en plus de lui infliger des dégâts sur 3 tours(Cumul possible)**",":crossed_swords: " + result + "\n:drop_of_blood: " + saignement)
     .setImage("https://i.pinimg.com/originals/2c/c6/d5/2cc6d59191b85bd7f108ad763b179f93.jpg")
      } else if(nombre < 101){   
     var y = new Discord.RichEmbed()
+    .setColor("#000000")
     .setAuthor("Votre épée ne touche pas la cible")
     .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
      }
@@ -470,10 +475,12 @@ var min_value = Math.floor(`${args}`*1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 81)
 var y = new Discord.RichEmbed()
+.setColor("#e21700")
 .addField("**Vous infligez un bon coup dans le visage de votre adversaire**",":crossed_swords:" + result)
 .setImage("https://img4.goodfon.com/wallpaper/nbig/8/1e/japanese-power-monter-blade-manga-man-warrior-fight-armor-as.jpg")
 else if(nombre < 101)
 var y = new Discord.RichEmbed()
+.setColor("#000000")
 .setAuthor("Votre arme ne touche pas la cible")
 .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
 message.channel.send(y);
@@ -488,10 +495,12 @@ var min_value = Math.floor(`${args}`*1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 65)
 var y = new Discord.RichEmbed()
+.setColor("#e21700")
 .addField("**Vous utilisez votre dague venant planter l'ennemie**",":crossed_swords:" + result)
 .setImage("https://i.ytimg.com/vi/O_0CTVFL_Ns/maxresdefault.jpg")
 else if(nombre < 101)
 var y = new Discord.RichEmbed()
+.setColor("#000000")
 .setAuthor("Votre arme ne touche pas la cible")
 .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
 message.channel.send(y);
@@ -508,10 +517,12 @@ if(command === 'coup_fatal'){
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 55)
     var y = new Discord.RichEmbed()
+    .setColor("#e21700")
     .addField("**Vous utilisez votre dague venant planter l'ennemie**",":crossed_swords:" + result)
     .setImage("https://i.pinimg.com/originals/2c/c6/d5/2cc6d59191b85bd7f108ad763b179f93.jpg")
     else if(nombre < 101)
     var y = new Discord.RichEmbed()
+    .setColor("#000000")
     .setAuthor("Votre arme ne touche pas la cible")
     .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
     message.channel.send(y);
@@ -526,10 +537,12 @@ if(command === 'coup_simple'){
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 80)
     var y = new Discord.RichEmbed()
+    .setColor("#e21700")
     .addField("**Vous utilisez votre dague venant planter l'ennemie**",":crossed_swords:" + result)
     .setImage("https://cdn.discordapp.com/attachments/454694319396356128/664758075353464853/213802.png")
     else if(nombre < 101)
     var y = new Discord.RichEmbed()
+    .setColor("#000000")
     .setAuthor("Votre arme ne touche pas la cible")
     .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
     message.channel.send(y);
@@ -719,13 +732,27 @@ if(command === 'blocage'){
 if (!args.length) {
     return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
 }
-var min = Math.floor(Math.min(`${args}`*0.3));
+var min = Math.floor(Math.min(`${args}`*0.5));
 var max = Math.floor(Math.max(`${args}`*1.2)); 
 var result = Math.floor(Math.random() * (max - min + 1) ) + min;
 var y = new Discord.RichEmbed()
+.setColor("#00d5ef")
 .addField(":shield: ** Vous bloquez l'attaque difficilement et ne prenez qu'une partie des dégâts**",":anger: " + result)
 .setImage("https://watchmojo.blog/wp-content/uploads/2017/10/03783e5db8d66964aecfa2ec007a687b7c4166f897af06179b85463c6db77c93.jpg")
 message.channel.send(y);
+}
+if(command === 'blocage_supérieur'){
+    if (!args.length) {
+        return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+    }
+    var min = Math.floor(Math.min(`${args}`*0.4));
+    var max = Math.floor(Math.max(`${args}`*1.1)); 
+    var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#00d5ef")
+    .addField(":shield: ** Vous bloquez l'attaque difficilement et ne prenez qu'une partie des dégâts**",":anger: " + result)
+    .setImage("https://watchmojo.blog/wp-content/uploads/2017/10/03783e5db8d66964aecfa2ec007a687b7c4166f897af06179b85463c6db77c93.jpg")
+    message.channel.send(y);
 }
 /// MONSTRE //////////////////////////
 /// MONSTRE //////////////////////////
