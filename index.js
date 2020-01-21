@@ -485,6 +485,32 @@ var y = new Discord.RichEmbed()
 .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
 message.channel.send(y);
 }
+if(command === 'coup_provocateur'){
+    if (!args.length) {
+        return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
+    }
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    var max_value = Math.floor(`${args}`*1.35);
+    var min_value = Math.floor(`${args}`*1)
+    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+    if(nombre < 55)
+    var y = new Discord.RichEmbed()
+    .setColor("#e21700")
+    .addField("**Vous infligez un bon coup d'épée sur votre adversaire et vous le provoqué durant 1 tours.**",":crossed_swords:" + result)
+    .setImage("https://img5.goodfon.com/wallpaper/nbig/5/e1/raymond-minnaar-by-raymond-minnaar-death-knight-mertvets-ryt.jpg")
+    else if(nombre < 80)
+    var y = new Discord.RichEmbed()
+    .setColor("#000000")
+    .addField("**Vous infligez un bon coup dans le visage de votre adversaire**",":crossed_swords:" + result)
+    .setImage("https://img5.goodfon.com/wallpaper/nbig/5/e1/raymond-minnaar-by-raymond-minnaar-death-knight-mertvets-ryt.jpg")
+    else if(nombre < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#000000")
+    .setAuthor("Votre arme ne touche pas la cible")
+    .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
+    message.channel.send(y);
+    }
+
 if(command === 'coup_dague'){
 if (!args.length) {
     return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
@@ -745,13 +771,13 @@ if(command === 'blocage_supérieur'){
     if (!args.length) {
         return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
     }
-    var min = Math.floor(Math.min(`${args}`*0.3));
+    var min = Math.floor(Math.min(`${args}`*0.5));
     var max = Math.floor(Math.max(`${args}`*1)); 
     var result = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#00d5ef")
     .addField(":shield: ** Vous bloquez l'attaque difficilement et ne prenez qu'une partie des dégâts**",":anger: " + result)
-    .setImage("https://watchmojo.blog/wp-content/uploads/2017/10/03783e5db8d66964aecfa2ec007a687b7c4166f897af06179b85463c6db77c93.jpg")
+    .setImage("https://i.pinimg.com/originals/4b/87/9a/4b879aedde74130574874919921f6605.jpg")
     message.channel.send(y);
 }
 /// MONSTRE //////////////////////////
