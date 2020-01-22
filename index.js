@@ -136,7 +136,15 @@ eval(fs.readFileSync(__dirname + '/Item.js')+'');
 
     if(message.content === préfix + "Histoire" || message.content === préfix + "histoire"){
         var y = new Discord.RichEmbed()
-        .setAuthor("SOON")
+        .addField("__**Histoire en bref**__", "Nous sommes en plein âge d'or du moyen âge, enfin...On l'était.\nIl y a de cela des années, les races s'entres-tuaient, ne prenant pas le temps d'évoluer leur style de combat ou autre, les guerres ne laissèrent le temps à personne de souffler un tant soit peu.\nLes Elus exterminaient des Démons qui eux dévoraient des humains pendant que ces derniers faisaient de l'esclavagisme sur les elfes qui...Vous l'aurez comprit, cela était sans fin.")
+        .setColor("#ff4600")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+        message.channel.send(y);
+    }
+
+    if(message.content === préfix + "Histoire" || message.content === préfix + "histoire"){
+        var y = new Discord.RichEmbed()
+        .addField("__**Histoire en bref 2**__", "Malheureusement un jour les cieux ont agi venant exterminer probablement les 9/10 de la population dans le monde, ironiquement même les elus qui faisaient partie des cieux ont prit également tarifs venant également se faire décimer en grande partie, trahison ? Tout le monde l'ignore...\nNéanmoins, le reste du monde a du utiliser son cerveau venant faire une paix ''temporaire'' le temps de résoudre le problème même si tout le monde ne sera pas d'accord et certains continuerons leurs actes...\nSuite à l'énorme génocide certains pensèrent à écouter une ancienne légende...Celle du gouffre sans fin....\n\n''abysses pour les détruir''.\nSi les anges nous ont en partie trahie alors nous irons nous servir des abysses pour les détruir''.\nSuite à cela les plus curieux et courageux rejoignirent la petite île et les plus fuyards la quittèrent...")
         .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
