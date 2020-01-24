@@ -36,7 +36,7 @@ client.on("message",message =>{
 
 eval(fs.readFileSync(__dirname + '/Shop.js')+'');
 eval(fs.readFileSync(__dirname + '/Item.js')+'');
-/*eval(fs.readFileSync(__dirname + '/farm.js')+'');
+eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
 /*  eval(fs.readFileSync(__dirname + '/pnj.js')+'');
     eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
@@ -88,19 +88,19 @@ eval(fs.readFileSync(__dirname + '/Item.js')+'');
     }
     if(message.content === préfix + "Bonus épéiste" || message.content === préfix + "bonus épéiste"){
         var y = new Discord.RichEmbed()
-        .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+5HP** :heartpulse: ")
+        .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+5HP** :heartpulse:\n**+0.5AR** :shield:")
         .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+3AT** :crossed_swords: \n**+10HP** :heartpulse: \n **+0.5AR** :shield: ")
         .setImage("https://wallpaperaccess.com/full/141779.jpg")
         message.channel.send(y);
     }
-    if(message.content === préfix + "Bonus voleur" || message.content === préfix + "bonus voleur"){
+    if(message.content === préfix + "Bonus voleur" || message.content === préfix + "bonus Voleur"){
         var y = new Discord.RichEmbed()
-        .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n **+0.1ES** :man_running: ")
+        .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+5HP** :heartpulse:")
         .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+5AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.1ES** :man_running: ")
         .setImage("https://i.pinimg.com/originals/5d/ff/3a/5dff3a4218e9cd05ac9e54da8f73741e.jpg")
         message.channel.send(y);
     }
-    if(message.content === préfix + "Bonus paladin" || message.content === préfix + "bonus paladin"){
+    if(message.content === préfix + "Bonus paladin" || message.content === préfix + "bonus Paladin"){
         var y = new Discord.RichEmbed()
         .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+10HP** :heartpulse:")
         .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+2AT** :crossed_swords: \n**+15HP** :heartpulse: \n **+0.5AR** :shield:")
@@ -872,7 +872,9 @@ Oeil= Oeil +1;
 } else if(result4 < 96){
 Oeil = 0;
 }
-
+if(XP<0){
+    XP=0;
+}
 
 var y = new Discord.RichEmbed()
 .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:rat: **Peau de crocro :** "+ Peau +"\n:bug: **Queu de crocro :** " + Queu + "\n:eye: **Oeil de crocro :** " + Oeil)
@@ -882,9 +884,9 @@ message.channel.send(y);
 
 
 
-if(message.content === préfix + "crocro_attaque"){
+if(message.content === préfix + "crocro_attaque" || message.content === préfix + "Crocro_attaque"){
 var min = Math.floor(Math.min(7));
-var max = Math.floor(Math.max(20)); 
+var max = Math.floor(Math.max(15)); 
 var y = Math.floor(Math.random() * (max - min + 1) ) + min;
 var result = Math.floor((Math.random() * 100) + 1);
 if(result < 80)
@@ -903,7 +905,7 @@ return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*1);
-var min_value = Math.floor(`${args}`*0.8)
+var min_value = Math.floor(`${args}`*0.6)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 91)
 var y = new Discord.RichEmbed()
@@ -998,6 +1000,9 @@ if(command === 'récompenses_nidrats'){
     Queu = Queu + 2;
     
     }
+    if(XP<0){
+        XP=0;
+    }
     var y = new Discord.RichEmbed()
     .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:rat: **Peau de crocro :** "+ Peau +"\n:bug: **Queu de crocro :** " + Queu)
     .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
@@ -1034,6 +1039,9 @@ var XP = Math.floor(XP*(1+(0.3*A)));
 var minM = Math.floor(Math.min(20));
 var maxM = Math.floor(Math.max(30)); 
 var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+if(XP<0){
+    XP=0;
+}
 var y = new Discord.RichEmbed()
 .setTitle(":rat: Récompenses du rat alpha")
 .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n**SOON**")
@@ -1160,6 +1168,9 @@ Corne= Corne +1;
 } else if(result4 < 96){
 Corne = 0;
 }
+if(XP<0){
+    XP=0;
+}
 
 var minM = Math.floor(Math.min(15));
 var maxM = Math.floor(Math.max(25)); 
@@ -1248,6 +1259,9 @@ Corne= Corne +1;
 } else if(result4 < 96){
 Corne = 0;
 }
+if(XP<0){
+    XP=0;
+}
 var y = new Discord.RichEmbed()
 .setTitle(":bat: Récompenses du gnome pyromane")
 .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:smiling_imp: **Peau de gnome :** "+ Peau +"\n:large_blue_diamond: **Cornes de gnome :** " + Corne)
@@ -1286,8 +1300,11 @@ if(command === 'apparition_chemin') {
 if (!args.length) {
 return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
 }
+if (talkedRecently.has(message.author.id)) {
+    message.channel.send("Attendre 10 minutes" + message.author);
+} else {
 var result = Math.floor((Math.random() * 100) + 1);
-if(result < 50){
+if(result < 80){
 var x = 1;
 } else if (result < 90){
 var x = 2;
@@ -1300,7 +1317,7 @@ var B = 0;
 var C = 0;
 while(ennemies!=0){  
 var random = Math.floor((Math.random() * 100) + 1);
-if(random < 60){
+if(random < 80){
     A = A+1;
 } else if (random < 95){
     B = B+1;
@@ -1325,17 +1342,26 @@ var mes = new Discord.RichEmbed()
 .setColor("#ff8300")
 .setImage("https://i.pinimg.com/originals/71/71/c0/7171c0b7ba3b53ca7931581fc54f1f9e.jpg")
 }
-message.channel.send(mes)
+message.channel.send(mes);
+talkedRecently.add(message.author.id);
+    setTimeout(() => {
+    // Removes the user from the set after a minute
+    talkedRecently.delete(message.author.id);
+    }, 600000);
+    }
 }
 
 if(command === 'apparition_plaine_chaude') {
 if (!args.length) {
 return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
 }
+if (talkedRecently.has(message.author.id)) {
+    message.channel.send("Attendre 10 minutes" + message.author);
+} else {
 var result = Math.floor((Math.random() * 100) + 1);
-if(result < 50){
+if(result < 80){
 var x = 1;
-} else if (result < 90){
+} else if (result < 95){
 var x = 2;
 } else if (result < 101){
 var x = 3;
@@ -1358,7 +1384,14 @@ var mes = new Discord.RichEmbed()
 .addField(":japanese_ogre: **__Gnome pyroman__**", "**Nombre de gnome :** "+B)
 .setColor("#ff8300")
 .setImage("https://cdn.discordapp.com/attachments/454694319396356128/661506598258343948/restricted___underworld_premade_by_frozenstocks_dbcjnpp-fullview.png")
-message.channel.send(mes)
+message.channel.send(mes);
+
+talkedRecently.add(message.author.id);
+    setTimeout(() => {
+    // Removes the user from the set after a minute
+    talkedRecently.delete(message.author.id);
+    },  600000);
+    }
 }    
 
 
@@ -1512,7 +1545,23 @@ var result = new Discord.RichEmbed()
 .setAuthor(result)
 message.channel.send(result);
 
-}                    
+}    
+
+if(message.content === préfix + "Fuite") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 60)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setAuthor("Vous venez réussir à fuir")
+    .setImage("https://thumbs.gfycat.com/YellowWarlikeGrayling-size_restricted.gif")
+    else if(result < 101)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setAuthor("La fuite échoue")
+    .setImage("https://i.ytimg.com/vi/2blQE3whQ5c/hqdefault.jpg")
+    message.channel.send(result);
+    
+    }             
 
 
 
