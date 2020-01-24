@@ -95,13 +95,13 @@ if(message.content === préfix + "Commerce"){
                                         });
                         break;
                         case '🍖':
-                                let embed3 = new Discord.RichEmbed()
+                                let embed4 = new Discord.RichEmbed()
                                 .addField("**__Liste des consommables__**", "```Attention à bien respecter les conditions d'utilisation d'un consommable !``` ")
                                 .addField("SOON","SOON")
                                 .addField("SOON","SOON")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
-                                    message.channel.send(embed3).then(async message => 
+                                    message.channel.send(embed4).then(async message => 
                                         { 
                                             await message.react('🔙')
     
