@@ -66,7 +66,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
     
     if(message.content === préfix + "fiche RP" || message.content === préfix + "Fiche RP" ){
         message.channel.send("```!! ━―━―━👤 **__PERSONNEL__** 👤━―━―━ !!\n\n **Nom :**\n**Prénom :**\n**Âge : **\n\n**Race : **\n**Sexe :**\n**Orientation sexuelle :**\n\n**Poids :**\n **Taille :**\n\n**Personnalité :**\n\n**Histoire :**\n\n\n**__APPARENCE :__**\n\n**Caractéristique physique :** \n\n**Image :**\n\n\n!! ━―━―━🗡️ **__COMBAT__** 🗡️━―━―━ !!\n\n" 
-        +"**Classe :** ?\n**Compétence spé :** ?\n\n**Niveau : ** 1\n**Exp :** 0/100\n\n**HP : ** 0/0\n**Armure : ** 0\n**Armure magique :** 0\n**MP :** 0/0\n0 **Attaque total**\n0 **Esquive total**\n\n\n!! ━―━―━💠 **__Caractéristiques__** 💠━―━―━ !!\n\n\n0/? **point libre restant**\n\n"
+        +"**Classe :** ?\n**Compétence spé :** ?\n\n**Niveau : ** 1\n**Exp :** 0/100\n\n**HP : ** 50/50\n**Armure : ** 0\n**Armure magique :** 0\n**MP :** 0/0\n10 **Attaque total**\n0 **Esquive total**\n\n\n!! ━―━―━💠 **__Caractéristiques__** 💠━―━―━ !!\n\n\n0/? **point libre restant**\n\n"
         +"0 **points de puissance**\n\n0 **points de résistance physique**\n\n0 **points de résistance magique**\n\n0 **points de vitalité**\n0 **points d'agilité**\n!! ━―━―━📚 **__Métiers__** 📚━―━―━ !!\n\n\n**Chasseur niveau 1 :** 0/50XP\n\n**Pêcheur niveau 1 :** 0/50XP\n\n**Cueilleur niveau 1 :** 0/50XP\n\n**Mineur niveau 1 :** 0/50XP\n\n**Bucheron niveau 1 :** 0/50XP\n\n**Cuisinier niveau 1 :** 0/50XP\n\n**Alchimiste niveau 1 :** 0/50XP\n\n"
         +"**Bijoutier niveau 1 : ** 0/50XP\n\n**Forgeron niveau 1 :** 0/50XP\n\n**Couturier niveau 1 :** 0/50XP\n\n\n!! ━―━―━💼 **__Inventaire__** 💼━―━―━ !!```");
     }
@@ -93,14 +93,14 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         .setImage("https://wallpaperaccess.com/full/141779.jpg")
         message.channel.send(y);
     }
-    if(message.content === préfix + "Bonus voleur" || message.content === préfix + "bonus Voleur"){
+    if(message.content === préfix + "Bonus voleur" || message.content === préfix + "bonus Voleur" || message.content === préfix + "bonus voleur" || message.content === préfix + "bonus Voleur"){
         var y = new Discord.RichEmbed()
         .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+5HP** :heartpulse:")
         .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+5AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.1ES** :man_running: ")
         .setImage("https://i.pinimg.com/originals/5d/ff/3a/5dff3a4218e9cd05ac9e54da8f73741e.jpg")
         message.channel.send(y);
     }
-    if(message.content === préfix + "Bonus paladin" || message.content === préfix + "bonus Paladin"){
+    if(message.content === préfix + "Bonus paladin" || message.content === préfix + "bonus Paladin" || message.content === préfix + "bonus paladin"  || message.content === préfix + "Bonus Paladin"){
         var y = new Discord.RichEmbed()
         .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+10HP** :heartpulse:")
         .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+2AT** :crossed_swords: \n**+15HP** :heartpulse: \n **+0.5AR** :shield:")
@@ -241,10 +241,10 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
     if(message.content === préfix + "Ultime" || message.content === préfix + "ultime"){
         var y = new Discord.RichEmbed()
         .addField("Explication","Les coups spéciaux ne sont utilisés qu'une fois par combat, vous ne pouvez en choisir qu'un seul et ce n'est utilisable qu'une fois toute les 12H")
-        .addField("?Final slash", "__Prérequis :__ Démon ou Automate \nSi la cible a moins de 10% d'HP, alors vous l'exécutez")
+        .addField("?Final slash", "__Prérequis :__ Aucun \nSi la cible a moins de 10% d'HP, alors vous l'exécutez")
         .addField("?Rafale_de_coups [Vos dégats]", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaques physiques à un seul ennemie")
         .addField("?Paralysie [Vos dégats]", "__Prérequis :__ Aucun \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
-        .addField("?Soif_de_sang [Vos dégats]","__Prérequis : Mi__ Aucun \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
+        .addField("?Soif_de_sang [Vos HP]","__Prérequis : Aucun  \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
         .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
@@ -818,7 +818,7 @@ if(command === 'récompenses_crocro'){
 if (!args.length) {
 return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
 }
-if(`${args}`==1){
+if(`${args}`==1){       
 var minXP = Math.floor(Math.min(-5));
 var maxXP = Math.floor(Math.max(5)); 
 var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
@@ -1575,4 +1575,3 @@ client.on('ready', function () {
     client.user.setGame("?Help");
 
     })
-    
