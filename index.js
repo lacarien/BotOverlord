@@ -717,8 +717,8 @@ if (!args.length) {
     return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
-var max_value = Math.floor(`${args}`*2);
-var min_value = Math.floor(`${args}`*1)
+var max_value = Math.floor(`${args}`*1.5);
+var min_value = Math.floor(`${args}`*0.9)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 65)
 var y = new Discord.RichEmbed()
@@ -737,8 +737,8 @@ if (!args.length) {
     return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
-var max_value = Math.floor(`${args}`*2);
-var min_value = Math.floor(`${args}`*1)
+var max_value = Math.floor(`${args}`*1.5);
+var min_value = Math.floor(`${args}`*0.9)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 60)
 var y = new Discord.RichEmbed()
@@ -1597,7 +1597,7 @@ if(command === 'ciblage'){
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value; 
     var y = new Discord.RichEmbed()
     .setColor("#ff0000")
-    .addField("**__Ciblage : **__", ":bust_in_silhouette: " + result)
+    .addField("**__Ciblage :**__", ":bust_in_silhouette: " + result)
     .setImage("https://images8.alphacoders.com/934/934002.jpg")
     message.channel.send(y);
 }
