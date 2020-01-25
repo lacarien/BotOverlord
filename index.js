@@ -256,7 +256,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         .addField("?Paralysie [Vos dégats]", "__Prérequis :__ Aucun \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
         .addField("?Soif_de_sang [Vos HP]","__Prérequis :__ Aucun  \nVous venez vous faires saigner votre sang afin d'augmenter vos dégâts durant plusieurs tours")
         .addField("?Instinct de survie","__Prérequis :__ Aucun  \nVous venez esquiver l'attaque et recevez un boost d'agilité durant 3 tours")
-        .addField("?Instinct de survie","__Prérequis :__ Aucun  \nVous venez esquiver l'attaque et recevez un boost d'agilité durant 3 tours")
+        .addField("?Benediction_[Votre armure]","__Prérequis :__ Aucun  \nVous obtenez un bonus d'armure durant 3 tours.")
         .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
@@ -678,7 +678,7 @@ if(command === 'soif_de_sang'){
     }
     var y = new Discord.RichEmbed()
     .setColor("#0012ff")
-    .addField(":face_with_symbols_over_mouth: __**Soif de sang**__","**Vous venez invoquer une dague bien aiguisé venant vous la planter dans une des parties de votre corps**\n**Vous avec un bonus de dégâts : :crossed_swords: " + "+"+degats + "\n Il ne vous restes plus beaucoup d'HP :** :heartbeat: " + HP + "\n **Nombre de tours : **" + tour)
+    .addField(":face_with_symbols_over_mouth: __**Soif de sang**__","``Vous venez invoquer une dague bien aiguisé venant vous la planter dans une des parties de votre corps...Ce dernier viendra être entourée d'une étrange couleur``\n**Vous avec un bonus de dégâts : :crossed_swords: " + "+"+degats + "\n Il ne vous restes plus beaucoup d'HP :** :heartbeat: " + HP + "\n **Nombre de tours : **" + tour)
     .setImage("https://wallpapercart.com/wp-content/uploads/2019/03/free-download-dark-souls-HD-wallpaper-1920x1080.jpg")
     message.channel.send(y);
 }
@@ -690,7 +690,22 @@ if(message.content === préfix + "Instinct de survie") {
     .setImage("https://i.pinimg.com/originals/ea/2f/23/ea2f238c841768542bfcc232bd4fd22c.gif")
     .addField(":eye: :eye: **__Instinct de survie__**", "**Remarquant l'attaque arrivé et craignant ne pas pouvoir l'éviter, votre instinct de survie viendra vous épauler, venant éviter l'attaque mais également augmenter de 2 points votre esquive durant 3 tours**")
     message.channel.send(result)
+}
+
+if(command === 'benediction'){
+    if (!args.length) {
+    return message.channel.send(`Il faut mettre un nombre, ${message.author}!`);
     }
+    
+    var max_value = Math.floor(`${args}`*1.7);
+    var min_value = Math.floor(`${args}`*1.4)
+    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+    var y = new Discord.RichEmbed()
+    .setColor("#0012ff")
+    .addField("**Vous venez vous entourer d'une étrange couleur ''lourde'' en lien avec votre résistance d'armure classique et magique améliorées pendant 3 tours**",":shield: " + "+"+result)
+    .setImage("https://konachan.com/image/3bcafd5fe0e9f5c9bf24adb6cd1e9e6e/Konachan.com%20-%2082624%20armor%20fantasy%20male%20paladin%20shield%20sky%20sword%20weapon%20wings.jpg")
+    message.channel.send(y);
+}
 
 // ESQUIVE /////////////////////////////
 // ESQUIVE /////////////////////////////
