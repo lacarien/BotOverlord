@@ -269,9 +269,9 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
     if(message.content === préfix + "Liste d'attaque"){
         var y = new Discord.RichEmbed()
         .addField("**===================================**", "**===================================**")
-        .addField("**Voleur**", "LVL 1 : ?Coup-dague [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_fatal [Vos dégâts] **ou** ?Coup_simple [Vos dégats]\nLVL10 Evolution ?Assassin ou ?Ninja")
-        .addField("**épéiste**", "LVL 1 : ?Coup-epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_perçant [Vos dégâts] **ou** ?Coup_saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
-        .addField("**Paladin**", "LVL 1 : ?Coup-masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 5 ?Coup_provocateur **ou** ?Blocage_supérieur [Vos dégâts] \nLVL10 Evolution ?Juggernaut ou ?Seigneur")
+        .addField("**Voleur**", "LVL 1 : ?Coup_dague [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_fatal [Vos dégâts] **ou** ?Coup_simple [Vos dégats]\nLVL10 Evolution ?Assassin ou ?Ninja")
+        .addField("**épéiste**", "LVL 1 : ?Coup_epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_perçant [Vos dégâts] **ou** ?Coup_saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
+        .addField("**Paladin**", "LVL 1 : ?Coup_masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 5 ?Coup_provocateur **ou** ?Blocage_supérieur [Vos dégâts] \nLVL10 Evolution ?Juggernaut ou ?Seigneur")
         .addField("**===================================**", "**===================================**")
         .addField("**Info pour les esquives", "Si vous avez 0 points en agilité : Esquive [dégats reçu]\n Si vous en avez 1 au total : Super_esquive [dégats reçu]\n Si 2 : Mega_esquive [dégats reçu]\n Si 3 : Supra_esquive [dégats reçu]\n Et si 4 : Divin_esquive [dégats_reçu]")
         .setColor("#ff4600")
@@ -718,7 +718,7 @@ if (!args.length) {
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*1.5);
-var min_value = Math.floor(`${args}`*0.9)
+var min_value = Math.floor(`${args}`*1.1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 65)
 var y = new Discord.RichEmbed()
@@ -738,7 +738,7 @@ if (!args.length) {
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*1.5);
-var min_value = Math.floor(`${args}`*0.9)
+var min_value = Math.floor(`${args}`*1.1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 60)
 var y = new Discord.RichEmbed()
@@ -757,8 +757,8 @@ if (!args.length) {
     return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
-var max_value = Math.floor(`${args}`*2);
-var min_value = Math.floor(`${args}`*1)
+var max_value = Math.floor(`${args}`*1.5);
+var min_value = Math.floor(`${args}`*1.1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 55)
 var y = new Discord.RichEmbed()
@@ -777,8 +777,8 @@ if (!args.length) {
     return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
-var max_value = Math.floor(`${args}`*2);
-var min_value = Math.floor(`${args}`*1)
+var max_value = Math.floor(`${args}`*1.5);
+var min_value = Math.floor(`${args}`*1.1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 50)
 var y = new Discord.RichEmbed()
@@ -937,7 +937,7 @@ if(XP<0){
 }
 
 var y = new Discord.RichEmbed()
-.addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:rat: **Peau de crocro :** "+ Peau +"\n:bug: **Queu de crocro :** " + Queu + "\n:eye: **Oeil de crocro :** " + Oeil)
+.addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:rat: **Peau de crocro :** "+ Peau +"\n:bug: **Queue de crocro :** " + Queu + "\n:eye: **Oeil de crocro :** " + Oeil)
 .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
 message.channel.send(y);
 }
