@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 const talkedRecently = new Set()
+const talkedRecently2 = new Set()
 
 
 
@@ -1359,7 +1360,7 @@ if(command === 'apparition_chemin') {
 if (!args.length) {
 return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
 }
-if (talkedRecently.has(message.author.id)) {
+if (talkedRecently2.has(message.author.id)) {
     message.channel.send("Attendre 10 minutes" + message.author);
 } else {
 var result = Math.floor((Math.random() * 100) + 1);
@@ -1402,10 +1403,10 @@ var mes = new Discord.RichEmbed()
 .setImage("https://i.pinimg.com/originals/71/71/c0/7171c0b7ba3b53ca7931581fc54f1f9e.jpg")
 }
 message.channel.send(mes);
-talkedRecently.add(message.author.id);
+talkedRecently2.add(message.author.id);
     setTimeout(() => {
     // Removes the user from the set after a minute
-    talkedRecently.delete(message.author.id);
+    talkedRecently2.delete(message.author.id);
     }, 600000);
     }
 }
@@ -1414,7 +1415,7 @@ if(command === 'apparition_plaine_chaude') {
 if (!args.length) {
 return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
 }
-if (talkedRecently.has(message.author.id)) {
+if (talkedRecently2.has(message.author.id)) {
     message.channel.send("Attendre 10 minutes" + message.author);
 } else {
 var result = Math.floor((Math.random() * 100) + 1);
@@ -1445,10 +1446,10 @@ var mes = new Discord.RichEmbed()
 .setImage("https://cdn.discordapp.com/attachments/454694319396356128/661506598258343948/restricted___underworld_premade_by_frozenstocks_dbcjnpp-fullview.png")
 message.channel.send(mes);
 
-talkedRecently.add(message.author.id);
+talkedRecently2.add(message.author.id);
     setTimeout(() => {
     // Removes the user from the set after a minute
-    talkedRecently.delete(message.author.id);
+    talkedRecently2.delete(message.author.id);
     },  600000);
     }
 }    
