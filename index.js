@@ -51,6 +51,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         .addField(":eyes: **?Espece**", "Ici vous aurez la liste des espèces")  
         .addField(":crossed_swords: **?Ultime**", "Lors de la création de votre personnage, vous ne pourrez choisir qu'une seul ultime !")
         .addField(":video_game: **?Liste d'attaque**", "C'est le plus important ! Selon votre classe vous aurez différentes attaques !")
+        .addField(":office: **?Etats**", "Ici vous trouverez les effets que font les êtats (exemple : paralysie)")
         .addField(":video_game: **?Fiche RP**", "Ici vous aurez le modèle de la fiche RP")
         .addField(":chart_with_upwards_trend: **?Level**", "Ici vous aurez les paliers entre chaque level")
         .addField(":bar_chart: **?Bonus [nom de la classe]**", "Pour savoir le gain de caractéristique à chaque level up")
@@ -93,7 +94,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         .setImage("https://wallpaperaccess.com/full/141779.jpg")
         message.channel.send(y);
     }
-    if(message.content === préfix + "Bonus voleur" || message.content === préfix + "bonus Voleur" || message.content === préfix + "bonus voleur" || message.content === préfix + "bonus Voleur"){
+    if(message.content === préfix + "Bonus voleur" || message.content === préfix + "bonus Voleur" || message.content === préfix + "bonus voleur" || message.content === préfix + "Bonus Voleur"){
         var y = new Discord.RichEmbed()
         .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+5HP** :heartpulse:")
         .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+5AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.1ES** :man_running: ")
@@ -117,6 +118,15 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         +"**étage -4 :** SOON")
         .setColor("#ff4600")
         .setImage("https://media.discordapp.net/attachments/454694319396356128/661514404273324033/2f22e5e72a18ee90cc1074445838a082.png")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+        message.channel.send(y);
+    }
+
+
+    if(message.content === préfix + "Etats" || message.content === préfix + "etats" || message.content === préfix + "êtats" || message.content === préfix + "Êtats"){
+        var y = new Discord.RichEmbed()
+        .addField("__**Liste des êtats**__", "**Paralysie : **``Vous ne pouvez pas vous défendres à la prochaine attaque que vous subissez.``\n**Saignement ou Poison :** ``Vous venez subir des dégâts bonus qui travèrse l'armure classique et magique (sauf si stuff particulier)``\n**SOON**")
+        .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
     }
@@ -244,8 +254,9 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         .addField("?Final slash", "__Prérequis :__ Aucun \nSi la cible a moins de 10% d'HP, alors vous l'exécutez")
         .addField("?Rafale_de_coups [Vos dégats]", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaques physiques à un seul ennemie")
         .addField("?Paralysie [Vos dégats]", "__Prérequis :__ Aucun \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
-        .addField("?Soif_de_sang [Vos HP]","__Prérequis : Aucun  \nVous venez vous faires saigner votre sang afin d'augmenter vos dégâts durant plusieurs tours")
-        .addField("?Instinct de survie","__Prérequis : Aucun  \nVous venez esquiver l'attaque et recevez un boost d'agilité durant 3 tours")
+        .addField("?Soif_de_sang [Vos HP]","__Prérequis :__ Aucun  \nVous venez vous faires saigner votre sang afin d'augmenter vos dégâts durant plusieurs tours")
+        .addField("?Instinct de survie","__Prérequis :__ Aucun  \nVous venez esquiver l'attaque et recevez un boost d'agilité durant 3 tours")
+        .addField("?Instinct de survie","__Prérequis :__ Aucun  \nVous venez esquiver l'attaque et recevez un boost d'agilité durant 3 tours")
         .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
