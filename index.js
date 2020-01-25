@@ -256,7 +256,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         .addField("?Paralysie [Vos dégats]", "__Prérequis :__ Aucun \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
         .addField("?Soif_de_sang [Vos HP]","__Prérequis :__ Aucun  \nVous venez vous faires saigner votre sang afin d'augmenter vos dégâts durant plusieurs tours")
         .addField("?Instinct de survie","__Prérequis :__ Aucun  \nVous venez esquiver l'attaque et recevez un boost d'agilité durant 3 tours")
-        .addField("?Benediction_[Votre armure]","__Prérequis :__ Aucun  \nVous obtenez un bonus d'armure durant 3 tours.")
+        .addField("?Benediction [Votre armure]","__Prérequis :__ Aucun  \nVous obtenez un bonus d'armure durant 3 tours.")
         .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
