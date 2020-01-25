@@ -245,6 +245,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         .addField("?Rafale_de_coups [Vos dégats]", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaques physiques à un seul ennemie")
         .addField("?Paralysie [Vos dégats]", "__Prérequis :__ Aucun \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
         .addField("?Soif_de_sang [Vos HP]","__Prérequis : Aucun  \nVous venez vous faires saigner votre sang afin d'augmenter vos dégâts durant plusieurs tours")
+        .addField("?Instinct de survie","__Prérequis : Aucun  \nVous venez esquiver l'attaque et recevez un boost d'agilité durant 3 tours")
         .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
@@ -599,7 +600,7 @@ if(message.content === préfix + "Final slash") {
 var result = new Discord.RichEmbed() 
 .setColor("#0012ff")
 .setImage("https://media.giphy.com/media/XCsUilazvibQcuvXup/giphy.gif")
-.addField(":trident: **__Final slash__**", "Arme en main, vous venez foncer sur votre adversaire, vous avez pris connaissance de son état vital et sachez qu'il n'en a plus pour très longtemps, vous venez abréger ses souffrances !")
+.addField(":trident: **__Final slash__**", "**Arme en main, vous venez foncer sur votre adversaire, vous avez pris connaissance de son état vital et sachez qu'il n'en a plus pour très longtemps, vous venez abréger ses souffrances !**")
 message.channel.send(result)
 }
 if(command === 'rafale_de_coups'){
@@ -658,12 +659,27 @@ if(command === 'soif_de_sang'){
     var max = Math.floor(HP/1.5);
     var min = Math.floor(HP/1.8);
     var degats = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    if(nombre < 70){
+        var tour = 3;
+    } else if(nombre < 101){
+        var tour = 4;
+    }
     var y = new Discord.RichEmbed()
     .setColor("#0012ff")
-    .addField("__**Soif de sang**__","**Vous venez invoquer une dague bien aiguisé venant vous la planter dans une des parties de votre corps**\n**Vous avec un bonus de dégâts : :crossed_swords: " + "+"+degats + "\n Il ne vous restes plus beaucoup d'HP :** :heartbeat: " + HP)
+    .addField(":face_with_symbols_over_mouth: __**Soif de sang**__","**Vous venez invoquer une dague bien aiguisé venant vous la planter dans une des parties de votre corps**\n**Vous avec un bonus de dégâts : :crossed_swords: " + "+"+degats + "\n Il ne vous restes plus beaucoup d'HP :** :heartbeat: " + HP + "\n **Nombre de tours : **" + tour)
     .setImage("https://wallpapercart.com/wp-content/uploads/2019/03/free-download-dark-souls-HD-wallpaper-1920x1080.jpg")
     message.channel.send(y);
 }
+
+
+if(message.content === préfix + "Instinct de survie") {
+    var result = new Discord.RichEmbed() 
+    .setColor("#0012ff")
+    .setImage("https://i.pinimg.com/originals/ea/2f/23/ea2f238c841768542bfcc232bd4fd22c.gif")
+    .addField(":eye: :eye: **__Instinct de survie__**", "**Remarquant l'attaque arrivé et craignant ne pas pouvoir l'éviter, votre instinct de survie viendra vous épauler, venant éviter l'attaque mais également augmenter de 2 points votre esquive durant 3 tours**")
+    message.channel.send(result)
+    }
 
 // ESQUIVE /////////////////////////////
 // ESQUIVE /////////////////////////////
@@ -677,7 +693,7 @@ var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*2);
 var min_value = Math.floor(`${args}`*1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
-if(nombre < 70)
+if(nombre < 65)
 var y = new Discord.RichEmbed()
 .setColor("#ff0000")
 .addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
@@ -697,7 +713,7 @@ var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*2);
 var min_value = Math.floor(`${args}`*1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
-if(nombre < 65)
+if(nombre < 60)
 var y = new Discord.RichEmbed()
 .setColor("#ff0000")
 .addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
@@ -717,7 +733,7 @@ var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*2);
 var min_value = Math.floor(`${args}`*1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
-if(nombre < 65)
+if(nombre < 55)
 var y = new Discord.RichEmbed()
 .setColor("#ff0000")
 .addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
@@ -737,7 +753,7 @@ var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*2);
 var min_value = Math.floor(`${args}`*1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
-if(nombre < 60)
+if(nombre < 50)
 var y = new Discord.RichEmbed()
 .setColor("#ff0000")
 .addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
@@ -757,7 +773,7 @@ var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*2);
 var min_value = Math.floor(`${args}`*1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
-if(nombre < 55)
+if(nombre < 45)
 var y = new Discord.RichEmbed()
 .setColor("#ff0000")
 .addField("**Vous n'arrivez pas à esquiver et prenez une grande partie des dégâts**",":crossed_swords:" + result)
