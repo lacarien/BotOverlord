@@ -629,24 +629,42 @@ if(nombre < 30){
 var y = new Discord.RichEmbed()
 .setColor("#0012ff")
 .addField("**D'une grande inspiration, votre arme n'est plus que partie intégrante de votre corps.Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était.**", ":crossed_swords:" + result)
-.addField("**Vous venez infliger une paralysie à plusieurs adversaires",":busts_in_silhouette: 1")
+.addField("**Vous venez infliger une paralysie à plusieurs adversaires**",":busts_in_silhouette: 1")
 .setImage("https://media.giphy.com/media/KbZTktant06AvqUwZz/giphy.gif")
 } else if(nombre < 70){
 var y = new Discord.RichEmbed()
 .setColor("#0012ff")
 .addField("**D'une grande inspiration, votre arme n'est plus que partie intégrante de votre corps.Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était.**", ":crossed_swords:" + result)
-.addField("**Vous venez infliger une paralysie à plusieurs adversaires",":busts_in_silhouette: 2")
+.addField("**Vous venez infliger une paralysie à plusieurs adversaires**",":busts_in_silhouette: 2")
 .setImage("https://media.giphy.com/media/KbZTktant06AvqUwZz/giphy.gif")
 } else if(nombre < 101){
 var y = new Discord.RichEmbed()
 .setColor("#0012ff")
 .addField("**D'une grande inspiration, votre arme n'est plus que partie intégrante de votre corps.Vous la soulevez.. puis l'abattez avec véhémence à une puis deux reprises sur ceux qui se dressent devant vous comme si de rien était.**", ":crossed_swords:" + result)
-.addField("**Vous venez infliger une paralysie à plusieurs adversaires",":busts_in_silhouette: 3")
+.addField("**Vous venez infliger une paralysie à plusieurs adversaires**",":busts_in_silhouette: 3")
 .setImage("https://media.giphy.com/media/KbZTktant06AvqUwZz/giphy.gif")
 }
 message.channel.send(y);
 }
 
+if(command === 'soif_de_sang'){
+    if (!args.length) {
+    return message.channel.send(`Il faut mettre vos HP, ${message.author}!`);
+    }
+    
+    var max_value = Math.floor(`${args}`/1.2);
+    var min_value = Math.floor(`${args}`/1.4);
+    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+    var HP = Math.floor(`${args}`- result);
+    var max = Math.floor(HP/1.5);
+    var min = Math.floor(HP/1.8);
+    var degats = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#0012ff")
+    .addField("__**Soif de sang**__","**Vous venez invoquer une dague bien aiguisé venant vous la planter dans une des parties de votre corps**\n**Vos dégâts augmentes : :crossed_swords: " + result + "\n Il ne vous restes plus beaucoup d'HP : :heartbeat: " + degats)
+    .setImage("https://wallpapercart.com/wp-content/uploads/2019/03/free-download-dark-souls-HD-wallpaper-1920x1080.jpg")
+    message.channel.send(y);
+}
 
 // ESQUIVE /////////////////////////////
 // ESQUIVE /////////////////////////////
