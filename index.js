@@ -678,7 +678,7 @@ if(command === 'soif_de_sang'){
     }
     var y = new Discord.RichEmbed()
     .setColor("#0012ff")
-    .addField(":face_with_symbols_over_mouth: __**Soif de sang**__","``Vous venez invoquer une dague bien aiguisé venant vous la planter dans une des parties de votre corps...Ce dernier viendra être entourée d'une étrange couleur``\n**Vous avec un bonus de dégâts : :crossed_swords: " + "+"+degats + "\n Il ne vous restes plus beaucoup d'HP :** :heartbeat: " + HP + "\n **Nombre de tours : **" + tour)
+    .addField(":face_with_symbols_over_mouth: __**Soif de sang**__","``Vous venez invoquer une dague bien aiguisé venant vous la planter dans une des parties de votre corps...Ce dernier viendra être entourée d'une étrange couleur``\n**Vous avec un bonus de dégâts : :crossed_swords: " + "+"+degats + "\n Il ne vous restes plus beaucoup d'HP :** :heartbeat: " + result + "\n **Nombre de tours : **" + tour)
     .setImage("https://wallpapercart.com/wp-content/uploads/2019/03/free-download-dark-souls-HD-wallpaper-1920x1080.jpg")
     message.channel.send(y);
 }
