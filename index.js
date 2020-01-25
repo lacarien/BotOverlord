@@ -1587,6 +1587,20 @@ if(command === 'cueillir_plaine'){
 
 
 
+if(command === 'ciblage'){
+    if (!args.length) {
+    return message.channel.send(`Il faut mettre un nombre, ${message.author}!`);
+    }
+    
+    var max_value = Math.floor(`${args}`);
+    var min_value = Math.floor(1)
+    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value; 
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .addField("**__Ciblage : **__", ":bust_in_silhouette: " + result)
+    .setImage("https://images8.alphacoders.com/934/934002.jpg")
+    message.channel.send(y);
+}
 
 
 
