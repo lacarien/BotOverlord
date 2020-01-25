@@ -244,7 +244,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         .addField("?Final slash", "__Prérequis :__ Aucun \nSi la cible a moins de 10% d'HP, alors vous l'exécutez")
         .addField("?Rafale_de_coups [Vos dégats]", "__Prérequis :__ Aucun \nVous envoyez une rafale d'attaques physiques à un seul ennemie")
         .addField("?Paralysie [Vos dégats]", "__Prérequis :__ Aucun \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
-        .addField("?Soif_de_sang [Vos HP]","__Prérequis : Aucun  \nVous venez paralyser plusieurs ennemies les empêchant de se défendre à la prochaine attaque")
+        .addField("?Soif_de_sang [Vos HP]","__Prérequis : Aucun  \nVous venez vous faires saigner votre sang afin d'augmenter vos dégâts durant plusieurs tours")
         .setColor("#ff4600")
         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
         message.channel.send(y);
