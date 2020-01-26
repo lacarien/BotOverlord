@@ -1,49 +1,61 @@
 
 
     if(message.content === préfix + "Achat epee en fer" || message.content === préfix + "achat epee en fer") {
-        var result = Math.floor((Math.random() * 100) + 1);
-        if(result < 40)
+        var minM = Math.floor(Math.min(2));
+        var maxM = Math.floor(Math.max(4)); 
+        var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
         var result = new Discord.RichEmbed() 
         .setColor("#898989")
         .setImage("http://wallpapersdsc.net/wp-content/uploads/2017/04/Sword-HD-Desktop.jpg")
-        .addField("Vous achetez une épée en fer", ":crossed_swords: 1")
-        if(result < 80)
-        var result = new Discord.RichEmbed()
-        .setColor("#898989")
-        .setImage("http://wallpapersdsc.net/wp-content/uploads/2017/04/Sword-HD-Desktop.jpg")
-        .addField("Vous achetez une épée en fer", ":crossed_swords: 2")
-        else if(result < 101)
+        .addField("Vous achetez une épée en fer", ":crossed_swords: "+ HP)
+        message.channel.send(result);
+
+    } 
+    if(message.content === préfix + "Fabrication epee en fer" || message.content === préfix + "fabrication epee en fer") {
+        var minM = Math.floor(Math.min(3));
+        var maxM = Math.floor(Math.max(4)); 
+        var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+        var minM = Math.floor(Math.min(5));
+        var maxM = Math.floor(Math.max(7)); 
+        var XP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
         var result = new Discord.RichEmbed() 
         .setColor("#898989")
-        .setImage("http://wallpapersdsc.net/wp-content/uploads/2017/04/Sword-HD-Desktop.jpg")
-        .addField("Vous achetez une épée en fer", ":crossed_swords: 3") 
+        .setImage("https://images-na.ssl-images-amazon.com/images/I/61rP44lg9gL._AC_SY355_.jpg")
+        .addField("__**Vous fabriquez une dague en fer**__", ":crossed_swords: "+HP) 
+        .addField("__**Vous gagnez de l'XP pour le metier forgeron**__", ":diamond_shape_with_a_dot_inside: "+XP) 
+        message.channel.send(result);
+
+    }
+    if(message.content === préfix + "Fabrication dague en fer" || message.content === préfix + "fabrication dague en fer") {
+        var minM = Math.floor(Math.min(3));
+        var maxM = Math.floor(Math.max(4)); 
+        var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+        var minM = Math.floor(Math.min(5));
+        var maxM = Math.floor(Math.max(7)); 
+        var XP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+        var result = new Discord.RichEmbed() 
+        .setColor("#898989")
+        .setImage("https://media2.faitsdarmes.com/827-thickbox_default/dague-en-pvc.jpg")
+        .addField("Vous achetez une épée en fer", ":crossed_swords: "+ HP)
+        .addField("__**Vous gagnez de l'XP pour le metier forgeron**__", ":diamond_shape_with_a_dot_inside: "+XP) 
         message.channel.send(result);
 
     } 
     if(message.content === préfix + "Achat dague en fer" || message.content === préfix + "achat dague en fer") {
-        var result = Math.floor((Math.random() * 100) + 1);
-        if(result < 30)
+        var minM = Math.floor(Math.min(2));
+        var maxM = Math.floor(Math.max(4)); 
+        var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
         var result = new Discord.RichEmbed() 
         .setColor("#898989")
         .setImage("https://cdn.discordapp.com/attachments/641778159464742942/664036348952313866/weapons20swords20celtic20albion_www.png")
-        .addField("Vous achetez une dague en fer",  ":crossed_swords: 1")
-        if(result < 80)
-        var result = new Discord.RichEmbed()
-        .setColor("#898989")
-        .setImage("https://cdn.discordapp.com/attachments/641778159464742942/664036348952313866/weapons20swords20celtic20albion_www.png")
-        .addField("Vous achetez une dague en fer", ":crossed_swords: 2")
-        else if(result < 101)
-        var result = new Discord.RichEmbed() 
-        .setColor("#898989")
-        .setImage("https://cdn.discordapp.com/attachments/641778159464742942/664036348952313866/weapons20swords20celtic20albion_www.png")
-        .addField("Vous achetez une dague en fer", ":crossed_swords: 3") 
+        .addField("Vous achetez une dague en fer", ":crossed_swords: "+HP) 
         message.channel.send(result);
 
-    }     
+    }          
 
     if(message.content === préfix + "Achat casque de rat" || message.content === préfix + "achat casque de rat") {
-        var minM = Math.floor(Math.min(5));
-        var maxM = Math.floor(Math.max(15)); 
+        var minM = Math.floor(Math.min(10));
+        var maxM = Math.floor(Math.max(20)); 
         var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
         var result = new Discord.RichEmbed() 
         .setColor("#62A140")
@@ -52,10 +64,26 @@
         message.channel.send(result);
 
     } 
+    if(message.content === préfix + "Fabrication casque de rat" || message.content === préfix + "fabrication casque de rat") {
+        var minM = Math.floor(Math.min(15));
+        var maxM = Math.floor(Math.max(20)); 
+        var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+        var minM = Math.floor(Math.min(5));
+        var maxM = Math.floor(Math.max(7)); 
+        var XP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+        var result = new Discord.RichEmbed() 
+        .setColor("#62A140")
+        .setImage("http://s1.1zoom.net/big0/715/DOTA_2_Legion_Commander_442254.jpg")
+        .addField("Vous achetez un casque de rat", ":gift_heart: " + HP) 
+        .addField("__**Vous gagnez de l'XP pour le metier couturier**__", ":diamond_shape_with_a_dot_inside: "+XP) 
+
+        message.channel.send(result);
+
+    } 
 
     if(message.content === préfix + "Achat plastron de rat" || message.content === préfix + "achat plastron de rat") {
-        var minM = Math.floor(Math.min(5));
-        var maxM = Math.floor(Math.max(15)); 
+        var minM = Math.floor(Math.min(10));
+        var maxM = Math.floor(Math.max(20)); 
         var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
         var result = new Discord.RichEmbed() 
         .setColor("#62A140")
@@ -63,10 +91,26 @@
         .addField("Vous achetez un plastron de rat", ":gift_heart: " + HP) 
         message.channel.send(result);
 
-    }     
-    if(message.content === préfix + "Achat bottes de rat" || message.content === préfix + "achat bottes de rat") {
+    }
+    if(message.content === préfix + "Fabrication plastron de rat" || message.content === préfix + "fabrication plastron de rat") {
+        var minM = Math.floor(Math.min(15));
+        var maxM = Math.floor(Math.max(20)); 
+        var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
         var minM = Math.floor(Math.min(5));
-        var maxM = Math.floor(Math.max(15)); 
+        var maxM = Math.floor(Math.max(7)); 
+        var XP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+        var result = new Discord.RichEmbed() 
+        .setColor("#62A140")
+        .setImage("http://s1.1zoom.net/big0/715/DOTA_2_Legion_Commander_442254.jpg")
+        .addField("Vous achetez un plastron de rat", ":gift_heart: " + HP) 
+        .addField("__**Vous gagnez de l'XP pour le metier couturier**__", ":diamond_shape_with_a_dot_inside: "+XP) 
+        message.channel.send(result);
+
+    }          
+
+    if(message.content === préfix + "Achat bottes de rat" || message.content === préfix + "achat bottes de rat") {
+        var minM = Math.floor(Math.min(10));
+        var maxM = Math.floor(Math.max(20)); 
         var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
         var result = new Discord.RichEmbed() 
         .setColor("#62A140")
@@ -74,7 +118,22 @@
         .addField("Vous achetez des bottes de rat", ":gift_heart: " + HP) 
         message.channel.send(result);
 
-        }     
+        }
+        if(message.content === préfix + "Fabrication bottes de rat" || message.content === préfix + "fabrication bottes de rat") {
+        var minM = Math.floor(Math.min(15));
+        var maxM = Math.floor(Math.max(20)); 
+        var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+        var minM = Math.floor(Math.min(5));
+        var maxM = Math.floor(Math.max(7)); 
+        var XP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+        var result = new Discord.RichEmbed() 
+        .setColor("#62A140")
+        .setImage("http://s1.1zoom.net/big0/715/DOTA_2_Legion_Commander_442254.jpg")
+        .addField("Vous achetez des bottes de rat", ":gift_heart: " + HP) 
+        .addField("__**Vous gagnez de l'XP pour le metier couturier**__", ":diamond_shape_with_a_dot_inside: "+XP) 
+        message.channel.send(result);
+
+        }          
 
 
 if(message.content === préfix + "Peau de crocro" || message.content === préfix + "peau de crocro"){
@@ -93,6 +152,8 @@ var help_embed = new Discord.RichEmbed()
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
 }
+
+
 if(message.content === préfix + "Aile d'aragnator" || message.content === préfix + "aile d'aragnator"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
