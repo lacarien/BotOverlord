@@ -1525,6 +1525,50 @@ if(command === 'chasser_chemin'){
 }
 
 
+if(command === 'bucheronner_plaine'){
+    if (!args.length) {
+    return message.channel.send(`Il faut mettre votre level de metier, ${message.author}!`);
+    }
+    if (talkedRecently.has(message.author.id)) {
+        message.channel.send("Il faut attendre 60minutes. " + message.author);
+    } else {
+        var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 20){
+        rubi = 1
+        }else if(result < 101){
+        rubi = 0
+        }
+        var minXP = Math.floor(Math.min(0));
+        var maxXP = Math.floor(Math.max(3)); 
+        var Adam = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+        var minXP = Math.floor(Math.min(0));
+        var maxXP = Math.floor(Math.max(2)); 
+        var cobl = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+        var minXP = Math.floor(Math.min(1));
+        var maxXP = Math.floor(Math.max(3)); 
+        var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+        if(`${args}`>=3){
+            var XP = XP;
+            var Adam = Adam*1.5;
+            var rubi = rubi*1.5;
+            var cobl = cobl*1.5;
+        }
+        var y = new Discord.RichEmbed()
+        .setColor("#4ea800")
+        .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:brown_circle:  **Bois mediocre : ** " + cobl + "\n:black_circle:  **Bois commun : ** "+ Adam +"\n:large_orange_diamond:  **Bois rare : ** " + rubi)
+        .setImage("https://media.discordapp.net/attachments/641777958490472478/667043616501268508/DpFJ4NsXUAAALAT.png?width=994&height=560")
+        message.channel.send(y);
+
+
+    talkedRecently.add(message.author.id);
+    setTimeout(() => {
+    // Removes the user from the set after a minute
+    talkedRecently.delete(message.author.id);
+    }, 3600000);
+    }
+}
+
+
 if(command === 'cueillir_plaine'){
     if (!args.length) {
     return message.channel.send(`Il faut mettre votre level de metier, ${message.author}!`);
@@ -1609,7 +1653,7 @@ if(message.content === préfix + "Fuite") {
     if(result < 50)
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
-    .setAuthor("Vous venez réussir à fuir")
+    .setAuthor("Vous venez réussir à fuir"  )
     .setImage("https://thumbs.gfycat.com/YellowWarlikeGrayling-size_restricted.gif")
     else if(result < 101)
     var result = new Discord.RichEmbed() 
