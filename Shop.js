@@ -79,7 +79,7 @@ if(message.content === préfix + "Commerce"){
                                 let embed3 = new Discord.RichEmbed()
                                 .addField("**__Liste des potions__**", "```Attention à bien respecter les conditions d'utilisation d'une potion !``` ")
                                 .addField("``Potion faible de MP``","?Achat MPF \n:dollar: **Prix :** 200 Mercure\n:dollar: **Revente :** 75 Mercure")
-                                .addField("``Potion faible d'HP``","?Achat HPF\n:dollar: **Prix :** 200 Mercure\n:dollar: **Prix :** 75 Mercure")
+                                .addField("``Potion faible d'HP``","?Achat HPF\n:dollar: **Prix :** 200 Mercure\n:dollar: **Revente :** 75 Mercure")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed3).then(async message => 
@@ -179,8 +179,8 @@ if(message.content === préfix + "Artisanat"){
                         case '⚔️':
                                 let embed2 = new Discord.RichEmbed()
                                 .addField("**__Liste des armes__**", "```Attention à bien respecter les conditions d'utilisation d'une arme ``` ")
-                                .addField("``Epee en fer``","?Fabrication epee en fer\n:dollar: **Prix :** ??\n**/!\** Interdit pour les voleurs !\n:scales: **Ressource :** 5 Peau de crocro /\ 3 queue de Crocro /\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
-                                .addField("``Dague en fer``","?Fabrication dague en fer\n:dollar: **Prix :** ??\n **/!\** Résérvé aux voleurs !\n:scales: **Ressource :** 5 Peau de crocro /\ 3 queue de Crocro /\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
+                                .addField("``Epee en fer``","?Fabrication epee en fer\n**/!\** Interdit pour les voleurs !\n:scales: **Ressource :** 2 Adamin  /\  /\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
+                                .addField("``Dague en fer``","?Fabrication dague en fer\n **/!\** Résérvé aux voleurs !\n:scales: **Ressource :** 5 Peau de crocro /\ 3 queue de Crocro /\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed2).then(async message => 
@@ -204,8 +204,8 @@ if(message.content === préfix + "Artisanat"){
                         case '❤️':
                                 let embed3 = new Discord.RichEmbed()
                                 .addField("**__Liste des potions__**", "```Attention à bien respecter les conditions d'utilisation d'une potion !``` ")
-                                .addField("``Potion faible de MP``","?Achat MPF \n:dollar: **Prix :** ??\n:scales: **Ressource :** 3 Oeil de crocro /\ 1 Cornes de gnome \n:diamond_shape_with_a_dot_inside: Niveau d'Alchimiste : 2")
-                                .addField("``Potion faible d'HP``","?Achat HPF\n:dollar: **Prix :** ??\n:scales: **Ressource :** 3 Oeil crocro /\ 1 Ailes d'aragnator  \n:diamond_shape_with_a_dot_inside: Niveau d'Alchimiste : 2")
+                                .addField("``Potion faible de MP``","?Fabrication potion faible de MP\n:scales: **Ressource :** 3 Oeil de crocro /\ 1 Cornes de gnome \n:diamond_shape_with_a_dot_inside: Niveau d'Alchimiste : 2")
+                                .addField("``Potion faible d'HP``","?Fabrication potion faible de HP\n:scales: **Ressource :** 3 Oeil crocro /\ 1 Ailes d'aragnator  \n:diamond_shape_with_a_dot_inside: Niveau d'Alchimiste : 2")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed3).then(async message => 
