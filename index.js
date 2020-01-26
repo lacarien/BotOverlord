@@ -1597,7 +1597,7 @@ message.channel.send(result);
 
 if(message.content === préfix + "Fuite") {
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 60)
+    if(result < 50)
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
     .setAuthor("Vous venez réussir à fuir")
