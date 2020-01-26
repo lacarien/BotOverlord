@@ -69,8 +69,8 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
     if(message.content === préfix + "fiche RP" || message.content === préfix + "Fiche RP" ){
         message.channel.send("```!! ━―━―━👤 **__PERSONNEL__** 👤━―━―━ !!\n\n **Nom :**\n**Prénom :**\n**Âge : **\n\n**Race : **\n**Sexe :**\n**Orientation sexuelle :**\n\n**Poids :**\n **Taille :**\n\n**Personnalité :**\n\n**Histoire :**\n\n\n**__APPARENCE :__**\n\n**Caractéristique physique :** \n\n**Image :**\n\n\n!! ━―━―━🗡️ **__COMBAT__** 🗡️━―━―━ !!\n\n" 
         +"**Classe :** ?\n**Compétence spé :** ?\n\n**Niveau : ** 1\n**Exp :** 0/100\n\n**HP : ** 50/50\n**Armure : ** 0\n**Armure magique :** 0\n**MP :** 0/0\n10 **Attaque total**\n0 **Esquive total**\n\n\n!! ━―━―━💠 **__Caractéristiques__** 💠━―━―━ !!\n\n\n0/? **point libre restant**\n\n"
-        +"0 **points de puissance**\n\n0 **points de résistance physique**\n\n0 **points de résistance magique**\n\n0 **points de vitalité**\n0 **points d'agilité**\n!! ━―━―━📚 **__Métiers__** 📚━―━―━ !!\n\n\n**Chasseur niveau 1 :** 0/50XP\n\n**Pêcheur niveau 1 :** 0/50XP\n\n**Cueilleur niveau 1 :** 0/50XP\n\n**Mineur niveau 1 :** 0/50XP\n\n**Bucheron niveau 1 :** 0/50XP\n\n**Cuisinier niveau 1 :** 0/50XP\n\n**Alchimiste niveau 1 :** 0/50XP\n\n"
-        +"**Bijoutier niveau 1 : ** 0/50XP\n\n**Forgeron niveau 1 :** 0/50XP\n\n**Couturier niveau 1 :** 0/50XP\n\n\n!! ━―━―━💼 **__Inventaire__** 💼━―━―━ !!```");
+        +"0 **points de puissance**\n\n0 **points de résistance physique**\n\n0 **points de résistance magique**\n\n0 **points de vitalité**\n0 **points d'agilité**\n!! ━―━―━📚 **__Métiers__** 📚━―━―━ !!\n\n\n**Chasseur niveau 1 :** 0/25XP\n\n**Pêcheur niveau 1 :** 0/25XP\n\n**Cueilleur niveau 1 :** 0/25XP\n\n**Mineur niveau 1 :** 0/25XP\n\n**Bucheron niveau 1 :** 0/25XP\n\n**Cuisinier niveau 1 :** 0/25XP\n\n**Alchimiste niveau 1 :** 0/25XP\n\n"
+        +"**Bijoutier niveau 1 : ** 0/25XP\n\n**Forgeron niveau 1 :** 0/25XP\n\n**Couturier niveau 1 :** 0/25XP\n\n\n!! ━―━―━💼 **__Inventaire__** 💼━―━―━ !!```");
     }
 
     if(message.content === préfix + "Point cara" || message.content === préfix + "point cara"){
@@ -978,6 +978,8 @@ var result = new Discord.RichEmbed()
 .addField(":moneybag: Récompenses", "?Récompenses_Nidrats [lvl]")
 message.channel.send(result)
 }
+
+
 if(message.content === préfix + "Nidrats_attaque"){
 var min = Math.floor(Math.min(17));
 var max = Math.floor(Math.max(30)); 
