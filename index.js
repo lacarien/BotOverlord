@@ -1448,8 +1448,8 @@ if(command === 'miner_volcan'){
         var minXP = Math.floor(Math.min(5));
         var maxXP = Math.floor(Math.max(30)); 
         var cobl = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
-        var minXP = Math.floor(Math.min(3));
-        var maxXP = Math.floor(Math.max(5)); 
+        var minXP = Math.floor(Math.min(1));
+        var maxXP = Math.floor(Math.max(3)); 
         var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         if(`${args}`>=3){
             var XP = XP;
@@ -1490,8 +1490,8 @@ if(command === 'chasser_chemin'){
         var minXP = Math.floor(Math.min(0));
         var maxXP = Math.floor(Math.max(2)); 
         var cobl = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
-        var minXP = Math.floor(Math.min(2));
-        var maxXP = Math.floor(Math.max(5)); 
+        var minXP = Math.floor(Math.min(1));
+        var maxXP = Math.floor(Math.max(3)); 
         var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         if(`${args}`>=3){
             var XP = XP;
@@ -1534,8 +1534,8 @@ if(command === 'cueillir_plaine'){
         var minXP = Math.floor(Math.min(0));
         var maxXP = Math.floor(Math.max(2)); 
         var cobl = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
-        var minXP = Math.floor(Math.min(3));
-        var maxXP = Math.floor(Math.max(4)); 
+        var minXP = Math.floor(Math.min(1));
+        var maxXP = Math.floor(Math.max(3)); 
         var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         if(`${args}`>=3){
             var XP = XP;
@@ -1592,7 +1592,6 @@ var result = new Discord.RichEmbed()
 .setColor("#1fff00")
 .setAuthor(result)
 message.channel.send(result);
-
 }    
 
 if(message.content === préfix + "Fuite") {
@@ -1608,8 +1607,7 @@ if(message.content === préfix + "Fuite") {
     .setAuthor("La fuite échoue")
     .setImage("https://i.ytimg.com/vi/2blQE3whQ5c/hqdefault.jpg")
     message.channel.send(result);
-    
-    }             
+}             
 
 
 
