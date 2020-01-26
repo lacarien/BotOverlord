@@ -991,7 +991,7 @@ message.channel.send(result)
 
 if(message.content === préfix + "Nidrats_attaque"){
 var min = Math.floor(Math.min(17));
-var max = Math.floor(Math.max(30)); 
+var max = Math.floor(Math.max(25)); 
 var y = Math.floor(Math.random() * (max - min + 1) ) + min;
 var result = Math.floor((Math.random() * 100) + 1);
 if(result < 85)
@@ -1011,7 +1011,7 @@ if(command === 'récompenses_nidrats'){
     return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
     }
     
-    var minXP = Math.floor(Math.min(20));
+    var minXP = Math.floor(Math.min(22));
     var maxXP = Math.floor(Math.max(25)); 
     var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
     if(`${args}`>1){
