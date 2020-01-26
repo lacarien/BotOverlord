@@ -985,7 +985,7 @@ var min = Math.floor(Math.min(17));
 var max = Math.floor(Math.max(30)); 
 var y = Math.floor(Math.random() * (max - min + 1) ) + min;
 var result = Math.floor((Math.random() * 100) + 1);
-if(result < 70)
+if(result < 85)
 var y = new Discord.RichEmbed()
 .setColor("#ff8300")
 .addField("Un grand nombre de bébés rats déscend du Nid venant se jeter sur vous !", ":crossed_swords:" + y)
