@@ -86,7 +86,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         var y = new Discord.RichEmbed()
         .setColor("#ff4600")
         .addField("**__étage -1__**", "Entrée du gouffre ``------------>`` **[5min]** Chemin ardant\nChemin ardant ``------------>`` **[5min]** Forêt brulée\nForêt brulée ``------------>`` **[5min]** Plaine chaude\nPlaine chaude ``------------>`` **[5min]** Rivière de lave ou volcan actif\nRivière de lave ou volcan actif ``------------>`` **[5min]** Grotte étage 2")
-        .setImage("https://scontent-atl3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/43724000_347448189147112_5055991339997462528_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_cat=104&_nc_ohc=zMT7UKOsHYYAX_M0FtK&oh=aa42706496131483519550dbbcb4f637&oe=5E9CA78E")
+        .setImage("https://i.pinimg.com/originals/15/dc/b4/15dcb473500369cb918a91c44122a270.png")
         message.channel.send(y);
     }
 
