@@ -58,6 +58,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         .addField(":bar_chart: **?Bonus [nom de la classe]**", "Pour savoir le gain de caractéristique à chaque level up")
         .addField(":nazar_amulet: **?Point cara**", "Ici vous trouverez l'utilité des points de caractéristiques")
         .addField(":park: **?étage**", "Ici vous aurez la liste des étages ainsi qu'un rapide résumé de leurs thèmes")
+        .addField(":park: **?Trajets**", "Ici vous aurez le temps de trajets par channel en dehors du village primaire.")
         .addField(":office: **?Commerce**", "Ici vous trouverez le shop inRP ")
         .addField(":hammer_pick: **?Artisanat**", "Ici vous trouverez la liste des différents type de fabrication ainsi que les ressources nécessaires.")
         .setColor("#ff4600")
@@ -75,11 +76,19 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
 
     if(message.content === préfix + "Point cara" || message.content === préfix + "point cara"){
         var y = new Discord.RichEmbed()
+        .setColor("#ff4600")
         .addField("__**Les points de caracthéristiques**__"," à chaque level vous gagnerez des points de caracthéristique, chaque ''stats'' apport différent bonus.")
         .addField("__**Répartition des points**__","**puissance :** ``1 point dans puissance c'est 1 de dégats en plus !``\n**résistance physique :** ``1 point dans résistance physique c'est 0.5 en armure``\n**résistance magique :** ``1 point dans résistance magique c'est 0.5 en armure magique !``\n**vitalité :** ``1 point dans vitalité c'est 5HP en plus !``\n**agilité :** ``1 point dans l'agilité c'est 0.1 en esquive !``")
         message.channel.send(y);
     }
 
+    if(message.content === préfix + "Trajets" || message.content === préfix + "trajets"){
+        var y = new Discord.RichEmbed()
+        .setColor("#ff4600")
+        .addField("**__étage -1__**", "Entrée du gouffre ``------------>`` **[5min]** Chemin ardant")
+        .setImage("https://i.pinimg.com/originals/5d/ff/3a/5dff3a4218e9cd05ac9e54da8f73741e.jpg")
+        message.channel.send(y);
+    }
 
     if(message.content === préfix + "Level" || message.content === préfix + "level"){
         message.channel.send(`${message.author} Voici le tableau des levels`);
@@ -425,7 +434,7 @@ if (!args.length) {
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*1.8);
-var min_value = Math.floor(`${args}`*0.8)
+var min_value = Math.floor(`${args}`*1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 81)
 var y = new Discord.RichEmbed()
