@@ -44,6 +44,11 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
 
        
 
+    if(message.content === préfix + "XAUCNAD89AD8A89V5AED8A9D1CVA5VE"){
+        talkedRecently2 = 0;
+        talkedRecently = 0;
+
+    }
 
     if(message.content === préfix + "help" || message.content === préfix + "Help" ){
         var y = new Discord.RichEmbed()
@@ -1463,9 +1468,9 @@ if(command === 'miner_volcan'){
         var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         if(`${args}`>=3){
             var XP = XP;
-            var Adam = Adam*1.5;
-            var rubi = rubi*1.5;
-            var cobl = cobl*1.5;
+            var Adam = Math.floor(Adam*1.5);
+            var rubi = Math.floor(rubi*1.5);
+            var cobl = Math.floor(cobl*1.5);
         }
         var y = new Discord.RichEmbed()
         .setColor("#b9b9b9")
@@ -1505,9 +1510,9 @@ if(command === 'chasser_chemin'){
         var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         if(`${args}`>=3){
             var XP = XP;
-            var Adam = Adam*1.5;
-            var rubi = rubi*1.5;
-            var cobl = cobl*1.5;
+            var Adam = Math.floor(Adam*1.5);
+            var rubi = Math.floor(rubi*1.5);
+            var cobl = Math.floor(cobl*1.5);
         }
         var y = new Discord.RichEmbed()
         .setColor("#ff3d3d")
@@ -1549,9 +1554,9 @@ if(command === 'bucheronner_plaine'){
         var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         if(`${args}`>=3){
             var XP = XP;
-            var Adam = Adam*1.5;
-            var rubi = rubi*1.5;
-            var cobl = cobl*1.5;
+            var Adam = Math.floor(Adam*1.5);
+            var rubi = Math.floor(rubi*1.5);
+            var cobl = Math.floor(cobl*1.5);
         }
         var y = new Discord.RichEmbed()
         .setColor("#4ea800")
@@ -1593,9 +1598,9 @@ if(command === 'cueillir_plaine'){
         var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         if(`${args}`>=3){
             var XP = XP;
-            var Adam = Adam*1.5;
-            var rubi = rubi*1.5;
-            var cobl = cobl*1.5;
+            var Adam = Math.floor(Adam*1.5);
+            var rubi = Math.floor(rubi*1.5);
+            var cobl = Math.floor(cobl*1.5);
         }
         var y = new Discord.RichEmbed()
         .setColor("#1bae00")
