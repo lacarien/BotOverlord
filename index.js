@@ -75,7 +75,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
 
     if(message.content === préfix + "Point cara" || message.content === préfix + "point cara"){
         var y = new Discord.RichEmbed()
-        .addField("__**Les points de caracthéristiques**__"," à chaque level vous gagnerez un point de caracthéristique, chaque ''stats'' apport différent bonus.")
+        .addField("__**Les points de caracthéristiques**__"," à chaque level vous gagnerez des points de caracthéristique, chaque ''stats'' apport différent bonus.")
         .addField("__**Répartition des points**__","**puissance :** ``1 point dans puissance c'est 1 de dégats en plus !``\n**résistance physique :** ``1 point dans résistance physique c'est 0.5 en armure``\n**résistance magique :** ``1 point dans résistance magique c'est 0.5 en armure magique !``\n**vitalité :** ``1 point dans vitalité c'est 5HP en plus !``\n**agilité :** ``1 point dans l'agilité c'est 0.1 en esquive !``")
         message.channel.send(y);
     }
@@ -86,7 +86,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         message.channel.send("```fix\n-Du Lvl 1 à 10 vous gagnez à chaque level 3 points de caracthéristique```")
         message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 100 XP\n#-Lvl  3 : 200 XP\n#-Lvl  4 : 300 XP\n#-LVl  5 : 400 XP\n#-Lvl  6 : 500 XP\n#-Lvl  7 : 600 XP\n#-Lvl  8 : 700 XP\n#-Lvl  9 : 800 XP\n#-Lvl  10 : 900 XP```");
         message.channel.send(`${message.author} Voici le tableau des levels des metiers`);
-        message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 50 XP\n#-Lvl  3 : 100 XP\n#-Lvl  4 : 175 XP\n#-LVl  5 : 250 XP\n#-Lvl  6 : 350 XP\n#-Lvl  7 : 450 XP\n#-Lvl  8 : 600 XP\n#-Lvl  9 : 750 XP\n#-Lvl  10 : 950 XP```");
+        message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 25 XP\n#-Lvl  3 : 50 XP\n#-Lvl  4 : 95XP\n#-LVl  5 : 140 XP\n#-Lvl  6 : 185 XP\n#-Lvl  7 : 245 XP\n#-Lvl  8 : 305 XP\n#-Lvl  9 : SOON XP\n#-Lvl  10 : SOON XP```");
     }
     if(message.content === préfix + "Bonus épéiste" || message.content === préfix + "bonus épéiste"){
         var y = new Discord.RichEmbed()
@@ -268,6 +268,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
     }
     if(message.content === préfix + "Liste d'attaque"){
         var y = new Discord.RichEmbed()
+        .addField("**Note importante**", "Temps de regen pour full HP : 2h")
         .addField("**===================================**", "**===================================**")
         .addField("**Voleur**", "LVL 1 : ?Coup_dague [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_fatal [Vos dégâts] **ou** ?Coup_simple [Vos dégats]\nLVL10 Evolution ?Assassin ou ?Ninja")
         .addField("**épéiste**", "LVL 1 : ?Coup_epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_perçant [Vos dégâts] **ou** ?Coup_saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
@@ -878,30 +879,15 @@ if(command === 'récompenses_crocro'){
 if (!args.length) {
 return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
 }
-if(`${args}`==1){       
-var minXP = Math.floor(Math.min(-5));
-var maxXP = Math.floor(Math.max(5)); 
-var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+var minXP = Math.floor(Math.min(17));
+var maxXP = Math.floor(Math.max(23)); 
+var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+if(`${args}`>1){
+var A = Math.floor(4-`${args}`);
+var XP = Math.floor(XP*(1+(0.3*A)));
 }
-if(`${args}`==2){
-var minXP = Math.floor(Math.min(0));
-var maxXP = Math.floor(Math.max(5)); 
-var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-}
-if(`${args}`==3){
-var minXP = Math.floor(Math.min(-2));
-var maxXP = Math.floor(Math.max(3)); 
-var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-}
-if(`${args}`<4){ 
-var XP = Math.floor(30/`${args}`)
-var XP = Math.floor(XP + XXP)
-} else if (`${args}`== 4) {
-var minXP = Math.floor(Math.min(0));
-var maxXP = Math.floor(Math.max(3)); 
-var XP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-} else if (`${args}`> 4) {
-var XP = 0;
+if(XP<0){
+    XP = 0;
 }
 var minM = Math.floor(Math.min(5));
 var maxM = Math.floor(Math.max(10)); 
