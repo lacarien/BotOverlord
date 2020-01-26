@@ -9,7 +9,7 @@ if(message.content === préfix + "Couture peau de crocro" || message.content ===
     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
     message.channel.send(y);
 }
-if(message.content === préfix + "Couture queu de crocro" || message.content === préfix + "couture queu de crocro"){
+if(message.content === préfix + "Couture queue de crocro" || message.content === préfix + "couture queue de crocro"){
     var minM = Math.floor(Math.min(4));
     var maxM = Math.floor(Math.max(6)); 
     var result = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
