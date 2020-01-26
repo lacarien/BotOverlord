@@ -85,7 +85,7 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
     if(message.content === préfix + "Trajets" || message.content === préfix + "trajets"){
         var y = new Discord.RichEmbed()
         .setColor("#ff4600")
-        .addField("**__étage -1__**", "Entrée du gouffre ``------------>`` **[5min]** Chemin ardant")
+        .addField("**__étage -1__**", "Entrée du gouffre ``------------>`` **[5min]** Chemin ardant\nChemin ardant ``------------>`` **[5min]** Forêt brulée\nForêt brulée ``------------>`` **[5min]** Plaine chaude\nPlaine chaude ``------------>`` **[5min]** Rivière de lave ou volcan actif\nRivière de lave ou volcan actif ``------------>`` **[5min]** Grotte étage 2")
         .setImage("https://i.pinimg.com/originals/5d/ff/3a/5dff3a4218e9cd05ac9e54da8f73741e.jpg")
         message.channel.send(y);
     }
