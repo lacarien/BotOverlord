@@ -1197,6 +1197,7 @@ var A = Math.floor(4-`${args}`);
 var XP = Math.floor(XP*(1+(0.3*A)));
 }
 var result2 = Math.floor((Math.random() * 100) + 1);
+var Peau = 0;
 if(result2 < 80){
 Peau = Peau + 1;
 } else if(result2 < 90){
