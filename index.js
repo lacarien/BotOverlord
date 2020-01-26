@@ -971,7 +971,7 @@ var result = new Discord.RichEmbed()
 .addField("Nom du monstre", "**__Nid'rats__**")
 .setColor("#ff8300")
 .setImage("https://media.discordapp.net/attachments/641785123590635520/660925652085637147/Roi_des_Rats.png?width=990&height=560")
-.addField(":heart: HP","40")
+.addField(":heart: HP","65")
 .addField(":beginner: Passif", "Aucun")
 .addField(":crossed_swords: Attaque", "?Nidrats_attaque")
 .addField(":shield: Défense", "Aucune")
@@ -979,11 +979,11 @@ var result = new Discord.RichEmbed()
 message.channel.send(result)
 }
 if(message.content === préfix + "Nidrats_attaque"){
-var min = Math.floor(Math.min(15));
+var min = Math.floor(Math.min(17));
 var max = Math.floor(Math.max(30)); 
 var y = Math.floor(Math.random() * (max - min + 1) ) + min;
 var result = Math.floor((Math.random() * 100) + 1);
-if(result < 95)
+if(result < 70)
 var y = new Discord.RichEmbed()
 .setColor("#ff8300")
 .addField("Un grand nombre de bébés rats déscend du Nid venant se jeter sur vous !", ":crossed_swords:" + y)
@@ -999,30 +999,16 @@ if(command === 'récompenses_nidrats'){
     if (!args.length) {
     return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
     }
-    if(`${args}`==1){
-    var minXP = Math.floor(Math.min(-5));
-    var maxXP = Math.floor(Math.max(5)); 
-    var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
+    
+    var minXP = Math.floor(Math.min(20));
+    var maxXP = Math.floor(Math.max(25)); 
+    var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+    if(`${args}`>1){
+    var A = Math.floor(1-`${args}`);
+    var XP = Math.floor(XP*(1+(0.3*A)));
     }
-    if(`${args}`==2){
-    var minXP = Math.floor(Math.min(0));
-    var maxXP = Math.floor(Math.max(5)); 
-    var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-    }
-    if(`${args}`==3){
-    var minXP = Math.floor(Math.min(-2));
-    var maxXP = Math.floor(Math.max(3)); 
-    var XXP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-    }
-    if(`${args}`<4){ 
-    var XP = Math.floor(30/`${args}`)
-    var XP = Math.floor(XP + XXP)
-    } else if (`${args}`== 4) {
-    var minXP = Math.floor(Math.min(0));
-    var maxXP = Math.floor(Math.max(3)); 
-    var XP = Math.floor(Math.random() * (minXP - maxXP + 1) ) + minXP;
-    } else if (`${args}`> 4) {
-    var XP = 0;
+    if(XP<0){
+        XP = 0;
     }
     var minM = Math.floor(Math.min(5));
     var maxM = Math.floor(Math.max(10)); 
