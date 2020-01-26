@@ -16,6 +16,7 @@ if(message.content === préfix + "Commerce"){
             await message.react('🛡️');
             await message.react('⚔️');
             await message.react('❤️');
+            await message.react('🍖');
 
             //message.awaitReactions(filter,{max: 1, time: 10000,errors:['time']}).then(collected =>
             let collector = message.createReactionCollector(filter,{time: 3600000,errors:['time']});
@@ -141,6 +142,7 @@ if(message.content === préfix + "Artisanat"){
             await message.react('🛡️');
             await message.react('⚔️');
             await message.react('❤️');
+            await message.react('🍖');
 
             //message.awaitReactions(filter,{max: 1, time: 10000,errors:['time']}).then(collected =>
             let collector = message.createReactionCollector(filter,{time: 3600000,errors:['time']});
