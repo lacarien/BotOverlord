@@ -460,8 +460,8 @@ if(command === 'coup_perçant'){
         return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
     }
     var nombre = Math.floor((Math.random() * 100) + 1);
-    var max_value = Math.floor(`${args}`*1);
-    var min_value = Math.floor(`${args}`*0.5)
+    var max_value = Math.floor(`${args}`*1.5);
+    var min_value = Math.floor(`${args}`*1)
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 41)
     var y = new Discord.RichEmbed()
