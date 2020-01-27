@@ -1361,6 +1361,10 @@ var x = 2;
 var x = 3;
 }
 var ennemies= Math.floor(`${args}`*x);
+var DELTA = Math.floor(`${args}`+1);
+  if(ennemies > DELTA){
+      ennemies = ennemies -1;
+  }
 var A = 0;
 var B = 0;
 var C = 0;
