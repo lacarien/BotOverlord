@@ -284,9 +284,9 @@ eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
         var y = new Discord.RichEmbed()
         .addField("**Note importante**", "Temps de regen pour full HP : 2h")
         .addField("**===================================**", "**===================================**")
-        .addField("**Voleur**", "LVL 1 : ?Coup_dague [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_fatal [Vos dégâts] **ou** ?Coup_simple [Vos dégats]\nLVL10 Evolution ?Assassin ou ?Ninja")
-        .addField("**épéiste**", "LVL 1 : ?Coup_epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 5 ?Coup_perçant [Vos dégâts] **ou** ?Coup_saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
-        .addField("**Paladin**", "LVL 1 : ?Coup_masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 5 ?Coup_provocateur **ou** ?Blocage_supérieur [Vos dégâts] \nLVL10 Evolution ?Juggernaut ou ?Seigneur")
+        .addField("**Voleur**", "LVL 1 : ?Coup_dague [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 4 ?Coup_fatal [Vos dégâts] **ou** ?Coup_simple [Vos dégats]\nLVL10 Evolution ?Assassin ou ?Ninja")
+        .addField("**épéiste**", "LVL 1 : ?Coup_epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 4 ?Coup_perçant [Vos dégâts] **ou** ?Coup_saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
+        .addField("**Paladin**", "LVL 1 : ?Coup_masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 4 ?Coup_provocateur [Vos dégâts] **ou** ?Cri de provocation \nLVL10 Evolution ?Juggernaut ou ?Seigneur")
         .addField("**===================================**", "**===================================**")
         .addField("**Info pour les esquives", "Si vous avez 0 points en agilité : Esquive [dégats reçu]\n Si vous en avez 1 au total : Super_esquive [dégats reçu]\n Si 2 : Mega_esquive [dégats reçu]\n Si 3 : Supra_esquive [dégats reçu]\n Et si 4 : Divin_esquive [dégats_reçu]")
         .setColor("#ff4600")
@@ -521,12 +521,33 @@ var y = new Discord.RichEmbed()
 .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
 message.channel.send(y);
 }
+
+if(message.content === préfix + "Cri de provocation" || message.content === préfix + "cri de provocation"){
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    var max_value = Math.floor(`${args}`*4);
+    var min_value = Math.floor(`${args}`*1)
+    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+    if(nombre<80){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#e21700")
+    .addField("**__Cri de provocation__**", "**Vous venez provoquer les ennemies devant vous**\n:speaking_head: " + result)
+    .setImage("https://i.pinimg.com/originals/ef/35/89/ef35890fc7ec9ecb2aa8db489b7565cb.jpg")
+    .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+    }else if(nombre < 101){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#e21700")
+        .addField("**__Cri de provocation__**", "Vous échouez votre cri de provocation.")
+        .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
+        .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+    }
+    message.channel.sendMessage(help_embed);
+}
 if(command === 'coup_provocateur'){
     if (!args.length) {
         return message.channel.send(`You didn't provide any arguments, ${message.author}!`);
     }
     var nombre = Math.floor((Math.random() * 100) + 1);
-    var max_value = Math.floor(`${args}`*1.35);
+    var max_value = Math.floor(`${args}`*1.4);
     var min_value = Math.floor(`${args}`*1)
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre < 55)
@@ -547,6 +568,7 @@ if(command === 'coup_provocateur'){
     message.channel.send(y);
     }
 
+    
 if(command === 'coup_dague'){
 if (!args.length) {
     return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
