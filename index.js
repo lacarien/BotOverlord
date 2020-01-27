@@ -1350,12 +1350,12 @@ if (!args.length) {
 return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
 }
 if (talkedRecently2.has(message.author.id)) {
-    message.channel.send("Attendre 10 minutes" + message.author);
+    message.channel.send("Attendre 15 minutes" + message.author);
 } else {
 var result = Math.floor((Math.random() * 100) + 1);
-if(result < 80){
+if(result < 85){
 var x = 1;
-} else if (result < 90){
+} else if (result < 95){
 var x = 2;
 } else if (result < 101){
 var x = 3;
@@ -1366,9 +1366,9 @@ var B = 0;
 var C = 0;
 while(ennemies!=0){  
 var random = Math.floor((Math.random() * 100) + 1);
-if(random < 80){
+if(random < 83){
     A = A+1;
-} else if (random < 95){
+} else if (random < 97){
     B = B+1;
 } else if (random < 101){
     C = C+1;
@@ -1396,7 +1396,7 @@ talkedRecently2.add(message.author.id);
     setTimeout(() => {
     // Removes the user from the set after a minute
     talkedRecently2.delete(message.author.id);
-    }, 600000);
+    }, 900000);
     }
 }
 
@@ -1405,7 +1405,7 @@ if (!args.length) {
 return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
 }
 if (talkedRecently2.has(message.author.id)) {
-    message.channel.send("Attendre 10 minutes" + message.author);
+    message.channel.send("Attendre 15 minutes" + message.author);
 } else {
 var result = Math.floor((Math.random() * 100) + 1);
 if(result < 80){
