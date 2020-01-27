@@ -524,8 +524,8 @@ message.channel.send(y);
 
 if(message.content === préfix + "Cri de provocation" || message.content === préfix + "cri de provocation"){
     var nombre = Math.floor((Math.random() * 100) + 1);
-    var max_value = Math.floor(`${args}`*4);
-    var min_value = Math.floor(`${args}`*1)
+    var max_value = Math.floor(4);
+    var min_value = Math.floor(1)
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
     if(nombre<80){
     var help_embed = new Discord.RichEmbed()
