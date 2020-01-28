@@ -185,7 +185,7 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Coble" || message.content === préfix + "coble"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Coble du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+.addField("**Coble du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : 2 Mercure**\n:moneybag: **Prix de revente : 1 Mercure**")
 .setImage("https://c8.alamy.com/compfr/k25k6a/dessin-a-la-main-la-pierre-de-roche-isole-sur-fond-blanc-le-noir-et-blanc-simple-ligne-vector-illustration-pour-livre-de-coloriage-ligne-dessinee-vector-k25k6a.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -193,15 +193,15 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Adamin" || message.content === préfix + "adamin"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Adamin du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+.addField("**Adamin du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : 15 Mercure**\n:moneybag: **Prix de revente : 7 Mercure**")
 .setImage("https://static.hitek.fr/img/actualite/2015/04/mineral-01.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
 }
-if(message.content === préfix + "Rubis" || message.content === préfix + "rubis"){
+if(message.content === préfix + "Rubi" || message.content === préfix + "rubi"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Rubi du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+.addField("**Rubi du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 15 Mercure**")
 .setImage("https://www.gemmantia.com/images/pages/rubis/rubis_sang_de_pigeon.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
