@@ -583,7 +583,7 @@ var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*2);
 var min_value = Math.floor(`${args}`*1.35)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
-if(nombre < 65)
+if(nombre < 72)
 var y = new Discord.RichEmbed()
 .setColor("#e21700")
 .addField("**Vous utilisez votre dague venant planter l'ennemie**",":crossed_swords:" + result)
