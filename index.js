@@ -1493,7 +1493,7 @@ if(command === 'miner_volcan'){
         var maxXP = Math.floor(Math.max(3)); 
         var Adam = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         var minXP = Math.floor(Math.min(5));
-        var maxXP = Math.floor(Math.max(30)); 
+        var maxXP = Math.floor(Math.max(15)); 
         var cobl = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         var minXP = Math.floor(Math.min(1));
         var maxXP = Math.floor(Math.max(3)); 
@@ -1578,8 +1578,8 @@ if(command === 'bucheronner_plaine'){
         var minXP = Math.floor(Math.min(0));
         var maxXP = Math.floor(Math.max(3)); 
         var Adam = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
-        var minXP = Math.floor(Math.min(0));
-        var maxXP = Math.floor(Math.max(2)); 
+        var minXP = Math.floor(Math.min(1));
+        var maxXP = Math.floor(Math.max(3)); 
         var cobl = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
         var minXP = Math.floor(Math.min(1));
         var maxXP = Math.floor(Math.max(3)); 
@@ -1614,7 +1614,7 @@ if(command === 'cueillir_plaine'){
         message.channel.send("Il faut attendre 60minutes. " + message.author);
     } else {
         var result = Math.floor((Math.random() * 100) + 1);
-        if(result < 10){
+        if(result < 20){
         rubi = 1
         }else if(result < 101){
         rubi = 0
