@@ -185,7 +185,7 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Coble" || message.content === préfix + "coble"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Coble du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : 2 Mercure**\n:moneybag: **Prix de revente : 1 Mercure**")
+.addField("**Coble du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : 2 Mercure**\n:moneybag: **Prix de revente : 1 Mercure**\n:third_place: **Appentissage du metier forgeron :** ``?Forgeron coble``\n:tools: **Utilisation : ** Inutile (vous pouvez les lancer sur vos ami(e)s comme en primaire.)")
 .setImage("https://c8.alamy.com/compfr/k25k6a/dessin-a-la-main-la-pierre-de-roche-isole-sur-fond-blanc-le-noir-et-blanc-simple-ligne-vector-illustration-pour-livre-de-coloriage-ligne-dessinee-vector-k25k6a.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -193,7 +193,7 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Adamin" || message.content === préfix + "adamin"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Adamin du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : 15 Mercure**\n:moneybag: **Prix de revente : 7 Mercure**")
+.addField("**Adamin du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : 15 Mercure**\n:moneybag: **Prix de revente : 7 Mercure**\n:third_place: **Appentissage du metier forgeron :** ``?Forgeron adamin``\n:tools: **Utilisation : ** ``Epee en fer`` / ``Potion faible HP +1``")
 .setImage("https://static.hitek.fr/img/actualite/2015/04/mineral-01.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -201,11 +201,39 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Rubi" || message.content === préfix + "rubi"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Rubi du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 15 Mercure**")
+.addField("**Rubi du palier 1**", " :fire: **Localisation : Volcan**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 15 Mercure**\n:third_place: **Appentissage du metier forgeron :** ``?Forgeron rubi``\n:tools: **Utilisation : ** ``Dague en fer`` / ``Potion faible HP +2``")
 .setImage("https://www.gemmantia.com/images/pages/rubis/rubis_sang_de_pigeon.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
 }
+
+if(message.content === préfix + "Bois mediocre" || message.content === préfix + "bois mediocre"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00148f")
+    .addField("**Bois mediocre du palier 1**", " :fire: **Localisation : forêt brulée**\n:dollar: **Prix d'achat : 10 Mercure**\n:moneybag: **Prix de revente : 5 Mercure**\n:tools: **Utilisation : ** ``Casque de rat`` / ``Rat cuisiné``")
+    .setImage("http://peinturemamanlotus.fr/wp-content/uploads/2011/11/AC_chene_Encre.jpg")
+    .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "Bois commun" || message.content === préfix + "bois commun"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00148f")
+    .addField("**Bois commun du palier 1**", " :fire: **Localisation : forêt brulée**\n:dollar: **Prix d'achat : 15 Mercure**\n:moneybag: **Prix de revente : 7 Mercure**\n:tools: **Utilisation : ** ``Plastron de rat`` / ``SOON``")
+    .setImage("https://i.pinimg.com/originals/6d/c8/81/6dc8813d560c10aaed9aab0276fcb38e.jpg")
+    .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+    message.channel.sendMessage(help_embed);
+}
+if(message.content === préfix + "Bois rare" || message.content === préfix + "bois rare"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00148f")
+    .addField("**Bois rare du palier 1**", " :fire: **Localisation : forêt brulée**\n:dollar: **Prix d'achat : 40 Mercure**\n:moneybag: **Prix de revente : 20 Mercure**\n:tools: **Utilisation : ** ``Botte de rat`` / ``Epee et dague en fer``")
+    .setImage("https://i.pinimg.com/originals/33/ab/43/33ab43c8b8491a1442355b5cb79b703d.jpg")
+    .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+    message.channel.sendMessage(help_embed);
+}       
+
+
+
 if(message.content === préfix + "Patte de larve" || message.content === préfix + "patte de larve"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
