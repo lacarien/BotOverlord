@@ -179,8 +179,8 @@ if(message.content === préfix + "Artisanat"){
                         case '⚔️':
                                 let embed2 = new Discord.RichEmbed()
                                 .addField("**__Liste des armes__**", "```Attention à bien respecter les conditions d'utilisation d'une arme ``` ")
-                                .addField("``Epee en fer``","?Fabrication epee en fer\n**/!\** Interdit pour les voleurs !\n:scales: **Ressource :** 6 Adamin  /\ 2 Bois rare/\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
-                                .addField("``Dague en fer``","?Fabrication dague en fer\n **/!\** Résérvé aux voleurs !\n:scales: **Ressource :**  2 Rubis /\ 2 Bois rare /\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
+                                .addField("``Epee en fer``","?Fabrication epee en fer\n**/!\** Interdit pour les voleurs !\n:scales: **Ressource :** 6 Adamin  /\ 5 Bois commun /\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
+                                .addField("``Dague en fer``","?Fabrication dague en fer\n **/!\** Résérvé aux voleurs !\n:scales: **Ressource :**  2 Rubis /\ 5 Bois commun /\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed2).then(async message => 
@@ -230,7 +230,7 @@ if(message.content === préfix + "Artisanat"){
                                 let embed4 = new Discord.RichEmbed()
                                 .addField("**__Liste des consommables__**", "```Attention à bien respecter les conditions d'utilisation d'un consommable !``` ")
                                 .addField("``Rat cuisiné``","?Fabrication rat\n:scales: **Ressource :** 2 Bois mediocre /\ 3 Rosalis /\ 1 Queue de crocro \n:diamond_shape_with_a_dot_inside: Niveau de cuisinier : 2")
-                                .addField("``SOON``","?Fabrication +rat\n:scales: SOON  \n:diamond_shape_with_a_dot_inside: Niveau de cuisinier : 2")
+                                .addField("``Aragnator cuisiné``","?Fabrication aragnator\n:scales: **Ressource :** 4 Adamins /\ 5 Fleur de magma /\ 2 Peau d'aragnator   \n:diamond_shape_with_a_dot_inside: Niveau de cuisinier : 2")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed4).then(async message => 
