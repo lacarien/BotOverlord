@@ -439,7 +439,7 @@ if (!args.length) {
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*1.8);
-var min_value = Math.floor(`${args}`*1)
+var min_value = Math.floor(`${args}`*1.2)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 81)
 var y = new Discord.RichEmbed()
@@ -507,7 +507,7 @@ if (!args.length) {
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
 var max_value = Math.floor(`${args}`*1.6);
-var min_value = Math.floor(`${args}`*1)
+var min_value = Math.floor(`${args}`*1.1)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 81)
 var y = new Discord.RichEmbed()
@@ -580,7 +580,7 @@ if (!args.length) {
     return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
 }
 var nombre = Math.floor((Math.random() * 100) + 1);
-var max_value = Math.floor(`${args}`*2);
+var max_value = Math.floor(`${args}`*1.9);
 var min_value = Math.floor(`${args}`*1.35)
 var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
 if(nombre < 72)
