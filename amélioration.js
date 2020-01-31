@@ -85,3 +85,29 @@ if(message.content === préfix + "Alchimie corne de gnome" || message.content ==
     }
 }
 
+
+
+if(message.content === préfix + "Fabrication potion faible de HP" || message.content === préfix + "fabrication potion faible de HP") {
+    var minM = Math.floor(Math.min(4));
+    var maxM = Math.floor(Math.max(6)); 
+    var XP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+    var minM = Math.floor(Math.min(25));
+    var maxM = Math.floor(Math.max(35)); 
+    var HP = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 70)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .addField("__**Réussite**__", "Vous obtenez donc une potion faible de HP et gagnez en plus de l'experience dans votre metier : :diamond_shape_with_a_dot_inside: " + XP + "\n:sparkling_heart: " + HP)
+    .addField("__**Amélioration possible**__", "**Prérequis : ** ``Niveau d'Alchimiste : 2``\n                ``3 Peau d'aragnator /\  2Cornes de gnome``")
+    else if(result < 101)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .addField("**__Echec__**","Vous échouez votre fabrication, mais gagnez de l'experience dans votre metier : :diamond_shape_with_a_dot_inside: " + XP)
+    message.channel.send(result);
+}   
+
+
+
+
+
