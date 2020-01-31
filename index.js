@@ -1162,6 +1162,112 @@
     message.channel.send(y);
     }
 
+    if(message.content === préfix + "Crocro bipède") {
+        var result = new Discord.RichEmbed() 
+        .addField("Nom du monstre", "**__Crocro_bipède__**")
+        .setColor("#ff8300")
+        .setImage("https://cafart.r.worldssl.net/images/Category_42685/subcat_87742/Rat%20warrior.jpg")
+        .addField(":heart: HP","55")
+        .addField(":beginner: Passif", "Toutes ses attaques perce l'armure")
+        .addField(":crossed_swords: Attaque", "?BCrocro_attaque")
+        .addField(":shield: Défense", "?BCrocro_défense  [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "?Récompenses_BCrocro [lvl]")
+        message.channel.send(result)
+    }
+
+    if(message.content === préfix + "bcrocro_attaque" || message.content === préfix + "BCrocro_attaque"){
+        var min = Math.floor(Math.min(2));
+        var max = Math.floor(Math.max(5)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 80)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff8300")
+        .addField("Le crocro bipède vous fonces dessus venant vous infliger des petits dégats", ":crossed_swords:" + y)
+        else if (result < 101)
+        var y = new Discord.RichEmbed()
+        .setTitle("Le bipède viendra trébucher sur le côté, à croire qu'il a du mal à marcher")
+        .setColor("#ff8300")
+        message.channel.sendMessage(y);
+    }
+
+    if(command === 'récompenses_crocro'){
+        if (!args.length) {
+        return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+        }
+        var minXP = Math.floor(Math.min(20));
+        var maxXP = Math.floor(Math.max(25)); 
+        var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+        if(`${args}`>1){
+        var A = Math.floor(1-`${args}`);
+        var XP = Math.floor(XP*(1+(0.3*A)));
+        }
+        if(XP<0){
+            XP = 0;
+        }
+        var minM = Math.floor(Math.min(5));
+        var maxM = Math.floor(Math.max(10)); 
+        var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+        var result2 = Math.floor((Math.random() * 100) + 1);
+        var Peau = 0;
+        if(result2 < 80){
+        Peau = Peau + 1;
+        } else if(result2 < 90){
+        Peau = Peau + 2;
+        } else if(result2 < 101){
+        Peau = 0;
+        }
+        var result3 = Math.floor((Math.random() * 100) + 1);
+        var Queu = 0;
+        if(result3 < 40){
+        Queu = Queu +1;
+        } else if(result3 < 96){
+        Queu = 0;
+        } else if(result3 < 101){
+        Queu = Queu + 2;
+    
+        }
+        var result4 = Math.floor((Math.random() * 100) + 1);
+        var Oeil = 0;
+        if(result4 < 25){
+        Oeil= Oeil +1;
+        } else if(result4 < 96){
+        Oeil = 0;
+        }
+        if(XP<0){
+            XP=0;
+        }
+    
+        var y = new Discord.RichEmbed()
+        .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:rat: **Peau de crocro :** "+ Peau +"\n:bug: **Queue de crocro :** " + Queu + "\n:eye: **Oeil de crocro :** " + Oeil)
+        .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
+        message.channel.send(y);
+        }
+    
+
+    if(command === 'bcrocro_défense'){
+        if (!args.length) {
+        return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.1);
+        var min_value = Math.floor(`${args}`*0.8)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var min = Math.floor(Math.min(5));
+        var max = Math.floor(Math.max(10)); 
+        var parade = Math.floor(Math.random() * (max - min + 1) ) + min;
+        if(nombre < 91)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff8300")
+        .addField(":shield: Le bipède viendra se prendre les dégâts bien qu'essayant de réduire au mieux qu'il peu avec ses bras",":anger: " + result)
+        else if (nombre< 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff8300")
+        .addField("Le bipède vient donc vous bloquer votre attaque et la renvoyer contre vous.", ":dagger: " + parade)
+        message.channel.send(y);
+        }
+
+
 
     if(message.content === préfix + "Aragnator") {
     var result = new Discord.RichEmbed() 
@@ -1174,13 +1280,14 @@
     .addField(":shield: Défense", "?Aragnator_défense  [dégâts reçu]")
     .addField(":moneybag: Récompenses", "?Récompenses_Aragnator [lvl]")
     message.channel.send(result)
-    }  
+    }
+  
     if(message.content === préfix + "Aragnator_attaque"){
     var min = Math.floor(Math.min(20));
     var max = Math.floor(Math.max(40)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var mins = Math.floor(Math.min(5));
-    var maxs = Math.floor(Math.max(15)); 
+    var maxs = Math.floor(Math.max(10)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 70)
@@ -1218,7 +1325,7 @@
     if (!args.length) {
     return message.channel.send(`Il faut mettre ton lvl; ${message.author}!`);
     }
-    var minXP = Math.floor(Math.min(20));
+    var minXP = Math.floor(Math.min(25));
     var maxXP = Math.floor(Math.max(30)); 
     var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
     if(`${args}`<4){
@@ -1306,7 +1413,7 @@
     if (!args.length) {
     return message.channel.send(`Il faut mettre ton lvl; ${message.author}!`);
     }
-    var minXP = Math.floor(Math.min(20));
+    var minXP = Math.floor(Math.min(22));
     var maxXP = Math.floor(Math.max(30)); 
     var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
     if(`${args}`<4){
@@ -1393,13 +1500,16 @@
     if(ennemies > DELTA){
         ennemies = ennemies -1;
     }
-    var A = 0;
-    var B = 0;
-    var C = 0;
+    var A = 0; // Ccrocro
+    var B = 0; // nid'rats
+    var C = 0; // Alpha
+    var D = 0; // crocro bipède
     while(ennemies!=0){  
     var random = Math.floor((Math.random() * 100) + 1);
-    if(random < 83){
+    if(random < 50){
         A = A+1;
+    } else if (random < 90){
+        D = D+1;
     } else if (random < 97){
         B = B+1;
     } else if (random < 101){
@@ -1412,6 +1522,7 @@
     .setTitle(":vs: Des monstres viennent d'apparaitre !")
     .addField(":rat: __**Crocro**__", "**Nombre de crocro :** " + A)
     .addField(":rat: **__Nid'rats__**", "**Nombre de nid'rats :** "+B)
+    .addField(":rat: **__Crocro bipède__**", "**Nombre de crocro bipède :** "+D)
     .setColor("#ff8300")
     .setImage("https://i.pinimg.com/originals/71/71/c0/7171c0b7ba3b53ca7931581fc54f1f9e.jpg")
     } else if(C > 0){
@@ -1419,6 +1530,7 @@
     .setTitle(":vs: Des monstres viennent d'apparaitre !\n Mais attention ! L'Alpha approche !")
     .addField(":rat: __**Crocro**__", "**Nombre de crocro :** " + A)
     .addField(":rat: **__Nid'rats__**", "**Nombre de nid'rats :** "+B)
+    .addField(":rat: **__Crocro bipède__**", "**Nombre de crocro bipède :** "+D)
     .addField(":rat: **_Rat alpha__**", "**Nombre d'Alpha :** " + C)
     .setColor("#ff8300")
     .setImage("https://i.pinimg.com/originals/71/71/c0/7171c0b7ba3b53ca7931581fc54f1f9e.jpg")
