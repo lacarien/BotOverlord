@@ -237,7 +237,7 @@ if(message.content === préfix + "Bois rare" || message.content === préfix + "b
 if(message.content === préfix + "Patte de larve" || message.content === préfix + "patte de larve"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Patte de larve du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 20 Mercure**\n:moneybag: **Prix de revente : 1 Mercure**")
+.addField("**Patte de larve du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 20 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**")
 .setImage("http://www.quenovel.be/Horticole/hortiimages/p21/05%2020%2006%20Taupin%201.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
