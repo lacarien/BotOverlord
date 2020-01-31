@@ -85,6 +85,50 @@ if(message.content === préfix + "Alchimie corne de gnome" || message.content ==
     }
 }
 
+if(message.content === préfix + "Cuisinier crofly" || message.content === préfix + "cuisinier crofly"){
+    if (talkedRecently.has(message.author.id)) {
+        message.channel.send("Il faut attendre 60minutes. " + message.author);
+        } else {
+    var minM = Math.floor(Math.min(4));
+    var maxM = Math.floor(Math.max(5)); 
+    var result = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+    var y = new Discord.RichEmbed() 
+    .addField("**Amélioratoin du métier de cuisinier**", "Vous venez utiliser les ailes de crofly afin de vous entrainer au métier de cuisinier\n**Gain d'XP dans le métier : **" + result)
+    .setColor("#ff4600")
+    .setImage("https://cdn.discordapp.com/attachments/641777958490472478/665603893606088704/8yGu6L.png")
+    .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachment  s/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+    message.channel.send(y);
+    talkedRecently.add(message.author.id);
+    setTimeout(() => {
+    // Removes the user from the set after a minute
+    talkedRecently.delete(message.author.id);
+    }, 3600000);
+    }
+}
+
+if(message.content === préfix + "Cuisinier larve" || message.content === préfix + "cuisinier larve"){
+    if (talkedRecently.has(message.author.id)) {
+        message.channel.send("Il faut attendre 60minutes. " + message.author);
+        } else {
+    var minM = Math.floor(Math.min(3));
+    var maxM = Math.floor(Math.max(4)); 
+    var result = Math.floor(Math.random() * (maxM - minM + 1) ) + minM;
+    var y = new Discord.RichEmbed() 
+    .addField("**Amélioratoin du métier de cuisinier**", "Vous venez utiliser les pattes de larve afin de vous entrainer au métier de cuisinier\n**Gain d'XP dans le métier : **" + result)
+    .setColor("#ff4600")
+    .setImage("https://cdn.discordapp.com/attachments/641777958490472478/665603893606088704/8yGu6L.png")
+    .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachment  s/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
+    message.channel.send(y);
+    talkedRecently.add(message.author.id);
+    setTimeout(() => {
+    // Removes the user from the set after a minute
+    talkedRecently.delete(message.author.id);
+    }, 3600000);
+    }
+}
+
+
+
 
 
 if(message.content === préfix + "Fabrication potion faible de HP" || message.content === préfix + "fabrication potion faible de HP") {
