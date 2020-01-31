@@ -139,7 +139,7 @@
 if(message.content === préfix + "Peau de crocro" || message.content === préfix + "peau de crocro"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Crocro du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 20 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**\n:third_place: **Appentissage du metier couturier :** ``?Couture peau de crocro``\n:tools: **Utilisation : ** ``Arme en fer``/ ``Equipement de rat``")
+.addField("**Crocro du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 10 Mercure**\n:moneybag: **Prix de revente : 5 Mercure**\n:third_place: **Appentissage du metier couturier :** ``?Couture peau de crocro``\n:tools: **Utilisation : ** ``Arme en fer``/ ``Equipement de rat``")
 .setImage("https://lh4.googleusercontent.com/-0X3phCZZsfo/Tz4X2duAU_I/AAAAAAAAGEM/LLdJ5aqGzIw/Cape%20de%20l%27Homme%20Ours.png")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -147,7 +147,7 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Queue de crocro" || message.content === préfix + "queue de crocro"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Crocro du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 15 Mercure**\n:third_place: **Appentissage du metier couturier :** ``?Couture queue de crocro``\n:tools: **Utilisation : ** ``Arme en fer``/ ``Equipement de rat``")
+.addField("**Crocro du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 15 Mercure**\n:moneybag: **Prix de revente : 7 Mercure**\n:third_place: **Appentissage du metier couturier :** ``?Couture queue de crocro``\n:tools: **Utilisation : ** ``Arme en fer``/ ``Equipement de rat``")
 .setImage("https://i.pinimg.com/736x/cf/34/c9/cf34c94e2eab837d0e53465afe99bb15.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -155,7 +155,7 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Oeil de crocro" || message.content === préfix + "oeil de crocro"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Crocro du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 15 Mercure**\n:third_place: **Appentissage du metier couturier :** ``?Couture queue de crocro``\n:tools: **Utilisation : ** ``Potion faible``")
+.addField("**Crocro du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 20 Mercure**\n:moneybag: **Prix de revente : 15 Mercure**\n:third_place: **Appentissage du metier couturier :** ``?Couture queue de crocro``\n:tools: **Utilisation : ** ``Potion faible``")
 .setImage("https://i.pinimg.com/736x/cf/34/c9/cf34c94e2eab837d0e53465afe99bb15.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -237,7 +237,7 @@ if(message.content === préfix + "Bois rare" || message.content === préfix + "b
 if(message.content === préfix + "Patte de larve" || message.content === préfix + "patte de larve"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Patte de larve du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 20 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**")
+.addField("**Patte de larve du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 20 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**\n:third_place: **Appentissage du metier forgeron :** ``?Cuisinier larve``")
 .setImage("http://www.quenovel.be/Horticole/hortiimages/p21/05%2020%2006%20Taupin%201.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -245,7 +245,7 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Aile de crofly" || message.content === préfix + "aile de crofly"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Aile de crofly du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**")
+.addField("**Aile de crofly du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**\n:third_place: **Appentissage du metier forgeron :** ``?Cuisinier crofly")
 .setImage("https://img.pixers.pics/pho_wat(s3:700/FO/65/96/43/10/700_FO65964310_6f6b3e5f2c266b7f5b1c4c26da9da489.jpg,700,500,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,450,jpg)/papiers-peints-ailes-d-39-oiseaux-isoles-sur-fond-blanc.jpg.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
