@@ -1176,8 +1176,8 @@
     }
 
     if(message.content === préfix + "bcrocro_attaque" || message.content === préfix + "BCrocro_attaque"){
-        var min = Math.floor(Math.min(2));
-        var max = Math.floor(Math.max(5)); 
+        var min = Math.floor(Math.min(5));
+        var max = Math.floor(Math.max(8)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var result = Math.floor((Math.random() * 100) + 1);
         if(result < 80)
@@ -1250,8 +1250,8 @@
         return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
         }
         var nombre = Math.floor((Math.random() * 100) + 1);
-        var max_value = Math.floor(`${args}`*1.1);
-        var min_value = Math.floor(`${args}`*0.8)
+        var max_value = Math.floor(`${args}`*0.7);
+        var min_value = Math.floor(`${args}`*0.5)
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         var min = Math.floor(Math.min(5));
         var max = Math.floor(Math.max(10)); 
@@ -1262,7 +1262,7 @@
         .addField(":shield: Le bipède viendra se prendre les dégâts bien qu'essayant de réduire au mieux qu'il peu avec ses bras",":anger: " + result)
         else if (nombre< 101)
         var y = new Discord.RichEmbed()
-        .setColor("#ff8300")
+        .setColor("#ff0000")
         .addField("Le bipède vient donc vous bloquer votre attaque et la renvoyer contre vous.", ":dagger: " + parade)
         message.channel.send(y);
         }
