@@ -153,9 +153,9 @@ if(message.content === préfix + "Artisanat"){
                         case '🛡️':
                             let embed = new Discord.RichEmbed()
                             .addField("**__Liste des armures__**", "```Attention à bien respecter les conditions d'utilisation d'une armure``` ")
-                            .addField("``Casque de rat``","?Fabrication casque de rat\n:scales: **Ressource :** 5Peau de crocro /\ 3 Queue de crocro /\ 2 Aile d'aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier: 2")
-                            .addField("``Plastron de rat``","?Fabrication plastron de rat\n:scales: **Ressource :** 5 Peau de crocro /\ 3 Queue de crocro /\ 2 Aile d'aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier : 2") 
-                            .addField("``Botte de rat``","?Fabrication bottes de rat\n:scales: **Ressource :** 5 Peau de crocro /\ 3 Queue de crocro /\ 2 Aile d'aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier : 2")
+                            .addField("``Casque de rat``","?Fabrication casque de rat\n:scales: **Ressource :** 5Peau de crocro /\ 9 Bois mediocre /\ 2 Aile d'aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier: 2")
+                            .addField("``Plastron de rat``","?Fabrication plastron de rat\n:scales: **Ressource :** 5 Peau de crocro /\ 9 Bois commun /\ 2 Aile d'aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier : 2") 
+                            .addField("``Botte de rat``","?Fabrication bottes de rat\n:scales: **Ressource :** 5 Peau de crocro /\ 2 Bois rare /\ 2 Aile d'aragnator \n:diamond_shape_with_a_dot_inside: Niveau de Couturier : 2")
                             .setColor("#8c8c8c")
                             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                              message.channel.send(embed).then(async message => 
@@ -179,8 +179,8 @@ if(message.content === préfix + "Artisanat"){
                         case '⚔️':
                                 let embed2 = new Discord.RichEmbed()
                                 .addField("**__Liste des armes__**", "```Attention à bien respecter les conditions d'utilisation d'une arme ``` ")
-                                .addField("``Epee en fer``","?Fabrication epee en fer\n**/!\** Interdit pour les voleurs !\n:scales: **Ressource :** 2 Adamin  /\  /\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
-                                .addField("``Dague en fer``","?Fabrication dague en fer\n **/!\** Résérvé aux voleurs !\n:scales: **Ressource :** 5 Peau de crocro /\ 3 queue de Crocro /\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
+                                .addField("``Epee en fer``","?Fabrication epee en fer\n**/!\** Interdit pour les voleurs !\n:scales: **Ressource :** 2 Adamin  /\ 3 Bois mediocre /\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
+                                .addField("``Dague en fer``","?Fabrication dague en fer\n **/!\** Résérvé aux voleurs !\n:scales: **Ressource :** 1 Rubis /\ 3 Bois commun /\ 2 Corne de gnome\n:diamond_shape_with_a_dot_inside: Niveau de forgeron : 2")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed2).then(async message => 
