@@ -103,8 +103,8 @@ if(message.content === préfix + "Commerce"){
                         case '🍖':
                                 let embed4 = new Discord.RichEmbed()
                                 .addField("**__Liste des consommables__**", "```Attention à bien respecter les conditions d'utilisation d'un consommable !``` ")
-                                .addField("SOON","SOON")
-                                .addField("SOON","SOON")
+                                .addField("``Soupe de crocro``","?Achat soupe crocro \n:dollar: **Prix :** 30 Mercure\n:dollar: **Revente :** 10 Mercure")
+                                .addField("``Super soupe de crocro``","?Achat super soupe crocro \n:dollar: **Prix :** 50 Mercure\n:dollar: **Revente :** 25 Mercure")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed4).then(async message => 
@@ -229,8 +229,8 @@ if(message.content === préfix + "Artisanat"){
                         case '🍖':
                                 let embed4 = new Discord.RichEmbed()
                                 .addField("**__Liste des consommables__**", "```Attention à bien respecter les conditions d'utilisation d'un consommable !``` ")
-                                .addField("SOON","SOON")
-                                .addField("SOON","SOON")
+                                .addField("``Soupe de crocro``","?Fabrication soupe crocro\n:scales: **Ressource :** 3 Peau de crocro /\ 2 patte de larve\n:diamond_shape_with_a_dot_inside: Niveau de cuisinier : 2")
+                                .addField("``Super soupe de crocro``","?Fabrication soupe crocro\n:scales: **Ressource :** 4 Peau de crocro /\ 2 aile de crofly\n:diamond_shape_with_a_dot_inside: Niveau de cuisinier : 2")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed4).then(async message => 
