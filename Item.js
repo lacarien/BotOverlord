@@ -237,7 +237,7 @@ if(message.content === préfix + "Bois rare" || message.content === préfix + "b
 if(message.content === préfix + "Patte de larve" || message.content === préfix + "patte de larve"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Patte de larve du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+.addField("**Patte de larve du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 20 Mercure**\n:moneybag: **Prix de revente : 1 Mercure**")
 .setImage("http://www.quenovel.be/Horticole/hortiimages/p21/05%2020%2006%20Taupin%201.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -245,7 +245,7 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Aile de crofly" || message.content === préfix + "aile de crofly"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Aile de crofly du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+.addField("**Aile de crofly du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**")
 .setImage("https://img.pixers.pics/pho_wat(s3:700/FO/65/96/43/10/700_FO65964310_6f6b3e5f2c266b7f5b1c4c26da9da489.jpg,700,500,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,450,jpg)/papiers-peints-ailes-d-39-oiseaux-isoles-sur-fond-blanc.jpg.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -253,7 +253,7 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Coeur de crona" || message.content === préfix + "coeur de crona"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Coeur de crona du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : ?? Mercure**\n:moneybag: **Prix de revente : ?? Mercure**")
+.addField("**Coeur de crona du palier 1**", " :fire: **Localisation : Chemin**\n:dollar: **Prix d'achat : 40 Mercure**\n:moneybag: **Prix de revente : 25 Mercure**")
 .setImage("https://www.dessindigo.com/uploads/partition/coeurrealiste/dessin-coeur-humain-anatomique.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -261,7 +261,7 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Rosalis" || message.content === préfix + "rosalis"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Rosalis du palier 1**", " :fire: **Localisation : Plaine**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 15 Mercure**")
+.addField("**Rosalis du palier 1**", " :fire: **Localisation : Plaine**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**")
 .setImage("https://cdn.pixabay.com/photo/2014/10/25/00/14/flower-501984_960_720.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -269,7 +269,7 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Fleur de lave" || message.content === préfix + "fleur de lave"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Fleure de lave du palier 1**", " :fire: **Localisation : Plaine**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 15 Mercure**")
+.addField("**Fleure de lave du palier 1**", " :fire: **Localisation : Plaine**\n:dollar: **Prix d'achat : 30 Mercure**\n:moneybag: **Prix de revente : 10 Mercure**")
 .setImage("https://www.serenitya.com/serenitya_images/produits/bougeoir_fleur_de_lotus_12076.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
@@ -277,7 +277,7 @@ message.channel.sendMessage(help_embed);
 if(message.content === préfix + "Fleur de magma" || message.content === préfix + "fleur de magma"){
 var help_embed = new Discord.RichEmbed()
 .setColor("#00148f")
-.addField("**Fleure de magma du palier 1**", " :fire: **Localisation : Plaine**\n:dollar: **Prix d'achat : 40 Mercure**\n:moneybag: **Prix de revente : 30 Mercure**")
+.addField("**Fleure de magma du palier 1**", " :fire: **Localisation : Plaine**\n:dollar: **Prix d'achat : 40 Mercure**\n:moneybag: **Prix de revente : 25 Mercure**")
 .setImage("https://st2.depositphotos.com/4754361/11051/i/950/depositphotos_110510532-stock-photo-surrealistic-fantasy-orange-flower-macro.jpg")
 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
 message.channel.sendMessage(help_embed);
