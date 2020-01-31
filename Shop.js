@@ -204,8 +204,8 @@ if(message.content === préfix + "Artisanat"){
                         case '❤️':
                                 let embed3 = new Discord.RichEmbed()
                                 .addField("**__Liste des potions__**", "```Attention à bien respecter les conditions d'utilisation d'une potion !``` ")
-                                .addField("``Potion faible de MP``","?Fabrication potion faible de MP\n:scales: **Ressource :** 3 Oeil de crocro /\ 1 Cornes de gnome \n:diamond_shape_with_a_dot_inside: Niveau d'Alchimiste : 2")
-                                .addField("``Potion faible d'HP``","SOON\n:scales: **Ressource :** SOON  \n:diamond_shape_with_a_dot_inside: Niveau d'Alchimiste : 3")
+                                .addField("``Potion faible de HP``","?Fabrication potion faible de HP\n:scales: **Ressource :** 3 Oeil de crocro /\ 1 Cornes de gnome \n:diamond_shape_with_a_dot_inside: Niveau d'Alchimiste : 2")
+                                .addField("``Potion faible d'MP``","SOON\n:scales: **Ressource :** SOON  \n:diamond_shape_with_a_dot_inside: Niveau d'Alchimiste : 3")
                                 .setColor("#8c8c8c")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                     message.channel.send(embed3).then(async message => 
