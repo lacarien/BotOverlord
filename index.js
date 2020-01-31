@@ -1526,7 +1526,7 @@
             message.channel.send("Il faut attendre 60minutes. " + message.author);
         } else {
             var result = Math.floor((Math.random() * 100) + 1);
-            if(result < 20){
+            if(result < 10){
             rubi = 1
             }else if(result < 101){
             rubi = 0
