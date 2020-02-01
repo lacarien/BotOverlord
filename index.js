@@ -1559,8 +1559,8 @@
         var B = 0; // nid'rats
         var C = 0; // Alpha
         var D = 0; // crocro bipède
-        
-        for(i=`${args}` ;i!=0 ; i--){
+        var i=`${args}`
+        while(i!=0){
 
             var result = Math.floor((Math.random() * 100) + 1);
             if(result < 85){
@@ -1570,6 +1570,7 @@
             } else if (result < 101){
             var x = x+3;
             }
+            i--;
             
         }
         var ennemies= x;
