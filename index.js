@@ -1559,7 +1559,8 @@
         var B = 0; // nid'rats
         var C = 0; // Alpha
         var D = 0; // crocro bipède
-        var i=`${args}`
+        var x = 0;
+        var i=`${args}`;
         while(i!=0){
 
             var result = Math.floor((Math.random() * 100) + 1);
