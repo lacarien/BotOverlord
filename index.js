@@ -1479,7 +1479,9 @@
                                                         // APPARITION ETAGE 1 ///////////
         // APPARITION ETAGE 1 ///////////
                                                         // APPARITION ETAGE 1 ///////////
-
+                                                    
+        
+/*
         if(command === 'apparition_chemin') {
         if (!args.length) {
         return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
@@ -1498,7 +1500,7 @@
         var ennemies= Math.floor(`${args}`*x);
         var DELTA = Math.floor(`${args}`+1);
         if(ennemies > DELTA){
-            ennemies = ennemies -1;
+            ennemies = ennemies-1;
         }
         var A = 0; // Ccrocro
         var B = 0; // nid'rats
@@ -1516,6 +1518,73 @@
             C = C+1;
         }
         ennemies=ennemies-1;
+        } 
+        if(C < 1){
+        var mes = new Discord.RichEmbed() 
+        .setTitle(":vs: Des monstres viennent d'apparaitre !")
+        .addField(":rat: __**Crocro**__", "**Nombre de crocro :** " + A)
+        .addField(":rat: **__Nid'rats__**", "**Nombre de nid'rats :** "+B)
+        .addField(":rat: **__Crocro bipède__**", "**Nombre de crocro bipède :** "+D)
+        .setColor("#ff8300")
+        .setImage("https://i.pinimg.com/originals/71/71/c0/7171c0b7ba3b53ca7931581fc54f1f9e.jpg")
+        } else if(C > 0){
+        var mes = new Discord.RichEmbed()
+        .setTitle(":vs: Des monstres viennent d'apparaitre !\n Mais attention ! L'Alpha approche !")
+        .addField(":rat: __**Crocro**__", "**Nombre de crocro :** " + A)
+        .addField(":rat: **__Nid'rats__**", "**Nombre de nid'rats :** "+B)
+        .addField(":rat: **__Crocro bipède__**", "**Nombre de crocro bipède :** "+D)
+        .addField(":rat: **_Rat alpha__**", "**Nombre d'Alpha :** " + C)
+        .setColor("#ff8300")
+        .setImage("https://i.pinimg.com/originals/71/71/c0/7171c0b7ba3b53ca7931581fc54f1f9e.jpg")
+        }
+        message.channel.send(mes);
+        talkedRecently2.add(message.author.id);
+            setTimeout(() => {
+            // Removes the user from the set after a minute
+            talkedRecently2.delete(message.author.id);
+            }, 900000);
+            }
+        }
+
+        */
+
+       if(command === 'apparition_chemin') {
+        if (!args.length) {
+        return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
+        }
+        if (talkedRecently2.has(message.author.id)) {
+            message.channel.send("Attendre 15 minutes" + message.author);
+        } else {
+        var A = 0; // Ccrocro
+        var B = 0; // nid'rats
+        var C = 0; // Alpha
+        var D = 0; // crocro bipède
+        
+        for(i=`${args}` ;i!=0 ; i--){
+
+            var result = Math.floor((Math.random() * 100) + 1);
+            if(result < 85){
+            var x = x+1;
+            } else if (result < 95){
+            var x = x+2;
+            } else if (result < 101){
+            var x = x+3;
+            }
+            
+        }
+        var ennemies= x;
+        while(x!=0){  
+        var random = Math.floor((Math.random() * 100) + 1);
+        if(random < 50){
+            A = A+1;
+        } else if (random < 90){
+            D = D+1;
+        } else if (random < 97){
+            B = B+1;
+        } else if (random < 101){
+            C = C+1;
+        }
+        x=x-1;
         } 
         if(C < 1){
         var mes = new Discord.RichEmbed() 
