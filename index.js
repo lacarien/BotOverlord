@@ -1290,8 +1290,8 @@
     var maxs = Math.floor(Math.max(10)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
-    if(70 < result < 101){
-    var y = y/2;
+    if(result > 70){
+    var y = Math.floor(y/2);
     }
     if(result < 70)
     var mes = new Discord.RichEmbed()
