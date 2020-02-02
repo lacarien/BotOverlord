@@ -973,8 +973,8 @@
 
 
     if(message.content === préfix + "crocro_attaque" || message.content === préfix + "Crocro_attaque"){
-    var min = Math.floor(Math.min(70));
-    var max = Math.floor(Math.max(100)); 
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(12)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 80)
