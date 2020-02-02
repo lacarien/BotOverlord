@@ -137,7 +137,7 @@ if(message.content === préfix + "Forgeron coble" || message.content === préfix
     var y = new Discord.RichEmbed() 
     .addField("**Amélioratoin du métier forgeron**", "Vous venez utiliser 5 bouts de coble afin de vous entrainer au métier de forgeron\n**Gain d'XP dans le métier : **" + result)
     .setColor("#ff4600")
-    .setImage("https://cdn.discordapp.com/attachments/641777958490472478/665603893606088704/8yGu6L.png")
+    .setImage("https://media.discordapp.net/attachments/641777958490472478/665867066007355393/1189722-sans-titre-1-article_m-1.png")
     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
     message.channel.send(y);
     talkedRecently.add(message.author.id);
@@ -158,7 +158,7 @@ if(message.content === préfix + "Forgeron adamin" || message.content === préfi
     var y = new Discord.RichEmbed() 
     .addField("**Amélioratoin du métier forgeron**", "Vous venez utiliser 1 bout d'adamin afin de vous entrainer au métier de forgeron\n**Gain d'XP dans le métier : **" + result)
     .setColor("#ff4600")
-    .setImage("https://cdn.discordapp.com/attachments/641777958490472478/665603893606088704/8yGu6L.png")
+    .setImage("https://media.discordapp.net/attachments/641777958490472478/665867066007355393/1189722-sans-titre-1-article_m-1.png")
     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
     message.channel.send(y);
     talkedRecently.add(message.author.id);
@@ -178,7 +178,7 @@ if(message.content === préfix + "Forgeron rubi" || message.content === préfix 
     var y = new Discord.RichEmbed() 
     .addField("**Amélioratoin du métier forgeron**", "Vous venez utiliser 1 bout de rubi afin de vous entrainer au métier de forgeron\n**Gain d'XP dans le métier : **" + result)
     .setColor("#ff4600")
-    .setImage("https://cdn.discordapp.com/attachments/641777958490472478/665603893606088704/8yGu6L.png")
+    .setImage("https://media.discordapp.net/attachments/641777958490472478/665867066007355393/1189722-sans-titre-1-article_m-1.png")
     .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
     message.channel.send(y);
     talkedRecently.add(message.author.id);
