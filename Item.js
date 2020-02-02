@@ -207,7 +207,7 @@ var help_embed = new Discord.RichEmbed()
 message.channel.sendMessage(help_embed);
 }
 
-if(message.content === préfix + "Bois mediocre" || message.content === préfix + "bois mediocre"){
+if(message.content === préfix + "Bois médiocre" || message.content === préfix + "bois médiocre"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00148f")
     .addField("**Bois mediocre du palier 1**", " :fire: **Localisation : forêt brulée**\n:dollar: **Prix d'achat : 10 Mercure**\n:moneybag: **Prix de revente : 5 Mercure**\n:tools: **Utilisation : ** ``Casque de rat`` / ``Rat cuisiné``")
