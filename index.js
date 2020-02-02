@@ -100,7 +100,7 @@
                 message.channel.send("```fix\n-Du Lvl 1 à 10 vous gagnez à chaque level 3 points de caracthéristique```")
                 message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 100 XP\n#-Lvl  3 : 200 XP\n#-Lvl  4 : 300 XP\n#-LVl  5 : 400 XP\n#-Lvl  6 : 500 XP\n#-Lvl  7 : 600 XP\n#-Lvl  8 : 700 XP\n#-Lvl  9 : 800 XP\n#-Lvl  10 : 900 XP```");
                 message.channel.send(`${message.author} Voici le tableau des levels des metiers`);
-                message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 25 XP\n#-Lvl  3 : 50 XP\n#-Lvl  4 : 95XP\n#-LVl  5 : 140 XP\n#-Lvl  6 : 185 XP\n#-Lvl  7 : 245 XP\n#-Lvl  8 : 305 XP\n#-Lvl  9 : SOON XP\n#-Lvl  10 : SOON XP```");
+                message.channel.send("```markdown\n#-Lvl  1 : 0 XP\n#-LVl  2 : 25 XP\n#-Lvl  3 : 100 XP\n#-Lvl  4 : 200XP\n#-LVl  5 : 300 XP\n#-Lvl  6 : 450 XP\n#-Lvl  7 : 600 XP\n#-Lvl  8 : 750 XP\n#-Lvl  9 : 1000 XP\n#-Lvl  10 : SOON XP```");
             }
             if(message.content === préfix + "Bonus épéiste" || message.content === préfix + "bonus épéiste"){
                 var y = new Discord.RichEmbed()
