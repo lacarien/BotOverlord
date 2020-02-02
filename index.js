@@ -1389,20 +1389,25 @@
     var max = Math.floor(Math.max(30)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 50)
+    if(result < 50){
     var y = new Discord.RichEmbed()
     .setColor("#ff8300")
     .addField("Le Gnome fera apparaiître une boule de feu dans sa main droite et viendra vous l'envoyer à petite puissance !", ":crossed_swords:" + y)
-    if(result < 70)
+    }
+    else if(result < 70){
     var y = new Discord.RichEmbed()
     .setColor("#ff8300")
     .addField("Le Gnome fera apparaiître une boule de feu dans sa main gauche et viendra vous l'envoyer à petite puissance !\n l'armure ne réduira pas les dégâts !", ":crossed_swords:" + y)
-    else if (result < 101)
+    }
+    else if (result < 101){
     var y = new Discord.RichEmbed()
     .setTitle("Le Gnome essayera de lancer un boule de feu mais cette dernière vous froleras seulement")
     .setColor("#ff8300")
+    }
     message.channel.sendMessage(y);
     }
+
+
     if(command === 'gnome_défense'){
     if (!args.length) {
     return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
