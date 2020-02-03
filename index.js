@@ -1398,7 +1398,7 @@
         message.channel.sendMessage(mes);
         }
     
-        if(command === 'odagaron_défense'){
+        if(command === 'odogaron_défense'){
         if (!args.length) {
         return message.channel.send(`Il faut mettre les dégats que prends l’odagaron, ${message.author}!`);
         }
