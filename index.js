@@ -963,7 +963,6 @@
     if(XP<0){
         XP=0;
     }
-
     var y = new Discord.RichEmbed()
     .addField("////////////////////////////////////",":diamonds: **XP :** " + XP +"\n:euro: **Mercure :** " + Mercure + "\n:rat: **Peau de crocro :** "+ Peau +"\n:bug: **Queue de crocro :** " + Queu + "\n:eye: **Oeil de crocro :** " + Oeil)
     .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
@@ -1368,6 +1367,57 @@
     .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
     message.channel.send(y);
     }
+
+    if(message.content === préfix + "Odogaron") {
+        var result = new Discord.RichEmbed()
+        .addField("Nom du monstre", "**__Odogaron__**")
+        .setColor("#ff8300")
+        .setImage("https://media.discordapp.net/attachments/641777958490472478/673600831261769749/Odogaron.png?width=548&height=494")
+        .addField(":heart: HP","80")
+        .addField(":beginner: Passif", ":fire: Immunisé aux étourdissements")
+        .addField(":crossed_swords: Attaque", "?Odogaron_attaque")
+        .addField(":shield: Défense", "?Odogaro_défense  [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "?Récompenses_Odogaron [lvl]")
+        message.channel.send(result)
+        }
+    
+        if(message.content === préfix + "Odogaron_attaque"){
+        var min = Math.floor(Math.min(15));
+        var max = Math.floor(Math.max(25));
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var result = Math.floor((Math.random() * 100) + 1);
+        if(result < 30)
+        var mes = new Discord.RichEmbed()
+        .setColor("#ff8300")
+        .setImage("https://media.discordapp.net/attachments/641777958490472478/673591982412660776/6de69c4b7a15e8cfa75fa0d9929673c8.png?width=699&height=495")
+        .addField("L’Odogaron viendras vous mordre à la jambe et s’accorche à vous, il vous attaqueras encore au prochain tours", ":crossed_swords:" + y)
+        else if (result < 101)
+        var mes = new Discord.RichEmbed()
+        .addField("L’Odoragon vous donnerez un coups de griffe en plein dans le torse.", ":crossed_swords:" + y)
+        .setColor("#ff8300")
+        message.channel.sendMessage(mes);
+        }
+    
+        if(command === 'odagaron_défense'){
+        if (!args.length) {
+        return message.channel.send(`Il faut mettre les dégats que prends l’odagaron, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.4);
+        var min_value = Math.floor(`${args}`*1.1)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 85)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff8300")
+        .addField(":shield: L'Oragnator viendra réduire les dégâts",":anger: " + result)
+        else if (nombre< 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff8300")
+        .setImage(" ")
+        .setTitle(":loud_sound: L'Oragnator viendra faire un bond en arrière avant de vous hurler dessus, vous ne pourrez pas l'attaquer au prochain tour.")
+        message.channel.send(y);
+        }
+    
 
 
     if(message.content === préfix + "Gnome pyromane") {
