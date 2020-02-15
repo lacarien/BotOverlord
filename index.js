@@ -299,6 +299,8 @@
             .addField("**Voleur**", "LVL 1 : ?Coup_dague [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 4 ?Coup_fatal [Vos dégâts] **ou** ?Coup_simple [Vos dégats]\nLVL10 Evolution ?Assassin ou ?Ninja")
             .addField("**épéiste**", "LVL 1 : ?Coup_epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 4 ?Coup_perçant [Vos dégâts] **ou** ?Coup_saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
             .addField("**Paladin**", "LVL 1 : ?Coup_masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 4 ?Coup_provocateur [Vos dégâts] **ou** ?Cri de provocation \nLVL10 Evolution ?Juggernaut ou ?Seigneur")
+            .addField("**Mage**", "LVL 1 : ?Magie [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 4 ?Soins [HP de la cible] **ou** ?Pyromane [Vos dégats] \nLVL10 Evolution ?Sorcier de lumière ou ?Sorcier noir")
+            .addField("**Ranger**", "LVL 1 : ?Tire_arc [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 4 ?Tire_chargé [Vos dégâts] **ou** ?Tire_rapide [Vos dégats] \nLVL10 Evolution ?Archer ou ?Arbaletrier")
             .addField("**===================================**", "**===================================**")
             .addField("**Info pour les esquives", "Si vous avez 0 points en agilité : Esquive [dégats reçu]\n Si vous en avez 1 au total : Super_esquive [dégats reçu]\n Si 2 : Mega_esquive [dégats reçu]\n Si 3 : Supra_esquive [dégats reçu]\n Et si 4 : Divin_esquive [dégats_reçu]")
             .setColor("#ff4600")
