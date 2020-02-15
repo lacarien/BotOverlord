@@ -105,22 +105,32 @@
         if(message.content === préfix + "Bonus épéiste" || message.content === préfix + "bonus épéiste"){
             var y = new Discord.RichEmbed()
             .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+5HP** :heartpulse:\n**+0.5AR** :shield:")
-            .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+3AT** :crossed_swords: \n**+10HP** :heartpulse: \n **+0.5AR** :shield: ")
             .setImage("https://wallpaperaccess.com/full/141779.jpg")
             message.channel.send(y);
         }
         if(message.content === préfix + "Bonus voleur" || message.content === préfix + "bonus Voleur" || message.content === préfix + "bonus voleur" || message.content === préfix + "Bonus Voleur"){
             var y = new Discord.RichEmbed()
             .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+5HP** :heartpulse:")
-            .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+5AT** :crossed_swords: \n**+5HP** :heartpulse: \n **+0.1ES** :man_running: ")
             .setImage("https://i.pinimg.com/originals/5d/ff/3a/5dff3a4218e9cd05ac9e54da8f73741e.jpg")
             message.channel.send(y);
         }
         if(message.content === préfix + "Bonus paladin" || message.content === préfix + "bonus Paladin" || message.content === préfix + "bonus paladin"  || message.content === préfix + "Bonus Paladin"){
             var y = new Discord.RichEmbed()
             .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+10HP** :heartpulse:")
-            .addField("**__Du Lvl 11 à 20 pour chaque level__**","**+2AT** :crossed_swords: \n**+15HP** :heartpulse: \n **+0.5AR** :shield:")
             .setImage("https://images.alphacoders.com/522/thumb-1920-522947.jpg")
+            message.channel.send(y);
+        }
+
+        if(message.content === préfix + "Bonus mage" || message.content === préfix + "bonus Mage" || message.content === préfix + "bonus mage"  || message.content === préfix + "Bonus Mage"){
+            var y = new Discord.RichEmbed()
+            .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+1AT** :crossed_swords: \n**+10Mana** :cyclone:")
+            .setImage("https://cdn.wallpapersafari.com/20/78/pFZfM7.jpg")
+            message.channel.send(y);
+        }
+        if(message.content === préfix + "Bonus ranger" || message.content === préfix + "bonus Ranger" || message.content === préfix + "bonus ranger"  || message.content === préfix + "Bonus Ranger"){
+            var y = new Discord.RichEmbed()
+            .addField("**__Du Lvl 1 à 10 pour chaque level__**", "**+2AT** :crossed_swords: \n**+0.5AR** :shield:")
+            .setImage("https://stmed.net/sites/default/files/fantasy-archer-wallpapers-28134-4369491.jpg")
             message.channel.send(y);
         }
 
