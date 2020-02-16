@@ -664,7 +664,7 @@
         if(nombre < 75)
         var y = new Discord.RichEmbed()
         .setColor("#e21700")
-        .addField("**Vous venez donc tirer une dague sur votre adversaire**",":bow_and_arrow: " + result)
+        .addField("**Vous venez donc tirer une fèche sur votre adversaire**",":bow_and_arrow: " + result)
         .setImage("https://i.pinimg.com/736x/26/86/14/26861436bed060f4b7847c207eee2d2d.jpg")
         else if(nombre < 101)
         var y = new Discord.RichEmbed()
@@ -691,6 +691,27 @@
         var y = new Discord.RichEmbed()
         .setColor("#000000")
         .setAuthor("Votre tire ne touche pas la cible")
+        .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
+        message.channel.send(y);
+    }
+
+    if(command === 'soins'){
+        if (!args.length) {
+            return message.channel.send(`Merci d'écrire les hp de la cible, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*0.25);
+        var min_value = Math.floor(`${args}`*0.1)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 90)
+        var y = new Discord.RichEmbed()
+        .setColor("#e21700")
+        .addField("**Vous venez soignez n'importe quel cible (-30 de mana)**",":gift_heart: " + result)
+        .setImage("https://static.zerochan.net/White.Mage.%28Final.Fantasy.XIV%29.full.1779266.jpg  ")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Dommage...Dommage.....Vous échouez votre sort")
         .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
         message.channel.send(y);
     }
