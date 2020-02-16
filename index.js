@@ -705,7 +705,7 @@
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 90)
         var y = new Discord.RichEmbed()
-        .setColor("#e21700")
+        .setColor("#4aff00")
         .addField("**Vous venez soignez n'importe quel cible (-30 de mana)**",":gift_heart: " + result)
         .setImage("https://static.zerochan.net/White.Mage.%28Final.Fantasy.XIV%29.full.1779266.jpg  ")
         else if(nombre < 101)
@@ -715,6 +715,30 @@
         .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
         message.channel.send(y);
     }
+
+    if(command === 'pyromane'){
+        if (!args.length) {
+            return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.8);
+        var min_value = Math.floor(`${args}`*1.5)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var result = Math.floor(result/3);
+        if(nombre < 80)
+        var y = new Discord.RichEmbed()
+        .setColor("#e21700")
+        .addField("**Vous venez créer un cercle de feu en plein sur vos ennemies venant donc infliger des dégâts à 3 ennemies(-40 mana)**",":fire: " + result)
+        .setImage("https://blizzardwatch.com/wp-content/uploads/2018/02/Troll_Wars_magi_chronicle.jpg")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Votre magie ne touche pas la cible")
+        .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
+        message.channel.send(y);
+    }
+
+
 
 
 
