@@ -700,7 +700,7 @@
             return message.channel.send(`Merci d'écrire les hp de la cible, ${message.author}!`);
         }
         var nombre = Math.floor((Math.random() * 100) + 1);
-        var max_value = Math.floor(`${args}`*0.25);
+        var max_value = Math.floor(`${args}`*0.225);
         var min_value = Math.floor(`${args}`*0.1)
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 90)
