@@ -372,7 +372,7 @@
                             }
                             if(message.content === préfix + "Sorcier de lumière" || message.content === préfix + "Sorcier de lumiere" || message.content === préfix + "sorcier de lumiere" || message.content === préfix + "sorcier de lumière"){
                                 var help_embed = new Discord.RichEmbed()
-                                .setColor("#ffffff")
+                                .setColor("#f3f3f3")
                                 .addField("Sorcier de lumière", "Vous êtes un sorcier de lumière, un mixte entre support et dégâts")
                                 .addField("Liste d'attaque", "?Lumière attaque")
                                 .setImage("https://i.pinimg.com/originals/ba/b0/47/bab0477128ebf72bff045c996ec99865.jpg")
@@ -383,7 +383,7 @@
                                 var help_embed = new Discord.RichEmbed()
                                 .setColor("#000000")
                                 .addField("Sorcier noir", "Vous êtes un sorcier noir, vous êtes un mixte entre invocation et dégâts")
-                                .addField("Liste d'attaque", "?Lumière attaque")
+                                .addField("Liste d'attaque", "?Sombre attaque")
                                 .setImage("https://i.pinimg.com/originals/5c/73/71/5c7371fd78f4a6363668f71a11a63fcd.jpg")
                                 .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                                 message.channel.sendMessage(help_embed);
@@ -486,6 +486,8 @@
     .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
     message.channel.send(y);
     }
+
+    
 
 
     if(command === 'coup_perçant'){
@@ -650,26 +652,52 @@
         .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
         message.channel.send(y);
         }
-    if(command === 'coup_simple'){
+
+    if(command === 'tire_arc'){
+        if (!args.length) {
+            return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.6);
+        var min_value = Math.floor(`${args}`*1.4)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 75)
+        var y = new Discord.RichEmbed()
+        .setColor("#e21700")
+        .addField("**Vous venez donc tirer une dague sur votre adversaire**",":bow_and_arrow: " + result)
+        .setImage("https://i.pinimg.com/736x/26/86/14/26861436bed060f4b7847c207eee2d2d.jpg")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Votre tire ne touche pas la cible")
+        .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
+        message.channel.send(y);
+    }
+    
+    if(command === 'magie'){
         if (!args.length) {
             return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
         }
         var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*1.7);
-        var min_value = Math.floor(`${args}`*0.7)
+        var min_value = Math.floor(`${args}`*1.3)
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 80)
         var y = new Discord.RichEmbed()
         .setColor("#e21700")
-        .addField("**Vous utilisez votre dague venant planter l'ennemie**",":crossed_swords:" + result)
-        .setImage("https://cdn.discordapp.com/attachments/454694319396356128/664758075353464853/213802.png")
+        .addField("**Vous venez donc tirer une boule de magie sur votre adversaire**",":cyclone: " + result)
+        .setImage("https://s1.1zoom.me/big3/760/Mage_Staff_575569_3840x2160.jpg")
         else if(nombre < 101)
         var y = new Discord.RichEmbed()
         .setColor("#000000")
-        .setAuthor("Votre arme ne touche pas la cible")
+        .setAuthor("Votre tire ne touche pas la cible")
         .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
         message.channel.send(y);
-        }
+    }
+
+
+
+
 
 
 
