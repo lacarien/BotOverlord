@@ -694,8 +694,12 @@
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         var nombre = Math.floor((Math.random() * 100) + 1);
         i++;
+        if(i > 4){
+            nombre = 20;
+        }
         }
         var x = new Discord.RichEmbed()
+        .setTitle("**Vous perdez 20 de mana**")
         .setImage("https://i.pinimg.com/originals/5a/30/4c/5a304c2cbf402ddad31e253121471b3a.gif")
         message.channel.send(x);
     }
