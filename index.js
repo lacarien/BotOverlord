@@ -674,6 +674,29 @@
         message.channel.send(y);
     }
 
+    if(command === 'tire_rapide'){
+        if (!args.length) {
+            return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
+        }
+        var nombre = 70;
+        var i = 1;
+       
+        var max_value = Math.floor(`${args}`*0.8);
+        var min_value = Math.floor(`${args}`*0.6)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        while(nombre>30){
+        var y = new Discord.RichEmbed()
+        .setColor("#e21700")
+        .addField("**Vous venez donc tirer une fèche sur un adversaire** " + i + " fois",":bow_and_arrow: " + result)
+        message.channel.send(y);
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        i = i++;
+        }
+        var x = new Discord.RichEmbed()
+        .setImage("https://i.pinimg.com/originals/5a/30/4c/5a304c2cbf402ddad31e253121471b3a.gif")
+        message.channel.send(x);
+    }
+
     
     if(message.content === préfix + "Tire_charge" || message.content === préfix + "tire_charge"){
             var help_embed = new Discord.RichEmbed()
