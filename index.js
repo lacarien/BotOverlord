@@ -678,7 +678,7 @@
     if(message.content === préfix + "Tire_charge" || message.content === préfix + "tire_charge"){
             var help_embed = new Discord.RichEmbed()
             .setColor("#e21700")
-            .addField("**__Tire chargé__**", "Vous venez viser une cible et bandez votre arc, quoi que fasse la cette derniere elle ne pourra pas vous échaper jusqu'au prochain tire.\n``charge [vos dégâts]``")
+            .addField("**__Tire chargé__**", "Vous venez viser une cible et bandez votre arc, quoi que fasse la cette derniere elle ne pourra pas vous échaper jusqu'au prochain tire.(-30 Mana)\n``charge [vos dégâts]``")
             .setImage("http://fr.hdwall365.com/wallpapers/1603/Anime-girl-use-bow-magic-light_m.jpg")
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
         message.channel.sendMessage(help_embed);
@@ -689,7 +689,7 @@
             return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
         }
         var nombre = Math.floor((Math.random() * 100) + 1);
-        var max_value = Math.floor(`${args}`*3.1);
+        var max_value = Math.floor(`${args}`*3);
         var min_value = Math.floor(`${args}`*2.8)
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         if(nombre < 95){
