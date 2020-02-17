@@ -300,7 +300,7 @@
             .addField("**épéiste**", "LVL 1 : ?Coup_epee [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 4 ?Coup_perçant [Vos dégâts] **ou** ?Coup_saignant [Vos dégâts]  \nLVL10 Evolution ?Chevalier ou ?Samourai")
             .addField("**Paladin**", "LVL 1 : ?Coup_masse [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 4 ?Coup_provocateur [Vos dégâts] **ou** ?Cri de provocation \nLVL10 Evolution ?Juggernaut ou ?Seigneur")
             .addField("**Mage**", "LVL 1 : ?Magie [Vos dégats] + ?Blocage [Dégâts reçu]\nLVL 2 ?Esquive [Dégats reçu]\n LVL 4 ?Soins [HP de la cible] **ou** ?Pyromane [Vos dégats] \nLVL10 Evolution ?Sorcier de lumière ou ?Sorcier noir")
-            .addField("**Ranger**", "LVL 1 : ?Tire_arc [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 4 ?Tire_chargé [Vos dégâts] **ou** ?Tire_rapide [Vos dégats] \nLVL10 Evolution ?Archer ou ?Arbaletrier")
+            .addField("**Ranger**", "LVL 1 : ?Tire_arc [Vos dégats] + ?Esquive [Dégâts reçu]\nLVL 2 ?Blocage [Dégats reçu]\n LVL 4 ?Tire_charge **ou** ?Tire_rapide [Vos dégats] \nLVL10 Evolution ?Archer ou ?Arbaletrier")
             .addField("**===================================**", "**===================================**")
             .addField("**Info pour les esquives", "Si vous avez 0 points en agilité : Esquive [dégats reçu]\n Si vous en avez 1 au total : Super_esquive [dégats reçu]\n Si 2 : Mega_esquive [dégats reçu]\n Si 3 : Supra_esquive [dégats reçu]\n Et si 4 : Divin_esquive [dégats_reçu]")
             .setColor("#ff4600")
@@ -673,6 +673,38 @@
         .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")
         message.channel.send(y);
     }
+
+    
+    if(message.content === préfix + "Tire_charge" || message.content === préfix + "tire_charge"){
+            var help_embed = new Discord.RichEmbed()
+            .setColor("#e21700")
+            .addField("**__Tire chargé__**", "Vous venez viser une cible et bandez votre arc, quoi que fasse la cette derniere elle ne pourra pas vous échaper jusqu'au prochain tire.\n``charge [vos dégâts]``")
+            .setImage("http://fr.hdwall365.com/wallpapers/1603/Anime-girl-use-bow-magic-light_m.jpg")
+            .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
+        message.channel.sendMessage(help_embed);
+    }
+
+    if(command === 'charge'){
+        if (!args.length) {
+            return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*3.1);
+        var min_value = Math.floor(`${args}`*2.8)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 95){
+        var y = new Discord.RichEmbed()
+        .setColor("#e21700")
+        .addField("**Vous venez tirer une flèche puissante sur votre adversaire !**",":bow_and_arrow: " + result)
+        .setImage("https://i.pinimg.com/originals/09/18/dc/0918dcfc18aad8d08ec4ade717c271d5.gif")
+        }else if(nombre < 101){
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Votre attaque échoue")
+        .setImage("https://risibank.fr/cache/stickers/d225/22594-full.png")}
+        message.channel.send(y);
+    }
+
     
     if(command === 'magie'){
         if (!args.length) {
