@@ -687,10 +687,13 @@
         while(nombre>30){
         var y = new Discord.RichEmbed()
         .setColor("#e21700")
-        .addField("**Vous venez donc tirer une fèche sur un adversaire** " + i + " fois",":bow_and_arrow: " + result)
+        .addField("**Vous venez donc tirer une fèche sur un adversaire** " + i + " **fois**",":bow_and_arrow: " + result)
         message.channel.send(y);
+        var max_value = Math.floor(`${args}`*0.8);
+        var min_value = Math.floor(`${args}`*0.6);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         var nombre = Math.floor((Math.random() * 100) + 1);
-        i = i++;
+        i++;
         }
         var x = new Discord.RichEmbed()
         .setImage("https://i.pinimg.com/originals/5a/30/4c/5a304c2cbf402ddad31e253121471b3a.gif")
