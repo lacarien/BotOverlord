@@ -38,8 +38,8 @@
     eval(fs.readFileSync(__dirname + '/Shop.js')+'');
     eval(fs.readFileSync(__dirname + '/Item.js')+'');
     eval(fs.readFileSync(__dirname + '/amélioration.js')+'');
-    /*  eval(fs.readFileSync(__dirname + '/pnj.js')+'');
-        eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
+     eval(fs.readFileSync(__dirname + '/donjon.js')+'');
+        /*eval(fs.readFileSync(__dirname + '/Economie.js')+''); */
 
 
         
