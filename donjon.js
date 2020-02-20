@@ -9,6 +9,7 @@ if(message.content === préfix + "Donjon volcan" || message.content === préfix 
 }
 
 
+if (!message.content.startsWith(préfix) || message.author.bot) return;
 
 if(command === 'test') {
     if (!args.length) {
