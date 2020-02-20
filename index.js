@@ -2233,7 +2233,7 @@
                         .addField(":beginner: Passif", "Peu attaquer la 2eme ligne dans son ciblage")
                         .addField(":crossed_swords: Attaque", "?ecrocro_attaque")
                         .addField(":shield: Défense", "?ecrocro_défense  [dégats reçu]")
-                        .addField(":moneybag: Récompenses", "?Récompenses_ecrocro [lvl]")
+                        .addField(":moneybag: Récompenses", "Aucune, elle aura fuit juste avant de mourir :blush:")
                         .setImage("https://66.media.tumblr.com/31d60f3fc6d1a1012c5b336a14cbf1f0/tumblr_ol1vuqCWt51u68pxro1_400.png")
                         .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg")
                         
@@ -2260,7 +2260,8 @@
                  } else if (result < 80){
                 var y = new Discord.RichEmbed()
                 .addField("Le garde vous donnes un coup de dague et viendra faire rouler de son autre main une grenade toxique", ":crossed_swords:" + y)
-                .addField("La grenade toxique viendra rouler jusqu'à la personne à côté de vous venant lui infliger une crampe brutal", ":x: ")
+                .addField("La grenade toxique viendra rouler jusqu'à la personne à côté de vous venant lui infliger une crampebrutal", ":x: ")  
+                .setImage("https://image.freepik.com/photos-gratuite/fumee-verte_19-129684.jpg")
                 .setColor("#ff8300")
                  } else if (result < 101){
                 var y = new Discord.RichEmbed()
@@ -2290,6 +2291,45 @@
                     message.channel.send(y);
                 }
 
+                if(message.content === préfix + "Ecrocro_attaque" || message.content === préfix + "ecrocro_attaque"){
+                    var min = Math.floor(Math.min(40));
+                    var max = Math.floor(Math.max(55)); 
+                    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+                    var result = Math.floor((Math.random() * 100) + 1);
+                    if(result < 90){
+                    var y = new Discord.RichEmbed()
+                    .setColor("#ff8300")
+                    .addField("La crocro d'élite viens  vous donnes un coup de dague", ":crossed_swords:" + y)
+                     } else if (result < 101){
+                    var y = new Discord.RichEmbed()
+                    .addField("L'élite vient vous sauter dessus et vous donner un grand coup d'épée.", ":crossed_swords:" + y)
+                    .addField("Pas de bol pour vous...Vous serez sa prochaine cible automatiquement au prochain tour", ":dna: ")  
+                    .setImage("https://i.ytimg.com/vi/ryvfVkqWYbY/maxresdefault.jpg")
+                    .setColor("#ff8300")
+                     }
+                    message.channel.sendMessage(y);
+                }
+
+                if(command === 'ecrocro_défense'){
+                    if (!args.length) {
+                    return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+                    }
+                    var nombre = Math.floor((Math.random() * 100) + 1);
+                    var max_value = Math.floor(`${args}`*0.8);
+                    var min_value = Math.floor(`${args}`*0.6)
+                    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+                    if(nombre < 96)
+                    var y = new Discord.RichEmbed()
+                    .setColor("#ff8300")
+                    .addField(":shield: L'élite utilisera ses 2 épées afin de réduire les dégâts",":anger: " + result)
+                    else if (nombre< 101)
+                    var y = new Discord.RichEmbed()
+                    .setColor("#ff8300")
+                    .addField("L'élite n'a pas le temps de bloquer et se prend la totalité des dégâts",":octagonal_sign:  ")
+                    message.channel.send(y);
+                }
+
+                
                 
 
 
