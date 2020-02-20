@@ -8,7 +8,7 @@ if(message.content === préfix + "Donjon volcan" || message.content === préfix 
     message.channel.sendMessage(help_embed);
 }
 
-
+client.on("message",message =>{
 if (!message.content.startsWith(préfix) || message.author.bot) return;
 
 if(command === 'test') {
@@ -31,3 +31,4 @@ if(command === 'test') {
         }
     }    
 
+});
