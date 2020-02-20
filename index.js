@@ -150,7 +150,7 @@
 
         if(message.content === préfix + "Etats" || message.content === préfix + "etats" || message.content === préfix + "êtats" || message.content === préfix + "Êtats"){
             var y = new Discord.RichEmbed()
-            .addField("__**Liste des êtats**__", "**Paralysie : **``Vous ne pouvez pas vous défendres à la prochaine attaque que vous subissez.``\n**Saignement ou Poison :** ``Vous venez subir des dégâts bonus qui travèrse l'armure classique et magique (sauf si stuff particulier)``\n**SOON**")
+            .addField("__**Liste des êtats**__", "**Paralysie : **``Vous ne pouvez pas vous défendres à la prochaine attaque que vous subissez.``\n**Saignement ou Poison :** ``Vous venez subir des dégâts bonus qui travèrse l'armure classique et magique (sauf si stuff particulier)``\n**Crampe brutal :** ``Vous ne pouvez pas attaquer au prochain tours``\n**SOON**")
             .setColor("#ff4600")
             .setFooter("©[LCR] Production", "https://cdn.discordapp.com/attachments/625441285578162177/641778421277392907/art-romance-of-the-apocalypse-romantically-apocalyptic-comics-sunglasses-leather-jacket-mask-pilot.jpg");
             message.channel.send(y);
@@ -2244,7 +2244,57 @@
                 }
     
                 message.channel.send(mes);
-            }
+              }
+
+              // ATTAQUE DU GARDE
+                    
+            if(message.content === préfix + "Gcrocro_attaque" || message.content === préfix + "gcrocro_attaque"){
+                var min = Math.floor(Math.min(20));
+                var max = Math.floor(Math.max(30)); 
+                var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+                var result = Math.floor((Math.random() * 100) + 1);
+                if(result < 70){
+                var y = new Discord.RichEmbed()
+                .setColor("#ff8300")
+                .addField("Le garde vous donnes un coup de dague", ":crossed_swords:" + y)
+                 } else if (result < 80){
+                var y = new Discord.RichEmbed()
+                .addField("Le garde vous donnes un coup de dague et viendra faire rouler de son autre main une grenade toxique", ":crossed_swords:" + y)
+                .addField("La grenade toxique viendra rouler jusqu'à la personne à côté de vous venant lui infliger une crampe brutal", ":x: ")
+                .setColor("#ff8300")
+                 } else if (result < 101){
+                var y = new Discord.RichEmbed()
+                .setTitle("Le garde vient hurler de rage")
+                .setColor("#ff8300")}
+                message.channel.sendMessage(y);
+                }
+
+                // GARDE D2FENSE 
+
+                if(command === 'gcrocro_défense'){
+                    if (!args.length) {
+                    return message.channel.send(`Il faut mettre les dégats que prends le crocro, ${message.author}!`);
+                    }
+                    var nombre = Math.floor((Math.random() * 100) + 1);
+                    var max_value = Math.floor(`${args}`*1.1);
+                    var min_value = Math.floor(`${args}`*0.7)
+                    var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+                    if(nombre < 96)
+                    var y = new Discord.RichEmbed()
+                    .setColor("#ff8300")
+                    .addField(":shield: Le crocro garde viendra essayé de bloquer avec sa dague mais il ne pourra que réduire les coups",":anger: " + result)
+                    else if (nombre< 101)
+                    var y = new Discord.RichEmbed()
+                    .setColor("#ff8300")
+                    .addField("Le garde vous jetteras de la fumée verte à votre visage avant de reculer",":man_running:  ")
+                    message.channel.send(y);
+                }
+
+                
+
+
+
+            
              
     
     
