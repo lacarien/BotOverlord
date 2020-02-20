@@ -11,7 +11,8 @@ if(message.content === préfix + "Donjon volcan" || message.content === préfix 
 client.on("message",message2 =>{
 
     if (!message2.content.startsWith(préfix) || message2.author.bot) return;
-    const command = args.shift().toLowerCase();
+  
+    
 
     if(command === 'donjon_volcan') {
         if (!args.length) {
