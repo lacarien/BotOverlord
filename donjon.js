@@ -11,7 +11,7 @@ if(message.content === préfix + "Donjon volcan" || message.content === préfix 
 client.on("message",message2 =>{
 
     if (!message2.content.startsWith(préfix) || message2.author.bot) return;
-  
+    const args = message2.content.slice(préfix.length).split(' ');
     
 
     if(command === 'donjon_volcan') {
@@ -22,7 +22,7 @@ client.on("message",message2 =>{
             var result = Math.floor((Math.random() * 100) + 1);
             var multiple = multiple*`${args}`;
             nombre = nombre+10-multiple;
-            if(result<nombre){
+            if(result>nombre){
                 var result2 = Math.floor((Math.random() * 100) + 1);
                 if(result2<71){
                     message2.channel.send("``Durant votre longue marche vous tomberez face à 2 Crocro garde ! attention ! Voici donc les nobles crocro avec un QI moyen comme tout homme qui se respecte !``")
