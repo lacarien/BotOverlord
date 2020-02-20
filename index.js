@@ -2206,11 +2206,12 @@
             return message.channel.send(`Il faut mettre le numéro de l'étage !, ${message.author}!`);
             }
                 var nombre = 100;
+                var multiple = 10;
                 var result = Math.floor((Math.random() * 100) + 1);
                 var multiple = multiple*`${args}`;
                 var nombre = nombre+10-multiple;
+                var result2 = Math.floor((Math.random() * 100) + 1);
                 if(result<nombre){
-                    var result2 = Math.floor((Math.random() * 100) + 1);
                     if(result2<71){
                         message.channel.send("``Durant votre longue marche vous tomberez face à 2 Crocro garde ! attention ! Voici donc les nobles crocro avec un QI moyen comme tout homme qui se respecte !``")
                         var mes = new Discord.RichEmbed() 
