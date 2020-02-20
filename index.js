@@ -2291,6 +2291,41 @@
                     message.channel.send(y);
                 }
 
+                // RECOMPENSES CROCRO GARDE
+
+                if(command === 'récompenses_gcrocro'){
+                    if (!args.length) {
+                    return message.channel.send(`Il faut mettre ton lvl; ${message.author}!`);
+                    }
+                    var minXP = Math.floor(Math.min(25));
+                    var maxXP = Math.floor(Math.max(30)); 
+                    var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
+                    if(`${args}`<8){
+                    var A = Math.floor(5-`${args}`);
+                    var XP = Math.floor(XP*(1+(0.2*A)));
+                    }
+                    if(`${args}`>8){
+                    var A = Math.floor(5-`${args}`);
+                    var XP = Math.floor(XP*(1+(0.3*A)));
+                    }
+
+                    if(XP<0){
+                        XP=0;
+                    }
+                
+                    var minM = Math.floor(Math.min(15));
+                    var maxM = Math.floor(Math.max(25)); 
+                    var Mercure = Math.floor(Math.random() * (minM - maxM + 1) ) + minM;
+                    var y = new Discord.RichEmbed()
+                    .setTitle(":rat:  Récompenses du garde crocro")
+                    .addField("////////////////////////////////////",":diamonds: **XP :** " + XP)
+                    .setImage("https://static.ankama.com/dofus/www/game/items/200/15243.png")
+                    message.channel.send(y);
+                    }
+
+      
+                /// ATTAQUE ET DEFENSE ELITE CROCRO FORME 1
+
                 if(message.content === préfix + "Ecrocro_attaque" || message.content === préfix + "ecrocro_attaque"){
                     var min = Math.floor(Math.min(40));
                     var max = Math.floor(Math.max(55)); 
@@ -2328,6 +2363,8 @@
                     .addField("L'élite n'a pas le temps de bloquer et se prend la totalité des dégâts",":octagonal_sign:  ")
                     message.channel.send(y);
                 }
+
+
 
                 
                 
