@@ -18,9 +18,6 @@ client.on("message",message2 =>{
         if (!args.length) {
         return message2.channel.send(`Il faut mettre le numéro de l'étage !, ${message2.author}!`);
         }
-        if (talkedRecently2.has(message2.author.id)) {
-            message2.channel.send("Attendre 15 minutes" + message2.author);
-        } else {
             var nombre = 100;
             var result = Math.floor((Math.random() * 100) + 1);
             var multiple = multiple*`${args}`;
@@ -57,13 +54,9 @@ client.on("message",message2 =>{
                 var mes = new Discord.RichEmbed() 
                 .addField("TODO", "TODO")
             }
+
             message2.channel.send(mes);
-            talkedRecently2.add(message2.author.id);
-                setTimeout(() => {
-                // Removes the user from the set after a minute
-                talkedRecently2.delete(message2.author.id);
-                },  600000);
-                }
-            }    
+        }
+         
 
 });
