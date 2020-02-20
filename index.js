@@ -1450,8 +1450,8 @@
     }
 
     if(message.content === préfix + "Aragnator_attaque"){
-    var min = Math.floor(Math.min(20));
-    var max = Math.floor(Math.max(35)); 
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(20)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var mins = Math.floor(Math.min(5));
     var maxs = Math.floor(Math.max(10)); 
@@ -1551,7 +1551,7 @@
     
         if(message.content === préfix + "Odogaron_attaque"){
         var min = Math.floor(Math.min(15));
-        var max = Math.floor(Math.max(25));
+        var max = Math.floor(Math.max(23));
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
         var result = Math.floor((Math.random() * 100) + 1);
         if(result < 30)
@@ -1650,7 +1650,7 @@
 
     if(message.content === préfix + "Gnome_attaque"){
     var min = Math.floor(Math.min(20));
-    var max = Math.floor(Math.max(30)); 
+    var max = Math.floor(Math.max(25)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 50){
