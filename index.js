@@ -2301,11 +2301,11 @@
                     var maxXP = Math.floor(Math.max(30)); 
                     var XP = Math.floor(Math.random() * (maxXP - minXP + 1) ) + minXP;
                     if(`${args}`<8){
-                    var A = Math.floor(5-`${args}`);
+                    var A = Math.floor(8-`${args}`);
                     var XP = Math.floor(XP*(1+(0.2*A)));
                     }
                     if(`${args}`>8){
-                    var A = Math.floor(5-`${args}`);
+                    var A = Math.floor(7-`${args}`);
                     var XP = Math.floor(XP*(1+(0.3*A)));
                     }
 
