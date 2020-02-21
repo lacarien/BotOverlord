@@ -2239,8 +2239,11 @@
                         
                     }
                 } else {
+                    message.channel.send("@[LCR]Andraaz")
                     var mes = new Discord.RichEmbed() 
-                    .addField("TODO", "TODO")
+                    .addField("étage bonus ou malus ?", "**Vous arrivez donc à une salle à forte température...Au sommet ce trouve une forme humanoïde")
+                    .setImage("https://cdn.discordapp.com/attachments/641777958490472478/673608941355401234/6a644231008b7cba6abb3e13ee8b73c5.png")
+                    .setColor("#ff3d3d")
                 }
     
                 message.channel.send(mes);
