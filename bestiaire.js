@@ -1,3 +1,17 @@
+if(message.content === préfix + "Fuite" || message.content === préfix + "fuite") {
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(30 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#1fff00")
+    .setTitle("Vous fuyez")
+    else if(101 < result)
+    var result = new Discord.RichEmbed() 
+    .setColor("#ff0000")
+    .setTitle("La fuite est impossible")
+    message.channel.send(result);
+
+}
+
 if(message.content === préfix + "Tigrou") {
     var result = new Discord.RichEmbed() 
     .setTitle("Tigrou")
@@ -67,13 +81,13 @@ if(message.content === préfix + "Loot tigrou" || message.content === préfix + 
 
 if(message.content === préfix + "Arbros") {
     var result = new Discord.RichEmbed() 
-    .setTitle("Abros")
+    .setTitle("Arbros")
     .setColor("#223300")
-    .setImage("https://lh3.googleusercontent.com/proxy/I5dYoExTB5oJeoeLUTzybp5dpi7S-oDkPAxZ6cSRuZ-9yzCGv5nPfvzlBD85N5GUFtbH8sbi9MZA39vKqsplOrt61SH8PlI3Fk0o14Uc404g_Qr7gV010Bemg0mxHuyF5rAdBDGQI2c_0UsClmfmq6IYG9WAgxG468PWDTzTsQPHtT2lEPRkrWbqsQ")
-    .addField(":heart: HP","50")
+    .setImage("https://cdn.discordapp.com/attachments/712371639136026735/713126526597464064/hcOgYviAo_57fA5voaF-zysO3Jt52k8jsBaYJ-rKApGhjme6-Prudqmnun50ubmS1DebmXGFbjgJVx9p9UTIs8r-7lw1fLBIxi4Z.png")
+    .addField(":heart: HP","50")    
     .addField(":beginner: Passif", "Aucune")
-    .addField(":crossed_swords: Attaque", "?Abros attaque")
-    .addField(":shield: Défense", "?Abros blocage")
+    .addField(":crossed_swords: Attaque", "?Arbros attaque")
+    .addField(":shield: Défense", "?Arbros blocage")
     .addField(":moneybag: Récompenses", "?Loot arbros")
     message.channel.send(result)
 }
@@ -262,8 +276,8 @@ if(message.content === préfix + "Hibou") {
 }
 
 if(message.content === préfix + "Hibou attaque"  || message.content === préfix + "hibou attaque"){
-    var min = Math.floor(Math.min(20));
-    var max = Math.floor(Math.max(30)); 
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(35)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor(y*1.1);
     var result = Math.floor((Math.random() * 100) + 1);
@@ -309,4 +323,22 @@ if(message.content === préfix + "Géant") {
     .addField(":shield: Défense", "Aucune")
     .addField(":moneybag: Récompenses", "?Loot géant")
     message.channel.send(result)
+}
+
+if(message.content === préfix + "Géant attaque"  || message.content === préfix + "géant attaque"){
+    var min = Math.floor(Math.min(60));
+    var max = Math.floor(Math.max(80)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var x = Math.floor(y*1.5);
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 80){
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Le géant viendra vous donner un coup de pied", ":crossed_swords:" + y)
+    } else if (result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .addField("Pas de chance...Le géant était ''un peu enerve'', il viendra alors essayé de vous applatir au sol", ":crossed_swords:" + x)
+    }
+    message.channel.sendMessage(y);
 }
