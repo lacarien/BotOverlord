@@ -8,6 +8,7 @@ const talkedRecently3 = new Set()
 
 
 
+
 client.login(process.env.TOKEN);
 
 var préfix = "?";
@@ -194,6 +195,27 @@ client.on("message",message =>{
     }
 
 
+    if(command === 'atir'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.4);
+        var min_value = Math.floor(`${args}`*1.2)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 81)
+        var y = new Discord.RichEmbed()
+        .setColor("#019521")
+        .addField("**Vous infligez envoyez une flèche dans un point non vital de votre adversaire**",":crossed_swords:" + result)
+        .setImage("https://www.nautiljon.com/images/description/00/34/1437580520027_image.jpg")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Votre flèche ne touche pas la cible")
+        .setImage("https://hugelolcdn.com/i/64163.jpg")
+        message.channel.send(y);
+        }   
+
     if(command === 'tirrapide'){
         if (!args.length) {
             return message.channel.send(`Merci d'écrire votre attaque, ${message.author}!`);
@@ -201,7 +223,7 @@ client.on("message",message =>{
         var nombre = 70;
         var i = 1;
        
-        var max_value = Math.floor(`${args}`*0.55);
+        var max_value = Math.floor(`${args}`*0.60);
         var min_value = Math.floor(`${args}`*0.45)
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         while(nombre>35){
@@ -209,7 +231,7 @@ client.on("message",message =>{
         .setColor("#e21700")
         .addField("**Vous venez donc tirer une fèche sur un adversaire** " + i + " **fois**",":bow_and_arrow: " + result)
         message.channel.send(y);
-         var max_value = Math.floor(`${args}`*0.55);
+         var max_value = Math.floor(`${args}`*0.60);
         var min_value = Math.floor(`${args}`*0.45)
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         var nombre = Math.floor((Math.random() * 100) + 1);
@@ -223,6 +245,45 @@ client.on("message",message =>{
         .setImage("https://i.pinimg.com/originals/5a/30/4c/5a304c2cbf402ddad31e253121471b3a.gif")
         message.channel.send(x);
     }  
+
+    if(command === 'coupmultiple'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var max_value = Math.floor(`${args}`*2.2);
+        var min_value = Math.floor(`${args}`*1.4)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var y = new Discord.RichEmbed()
+        .setColor("#1a00ff")
+        .addField("**Vous venez infliger un combo à votre adversaire (-35 de mana)**",":crossed_swords:" + result)
+        .setImage("https://media.discordapp.net/attachments/534758707561496580/541557069506150420/Chevalier_Hish_Hish_lequipe_est_toka.gif")
+        message.channel.send(y);
+    }
+
+    if(command === 'chevalierultime'){
+        if (talkedRecently3.has(message.author.id)) {
+            message.channel.send("Attendre 24H" + message.author);
+        } else {
+
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2.1);
+        var min_value = Math.floor(`${args}`*1.6)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var y = new Discord.RichEmbed()
+        .setColor("#1a00ff")
+        .addField("**Vous infligez un gros coup d'épée à votre adversaire, il ne pourra pas se défendre pendant ce tour**",":crossed_swords:" + result)
+        .setImage("https://66.media.tumblr.com/737f6cd176072287264517f7c6706005/tumblr_ntncw6Psi91qa94xto1_400.gif")
+        message.channel.send(y);
+        talkedRecently3.add(message.author.id);
+        setTimeout(() => {
+        // Removes the user from the set after a minute
+        talkedRecently2.delete(message.author.id);
+        }, 86400000);
+        }
+    }
 
      //// BLOCAGE ////
         //// BLOCAGE ////
@@ -250,6 +311,8 @@ client.on("message",message =>{
         }
 
     // Palier 2 //
+    // Palier 2 //
+    // Palier 2 //
     if(command === 'mblocage'){
         if (!args.length) {
             return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
@@ -276,6 +339,45 @@ client.on("message",message =>{
         .addField(":shield: ** Vous bloquez l'attaque difficilement et ne prenez qu'une partie des dégâts**",":anger: " + result)
         .setImage("https://a-static.besthdwallpaper.com/knight-battle-wallpaper-2048x1152-15041_49.jpg")
         message.channel.send(y);
+        }
+
+    if(command === 'cblocage'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.70));
+        var max = Math.floor(Math.max(`${args}`*0.95)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#1a00ff")
+        .addField(":shield: ** Vous bloquez l'attaque difficilement et ne prenez qu'une partie des dégâts**",":anger: " + result)
+        .setImage("https://wallpaperaccess.com/full/311544.jpg")
+        message.channel.send(y);
+        }
+    
+    if(command === 'parade'){
+            if (!args.length) {
+                return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+            }
+            var min = Math.floor(Math.min(`${args}`*0.55));
+            var max = Math.floor(Math.max(`${args}`*0.80)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var mins = Math.floor(Math.min(`${args}`*1.2));
+            var maxs = Math.floor(Math.max(`${args}`*1.6)); 
+            var results = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+            var roll = Math.floor((Math.random() * 100) + 1);
+            if (roll < 30){
+            var y = new Discord.RichEmbed()
+            .setColor("#1a00ff")
+            .addField(":shield: ** Vous venez réussir la parade, venez donc renvoyer une partie des dégâts sur l'adversaire**",":crossed_swords: " + result)
+            .setImage("https://j.gifs.com/5QWDJB.gif")
+            }else if(roll < 101){
+            var y = new Discord.RichEmbed()
+            .setColor("#ff0000")
+            .addField(":fearful: **Pas de chance, vous loupez votre parade...**",":anger: " + results)
+            .setImage("http://i.imgur.com/Lpv5HId.jpg") 
+            }
+            message.channel.send(y);
         }
     
     //// BLOCAGE MONSTRE ////
@@ -342,6 +444,47 @@ client.on("message",message =>{
             C = C+1;
         }
         x=x-1;
+        } 
+        var mes = new Discord.RichEmbed()
+        .addField(":snake: __**Tigrou**__", "**Nombres :** " + A)
+        .addField(":evergreen_tree: **__Arbros_**", "**Nombres :** "+B)
+        .addField(":turtle: **__Tortank__**", "**Nombres :** "+C)
+        .setColor("#223300")
+        .setImage("https://i.pinimg.com/originals/14/c5/6b/14c56b6982992f51f1d2b54f775fe948.jpg")
+        message.channel.send(mes);
+        }
+    
+    if(command === 'spawnmarecagesafe') {
+        if (!args.length) {
+        return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
+        }
+        var A = 0; // Ccrocro
+        var B = 0; // nid'rats
+        var C = 0; // Alpha
+        var D = 0; // crocro bipède
+        var x = 0;
+        var i=`${args}`;
+        while(i!=0){
+    
+            var result = Math.floor((Math.random() * 100) + 1);
+            if(result < 90){
+            var x = x+1;
+            } else if (result < 101){
+            var x = x+2;
+            } 
+            i--;
+            
+        }
+        while(x!=0){  
+        var random = Math.floor((Math.random() * 100) + 1);
+        if(random < 60){
+            A = A+1;
+        } else if (random < 90){
+            B = B+1;
+        } else if (random < 101){
+            C = C+1;
+        }
+        x=0;
         } 
         var mes = new Discord.RichEmbed()
         .addField(":snake: __**Tigrou**__", "**Nombres :** " + A)
