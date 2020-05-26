@@ -199,7 +199,7 @@ if(message.content === préfix + "Goblin") {
     .setTitle("Goblin")
     .setColor("#58D68D")
     .setImage("https://cdn.discordapp.com/attachments/712345553895424011/712672362440425482/16-24-18-images.jpg")
-    .addField(":heart: HP","80")
+    .addField(":heart: HP","100")
     .addField(":beginner: Passif", "Est très relou")
     .addField(":crossed_swords: Attaque", "?Goblin attaque")
     .addField(":shield: Défense", "?Goblin esquive")
@@ -208,8 +208,8 @@ if(message.content === préfix + "Goblin") {
 }
 
 if(message.content === préfix + "Goblin attaque"  || message.content === préfix + "arbros attaque"){
-    var min = Math.floor(Math.min(15));
-    var max = Math.floor(Math.max(30)); 
+    var min = Math.floor(Math.min(35));
+    var max = Math.floor(Math.max(45)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     // Poison // 
     var mins = Math.floor(Math.min(5));
@@ -222,7 +222,7 @@ if(message.content === préfix + "Goblin attaque"  || message.content === préfi
     .setColor("#223300")
     .addField("Le goblin vient vous attaquer à l'aide de sa dague.", ":crossed_swords:" + y)
     message.channel.sendMessage(y);
-    if(result>80){
+    if(result>60){
     var y = new Discord.RichEmbed()    
         .addField("**Pas de chance, il vous empoisones et vous infliges du poison pendant 3 tours (non cumulable)**", ":green_heart: " + x + " (Le total est de : " + total + " )")
         .setColor("#000000")
@@ -267,7 +267,7 @@ if(message.content === préfix + "Hibou") {
     .setTitle("Hibou")
     .setColor("#58D68D")
     .setImage("https://i.redd.it/l1hi7um1wtl01.png")
-    .addField(":heart: HP","300")
+    .addField(":heart: HP","400")
     .addField(":beginner: Passif", "Croak ! Croak !")
     .addField(":crossed_swords: Attaque", "?Hibou attaque")
     .addField(":shield: Défense", "?BHibou [Dégâts reçu]")
@@ -276,8 +276,8 @@ if(message.content === préfix + "Hibou") {
 }
 
 if(message.content === préfix + "Hibou attaque"  || message.content === préfix + "hibou attaque"){
-    var min = Math.floor(Math.min(25));
-    var max = Math.floor(Math.max(35)); 
+    var min = Math.floor(Math.min(35));
+    var max = Math.floor(Math.max(50)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor(y*1.1);
     var result = Math.floor((Math.random() * 100) + 1);
@@ -326,8 +326,8 @@ if(message.content === préfix + "Géant") {
 }
 
 if(message.content === préfix + "Géant attaque"  || message.content === préfix + "géant attaque"){
-    var min = Math.floor(Math.min(60));
-    var max = Math.floor(Math.max(80)); 
+    var min = Math.floor(Math.min(80));
+    var max = Math.floor(Math.max(100)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor(y*1.5);
     var result = Math.floor((Math.random() * 100) + 1);
