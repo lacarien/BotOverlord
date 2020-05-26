@@ -1,10 +1,10 @@
 if(message.content === préfix + "Fuite" || message.content === préfix + "fuite") {
     var result = Math.floor((Math.random() * 100) + 1);
-    if(30 < result)
+    if(result < 30)
     var result = new Discord.RichEmbed() 
     .setColor("#1fff00")
     .setTitle("Vous fuyez")
-    else if(101 < result)
+    else if(result < 101)
     var result = new Discord.RichEmbed() 
     .setColor("#ff0000")
     .setTitle("La fuite est impossible")
@@ -147,7 +147,7 @@ if(message.content === préfix + "Tortank attaque" || message.content === préfi
     var max = Math.floor(Math.max(25)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 90)
+    if(result < 75)
     var y = new Discord.RichEmbed()
     .setColor("#223300")
     .addField("Tortank viendra vous donner un coup de queue. Attention au visage !", ":crossed_swords:" + y)
@@ -176,7 +176,7 @@ if(message.content === préfix + "Loot tortank" || message.content === préfix +
     // Pièce argent
     var mins = Math.floor(Math.min(0));
     var maxs = Math.floor(Math.max(2)); 
-    var x = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
 
     var y = new Discord.RichEmbed()
     .setColor("#223300")
