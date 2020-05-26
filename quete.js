@@ -14,7 +14,7 @@ if(message.content === préfix + "Quête cuivre" || message.content === préfix 
     else if(result < 70)
     var help_embed = new Discord.RichEmbed()
     .setTitle("Garde provisoire")
-    .setDescription("Vous devez protéger la ville humaine en tant que mercenaire pendant 8 heurs")
+    .setDescription("Vous devez protéger la ville humaine en tant que mercenaire pendant 4 heurs")
     .setImage("https://i.pinimg.com/originals/c0/b5/29/c0b52986ec21e80456871487b26f6ae7.jpg")
     .setColor("#000000")
     else if (result < 101)
@@ -34,8 +34,8 @@ if(message.content === préfix + "Quête cuivre" || message.content === préfix 
 
 if(message.content === préfix + "Quête cuivre accomplie"){
     var help_embed = new Discord.RichEmbed()
-    var mins = Math.floor(Math.min(5));
-    var maxs = Math.floor(Math.max(10)); 
+    var mins = Math.floor(Math.min(3));
+    var maxs = Math.floor(Math.max(5)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain de la récompense de la quête :exclamation: ",  ":third_place:  **Pièces de bronze :** " + x)
@@ -60,7 +60,7 @@ if(message.content === préfix + "Quête fer" || message.content === préfix + "
     else if(result < 70)
     var help_embed = new Discord.RichEmbed()
     .setTitle("Garde provisoire")
-    .setDescription("Vous devez protéger le petit village en tant que mercenaire pendant 8 heurs")
+    .setDescription("Vous devez protéger le petit village en tant que mercenaire pendant 4 heurs")
     .setImage("https://i.pinimg.com/originals/c0/b5/29/c0b52986ec21e80456871487b26f6ae7.jpg")
     .setColor("#000000")
     else if (result < 101)
@@ -80,8 +80,8 @@ if(message.content === préfix + "Quête fer" || message.content === préfix + "
 
 if(message.content === préfix + "Quête fer accomplie"){
     var help_embed = new Discord.RichEmbed()
-    var mins = Math.floor(Math.min(10));
-    var maxs = Math.floor(Math.max(15)); 
+    var mins = Math.floor(Math.min(5));
+    var maxs = Math.floor(Math.max(10)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var y = new Discord.RichEmbed()
     .addField("Gain de la récompense de la quête :exclamation: ",  ":third_place:  **Pièce(s) de bronze :**" + x)
