@@ -1,12 +1,12 @@
 if(message.content === préfix + "PC Druid"){
     var help_embed = new Discord.RichEmbed()
-    .setColor("#00ffe7")
+    .setColor("#8aff61")
     .setDescription("```Voici ce que vous pourrez gagner à chaque étape```")
-    .addField(":sparkles: **15PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?Sort naturel``")
-    .addField(":sparkles: **17PC**", "**Vous obtenez une nouvelle compétence :** :shield: ``?Blocage naturel``")
-    .addField(":sparkles: **20PC**", "**Vous obtenez une nouvelle compétence :** :heartpulse: ``?Soins de la forêt``")
+    .addField(":sparkles: **15PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?SortNaturel [Vos dégâts]``")
+    .addField(":sparkles: **17PC**", "**Vous obtenez une nouvelle compétence :** :shield: ``?DBlocage [Dégâts reçu]``")
+    .addField(":sparkles: **20PC**", "**Vous obtenez une nouvelle compétence :** :heartpulse: ``?DSoins [PV Max de la cible]``")
     .addField(":sparkles: **22PC**", "**Vous obtenez un bonus :** :blue_heart: ``100 de mana``")
-    .addField(":sparkles: **25PC**", "**Vous obtenez une nouvelle compétence :** :fleur_de_lis: ``?Druid ultime``")
+    .addField(":sparkles: **25PC**", "**Vous obtenez une nouvelle compétence :** :fleur_de_lis: ``?DruidUltime [Vos mana max]``")
     .addField(":sparkles: **30PC**", "**__Vous pouvez devenir Grand druid ou Prêtre__**")
     .setFooter("Menu Druid")
     message.channel.sendMessage(help_embed);
@@ -74,11 +74,12 @@ if(message.content === préfix + "PC Paladin"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#1a00ff")
     .setTitle("PC Paladin")
-    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-    .addField("15PC", "?P Coup d'épée + 60 de mana + ?Blocage supérieure")
-    .addField("18PC", "?Provocation simple")
-    .addField("25PC", "?Paladin ultime")
-    .addField("30PC", "Vous pouvez passer Clerc ou gardien")
+    .setDescription("```Voici ce que vous pourrez gagner à chaque étape```")
+    .addField(":sparkles: **15PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?PCoup [Vos dégâts]``")
+    .addField(":sparkles: **18PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?Provocation [Vos dégâts]``")
+    .addField(":sparkles: **22PC**", "**Vous obtenez un bonus :** :heart: ``50HP``")
+    .addField(":sparkles: **25PC**", "**Vous obtenez une nouvelle compétence :** :fleur_de_lis: ``?PaladinUltime [Vos HP max]``")
+    .addField(":sparkles: **15PC**", "**__Vous pouvez devenir Gardien ou Clerc__**")
     message.channel.sendMessage(help_embed);
 }
 
@@ -86,12 +87,12 @@ if(message.content === préfix + "PC Chevalier"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#1a00ff")
     .setTitle("PC Chevalier")
-    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-    .addField("15PC", "?Blocage amélioré ")
-    .addField("18PC", "?Coup multiple")
-    .addField("22PC", "?Parade")
-    .addField("25PC", "?Chevalier ultime")
-    .addField("30PC", "Vous pouvez passer Berserk ou Champion")
+    .setDescription("```Voici ce que vous pourrez gagner à chaque étape```")
+    .addField(":sparkles: **15PC**", "**Vous obtenez une nouvelle compétence :** :shield: ``?CBlocage [L'attaque que vous recevez]``")
+    .addField(":sparkles: **18PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?CoupMultiple [Vos dégâts]``")
+    .addField(":sparkles: **22PC**", "**Vous obtenez une nouvelle compétence :** :shield: ``?Parade [L'attaque que vous recevez]``")
+    .addField(":sparkles: **25PC**", "**Vous obtenez une nouvelle compétence :** :fleur_de_lis: ``?ChevalierUltime [Vos dégâts]``")
+    .addField(":sparkles: **15PC**", "**__Vous pouvez devenir Champion ou Berserk__**")
     message.channel.sendMessage(help_embed);
 }
 if(message.content === préfix + "PC Berserk"){
@@ -162,12 +163,12 @@ if(message.content === préfix + "PC Sorcier"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#00ffe7")
     .setTitle("PC Sorcier")
-    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-    .addField("15PC", "?Sort simple + 70 de Mana")
-    .addField("18PC", "?Sort de soins")
-    .addField("22PC", "?Tornade de flamme")
-    .addField("25PC", " ?Sorcier ultime")
-    .addField("30PC", "Vous pouvez passer Nécromancien, grand sorcier, ou prêtre")
+    .setDescription("```Voici ce que vous pourrez gagner à chaque étape```")
+    .addField(":sparkles: **15PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?Sort [Vos dégâts]``")
+    .addField(":sparkles: **18PC**", "**Vous obtenez un nouvelle compétence :** :heartpulse:  ``?mSoin``")
+    .addField(":sparkles: **22PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?Tornade [Vos dégâts]``")
+    .addField(":sparkles: **25PC**", "**Vous obtenez une nouvelle compétence :** :shield: ``?SorcierUltime``")
+    .addField(":sparkles: **30PC**", "**__Vous pouvez devenir Grand sorcier ou Necromancien ou Prêtre__**")
     message.channel.sendMessage(help_embed);
 }
 if(message.content === préfix + "PC Nécromancien"){
@@ -189,12 +190,13 @@ if(message.content === préfix + "PC Nécromancien"){
 if(message.content === préfix + "PC Assassin"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ff0000")
-    .setTitle("PC Assassin")
-    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-    .addField("15PC", "?Coup de dague")
-    .addField("20PC", "?Camouflage")
-    .addField("25PC", "?Assassin ultime")
-    .addField("30PC", "Vous pouvez passer Grand Assassin ou Ninja")
+    .setTitle("PC Voleur")
+    .setDescription("```Voici ce que vous pourrez gagner à chaque étape```")
+    .addField(":sparkles: **15PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?CoupDague [Vos dégâts]``")
+    .addField(":sparkles: **18PC**", "**Vous obtenez un bonus :** :shield: ``?Esquive [dégâts que vous prennez]``")
+    .addField(":sparkles: **22PC**", "**Vous obtenez une nouvelle compétence :** :bust_in_silhouette: ``?Camouflage``")
+    .addField(":sparkles: **25PC**", "**Vous obtenez une nouvelle compétence :** :fleur_de_lis: ``?AssassinUltime [Vos dégâts]`")
+    .addField(":sparkles: **30PC**", "**__Vous pouvez devenir Grand assassin ou Ninja__**")
     message.channel.sendMessage(help_embed);
 }
 if(message.content === préfix + "PC Grand Assassin"){
@@ -217,14 +219,12 @@ if(message.content === préfix + "PC Archer"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#019521")
     .setTitle("PC Archer")
-    .setDescription("Voici ce que vous pourrez gagner à chaque étape")
-    .addField("15PC", "?Tir amélioré")
-     .addField("18PC", "?Esquive simple")
-    .addField("20PC", "?Fuite amélioré")
-    .addField("22PC", "?Flèche empoisonné")
-    .addField("23PC", "?Régénération de mana supérieur")
-    .addField("25PC", "?Archer ultime")
-    .addField("30PC", "Vous pouvez évoluer")
+    .setDescription("```Voici ce que vous pourrez gagner à chaque étape```")
+    .addField(":sparkles: **15PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?ATir [Vos dégâts]``")
+    .addField(":sparkles: **18PC**", "**Vous obtenez une nouvelle compétence :** :shield: ``?AEsquive [dégâts reçu]``")
+    .addField(":sparkles: **22PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?FlecheEmpoisonne [Vos dégâts]``")
+    .addField(":sparkles: **25PC**", "**Vous obtenez une nouvelle compétence :** :fleur_de_lis: ``?ArcherUltime [Vos dégâts]``")
+    .addField(":sparkles: **30PC**", "**__Vous pouvez devenir Grand archer ou Tireur d'élite__**")
     message.channel.sendMessage(help_embed);
 }
 
