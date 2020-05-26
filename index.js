@@ -8,13 +8,11 @@ const talkedRecently3 = new Set()
 
 
 
-
 client.login(process.env.TOKEN);
 
 var préfix = "?";
 var fs = require("fs")
 var vm = require('vm')
-
 
 client.on("message",message =>{
 
@@ -29,7 +27,9 @@ client.on("message",message =>{
     eval(fs.readFileSync(__dirname + '/PC.js')+'');
     eval(fs.readFileSync(__dirname + '/race.js')+'');
     eval(fs.readFileSync(__dirname + '/bestiaire.js')+''); 
-    eval(fs.readFileSync(__dirname + '/quete.js')+''); 
+    eval(fs.readFileSync(__dirname + '/quete.js')+'');
+    eval(fs.readFileSync(__dirname + '/pcp.js')+''); 
+ 
 
     ////////////////// LES BASES ////////////////////
         ////////////////// LES BASES ////////////////////
@@ -63,7 +63,7 @@ client.on("message",message =>{
         var help_embed = new Discord.RichEmbed()
         .setColor("#ffd100")
         .setImage("https://i.pinimg.com/originals/aa/02/d4/aa02d477025b498c0e6a462c5c156f29.gif")
-        .addField("**Les thermes**", "**Lvl :**Level (Il faut donc faire : ?Lvl [Nom de la race ou classe])\n**PC :** Point de caractéristique, quand vous augmentais un level vous pourrez les dépenser dans une stats\n\n__**Comment augmenter de lvl et à quoi cela sert ? :**__ Plus vous allez RP, plus vous allez augmenter de"
+        .addField("**Les thermes**", "**Lvl :**Level, vous commencez au lvl 0, petit à petit vous allez monter en lvl et débloquer des nouvelles compétences ``?PC [Nom de classe]\n**PC :** Point de caractéristique, quand vous augmentais un level vous pourrez les dépenser dans une stats\n\n__**Comment augmenter de lvl et à quoi cela sert ? :**__ Plus vous allez RP, plus vous allez augmenter de"
         + "level via un bot (Mee6 ou autre, je verrais). Les Lvl vont vous faires débloquer des bonus actifs comme des nouvelles compétences ou un simple ''bonus''.\n\n__**Comment utiliser ses ''PC'' :**__ Lorsque vous montez de lvl vous obtenez des points que vous pourrez attribuer dans votre fiche, soit dans ''attaque'', soit dans __''mana'', soit dans ''HP'', ou bien dans ''armure''__."
         +" Pour savoir combien vous gagnez de PC par level : ``?Gain``. Pour savoir les bonus de stats sur vos classes : ``?Bonus [Nom de la classe]``")
         .setFooter("Menu Lvl")
@@ -118,7 +118,7 @@ client.on("message",message =>{
     var max_value = Math.floor(`${args}`*1.3);
     var min_value = Math.floor(`${args}`*1.1)
     var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
-    if(nombre < 81)
+    if(nombre < 85)
     var y = new Discord.RichEmbed()
     .setColor("#019521")
     .addField("**Vous infligez envoyez une flèche dans le torse de votre adversaire**",":crossed_swords:" + result)
@@ -139,7 +139,7 @@ client.on("message",message =>{
         var max_value = Math.floor(`${args}`*1.35);
         var min_value = Math.floor(`${args}`*1.05);
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
-        if(nombre < 81)
+        if(nombre < 85)
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
         .addField("**Vous donnez un coup de dague sur votre ennemi**",":crossed_swords:" + result)
@@ -160,7 +160,7 @@ client.on("message",message =>{
         var max_value = Math.floor(`${args}`*1.4);
         var min_value = Math.floor(`${args}`*1.2);
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
-        if(nombre < 81)
+        if(nombre < 90)
         var y = new Discord.RichEmbed()
         .setColor("#00ffe7")
         .addField("**Vous lancez un sort sur votre adversaire (-5 de mana)**",":crossed_swords:" + result)
@@ -214,7 +214,56 @@ client.on("message",message =>{
         .setAuthor("Votre flèche ne touche pas la cible")
         .setImage("https://hugelolcdn.com/i/64163.jpg")
         message.channel.send(y);
-        }   
+        }
+
+    if(command === 'flecheempoisonne'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.3);
+        var min_value = Math.floor(`${args}`*1.1)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var max_value = Math.floor(`${args}`*0.4);
+        var min_value = Math.floor(`${args}`*0.3)
+        var Z = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 85)
+        var y = new Discord.RichEmbed()
+        .setColor("#019521")
+        .addField("**Vous viendrez à tirer une flèche lui infligeant des dégâts lambdas. Néanmoins, vous lui infligez un poison pendant 3 tours (-50 de mana)**",":crossed_swords: " + result +"\n:green_heart: " + Z)
+        .setImage("https://24.media.tumblr.com/1980eacaab2929954387023985d34a99/tumblr_mv4kg0ZVGT1sawx0po1_500.gif")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Votre flèche ne touche pas la cible")
+        .setImage("https://hugelolcdn.com/i/64163.jpg")
+        message.channel.send(y);
+        }  
+        
+    if(command === 'archerultime'){
+        if (talkedRecently3.has(message.author.id)) {
+            message.channel.send("Attendre 24H" + message.author);
+        } else {
+
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*3.2);
+        var min_value = Math.floor(`${args}`*2.5)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var y = new Discord.RichEmbed()
+        .setColor("#019521")
+        .addField("**Vous venez à viser la ciel avant de lancer une grande charge de flèches...Ces dernières viendront se répartir sur ''tout les ennemies''**",":bow_and_arrow: " + result)
+        .setImage("https://cdn.discordapp.com/attachments/712353987797713016/714128529662410782/PhoebusFAAOE.gif")
+        message.channel.send(y);
+        talkedRecently3.add(message.author.id);
+        setTimeout(() => {
+        // Removes the user from the set after a minute
+        talkedRecently2.delete(message.author.id);
+        }, 86400000);
+        }
+    }
 
     if(command === 'tirrapide'){
         if (!args.length) {
@@ -270,12 +319,12 @@ client.on("message",message =>{
         }
         var nombre = Math.floor((Math.random() * 100) + 1);
         var max_value = Math.floor(`${args}`*2.1);
-        var min_value = Math.floor(`${args}`*1.6)
+        var min_value = Math.floor(`${args}`*1.7)
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         var y = new Discord.RichEmbed()
         .setColor("#1a00ff")
-        .addField("**Vous infligez un gros coup d'épée à votre adversaire, il ne pourra pas se défendre pendant ce tour**",":crossed_swords:" + result)
-        .setImage("https://66.media.tumblr.com/737f6cd176072287264517f7c6706005/tumblr_ntncw6Psi91qa94xto1_400.gif")
+        .addField("**Vous infligez lourd combo sur votre adversaire venant l'empecher de bloquer au prochain coup**",":crossed_swords:" + result)
+        .setImage("https://thumbs.gfycat.com/JampackedAjarJuliabutterfly-size_restricted.gif")
         message.channel.send(y);
         talkedRecently3.add(message.author.id);
         setTimeout(() => {
@@ -283,6 +332,292 @@ client.on("message",message =>{
         talkedRecently2.delete(message.author.id);
         }, 86400000);
         }
+    }
+
+    if(command === 'pcoupepee'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.35);
+        var min_value = Math.floor(`${args}`*1.1)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 85)
+        var y = new Discord.RichEmbed()
+        .setColor("#1a00ff")
+        .addField("**Vous infligez un bon coup d'épée lourd en plein dans le corps de votre adversaire**",":crossed_swords:" + result)
+        .setImage("https://cdnb.artstation.com/p/assets/images/images/008/680/477/large/jason-kang-battleofthetrident1-5000.jpg")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Votre épée ne touche pas la cible")
+        .setImage("https://hugelolcdn.com/i/64163.jpg")
+        message.channel.send(y);
+    }
+
+    if(command === 'provocation'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.6);
+        var min_value = Math.floor(`${args}`*1.35)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 90)
+        var y = new Discord.RichEmbed()
+        .setColor("#1a00ff")
+        .addField("**Vous venez infliger un gros coup d'épée contre la tête de votre cible. Ce dernier sera provoqué pendant un tour. (-30 Mana)**",":crossed_swords:" + result)
+        .setImage("https://images8.alphacoders.com/895/895034.png")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Votre épée ne touche pas la cible")
+        .setImage("https://hugelolcdn.com/i/64163.jpg")
+        message.channel.send(y);
+    }
+
+    if(command === 'paladinultime'){
+        if (talkedRecently3.has(message.author.id)) {
+            message.channel.send("Attendre 24H" + message.author);
+        } else {
+
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*0.4);
+        var min_value = Math.floor(`${args}`*0.2)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var y = new Discord.RichEmbed()
+        .setColor("#1a00ff")
+        .addField("**Vous venez à régéner une partie de vos HP**","💗 " + result)
+        .setImage("https://i.pinimg.com/originals/15/01/da/1501dae0620f3629be8758057b0d88d8.gif")
+        message.channel.send(y);
+        talkedRecently3.add(message.author.id);
+        setTimeout(() => {
+        // Removes the user from the set after a minute
+        talkedRecently2.delete(message.author.id);
+        }, 86400000);
+        }
+    }
+
+    if(command === 'coupdague'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.45);
+        var min_value = Math.floor(`${args}`*1.15);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 85)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous donnez un coup de dague sur votre ennemi**",":crossed_swords:" + result)
+        .setImage("https://i.pinimg.com/600x315/6b/4d/0f/6b4d0f7ef72fa52f273b7944bd8f6588.jpg")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Vous ratez votre attaque.")
+        .setImage("https://media.discordapp.net/attachments/708297061841240064/712656080655876226/131-1311442_anime-facepalm-png-download-facepalm-itachi.png?width=823&height=560")
+        message.channel.send(y);
+    }
+    if(command === 'backstab'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.60);
+        var min_value = Math.floor(`${args}`*1.35);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Soudainement, vous venez donner un coup de dague dans le dos de votre ennemie. Si vous visez une personne en deuxieme ligne, elle poura bloquer. Si elle est en première ligne, elle ne pourra pas bloquer l'attaque.**",":crossed_swords:" + result)
+        .setImage("https://media.giphy.com/media/ghN7IO4Yegk5EykJy0/giphy.gif")
+        message.channel.send(y);
+    }
+    if(command === 'assassinultime'){
+        if (talkedRecently3.has(message.author.id)) {
+            message.channel.send("Attendre 24H" + message.author);
+        } else {
+
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*2.8);
+        var min_value = Math.floor(`${args}`*2.3)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous venez à utiliser votre compétence ultime...Cette derniere ne prend pas en compte l'armure et elle fait mal...Très mal...**",":crossed_swords:" + result)
+        .setImage("https://media1.giphy.com/media/W6L04hmDMSOvnZSpLu/giphy.gif")
+        message.channel.send(y);
+        talkedRecently3.add(message.author.id);
+        setTimeout(() => {
+        // Removes the user from the set after a minute
+        talkedRecently2.delete(message.author.id);
+        }, 86400000);
+        }
+    }
+
+    if(command === 'sort'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.5);
+        var min_value = Math.floor(`${args}`*1.3)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 91)
+        var y = new Discord.RichEmbed()
+        .setColor("#00ffe7")
+        .addField("**Vous vennez à envoyer une attaque magique sur votre adversaire(-10 de mana)**",":crossed_swords:" + result)
+        .setImage("https://i.ytimg.com/vi/tZaw6kOfrJM/maxresdefault.jpg")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Votre sort ne touche pas la cible")
+        .setImage("https://hugelolcdn.com/i/64163.jpg")
+        message.channel.send(y);
+    }
+
+    if(message.content === préfix + "Msoin" || message.content === préfix + "msoin" ){
+        var min = Math.floor(Math.min(40));
+        var max = Math.floor(Math.max(65)); 
+        var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .addField("Vous soignez une personne au choix, ou bien vous même grâce à votre mana intérieur (-50 de mana)", ":heartpulse: "+y)
+        .setImage("https://vignette.wikia.nocookie.net/segashareduniverse/images/7/76/Yuri_casting_your_healing_spell.png/revision/latest?cb=20181218234411")
+        .setColor("#00ffe7")
+        message.channel.send(y);
+    }
+
+    if(command === 'tornade'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.9);
+        var min_value = Math.floor(`${args}`*1.6);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var max_value = Math.floor(`${args}`*0.4);
+        var min_value = Math.floor(`${args}`*0.2);
+        var fire = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 60)
+        var y = new Discord.RichEmbed()
+        .setColor("#00ffe7")
+        .addField("**Vous venez à invoquer une tornade de flamme sur votre adversaire (-200 Mana)**",":crossed_swords: " + result)
+        .setImage("https://cdn.discordapp.com/attachments/706480568350539799/714424585445048330/youtube-video-gif.gif")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#00ffe7")
+        .addField("**Vous venez à invoquer une tornade de flamme sur votre adversaire (-200 Mana). La personne subira également des dégâts pendant 2 tours.**", ":crossed_swords: " + result +"\n:fire: "+ fire)
+        .setImage("https://cdn.discordapp.com/attachments/706480568350539799/714424585445048330/youtube-video-gif.gif")
+        message.channel.send(y);
+    }
+
+    if(message.content === préfix + "SorcierUltime" || message.content === préfix + "Sorcierultime"  || message.content === préfix + "sorcierultime"){
+        if (talkedRecently3.has(message.author.id)) {
+            message.channel.send("Attendre 24H" + message.author);
+        } else {
+        var y = new Discord.RichEmbed()
+        .setColor("#00ffe7")
+        .setTitle("Invocation totem d'armure")
+        .setDescription("``Le Totem viendra à se placer en première ligne(Il est compris dans le ciblage et est immortel). Ce dernier réduira de moitié les deux prochaines attaques de l'adversaire. Suite à quoi il disparaitra``")
+        .setImage("https://images.squarespace-cdn.com/content/v1/54f4e2c7e4b0f594d25f45c4/1457717565636-HQRRG7ZKS9BI4MIT10TJ/ke17ZwdGBToddI8pDm48kMw3l0E24p07yHIbz4CHF117gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmEZprBMNaW6dUYQUrCwR2cRPwEuHaDROCWqP6EPqVv8Oh4bRKvO-vD_TOgKDNw0Pw/LeeshaHannigan_Paladins")
+        message.channel.send(y);
+        talkedRecently3.add(message.author.id);
+        setTimeout(() => {
+        // Removes the user from the set after a minute
+        talkedRecently2.delete(message.author.id);
+        }, 86400000);
+        }
+    }
+
+    if(command === 'sortnaturel'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*1.4);
+        var min_value = Math.floor(`${args}`*1.2)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 61)
+        var y = new Discord.RichEmbed()
+        .setColor("#8aff61")
+        .addField("**Vous vennez à utiliser une attaque magique de la classe de druid(-10 de mana)**",":crossed_swords:" + result)
+        .setImage("https://vistapointe.net/images/druid-3.jpg")
+        else if(nombre < 90)
+        var y = new Discord.RichEmbed()
+        .setColor("#8aff61")
+        .addField("**Vous vennez à utiliser une attaque magique de la classe de druid(-10 de mana). Vous avez au passage drainé la cible offrant 10 :heartpulse: à la personne de votre choix.**",":crossed_swords:" + result + "")
+        .setImage("https://vistapointe.net/images/druid-3.jpg")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#8aff61")
+        .setAuthor("Votre sort ne touche pas la cible")
+        .setImage("https://hugelolcdn.com/i/64163.jpg")
+        message.channel.send(y);
+    }
+
+    if(command === 'dsoins'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*0.25);
+        var min_value = Math.floor(`${args}`*0.15)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 95)
+        var y = new Discord.RichEmbed()
+        .setColor("#8aff61")
+        .addField("**Vous venez à envoyer un sort de soins sur une cible, cette dernière viendra voir ses HP régénerer (-200 de mana)**",":heartbeat:" + result)
+        .setImage("https://pa1.narvii.com/6991/d57009e7948e65b55d1657073ff902317dd87370r1-640-360_hq.gif")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Votre sort ne prend pas effet")
+        .setImage("https://hugelolcdn.com/i/64163.jpg")
+        message.channel.send(y);
+    }
+
+    if(command === 'druidultime'){
+        if (talkedRecently3.has(message.author.id)) {
+            message.channel.send("Attendre 24H" + message.author);
+        } else {
+
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var delta =Math.floor(`${args}` / 2);
+        if(delta>300){
+            delta=300;
+        }
+        var y = new Discord.RichEmbed()
+        .setColor("#8aff61")
+        .setTitle("Invocation cerf magique")
+        .addField("--------------------------", ":hearts: **HP :** " + delta+"\n:shield: **Blocage :** Aucun\n:heartbeat: **Attaque :** ?csoins [nombre d'HP max]")
+        .setImage("https://i.pinimg.com/originals/72/7c/df/727cdf96bd1f4343140dd937de5391a6.gif")
+        message.channel.send(y);
+        talkedRecently3.add(message.author.id);
+        setTimeout(() => {
+        // Removes the user from the set after a minute
+        talkedRecently2.delete(message.author.id);
+        }, 86400000);
+        }
+    }
+    if(command === 'csoins'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*0.15);
+        var min_value = Math.floor(`${args}`*0.10)
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        var y = new Discord.RichEmbed()
+        .setColor("#8aff61")
+        .addField("**le cerf va donc régénérer les HP d'une cible.**",":heartbeat:" + result)
+        message.channel.send(y);
     }
 
      //// BLOCAGE ////
@@ -359,8 +694,8 @@ client.on("message",message =>{
             if (!args.length) {
                 return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
             }
-            var min = Math.floor(Math.min(`${args}`*0.55));
-            var max = Math.floor(Math.max(`${args}`*0.80)); 
+            var min = Math.floor(Math.min(`${args}`*0.70));
+            var max = Math.floor(Math.max(`${args}`*0.85)); 
             var result = Math.floor(Math.random() * (max - min + 1) ) + min;
             var mins = Math.floor(Math.min(`${args}`*1.2));
             var maxs = Math.floor(Math.max(`${args}`*1.6)); 
@@ -380,6 +715,61 @@ client.on("message",message =>{
             message.channel.send(y);
         }
     
+
+    if(command === 'esquive'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.9));
+        var max = Math.floor(Math.max(`${args}`*1.1)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var roll = Math.floor((Math.random() * 100) + 1);
+        if (roll < 50){
+        var y = new Discord.RichEmbed()
+        .setColor("#00ff27")
+        .setTitle("Votre esquive est réussie, mais attention...Ne prenez pas trop la confiance")
+        .setImage("https://i.pinimg.com/originals/c5/d9/b5/c5d9b5cc51f04fba8d890e4b7b4589f4.gif")
+        }else if(roll < 101){
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("Vous subissez une grande partie des dégâts", ":anger: " + result)
+        }
+        message.channel.send(y);
+    }
+    if(command === 'aesquive'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.9));
+        var max = Math.floor(Math.max(`${args}`*1.1)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var roll = Math.floor((Math.random() * 100) + 1);
+        if (roll < 35){
+        var y = new Discord.RichEmbed()
+        .setColor("#019521")
+        .setTitle("Votre esquive est réussie, mais attention...Vous avez eu de la chance")
+        .setImage("https://24.media.tumblr.com/2caaf9b15cac964dc2e02c9af01fbfce/tumblr_msyrxfLKVc1sintffo1_500.gif")
+        }else if(roll < 101){
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("Vous subissez une grande partie des dégâts", ":anger: " + result)
+        }
+        message.channel.send(y);
+    }
+    if(command === 'dblocage'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.75));
+        var max = Math.floor(Math.max(`${args}`*0.90)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#00ffe7")
+        .addField(":shield: ** Vous venez utiliser votre mana afin de réduire les dégâts que vous subissez (-10 de mana)**",":anger: " + result)
+        .setImage("https://s2.best-wallpaper.net/wallpaper/1920x1080/1512/Fate-Stay-Night-blue-eyes-anime-girl-magic_1920x1080.jpg")
+        message.channel.send(y);
+        }
+
     //// BLOCAGE MONSTRE ////
         //// BLOCAGE MONSTRE ////
             //// BLOCAGE MONSTRE ////
