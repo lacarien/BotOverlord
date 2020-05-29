@@ -14,6 +14,7 @@ var préfix = "?";
 var fs = require("fs")
 var vm = require('vm')
 
+
 client.on("message",message =>{
 
     if (!message.content.startsWith(préfix) || message.author.bot) return;
@@ -29,6 +30,8 @@ client.on("message",message =>{
     eval(fs.readFileSync(__dirname + '/bestiaire.js')+''); 
     eval(fs.readFileSync(__dirname + '/quete.js')+'');
     eval(fs.readFileSync(__dirname + '/pcp.js')+''); 
+    eval(fs.readFileSync(__dirname + '/shop.js')+''); 
+    eval(fs.readFileSync(__dirname + '/stuff.js')+'');
  
 
     ////////////////// LES BASES ////////////////////
@@ -74,7 +77,7 @@ client.on("message",message =>{
         var help_embed = new Discord.RichEmbed()
         .setColor("#ffd100")
         .setImage("https://i.imgur.com/qgpcufH.gif")
-        .addField("**Gain de level par classe**", "**Du level 1 à 15 :** ``+2 points de compétence``\n**Du level 15 à 30 :** ``+4 points de compétence``\n**Du level 30 à 45 :** ``+6 points de compétence``")
+        .addField("**Gain de level par classe**", "**Du level 1 à 15 :** ``+2 points de compétence``\n**Du level 15 à 30 :** ``+3 points de compétence``\n**Du level 30 à 45 :** ``+5 points de compétence``")
         .addField("**Attribution des points**", "__1 PC dans mana =__ +5 :sparkles:\n__1 PC dans armure =__ +0.5 :shield:\n__1 PC dans attaque =__ +1 :crossed_swords:\n__1 PC dans HP =__ +5 :heart: ")
         .setFooter("Menu Gain")
          message.channel.sendMessage(help_embed);
@@ -924,7 +927,48 @@ client.on("message",message =>{
             .setColor("#58D68D")
             .setImage("https://i.pinimg.com/originals/b0/07/6c/b0076c06dc93229a327b95fc1a9a477f.jpg")
             message.channel.send(mes);
+        }
+
+        if(command === 'spawnforetsafe') {
+            if (!args.length) {
+            return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
             }
+            var A = 0; // Ccrocro
+            var B = 0; // nid'rats
+            var C = 0; // Alpha
+            var D = 0; // crocro bipède
+            var x = 0;
+            var i=`${args}`;
+            while(i!=0){
+        
+                var result = Math.floor((Math.random() * 100) + 1);
+                if(result < 90){
+                var x = x+1;
+                } else if (result < 101){
+                var x = x+2;
+                } 
+                i--;
+                
+            }
+            while(x!=0){  
+            var random = Math.floor((Math.random() * 100) + 1);
+            if(random < 50){
+                A = A+1;
+            } else if (random < 95){
+                B = B+1;
+            } else if (random < 101){
+                C = C+1;
+            }
+            x=0;
+            } 
+            var mes = new Discord.RichEmbed()
+            .addField(":clown: __**Goblin**__", "**Nombres :** " + A)
+            .addField(":bat: **__Hibou_**", "**Nombres :** "+B)
+            .addField(":full_moon_with_face: **__Géant__**", "**Nombres :** "+C)
+            .setColor("#58D68D")
+            .setImage("https://i.pinimg.com/originals/b0/07/6c/b0076c06dc93229a327b95fc1a9a477f.jpg")
+            message.channel.send(mes);
+        }
 
         
         
