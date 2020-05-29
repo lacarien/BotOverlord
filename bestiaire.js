@@ -245,12 +245,12 @@ if(message.content === préfix + "Goblin esquive" || message.content === préfix
 }
 
 if(message.content === préfix + "Loot goblin" || message.content === préfix + "loot goblin"){
-    var min = Math.floor(Math.min(7));
-    var max = Math.floor(Math.max(12)); 
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(8)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     // Pièce argent
-    var mins = Math.floor(Math.min(3));
-    var maxs = Math.floor(Math.max(5)); 
+    var mins = Math.floor(Math.min(1));
+    var maxs = Math.floor(Math.max(3)); 
     var x = Math.floor(Math.random() * (max - min + 1) ) + min;
 
     var y = new Discord.RichEmbed()
@@ -295,13 +295,13 @@ if(message.content === préfix + "Hibou attaque"  || message.content === préfix
 }
 
 if(message.content === préfix + "Loot hibou" || message.content === préfix + "loot hibou"){
-    var min = Math.floor(Math.min(13));
-    var max = Math.floor(Math.max(20)); 
+    var min = Math.floor(Math.min(8));
+    var max = Math.floor(Math.max(15));
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     // Pièce argent
-    var mins = Math.floor(Math.min(5));
-    var maxs = Math.floor(Math.max(7)); 
-    var x = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var mins = Math.floor(Math.min(3));
+    var maxs = Math.floor(Math.max(5)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
 
     var y = new Discord.RichEmbed()
     .setColor("#223300")
@@ -340,5 +340,21 @@ if(message.content === préfix + "Géant attaque"  || message.content === préfi
     .setColor("#ff0000")
     .addField("Pas de chance...Le géant était ''un peu enerve'', il viendra alors essayé de vous applatir au sol", ":crossed_swords:" + x)
     }
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot géant" || message.content === préfix + "loot géant"){
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(40));
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    // Pièce argent
+    var mins = Math.floor(Math.min(8));
+    var maxs = Math.floor(Math.max(15)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
+    .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
     message.channel.sendMessage(y);
 }
