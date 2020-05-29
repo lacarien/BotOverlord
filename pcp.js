@@ -34,3 +34,50 @@ if(message.content === préfix + "Météo") {
     .setFooter("Météo du jour") 
     message.channel.send(result);
 }    
+
+if(message.content === préfix + "PCP Ranger" || message.content === préfix + "PCP ranger"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#019521")
+    .setTitle("PCP Ranger")
+    .addField("**3PCP**","**Vous obtenez une nouvelle passif :** Vous êtes un ranger, vous avez une bonne culture G dans le domaine de la chasse")
+    .addField("**11PCP**","**Vous obtenez une nouvelle passif :** Vous êtes un ranger, vous savez chasser sans trop de difficulté")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "PCP Ranger" || message.content === préfix + "PCP ranger"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#019521")
+    .setTitle("PCP Ranger")
+    .addField(":sparkles: **3PCP**","**Vous obtenez une nouvelle passif :** Vous êtes un ranger, vous avez une bonne culture G dans le domaine de la chasse")
+    .addField(":sparkles: **11PCP**","**Vous obtenez une nouvelle passif :** Vous êtes un ranger, vous savez chasser sans trop de difficulté")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "PCP Combattant" || message.content === préfix + "PCP combattant"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#1a00ff")
+    .setTitle("PCP Combattant")
+    .addField(":sparkles: **3PCP**","**Vous obtenez une nouvelle passif :** Vous êtes un combattant, vous avez une bonne culture G dans le domaine des armures")
+    .addField(":sparkles: **11PCP**","**Vous obtenez une nouvelle passif :** Vous êtes un combattant, vous avez une bonne endurance")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "PCP Voleur" || message.content === préfix + "PCP voleur"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("PCP Voleur")
+    .addField(":sparkles: **3PCP**","**Vous obtenez une nouvelle passif :** Vous êtes un voleur, vous êtes pas mauvais en SVT...Dans le style ou vous savez où ça fait mal chez les humanoïdes")
+    .addField(":sparkles: **11PCP**","**Vous obtenez une nouvelle passif :** Vous êtes un voleur, vous avez une bonne dextérité")
+    message.channel.sendMessage(help_embed);
+}
+
+if(message.content === préfix + "PCP Mage" || message.content === préfix + "PCP mage"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#00ffe7")
+    .setTitle("PCP Mage")
+    .addField(":sparkles: **3PCP**","**Vous obtenez une nouvelle passif :** Vous êtes un mage, vous êtes un minimum ''intelligent''")
+    .addField(":sparkles: **11PCP**","**Vous obtenez une nouvelle passif :** Vous êtes un mage, vous pouvez faire apparaître une petite luciole magique qui éclaire les environs avec une faible luminosité")
+    message.channel.sendMessage(help_embed);
+}
+
+
