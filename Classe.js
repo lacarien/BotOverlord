@@ -287,3 +287,22 @@ if(message.content === préfix + "Voleur ultime"  || message.content === préfix
         }, 86400000);
         }
 }
+
+/// COMPETENCE UTILITAIRE ///
+    /// COMPETENCE UTILITAIRE ///
+        /// COMPETENCE UTILITAIRE ///
+            /// COMPETENCE UTILITAIRE ///
+            /// COMPETENCE UTILITAIRE ///
+        /// COMPETENCE UTILITAIRE ///
+    /// COMPETENCE UTILITAIRE ///
+/// COMPETENCE UTILITAIRE ///
+
+if(message.content === préfix + "Camouflage" || message.content === préfix + "camouflage"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#000000")
+    .setTitle("Vous vous disimulez dans l'obscurité petit à petit...(-60 Mana)")
+    .setDescription("Pendant 3 tours grand max, personne ne peus vous attaquer. Si vous attaquez vous sortez de votre invisibilité. Vous avez le choix entre faire une autre compétence qui sera imblocable, ou...: ``?BackStab [vos dégâts]``")
+    .setImage("https://vignette.wikia.nocookie.net/swordartonline/images/2/24/SAO_E06.png/revision/latest?cb=20140328034307")
+    message.channel.sendMessage(help_embed);
+}
+  
