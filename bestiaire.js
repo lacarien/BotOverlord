@@ -207,7 +207,7 @@ if(message.content === préfix + "Goblin") {
     message.channel.send(result)
 }
 
-if(message.content === préfix + "Goblin attaque"  || message.content === préfix + "arbros attaque"){
+if(message.content === préfix + "Goblin attaque"  || message.content === préfix + "goblin attaque"){
     var min = Math.floor(Math.min(35));
     var max = Math.floor(Math.max(45)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -358,3 +358,85 @@ if(message.content === préfix + "Loot géant" || message.content === préfix + 
     .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
     message.channel.sendMessage(y);
 }
+
+/// DONJON EN RUINE ///
+    /// DONJON EN RUINE ///
+        /// DONJON EN RUINE ///
+            /// DONJON EN RUINE ///
+            /// DONJON EN RUINE ///
+        /// DONJON EN RUINE ///
+    /// DONJON EN RUINE ///
+/// DONJON EN RUINE ///
+
+if(message.content === préfix + "Boss donjon ruine") {
+    var result = new Discord.RichEmbed() 
+    .setTitle("Sergent Hadès")
+    .setColor("#4A007E")
+    .setThumbnail('https://s1.zerochan.net/Shinigami.Kishi.600.2617464.jpg')
+    .setImage("https://s1.zerochan.net/Shinigami.Kishi.600.2654621.jpg")
+    .addField(":heart: HP","350")
+    .addField(":beginner: Passif", "1-Vous ne pouvez pas lui infliger plus de 50 de dégâts.\n2-Lorsque sa barre de vie est en dessous de 100, son attaque change : ?Hades attaque")
+    .addField(":crossed_swords: Attaque", "?Sergent attaque")
+    .addField(":shield: Défense", "?Sergent défense")
+    .addField(":moneybag: Récompenses", "?Loot hades")
+    message.channel.send(result)
+}
+
+
+if(message.content === préfix + "Hades attaque"  || message.content === préfix + "hades attaque"){
+    var min = Math.floor(Math.min(45));
+    var max = Math.floor(Math.max(55)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var min = Math.floor(Math.min(0));
+    var max = Math.floor(Math.max(10)); 
+    var vol = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var x = Math.floor(y*1.2);
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 60){
+    var y = new Discord.RichEmbed()
+    .setColor("#4A007E")
+    .addField("Hadès prit de fureur viendra alors donner un coup de faux à l'horizontal. En plus d'infliger des dégâts, il viendra se régénérer", ":crossed_swords: " + y +"\n💗 " + vol)
+    } else if (result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#4A007E")
+    .setImage("https://s1.zerochan.net/Shinigami.Kishi.600.2654623.jpg")
+    .addField("La faux d'Hadès viendra prendre une étrange couleur...Et ce n'était pas bon signe. D'ailleurs, Hadès vous le prouveras en venant vous foncer dessus accompagné d'une grande puissance. Vous infligeant des dégâts __perce armure.__ et se régénérant des HP", ":crossed_swords:" + x  +"\n💗 " + vol)
+    }
+    message.channel.sendMessage(y);
+}
+if(message.content === préfix + "Sergent attaque"  || message.content === préfix + "sergent attaque"){
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var x = Math.floor(y*1.1);
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result < 80){
+    var y = new Discord.RichEmbed()
+    .setColor("#4A007E")
+    .addField("Le Sergent s'approchera de sa cible et viendra donner un coup de faux à l'horizontal afin d'attaquer son adversaire, suite à quoi il viendra faire un bond en arrière", ":crossed_swords: " + y)
+    } else if (result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#4A007E")
+    .setImage("https://s1.zerochan.net/Shinigami.Kishi.600.2654624.jpg")
+    .addField("Le Sergent viendra alors faire un bond à gauche puis à droite avant de finalement venir vous sauter dessus, vous infligeant des dégâts __perce armure.__", ":crossed_swords: " + x)
+    }
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot géant" || message.content === préfix + "loot géant"){
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(50));
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    // Pièce argent
+    var mins = Math.floor(Math.min(2));
+    var maxs = Math.floor(Math.max(7)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
+    .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
+    
+    message.channel.sendMessage(y);
+}
+
+
