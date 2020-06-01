@@ -21,7 +21,7 @@ if(message.content === préfix + "PC Voleur"){
     .addField(":sparkles: **1PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?Dague [Vos dégâts]``\n**Vous obtenez une nouvelle compétence :** :shield: ``?Blocage [Dégâts que vous prennez]``")
     .addField(":sparkles: **5PC**", "**Vous obtenez un bonus :** :shield: ``2AR``")
     .addField(":sparkles: **10PC**", "**Vous obtenez une nouvelle compétence :** :fleur_de_lis: ``?Voleur ultime``")
-    .addField(":sparkles: **10PC**", "**Vous obtenez une nouvelle compétence :** :shield: ``?Esquive``")
+    .addField(":sparkles: **10PC**", "**Vous obtenez une nouvelle compétence :** :shield: ``?Poison [Vos dégâts]``")
     .addField(":sparkles: **15PC**", "**__Vous pouvez devenir Assassin__**")
     message.channel.sendMessage(help_embed);
 }
