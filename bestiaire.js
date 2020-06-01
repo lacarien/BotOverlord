@@ -251,7 +251,7 @@ if(message.content === préfix + "Loot goblin" || message.content === préfix + 
     // Pièce argent
     var mins = Math.floor(Math.min(1));
     var maxs = Math.floor(Math.max(3)); 
-    var x = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
 
     var y = new Discord.RichEmbed()
     .setColor("#223300")
