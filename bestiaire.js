@@ -93,8 +93,8 @@ if(message.content === préfix + "Arbros") {
 }
 
 if(message.content === préfix + "Arbros attaque" || message.content === préfix + "arbros attaque"){
-    var min = Math.floor(Math.min(12));
-    var max = Math.floor(Math.max(25)); 
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(65)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 95)
@@ -108,8 +108,8 @@ if(message.content === préfix + "Arbros attaque" || message.content === préfix
     message.channel.sendMessage(y);
     }
 if(message.content === préfix + "Arbros blocage" || message.content === préfix + "Arbros blocage"){
-    var min = Math.floor(Math.min(5));
-    var max = Math.floor(Math.max(10)); 
+    var min = Math.floor(Math.min(25));
+    var max = Math.floor(Math.max(30)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#223300")
