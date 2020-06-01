@@ -93,8 +93,8 @@ if(message.content === préfix + "Arbros") {
 }
 
 if(message.content === préfix + "Arbros attaque" || message.content === préfix + "arbros attaque"){
-    var min = Math.floor(Math.min(40));
-    var max = Math.floor(Math.max(65)); 
+    var min = Math.floor(Math.min(12));
+    var max = Math.floor(Math.max(25)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result < 95)
@@ -108,8 +108,8 @@ if(message.content === préfix + "Arbros attaque" || message.content === préfix
     message.channel.sendMessage(y);
     }
 if(message.content === préfix + "Arbros blocage" || message.content === préfix + "Arbros blocage"){
-    var min = Math.floor(Math.min(25));
-    var max = Math.floor(Math.max(30)); 
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(10)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#223300")
@@ -423,7 +423,7 @@ if(message.content === préfix + "Sergent attaque"  || message.content === préf
     message.channel.sendMessage(y);
 }
 
-if(message.content === préfix + "Loot géant" || message.content === préfix + "loot géant"){
+if(message.content === préfix + "Loot hadès" || message.content === préfix + "loot hadès"){
     var min = Math.floor(Math.min(30));
     var max = Math.floor(Math.max(50));
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -431,11 +431,18 @@ if(message.content === préfix + "Loot géant" || message.content === préfix + 
     var mins = Math.floor(Math.min(2));
     var maxs = Math.floor(Math.max(7)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result <97)
     var y = new Discord.RichEmbed()
     .setColor("#223300")
     .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
     .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
-    
+    else if(result < 101)
+    var y = new Discord.RichEmbed()
+    .setColor("#4A007E")
+    .setImage("https://i.pinimg.com/originals/ba/f7/05/baf705990e172623bfbfbb1375b5de4c.jpg")
+    .setTitle("L'anneau du Sergent")
+    .setDescription("L'anneau du sergent peut-être stocké uniquement au nombre de 1.")
     message.channel.sendMessage(y);
 }
 
