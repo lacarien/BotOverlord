@@ -15,6 +15,7 @@ var fs = require("fs")
 var vm = require('vm')
 
 
+
 client.on("message",message =>{
 
     if (!message.content.startsWith(préfix) || message.author.bot) return;
@@ -32,6 +33,7 @@ client.on("message",message =>{
     eval(fs.readFileSync(__dirname + '/pcp.js')+''); 
     eval(fs.readFileSync(__dirname + '/shop.js')+''); 
     eval(fs.readFileSync(__dirname + '/stuff.js')+'');
+    eval(fs.readFileSync(__dirname + '/donjon.js')+'');
  
 
     ////////////////// LES BASES ////////////////////
@@ -153,7 +155,28 @@ client.on("message",message =>{
         .setAuthor("Vous ratez votre attaque.")
         .setImage("https://media.discordapp.net/attachments/708297061841240064/712656080655876226/131-1311442_anime-facepalm-png-download-facepalm-itachi.png?width=823&height=560")
         message.channel.send(y);
-    }  
+    }
+    
+    if(command === 'poison'){
+        if (!args.length) {
+            return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
+        }
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var max_value = Math.floor(`${args}`*0.40);
+        var min_value = Math.floor(`${args}`*0.35);
+        var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
+        if(nombre < 85)
+        var y = new Discord.RichEmbed()
+        .setColor("#ff0000")
+        .addField("**Vous donnez un coup de dague sur votre ennemi, vous viendrais alors lui infliger des dégâts de poison pendant 3 tours(-20 de mana)**",":green_heart: " + result)
+        .setImage("https://cdn.discordapp.com/attachments/712345553895424011/716984369360928798/Gif.gif")
+        else if(nombre < 101)
+        var y = new Discord.RichEmbed()
+        .setColor("#000000")
+        .setAuthor("Vous ratez votre attaque.")
+        .setImage("https://media.discordapp.net/attachments/708297061841240064/712656080655876226/131-1311442_anime-facepalm-png-download-facepalm-itachi.png?width=823&height=560")
+        message.channel.send(y);
+    } 
 
     if(command === 'magie'){
         if (!args.length) {
@@ -429,8 +452,8 @@ client.on("message",message =>{
             return message.channel.send(`Vous avez oublié de mettre vos dégâts, ${message.author}!`);
         }
         var nombre = Math.floor((Math.random() * 100) + 1);
-        var max_value = Math.floor(`${args}`*1.60);
-        var min_value = Math.floor(`${args}`*1.35);
+        var max_value = Math.floor(`${args}`*1.15);
+        var min_value = Math.floor(`${args}`*0.85);
         var result = Math.floor(Math.random() * (max_value - min_value + 1) ) + min_value;
         var y = new Discord.RichEmbed()
         .setColor("#ff0000")
