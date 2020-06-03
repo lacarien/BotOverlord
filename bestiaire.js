@@ -1,6 +1,6 @@
 if(message.content === préfix + "Fuite" || message.content === préfix + "fuite") {
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 30)
+    if(result < 15)
     var result = new Discord.RichEmbed() 
     .setColor("#1fff00")
     .setTitle("Vous fuyez")
@@ -374,18 +374,18 @@ if(message.content === préfix + "Boss donjon ruine") {
     .setColor("#4A007E")
     .setThumbnail('https://s1.zerochan.net/Shinigami.Kishi.600.2617464.jpg')
     .setImage("https://s1.zerochan.net/Shinigami.Kishi.600.2654621.jpg")
-    .addField(":heart: HP","350")
-    .addField(":beginner: Passif", "1-Vous ne pouvez pas lui infliger plus de 50 de dégâts.\n2-Lorsque sa barre de vie est en dessous de 100, son attaque change : ?Hades attaque")
+    .addField(":heart: HP","250")
+    .addField(":beginner: Passif", "1-Vous ne pouvez pas lui infliger plus de 50 de dégâts.\n2-Lorsque sa barre de vie est en dessous de 50, son attaque change : ?Hades attaque")
     .addField(":crossed_swords: Attaque", "?Sergent attaque")
-    .addField(":shield: Défense", "?Sergent défense")
+    .addField(":shield: Défense", "?bsergent [dégâts reçu]")
     .addField(":moneybag: Récompenses", "?Loot hades")
     message.channel.send(result)
 }
 
 
 if(message.content === préfix + "Hades attaque"  || message.content === préfix + "hades attaque"){
-    var min = Math.floor(Math.min(45));
-    var max = Math.floor(Math.max(55)); 
+    var min = Math.floor(Math.min(35));
+    var max = Math.floor(Math.max(45)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var min = Math.floor(Math.min(0));
     var max = Math.floor(Math.max(10)); 
@@ -405,8 +405,8 @@ if(message.content === préfix + "Hades attaque"  || message.content === préfix
     message.channel.sendMessage(y);
 }
 if(message.content === préfix + "Sergent attaque"  || message.content === préfix + "sergent attaque"){
-    var min = Math.floor(Math.min(40));
-    var max = Math.floor(Math.max(50)); 
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(40)); 
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor(y*1.1);
     var result = Math.floor((Math.random() * 100) + 1);
@@ -423,12 +423,12 @@ if(message.content === préfix + "Sergent attaque"  || message.content === préf
     message.channel.sendMessage(y);
 }
 
-if(message.content === préfix + "Loot hadès" || message.content === préfix + "loot hadès"){
+if(message.content === préfix + "Loot hadès" || message.content === préfix + "loot hadès"){     
     var min = Math.floor(Math.min(30));
     var max = Math.floor(Math.max(50));
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     // Pièce argent
-    var mins = Math.floor(Math.min(2));
+    var mins = Math.floor(Math.min(3));
     var maxs = Math.floor(Math.max(7)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
@@ -442,7 +442,7 @@ if(message.content === préfix + "Loot hadès" || message.content === préfix + 
     .setColor("#4A007E")
     .setImage("https://i.pinimg.com/originals/ba/f7/05/baf705990e172623bfbfbb1375b5de4c.jpg")
     .setTitle("L'anneau du Sergent")
-    .setDescription("L'anneau du sergent peut-être stocké uniquement au nombre de 1.")
+    .setDescription("L'anneau du sergent peut-être stocké uniquement au nombre de 1. Si dans un combat vous venez à vous faire tuer, alors vos HP viendront se bloquer à 1. Une fois le combat finit, vous reviendrais à la vie et l'anneau se ''brisera'', le rendant donc inutile et utilisable une seul fois.")
     message.channel.sendMessage(y);
 }
 
