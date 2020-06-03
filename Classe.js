@@ -70,7 +70,7 @@ if(message.content === préfix + "Paladin"  || message.content === préfix + "pa
     var help_embed = new Discord.RichEmbed()
     .setColor("#1a00ff")
     .setTitle("Paladin")
-    .addField(":trident: **Bonus**", "Vous avez 100HP en plus")
+    .addField(":trident: **Bonus**", "Vous avez 50HP en plus")
     .addField(":notepad_spiral: **Description**", "Vous êtes un paladin, un guerrier qui se dirige pour devenir un tank")
     .addField(":chart_with_upwards_trend: **Liste des attaques du paladin**", "?PC Paladin")
     .addField(":chart_with_upwards_trend: **Liste des passifs du paladin**", "?PCP Paladin")
