@@ -691,7 +691,7 @@ client.on("message",message =>{
         if (!args.length) {
             return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
         }
-        var min = Math.floor(Math.min(`${args}`*0.65));
+        var min = Math.floor(Math.min(`${args}`*0.75));
         var max = Math.floor(Math.max(`${args}`*0.90)); 
         var result = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
