@@ -428,8 +428,8 @@ if(message.content === préfix + "Loot hadès" || message.content === préfix + 
     var max = Math.floor(Math.max(50));
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     // Pièce argent
-    var mins = Math.floor(Math.min(3));
-    var maxs = Math.floor(Math.max(7)); 
+    var mins = Math.floor(Math.min(5));
+    var maxs = Math.floor(Math.max(8)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
     if(result <97)
