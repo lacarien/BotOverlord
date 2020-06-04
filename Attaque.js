@@ -51,13 +51,6 @@ if(message.content === préfix + "Bonus Archer" || message.content === préfix +
     .setImage("https://i.pinimg.com/originals/fe/d3/e0/fed3e092a7ae1d845fcb1d3ca464726f.jpg")
     message.channel.send(y);
 }
-if(message.content === préfix + "Bonus Archer" || message.content === préfix + "Bonus archer"){
-    var y = new Discord.RichEmbed()
-    .addField("**__Du Lvl 16 à 30 pour chaque level__**","**+5HP** :heartpulse:\n**+2AT** :crossed_swords:\n**+5** :cyclone:")
-    .setColor("#019521")
-    .setImage("https://i.pinimg.com/originals/fe/d3/e0/fed3e092a7ae1d845fcb1d3ca464726f.jpg")
-    message.channel.send(y);
-}
 if(message.content === préfix + "Bonus Sorcier" || message.content === préfix + "Bonus sorcier"){
     var y = new Discord.RichEmbed()
     .addField("**__Du Lvl 16 à 30 pour chaque level__**","**+5HP** :heartpulse:\n**+1AT** :crossed_swords:\n**+10** :cyclone:")
