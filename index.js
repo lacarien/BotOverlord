@@ -15,7 +15,6 @@ var fs = require("fs")
 var vm = require('vm')
 
 
-
 client.on("message",message =>{
 
     if (!message.content.startsWith(préfix) || message.author.bot) return;
@@ -723,8 +722,8 @@ client.on("message",message =>{
             var min = Math.floor(Math.min(`${args}`*0.70));
             var max = Math.floor(Math.max(`${args}`*0.85)); 
             var result = Math.floor(Math.random() * (max - min + 1) ) + min;
-            var mins = Math.floor(Math.min(`${args}`*1.2));
-            var maxs = Math.floor(Math.max(`${args}`*1.6)); 
+            var mins = Math.floor(Math.min(`${args}`*1.3));
+            var maxs = Math.floor(Math.max(`${args}`*1.7)); 
             var results = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
             var roll = Math.floor((Math.random() * 100) + 1);
             if (roll < 30){
@@ -818,6 +817,110 @@ client.on("message",message =>{
         message.channel.send(y);
         }
 
+    if(command === 'bsquelette'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.9));
+        var max = Math.floor(Math.max(`${args}`*1.35)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#808080")
+        .addField(":shield: **Le squellete viendra alors utiliser son bouclier pour se défendre, néanmoins il a tendance à être fragile et prend une grande partie des dégâts.**",":anger: " + result)
+        message.channel.send(y);
+    }
+
+    if(command === 'basquelette'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.8));
+        var max = Math.floor(Math.max(`${args}`*1.25)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#808080")
+        .addField(":shield: **Le squellete viendra alors essayé de faire une roulade sur le côté afin de réduire les dégâts, malheureusement vous arriverez à le toucher tant bien que mal !**",":anger: " + result)
+        message.channel.send(y);
+    }
+
+    if(command === 'bcsquelette'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.6));
+        var max = Math.floor(Math.max(`${args}`*0.8)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var ch = Math.floor((Math.random() * 100) + 1);
+        if(ch<85){
+            var y = new Discord.RichEmbed()
+            .setColor("#808080")
+            .addField(":shield: **Le chevalier squelette viendra alors bloquer le coup à l'aide de son épée**",":anger: " + result)
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.1));
+            var max = Math.floor(Math.max(`${args}`*1.3)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#808080")
+            .addField(":shield: **Coup critique ! Le chevalier subira de grand dégâts !**",":anger: " + result)
+        }
+        message.channel.send(y);
+    }
+    if(command === 'bmsquelette'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.7));
+        var max = Math.floor(Math.max(`${args}`*0.85)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var ch = Math.floor((Math.random() * 100) + 1);
+        if(ch<85){
+            var y = new Discord.RichEmbed()
+            .setColor("#808080")
+            .addField(":shield: **Le mage ne réduira que très peu les dégâts...**",":anger: " + result)
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.1));
+            var max = Math.floor(Math.max(`${args}`*1.25)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#808080")
+            .addField(":shield: **Coup critique ! Le mage subit de grand dégâts !**",":anger: " + result)
+        }
+        message.channel.send(y);
+    }
+
+
+    if(command === 'bsergent'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.7));
+        var max = Math.floor(Math.max(`${args}`*0.9)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var ch = Math.floor((Math.random() * 100) + 1);
+
+        if(ch<70){
+        var y = new Discord.RichEmbed()
+        .setColor("#4A007E")     
+        .addField(":shield: **Notre Sergent viendra alors placer ses bras en croix, réduisant alors les dégâts.**",":anger: " + result)
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.2));
+            var max = Math.floor(Math.max(`${args}`*1.45)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#4A007E")
+            .setImage("https://66.media.tumblr.com/9ac90c3915ea4c29db6d3f11ad84f5bd/tumblr_pwj2zgZlEd1yr3jfno2_500.png")
+            .addField(":shield: **Coup critique ! Le sergent viendra alors serrer les dents avant de faire un bond en arrière, montrant des marques de douleurs**",":anger: " + result)    
+        }
+        message.channel.send(y);
+    }
+
+ /*   if(command === 'test'){   
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+
+        message.channel.send(args [0] args[1] );
+    } */
     
 
     //// SPAWN ////
