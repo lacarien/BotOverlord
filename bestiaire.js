@@ -432,7 +432,7 @@ if(message.content === préfix + "Loot hadès" || message.content === préfix + 
     var maxs = Math.floor(Math.max(8)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result <97)
+    if(result <99)
     var y = new Discord.RichEmbed()
     .setColor("#223300")
     .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
