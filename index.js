@@ -719,12 +719,14 @@ client.on("message",message =>{
             if (!args.length) {
                 return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
             }
-            var min = Math.floor(Math.min(`${args}`*0.70));
-            var max = Math.floor(Math.max(`${args}`*0.85)); 
+            var min = Math.floor(Math.min((args [1])*0.8));
+            var max = Math.floor(Math.max((args [1])*1.2)); 
             var result = Math.floor(Math.random() * (max - min + 1) ) + min;
-            var mins = Math.floor(Math.min(`${args}`*1.3));
-            var maxs = Math.floor(Math.max(`${args}`*1.7)); 
+
+            var mins = Math.floor(Math.min((args [0])*1.35));
+            var maxs = Math.floor(Math.max((args [0])*1.7)); 
             var results = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+
             var roll = Math.floor((Math.random() * 100) + 1);
             if (roll < 30){
             var y = new Discord.RichEmbed()
