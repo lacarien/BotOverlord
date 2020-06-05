@@ -90,9 +90,9 @@ if(message.content === préfix + "PC Chevalier"){
     .setDescription("```Voici ce que vous pourrez gagner à chaque étape```")
     .addField(":sparkles: **15PC**", "**Vous obtenez une nouvelle compétence :** :shield: ``?CBlocage [L'attaque que vous recevez]``")
     .addField(":sparkles: **18PC**", "**Vous obtenez une nouvelle compétence :** :crossed_swords: ``?CoupMultiple [Vos dégâts]``")
-    .addField(":sparkles: **22PC**", "**Vous obtenez une nouvelle compétence :** :shield: ``?Parade [L'attaque que vous recevez]``")
+    .addField(":sparkles: **22PC**", "**Vous obtenez une nouvelle compétence :** :shield: ``?Parade [L'attaque que vous recevez] [Vos dégâts]``")
     .addField(":sparkles: **25PC**", "**Vous obtenez une nouvelle compétence :** :fleur_de_lis: ``?ChevalierUltime [Vos dégâts]``")
-    .addField(":sparkles: **15PC**", "**__Vous pouvez devenir Champion ou Berserk__**")
+    .addField(":sparkles: **30PC**", "**__Vous pouvez devenir Champion ou Berserk__**")
     message.channel.sendMessage(help_embed);
 }
 if(message.content === préfix + "PC Berserk"){
