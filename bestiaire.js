@@ -331,7 +331,7 @@ if(message.content === préfix + "Géant attaque"  || message.content === préfi
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor(y*1.5);
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 80){
+    if(result < 70){
     var y = new Discord.RichEmbed()
     .setColor("#223300")
     .addField("Le géant viendra vous donner un coup de pied", ":crossed_swords:" + y)
