@@ -24,11 +24,12 @@ if(message.content === préfix + "Voleur"  || message.content === préfix + "vol
     message.channel.sendMessage(help_embed);
 }
 
+
 if(message.content === préfix + "Assassin"  || message.content === préfix + "assassin"){
     var help_embed = new Discord.RichEmbed()
     .setColor("#ff0000")
     .setTitle("Voleur")
-    .addField(":trident: **Bonus**", "Aucun")
+    .addField(":trident: **Bonus**", "Vous gagnez 2.5 d'armure en plus")
     .addField(":notepad_spiral: **Description**", "Vous êtes l'évolution du voleur, quelqu'un qui fait très mal !")
     .addField(":chart_with_upwards_trend: **Liste des attaques de l'assassin**", "?PC Assassin")
     .addField(":chart_with_downwards_trend: **Liste des passifs de l'assassin**", "?PCP Assassin")
@@ -51,6 +52,19 @@ if(message.content === préfix + "Grand Assassin"  || message.content === préfi
     message.channel.sendMessage(help_embed);
 }
 
+if(message.content === préfix + "Ninja"  || message.content === préfix + "ninja"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setTitle("Voleur")
+    .addField(":trident: **Bonus**", "Aucun")
+    .addField(":chart_with_upwards_trend: **Liste des attaques du voleur**", "?PC Voleur")
+    .addField(":chart_with_downwards_trend: **Liste des passifs du voleur**", "?PCP Voleur")
+    .addField(":diamond_shape_with_a_dot_inside: **évolution**", "évolution du voleur en assassin PC 15")
+    .setImage("https://coubsecure-s.akamaihd.net/get/b96/p/coub/simple/cw_timeline_pic/c6b4f22ba33/4f5366739caf7b081fecf/big_1474128121_image.jpg")
+    .setFooter("Menu du voleur")
+    message.channel.sendMessage(help_embed);
+}
+
 
 if(message.content === préfix + "Combattant"  || message.content === préfix + "combattant"){
     var help_embed = new Discord.RichEmbed()
@@ -70,7 +84,7 @@ if(message.content === préfix + "Paladin"  || message.content === préfix + "pa
     var help_embed = new Discord.RichEmbed()
     .setColor("#1a00ff")
     .setTitle("Paladin")
-    .addField(":trident: **Bonus**", "Vous avez 50HP en plus")
+    .addField(":trident: **Bonus**", "Vous avez 25HP en plus")
     .addField(":notepad_spiral: **Description**", "Vous êtes un paladin, un guerrier qui se dirige pour devenir un tank")
     .addField(":chart_with_upwards_trend: **Liste des attaques du paladin**", "?PC Paladin")
     .addField(":chart_with_upwards_trend: **Liste des passifs du paladin**", "?PCP Paladin")
@@ -109,7 +123,7 @@ if(message.content === préfix + "Chevalier"  || message.content === préfix + "
     var help_embed = new Discord.RichEmbed()
     .setColor("#1a00ff")
     .setTitle("Chevalier")
-    .addField(":trident: **Bonus**", "Vous avez 40HP en plus")
+    .addField(":trident: **Bonus**", "Vous avez 1 d'armure et 15 d'HP en plus.")
     .addField(":notepad_spiral: **Description**", "Vous êtes un chevalier, un guerrier polyvalent.")
     .addField(":chart_with_upwards_trend: **Liste des attaques du chevalier**", "?PC Chevalier")
     .addField(":chart_with_upwards_trend: **Liste des passifs du chevalier**", "?PCP Chevalier")
@@ -122,7 +136,7 @@ if(message.content === préfix + "Berserk"  || message.content === préfix + "be
     var help_embed = new Discord.RichEmbed()
     .setColor("#00295b")
     .setTitle("Berserk")
-    .addField(":trident: **Bonus**", "Aucun")
+    .addField(":trident: **Bonus**", ":heart: **100 HP**")
     .addField(":notepad_spiral: **Description**", "Vous êtes un berserk, un guerrier quelque peu fada du combat qui a des tendances de loup solitaire.")
     .addField(":chart_with_upwards_trend: **Liste des attaques du berserk**", "?PC Berserk")
     .addField(":chart_with_upwards_trend: **Liste des passifs du berserk**", "?PCP Berserk")
@@ -132,6 +146,19 @@ if(message.content === préfix + "Berserk"  || message.content === préfix + "be
     message.channel.sendMessage(help_embed);
 }
 
+if(message.content === préfix + "Champion"  || message.content === préfix + "champion"){
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#1F618D")
+    .setTitle("Champion")
+    .addField(":trident: **Bonus**", ":heart:**50HP et :cyclone: 50MA**")
+    .addField(":notepad_spiral: **Description**", "Vous êtes un champion, quelqu'un de plus fort qu'un chevalier et de moins con qu'un Berserk.")
+    .addField(":chart_with_upwards_trend: **Liste des attaques du berserk**", "?PC Champion")
+    .addField(":chart_with_upwards_trend: **Liste des passifs du berserk**", "?PCP Champion")
+    .addField(":diamond_shape_with_a_dot_inside: **évolution**", "évolution du berserk en ??? au PC ??")
+    .setImage("https://i.pinimg.com/originals/42/04/fa/4204fa463bbe96c63a60b5f197826724.jpg")
+    .setFooter("Menu Champion")
+    message.channel.sendMessage(help_embed);
+}
 
 if(message.content === préfix + "Ranger"  || message.content === préfix + "ranger"){
     var help_embed = new Discord.RichEmbed()
@@ -150,7 +177,7 @@ if(message.content === préfix + "Archer"  || message.content === préfix + "arc
     var help_embed = new Discord.RichEmbed()
     .setColor("#019521")
     .setTitle("Ranger")
-    .addField(":trident: **Bonus**", "Aucun")
+    .addField(":trident: **Bonus**", "Vous gagnez 5 d'attaque en plus.")
     .addField(":chart_with_upwards_trend: **Liste des attaques du ranger**", "?PC Archer")
     .addField(":chart_with_upwards_trend: **Liste des passifs du ranger**", "?PCP Archer")
     .addField(":diamond_shape_with_a_dot_inside: **évolution**", "évolution de l'archer en grand archer PC 30")
@@ -176,7 +203,7 @@ if(message.content === préfix + "Druid"  || message.content === préfix + "drui
     var help_embed = new Discord.RichEmbed()
     .setColor("#00ffe7")
     .setTitle("Druid")
-    .addField(":trident: **Bonus**", "Vous avez 30 de mana en plus")
+    .addField(":trident: **Bonus**", "Vous avez 25 de mana en plus")
     .addField(":chart_with_upwards_trend: **Liste des attaques du druid**", "?PC Druid")
     .addField(":chart_with_upwards_trend: **Liste des passifs du druid**", "?PCP Druid")
     .addField(":diamond_shape_with_a_dot_inside: **évolution**", "évolution du Druid en prêtre ou grand druid PC 30")
@@ -189,7 +216,7 @@ if(message.content === préfix + "Sorcier"  || message.content === préfix + "so
     var help_embed = new Discord.RichEmbed()
     .setColor("#00ffe7")
     .setTitle("Mage")
-    .addField(":trident: **Bonus**", "Vous avez 30 de mana en plus")
+    .addField(":trident: **Bonus**", "Vous avez 2 d'attaque et 15 de mana en plus")
     .addField(":chart_with_upwards_trend: **Liste des attaques du mage**", "?PC Sorcier")
     .addField(":chart_with_upwards_trend: **Liste des passifs du mage**", "?PCP Sorcier")
     .addField(":diamond_shape_with_a_dot_inside: **évolution**", "évolution du mage en necromancien ou grand sorcier ou prêtre PC 30")
