@@ -331,7 +331,7 @@ if(message.content === préfix + "Géant attaque"  || message.content === préfi
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     var x = Math.floor(y*1.5);
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result < 70){
+    if(result < 80){
     var y = new Discord.RichEmbed()
     .setColor("#223300")
     .addField("Le géant viendra vous donner un coup de pied", ":crossed_swords:" + y)
@@ -424,15 +424,15 @@ if(message.content === préfix + "Sergent attaque"  || message.content === préf
 }
 
 if(message.content === préfix + "Loot hadès" || message.content === préfix + "loot hadès"){     
-    var min = Math.floor(Math.min(30));
+    var min = Math.floor(Math.min(40));
     var max = Math.floor(Math.max(50));
     var y = Math.floor(Math.random() * (max - min + 1) ) + min;
     // Pièce argent
-    var mins = Math.floor(Math.min(5));
-    var maxs = Math.floor(Math.max(8)); 
+    var mins = Math.floor(Math.min(7));
+    var maxs = Math.floor(Math.max(12)); 
     var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result <99)
+    if(result <97)
     var y = new Discord.RichEmbed()
     .setColor("#223300")
     .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
@@ -445,5 +445,17 @@ if(message.content === préfix + "Loot hadès" || message.content === préfix + 
     .setDescription("L'anneau du sergent peut-être stocké uniquement au nombre de 1. Si dans un combat vous venez à vous faire tuer, alors vos HP viendront se bloquer à 1. Une fois le combat finit, vous reviendrais à la vie et l'anneau se ''brisera'', le rendant donc inutile et utilisable une seul fois.")
     message.channel.sendMessage(y);
 }
+
+/// GROTTE PALIER 2 /// 
+    /// GROTTE PALIER 2 /// 
+        /// GROTTE PALIER 2 /// 
+            /// GROTTE PALIER 2 /// 
+            /// GROTTE PALIER 2 /// 
+        /// GROTTE PALIER 2 /// 
+    /// GROTTE PALIER 2 /// 
+/// GROTTE PALIER 2 /// 
+
+
+
 
 
