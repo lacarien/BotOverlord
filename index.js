@@ -74,11 +74,12 @@ client.on("message",message =>{
          message.channel.sendMessage(help_embed);
     }
 
-if(message.content === préfix + "Gain" || message.content === préfix + "gain"){
+
+    if(message.content === préfix + "Gain" || message.content === préfix + "gain"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#ffd100")
         .setImage("https://i.imgur.com/qgpcufH.gif")
-        .addField("**Gain de level par classe**", "**Du level 1 à 15 :** ``+2 points de compétence``\n**Du level 16 à 30 :** ``+3 points de compétence``\n**Du level 30 à 45 :** ``+5 points de compétence``")
+        .addField("**Gain de level par classe**", "**Du level 1 à 15 :** ``+2 points de compétence``\n**Du level 16 à 30 :** ``+3 points de compétence``\n**Du level 31 à 45 :** ``+5 points de compétence``")
         .addField("**Attribution des points**", "__1 PC dans mana =__ +5 :sparkles:\n__1 PC dans armure =__ +0.5 :shield:\n__1 PC dans attaque =__ +1 :crossed_swords:\n__1 PC dans HP =__ +5 :heart: ")
         .setFooter("Menu Gain")
          message.channel.sendMessage(help_embed);
