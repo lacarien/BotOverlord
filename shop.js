@@ -5,7 +5,7 @@
 
 
 
-if(message.content === préfix + "Test"){
+if(message.content === préfix + "Commerce"){
     const filter = (reaction, user) => ['🛡️','📜','❤️','🔙','🍖','➡️'].includes(reaction.emoji.name) &&user.id === message.author.id;
     let embed = new Discord.RichEmbed()
         .setColor("#ff4600")
