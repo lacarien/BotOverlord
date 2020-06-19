@@ -5,8 +5,8 @@
 
 
 
-if(message.content === préfix + "Commerce"){
-    const filter = (reaction, user) => ['🛡️','📜','❤️','🔙','🍖'].includes(reaction.emoji.name) &&user.id === message.author.id;
+if(message.content === préfix + "Test"){
+    const filter = (reaction, user) => ['🛡️','📜','❤️','🔙','🍖','➡️'].includes(reaction.emoji.name) &&user.id === message.author.id;
     let embed = new Discord.RichEmbed()
         .setColor("#ff4600")
         .addField("**Sommaire du commerce**","**Armure :** 🛡️\n**Utilitaire :** 📜\n**Potion :** ❤️")
@@ -34,7 +34,7 @@ if(message.content === préfix + "Commerce"){
                              message.channel.send(embed).then(async message => 
                                     { 
                                         await message.react('🔙')
-
+                                        await message.react('➡️')
                                         let collector = message.createReactionCollector(filter,{time: 3600000,errors:['time']});
                                         collector.on('collect', (reaction, collector) =>
                                             {
@@ -46,6 +46,45 @@ if(message.content === préfix + "Commerce"){
                                                 
                                                     //message.channel.bulkDelete(2);
                                                 }
+
+                                                if(reaction.emoji.name === '➡️')
+                                                {
+                                                    message.delete() 
+                                                    
+                                                    let embed = new Discord.RichEmbed()
+                                                    .setTitle("**__Liste des armures__**")
+                                                    .setDescription("```Armure du palier 2```")
+                                                    .addField(":hearts: __**Super armure d'HP**__","\n:moneybag: **Prix :** 100 de bronze + 40 pièces d'argent\n:money_with_wings: **Revente : ** 45 de bronze + 10 pièces d'argen\n:abacus: **prérequis :** Avoir 10 points dans les HP\n:shopping_cart: **Achat : **?Achat Sarmure HP", true)
+                                                    .addField(":cyclone: __**Super armure de Mana**__","\n:moneybag: **Prix :** 100 de bronze + 40 pièces d'argent\n:money_with_wings: **Revente : ** 45 de bronze + 10 pièces d'argent\n:abacus: **prérequis :** Avoir 10 points dans le mana\n:shopping_cart: **Achat : **?Achat Sarmure MA", true)
+                                                    .addField(":shield: __**Super armure basique**__","\n:moneybag: **Prix :** 100 de bronze + 40 pièces d'argent\n:money_with_wings: **Revente : ** 45 de bronze + 10 pièces d'argent\n:abacus: **prérequis :** Avoir 10 points dans l'armure'\n:shopping_cart: **Achat : **?Achat Sarmure")
+                                                    .addField("（ミ◕‿◕ミ）  ","█████████████████████████████████████████████████",)
+                                                    .addField(":hearts: :shield: __**Armure polyvalente Alpha**__","\n:moneybag: **Prix :** 100 de bronze + 40 pièces d'argent\n:money_with_wings: **Revente : ** 45 de bronze + 10 pièces d'argent\n:shopping_cart: **Achat : **?Achat poly AL", true)
+                                                    .addField(":cyclone: :hearts: __**Armure polyvalente Beta**__","\n:moneybag: **Prix :** 100 de bronze + 40 pièces d'argent\n:money_with_wings: **Revente : ** 45 de bronze + 10 pièces d'argent\n:shopping_cart: **Achat : **?Achat poly BE", true)
+                                                    .addField(":cyclone: :shield: __**Armure polyvalente Charlie**__","\n:moneybag: **Prix :** 100 de bronze + 40 pièces d'argent\n:money_with_wings: **Revente : ** 45 de bronze + 10 pièces d'argent\n:shopping_cart: **Achat : **?Achat poly CH")
+                                                    .setColor("#ff4600")
+                                                message.channel.send(embed).then(async message => 
+                                                    { 
+                                                        await message.react('🔙')
+                                                        let collector = message.createReactionCollector(filter,{time: 3600000,errors:['time']});
+                                                        collector.on('collect', (reaction, collector) =>
+                                                            {
+                                                                //const reaction = collected.first();
+
+                                                                if(reaction.emoji.name === '🔙')
+                                                            {
+                                                                message.delete()
+                    
+                                                                //message.channel.bulkDelete(2);
+                                                            }
+
+
+                                                        });
+                                                    });
+                                                    
+                                                    
+                                                }
+
+
                                             });
                                     });
                         break;
@@ -55,11 +94,14 @@ if(message.content === préfix + "Commerce"){
                                 .setDescription("```Tout les paliers```")
                                 .addField(":chains: __**Grappin magique**__","\n:moneybag: **Prix :** 10 de bronze\n:money_with_wings: **Revente : ** 5 de bronze\n:shopping_cart: **Utilité :** Après utilisation, vous pourrez essayé de fuir. Si votre fuite réussit, alors vous pourrez emporter quelqu'un de votre choix dans votre fuite.", true)
                                 .addField(":scroll: __**Parchemin de message**__","\n:moneybag: **Prix :** 5 de bronze\n:money_with_wings: **Revente : ** 2 de bronze\n:shopping_cart: **Utilité : **Après avoir écrit votre message, ce dernier viendra apparaître devant le destinaire (sans même que vous ne connaissiez la position de la personne).", true)
+                                .addField("（ミ◕‿◕ミ）  ","█████████████████████████████████████████████████",)
+                                .addField(":champagne: __**Potion d'apparence**__","\n:moneybag: **Prix :** 80 de bronze et 20 d'argent\n:money_with_wings: **Revente : ** 30 de bronze et 7 d'argent\n:shopping_cart: **Utilité : **Après avoir consommé la potion, vous venez à prendre une apparence humanoïde de votre choix pendant 12h. Vous ne pouvez pas copier l'apparence de quelqu'un déjà existant.", true)
+                                .addField(":warning: __**Balise de sauvetage**__","\n:moneybag: **Prix :** 20 de bronze et 15 d'argent\n:money_with_wings: **Revente : ** 10 de bronze et 5 d'argent\n:shopping_cart: **Utilité : **Après avoir utilisé la balise, cette dérnière viendra créer une intense lumière dans la zone...Si vous êtes dans un donjon ou une zone à étage, les personnes avant ou après votre chanel viendront voir la lumière..", true)
                                 .setColor("#ff4600")
                                     message.channel.send(embed2).then(async message => 
                                         { 
                                             await message.react('🔙')
-    
+                                            await message.react('➡️')
                                             let collector = message.createReactionCollector(filter,{time: 3600000,errors:['time']});
                                             collector.on('collect', (reaction, collector) =>
                                                 {
@@ -71,9 +113,42 @@ if(message.content === préfix + "Commerce"){
                                                     
                                                         //message.channel.bulkDelete(2);
                                                     }
+    
+                                                    if(reaction.emoji.name === '➡️')
+                                                    {
+                                                        message.delete() 
+                                                        
+                                                        let embed = new Discord.RichEmbed()
+                                                        .setTitle("**__Liste des utilitaires__**")
+                                                        .setDescription("```Tout les paliers```")
+                                                        .addField(":sparkles: __**Poussière féerique**__","\n:moneybag: **Prix :** 10 de bronze et 7 d'argent\n:money_with_wings: **Revente : ** 5 de bronze et 2 d'argent\n:shopping_cart: **Utilité : **Après avoir lancé la poussière devant vous, vous venez à attirer ''1'' mobs de votre choix**", )
+                                                        .setColor("#ff4600")
+                                                    message.channel.send(embed).then(async message => 
+                                                        { 
+                                                            await message.react('🔙')
+                                                            let collector = message.createReactionCollector(filter,{time: 3600000,errors:['time']});
+                                                            collector.on('collect', (reaction, collector) =>
+                                                                {
+                                                                    //const reaction = collected.first();
+    
+                                                                    if(reaction.emoji.name === '🔙')
+                                                                {
+                                                                    message.delete()
+                        
+                                                                    //message.channel.bulkDelete(2);
+                                                                }
+    
+    
+                                                            });
+                                                        });
+                                                        
+                                                        
+                                                    }
+    
+    
                                                 });
                                         });
-                        break;
+                            break;
                         case '❤️':
                                 let embed3 = new Discord.RichEmbed()
                                 .setColor("#ff4600")
@@ -84,7 +159,7 @@ if(message.content === préfix + "Commerce"){
                                     message.channel.send(embed3).then(async message => 
                                         { 
                                             await message.react('🔙')
-    
+                                            await message.react('➡️')
                                             let collector = message.createReactionCollector(filter,{time: 3600000,errors:['time']});
                                             collector.on('collect', (reaction, collector) =>
                                                 {
@@ -96,9 +171,43 @@ if(message.content === préfix + "Commerce"){
                                                     
                                                         //message.channel.bulkDelete(2);
                                                     }
+    
+                                                    if(reaction.emoji.name === '➡️')
+                                                    {
+                                                        message.delete() 
+                                                        
+                                                        let embed = new Discord.RichEmbed()
+                                                        .setTitle("**__Liste des potions__**")
+                                                        .setDescription("```Potion du palier 2```")
+                                                        .addField(":heartpulse: __**Super potion d'HP**__","\n:moneybag: **Prix :** 30 de bronze et 10 pièces d'argent\n:money_with_wings: **Revente : ** 15 de bronze et 5 pièces d'argent\n:shopping_cart: **Utilisation : **?Potion SHP", true)
+                                                        .addField(":cyclone: __**Super potion de Mana**__","\n:moneybag: **Prix :** 30 de bronze et 10 pièces d'argent\n:money_with_wings: **Revente : ** 15 de bronze et 5 pièces d'argent\n:shopping_cart: **Utilisation : **?Potion SMA", true)
+                                                        .setColor("#ff4600")
+                                                    message.channel.send(embed).then(async message => 
+                                                        { 
+                                                            await message.react('🔙')
+                                                            let collector = message.createReactionCollector(filter,{time: 3600000,errors:['time']});
+                                                            collector.on('collect', (reaction, collector) =>
+                                                                {
+                                                                    //const reaction = collected.first();
+    
+                                                                    if(reaction.emoji.name === '🔙')
+                                                                {
+                                                                    message.delete()
+                        
+                                                                    //message.channel.bulkDelete(2);
+                                                                }
+    
+    
+                                                            });
+                                                        });
+                                                        
+                                                        
+                                                    }
+    
+    
                                                 });
                                         });
-                        break;
+                            break;       
                     
                     }  
                 });
