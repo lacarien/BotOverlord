@@ -179,3 +179,300 @@ if(message.content === préfix + "MSquelette attaque"  || message.content === pr
     }
     message.channel.sendMessage(y);
 }
+
+
+/// LOOT DONJON GROTTE ///
+    /// LOOT DONJON GROTTE ///
+        /// LOOT DONJON GROTTE ///
+            /// LOOT DONJON GROTTE ///
+            /// LOOT DONJON GROTTE ///
+        /// LOOT DONJON GROTTE ///
+    /// LOOT DONJON GROTTE ///
+/// LOOT DONJON GROTTE ///
+
+if(message.content === préfix + "Loot grotte 1" || message.content === préfix + "loot grotte 1"){
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    var min = Math.floor(Math.min(12));
+    var max = Math.floor(Math.max(20)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    // Pièce argent
+    var mins = Math.floor(Math.min(4));
+    var maxs = Math.floor(Math.max(6)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    if(nombre<97){
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
+    .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
+    } else if(nombre < 101){
+    var x = new Discord.RichEmbed()
+    .setTitle("Vous trouvez un petit coffre avec une arme à l'intérieur...")
+    .setColor("#223300")
+    message.channel.sendMessage(x);
+    var y = new Discord.RichEmbed()
+    .setTitle("Dague sinistre")
+    .setColor("#4A007E")
+    .setImage("https://i.pinimg.com/originals/e2/6d/30/e26d30cb6fa2a606bc0ed250385e2d70.png")
+    .addField(":trident: **__Compétence__**","Pendant 4 tours vous débloquez la compétence : ?Mesquive [dégâts reçu]")
+    .addField(":beginner: **__Passif__**", "La première semaine vous perdrez votre voix...La deuxième semaine vous ne pourrez plus utiliser la gestuelle pour parler ressemblant plus à une ''âme vide'' qu'autre chose...")
+    .addField(":beginner: **__Passif (suite)__**","arrivé au stade où vous ne pourrez plus comuniquer avec la gestuelle et la voix, vous pourrez uniquement chuchoter dans les oreilles auprès des autres personnes qui sont de la classe voleur, ou bien d'une seul personne au choix(c'est parmanent, donc ne choisisez pas n'importe qui).")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    }
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot grotte 2" || message.content === préfix + "loot grotte 2"){
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    var min = Math.floor(Math.min(15));
+    var max = Math.floor(Math.max(25)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    // Pièce argent
+    var mins = Math.floor(Math.min(5));
+    var maxs = Math.floor(Math.max(7)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    if(nombre<97){
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
+    .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
+    } else if(nombre < 101){
+    var x = new Discord.RichEmbed()
+    .setTitle("Vous trouvez un petit coffre avec une arme à l'intérieur...")
+    .setColor("#223300")
+    message.channel.sendMessage(x);
+    var y = new Discord.RichEmbed()
+    .setTitle("L'arc du serpent")
+    .setColor("#4A007E")
+    .setImage("https://i.pinimg.com/originals/46/ee/80/46ee802e45537168f7198d278c244f7a.jpg")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Tir de zone [Vos dégâts]")
+    .addField(":beginner: **__Passif__**", "Le malus de l'arc est simple...Au bout de deux semaines vous deviendrez aveugle en contre partie d'une ''super ouïe''.")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    }
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot grotte 3" || message.content === préfix + "loot grotte 3"){
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    if(nombre<96){
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .setTitle("Vous gagnez une potion d'HP et une potion de MANA (non revendable)")
+    } else if(nombre < 98){
+    var x = new Discord.RichEmbed()
+    .setTitle("Vous trouvez un petit coffre avec une arme à l'intérieur...")
+    .setColor("#223300")
+    message.channel.sendMessage(x);
+    var y = new Discord.RichEmbed()
+    .setTitle("Dague sinistre")
+    .setColor("#4A007E")
+    .setImage("https://i.pinimg.com/originals/e2/6d/30/e26d30cb6fa2a606bc0ed250385e2d70.png")
+    .addField(":trident: **__Compétence__**","Pendant 4 tours vous débloquez la compétence : ?Mesquive [dégâts reçu]")
+    .addField(":beginner: **__Passif__**", "La première semaine vous perdrez votre voix...La deuxième semaine vous ne pourrez plus utiliser la gestuelle pour parler ressemblant plus à une ''âme vide'' qu'autre chose...")
+    .addField(":beginner: **__Passif (suite)__**","arrivé au stade où vous ne pourrez plus comuniquer avec la gestuelle et la voix, vous pourrez uniquement chuchoter dans les oreilles auprès des autres personnes qui sont de la classe voleur, ou bien d'une seul personne au choix(c'est parmanent, donc ne choisisez pas n'importe qui).")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    } else if(nombre <101) {
+    var x = new Discord.RichEmbed()
+    .setTitle("Vous trouvez un petit coffre avec une arme à l'intérieur...")
+    .setColor("#223300")
+    message.channel.sendMessage(x);
+    var y = new Discord.RichEmbed()
+    .setTitle("L'arc du serpent")
+    .setColor("#4A007E")
+    .setImage("https://i.pinimg.com/originals/46/ee/80/46ee802e45537168f7198d278c244f7a.jpg")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Tir de zone [Vos dégâts]")
+    .addField(":beginner: **__Passif__**", "Le malus de l'arc est simple...Au bout de deux semaines vous deviendrez aveugle en contre partie d'une ''super ouïe''.")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    }
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot grotte 4" || message.content === préfix + "loot grotte 4"){
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    var min = Math.floor(Math.min(30));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    // Pièce argent
+    var mins = Math.floor(Math.min(7));
+    var maxs = Math.floor(Math.max(10)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    if(nombre<97){
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
+    .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
+    } else if(nombre < 101){
+    var x = new Discord.RichEmbed()
+    .setTitle("Vous trouvez un petit coffre avec une arme à l'intérieur...")
+    .setColor("#223300")
+    message.channel.sendMessage(x);
+    var y = new Discord.RichEmbed()
+    .setTitle("Le grimoire du petit druid")
+    .setColor("#4A007E")
+    .setImage("https://img5.goodfon.com/wallpaper/nbig/5/4e/elena-kondratova-grimoire-cg-art-fentezi-kniga-magiia.jpg")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Invocation groop [Votre mana max]")
+    .addField(":beginner: **__Passif__**", "Le malus de cette arme légendaire est de vous rendre extremement peureux au bout de deux semaine. Vous serez au stade de vous laissez vous faire victimiser en se mettant en boule au sol et en pleurant(on parle d'un coup de poinge en RP passifs, si il vous attaque avec une vraie attaque vous pourrez vous défendre).")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    }
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot grotte 5" || message.content === préfix + "loot grotte 5"){
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    var min = Math.floor(Math.min(40));
+    var max = Math.floor(Math.max(50)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    // Pièce argent
+    var mins = Math.floor(Math.min(8));
+    var maxs = Math.floor(Math.max(10)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    if(nombre<97){
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
+    .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
+    } else if(nombre < 101){
+    var x = new Discord.RichEmbed()
+    .setTitle("Vous trouvez un petit coffre avec une arme à l'intérieur...")
+    .setColor("#223300")
+    message.channel.sendMessage(x);
+    var y = new Discord.RichEmbed()
+    .setTitle("Le grimoire du grand sorcier")
+    .setColor("#4A007E")
+    .setImage("https://66.media.tumblr.com/09a3a46b8c2b0a6035ac7297a1543d8e/tumblr_piic463vSM1x4rh9bo1_1280.jpg")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Tornade ténébreuse [Vos dégâts]")
+    .addField(":beginner: **__Passif__**", "Le malus de cette arme légendaire est de vous faire croire que vous ''voyez l'avenir'', voir même que vous êtes le héro d'une grande histoire liée à une prophétie (qui n'a jamais existé, car dans la réalité ~~tu restes une petite merde~~)")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    }
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot grotte 6" || message.content === préfix + "loot grotte 6"){
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    if(nombre<96){
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .setTitle("Vous gagnez deux potions d'HP et deux potions de MANA (non revendable)")
+    } else if(nombre < 98){
+    var x = new Discord.RichEmbed()
+    .setTitle("Vous trouvez un petit coffre avec une arme à l'intérieur...")
+    .setColor("#223300")
+    message.channel.sendMessage(x);
+    var y = new Discord.RichEmbed()
+    .setTitle("Le grimoire du petit druid")
+    .setColor("#4A007E")
+    .setImage("https://img5.goodfon.com/wallpaper/nbig/5/4e/elena-kondratova-grimoire-cg-art-fentezi-kniga-magiia.jpg")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Invocation groop [Votre mana max]")
+    .addField(":beginner: **__Passif__**", "Le malus de cette arme légendaire est de vous rendre extremement peureux au bout de deux semaine. Vous serez au stade de vous laissez vous faire victimiser en se mettant en boule au sol et en pleurant(on parle d'un coup de poinge en RP passifs, si il vous attaque avec une vraie attaque vous pourrez vous défendre).")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    } else if(nombre <101) {
+    var x = new Discord.RichEmbed()
+    .setTitle("Vous trouvez un petit coffre avec une arme à l'intérieur...")
+    .setColor("#223300")
+    message.channel.sendMessage(x);
+    var y = new Discord.RichEmbed()
+    .setTitle("Le grimoire du grand sorcier")
+    .setColor("#4A007E")
+    .setImage("https://66.media.tumblr.com/09a3a46b8c2b0a6035ac7297a1543d8e/tumblr_piic463vSM1x4rh9bo1_1280.jpg")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Tornade ténébreuse [Vos dégâts]")
+    .addField(":beginner: **__Passif__**", "Le malus de cette arme légendaire est de vous faire croire que vous ''voyez l'avenir'', voir même que vous êtes le héro d'une grande histoire liée à une prophétie (qui n'a jamais existé, car dans la réalité ~~tu restes une petite merde~~)")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    }
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot grotte 7" || message.content === préfix + "loot grotte 7"){
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    var min = Math.floor(Math.min(50));
+    var max = Math.floor(Math.max(70)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    // Pièce argent
+    var mins = Math.floor(Math.min(10));
+    var maxs = Math.floor(Math.max(15)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    if(nombre<96){
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
+    .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
+    } else if(nombre < 101){
+    var x = new Discord.RichEmbed()
+    .setTitle("Vous trouvez un petit coffre avec une arme à l'intérieur...")
+    .setColor("#223300")
+    message.channel.sendMessage(x);
+    var y = new Discord.RichEmbed()
+    .setTitle("Bouclier lichien")
+    .setColor("#4A007E")
+    .setImage("https://i.pinimg.com/originals/34/1f/48/341f482aaa1f2deed465239d124ce936.jpg")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Crie squelettique")
+    .addField(":beginner: **__Passif__**", "Le malus du bouclier est simple, plus vous allez passer du temps avec votre bouclier, plus vous allez finir schizophrène. Au bout de 2 semaines vous ferez limite plus confiance à votre bouclier qu'à vos proches et vous vous renfermerez sur vous même.")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    }
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot grotte 8" || message.content === préfix + "loot grotte 8"){
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    var min = Math.floor(Math.min(60));
+    var max = Math.floor(Math.max(70)); 
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    // Pièce argent
+    var mins = Math.floor(Math.min(12));
+    var maxs = Math.floor(Math.max(15)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    if(nombre<96){
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
+    .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
+    } else if(nombre < 101){
+    var x = new Discord.RichEmbed()
+    .setTitle("Vous trouvez un petit coffre avec une arme à l'intérieur...")
+    .setColor("#223300")
+    message.channel.sendMessage(x);
+    var y = new Discord.RichEmbed()
+    .setTitle("épée de folie")
+    .setColor("#4A007E")
+    .setImage("https://cdna.artstation.com/p/assets/images/images/021/026/414/large/francois-cannels-brightswordfinal-lowres.jpg?1570090378")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Mparade [dégâts reçu]")
+    .addField(":beginner: **__Passif__**", "L'épée de folie comme son nom l'indique vous rendras fou...La première semaine cela vient à se montrer uniquement via l'oral et la deuxième semaine vous commencez à frapper physiquement autrui...Votre folie atteint son ''maximum'' au bout d'un mois.")
+    .addField(":beginner: **__Passif (suite)__**","Il est à noter que ce comportement ''violent et impulsif'' peut-être sur 3 variantes : Vous protégez quelqu'un et vous n'hésitez pas à frapper la personne pour qu'elle vous écoutes (car vous avez toujours raison askip) et ne laissez personne l'approcher. Vous n'hésitez pas à frapper quelqu'un qui vous parle car celon vous ''il vous agresse''. Ou bien vous êtes juste '' extremement impulsif'' dans votre quotidien. ")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    }
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot grotte finale" || message.content === préfix + "loot grotte finale"){
+    var nombre = Math.floor((Math.random() * 100) + 1);
+    if(nombre<50){
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place: 100")
+    .addField("Vous gagnez des pièces d'argent", ":second_place: 20" )
+    .addField("Vous gagnez des pièces d'or", ":first_place: 5")
+    } else if(nombre < 95){
+    var y = new Discord.RichEmbed()
+    .setTitle("Vous gagnez 2 potions SMA et 2 potions SHP non revendable.")
+    .setColor("#223300")
+    } else if(nombre < 101){
+        var y = new Discord.RichEmbed()
+        .setColor("#4A007E")
+        .setImage("https://i.pinimg.com/originals/ba/f7/05/baf705990e172623bfbfbb1375b5de4c.jpg")
+        .setTitle("L'anneau du Sergent")
+        .setDescription("L'anneau du sergent peut-être stocké uniquement au nombre de 1. Si dans un combat vous venez à vous faire tuer, alors vos HP viendront se bloquer à 1. Une fois le combat finit, vous reviendrais à la vie et l'anneau se ''brisera'', le rendant donc inutile et utilisable une seul fois...Sachez néanmoins que cette version est inférieur à celle d'origine. Si vous n'avez pas frollé la mort 1 mois après l'avoir obtenu, elle se brisera.")
+    }
+    message.channel.sendMessage(y);
+}
+
+
+
+
