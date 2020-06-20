@@ -455,6 +455,457 @@ if(message.content === préfix + "Loot hadès" || message.content === préfix + 
     /// GROTTE PALIER 2 /// 
 /// GROTTE PALIER 2 /// 
 
+if(message.content === préfix + "Gobelin attaque"  || message.content === préfix + "gobelin attaque"){ 
+    var mins = Math.floor(Math.min(40));
+    var maxs = Math.floor(Math.max(50)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var Z = x*1.3
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result<3){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Le gobelin rate son attaque...")
+    } else if (result <23){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Le goblin vient vous attaquer à l'aide de sa dague, néanmoins __elle ne perce pas votre armure !__", ":crossed_swords:" + x)
+    } else if (result < 97){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Le goblin vient vous attaquer à l'aide de sa dague, __l'attaque perce votre armure !__", ":crossed_swords:" + x)
+    }else if(result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#c50000")
+    .addField("Le goblin vient vous attaquer à l'aide de sa dague, __**l'attaque perce votre armure en plus d'être un coup critique !**__", ":crossed_swords:" + Z)
+    }
+    message.channel.sendMessage(y);
+    
+}
+
+if(message.content === préfix + "Agobelin attaque"  || message.content === préfix + "agobelin attaque"){ 
+    var mins = Math.floor(Math.min(45));
+    var maxs = Math.floor(Math.max(55)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var Z = x*1.3
+    var W = x*0.7
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result<3){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Le gobelin archer rate son attaque...")
+    } else if (result <65){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Le goblin archer tire une flèche sur un adversaire de première ligne. Si la personne a une armure, alors les dégâts sur cette derniere viendront à être transféré sur la personne au cible juste en dessous(tire perce armure).", ":bow_and_arrow: " + x)
+    } else if (result < 97){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Le goblin archer viendra tirer sur une cible de la __deuxième ligne__", ":bow_and_arrow: " + W)
+    }else if(result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#c50000")
+    .addField("**Le goblin viendra tirer une flèche qui fera de gros dégâts.**", ":bow_and_arrow: " + Z)
+    }
+    message.channel.sendMessage(y);
+    
+}
+
+if(message.content === préfix + "Loup attaque"  || message.content === préfix + "loup attaque"){ 
+    var mins = Math.floor(Math.min(30));
+    var maxs = Math.floor(Math.max(45)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var Z = Math.floor(x*1.3)
+    var W = Math.floor(x*0.3)
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result<3){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Le loup rate son attaque...")
+    } else if (result <60){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Le loup viendra mordre son adversaire sans pour autant lui affecter un malus. Si le loup vous as déjà mordu au précédent tours, alors vous ne pourrez pas attaquer(L'attaque avec le saignement n'est pas prit en compte).", ":crossed_swords: " + x)
+    } else if (result < 97){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Le loup viendra vous donner un coup de croc, il vous appliquera un saignement non cumulable pendant 3 tours.", ":crossed_swords: " + x + "\n:drop_of_blood: " + W)
+    }else if(result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#c50000")
+    .addField("**Le loup vous donneras un féroce coup de croc !**", ":crossed_swords: " + Z)
+    }
+    message.channel.sendMessage(y);
+    
+}
+
+if(message.content === préfix + "Hobgobelin attaque"  || message.content === préfix + "hobgobelin attaque"){ 
+    var mins = Math.floor(Math.min(45));
+    var maxs = Math.floor(Math.max(55)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var Z = Math.floor(x*1.3)
+    var W = Math.floor(x*0.5)
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result<3){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Le hobgobelin rate son attaque...")
+    } else if (result <70){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Le Hobgobelin viendra vous donner un coup de poings en plein dans le visage.", ":crossed_swords: " + x)
+    } else if (result < 97){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Levant son pied, il viendra écraser le sol créant un mini seisme...__Tout le mond prend des dégâts (Uniquement esquivable et l'armure est inutile...Néanmoins si vous avez plus d'armure que les dégâts du hobgobelin, alors vous prenez que la moitié.)", ":crossed_swords: " + W)
+    }else if(result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#c50000")
+    .addField("**Le loup vous donneras un féroce coup de croc !**", ":crossed_swords: " + Z)
+    }
+    message.channel.sendMessage(y);
+    
+}
+
+if(message.content === préfix + "Vagabond attaque"  || message.content === préfix + "vagabond attaque"){ 
+    var mins = Math.floor(Math.min(55));
+    var maxs = Math.floor(Math.max(70)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var Z = Math.floor(x*1.3)
+    var W = Math.floor(x*0.3)
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result<3){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Le vagabond rate son attaque...")
+    } else if (result <25){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Le vagabond vous regarde droit dans les yeux et vous force à attaquer votre alliée.")
+    } else if (result < 97){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Le vagabond viendra vous donner un coup d'épée en plein dans le torse !", ":crossed_swords: " +x)
+    }else if(result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#c50000")
+    .addField("**La lame du vagabond vient devenir violette et ce dernier la plante dans votre corps...Quand vous serez sortie du donjon, vous serez extrêmement malade et serez dans l'impossibilité de faire plus de deux combat par jours. Cette semaine -25% de vos PV**", ":crossed_swords: " + Z)
+    }
+    message.channel.sendMessage(y);
+    
+}
+
+if(message.content === préfix + "Paladin attaque"  || message.content === préfix + "paladin attaque"){ 
+    var mins = Math.floor(Math.min(45));
+    var maxs = Math.floor(Math.max(55)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var Z = Math.floor(x*1.3)
+    var W = Math.floor(x*0.3)
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result<3){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Le vagabond rate son attaque...")
+    } else if (result <35){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Le paladin fonce sur vous et vous donnes un coup de bouclier et vous fais perdre 20% de vos HP max...Si vous êtes 5 dans le combat, alors vous serez ''hors jeu'' pendant 5 tours. Si vous êtiez 4, alors pendant 4 tours, etc.")
+    } else if (result < 97){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Le paladin vous donnes un coup de bouclier en plein dans votre face", ":crossed_swords: " +x)
+    }else if(result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#c50000")
+    .addField("**La bouclier du paladin viendra prendre une couleur violette et vous viendrez le manger en pleine face...**", ":crossed_swords: " + Z)
+    .addField("**Malus**","Quand vous serez sortie du donjon, vous verez des visions affreuses de votre passé et serez dans l'impossibilité de faire plus de deux combat par jours. De plus...\nVous aurez pendant cette semaine -25% de vos PV (il est à noter que si vous venez d'un autre monde, les visions vous ferons retrouver un peu plus la mémoire bien que __tout__ sera tourné dans le malheur pouvant même créer des visions fausses)")
+    }
+    message.channel.sendMessage(y);
+    
+}
+
+if(message.content === préfix + "Sorcier attaque"  || message.content === préfix + "sorcier attaque"){ 
+    var mins = Math.floor(Math.min(45));
+    var maxs = Math.floor(Math.max(55)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var Z = Math.floor(x*1.3)
+    var W = Math.floor(x*0.5)
+    var J = Math.floor(x*0.3)
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result<3){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Le sorcier rate son attaque...")
+    } else if (result <60){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Levant une main, le sorcier viendra envoyer une nuée de chauve souris sur __toutes les lignes,__ l'attaque est __perce armure__", ":crossed_swords: "+W)
+    } else if (result < 97){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Le sorcier envoie trois attaque rapidement sur un membre de la deuxième ligne(Donc 3 blocages ou 3 esquive)", ":crossed_swords: " +J)
+    }else if(result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#c50000")
+    .addField("**Le sorcier fait un coup critique et vous envoie une boule de feu.**", ":crossed_swords: " + Z)
+    }
+    message.channel.sendMessage(y);
+    
+}
+
+if(message.content === préfix + "Druid attaque"  || message.content === préfix + "druid attaque"){ 
+    var mins = Math.floor(Math.min(40));
+    var maxs = Math.floor(Math.max(60)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var Z = Math.floor(x*2)
+    var W = Math.floor(x*0.5)
+    var J = Math.floor(x*0.3)
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result<3){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Le druid rate son sort...")
+    } else if (result <70){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Venant chanter une incantation, le druid viendra soigner le paladin noir ou le vagabond en priorité...S'ils sont mort, il soignera le monstre qui c'est fait attaqué dernièrement", ":heartpulse: "+W)
+    } else if (result < 97){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Levant une main, le druid viendra retirer tout ce qui est dégâts sur le long therme de ses alliées(Saignement, etc). Si il n'a rien à soigner...Alors tant pis.")
+    }else if(result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#c50000")
+    .addField("**Le druid viendra faire un coup critique sur son incantation.**", ":heartpulse: " + Z)
+    }
+    message.channel.sendMessage(y);
+    
+}
+
+if(message.content === préfix + "Champion attaque"  || message.content === préfix + "champion attaque"){ 
+    var mins = Math.floor(Math.min(120));
+    var maxs = Math.floor(Math.max(150)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+    var Z = Math.floor(x*2)
+    var W = Math.floor(x*0.5)
+    var J = Math.floor(x*0.3)
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result<3){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Le champion rate son attaque...")
+    } else if (result <70){
+    var y = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .addField("Grognant comme le goblin qu'il est, le champion viendra vous donner un coup sans hésiter", ":crossed_swords: "+x)
+    } else if (result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#c50000")
+    .setImage("https://media1.giphy.com/media/WoLbiZxOu0Na83cfuD/giphy.gif")
+    .addField("**Vous venez vous prendre un bon gros coup...(Dans le pire vos HP seront bloqué à 1..Mais rien ne vous empêche de mourir plus tard). Dans 3 tours vous pourrez revenir sur le terrain.**",":crossed_swords: " + Z )
+    }
+    message.channel.sendMessage(y);
+    
+}
+
+/// LOUP
+
+if(message.content === préfix + "Loup" || message.content === préfix + "loup") {
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Loup")
+    .setImage("https://cdn.discordapp.com/attachments/708449828337745942/720323106916532305/image0.jpg")
+    .addField(":heart: HP par loup","240")
+    .addField(":crossed_swords: Attaque", "?Loup attaque")
+    .addField(":trident: Passif","Si un loup est provoqué, alors tout les loups attaquent la même cible. Si le loup provoqué est seul, alors ses dégâts sont multipliés par 2\nSi vous avez subit plus de 5 morsures, alors votre armure deviendra inutilisable jusqu'à la fin du combat")
+    .addField(":beginner: Défense", "?Bloup [dégâts reçu]")
+    .addField(":moneybag: Récompenses", "?Loot loup")
+    message.channel.sendMessage(help_embed);
+        
+}
+
+if(message.content === préfix + "Gobelin de la horde" || message.content === préfix + "Gobelin de la horde") {
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Horde de gobelin")
+    .setImage("https://static.comicvine.com/uploads/scale_super/11133/111335377/6810507-7543951013-Scree.png")
+    .addField(":heart: HP par gobelin","160")
+    .addField(":shield: Armure par gobelin", "5")
+    .addField(":crossed_swords: Attaque", "?Gobelin attaque")
+    .addField(":beginner: Défense", "?Bhgobelin [dégâts reçu]")
+    .addField(":moneybag: Récompenses", "?Loot gobelin")
+    message.channel.sendMessage(help_embed);
+        
+}
+
+if(message.content === préfix + "Gobelin archer" || message.content === préfix + "Gobelin archer") {
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Horde de gobelin")
+    .setImage("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c17260ba-b9a1-4bbf-bb1b-ec6d88452d1e/d9465pj-99df55f4-32af-4490-b5ae-039c5834331f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYzE3MjYwYmEtYjlhMS00YmJmLWJiMWItZWM2ZDg4NDUyZDFlXC9kOTQ2NXBqLTk5ZGY1NWY0LTMyYWYtNDQ5MC1iNWFlLTAzOWM1ODM0MzMxZi5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.oJ1poNSOnnsoJZLSk83f1xUrHVY8tU9WBHj2ux0B26c")
+    .addField(":heart: HP par Gobelin","100")
+    .addField(":shield: Armure par gobelin", "5")
+    .addField(":crossed_swords: Attaque", "?Agobelin attaque")
+    .addField(":beginner: Défense", "?Bagobelin [dégâts reçu]")
+    .addField(":moneybag: Récompenses", "?Loot gobelin archer")
+    message.channel.sendMessage(help_embed);
+        
+}
+
+if(message.content === préfix + "Loot loup" || message.content === préfix + "loot loup"){
+    var min = Math.floor(Math.min(7));
+    var max = Math.floor(Math.max(12));
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    // Pièce argent
+    var mins = Math.floor(Math.min(2));
+    var maxs = Math.floor(Math.max(4)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
+    .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot gobelin" || message.content === préfix + "loot gobelin"){
+    var min = Math.floor(Math.min(6));
+    var max = Math.floor(Math.max(9));
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    // Pièce argent
+    var mins = Math.floor(Math.min(2));
+    var maxs = Math.floor(Math.max(4)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
+    .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "Loot gobelin archer" || message.content === préfix + "loot gobelin archer"){
+    var min = Math.floor(Math.min(5));
+    var max = Math.floor(Math.max(10));
+    var y = Math.floor(Math.random() * (max - min + 1) ) + min;
+    // Pièce argent
+    var mins = Math.floor(Math.min(1));
+    var maxs = Math.floor(Math.max(5)); 
+    var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+
+    var y = new Discord.RichEmbed()
+    .setColor("#223300")
+    .addField("Vous gagnez des pièces de bronze", ":third_place:" + y)
+    .addField("Vous gagnez des pièces d'argent", ":second_place:" + x)
+    message.channel.sendMessage(y);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ARME LEGENDAIRE ///
+    // ARME LEGENDAIRE ///
+        // ARME LEGENDAIRE ///
+            // ARME LEGENDAIRE ///
+            // ARME LEGENDAIRE ///
+        // ARME LEGENDAIRE ///
+    // ARME LEGENDAIRE ///
+// ARME LEGENDAIRE ///
+
+
+if(message.content === préfix + "Légendaire dague sinistre") {
+    var result = new Discord.RichEmbed() 
+    .setTitle("Dague sinistre")
+    .setColor("#4A007E")
+    .setImage("https://i.pinimg.com/originals/e2/6d/30/e26d30cb6fa2a606bc0ed250385e2d70.png")
+    .addField(":trident: **__Compétence__**","Pendant 4 tours vous débloquez la compétence : ?Mesquive [dégâts reçu]")
+    .addField(":beginner: **__Passif__**", "La première semaine vous perdrez votre voix...La deuxième semaine vous ne pourrez plus utiliser la gestuelle pour parler ressemblant plus à une ''âme vide'' qu'autre chose...")
+    .addField(":beginner: **__Passif (suite)__**","arrivé au stade où vous ne pourrez plus comuniquer avec la gestuelle et la voix, vous pourrez uniquement chuchoter dans les oreilles auprès des autres personnes qui sont de la classe voleur, ou bien d'une seul personne au choix(c'est parmanent, donc ne choisisez pas n'importe qui).")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    message.channel.send(result)
+}
+
+if(message.content === préfix + "Légendaire épée de folie") {
+    var result = new Discord.RichEmbed() 
+    .setTitle("épée de folie")
+    .setColor("#4A007E")
+    .setImage("https://cdna.artstation.com/p/assets/images/images/021/026/414/large/francois-cannels-brightswordfinal-lowres.jpg?1570090378")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Mparade [dégâts reçu]")
+    .addField(":beginner: **__Passif__**", "L'épée de folie comme son nom l'indique vous rendras fou...La première semaine cela vient à se montrer uniquement via l'oral et la deuxième semaine vous commencez à frapper physiquement autrui...Votre folie atteint son ''maximum'' au bout d'un mois.")
+    .addField(":beginner: **__Passif (suite)__**","Il est à noter que ce comportement ''violent et impulsif'' peut-être sur 3 variantes : Vous protégez quelqu'un et vous n'hésitez pas à frapper la personne pour qu'elle vous écoutes (car vous avez toujours raison askip) et ne laissez personne l'approcher. Vous n'hésitez pas à frapper quelqu'un qui vous parle car celon vous ''il vous agresse''. Ou bien vous êtes juste '' extremement impulsif'' dans votre quotidien. ")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    message.channel.send(result)
+}
+
+if(message.content === préfix + "Légendaire bouclier du garde vagabond") {
+    var result = new Discord.RichEmbed() 
+    .setTitle("Bouclier lichien")
+    .setColor("#4A007E")
+    .setImage("https://i.pinimg.com/originals/34/1f/48/341f482aaa1f2deed465239d124ce936.jpg")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Crie squelettique")
+    .addField(":beginner: **__Passif__**", "Le malus du bouclier est simple, plus vous allez passer du temps avec votre bouclier, plus vous allez finir schizophrène. Au bout de 2 semaines vous ferez limite plus confiance à votre bouclier qu'à vos proches et vous vous renfermerez sur vous même.")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    message.channel.send(result)
+}
+
+if(message.content === préfix + "Légendaire arc du serpent") {
+    var result = new Discord.RichEmbed() 
+    .setTitle("L'arc du serpent")
+    .setColor("#4A007E")
+    .setImage("https://i.pinimg.com/originals/46/ee/80/46ee802e45537168f7198d278c244f7a.jpg")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Tir de zone [Vos dégâts]")
+    .addField(":beginner: **__Passif__**", "Le malus de l'arc est simple...Au bout de deux semaines vous deviendrez aveugle en contre partie d'une ''super ouïe''.")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    message.channel.send(result)
+}
+
+if(message.content === préfix + "Légendaire grimoire du druid") {
+    var result = new Discord.RichEmbed() 
+    .setTitle("Le grimoire du petit druid")
+    .setColor("#4A007E")
+    .setImage("https://img5.goodfon.com/wallpaper/nbig/5/4e/elena-kondratova-grimoire-cg-art-fentezi-kniga-magiia.jpg")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Invocation groop [Votre mana max]")
+    .addField(":beginner: **__Passif__**", "Le malus de cette arme légendaire est de vous rendre extremement peureux au bout de deux semaine. Vous serez au stade de vous laissez vous faire victimiser en se mettant en boule au sol et en pleurant(on parle d'un coup de poinge en RP passifs, si il vous attaque avec une vraie attaque vous pourrez vous défendre).")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    message.channel.send(result)
+}
+
+if(message.content === préfix + "Légendaire grimoire du sorcier") {
+    var result = new Discord.RichEmbed() 
+    .setTitle("Le grimoire du grand sorcier")
+    .setColor("#4A007E")
+    .setImage("https://66.media.tumblr.com/09a3a46b8c2b0a6035ac7297a1543d8e/tumblr_piic463vSM1x4rh9bo1_1280.jpg")
+    .addField(":trident: **__Compétence__**","Vous débloquez la compétence : ?Tornade ténébreuse [Vos dégâts]")
+    .addField(":beginner: **__Passif__**", "Le malus de cette arme légendaire est de vous faire croire que vous ''voyez l'avenir'', voir même que vous êtes le héro d'une grande histoire liée à une prophétie (qui n'a jamais existé, car dans la réalité ~~tu restes une petite merde~~)")
+    .addField(":page_facing_up: **__Note__**", "Vous ne pouvez pas porter plus d'une arme légendaire sur vous.")
+    .addField(":moneybag: Revente", "Impossible")
+    message.channel.send(result)
+}
+
+
+
+
+
+
+
+
+
 
 
 
