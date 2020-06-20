@@ -8,11 +8,13 @@ const talkedRecently3 = new Set()
 
 
 
+
 client.login(process.env.TOKEN);
 
 var préfix = "?";
 var fs = require("fs")
 var vm = require('vm')
+
 
 
 client.on("message",message =>{
@@ -33,7 +35,7 @@ client.on("message",message =>{
     eval(fs.readFileSync(__dirname + '/shop.js')+''); 
     eval(fs.readFileSync(__dirname + '/stuff.js')+'');
     eval(fs.readFileSync(__dirname + '/donjon.js')+'');
- 
+    eval(fs.readFileSync(__dirname + '/immobilier.js')+'');
 
     ////////////////// LES BASES ////////////////////
         ////////////////// LES BASES ////////////////////
@@ -74,7 +76,6 @@ client.on("message",message =>{
          message.channel.sendMessage(help_embed);
     }
 
-
     if(message.content === préfix + "Gain" || message.content === préfix + "gain"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#ffd100")
@@ -84,6 +85,7 @@ client.on("message",message =>{
         .setFooter("Menu Gain")
          message.channel.sendMessage(help_embed);
     }
+
 
     //// ATTAQUE ////
         //// ATTAQUE ////
@@ -194,7 +196,7 @@ client.on("message",message =>{
         else if(nombre < 101)
         var y = new Discord.RichEmbed()
         .setColor("#000000")
-        .setAuthor("Vous ratez votre attaque.")
+        .setAuthor("Vous ratez votre attaque et perdez -5 de mana.")
         .setImage("https://hugelolcdn.com/i/64163.jpg")
         message.channel.send(y);
     }     
@@ -502,12 +504,12 @@ client.on("message",message =>{
         else if(nombre < 101)
         var y = new Discord.RichEmbed()
         .setColor("#000000")
-        .setAuthor("Votre sort ne touche pas la cible")
+        .setAuthor("Votre sort ne touche pas la cible, vous perdez 10 de mana")
         .setImage("https://hugelolcdn.com/i/64163.jpg")
         message.channel.send(y);
     }
 
-    if(message.content === préfix + "Msoin" || message.content === préfix + "msoin" ){
+    if(message.content === préfix + "mSoin" || message.content === préfix + "Msoin" ){
         var min = Math.floor(Math.min(40));
         var max = Math.floor(Math.max(65)); 
         var y = Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -692,7 +694,7 @@ client.on("message",message =>{
         if (!args.length) {
             return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
         }
-        var min = Math.floor(Math.min(`${args}`*0.75));
+        var min = Math.floor(Math.min(`${args}`*0.65));
         var max = Math.floor(Math.max(`${args}`*0.90)); 
         var result = Math.floor(Math.random() * (max - min + 1) ) + min;
         var y = new Discord.RichEmbed()
@@ -1058,49 +1060,648 @@ client.on("message",message =>{
             message.channel.send(mes);
         }
 
-        if(command === 'spawnforetsafe') {
-            if (!args.length) {
-            return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
-            }
-            var A = 0; // Ccrocro
-            var B = 0; // nid'rats
-            var C = 0; // Alpha
-            var D = 0; // crocro bipède
-            var x = 0;
-            var i=`${args}`;
-            while(i!=0){
-        
-                var result = Math.floor((Math.random() * 100) + 1);
-                if(result < 90){
-                var x = x+1;
-                } else if (result < 101){
-                var x = x+2;
-                } 
-                i--;
-                
-            }
-            while(x!=0){  
-            var random = Math.floor((Math.random() * 100) + 1);
-            if(random < 50){
-                A = A+1;
-            } else if (random < 95){
-                B = B+1;
-            } else if (random < 101){
-                C = C+1;
-            }
-            x=0;
-            } 
-            var mes = new Discord.RichEmbed()
-            .addField(":clown: __**Goblin**__", "**Nombres :** " + A)
-            .addField(":bat: **__Hibou_**", "**Nombres :** "+B)
-            .addField(":full_moon_with_face: **__Géant__**", "**Nombres :** "+C)
-            .setColor("#58D68D")
-            .setImage("https://i.pinimg.com/originals/b0/07/6c/b0076c06dc93229a327b95fc1a9a477f.jpg")
-            message.channel.send(mes);
+    if(message.content === préfix + "Village étage 3" || message.content === préfix + "Village étage 3") {
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var sql = Math.floor((Math.random() * 3) + 1);
+        if(nombre < 50){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#808080")
+        .setTitle("Horde de squelette")
+        .setImage("https://i.pinimg.com/originals/a3/c8/67/a3c8671ffa1504fc7b3b7fa23fb0f485.jpg")
+        .addField(":busts_in_silhouette: Nombre de squelettes",sql)
+        .addField(":heart: HP par mobs","70")
+        .addField(":beginner: Passif", "Ne peut pas mourir en un coup.")
+        .addField(":crossed_swords: Attaque", "?Squelette attaque")
+        .addField(":shield: Défense", "?bsquelette [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "Aucune")
+        }else if (nombre < 101){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#808080")
+        .setTitle("Horde de squelette archer")
+        .setImage("https://i.pinimg.com/originals/61/00/f4/6100f4bf5fb47165f908a57557f664b0.jpg")
+        .addField(":busts_in_silhouette: Nombre de squelettes",sql)
+        .addField(":heart: HP par mobs","50")
+        .addField(":beginner: Passif", "Ne peut pas mourir en un coup.")
+        .addField(":crossed_swords: Attaque", "?ASquelette attaque")
+        .addField(":shield: Défense", "?basquelette [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "Aucune")
+        }
+         message.channel.sendMessage(help_embed);
+            
         }
 
+    if(message.content === préfix + "Village étage 2" || message.content === préfix + "Village étage 2") {
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var sql = Math.floor((Math.random() * 4) + 1);
+        if(sql == 1){
+            sql = sql+1;
+        }
+        if(nombre < 50){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#808080")
+        .setTitle("Horde de squelette")
+        .setImage("https://i.pinimg.com/originals/a3/c8/67/a3c8671ffa1504fc7b3b7fa23fb0f485.jpg")
+        .addField(":busts_in_silhouette: Nombre de squelettes",sql)
+        .addField(":heart: HP par mobs","70")
+        .addField(":beginner: Passif", "Ne peut pas mourir en un coup.")
+        .addField(":crossed_swords: Attaque", "?Squelette attaque")
+        .addField(":shield: Défense", "?bsquelette [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "Aucune")
+        }else if (nombre < 101){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#808080")
+        .setTitle("Horde de squelette archer")
+        .setImage("https://i.pinimg.com/originals/61/00/f4/6100f4bf5fb47165f908a57557f664b0.jpg")
+        .addField(":busts_in_silhouette: Nombre de squelettes",sql)
+        .addField(":heart: HP par mobs","50")
+        .addField(":beginner: Passif", "Ne peut pas mourir en un coup.")
+        .addField(":crossed_swords: Attaque", "?ASquelette attaque")
+        .addField(":shield: Défense", "?basquelette [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "Aucune")
+        }
+         message.channel.sendMessage(help_embed);
+            
+        }   
+
+    if(message.content === préfix + "Village étage 1" || message.content === préfix + "Village étage 1") {
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var sql = Math.floor((Math.random() * 5) + 1);
+        if(sql == 1){
+            sql = sql +2;
+        }
+        if(sql == 2){
+            sql = sql +1;
+        }
+         var ep = 0
+        var ar = 0
+        var i = sql
+    
+    while(i != 0){
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        if(nombre <50){
+            ep = ep +1
+        } else if (nombre < 101){
+            ar = ar +1
+        }
+        i--
+    }
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#808080")
+    .setTitle("Horde de squelette mix")
+    .setImage("https://cdn.discordapp.com/attachments/706480568350539799/717446884209197106/Pohot_montage_de_dinue.PNG")
+    .addField(":busts_in_silhouette: :crossed_swords: Nombre de squelette en première ligne",ep)
+    .addField(":busts_in_silhouette: :bow_and_arrow: Nombre d'archer en deuxieme ligne",ar)
+    .addField(":heart: HP par mobs","Archer : 50\nSquelette : 70")
+    .addField(":beginner: Passif", "Ne peut pas mourir en un coup.")
+    .addField(":crossed_swords: Attaque", "?Squelette attaque\n?ASquelette attaque")
+    .addField(":shield: Défense", "?bsquelette [dégâts reçu]\n?basquelette [dégâts reçu]")
+    .addField(":moneybag: Récompenses", "Aucune")
+    message.channel.sendMessage(help_embed);
+            
+    }
+
+    if(command === 'spawngrotte') {
+        if (!args.length) {
+        return message.channel.send(`Il faut mettre le nombre de joueur !, ${message.author}!`);
+        }
+        var A = 0; // Loup
+        var B = 0; // horde de gobelin
+        var C = 0; // archer gobelin
+        var D = 0; // crocro bipède
+        var x = 0;
+        var i=`${args}`;
+        while(i!=0){
+    
+            x = x+1;
+            i--;
+            
+        }
+        while(x!=0){  
+        var random = Math.floor((Math.random() * 100) + 1);
+        if(random < 30){
+            A = A+1;
+        } else if (random < 80){
+            B = B+1;
+        } else if (random < 101){
+            C = C+1;
+        }
+        x=x-1;
+        } 
+        var mes = new Discord.RichEmbed()
+        .addField(":wolf: __**Loup**__", "**Nombres :** " + A)
+        .addField(":japanese_goblin: **__Horde de gobelin__**", "**Nombres :** "+B)
+        .addField(":japanese_goblin: **__Archer gobelin__**", "**Nombres :** "+C)
+        .setColor("#515A5A")
+        .setImage("https://cdn.vox-cdn.com/thumbor/YHGhmh47TkzEDESSodgoFkag2jI=/1200x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/4020620/demons_demogorgon_2.0.jpg")
+        message.channel.send(mes);
+        }
+
+
+
+
+    /// Grotte donjon
+
+    if(message.content === préfix + "Grotte 1" || message.content === préfix + "grotte 1") {
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var min = Math.min(3);
+        var max = Math.max(5);
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min; 
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Horde de gobelin")
+    .setImage("https://static.comicvine.com/uploads/scale_super/11133/111335377/6810507-7543951013-Scree.png")
+    .addField(":busts_in_silhouette: Nombre de gobelin",result)
+    .addField(":heart: HP par gobelin","160")
+    .addField(":shield: Armure par gobelin", "5")
+    .addField(":crossed_swords: Attaque", "?Gobelin attaque")
+    .addField(":beginner: Défense", "?Bhgobelin [dégâts reçu]")
+    .addField(":moneybag: Récompenses", "?Loot grotte 1")
+    message.channel.sendMessage(help_embed);
+            
+    }
+ 
+    if(message.content === préfix + "Grotte 2" || message.content === préfix + "grotte 2") {
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var min = Math.min(1);
+        var max = Math.max(1);
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var min = Math.min(1);
+        var max = Math.max(2);
+        var result2 = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Archer gobelin et loup")
+    .setImage("https://cdn.discordapp.com/attachments/712965483107844096/723093945499910186/a_la_rache.png")
+    .addField(":busts_in_silhouette: Nombre de loup en première ligne",result2)
+    .addField(":busts_in_silhouette: Nombre d'archer gobelin en deuxième ligne'",result)
+    .addField(":heart: HP par mobs","Gobelin archer : 100\nLoup : 240")
+    .addField(":shield: Armure par mobs", "Gobelin archer : 5")
+    .addField(":trident: Passif","Si un loup est provoqué, alors tout les loups attaquent la même cible. Si le loup provoqué est seul, alors ses dégâts sont multipliés par 2\nSi vous avez subit plus de 5 morsures, alors votre armure deviendra inutilisable jusqu'à la fin du combat")
+    .addField(":crossed_swords: Attaque", "?Agobelin attaque\n?Loup attaque")
+    .addField(":beginner: Défense", "?Bagobelin [dégâts reçu]\n?Bloup [dégâts reçu]")
+    .addField(":moneybag: Récompenses", "?Loot grotte 2")
+    message.channel.sendMessage(help_embed);
+            
+    }
+
+    if(message.content === préfix + "Grotte 3" || message.content === préfix + "grotte 3") {
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var min = Math.min(1);
+        var max = Math.max(2);
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var min = Math.min(4);
+        var max = Math.max(5);
+        var result2 = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var help_embed = new Discord.RichEmbed()
+    .setColor("#515A5A")
+    .setTitle("Archer gobelin et horde de gobelin")
+    .setImage("https://cdn.discordapp.com/attachments/712965483107844096/723098138331578418/a_la_rache_deuxieme_edition.png")
+    .addField(":busts_in_silhouette: Nombre gobelin de la horde en première ligne",result2)
+    .addField(":busts_in_silhouette: Nombre d'archer gebelin en deuxième ligne'",result)
+    .addField(":heart: HP par mobs","Gobelin archer : 100\nGobelin : 160")
+    .addField(":shield: Armure par mobs", "Gobelin archer : 5\nHorde gobelin : 5")
+    .addField(":crossed_swords: Attaque", "?Agobelin attaque\n?Gobelin attaque")
+    .addField(":beginner: Défense", "?Bagobelin [dégâts reçu]\n?Bgobelin [dégâts reçu]")
+    .addField(":moneybag: Récompenses", "?Loot grotte 3")
+    message.channel.sendMessage(help_embed);
+            
+    }
+
+    if(message.content === préfix + "Grotte 4" || message.content === préfix + "grotte 4") {
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var min = Math.min(2);
+        var max = Math.max(3);
+        var result2 = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .setTitle("Hobgoblin et loup")
+        .setImage("https://cdn.discordapp.com/attachments/712965483107844096/723217094673432606/4eme_edition.png")
+        .addField(":busts_in_silhouette: Nombre de hobgoblin en première ligne","1")
+        .addField(":busts_in_silhouette: Nombre de gobelin archer en deuxième ligne",result2)
+        .addField(":heart: HP par mobs","Hobgobelin : 600\nLoup : 160")
+        .addField(":shield: Armure par mobs", "Hobgobelin : 5")
+        .addField(":trident: Passif","Si un loup est provoqué, alors tout les loups attaquent la même cible. Si le loup provoqué est seul, alors ses dégâts sont multipliés par 2\nSi vous avez subit plus de 5 morsures, alors votre armure deviendra inutilisable jusqu'à la fin du combat")
+        .addField(":crossed_swords: Attaque", "?Hobgobelin attaque\n?Loup attaque")
+        .addField(":beginner: Défense", "?Bhgobelin [dégâts reçu]\nBloup [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "?Loot grotte 4")
+        message.channel.sendMessage(help_embed);
+            
+    }
+
+    if(message.content === préfix + "Grotte 5" || message.content === préfix + "grotte 5") {
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var min = Math.min(2);
+        var max = Math.max(4);
+        var result2 = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .setTitle("Hobgoblin et loup")
+        .setImage("https://cdn.discordapp.com/attachments/712965483107844096/723216597250080888/Troisieme_edition.png")
+        .addField(":busts_in_silhouette: Nombre gobelin de loup en première ligne",result2)
+        .addField(":busts_in_silhouette: Nombre de hobgoblin en première ligne","1")
+        .addField(":heart: HP par mobs","Hobgobelin : 600\nGobelin archer : 100")
+        .addField(":shield: Armure par mobs", "Hobgobelin : 5\nGobelin archer : 5")
+        .addField(":crossed_swords: Attaque", "?Hobgobelin attaque\n?Agobelin attaque")
+        .addField(":beginner: Défense", "?Bhgobelin [dégâts reçu]\n?Bagobelin [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "?Loot grotte 5")
+        message.channel.sendMessage(help_embed);
+            
+    }
+
+    if(message.content === préfix + "Grotte 6" || message.content === préfix + "grotte 6") {
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        var min = Math.min(4);
+        var max = Math.max(5);
+        var result2 = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .setTitle("Meute de loup")
+        .setImage("https://i.pinimg.com/originals/d9/f3/1e/d9f31e8479d384da0f32c752cb95c2d7.png")
+        .addField(":busts_in_silhouette: Nombre de loups en première ligne",result2)
+        .addField(":heart: HP par loup","240")
+        .addField(":crossed_swords: Attaque", "?Loup attaque")
+        .addField(":trident: Passif","Si un loup est provoqué, alors tout les loups attaquent la même cible. Si le loup provoqué est seul, alors ses dégâts sont multipliés par 2\nSi vous avez subit plus de 5 morsures, alors votre armure deviendra inutilisable jusqu'à la fin du combat")
+        .addField(":beginner: Défense", "?Bloup [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "?Loot grotte 6")
+        message.channel.sendMessage(help_embed);
+            
+    }
+
+    if(message.content === préfix + "Grotte 7" || message.content === préfix + "grotte 7") {
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        if(nombre<50){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .setTitle("Vagabond +  2 Goblins + Squelette druid")
+        .setImage("https://cdn.discordapp.com/attachments/712965483107844096/723305003997200454/Lets_go.png")
+        .addField(":busts_in_silhouette: Personnes en première ligne", "Vagabond et 2 goblins")
+        .addField(":busts_in_silhouette: Personnes en deuxième ligne", "Squelette druid")
+        .addField(":heart: HP par mobs","Vagabond : 1400HP\nLes deux goblins : 200HP\nSquelette druid : 150HP")
+        .addField(":shield: Armure par mobs", "Vagabond : 5\nGoblin : 5")
+        .addField(":crossed_swords: Attaque", "?Vagabond attaque\n?Goblin attaque\n?Druid attaque")
+        .addField(":beginner: Défense", "?Bvagabond [dégâts reçu]\n?Goblin esquive\n?Bdruid [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "?Loot grotte 7")
+        } else if(nombre<101){
+            var help_embed = new Discord.RichEmbed()
+            .setColor("#515A5A")
+            .setTitle("Paladin noir +  2 Goblins + Squelette druid")
+            .setImage("https://cdn.discordapp.com/attachments/712965483107844096/723297928336244796/FUSION.png")
+            .addField(":busts_in_silhouette: Personnes en première ligne", "Paladin noir et 2 goblins")
+            .addField(":busts_in_silhouette: Personnes en deuxième ligne", "Squelette druid")
+            .addField(":heart: HP par mobs","Paladin noir : 1000HP\nLes deux goblins : 200HP\nSquelette druid : 150HP")
+            .addField(":shield: Armure par mobs", "Paladin : 35\nGoblin : 5")
+            .addField(":crossed_swords: Attaque", "?Paladin attaque\n?Goblin attaque\n?Druid attaque")
+            .addField(":beginner: Défense", "?Bpaladin [dégâts reçu]\n?Goblin esquive\n?Bdruid [dégâts reçu]")
+            .addField(":moneybag: Récompenses", "?Loot grotte 7")
+
+        }
+        message.channel.sendMessage(help_embed);
+            
+    }
+
+    if(message.content === préfix + "Grotte 8" || message.content === préfix + "grotte 8") {
+        var nombre = Math.floor((Math.random() * 100) + 1);
+        if(nombre<50){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .setTitle("Vagabond +  2 Goblins + Squelette sorcier")
+        .setImage("https://media.discordapp.net/attachments/712965483107844096/723307477718007818/Septieme.png")
+        .addField(":busts_in_silhouette: Personnes en première ligne", "Vagabond et 2 goblins")
+        .addField(":busts_in_silhouette: Personnes en deuxième ligne", "Squelette sorcier")
+        .addField(":heart: HP par mobs","Vagabond : 1400HP\nLes deux goblins : 200HP\nSquelette sorcier : 150HP")
+        .addField(":shield: Armure par mobs", "Vagabond : 5\nGoblin : 5")
+        .addField(":crossed_swords: Attaque", "?Vagabond attaque\n?Goblin attaque\n?Sorcier attaque")
+        .addField(":beginner: Défense", "?Bvagabond [dégâts reçu]\n?Goblin esquive\n?Bsorcier [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "?Loot grotte 8")
+        } else if(nombre<101){
+            var help_embed = new Discord.RichEmbed()
+            .setColor("#515A5A")
+            .setTitle("Paladin noir +  2 Goblins + Squelette sorcier")
+            .setImage("https://cdn.discordapp.com/attachments/712965483107844096/723307310818263102/Huitiemme.png")
+            .addField(":busts_in_silhouette: Personnes en première ligne", "Paladin noir et 2 goblins")
+            .addField(":busts_in_silhouette: Personnes en deuxième ligne", "Squelette sorcier")
+            .addField(":heart: HP par mobs","Paladin noir : 1000HP\nLes deux goblins : 200HP\nSquelette sorcier : 150HP")
+            .addField(":shield: Armure par mobs", "Paladin : 35\nGoblin : 5")
+            .addField(":crossed_swords: Attaque", "?Paladin attaque\n?Goblin attaque\n?Sorcier attaque")
+            .addField(":beginner: Défense", "?Bpaladin [dégâts reçu]\n?Goblin esquive\n?Bsorcier [dégâts reçu]")
+            .addField(":moneybag: Récompenses", "Loot grotte 8")
+
+        }
+        message.channel.sendMessage(help_embed);
+            
+    }
+
+    if(message.content === préfix + "Grotte finale" || message.content === préfix + "grotte finale") {
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#4A007E")
+        .setTitle("Goblin champion et ses 7 gobelins")
+        .setImage("https://media1.giphy.com/media/j37lKWfvyN1P2CZ2yE/giphy.gif")
+        .addField(":heart: HP par mobs","Goblin champion : 1500HP\ngoblins : 200HP")
+        .addField(":shield: Armure par mobs", "Goblin chamion : 20\nGoblin : 5")
+        .addField(":trident: Passif du combat","Le goblin champion arrive dans 4 tours, vous laissant le temps de tuer les gobelins...Enfin...Si vous y arrivez.")
+        .addField(":crossed_swords: Attaque", "?Champion attaque\n?Gobelin attaque")
+        .addField(":beginner: Défense", "?Bchamion [dégâts reçu]\n?Bgobelin [dégâts reçu]")
+        .addField(":moneybag: Récompenses", "?Loot grotte finale")
+        message.channel.sendMessage(help_embed);
+            
+    }
+
+
+    //// Blocage mobs grotte ////
+        //// Blocage mobs grotte ////
+            //// Blocage mobs grotte ////
+            //// Blocage mobs grotte ////
+        //// Blocage mobs grotte ////
+    //// Blocage mobs grotte ////
+
+    if(command === 'bgobelin'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.8));
+        var max = Math.floor(Math.max(`${args}`*0.9)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var ch = Math.floor((Math.random() * 100) + 1);
+
+        if(ch<50){
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .addField(":shield: **Le gobelin viendra bloquer une partie des dégât**",":anger: " + result)
+        }else if(ch < 80){
+        var min = Math.floor(Math.min(`${args}`*1.2));
+        var max = Math.floor(Math.max(`${args}`*1.45)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .setImage("https://cdn.discordapp.com/attachments/712965483107844096/723663203158065223/iNuvwUBS0rJQAYkgrNMzW78_Cm7-gxQh9f9BNKVzX7TECKDSuaG2y52ffmUr15sOAnb2K8MbyhXZlqx7YawxjYuksG9fliGFNgWv.png")
+        .setTitle("**Le gobelin esquive l'attaque**")
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.2));
+            var max = Math.floor(Math.max(`${args}`*1.45)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#c50000")
+            .addField(":shield: **Esquive raté, le gobelin ne réussira pas à bloquer à l'aide de ses dagues..**",":anger: " + result)    
+        }
+        message.channel.send(y);
+    }
+
+    if(command === 'bloup'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.8));
+        var max = Math.floor(Math.max(`${args}`*0.9)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var ch = Math.floor((Math.random() * 100) + 1);
+
+        if(ch<75){
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .addField(":shield: **Le loup viendra réduire les dégâts à l'aide de sa chaire**",":anger: " + result)
+        }else if(ch < 85){
+        var min = Math.floor(Math.min(`${args}`*1.2));
+        var max = Math.floor(Math.max(`${args}`*1.45)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .setImage("https://awoiaf.westeros.org/images/thumb/3/33/Carlos_Palma_Cruchaga_Direwolf.png/300px-Carlos_Palma_Cruchaga_Direwolf.png")
+        .setTitle("**Le loup esquive l'attaque**")
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.2));
+            var max = Math.floor(Math.max(`${args}`*1.45)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#c50000")
+            .addField(":shield: **Le loup viendra rater son esquive...**",":anger: " + result)    
+        }
+        message.channel.send(y);
+    }
+
+    if(command === 'bagobelin'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.75));
+        var max = Math.floor(Math.max(`${args}`*0.9)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var ch = Math.floor((Math.random() * 100) + 1);
+
+        if(ch<90){
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .addField(":shield: **Utilisant une dague à sa ceinture, le gobelin réduira les dégâts**",":anger: " + result)
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.2));
+            var max = Math.floor(Math.max(`${args}`*1.45)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#c50000")
+            .addField(":shield: **Le gobelin se prendra un coup critique...**",":anger: " + result)    
+        }
+        message.channel.send(y);
+    }
+
+    if(command === 'bhgobelin'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.75));
+        var max = Math.floor(Math.max(`${args}`*0.85)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var ch = Math.floor((Math.random() * 100) + 1);
+
+        if(ch<95){
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .addField(":shield: **Le hobgobelin viendra alors recevoir des coups...Vous serez obligé de l'attaquer au prochain tours(Ne peu pas s'enchainner)**",":anger: " + result)
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.3));
+            var max = Math.floor(Math.max(`${args}`*1.5)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#c50000")
+            .addField(":shield: **Le hobgobelin se prendra un coup critique...**",":anger: " + result)    
+        }
+        message.channel.send(y);
+    }
+
+    if(command === 'bvagabond'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.75));
+        var max = Math.floor(Math.max(`${args}`*0.95)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var mins = Math.floor(Math.min(45));
+        var maxs = Math.floor(Math.max(60)); 
+        var x = Math.floor(Math.random() * (maxs - mins + 1) ) + mins;
+        var ch = Math.floor((Math.random() * 100) + 1);
+
+        if(ch<75){
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .addField(":shield: **Le vagabond essayera de réduire les dégâts.**",":anger: " + result)
+        }else if(ch < 95){
+        var min = Math.floor(Math.min(`${args}`*1.2));
+        var max = Math.floor(Math.max(`${args}`*1.45)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .setImage("https://j.gifs.com/5QWDJB.gif")
+        .addField("**Pas de chance...Le vagabond réussit sa parade et vous renvoi de bon dégâts(Si l'attaque était à distance alors il évite l'attaque)**", ":crossed_swords: " + x)
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.2));
+            var max = Math.floor(Math.max(`${args}`*1.45)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#c50000")
+            .addField(":shield: **Coup critique ! Le vagabond rate sa parade**",":anger: " + result)    
+        }
+        message.channel.send(y);
+    }
+
+    if(command === 'bpaladin'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.70));
+        var max = Math.floor(Math.max(`${args}`*0.9)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var ch = Math.floor((Math.random() * 100) + 1);
+
+        if(ch<75){
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .addField(":shield: **Le paladin bloquera à l'aide de son bouclier, prenant néanmoins une bonne part de dégâts**",":anger: " + result)
+        }else if(ch < 95){
+        var min = Math.floor(Math.min(`${args}`*1.2));
+        var max = Math.floor(Math.max(`${args}`*1.45)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .setTitle("**le paladin viendra alors concentrer sa puissance dans son bouclier...Si vous attaquiez à distance alors il vous renvoie la moitié des dégâts. Si l'attaque est au corps à corps alors il ne ressent rien**")
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.2));
+            var max = Math.floor(Math.max(`${args}`*1.45)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#c50000")
+            .addField(":shield: **Coup critique ! Le paladin prend l'attaque en pleine face !**",":anger: " + result)    
+        }
+        message.channel.send(y);
+    }
+
+    if(command === 'bdruid'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.8));
+        var max = Math.floor(Math.max(`${args}`*1.05)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var ch = Math.floor((Math.random() * 100) + 1);
+
+        if(ch<90){
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .addField(":shield: **le druid essayera de bloquer l'attaque tant bien que mal**",":anger: " + result)
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.2));
+            var max = Math.floor(Math.max(`${args}`*1.45)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#c50000")
+            .addField(":shield: **Le druid se prendra un coup critique...**",":anger: " + result)    
+        }
+        message.channel.send(y);
+    }
+
+    if(command === 'bsorcier'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.8));
+        var max = Math.floor(Math.max(`${args}`*1.05)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var ch = Math.floor((Math.random() * 100) + 1);
+
+        if(ch<90){
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .addField(":shield: **le sorcier essayera de bloquer l'attaque tant bien que mal**",":anger: " + result)
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.2));
+            var max = Math.floor(Math.max(`${args}`*1.45)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#c50000")
+            .addField(":shield: **Le sorcier se prendra un coup critique...**",":anger: " + result)    
+        }
+        message.channel.send(y);
+    }
+
+    if(command === 'bchampion'){
+        if (!args.length) {
+            return message.channel.send(`Il faut mettre un nombre crétin, ${message.author}!`);
+        }
+        var min = Math.floor(Math.min(`${args}`*0.75));
+        var max = Math.floor(Math.max(`${args}`*0.95)); 
+        var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+        var ch = Math.floor((Math.random() * 100) + 1);
+
+        if(ch<85){
+        var y = new Discord.RichEmbed()
+        .setColor("#515A5A")
+        .addField(":shield: **le champion subira les dégâts sans broncher**",":anger: " + result)
+       }else if(ch < 95){
+        var y = new Discord.RichEmbed()
+        .setColor("#c50000")
+        .setImage("https://static.comicvine.com/uploads/scale_super/11133/111335377/6810507-7543951013-Scree.png")
+        .addField(":shield: **Le champion subira des dégâts...criant de douleur, un gobelin(de la horde de gobelin) viendra spawn**",":anger: " + result)        
+        }else if(ch < 101){
+            var min = Math.floor(Math.min(`${args}`*1.2));
+            var max = Math.floor(Math.max(`${args}`*1.45)); 
+            var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+            var y = new Discord.RichEmbed()
+            .setColor("#c50000")
+            .addField(":shield: **Le champion ratera son blocage et se prendra un coup critique...**",":anger: " + result)    
+        }
+        message.channel.send(y);
+    }
+
+
+
+    
+
+
+
+    
+
+
+    
+
+
+
+       
+
+
+    
+
+  
+
+
+
+
+    /// //////////////////////
+
+
+
+    
+
+
+       
         
-        
+
    
 
 
