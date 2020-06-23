@@ -8,13 +8,11 @@ const talkedRecently3 = new Set()
 
 
 
-
 client.login(process.env.TOKEN);
 
 var préfix = "?";
 var fs = require("fs")
 var vm = require('vm')
-
 
 
 client.on("message",message =>{
@@ -1060,7 +1058,7 @@ client.on("message",message =>{
             message.channel.send(mes);
         }
 
-    if(message.content === préfix + "Village étage 3" || message.content === préfix + "Village étage 3") {
+    if(message.content === préfix + "Village étage 3" || message.content === préfix + "village étage 3") {
         var nombre = Math.floor((Math.random() * 100) + 1);
         var sql = Math.floor((Math.random() * 3) + 1);
         if(nombre < 50){
@@ -1090,7 +1088,7 @@ client.on("message",message =>{
             
         }
 
-    if(message.content === préfix + "Village étage 2" || message.content === préfix + "Village étage 2") {
+    if(message.content === préfix + "Village étage 2" || message.content === préfix + "village étage 2") {
         var nombre = Math.floor((Math.random() * 100) + 1);
         var sql = Math.floor((Math.random() * 4) + 1);
         if(sql == 1){
@@ -1123,7 +1121,7 @@ client.on("message",message =>{
             
         }   
 
-    if(message.content === préfix + "Village étage 1" || message.content === préfix + "Village étage 1") {
+    if(message.content === préfix + "Village étage 1" || message.content === préfix + "village étage 1") {
         var nombre = Math.floor((Math.random() * 100) + 1);
         var sql = Math.floor((Math.random() * 5) + 1);
         if(sql == 1){
