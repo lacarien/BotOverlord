@@ -8,9 +8,9 @@ const talkedRecently3 = new Set()
 
 
 
-client.login(process.env.TOKEN);
+client.login("NzExODgwOTI2NDY4MTEyNDg4.XsZpjA.tiF26D9pqhpxqX7sWqDp44kArkM");
 
-var préfix = "?";
+var préfix = "/";
 var fs = require("fs")
 var vm = require('vm')
 
@@ -34,6 +34,7 @@ client.on("message",message =>{
     eval(fs.readFileSync(__dirname + '/stuff.js')+'');
     eval(fs.readFileSync(__dirname + '/donjon.js')+'');
     eval(fs.readFileSync(__dirname + '/immobilier.js')+'');
+    eval(fs.readFileSync(__dirname + '/bot2.js')+'');
 
     ////////////////// LES BASES ////////////////////
         ////////////////// LES BASES ////////////////////
@@ -78,7 +79,7 @@ client.on("message",message =>{
         var help_embed = new Discord.RichEmbed()
         .setColor("#ffd100")
         .setImage("https://i.imgur.com/qgpcufH.gif")
-        .addField("**Gain de level par classe**", "**Du level 1 à 15 :** ``+2 points de compétence``\n**Du level 16 à 30 :** ``+3 points de compétence``\n**Du level 31 à 45 :** ``+5 points de compétence``")
+        .addField("**Gain de level par classe**", "**Du level 1 à 15 :** ``+2 points de compétence``\n**Du level 16 à 30 :** ``+3 points de compétence``\n**Du level 31 à 45 :** ``+4 points de compétence``")
         .addField("**Attribution des points**", "__1 PC dans mana =__ +5 :sparkles:\n__1 PC dans armure =__ +0.5 :shield:\n__1 PC dans attaque =__ +1 :crossed_swords:\n__1 PC dans HP =__ +5 :heart: ")
         .setFooter("Menu Gain")
          message.channel.sendMessage(help_embed);
