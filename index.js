@@ -8,7 +8,7 @@ const talkedRecently3 = new Set()
 
 
 
-client.login("NzExODgwOTI2NDY4MTEyNDg4.XsZpjA.tiF26D9pqhpxqX7sWqDp44kArkM");
+client.login(TOKEN);
 
 var préfix = "/";
 var fs = require("fs")
