@@ -10,7 +10,7 @@ const talkedRecently3 = new Set()
 
 client.login(TOKEN);
 
-var préfix = "/";
+var préfix = "?";
 var fs = require("fs")
 var vm = require('vm')
 
