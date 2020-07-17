@@ -2,18 +2,25 @@
 
 if(message.content === préfix + "Faction" || message.content === préfix + "faction"){     
     var result = Math.floor((Math.random() * 100) + 1);
-    if(result <50){
+    if(result <33){
     var y = new Discord.RichEmbed()
     .setColor("#E80027")
     .setTitle("🌆 Bienvenue dans l'Empire Sirius 🌆")
     .setDescription("> Hey hey ! Vous avez rejoins l'Empire Sirius même si vous n'avez pas vraiment eu le choix ! Mais n'ayez crainte, on a des chouettes divinités comparés à ces pauvres nazes d'Alphard !")
     .setImage("https://cdn.discordapp.com/attachments/733318288330719294/733339577535692830/27965776_p0_master1200.jpg")
-    }else if(result < 101)
+    }else if(result < 66){
     var y = new Discord.RichEmbed()
     .setColor("#6CB3D9")
     .setTitle("🏙 Bienvenue dans la Dynastie d'Alphard 🏙")
     .setDescription("> Hey hey ! Vous avez rejoins la Dysnatie d'Alphard, vous avez fait le bon choix ! C'est la meilleur faction et la plus classe comparé à l'autre !")
     .setImage("https://cdn.discordapp.com/attachments/733318288330719294/733340338344689686/pixiv-fantasia-anime-army-wallpaper-preview.jpg")
+    }else if(result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#6CB3D9")
+    .setTitle(":evergreen_tree: Bienvenue dans le royaume d'Yggdrasil :evergreen_tree:")
+    .setDescription("> Hey hey ! Vous faites partie du royaume d'Yggdrasil, vous avez un rôle important qui est de protéger votre royaume et détruire les ''karma rouge''")
+    .setImage("https://cdn.discordapp.com/attachments/733318208311787661/733669129302704149/9k.png")
+    }
     message.channel.sendMessage(y);
 }
 
@@ -87,6 +94,27 @@ if(message.content === préfix + "Alphard divinité" || message.content === pré
     }
     message.channel.sendMessage(y);
 }
+
+if(message.content === préfix + "Yggdrasil divinité" || message.content === préfix + "yggdrasil divinité"){     
+    var result = Math.floor((Math.random() * 100) + 1);
+    if(result <50){
+    var y = new Discord.RichEmbed()
+    .setColor("#F2D7D5")
+    .setTitle("Arbros")
+    .addField(":crown: __**Bénédiction :**__","> Sa bénédiction permet aux élus de pouvoir résister à un coup ''mortel''(la partie de votre corps touché se solidife pendant une fraction de seconde), l'effet ce déclanche d'ailleur automatiquement(1 fois par semaine).")
+    .setDescription("> Une divinité qui réside sur l'île d'Yggdrasil depuis sa création même. Selon des rumeurs arbros serait l'arbre vivant le plus ancien au monde.")
+    .setImage("https://cache.desktopnexus.com/thumbseg/1978/1978815-bigthumbnail.jpg")
+    } else if(result < 101){
+    var y = new Discord.RichEmbed()
+    .setColor("#B03A2E")
+    .setTitle("Atala")
+    .addField(":crown: __**Bénédiction :**__","> Sa bénédiction permet aux élus de pouvoir dégager du spore soporifique dans la zone, endormant toutes les personnes dans la zone...Utilisable une fois par semaine.")
+    .setDescription("> Cette divinitée est la soeur d'Arbros, elle même apparu dans ce monde en même temps que lui. D'après des rumeurs, elle serait à l'origine de toute la faune et la flore de cette île.")
+    .setImage("https://besthqwallpapers.com/img/original/21718/monster-fantasy-art-forest-darkness.jpg")
+    }
+    message.channel.sendMessage(y);
+}
+
 
 
 /// CLasse ///
