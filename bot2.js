@@ -48,7 +48,7 @@ if(message.content === préfix + "Sirius divinité" || message.content === préf
     .setTitle("Argonosite")
     .setDescription("> c’est une divinité qui reste bien mystérieuse mes certaines légendes les plus connues disent que c’est celle qui a été le plus aperçu entre tous sur c’est un serpent géant ou plutôt un mixte entre un dragon et serpent d’une couleur blanchâtre apparemment quand celui-ci s’adresse à un mortel on peut sentir une grande sagesse inégalable")
     .setImage("https://cdn.discordapp.com/attachments/733316430899970078/733439274187227206/image0.png")
-    .addField(":crown: __**Bénédiction :**__","> il octroie à ses élues la capacité de ce téléporter dans une autre région....Une tornade entourera donc votre protagoniste avant qu'il ne disparaisse ''étrangement''.")
+    .addField(":crown: __**Bénédiction :**__","> il octroie à ses élues la capacité de ce téléporter dans une autre région....Une tornade entourera donc votre protagoniste avant qu'il ne disparaisse ''étrangement''(utilisable 1 fois par mois).")
     } else if(result < 101){
     var y = new Discord.RichEmbed()
     .setColor("#B03A2E")
@@ -75,7 +75,7 @@ if(message.content === préfix + "Alphard divinité" || message.content === pré
     .setColor("#5499C7")
     .setTitle("Ximlos")
     .setDescription("> Une entité particulière, sa provenance est inconnue ou en tout cas celui-ci a fait en sorte que personne ne sache son origine, rien n'a de secret pour lui, son pouvoir est l'obtention de connaissances, rien ne lui est inconnu ; il est presque impossible de le rencontrer sur la terre ferme sauf si il est demandé par ses Elus pour quelque chose d'une importance capitale.")
-    .addField(":crown: __**Bénédiction :**__","> Les élus de cette divinité ont pour bénédiction d'avoir une facilité d'apprentissage et de décryptage d'objets magiques ou de runes.")
+    .addField(":crown: __**Bénédiction :**__","> Les élus de cette divinité ont pour bénédiction de connaître la puissance et la divinité qu'à son interlocuteur(utilisable 1 fois par jour et sur une distance de 3 mètre)")
     .setImage("https://media.discordapp.net/attachments/733316430899970078/733359568587063296/0c35c81671514fe93a71b9d3148463bc.jpg?width=400&height=560")
     } else if(result < 75){
     var y = new Discord.RichEmbed()
@@ -190,7 +190,7 @@ if(message.content === préfix + "Puissance" || message.content === préfix + "p
     var result = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#5B2C6F")
-    .setTitle("Votre puissance est estmié à : :beginner: ``" + result + "`` points")
+    .setTitle("Votre puissance est estimé à : :beginner: ``" + result + "`` points")
     .setImage("https://i.pinimg.com/originals/41/e0/03/41e0030005ae24bc574cea8965a1b325.gif")
    
     message.channel.sendMessage(y);
@@ -198,8 +198,8 @@ if(message.content === préfix + "Puissance" || message.content === préfix + "p
 
 
 if(message.content === préfix + "lvl up inactif" || message.content === préfix + "Lvl up inactif"){     
-    var min = Math.min(5);
-    var max = Math.floor(15); 
+    var min = Math.min(10);
+    var max = Math.floor(20); 
     var result = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#5B2C6F")
@@ -208,9 +208,10 @@ if(message.content === préfix + "lvl up inactif" || message.content === préfix
    
     message.channel.sendMessage(y);
 }
+
 if(message.content === préfix + "lvl up peu actif" || message.content === préfix + "Lvl up peu actif"){     
     var min = Math.min(30);
-    var max = Math.floor(40); 
+    var max = Math.floor(50); 
     var result = Math.floor(Math.random() * (max - min + 1) ) + min;
     var y = new Discord.RichEmbed()
     .setColor("#5B2C6F")
@@ -231,4 +232,42 @@ if(message.content === préfix + "lvl up actif" || message.content === préfix +
    
     message.channel.sendMessage(y);
 }
+
+
+if(message.content === préfix + "lvl up actif 3" || message.content === préfix + "Lvl up actif 3"){     
+    var min = Math.min(90);
+    var max = Math.floor(100); 
+    var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#5B2C6F")
+    .setTitle("Votre puissance a explosé et a augmenté de : :beginner: ``" + result + "`` points")
+    .setImage("https://i.pinimg.com/originals/68/58/34/68583493bfbd8f5ffe6b65edfa5cc9d4.gif")
+   
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "lvl up actif 2" || message.content === préfix + "Lvl up actif 2"){     
+    var min = Math.min(100);
+    var max = Math.floor(110); 
+    var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#5B2C6F")
+    .setTitle("Votre puissance a explosé et a augmenté de : :beginner: ``" + result + "`` points")
+    .setImage("https://i.pinimg.com/originals/24/5d/e0/245de0f6762408d17b51f333f9a74c57.gif")
+   
+    message.channel.sendMessage(y);
+}
+
+if(message.content === préfix + "lvl up actif 1" || message.content === préfix + "Lvl up actif 1"){     
+    var min = Math.min(110);
+    var max = Math.floor(120); 
+    var result = Math.floor(Math.random() * (max - min + 1) ) + min;
+    var y = new Discord.RichEmbed()
+    .setColor("#5B2C6F")
+    .setTitle("Votre puissance a explosé et a augmenté de : :beginner: ``" + result + "`` points")
+    .setImage("https://thumbs.gfycat.com/FluffyPeriodicBluejay-size_restricted.gif")
+   
+    message.channel.sendMessage(y);
+}
+
 
