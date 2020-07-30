@@ -1699,6 +1699,17 @@ client.on("message",message =>{
             }
         }
     
+    if(message.content === préfix + "YO"){
+            while(i>0){
+            message.channel.send("A");
+            //Première vague
+            ClientDiscord.channels.get("733285065122906146").send("Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
+            //Deuxième vague
+            ClientDiscord.channels.get("733285065122906148").send("Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
+            i--
+            }
+        }
+    
 
 
     
