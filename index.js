@@ -1670,13 +1670,7 @@ client.on("message",message =>{
     }
     
     
- if(message.content === préfix + "yo" ) {
-            var i = 20000;
-            while(i>0){
-            message.channel.send("<@everyone>"+"Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            i--
-            }
-        }
+
     
 
     
