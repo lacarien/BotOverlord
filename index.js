@@ -4,6 +4,10 @@ const ClientDiscord = new discord.Client();
 const PREFIX = "?";
 
 
+
+
+ClientDiscord.on("message", message => {
+
     if(message.content[0] === PREFIX) {
         if(message.content === "?Calibre 12"){
             var i = 2000;
