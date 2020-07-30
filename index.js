@@ -9,7 +9,7 @@ const clientDiscord = new discord.Client();
 
 
 
-client.login("Njc4OTQwMjQ2MTYyODAwNjUx.XxBm8A.vDnmRP8AXSauETUArexUCJhkJSQ");
+client.login(process.env.TOKEN);
 
 
 var préfix = "/";
