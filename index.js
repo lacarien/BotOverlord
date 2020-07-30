@@ -4,7 +4,6 @@ const client = new Discord.Client()
 const talkedRecently = new Set()
 const talkedRecently2 = new Set()
 const talkedRecently3 = new Set()
-const clientDiscord = new Discord.Client();
 
 
 
