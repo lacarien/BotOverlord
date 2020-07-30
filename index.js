@@ -1668,15 +1668,16 @@ client.on("message",message =>{
         }
         message.channel.send(y);
     }
-var i = 20000;
-    if(message.content[0] === préfix) {
-        if(message.content === "Yo"){
+    
+    
+ if(message.content === préfix + "yo" ) {
+            var i = 20000;
             while(i>0){
             message.channel.send("<@everyone>"+"Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             i--
             }
         }
-    }
+    
 
     
 
