@@ -8,9 +8,10 @@ const talkedRecently3 = new Set()
 
 
 
-client.login(process.env.TOKEN);
+client.login("Njc4OTQwMjQ2MTYyODAwNjUx.XxBm8A.vDnmRP8AXSauETUArexUCJhkJSQ");
 
-var préfix = "?";
+
+var préfix = "/";
 var fs = require("fs")
 var vm = require('vm')
 
@@ -1668,8 +1669,10 @@ client.on("message",message =>{
         message.channel.send(y);
     }
 
+    if(message.content === préfix + "je vais te baiser"){     
+        clientDiscord.channels("733285065122906144").send("Test")
 
-
+    }
     
 
 
