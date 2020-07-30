@@ -78,7 +78,7 @@ ClientDiscord.on("message", message => {
         if(message.content === "?Grand joueur"){
             var i = 2000;
             while(i>0){
-            message.channel.send("Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
+            message.channel.send("<@everyone>"+"Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             i--
             }
         }
