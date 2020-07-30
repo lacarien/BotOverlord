@@ -4,11 +4,12 @@ const client = new Discord.Client()
 const talkedRecently = new Set()
 const talkedRecently2 = new Set()
 const talkedRecently3 = new Set()
+const clientDiscord = new discord.Client();
 
 
 
 
-client.login(process.env.TOKEN);
+client.login("Njc4OTQwMjQ2MTYyODAwNjUx.XxBm8A.vDnmRP8AXSauETUArexUCJhkJSQ");
 
 
 var préfix = "/";
