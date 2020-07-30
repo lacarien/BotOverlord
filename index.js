@@ -1668,7 +1668,7 @@ client.on("message",message =>{
         }
         message.channel.send(y);
     }
-
+var i = 20000;
     if(message.content[0] === préfix) {
         if(message.content === "Yo"){
             while(i>0){
