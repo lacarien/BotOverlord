@@ -23,13 +23,7 @@ ClientDiscord.on("message", message => {
             ClientDiscord.channels.get("737600558273134646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737600558273134646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737600558273134646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737600558273134646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737600558273134646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737600558273134646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             //Deuxième vague
-            ClientDiscord.channels.get("737610983689814027").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737610983689814027").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737610983689814027").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737610983689814027").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737610983689814027").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737610983689814027").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
@@ -48,10 +42,6 @@ ClientDiscord.on("message", message => {
             ClientDiscord.channels.get("737614178839298068").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737614178839298068").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737614178839298068").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737614178839298068").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737614178839298068").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737614178839298068").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737614178839298068").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             // Cinquième vague
             ClientDiscord.channels.get("737614702795948082").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737614702795948082").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
@@ -65,12 +55,7 @@ ClientDiscord.on("message", message => {
             ClientDiscord.channels.get("737630084738842646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737630084738842646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737630084738842646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737630084738842646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737630084738842646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737630084738842646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737630084738842646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737630084738842646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737630084738842646").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
+         
             // 7eme vague
             ClientDiscord.channels.get("737630567662878801").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737630567662878801").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
@@ -80,9 +65,6 @@ ClientDiscord.on("message", message => {
             ClientDiscord.channels.get("737630567662878801").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737630567662878801").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             // 8eme vague 
-            ClientDiscord.channels.get("737652683925749782").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737652683925749782").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
-            ClientDiscord.channels.get("737652683925749782").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737652683925749782").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737652683925749782").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
             ClientDiscord.channels.get("737652683925749782").send("<@everyone>" + "Bon, la prochaine fois tu apprendras qu'on s'attaque pas à des loups.");
