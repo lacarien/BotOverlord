@@ -4,9 +4,6 @@ const ClientDiscord = new discord.Client();
 const PREFIX = "?";
 
 
-var i = 2000;
-
-ClientDiscord.on("message", message => {
     if(message.content[0] === PREFIX) {
         if(message.content === "?Calibre 12"){
             var i = 2000;
@@ -33,7 +30,6 @@ ClientDiscord.on("message", message => {
             i--
             }
         }
-        
     }
 
     if(message.content[0] === PREFIX) {
@@ -83,9 +79,10 @@ ClientDiscord.on("message", message => {
             }
         }
     }
-    }
-});
 
+
+
+});
 
 
 ClientDiscord.login(process.env.TOKEN);
