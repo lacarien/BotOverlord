@@ -1671,7 +1671,7 @@ client.on("message",message =>{
     }
 
     if(message.content === préfix + "je vais te baiser"){     
-          clientDiscord.channels("733285065122906144").message.send("Test");
+          clientDiscord.channels.get("733285065122906144").message.send("Test");
 
     }
     
